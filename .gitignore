@@ -1,0 +1,4 @@
+webiCovidPortal/*.pyc
+webCovidPortal/conf.py
+covidPortalFrontEnd/dist/
+covidPortalFrontEnd/node_modules/

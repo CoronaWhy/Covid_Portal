@@ -1,0 +1,38 @@
+<div class="container">
+  <br/>
+	<br/>
+	<br/>
+
+	<div  *ngIf="!alignmentObjList" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
+		Loading ..
+	</div>
+	<div *ngIf="alignmentObjList" class="row" style="float:clear;">
+			<div *ngIf="alignmentObjList?.length > 0">
+			    <div style="inline-block;" *ngFor="let displayAlignmentObj of alignmentObjList" id="{{displayAlignmentObj.label}}" >
+						<!-- <div style="inline-block;;float:left; border: 1px solid red; margin-right: 5px;"> -->
+							<div style="inline-block;;float:left; margin-right: 5px;width:50px;text-align:left;">
+							{{displayAlignmentObj.label}}
+						</div>
+						<div style="width:15px;display: inline-block;float:left;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"  (click)="handleResidueClick(residueObj.residueLabel, residueObj.position);">
+							{{residueObj.residueValue}}
+						</div>
+						<br/>
+						<div style="float:clear;">
+						</div>
+					</div>
+			</div>
+			<div style=" max-width: 2000px;" *ngIf="alignmentObjList">
+					Begin position:&nbsp;
+					<!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
+					<div class="slidecontainer" style="float:left;">
+						<input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
+						<div>Slider Value: {{positionSliderValue}}</div>
+					</div>&nbsp;
+					<br/>
+					<br/>
+			</div>
+			<div *ngIf="alignmentObjList?.length == 0">
+				<b>No data to display.</b>
+			</div>
+	</div>
+</div>

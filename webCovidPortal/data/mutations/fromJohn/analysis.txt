@@ -1,0 +1,37 @@
+PMID 30989115
+    MUTAIONS IDENTIFIED:
+        K832229E    refers to spike residue K832 in strain 229E
+        S820229E    refers to spike residue S820 in strain 229E
+        S3G         refers to Fig. S3G
+        T817229E    refers to spike residue T817 in strain 229E
+        S3H         refers to Fig. S3H
+        S3F         refers to Fig. S3F
+        Q839229E    refers to spike residue Q839 in strain 229E
+        S2F         refers to Fig. S2F
+
+    MUTATIONS NOT IDENTIFIED:
+        S746R		identified by pubtator in introduction
+
+PMID 15749126
+    NOTE: pubtator has no annotations under the key "mutation" for this PMID
+    and only has S33G, L65H and L65A annotated as genes.
+
+    MUTATIONS IDENTIFIED:
+        S310G       refers to spike mutation in strain MHV-JHM in discussion
+        K183R       refers to spike mutation that was a topic of this article
+        T82A        refers to spike mutation that was topic of this article
+        L65H        refers to spike mutation that was topic of this article
+        T62S        refers to spike mutation that was topic of this article
+        Y162A       refers to spike mutation that was topic of this article
+        Y162F       refers to spike mutation that was topic of this article
+        Y216S       refers to spike mutation in strain MHV-JHM in discussion
+        I41R        refers to a mutation in CECAM1a used in article
+        T82M        refers to spike mutation that was topic of this article
+        Q294L       refers to a spike mutation in IBV in discussion
+        K183G       refers to spike mutation that was topic of this article
+        Y162Q       refers to spike mutation that was topic of this article
+        L65A        refers to spike mutation that was topic of this article
+        S33G        refers to spike mutation that was topic of this article
+        S33R        refers to spike mutation that was topic of this article
+        Y162H       refers to spike mutation that was topic of this article
+        T62A        refers to spike mutation that was topic of this article
