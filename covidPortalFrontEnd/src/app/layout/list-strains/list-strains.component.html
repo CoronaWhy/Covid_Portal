@@ -2,14 +2,14 @@
         <br/>
         <br/>
         <br/>
-				<div  *ngIf="!datafiles" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
+				<div  *ngIf="!sequenceObjList" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
 					Loading ..
 				</div>
-						<div *ngIf="datafiles" class="row" style="float:clear;">
+						<div *ngIf="sequenceObjList" class="row" style="float:clear;">
 
 								<div class="col-sm-12">
-										<div>
-											Search Files:&nbsp;
+										<!-- <div>
+											Search:&nbsp;
 											<input [(ngModel)]="searchDataFilesString" id="searchDataFilesString" [ngModelOptions]="{standalone: true}">
 											&nbsp;
 											Filter Records:&nbsp;
@@ -31,67 +31,36 @@
 											<div style="width:120px;height:60px;border:1px solid #000;background-color:#32FFC8;text-align:center;font-size:18px;float:left;">Score Calculated</div>
 											<div style="width:10px;height:60px;border:0px;float:left;"></div>
 											<div style="width:120px;height:60px;border:1px solid #000;background-color:#36CBEC;text-align:center;font-size:18px;float:left;">Analysis Completed</div>
-										</div>&nbsp;&nbsp;
-
+										</div>&nbsp;&nbsp; -->
+<!--
 										<br/>
-										<br/>
+										<br/> -->
 
-										<div *ngIf="datafiles?.length > 0">
+										<div *ngIf="sequenceObjList?.length > 0">
 
+											<div >
+												<button   id="button_0" style = "background-color:#90EE7F;" (click)="submitSequences();"  >Submit&nbsp;</button>
+											</div>&nbsp;
+											<div style="display: inline-block;float:left;" *ngFor="let selectedAccession of selectedAccessions">
+			    							{{selectedAccession}}
+			    						</div>
+
+											<br/>
 											<table class="table table-bordered table-striped table-sm">
 										    <tr>
-										      <th>Name</th>
-										      <th>Chksum</th>
-										      <th>Status</th>
-										      <th>View Results</th>
-													<th>View 3D</th>
-													<th>Delete</th>
+													<th>Select</th>
+										      <th>Accession</th>
+										      <th>Sequence</th>
 												</tr>
-										    <tr *ngFor="let datafile of datafiles | listFilesFilter : searchDataFilesString"  id="{{datafile.name}}" [style.background-color]="datafile.rowColor">
+										    <tr *ngFor="let sequenceObj of sequenceObjList"  id="{{sequenceObj.accession}}">
 
 						              <td>
-															 <a [routerLink]="['/datafile-detail',datafile.id]" >
-															{{datafile.name}}
-															 </a>
+														<input type="checkbox" [checked] = "sequenceObj.isSelected" [(ngModel)]="sequenceObj.isSelected" [ngModelOptions]="{standalone: true}">
 													</td>
 
-										      <td>{{ datafile.chksum}}</td>
+										      <td>{{ sequenceObj.accession}}</td>
 										      <td>
-														{{ datafile.status }}
-													</td>
-										      <td>
-														<div *ngIf = "datafile.resultsAvailable == 'yes'">
-															<a [routerLink]="['/brain-viewer',datafile.id]" >
-																View Results
-															</a>
-															<br/>
-														</div>
-														<div *ngIf = "datafile.resultsAvailable == 'no'">
-															<div *ngIf = "datafile.status == 'Analysis Submitted'">
-																Processing ..
-															</div>
-															<div *ngIf = "datafile.status == 'Uploaded'">
-																Uploaded
-															</div>
-														</div>
-													</td>
-													<td>
-														<div *ngIf = "datafile.resultsAvailable == 'yes'">
-															<a [routerLink]="['/rotate-3d',datafile.id]" >
-																View Results
-															</a>
-														</div>
-														<div *ngIf = "datafile.resultsAvailable == 'no'">
-															<div *ngIf = "datafile.status == 'Analysis Submitted'">
-																Processing ..
-															</div>
-															<div *ngIf = "datafile.status == 'Uploaded'">
-																Uploaded
-															</div>
-														</div>
-													</td>
-						              <td>
-														<button  id="delete_button_{{datafile.id}}" (click)="deleteDatafile($event);" class="btn btn-danger">Delete</button>&nbsp;
+														{{ sequenceObj.sequence }}
 													</td>
 										    </tr>
 										  </table>
@@ -99,8 +68,8 @@
 					              {{message}}
 					            </div>
 										</div>
-										<div *ngIf="datafiles?.length == 0">
-											<b>No files to display.</b>
+										<div *ngIf="sequenceObjList?.length == 0">
+											<b>No data to display.</b>
 										</div>
 
 

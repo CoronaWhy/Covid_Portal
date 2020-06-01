@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
 import { ListStrainsService } from './list-strains-service';
 import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { Datafile, UploadFolder } from '../../models/datafile';
+import { SequenceObj } from '../../models/sequence';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 
@@ -16,18 +16,13 @@ import { Subscription } from 'rxjs/Subscription';
 export class ListStrainsComponent implements OnInit, OnDestroy{
 
     @Input()
-    datafiles : UploadFolder[];
-    allDatafiles : UploadFolder[];
     filterFilesOption:string;
     resultsAvailable:boolean;
     sub:Subscription;
     message:string;
-
+    sequenceObjList:SequenceObj[];
+    selectedAccessions:string[];
     filterOptions = [
-      { 'id': 0, 'name': 'Uploaded', 'selected':false },
-      { 'id': 1, 'name': 'Score Calculated', 'selected':false },
-      { 'id': 2, 'name': 'Analysis Submitted', 'selected':false },
-      { 'id': 3, 'name': 'Analysis Completed', 'selected':false },
     ];
 
     searchDataFilesString:string;
@@ -39,51 +34,60 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
     ngOnInit() {
       console.log( " on init ");
       this.message = "";
-      this.sub = Observable.interval(3000)
-        .subscribe((val) => {
-          this.listStrainsService.getDatafiles().then(datafiles => {
-              this.datafiles = datafiles;
-              console.log(" 1 = " + this.datafiles);
-              this.allDatafiles = datafiles;
-              this.filterDataFiles();
-              console.log(" 2 = " + this.datafiles);
-          });
+      this.selectedAccessions= [];
+      this.listStrainsService.getSequences().then(sequenceObjList => {
+          this.sequenceObjList = sequenceObjList;
+      });
+    }
 
-        });
+    submitSequences(){
+      console.log(" in submit ");
+      let selectedSequences :SequenceObj[];
+      selectedSequences = this.sequenceObjList.filter(
+          sequenceObj => sequenceObj.isSelected === true);
+        console.log(selectedSequences);
+      for (let i = 0; i< selectedSequences.length; i++){
+        this.selectedAccessions.push(selectedSequences[i].accession);
+      }
+      console.log(this.selectedAccessions);
+      // this.listStrainsService.getSequences().then(sequenceObjList => {
+      //     this.sequenceObjList = sequenceObjList;
+      // });
+
     }
 
     deleteDatafile(event:any){
 
-      if (confirm("Are you sure you want to delete this file?")){
-        var target = event.target || event.srcElement || event.currentTarget;
-        var idAttr = target.attributes.id;
-        var value = idAttr.nodeValue;
-        var datafileId = value.split("_")[2]
-        this.listStrainsService.deleteDatafile(datafileId).then((message) =>
-        {
-            this.message = message;
-        }
-        );
-        this.listStrainsService.getDatafiles().then(datafiles => {
-            this.datafiles = datafiles;
-            this.allDatafiles = datafiles;
-        });
-      }
+      // if (confirm("Are you sure you want to delete this file?")){
+      //   var target = event.target || event.srcElement || event.currentTarget;
+      //   var idAttr = target.attributes.id;
+      //   var value = idAttr.nodeValue;
+      //   var datafileId = value.split("_")[2]
+      //   this.listStrainsService.deleteDatafile(datafileId).then((message) =>
+      //   {
+      //       this.message = message;
+      //   }
+      //   );
+      //   this.listStrainsService.getDatafiles().then(datafiles => {
+      //       this.datafiles = datafiles;
+      //       this.allDatafiles = datafiles;
+      //   });
+      // }
     }
 
     filterDataFiles(){
-      console.log(" in filter 1 " + this.datafiles);
-      if (!this.filterFilesOption || this.filterFilesOption == "") {
-        return;
-      }
-      this.datafiles = this.allDatafiles.filter(s => {
-        if (this.filterFilesOption != ""){
-          return s.status == this.filterFilesOption;
-      } else {
-        return true;
-      }
-      });
-      console.log(" in filter 2 " + this.datafiles);
+      // console.log(" in filter 1 " + this.datafiles);
+      // if (!this.filterFilesOption || this.filterFilesOption == "") {
+      //   return;
+      // }
+      // this.datafiles = this.allDatafiles.filter(s => {
+      //   if (this.filterFilesOption != ""){
+      //     return s.status == this.filterFilesOption;
+      // } else {
+      //   return true;
+      // }
+      // });
+      // console.log(" in filter 2 " + this.datafiles);
     }
 
     constructor( private listStrainsService: ListStrainsService,

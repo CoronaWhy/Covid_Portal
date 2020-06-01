@@ -2,29 +2,18 @@ import { Observable } from "rxjs/Rx"
 import { Injectable, OnInit }     from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
-import { Datafile, UploadFolder } from '../../models/datafile';
+import { SequenceObj } from '../../models/sequence';
 import {AppSettings} from '../../app.settings';
 
 @Injectable()
 export class ListStrainsService {
 
-    public getDatafilesUrl = AppSettings.BASE_URL + "/covidPortalApp/listUploadedFiles/";
-    public searchDatafilesUrl = AppSettings.BASE_URL + "/covidPortalApp/searchUploadedFolders/";
-    public deleteDatafileUrl = AppSettings.BASE_URL + "/covidPortalApp/deleteDatafile/";
+    public getSequencesUrl = AppSettings.BASE_URL + "/covidPortalApp/listSequences/";
 
     constructor (private http: HttpClient) {}
 
-    getDatafiles(): Promise<UploadFolder[]> {
-      return this.http.post(this.getDatafilesUrl, {}).toPromise().then(res => res as UploadFolder[]).catch(this.handleError);
-    }
-
-    deleteDatafile(datafileId:string): Promise<string> {
-       return this.http.post(this.deleteDatafileUrl, {"datafileId":datafileId}).toPromise().then(res => res)
-       .catch(this.handleError);
-    }
-
-    searchDatafiles(searchString:string): Promise<UploadFolder[]> {
-       return this.http.post(this.searchDatafilesUrl, {"searchString":searchString}).toPromise().then(res => res as UploadFolder[])
+    getSequences(): Promise<SequenceObj[]> {
+       return this.http.post(this.getSequencesUrl, {}).toPromise().then(res => res as SequenceObj[])
        .catch(this.handleError);
     }
 

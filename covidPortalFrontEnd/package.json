@@ -34,6 +34,7 @@
     "@ng-bootstrap/ng-bootstrap": "^6.1.0",
     "@ngx-translate/core": "^12.1.2",
     "@ngx-translate/http-loader": "^4.0.0",
+    "@swimlane/ngx-datatable": "^17.0.0",
     "@types/chart.js": "^2.9.20",
     "ajv": "6.12.0",
     "angular-password-strength-meter": "^2.0.0",

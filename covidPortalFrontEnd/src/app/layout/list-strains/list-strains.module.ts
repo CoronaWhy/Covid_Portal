@@ -6,16 +6,15 @@ import { FormsModule } from '@angular/forms';
 import { ListFilesFilterPipe} from '../../pipes/list-files-filter.pipe';
 
 import { ReactiveFormsModule } from '@angular/forms';
-// import { BrowserModule } from '@angular/platform-browser';
 
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
     imports: [CommonModule,
               ListStrainsRoutingModule,
               FormsModule,
               ReactiveFormsModule,
-              // BrowserModule,
-              // ReactiveFormsModule
+              NgxDatatableModule
             ],
 
     declarations: [ListStrainsComponent, ListFilesFilterPipe]

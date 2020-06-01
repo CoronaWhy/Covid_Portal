@@ -29,7 +29,7 @@ urlpatterns = [
     url(r'^covidPortalApp/submitAnalysis/', submitAnalysis, name = 'submitAnalysis'),
 
     url(r'^covidPortalApp/getMutationData/', getMutationData, name = 'getMutationData'),
-    url(r'^covidPortalApp/listStrains/', listStrains, name = 'listStrains'),
+    url(r'^covidPortalApp/listSequences/', listSequences, name = 'listSequences'),
     url(r'^covidPortalApp/showAlignment/', showAlignment, name = 'showAlignment'),
 
     url(r'^covidPortalApp/updateDatafileName/', updateDatafileName, name = 'updateDatafileName'),

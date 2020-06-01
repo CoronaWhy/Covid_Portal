@@ -7,15 +7,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = EMAIL_HOST_USER
-EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD
+EMAIL_HOST_USER = "info@coronawhy.org"
+EMAIL_HOST_PASSWORD = "coronawhy"
 EMAIL_PORT = 587
-
-BASE_DATA_FOLDER = "/data/Synology_Scans/Processing/Ants"
-
-ANAT_IMG_FOLDER = "/data/Synology_Scans/Processing/Ants/"
-LOW_RES_FOLDER = "/T1/Image_Set/Low_Res/BrainExtr"
-HIGH_RES_FOLDER = "/T1/Image_Set/High_Res/BrainExtr"
 
 ROOT_URLCONF = 'covidPortalApp.urls'
 
@@ -147,7 +141,7 @@ TEMPLATES = [
 FILE_UPLOAD_HANDLERS = ("django.core.files.uploadhandler.MemoryFileUploadHandler",
                         "django.core.files.uploadhandler.TemporaryFileUploadHandler",)
 
-MEDIA_URL = '/data/Synology_Scans/Monitor/Input/'
+MEDIA_URL = ''
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_REDIRECT_URL = "/covidPortalApp/"
