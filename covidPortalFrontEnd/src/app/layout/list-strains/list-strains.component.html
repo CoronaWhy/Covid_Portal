@@ -46,11 +46,42 @@
 			    						</div>
 
 											<br/>
+
+											<ngx-datatable class="material" [rows]="sequenceObjList" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
+											  [rowHeight]="50" [scrollbarV]="true" >
+												<!-- [sorts]="[{prop: 'name', dir: 'desc'}]"> -->
+
+											  <ngx-datatable-column name="Accession">
+											    <ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.accession}}
+											    </ng-template>
+											  </ngx-datatable-column>
+
+											  <ngx-datatable-column name="Organism">
+											    <ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.organism}}
+											    </ng-template>
+											  </ngx-datatable-column>
+
+											  <ngx-datatable-column name="Country">
+											  </ngx-datatable-column>
+
+											</ngx-datatable>
+
 											<table class="table table-bordered table-striped table-sm">
 										    <tr>
 													<th>Select</th>
 										      <th>Accession</th>
-										      <th>Sequence</th>
+										      <th>Organism</th>
+													<th>Collection Date</th>
+													<th>Country</th>
+													<th>Host</th>
+													<th>Isolation Source</th>
+													<th>Coded By</th>
+													<th>Protein ID</th>
+													<th>Taxon ID</th>
+													<th>Isolate</th>
+
 												</tr>
 										    <tr *ngFor="let sequenceObj of sequenceObjList"  id="{{sequenceObj.accession}}">
 
@@ -58,10 +89,37 @@
 														<input type="checkbox" [checked] = "sequenceObj.isSelected" [(ngModel)]="sequenceObj.isSelected" [ngModelOptions]="{standalone: true}">
 													</td>
 
-										      <td>{{ sequenceObj.accession}}</td>
 										      <td>
-														{{ sequenceObj.sequence }}
+														{{ sequenceObj.accession}}
 													</td>
+										      <td>
+														{{ sequenceObj.organism }}
+													</td>
+													<td>
+														{{ sequenceObj.collection_date }}
+													</td>
+													<td>
+														{{ sequenceObj.country }}
+													</td>
+													<td>
+														{{ sequenceObj.host }}
+													</td>
+													<td>
+														{{ sequenceObj.isolation_source }}
+													</td>
+													<td>
+														{{ sequenceObj.coded_by }}
+													</td>
+													<td>
+														{{ sequenceObj.protein_id }}
+													</td>
+													<td>
+														{{ sequenceObj.taxon_id }}
+													</td>
+													<td>
+														{{ sequenceObj.isolate }}
+													</td>
+
 										    </tr>
 										  </table>
 											<div class="alert alert-success" role="alert" *ngIf="message">

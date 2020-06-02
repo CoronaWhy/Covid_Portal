@@ -1,5 +1,16 @@
 export class SequenceObj {
-  accession:string;
-  sequence:string;
+
+  id:number;
   isSelected:boolean;
+  accession:string;
+  organism:string;
+  collection_date:string;
+  country:string;
+  host:string;
+  isolation_source:string;
+  coded_by:string;
+  protein_id:string;
+  taxon_id:string;
+  isolate:string;
+
 }

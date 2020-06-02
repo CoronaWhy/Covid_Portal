@@ -13,7 +13,7 @@ export class ListStrainsService {
     constructor (private http: HttpClient) {}
 
     getSequences(): Promise<SequenceObj[]> {
-       return this.http.post(this.getSequencesUrl, {}).toPromise().then(res => res as SequenceObj[])
+       return this.http.post(this.getSequencesUrl, {responseType: 'text'}).toPromise().then(res => res as SequenceObj[])
        .catch(this.handleError);
     }
 

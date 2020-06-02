@@ -28,7 +28,7 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
     searchDataFilesString:string;
 
     ngOnDestroy(){
-        this.sub.unsubscribe();
+        // this.sub.unsubscribe();
     }
 
     ngOnInit() {
