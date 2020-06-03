@@ -2,9 +2,10 @@ import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
 import { ListStrainsService } from './list-strains-service';
 import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { SequenceObj } from '../../models/sequence';
+import { SequenceObj, SequenceResultObj } from '../../models/sequence';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
+// import {NgTableComponent, NgTableFilteringDirective, NgTablePagingDirective, NgTableSortingDirective} from '@swimlane/ngx-datatable';
 
 @Component({
     selector: 'list-files',
@@ -21,11 +22,23 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
     sub:Subscription;
     message:string;
     sequenceObjList:SequenceObj[];
+    sequenceResultObj:SequenceResultObj;
     selectedAccessions:string[];
     filterOptions = [
     ];
 
     searchDataFilesString:string;
+
+    rowCount:number;
+    pageSize:number;
+    selectedCount:number;
+    curPage:number;
+    offset:number;
+    isVisible:boolean;
+    selectedMessage:string;
+    sequenceTablecolumns:string[];
+
+    pageLimit:number;
 
     ngOnDestroy(){
         // this.sub.unsubscribe();
@@ -33,10 +46,22 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
 
     ngOnInit() {
       console.log( " on init ");
+
+      this.pageSize = 10;
+      this.selectedCount = 0;
+      this.curPage = 1;
+      this.offset = 0;
+      this.isVisible = true;
+      this.selectedMessage = "";
+
+      this.pageLimit = 10;
+
       this.message = "";
       this.selectedAccessions= [];
-      this.listStrainsService.getSequences().then(sequenceObjList => {
-          this.sequenceObjList = sequenceObjList;
+      this.listStrainsService.getSequences().then(sequenceResultObj => {
+          this.sequenceResultObj = sequenceResultObj;
+          this.rowCount = this.sequenceResultObj.sequenceObjList.length;
+          this.sequenceTablecolumns = this.sequenceResultObj.sequenceTableColumns;
       });
     }
 

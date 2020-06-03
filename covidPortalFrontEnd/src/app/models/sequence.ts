@@ -14,3 +14,9 @@ export class SequenceObj {
   isolate:string;
 
 }
+
+export class SequenceResultObj {
+
+  sequenceObjList:SequenceObj[];
+  sequenceTableColumns :string[];
+}

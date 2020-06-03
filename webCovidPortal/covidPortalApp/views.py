@@ -615,28 +615,27 @@ def getFullScreenOverlayData(request):
 # @permission_classes([IsAuthenticated])
 def listSequences(request):
     sequenceObjList = {}
+    sequenceResultObj = {}
     try:
         # /home/siddhartha/Downloads/sequence.csv
         # /home/siddhartha/Downloads/sequencerecord.csv
         df = pd.read_csv('data/db_inserts/sequencerecord.csv', index_col=None, na_filter=False)
+        # df = df[:6]
+        print(df.columns)
         # df.fillna(" ").replace(":"," ")
-        df = df[:6]
         # accession	organism	collection_date	country	host	isolation_source	coded_by	protein_id	taxon_id	isolate
-        sequenceObjList = [{"id":row["id"], "accession":row["accession"],
-         "organism":row["organism"],
-                            "collection_date":row["collection_date"],
-                              "host":row["host"],
-                              "country":row["country"],
-                             "isolation_source":	row["isolation_source"],
-                            "coded_by":row["coded_by"],
-                            	"protein_id":row["protein_id"],
-                             "taxon_id":row["taxon_id"],
-                             	"isolate":row["isolate"]
-                          } for index, row in df.iterrows()]
+
+        sequenceObjList = [
+        {"id":row["id"], "accession":row["accession"],
+         "organism":row["organism"], "collection_date":row["collection_date"], "country":row["country"], "host":row["host"], "isolation_source":row["isolation_source"], "coded_by":row["coded_by"],
+         "protein_id":row["protein_id"],"taxon_id":row["taxon_id"],"isolate":row["isolate"] }
+          for index, row in df.iterrows()]
+
+        sequenceResultObj = {"sequenceTableColumns":list(df.columns), "sequenceObjList":sequenceObjList}
 
     except:
         traceback.print_exc(file=sys.stdout)
-    return HttpResponse(json.dumps(sequenceObjList), content_type='application/json')
+    return HttpResponse(json.dumps(sequenceResultObj), content_type='application/json')
 
 # @api_view([ "GET", "POST"])
 # @permission_classes((IsAuthenticated, ))

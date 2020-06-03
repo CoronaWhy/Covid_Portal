@@ -2,10 +2,10 @@
         <br/>
         <br/>
         <br/>
-				<div  *ngIf="!sequenceObjList" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
+				<div  *ngIf="!sequenceResultObj" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
 					Loading ..
 				</div>
-						<div *ngIf="sequenceObjList" class="row" style="float:clear;">
+						<div *ngIf="sequenceResultObj" class="row" style="float:clear;">
 
 								<div class="col-sm-12">
 										<!-- <div>
@@ -36,7 +36,7 @@
 										<br/>
 										<br/> -->
 
-										<div *ngIf="sequenceObjList?.length > 0">
+										<div *ngIf="sequenceResultObj.sequenceObjList?.length > 0">
 
 											<div >
 												<button   id="button_0" style = "background-color:#90EE7F;" (click)="submitSequences();"  >Submit&nbsp;</button>
@@ -47,8 +47,10 @@
 
 											<br/>
 
-											<ngx-datatable class="material" [rows]="sequenceObjList" [columnMode]="'force'" [headerHeight]="50" [footerHeight]="50"
-											  [rowHeight]="50" [scrollbarV]="true" >
+											<ngx-datatable class="material" [rows]="sequenceResultObj.sequenceObjList" [columns] = "sequenceResultObj.sequenceTablecolumns" [columnMode]="force" [headerHeight]="50" [footerHeight]="50"
+											  [rowHeight]="50" [scrollbarV]="true" [limit]="10">
+
+												<!-- [columns]="[{ name: 'Name' }, { name: 'Gender' }, { name: 'Company' }]" -->
 												<!-- [sorts]="[{prop: 'name', dir: 'desc'}]"> -->
 
 											  <ngx-datatable-column name="Accession">
@@ -63,70 +65,81 @@
 											    </ng-template>
 											  </ngx-datatable-column>
 
+											  <ngx-datatable-column name="Collection Date">
+											    <ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.collection_date}}
+											    </ng-template>
+											  </ngx-datatable-column>
+
 											  <ngx-datatable-column name="Country">
 											  </ngx-datatable-column>
 
+												<ngx-datatable-column name="host">
+													<ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.collection_date}}
+											    </ng-template>
+											  </ngx-datatable-column>
+												<ngx-datatable-column name="isolation_source">
+													<ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.isolation_source}}
+											    </ng-template>
+												</ngx-datatable-column>
+												<ngx-datatable-column name="coded_by">
+													<ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.coded_by}}
+											    </ng-template>
+												</ngx-datatable-column>
+												<ngx-datatable-column name="protein_id">
+													<ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.protein_id}}
+											    </ng-template>
+												</ngx-datatable-column>
+												<ngx-datatable-column name="taxon_id">
+													<ng-template let-row="row" ngx-datatable-cell-template>
+											      {{row.taxon_id}}
+											    </ng-template>
+												</ngx-datatable-column>
+												<ngx-datatable-column name="isolate">
+											  </ngx-datatable-column>
+
+
+
+												<ngx-datatable-footer>
+												  <ng-template
+												    ngx-datatable-footer-template
+												    let-rowCount="rowCount"
+												    let-pageSize="pageSize"
+												    let-selectedCount="selectedCount"
+												    let-curPage="curPage"
+												    let-offset="offset"
+												    let-isVisible="isVisible">
+												      <div class="page-count">
+												        <span *ngIf="selectedMessage">
+												          {{selectedCount.toLocaleString()}} {{selectedMessage}} /
+												        </span>
+												        {{rowCount.toLocaleString()}} {{totalMessage}}
+												      </div>
+												      <datatable-pager
+												          [pagerLeftArrowIcon]="'datatable-icon-left'"
+												          [pagerRightArrowIcon]="'datatable-icon-right'"
+												          [pagerPreviousIcon]="'datatable-icon-prev'"
+												          [pagerNextIcon]="'datatable-icon-skip'"
+												          [page]="curPage"
+												          [size]="pageSize"
+												          [count]="rowCount"
+												          [hidden]="!((rowCount / pageSize) > 1)"
+												          (change)="table.onFooterPage($event)">
+												      </datatable-pager>
+												  </ng-template>
+												</ngx-datatable-footer>
+
 											</ngx-datatable>
 
-											<table class="table table-bordered table-striped table-sm">
-										    <tr>
-													<th>Select</th>
-										      <th>Accession</th>
-										      <th>Organism</th>
-													<th>Collection Date</th>
-													<th>Country</th>
-													<th>Host</th>
-													<th>Isolation Source</th>
-													<th>Coded By</th>
-													<th>Protein ID</th>
-													<th>Taxon ID</th>
-													<th>Isolate</th>
-
-												</tr>
-										    <tr *ngFor="let sequenceObj of sequenceObjList"  id="{{sequenceObj.accession}}">
-
-						              <td>
-														<input type="checkbox" [checked] = "sequenceObj.isSelected" [(ngModel)]="sequenceObj.isSelected" [ngModelOptions]="{standalone: true}">
-													</td>
-
-										      <td>
-														{{ sequenceObj.accession}}
-													</td>
-										      <td>
-														{{ sequenceObj.organism }}
-													</td>
-													<td>
-														{{ sequenceObj.collection_date }}
-													</td>
-													<td>
-														{{ sequenceObj.country }}
-													</td>
-													<td>
-														{{ sequenceObj.host }}
-													</td>
-													<td>
-														{{ sequenceObj.isolation_source }}
-													</td>
-													<td>
-														{{ sequenceObj.coded_by }}
-													</td>
-													<td>
-														{{ sequenceObj.protein_id }}
-													</td>
-													<td>
-														{{ sequenceObj.taxon_id }}
-													</td>
-													<td>
-														{{ sequenceObj.isolate }}
-													</td>
-
-										    </tr>
-										  </table>
 											<div class="alert alert-success" role="alert" *ngIf="message">
 					              {{message}}
 					            </div>
 										</div>
-										<div *ngIf="sequenceObjList?.length == 0">
+										<div *ngIf="sequenceResultObj.sequenceObjList?.length == 0">
 											<b>No data to display.</b>
 										</div>
 
