@@ -3,9 +3,11 @@ import { ListStrainsService } from './list-strains-service';
 import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { SequenceObj, SequenceResultObj } from '../../models/sequence';
+import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 // import {NgTableComponent, NgTableFilteringDirective, NgTablePagingDirective, NgTableSortingDirective} from '@swimlane/ngx-datatable';
+import { ColumnMode } from '@swimlane/ngx-datatable';
 
 @Component({
     selector: 'list-files',
@@ -44,6 +46,9 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
         // this.sub.unsubscribe();
     }
 
+
+    ColumnMode = ColumnMode;
+
     ngOnInit() {
       console.log( " on init ");
 
@@ -68,13 +73,16 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
     submitSequences(){
       console.log(" in submit ");
       let selectedSequences :SequenceObj[];
-      selectedSequences = this.sequenceObjList.filter(
+      selectedSequences = this.sequenceResultObj.sequenceObjList.filter(
           sequenceObj => sequenceObj.isSelected === true);
         console.log(selectedSequences);
       for (let i = 0; i< selectedSequences.length; i++){
         this.selectedAccessions.push(selectedSequences[i].accession);
       }
       console.log(this.selectedAccessions);
+
+      this.router.navigate(['/show-alignment'], { queryParams: { 'selectedAccessions': this.selectedAccessions } })
+
       // this.listStrainsService.getSequences().then(sequenceObjList => {
       //     this.sequenceObjList = sequenceObjList;
       // });
@@ -116,6 +124,8 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
     }
 
     constructor( private listStrainsService: ListStrainsService,
+                 private route:ActivatedRoute,
+                 private router: Router,
                ) {
     };
 }

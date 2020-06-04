@@ -6,6 +6,7 @@ import { Datafile, UploadFolder } from '../../models/datafile';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../../models/alignment';
+import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 
 @Component({
     selector: 'list-files',
@@ -31,6 +32,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     maxSliderValue:number;
     searchDataFilesString:string;
     positionSliderValue:number;
+    selectedAccessions:string[];
 
     ngOnDestroy(){
     }
@@ -46,6 +48,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
 
     ngOnInit() {
       console.log( " on init ");
+
+      this.route.paramMap.subscribe(params => {
+        this.selectedAccessions = params["selectedAccessions"];
+        console.log(this.selectedAccessions);
+      })
+
       this.message = "";
       this.startPosition = 0;
       this.maxDisplayResidues = 60;
@@ -72,6 +80,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     }
 
     constructor( private showAlignmentService: ShowAlignmentService,
+                 private route:ActivatedRoute,
+                 private router: Router,
                ) {
     };
 

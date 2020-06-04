@@ -5,7 +5,10 @@ import { ListStrainsComponent } from './list-strains.component';
 const routes: Routes = [
     {
         path: '',
-        component: ListStrainsComponent
+        component: ListStrainsComponent,
+        children: [
+            { path: 'show-alignment/:selectedAccessions', loadChildren: () => import('../show-alignment/show-alignment.module').then(m => m.ShowAlignmentModule) },
+        ]
     }
 ];
 
