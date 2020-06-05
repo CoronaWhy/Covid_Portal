@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ShowAlignmentRoutingModule } from './show-alignment-routing.module';
 import { ShowAlignmentComponent } from './show-alignment.component';
 import { FormsModule } from '@angular/forms';
-import { ListFilesFilterPipe} from '../../pipes/list-files-filter.pipe';
+// import { ListFilesFilterPipe} from '../../pipes/list-files-filter.pipe';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 // import { BrowserModule } from '@angular/platform-browser';
@@ -18,6 +18,6 @@ import { ReactiveFormsModule } from '@angular/forms';
               // ReactiveFormsModule
             ],
 
-    declarations: [ShowAlignmentComponent, ListFilesFilterPipe]
+    declarations: [ShowAlignmentComponent]
 })
 export class ShowAlignmentModule {}

@@ -81,7 +81,7 @@ export class ListStrainsComponent implements OnInit, OnDestroy{
       }
       console.log(this.selectedAccessions);
 
-      this.router.navigate(['/show-alignment'], { queryParams: { 'selectedAccessions': this.selectedAccessions } })
+      this.router.navigate(['show-alignment'], { queryParams: { 'selectedAccessions': this.selectedAccessions } })
 
       // this.listStrainsService.getSequences().then(sequenceObjList => {
       //     this.sequenceObjList = sequenceObjList;

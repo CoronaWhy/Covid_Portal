@@ -1,3 +1,5 @@
+<router-outlet></router-outlet>
+
 <div class="container">
   <br/>
 	<br/>
@@ -48,7 +50,14 @@
         </div>&nbsp;
         <br/>
         <br/>
+
+            <div class="row" style="float:clear;">
+              <br/>
+              <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider>
+              <br/>
+            </div>
     </div>
+
 <!--
     </div> -->
 

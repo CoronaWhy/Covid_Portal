@@ -7,6 +7,7 @@ import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../../models/alignment';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
+import { Options } from 'ng5-slider';
 
 @Component({
     selector: 'list-files',
@@ -33,6 +34,16 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     searchDataFilesString:string;
     positionSliderValue:number;
     selectedAccessions:string[];
+    rangeSliderOptions: Options = {
+    floor: 0,
+    ceil: 10,
+    vertical: true
+    };
+    rowNum:number;
+
+    sliderValueChange(event){
+
+    }
 
     ngOnDestroy(){
     }
@@ -41,8 +52,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
       let positionSlider = document.getElementById('positionSlider') as HTMLInputElement;
       this.positionSliderValue = Number(positionSlider.value);
       for (let i = 0; i < this.alignmentObjList.length; i++){
-        this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
-        this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+        // this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
+        this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
       }
     }
 
@@ -53,6 +64,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
         this.selectedAccessions = params["selectedAccessions"];
         console.log(this.selectedAccessions);
       })
+
+      this.rowNum = 0;
 
       this.message = "";
       this.startPosition = 0;

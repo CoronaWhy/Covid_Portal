@@ -7,6 +7,7 @@ import { ListFilesFilterPipe} from '../../pipes/list-files-filter.pipe';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { Ng5SliderModule } from 'ng5-slider';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
@@ -14,7 +15,8 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
               ListStrainsRoutingModule,
               FormsModule,
               ReactiveFormsModule,
-              NgxDatatableModule
+              NgxDatatableModule,
+              Ng5SliderModule
             ],
 
     declarations: [ListStrainsComponent, ListFilesFilterPipe]

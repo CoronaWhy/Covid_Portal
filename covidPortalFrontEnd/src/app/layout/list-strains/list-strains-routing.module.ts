@@ -7,7 +7,7 @@ const routes: Routes = [
         path: '',
         component: ListStrainsComponent,
         children: [
-            { path: 'show-alignment/:selectedAccessions', loadChildren: () => import('../show-alignment/show-alignment.module').then(m => m.ShowAlignmentModule) },
+            // { path: 'show-alignment/:selectedAccessions', loadChildren: () => import('../show-alignment/show-alignment.module').then(m => m.ShowAlignmentModule) },
         ]
     }
 ];
