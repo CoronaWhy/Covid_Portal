@@ -1,0 +1,251 @@
+explorer/data/imports/taxonomy_parsed.csv not found..
+Added 1 records from explorer/data/imports/initial_protein.csv
+Added 1 records from explorer/data/imports/initial_alignment.csv
+
+Added 1068 records from explorer/data/imports/spike_sequence_records.csv
+Traceback (most recent call last):
+  File "manage.py", line 7, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/www/projects/Covid_Portal/webCovidPortal/explorer/management/commands/import_sequencerecord.py", line 77, in handle
+    "Foreign records could not be found for:\n"+str(unassigned));
+Exception: Foreign records could not be found for:
+      protein taxon_id  ... _f_protein_id _f_taxon_id
+0     D064370   702702  ...             1          -1
+1     D064370   702703  ...             1          -1
+2     D064370   702700  ...             1          -1
+3     D064370   702701  ...             1          -1
+4     D064370   473588  ...             1          -1
+5     D064370   398808  ...             1          -1
+6     D064370   454963  ...             1          -1
+7     D064370   422218  ...             1          -1
+8     D064370   422216  ...             1          -1
+9     D064370   404135  ...             1          -1
+10    D064370   233261  ...             1          -1
+11    D064370    11131  ...             1          -1
+12    D064370    11132  ...             1          -1
+13    D064370   422219  ...             1          -1
+14    D064370   422215  ...             1          -1
+15    D064370    11129  ...             1          -1
+16    D064370    11130  ...             1          -1
+17    D064370   231432  ...             1          -1
+18    D064370    11133  ...             1          -1
+19    D064370    11134  ...             1          -1
+20    D064370   233262  ...             1          -1
+21    D064370   502108  ...             1          -1
+22    D064370   502105  ...             1          -1
+23    D064370   233264  ...             1          -1
+24    D064370   422140  ...             1          -1
+25    D064370   422141  ...             1          -1
+26    D064370   422139  ...             1          -1
+27    D064370   627439  ...             1          -1
+28    D064370   422138  ...             1          -1
+29    D064370   422133  ...             1          -1
+...       ...      ...  ...           ...         ...
+1038  D064370  2591235  ...             1          -1
+1039  D064370  2591236  ...             1          -1
+1040  D064370  2591237  ...             1          -1
+1041  D064370  2708335  ...             1          -1
+1042  D064370  2708335  ...             1          -1
+1043  D064370  2708335  ...             1          -1
+1044  D064370  2708335  ...             1          -1
+1045  D064370  2708335  ...             1          -1
+1046  D064370  1739625  ...             1          -1
+1047  D064370  1284372  ...             1          -1
+1048  D064370  1284373  ...             1          -1
+1049  D064370  1284374  ...             1          -1
+1050  D064370   663565  ...             1          -1
+1051  D064370  1269327  ...             1          -1
+1052  D064370  1503298  ...             1          -1
+1053  D064370  2591234  ...             1          -1
+1054  D064370   983924  ...             1          -1
+1055  D064370   983925  ...             1          -1
+1056  D064370  1737344  ...             1          -1
+1057  D064370  1928434  ...             1          -1
+1058  D064370  1928434  ...             1          -1
+1059  D064370  1928434  ...             1          -1
+1060  D064370  1928434  ...             1          -1
+1061  D064370  1928434  ...             1          -1
+1062  D064370  1928434  ...             1          -1
+1063  D064370  1928434  ...             1          -1
+1064  D064370  1928434  ...             1          -1
+1065  D064370  1928434  ...             1          -1
+1066  D064370  1928434  ...             1          -1
+1067  D064370  1928434  ...             1          -1
+
+[1068 rows x 12 columns]
+
+Added 922 records from explorer/data/imports/spike_sequence_alignment_20200505.csv
+Traceback (most recent call last):
+  File "manage.py", line 7, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/www/projects/Covid_Portal/webCovidPortal/explorer/management/commands/import_sequence.py", line 69, in handle
+    "Foreign records could not be found for:\n"+str(unassigned));
+Exception: Foreign records could not be found for:
+    alignment   accession  ... _f_alignment_id  _f_sequencerecord_id
+0    20200505  QIS60846.1  ...               1                    -1
+1    20200505  QIQ54048.1  ...               1                    -1
+2    20200505  QIA48623.1  ...               1                    -1
+3    20200505  QIA48614.1  ...               1                    -1
+4    20200505  QIA48641.1  ...               1                    -1
+5    20200505  QIA48632.1  ...               1                    -1
+6    20200505  QIS61060.1  ...               1                    -1
+7    20200505  QHR63300.2  ...               1                    -1
+8    20200505  QIS61374.1  ...               1                    -1
+9    20200505  QIS60822.1  ...               1                    -1
+10   20200505  QIS61170.1  ...               1                    -1
+11   20200505  QIS61110.1  ...               1                    -1
+12   20200505  QIA20044.1  ...               1                    -1
+13   20200505  QIS60906.1  ...               1                    -1
+14   20200505  QIS60930.1  ...               1                    -1
+15   20200505  QIS60954.1  ...               1                    -1
+16   20200505  QIS60882.1  ...               1                    -1
+17   20200505  QIS60774.1  ...               1                    -1
+18   20200505  QIS60978.1  ...               1                    -1
+19   20200505  QIS61254.1  ...               1                    -1
+20   20200505  QIS61338.1  ...               1                    -1
+21   20200505  QIS61422.1  ...               1                    -1
+22   20200505  QIS30115.1  ...               1                    -1
+23   20200505  QHO60594.1  ...               1                    -1
+24   20200505  QIS30065.1  ...               1                    -1
+25   20200505    P0DTC2.1  ...               1                    -1
+26   20200505  QJD07676.1  ...               1                    -1
+27   20200505  QJD07664.1  ...               1                    -1
+28   20200505  QJD07652.1  ...               1                    -1
+29   20200505  QJD07640.1  ...               1                    -1
+..        ...         ...  ...             ...                   ...
+892  20200505  ARK08635.1  ...               1                    -1
+893  20200505  AQN78768.1  ...               1                    -1
+894  20200505  ANZ78840.1  ...               1                    -1
+895  20200505  ANZ78839.1  ...               1                    -1
+896  20200505  ANZ78836.1  ...               1                    -1
+897  20200505  AQN78672.1  ...               1                    -1
+898  20200505  AQN78776.1  ...               1                    -1
+899  20200505  ANZ78838.1  ...               1                    -1
+900  20200505  AQN78656.1  ...               1                    -1
+901  20200505  AQN78752.1  ...               1                    -1
+902  20200505  AQN78720.1  ...               1                    -1
+903  20200505  AQN78704.1  ...               1                    -1
+904  20200505  AIV41885.1  ...               1                    -1
+905  20200505  AWW13566.1  ...               1                    -1
+906  20200505  QBP84713.1  ...               1                    -1
+907  20200505  AXX83303.1  ...               1                    -1
+908  20200505  AXX83321.1  ...               1                    -1
+909  20200505  ANZ78837.1  ...               1                    -1
+910  20200505  AXX83333.1  ...               1                    -1
+911  20200505  AXX83339.1  ...               1                    -1
+912  20200505  AXX83345.1  ...               1                    -1
+913  20200505  AXX83375.1  ...               1                    -1
+914  20200505  ANZ78835.1  ...               1                    -1
+915  20200505  ANZ78844.1  ...               1                    -1
+916  20200505  ANZ78846.1  ...               1                    -1
+917  20200505  ANZ78845.1  ...               1                    -1
+918  20200505  AXX83315.1  ...               1                    -1
+919  20200505  ANZ78849.1  ...               1                    -1
+920  20200505  ANZ78848.1  ...               1                    -1
+921  20200505  ANZ78834.1  ...               1                    -1
+
+[922 rows x 5 columns]
+
+Added 19867 records from explorer/data/imports/epitopes_experiments.csv
+The following IEDB_IDs were not found:
+77612,76968,77439,76969,76970,77440,76971,77441,99800,76972,77442,77443,77444,77445,77446,77447,77448,238082,451537,451538,420672,418776,418777,558530,419064,420673,461728,418778,419065,419066,418779,418780,144838,434564,419067,181527,434785,451244,418781,832133,910052,910130,767098,766969,766970,780242,780243,733837
+307_Human_B-Cell created
+307_Mouse_B-Cell created
+....
+.....
+871495_Mouse_T-Cell created
+871495_Mouse_T-Cell created
+
+Added 1598 records from explorer/data/imports/HKU-N2_nomenclature.csv
+Traceback (most recent call last):
+  File "manage.py", line 7, in <module>
+    execute_from_command_line(sys.argv)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/__init__.py", line 381, in execute_from_command_line
+    utility.execute()
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/__init__.py", line 375, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/base.py", line 323, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/core/management/base.py", line 364, in execute
+    output = self.handle(*args, **options)
+  File "/www/projects/Covid_Portal/webCovidPortal/explorer/management/commands/import_nomenclature.py", line 81, in handle
+    alignment__name=(pra[2])
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/siddhartha/anaconda3/envs/Nifti_Drop/lib/python3.6/site-packages/django/db/models/query.py", line 408, in get
+    self.model._meta.object_name
+explorer.models.DoesNotExist: Sequence matching query does not exist.
+
+Added 59 records from explorer/data/structure/imports/structureChains.csv
+2IEQ
+Taxon 277944 not found, skipping 2IEQ
+5WRG
+Taxon 694009 not found, skipping 5WRG
+5GNB
+Taxon 443239 not found, skipping 5GNB
+5X5F
+Taxon 1335626 not found, skipping 5X5F
+5X5B
+Taxon 228407 not found, skipping 5X5B
+5X5C
+Taxon 1335626 not found, skipping 5X5C
+5X4R
+Taxon 1335626 not found, skipping 5X4R
+6U7H
+Taxon 11137 not found, skipping 6U7H
+5X4S
+Taxon 694009 not found, skipping 5X4S
+5XLR
+Taxon 694009 not found, skipping 5XLR
+4ZPW
+Taxon 1263720 not found, skipping 4ZPW
+5X58
+Taxon 228407 not found, skipping 5X58
+5X59
+Taxon 1335626 not found, skipping 5X59
+5KWB
+Taxon 443239 not found, skipping 5KWB
+6CV0
+Taxon 11120 not found, skipping 6CV0
+2GHV
+Taxon 694009 not found, skipping 2GHV
+6ACD
+Taxon 694009 not found, skipping 6ACD
+6Q06
+Taxon 1235996 not found, skipping 6Q06
+6VYB
+Taxon 2697049 not found, skipping 6VYB
+6Q07
+Taxon 1235996 not found, skipping 6Q07
+6Q05
+Taxon 1235996 not found, skipping 6Q05
+6ACC
+Taxon 694009 not found, skipping 6ACC
+6Q04
+Taxon 1235996 not found, skipping 6Q04
+
+Added 23 records from explorer/data/structure/imports/structureSequences.csv
+
+Added 53297 records from explorer/data/structure/imports/structureAtoms.csv
+Building and inserting 0 residues...
+
+(Nifti_Drop) siddhartha@siddhartha-Z370P-D3:/www/projects/Covid_Portal/webCovidPortal$ 
+
+
+

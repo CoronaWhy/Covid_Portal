@@ -30,6 +30,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'covidPortalApp',
     'corsheaders',
+    'django.contrib.sites',
     'rest_framework',
     'rest_framework.authtoken',
     'explorer.apps.ExplorerConfig',
@@ -148,6 +149,8 @@ TEMPLATES = [
 
 FILE_UPLOAD_HANDLERS = ("django.core.files.uploadhandler.MemoryFileUploadHandler",
                         "django.core.files.uploadhandler.TemporaryFileUploadHandler",)
+
+SITE_ID = 1
 
 MEDIA_URL = ''
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

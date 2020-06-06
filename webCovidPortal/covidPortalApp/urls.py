@@ -12,6 +12,10 @@ urlpatterns = [
     url(r'^explorer/', include('explorer.urls')),
     url(r'^admin/', admin.site.urls),
 
+    # explorer app urls
+    url(r'^explorer/', include('explorer.urls')),
+
+    # covidPortalApp urls
     url(r'^covidPortalApp/submitUploadFile/', submitUploadFile, name = 'submitUploadFile'),
     url(r'^covidPortalApp/signupUser/', signupUser, name = 'signupUser'),
     url(r'^covidPortalApp/checkUser/', checkUser, name = 'checkUser'),
