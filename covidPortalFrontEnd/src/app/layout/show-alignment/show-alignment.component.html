@@ -22,7 +22,7 @@
     							<div style="inline-block;;float:left; margin-right: 5px;width:50px;text-align:left;">
     							{{displayAlignmentObj.label}}
     						</div>
-    						<div style="width:15px;display: inline-block;float:left;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"
+    						<div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"
                 (click)="handleResidueClick(residueObj.residueLabel, residueObj.position);">
     							{{residueObj.residueValue}}
     						</div>
