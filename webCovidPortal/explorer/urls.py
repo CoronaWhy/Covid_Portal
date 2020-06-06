@@ -6,4 +6,5 @@ urlpatterns = [
     path('taxa', views.taxa, name="taxa"),
     path('sequencerecords', views.sequencerecords, name="sequencerecords"),
     path('sequences', views.sequences, name='sequences'),
+    path('nomenclature', views.nomenclature, name='nomenclature'),
 ];

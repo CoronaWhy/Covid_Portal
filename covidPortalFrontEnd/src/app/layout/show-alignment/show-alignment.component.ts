@@ -26,6 +26,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     sub:Subscription;
     message:string;
     alignmentObjList:AlignmentObj[];
+    sequenceObjs:{};
     displayAignmentObjList:AlignmentObj[];
     maxDisplayResidues :number;
     startPosition:number;
@@ -72,8 +73,16 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
       this.maxDisplayResidues = 60;
       this.endPosition = this.maxDisplayResidues;
       this.positionSliderValue = 0;
+      // this.showAlignmentService.getSequence().then(seqs => {
       this.showAlignmentService.showAlignment().then(alignmentObjList => {
-         // console.log(alignmentObjList);
+         // this.maxSliderValue = seqs[0].length - (this.maxDisplayResidues);
+         // console.log(seqs);
+         // for (let i=0; i<seqs.length; i++) {
+         //     console.log(seqs[i].accession);
+         //     if (! this.sequenceObjs.hasOwnProperty( seqs[i].accession )) {
+         //         console.log(seqs[i].accession);
+         //     }
+         // }
          this.alignmentObjList = alignmentObjList;
          for (let i = 0; i < this.alignmentObjList.length; i++){
            if (i == 0){
@@ -84,7 +93,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
            this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
            // console.log(this.displayAignmentObjList[i].residueObjList);
          }
-         // console.log(this.displayAignmentObjList);
+
+         console.log(this.displayAignmentObjList);
       });
     }
 

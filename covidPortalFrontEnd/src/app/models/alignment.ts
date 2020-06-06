@@ -10,3 +10,10 @@ export class AlignmentObj {
   displayResidueObjList:ResidueObj[];
 
 }
+
+export class SequenceObj {
+    accession:string;
+    // residueObjList:ResidueObj[];
+    sequence:string;
+    displayResidueObjList:ResidueObj[];
+}
