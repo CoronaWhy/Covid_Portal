@@ -122,12 +122,14 @@ def nomenclature(request):
         # build and send
         nom = [];
         minor = 0;
+        major = 0;
         for i,r in enumerate(seq.sequence):
             if r=='-':
                 minor+=1;
             else:
                 minor = 0;
-            nom.append([i,minor]);
+                major+=1;
+            nom.append([major,minor]);
         response = HttpResponse(
             json.dumps(nom),
             content_type="application/json");

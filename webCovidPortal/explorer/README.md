@@ -123,16 +123,6 @@ Detailed documentation on each command can be found in the `explorer/management/
 | `import_structureatom`        | Import atoms and residues of a crystal structure. |
 | `import_structuresequence`    | Import crystal structure sequence alignments. |
 
+## API
 
-
-
-
-
-
-
-
-
-
-
-
-fin.
+See the [API Documentation](API_Documentation.md)
