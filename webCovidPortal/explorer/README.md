@@ -141,7 +141,7 @@ Take a look at the [explorer model documentation in models.md](models.md) to see
 
 ### API Documentation
 
-Take a look a the [API Documentation in view.md](views.md) for API access and data structures.
+Take a look a the [API Documentation in views.md](views.md) for API access and data structures.
 
 
 fin.
