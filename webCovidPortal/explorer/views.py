@@ -1,8 +1,11 @@
 from django.shortcuts import render;
 from django.http import HttpResponse;
 from django.core import serializers;
+from django.db.models import Q;
 import json;
-from explorer.models import Taxon, SequenceRecord, Sequence;
+from explorer.models import Taxon, SequenceRecord, Sequence, EpitopeExperiment, Epitope, Protein, Alignment, Structure, StructureChain, StructureChainSequence, StructureChainResidue, StructureAtom;
+from django.db.models import Value as V, CharField, F;
+from django.db.models.functions import Concat, Cast;
 import pprint as pp;
 
 def error_response(msg):
@@ -85,44 +88,331 @@ def sequences(request):
 ################################################################################
 def nomenclature(request):
     if request.method=="GET":
-        if not 'accession' in request.GET:
-            return error_response("No valid criteria");
-        if not 'alignment' in request.GET:
-            return error_response("No alignment specified");
-        if not 'mesh_id' in request.GET:
-            return error_response("No MeSH ID specified");
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
 
-        # retreive
-        try:
-            seq = Sequence.objects.get(
-                alignment__name=str(request.GET['alignment']),
-                sequence_record__protein__mesh_id=str(request.GET['mesh_id']),
-                sequence_record__accession=str(request.GET['accession']),
-            );
-        except Exception as e:
-            return error_response(str(e));
+    if not 'accession' in params:
+        return error_response("No valid criteria");
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
 
-        # build and send
-        nom = [];
-        minor = 0;
-        major = 0;
-        for i,r in enumerate(seq.sequence):
-            if r=='-':
-                minor+=1;
-            else:
-                minor = 0;
-                major+=1;
-            nom.append([major,minor]);
-        response = HttpResponse(
-            json.dumps(nom),
-            content_type="application/json");
-        return response;
+    # retreive
+    try:
+        seq = Sequence.objects.get(
+            alignment__name=str(params['alignment']),
+            sequence_record__protein__mesh_id=str(params['mesh_id']),
+            sequence_record__accession=str(params['accession']),
+        );
+    except Exception as e:
+        return error_response(str(e));
 
-        # 127.0.0.1:8000/explorer/nomenclature?mesh_id=D064370&alignment=20200505&accession=ABG78748.1
+    # build and send
+    nom = [];
+    minor = 0;
+    major = 0;
+    for i,r in enumerate(seq.sequence):
+        if r=='-':
+            minor+=1;
+        else:
+            minor = 0;
+            major+=1;
+        nom.append([major,minor]);
+    response = HttpResponse(
+        json.dumps(nom),
+        content_type="application/json");
+    return response;
+
+    # 127.0.0.1:8000/explorer/nomenclature?mesh_id=D064370&alignment=20200505&accession=ABG78748.1
 ################################################################################
+def epitopeexperimentclasses(request):
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+
+    # get list of distinct values for the following EpitopeExperiments:
+    distinct_fieldvalues = {
+        'host'              : [],
+        'assay_type'        : [],
+        'assay_result'      : [],
+        'mhc_allele'        : [],
+        'mhc_class'         : [],
+        'exp_method'        : [],
+        'measurement_type'  : [],
+    };
+    for k in distinct_fieldvalues.keys():
+        distinct_fieldvalues[k] = list(
+            EpitopeExperiment.objects.filter(
+                epitope__protein__mesh_id=params['mesh_id'],
+                epitope__alignment__name=params['alignment'],
+            ).values_list(
+                k,
+                flat=True
+            ).distinct()
+        );
+    # get distinct IEDB IDs
+    distinct_fieldvalues['iedb_id'] = list(
+        Epitope.objects.filter(
+            protein__mesh_id=params['mesh_id'],
+            alignment__name=params['alignment'],
+        ).values_list(
+            'IEDB_ID',
+            flat=True
+        ).distinct()
+    );
+
+    response = HttpResponse(
+        json.dumps(distinct_fieldvalues),
+        content_type="application/json");
+    return response;
+
+    # http://127.0.0.1:8000/explorer/epitopeexperimentclasses?mesh_id=D064370&alignment=20200505
 ################################################################################
+def epitopeexperimentsfilter(request):
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+
+    criteria = {
+        # 'iedb_id': str, # see below
+        'host': str,
+        'assay_type': str,
+        'assay_result': str,
+        'mhc_allele': str,
+        'mhc_class': str,
+        'exp_method': str,
+        'measurement_type': str,
+    };
+
+    # build queryset
+    qs = [
+        Q(epitope__alignment__name=params['alignment']),
+        Q(epitope__protein__mesh_id=params['mesh_id']),
+    ];
+    for k in criteria.keys():
+        if k in params:
+            qs.append(Q(**{k:params[k]}));
+    # iedb_id is done separately since it's a foreign key
+    if 'iedb_id' in params:
+        qs.append(Q(epitope__IEDB_ID=params['iedb_id']));
+
+    if len(qs)<=2:
+        return error_message("At least one criterion must be specified");
+        # other than MeSH and alignment.
+
+    # fetch
+    recs = [];
+    for r in EpitopeExperiment.objects.filter( *qs ):
+        recs.append({
+            'host'              : r.host,
+            'assay_type'        : r.assay_type,
+            'assay_result'      : r.assay_result,
+            'mhc_allele'        : r.mhc_allele,
+            'mhc_class'         : r.mhc_class,
+            'exp_method'        : r.exp_method,
+            'measurement_type'  : r.measurement_type,
+            'iedb_id'           : r.epitope.IEDB_ID
+        });
+
+    # return
+    response = HttpResponse(
+        json.dumps(recs),
+        content_type="application/json");
+    return response;
+
+    # localhost:8000/explorer/epitopeexperimentsfilter?alignment=20200505&mesh_id=D064370&host=Human&mhc_class=I&assay_result=Positive-High&iedb_id=73883
+
 ################################################################################
+def epitopesequence(request):
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+    if not 'iedb_id' in params:
+        return error_response("No IEDB IDs specified");
+
+    # separate ids
+    iedb_ids = params['iedb_id'].split(',');
+
+    # fetch
+    recs = [];
+    for r in Epitope.objects.filter(
+        alignment__name=params['alignment'],
+        protein__mesh_id=params['mesh_id'],
+        IEDB_ID__in=(iedb_ids)
+    ):
+        recs.append({
+            'iedb_id': r.IEDB_ID,
+            'offset': r.offset,
+            'seq': r.sequence
+        });
+
+    # return
+    response = HttpResponse(
+        json.dumps(recs),
+        content_type="application/json");
+    return response;
+
+    # localhost:8000/explorer/epitopesequence?alignment=20200505&mesh_id=D064370&iedb_id=73883%2C1220%2C2770
 ################################################################################
+def structurechains(request):
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+
+    # fetch
+    recs = [];
+    for r in StructureChain.objects.filter(
+        protein__mesh_id=params['mesh_id'],
+    ):
+        recs.append({
+            'taxon'             : r.structure.taxon.name,
+            'taxon_id'          : r.structure.taxon.gb_taxon_id,
+            'pdb_id'            : r.structure.pdb_id,
+            'chain'             : r.name
+        });
+
+    # return
+    response = HttpResponse(
+        json.dumps(recs),
+        content_type="application/json");
+    return response;
+
+    # http://localhost:8000/explorer/structurechains?mesh_id=D064370
+
 ################################################################################
+def structuresequence(request):
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
+    if not 'pdbchains' in params:
+        return error_response("No PDB/Chains specified");
+
+    pdbchains = params['pdbchains'].split(',');
+    pdb_ids, chains = zip(*[v.split('.') for v in pdbchains]);
+
+    recs = [];
+    for r in StructureChainSequence.objects.filter(
+        chain__structure__pdb_id__in=(pdb_ids),
+        chain__protein__mesh_id=params['mesh_id'],
+        alignment__name=params['alignment']
+    ).annotate(
+        pdb_chain=Concat("chain__structure__pdb_id", V("."), "chain__name")
+    ).filter(
+        pdb_chain__in=(pdbchains)
+    ):
+        recs.append({
+            'pdbchain'  : r.chain.structure.pdb_id + "." + r.chain.name,
+            'pdb_id'    : r.chain.structure.pdb_id,
+            'chain'     : r.chain.name,
+            'sequence'  : r.sequence,
+            'offset'    : r.offset,
+        });
+
+    response = HttpResponse(
+        json.dumps(recs),
+        content_type="application/json");
+    return response;
+
+    # http://localhost:8000/explorer/structuresequence?mesh_id=D064370&alignment=20200505&pdbchains=5X5B.A%2C5X5B.C
+
+################################################################################
+def structureresidueatoms(request):
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+    if not 'atom' in params:
+        return error_response("No atom specified");
+    if not 'pdbchains' in params:
+        return error_response("No PDB/Chains specified");
+
+    pdbchains = params['pdbchains'].split(',');
+    pdb_ids, chains = zip(*[v.split('.') for v in pdbchains]);
+
+    # Currently using nested queries, join will probably be more efficient? How to do joins with Django?
+
+    recs = [];
+    for pc in StructureChain.objects.annotate(
+        pdb_chain=Concat("structure__pdb_id", V("."), "name")
+    ).filter(
+        pdb_chain__in=(pdbchains)
+    ):
+        residues = [];
+        for r in StructureAtom.objects.filter(
+            residue__chain=pc,
+            atom=params['atom'],
+        ):
+            residues.append({
+                'resid'     : r.residue.resid,
+                'resix'     : r.residue.resix,
+                'resn'      : r.residue.resn,
+                'atom'      : r.atom,
+                'atom_x'    : round(r.x,2),
+                'atom_y'    : round(r.y),
+                'atom_z'    : round(r.z),
+                'element'   : r.element,
+                'charge'    : r.charge,
+            });
+
+        recs.append({
+            'pdbchain'  : pc.structure.pdb_id + "." + r.residue.chain.name,
+            'pdb_id'    : pc.structure.pdb_id,
+            'chain'     : pc.name,
+            'residues'  : residues,
+        });
+
+    response = HttpResponse(
+        json.dumps(recs),
+        content_type="application/json");
+    return response;
+
+    # http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C
 ################################################################################
 # fin.
