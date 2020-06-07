@@ -1,16 +1,30 @@
+- [Quick Reference](#quick-reference)
+- [Protein Sequence Records and Alignments](#protein-sequence-records-and-alignments)
+  * [Sequence Records](#sequence-records)
+  * [Sequence](#sequence)
+  * [Nomenclature](#nomenclature)
+- [Immunological Epitopes and Experiments](#immunological-epitopes-and-experiments)
+  * [Epitope Experiment Classes](#epitope-experiment-classes)
+  * [Epitope Experiments](#epitope-experiments)
+  * [Epitope Sequences](#epitope-sequences)
+- [Crystal Structures](#crystal-structures)
+  * [Crystal Structure Names and Chains](#crystal-structure-names-and-chains)
+  * [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments)
+  * [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates)
 
+## Quick Reference
 
 | Type | URL | Description |
 |------|-----|-------------|
-| [Sequence Records](#sequence-records) | `explorer/sequencerecord` | Sequence record metadata. |
-| [Sequence](#sequence) | `explorer/sequences` | Sequence alignments. |
-| [Nomenclature](#nomenclature) | `explorer/nomenclature` | Sequence alignment nomenclatures. |
-| [Epitope Experiment Classes](#epitope-experiment-classes) | `explorer/epitopeexperimentclases` | Distinct values for epitope experiment data.  |
-| [Epitope Experiments](#epitope-experiments) | `explorer/epitopeexperimentsfilter` | Filtered epitope experiment data. |
-| [Epitope Sequences](#epitope-sequences) | `exporer/epitopesequence` | Epitope sequence alignments. |
-| [Crystal Structure Names and Chains](#crystal-structure-names-and-chains) | `explorer/structurechains` | Crystal structure IDs and chain namess. |
-| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Crystal structure chain sequence alignments. |
-| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Crystal structure residue atom coordinates and info. |
+| [Sequence Records](#sequence-records) | `explorer/sequencerecord` | Get filtered sequence record metadata by `mesh_id` and additional criteria. |
+| [Sequence](#sequence) | `explorer/sequences` | Get sequence alignments by `mesh_id`, `alignment` and `accession`. |
+| [Nomenclature](#nomenclature) | `explorer/nomenclature` | Generate sequence alignment nomenclature by `mesh_id`, `alignment` and `accession`. |
+| [Epitope Experiment Classes](#epitope-experiment-classes) | `explorer/epitopeexperimentclases` | Get distinct values for epitope experiment data to build select lists, using `mesh_id` and `alignment`.  |
+| [Epitope Experiments](#epitope-experiments) | `explorer/epitopeexperimentsfilter` | Get filtered epitope experiment data by `mesh_id`, `alignment`, and additional criteria. |
+| [Epitope Sequences](#epitope-sequences) | `exporer/epitopesequence` | Get epitope sequence alignments by `iedb_id`, `mesh_id` and `alignment`. |
+| [Crystal Structure Names and Chains](#crystal-structure-names-and-chains) | `explorer/structurechains` | Get list of crystal structure PDBs and chain IDs. by `mesh_id`. |
+| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Get crystal structure chain sequence alignments by `mesh_id`, `alignment` and `[PDB].[CHAIN]`. |
+| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Get crystal structure residue atom coordinates and info by `mesh_id`, `alignment` and `[PDB].[CHAIN]`. |
 
 ## Protein Sequence Records and Alignments
 
@@ -355,7 +369,11 @@ An array of:
 
 ## Crystal Structures
 
+Available crystal structures and the chains we have for them can be accessed by protein MeSH ID through `structurechains`. Aligned amino acid chain sequences can be accessed by PDB ID and chain ID through `structuresequence`. Atomic coordinate data for each residue in a chain can be accessed through `structureatoms`, which will return atomic data for a single atom type across all residues by PDB and chain ID.
+
 ### Crystal Structure Names and Chains
+
+Use `structurechains` to get a list of all available PDB IDs and chains.
 
 #### Usage
 `explorer/structurechains?mesh_id=[MESH ID]`
@@ -413,6 +431,9 @@ An array of:
 ```
 
 ### Crystal Structure Sequence Alignments
+
+Use `structuresequence` to get one or more aligned amino acid chain sequences.
+
 #### Usage
 `explorer/structuresequence?mesh_id=[MESH ID]&alignment=[ALIGNMENT]&pdbchains=[PDB.CHAIN LIST]`
 
@@ -461,7 +482,9 @@ An array of:
 
 ### Crystal Structure Residue Info and Coordinates
 
-**Note:** Only one atom can be selected for all residues in a call.
+Use `structureatoms` to get atomic data of a single atom type across all residues for specificed chains in PDB structures.
+
+**Note:** Only one atom can be selected for all residues in a call. The example URL below gets all alpha carbons for two chains in two PDB structures. This will be changed in the future to provide useful information about side-chain interactions.
 
 #### Usage
 `explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C`
