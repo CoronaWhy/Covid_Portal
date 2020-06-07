@@ -1,7 +1,7 @@
 
 
 | Type | URL | Description |
-|------|-------------|
+|------|-----|-------------|
 | [Sequence Records](#sequence-records) | `explorer/sequencerecord` | Sequence record metadata. |
 | [Sequence](#sequence) | `explorer/sequences` | Sequence alignments. |
 
