@@ -14,6 +14,11 @@
     + [explorer.models.Epitope](#explorermodelsepitope)
     + [explorer.models.EpitopeExperiment](#explorermodelsepitopeexperiment)
   * [Crystal Structure Models](#crystal-structure-models)
+    + [explorer.Structure](#explorerstructure)
+    + [explorer.StructureChain](#explorerstructurechain)
+    + [explorer.StructureChainSequence](#explorerstructurechainsequence)
+    + [explorer.StructureChainResidue](#explorerstructurechainresidue)
+    + [explorer.StructureAtom](#explorerstructureatom)
 
 ## Global Identifiers and Classifiers
 
@@ -111,3 +116,58 @@
 | measurement_type | str | Type of measurement (binding, lysis activity etc...). |
 
 ## Crystal Structure Models
+
+### explorer.Structure
+
+| Property | Type | Description |
+|----------|------|-------------|
+| pdb_id    | str   | RCSB PDB ID for the structure (unique). |
+| taxon     | explorer.models.Taxon | Taxon specified by the structure. |
+
+
+### explorer.StructureChain
+
+| Property | Type | Description |
+|----------|------|-------------|
+| structure | explorer.models.Structure | Structure that this chain belongs to. |
+| protein | explorer.models.Protein | Protein specified by the chain. |
+| name | str | Chain ID. |
+
+### explorer.StructureChainSequence
+
+| Property | Type | Description |
+|----------|------|-------------|
+| chain     | explorer.models.StructureChain | Chain the sequence is for. |
+| alignment | explorer.models.Alignment | Alignment that the sequence was aligned to. |
+| sequence | str | Aligned structure chain sequence with leading gaps trimmed. |
+| offset | int | Number if leading gaps that were trimmed. |
+
+### explorer.StructureChainResidue
+
+| Property | Type | Description |
+|----------|------|-------------|
+| chain | explorer.models.StructureChain | Chain the residue belongs to. |
+| resix | int | Index of residue relative to raw ungapped, unaligned sequence. |
+| resid | int | Numeric ID of residue in structure chain. |
+| resn | char | Amino acid letter for residue. |
+
+### explorer.StructureAtom
+
+| Property | Type | Description |
+|----------|------|-------------|
+| residue | explorer.models.StructureChainResidue | Residue this atom belongs to. |
+| atom | str | Name of the atom in the residue according to RCSB/PDB format. |
+| element | str | Atomic symbol for atom. |
+| charge | int | Atomic charge on atom. |
+| occupancy | float | Atomic occupancy of atom. |
+| x | float | *x* coordinate of atom in structure. |
+| y | float | *y* coordinate of atom in structure. |
+| z | float | *z* coordinate of atom in structure. |
+
+
+
+
+
+
+
+fin.
