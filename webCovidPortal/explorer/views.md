@@ -1,56 +1,17 @@
-The explorer API serves sequence alignemnts etc. to the front end.
-
-- [Global Classifiers](#global-classifiers)
-  * [Taxa](#taxa)
-- [Protein Sequence Records and Alignments](#protein-sequence-records-and-alignments)
-  * [Sequence Records](#sequence-records)
-  * [Sequence](#sequence)
-  * [Nomenclature](#nomenclature)
-- [Immunological Epitopes and Experiments](#immunological-epitopes-and-experiments)
-  * [Epitope Experiment Classes](#epitope-experiment-classes)
-  * [Epitope Experiments](#epitope-experiments)
-  * [Epitope Sequences](#epitope-sequences)
-- [Crystal Structures](#crystal-structures)
-  * [Crystal Structure Names and Chains](#crystal-structure-names-and-chains)
-  * [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments)
-  * [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates)
 
 
-## Global Classifiers
+| Type | URL | Description |
+|------|-------------|
+| [Sequence Records](#sequence-records) | `explorer/sequencerecord` | Sequence record metadata. |
+| [Sequence](#sequence) | `explorer/sequences` | Sequence alignments. |
 
-### Taxa
-
-**URL**: explorer/taxa
-
-**Example**: http://localhost:8000/explorer/taxa
-
-**Returns**: an array of all `explorer.Taxon` objects from database.
-
-**Return Format**: Django-serialized.
-
-**Example**:
-```
-[{
-    "model": "explorer.taxon",
-    "pk": 1, "fields": {
-        "gb_taxon_id": "2509481",
-        "leaf": false,
-        "path": "0",
-        "name": "Embecovirus",
-        "level": "subgenus"
-    }
-}, {
-    "model": "explorer.taxon",
-    "pk": 2,
-    "fields": {
-        "gb_taxon_id": "694003",
-        "leaf": false,
-        "path": "0.2509481",
-        "name": "Betacoronavirus 1",
-        "level": "species"
-    }
-}]
-```
+| [Nomenclature](#nomenclature) | `explorer/nomenclature` | Sequence alignment nomenclatures. |
+| [Epitope Experiment Classes](#epitope-experiment-classes) | `explorer/epitopeexperimentclases` | Distinct values for epitope experiment data.  |
+| [Epitope Experiments](#epitope-experiments) | `explorer/epitopeexperimentsfilter` | Filtered epitope experiment data. |
+| [Epitope Sequences](#epitope-sequences) | `exporer/epitopesequence` | Epitope sequence alignments. |
+| [Crystal Structure Names and Chains](#crystal-structure-names-and-chains) | `explorer/structurechains` | Crystal structure IDs and chain namess. |
+| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Crystal structure chain sequence alignments. |
+| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Crystal structure residue atom coordinates and info. |
 
 ## Protein Sequence Records and Alignments
 
@@ -500,6 +461,8 @@ An array of:
 ```
 
 ### Crystal Structure Residue Info and Coordinates
+
+**Note:** Only one atom can be selected for all residues in a call.
 
 #### Usage
 `explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C`
