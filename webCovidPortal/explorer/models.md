@@ -46,15 +46,15 @@
 | Property | Type | Description |
 |----------|------|-------------|
 | name      | str   | Name of the alignment (unique). |
-| protein   | [explorer.models.Protein](#explorermodelsProtein) | Protein the alignment is for. |
+| protein   | [explorer.models.Protein](#explorermodelsprotein) | Protein the alignment is for. |
 | date_created | str | Date the alignment was stored (auto). |
 
 ### explorer.models.SequenceRecord
 
 | Property | Type | Description |
 |----------|------|-------------|
-| protein   | explorer.models.Protein   | Protein the sequence record is for. |
-| taxon     | explorer.models.Taxon     | Taxon that this sequence record is for. |
+| protein   | [explorer.models.Protein](#explorermodelsprotein)   | Protein the sequence record is for. |
+| taxon     | [explorer.models.Taxon](#explorermodelsTaxon)     | Taxon that this sequence record is for. |
 | accession | str   | NCBI Protein accession number (With version, unique). |
 | organism | str | Organism name (required). |
 | collection_date | str | Sequence collection date (null). |
@@ -68,8 +68,8 @@
 
 | Property | Type | Description |
 |----------|------|-------------|
-| sequence_record | explorer.models.SequenceRecord | Record for this sequence. |
-| alignment | explorer.models.Alignment | Alignment for this sequence. |
+| sequence_record | [explorer.models.SequenceRecord](#explorermodelsSequenceRecord) | Record for this sequence. |
+| alignment | [explorer.models.Alignment](#explorermodelsAlignment) | Alignment for this sequence. |
 | sequence | str | Sequence alignment with leading gaps trimemd. |
 | offset | int | Number of leading gaps that were trimmed. |
 
@@ -79,13 +79,13 @@
 |----------|------|-------------|
 | name | str | Name of the nomenclature. |
 | date_created | date | Date the nomenclature was stored (auto). |
-| reference | explorer.models.Sequence | Sequence alignment that this nomenclature is based on. |
+| reference | [explorer.models.Sequence](#explorermodelsSequence) | Sequence alignment that this nomenclature is based on. |
 
 ### explorer.models.NomenclaturePosition
 
 | Property | Type | Description |
 |----------|------|-------------|
-| nomenclature | explorer.models.Nomenclature | Nomenclature the position is for. |
+| nomenclature | [explorer.models.Nomenclature](#explorermodelsNomenclature) | Nomenclature the position is for. |
 | index | int | Index of position in aligned sequence. |
 | major | int | Major nomenclature position. |
 | minor | int | Minor nomenclature position. |
@@ -97,8 +97,8 @@
 | Property | Type | Description |
 |----------|------|-------------|
 | IEDB_ID | str | IEDB ID for epitope. |
-| protein | explorer.models.Protein | Protein the epitope is described for. |
-| alignment | explorer.models.Alignment | Alignment this epitope sequence was aligned to. |
+| protein | [explorer.models.Protein](#explorermodelsProtein) | Protein the epitope is described for. |
+| alignment | [explorer.models.Alignment](#explorermodelsAlignment) | Alignment this epitope sequence was aligned to. |
 | sequence | str | Aligned epitope sequence with leading gaps trimmed. }
 | offset | int | Number of leading gaps that were trimemd. |
 
@@ -106,7 +106,7 @@
 
 | Property | Type | Description |
 |----------|------|-------------|
-| epitope | explorer.models.Epitope | Epitope sequence this experiment is for. |
+| epitope | [explorer.models.Epitope](#explorermodelsEpitope) | Epitope sequence this experiment is for. |
 | host | str | Name of the host organism used in experiment where applicable. |
 | assay_type | str | Name of the assay type (e.g. "ELISA"). |
 | assay_result | str | Result of the assay (single-word categorical description). |
@@ -122,14 +122,14 @@
 | Property | Type | Description |
 |----------|------|-------------|
 | pdb_id    | str   | RCSB PDB ID for the structure (unique). |
-| taxon     | explorer.models.Taxon | Taxon specified by the structure. |
+| taxon     | [explorer.models.Taxon](#explorermodelsTaxon) | Taxon specified by the structure. |
 
 
 ### explorer.StructureChain
 
 | Property | Type | Description |
 |----------|------|-------------|
-| structure | explorer.models.Structure | Structure that this chain belongs to. |
+| structure | [explorer.models.Structure](#explorermodelsStructure) | Structure that this chain belongs to. |
 | protein | explorer.models.Protein | Protein specified by the chain. |
 | name | str | Chain ID. |
 
@@ -137,8 +137,8 @@
 
 | Property | Type | Description |
 |----------|------|-------------|
-| chain     | explorer.models.StructureChain | Chain the sequence is for. |
-| alignment | explorer.models.Alignment | Alignment that the sequence was aligned to. |
+| chain     | [explorer.models.StructureChain](#explorermodelsStructureChain) | Chain the sequence is for. |
+| alignment | [explorer.models.Alignment](#explorermodelsAlignment) | Alignment that the sequence was aligned to. |
 | sequence | str | Aligned structure chain sequence with leading gaps trimmed. |
 | offset | int | Number if leading gaps that were trimmed. |
 
@@ -146,7 +146,7 @@
 
 | Property | Type | Description |
 |----------|------|-------------|
-| chain | explorer.models.StructureChain | Chain the residue belongs to. |
+| chain | [explorer.models.StructureChain](#explorermodelsStructureChain) | Chain the residue belongs to. |
 | resix | int | Index of residue relative to raw ungapped, unaligned sequence. |
 | resid | int | Numeric ID of residue in structure chain. |
 | resn | char | Amino acid letter for residue. |
@@ -155,7 +155,7 @@
 
 | Property | Type | Description |
 |----------|------|-------------|
-| residue | explorer.models.StructureChainResidue | Residue this atom belongs to. |
+| residue | [explorer.models.StructureChainResidue](#explorermodelsStructureChainResidue) | Residue this atom belongs to. |
 | atom | str | Name of the atom in the residue according to RCSB/PDB format. |
 | element | str | Atomic symbol for atom. |
 | charge | int | Atomic charge on atom. |
