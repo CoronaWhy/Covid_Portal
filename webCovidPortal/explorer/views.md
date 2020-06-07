@@ -4,7 +4,6 @@
 |------|-----|-------------|
 | [Sequence Records](#sequence-records) | `explorer/sequencerecord` | Sequence record metadata. |
 | [Sequence](#sequence) | `explorer/sequences` | Sequence alignments. |
-
 | [Nomenclature](#nomenclature) | `explorer/nomenclature` | Sequence alignment nomenclatures. |
 | [Epitope Experiment Classes](#epitope-experiment-classes) | `explorer/epitopeexperimentclases` | Distinct values for epitope experiment data.  |
 | [Epitope Experiments](#epitope-experiments) | `explorer/epitopeexperimentsfilter` | Filtered epitope experiment data. |
