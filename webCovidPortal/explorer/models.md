@@ -46,7 +46,7 @@
 | Property | Type | Description |
 |----------|------|-------------|
 | name      | str   | Name of the alignment (unique). |
-| protein   | explorer.models.Protein | Protein the alignment is for. |
+| protein   | [explorer.models.Protein](#explorermodelsProtein) | Protein the alignment is for. |
 | date_created | str | Date the alignment was stored (auto). |
 
 ### explorer.models.SequenceRecord
