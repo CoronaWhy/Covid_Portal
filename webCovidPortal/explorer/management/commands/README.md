@@ -1,6 +1,46 @@
 # Custom Manager Commands
 
-The custom Django manager commands described here are used for formatting and importing data into the CoronaWhy Protein Explorer database. These data are gathered by other scripts, which are not described here.
+The custom Django manager commands described here are used for formatting and importing data into the CoronaWhy Protein Explorer database. These data are gathered by other scripts, which are described [in the data folder](../../data).
+
+- [Custom Manager Commands](#custom-manager-commands)
+  * [Initial Population](#initial-population)
+    + [Import Epitope Sequences/Experimental Data](#import-epitope-sequences-experimental-data)
+    + [Import Alignment Nomenclatures](#import-alignment-nomenclatures)
+  * [Import Structures](#import-structures)
+  * [Importing Taxa](#importing-taxa)
+    + [Required Columns](#required-columns)
+    + [Usage](#usage)
+  * [Importing Proteins](#importing-proteins)
+    + [Required Columns](#required-columns-1)
+    + [Usage](#usage-1)
+  * [Importing Sequence Records](#importing-sequence-records)
+    + [Required Columns](#required-columns-2)
+    + [Usage](#usage-2)
+  * [Importing Alignments](#importing-alignments)
+    + [Required Columns](#required-columns-3)
+    + [Usage](#usage-3)
+  * [Importing Sequences](#importing-sequences)
+    + [Required Columns](#required-columns-4)
+    + [Usage](#usage-4)
+  * [Aligning Epitopes](#aligning-epitopes)
+    + [Required Columns](#required-columns-5)
+    + [Usage](#usage-5)
+  * [Importing Epitopes](#importing-epitopes)
+    + [Required Columns](#required-columns-6)
+    + [Usage](#usage-6)
+  * [Importing Epitope Experiments](#importing-epitope-experiments)
+    + [Required Columns](#required-columns-7)
+    + [Usage](#usage-7)
+  * [Importing Nomenclatures](#importing-nomenclatures)
+    + [Required Columns](#required-columns-8)
+    + [Usage](#usage-8)
+  * [Importing Structures](#importing-structures)
+    + [Importing Structure Records](#importing-structure-records)
+      - [Usage](#usage-9)
+    + [Importing Structure Sequence Alignments](#importing-structure-sequence-alignments)
+      - [Usage](#usage-10)
+    + [Importing Structure Residues and Atoms](#importing-structure-residues-and-atoms)
+      - [Usage](#usage-11)
 
 ## Initial Population
 
