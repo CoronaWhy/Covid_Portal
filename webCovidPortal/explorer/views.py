@@ -24,46 +24,92 @@ def taxa(request):
         return HttpResponse(
             serializers.serialize("json", Taxon.objects.all()),
             content_type="application/json");
+
+################################################################################
+# SEQUENCE RECORDS, ALIGNMENTS AND NOMENCLATURES
 ################################################################################
 def sequencerecords(request):
     if request.method=="GET":
-        # get by protein mesh_id
-        if not 'mesh_id' in request.GET:
-            return error_response("No valid criteria");
-        # retreive
-        recs = SequenceRecord.objects.filter(
-            protein__mesh_id=request.GET['mesh_id']
-        );
-        # return records or empty
-        if len(recs)<1:
-            return error_response("No records");
-        else:
-            response = HttpResponse(
-                serializers.serialize("json", recs),
-                content_type="application/json");
-            return response;
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+
+    criteria = {
+        # 'taxon_id':str,  # see below
+        'accession':str,
+        'organism':str,
+        'country':str,
+        'host':str,
+        'isolation_source':str,
+        'isolate':str,
+    };
+
+
+    # build query
+    qs = [ Q(protein__mesh_id=params['mesh_id']) ];
+    for k in criteria:
+        if k in params:
+            qs.append(Q(**{k+"__in":params[k].split(',')}));
+    # do taxon separately b/c it's a foreign key
+    if 'taxon_id' in params:
+        qs.append(Q(taxon__gb_taxon_id__in=(params['taxon_id'].split(','))));
+
+    recs = [];
+    for r in SequenceRecord.objects.filter(
+        protein__mesh_id=params['mesh_id'],
+        *qs
+    ):
+        recs.append({
+            'accession':r.accession,
+            'organism':r.organism,
+            'collection_date':str(r.collection_date),
+            'country':r.country,
+            'host':r.host,
+            'isolation_source':r.isolation_source,
+            'isolate':r.isolate,
+            'taxon_id':r.taxon.gb_taxon_id,
+            'coded_by':r.coded_by,
+        });
+
+    response = HttpResponse(
+        json.dumps(recs),
+        content_type="application/json");
+    return response;
         # URL ENCODED FOR SPIKE
         # 127.0.0.1:8000/explorer/sequencerecords?mesh_id=D064370
+        # http://127.0.0.1:8000/explorer/sequencerecords?mesh_id=D064370&host=Homo%20sapiens&country=USA%2CChina
+
 ################################################################################
 def sequences(request):
     if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_respone("Invalid request");
+
         # all by accession
-        if not 'accession' in request.GET:
+        if not 'accession' in params:
             return error_response("No valid criteria");
-        if not 'alignment' in request.GET:
+        if not 'alignment' in params:
             return error_response("No alignment specified");
-        if not 'mesh_id' in request.GET:
+        if not 'mesh_id' in params:
             return error_response("No MeSH ID specified");
 
         # retreive
-        accessions = request.GET['accession'].split(',');
+        accessions = params['accession'].split(',');
         if len(accessions)<1:
             return error_response("No criteria specified");
 
         recs = [];
         for r in Sequence.objects.filter(
-            alignment__name=request.GET['alignment'],
-            sequence_record__protein__mesh_id=request.GET['mesh_id'],
+            alignment__name=params['alignment'],
+            sequence_record__protein__mesh_id=params['mesh_id'],
             sequence_record__accession__in=accessions
         ):
             recs.append({
@@ -128,6 +174,8 @@ def nomenclature(request):
     return response;
 
     # 127.0.0.1:8000/explorer/nomenclature?mesh_id=D064370&alignment=20200505&accession=ABG78748.1
+################################################################################
+# EPITOPES
 ################################################################################
 def epitopeexperimentclasses(request):
     if request.method=="GET":
@@ -211,10 +259,10 @@ def epitopeexperimentsfilter(request):
     ];
     for k in criteria.keys():
         if k in params:
-            qs.append(Q(**{k:params[k]}));
+            qs.append(Q(**{k+"__in":params[k].split(',')}));
     # iedb_id is done separately since it's a foreign key
     if 'iedb_id' in params:
-        qs.append(Q(epitope__IEDB_ID=params['iedb_id']));
+        qs.append(Q(epitope__IEDB_ID__in=params['iedb_id'].split(',')));
 
     if len(qs)<=2:
         return error_message("At least one criterion must be specified");
@@ -241,7 +289,6 @@ def epitopeexperimentsfilter(request):
     return response;
 
     # localhost:8000/explorer/epitopeexperimentsfilter?alignment=20200505&mesh_id=D064370&host=Human&mhc_class=I&assay_result=Positive-High&iedb_id=73883
-
 ################################################################################
 def epitopesequence(request):
     if request.method=="GET":
@@ -282,6 +329,8 @@ def epitopesequence(request):
 
     # localhost:8000/explorer/epitopesequence?alignment=20200505&mesh_id=D064370&iedb_id=73883%2C1220%2C2770
 ################################################################################
+# CRYSTAL STRUCTURES
+################################################################################
 def structurechains(request):
     if request.method=="GET":
         params = request.GET;
@@ -312,7 +361,6 @@ def structurechains(request):
     return response;
 
     # http://localhost:8000/explorer/structurechains?mesh_id=D064370
-
 ################################################################################
 def structuresequence(request):
     if request.method=="GET":
@@ -356,7 +404,6 @@ def structuresequence(request):
     return response;
 
     # http://localhost:8000/explorer/structuresequence?mesh_id=D064370&alignment=20200505&pdbchains=5X5B.A%2C5X5B.C
-
 ################################################################################
 def structureresidueatoms(request):
     if request.method=="GET":
