@@ -130,7 +130,7 @@
 | Property | Type | Description |
 |----------|------|-------------|
 | structure | [explorer.models.Structure](#explorermodelsStructure) | Structure that this chain belongs to. |
-| protein | explorer.models.Protein | Protein specified by the chain. |
+| protein | [explorer.models.Protein](#explorermodelsProtein) | Protein specified by the chain. |
 | name | str | Chain ID. |
 
 ### explorer.StructureChainSequence

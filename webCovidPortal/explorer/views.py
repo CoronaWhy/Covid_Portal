@@ -15,31 +15,14 @@ def error_response(msg):
 def index(request):
     context = { };
     return render(request, 'explorer/index.html', context);
-
+################################################################################
 def taxa(request):
     if request.method=="GET":
-        # return HttpResponse(
-        #     json.dumps(request.GET),
-        #     content_type="application/json");
         return HttpResponse(
             serializers.serialize("json", Taxon.objects.all()),
             content_type="application/json");
-    # return serializers.serialize("json", objs);
-
+################################################################################
 def sequencerecords(request):
-    """Short summary.
-
-    Parameters
-    ----------
-    request : type
-        Description of parameter `request`.
-
-    Returns
-    -------
-    type
-        Description of returned object.
-
-    """
     if request.method=="GET":
         # get by protein mesh_id
         if not 'mesh_id' in request.GET:
@@ -58,7 +41,7 @@ def sequencerecords(request):
             return response;
         # URL ENCODED FOR SPIKE
         # 127.0.0.1:8000/explorer/sequencerecords?mesh_id=D064370
-
+################################################################################
 def sequences(request):
     if request.method=="GET":
         # all by accession
@@ -99,7 +82,7 @@ def sequences(request):
 
         # URL encoded
         # 127.0.0.1:8000/explorer/sequences?mesh_id=D064370&alignment=20200505&accession=ADB10848.1%2CADB10845.1%2CADB10846.1%2CABV74054.1%2CABG89288.1%2CACT10995.1%2C%20ABP38243.1%2CACT10983.1%2CABI93999.2%2CQ9QAR5.1%2CP25192.1%2CP15777.1%2CABP38295.1%2C%20ABP38267.1%2CP25190.1%2CP25191.1%2CQ9QAQ8.1%2CP25193.2%2CP25194.1%2CQ91A26.1
-
+################################################################################
 def nomenclature(request):
     if request.method=="GET":
         if not 'accession' in request.GET:
@@ -136,6 +119,10 @@ def nomenclature(request):
         return response;
 
         # 127.0.0.1:8000/explorer/nomenclature?mesh_id=D064370&alignment=20200505&accession=ABG78748.1
-
-
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+################################################################################
 # fin.
