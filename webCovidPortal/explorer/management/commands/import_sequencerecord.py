@@ -47,7 +47,6 @@ class Command(BaseCommand):
         # noneify nulls
         records = records.where(pd.notnull(records), None);
 
-
         # gather foreign key objects
         records['_f_protein_id'] = -1;
         f_proteins = {};

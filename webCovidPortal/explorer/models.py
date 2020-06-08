@@ -101,7 +101,7 @@ class SequenceRecord(models.Model):
     collection_date = models.DateTimeField(null=True);
     country = models.CharField(max_length=100, null=True);
     host = models.CharField(max_length=100, null=True);
-    isolation_source = models.CharField(max_length=100, null=True);
+    isolation_source = models.CharField(max_length=256, null=True);
     isolate = models.CharField(max_length=100, null=True);
     coded_by = models.CharField(max_length=50, null=True);
     def __str__(self): return self.accession;
