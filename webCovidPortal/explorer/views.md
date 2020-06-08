@@ -456,8 +456,8 @@ An array of:
 | pdbchain | str | [PDB_ID].[CHAIN] |
 | pdb_id | str | PDB ID. |
 | chain | char | Chain ID. |
-| sequence | Aligned animo acid sequence from chain, leading gaps trimmed. |
-| offset | Offset of sequence in alignment. |
+| sequence | str | Aligned animo acid sequence from chain, leading gaps trimmed. |
+| offset | int | Offset of sequence in alignment. |
 
 **Example**:
 
