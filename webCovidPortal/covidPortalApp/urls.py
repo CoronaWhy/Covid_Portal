@@ -16,7 +16,6 @@ urlpatterns = [
     url(r'^explorer/', include('explorer.urls')),
 
     # covidPortalApp urls
-    url(r'^covidPortalApp/submitUploadFile/', submitUploadFile, name = 'submitUploadFile'),
     url(r'^covidPortalApp/signupUser/', signupUser, name = 'signupUser'),
     url(r'^covidPortalApp/checkUser/', checkUser, name = 'checkUser'),
     url(r'^covidPortalApp/checkEmail/', checkEmail, name = 'checkEmail'),
@@ -24,24 +23,12 @@ urlpatterns = [
     url(r'^covidPortalApp/resetPassword/', resetPassword, name = 'resetPassword'),
     url(r'^covidPortalApp/emailPasswordLink/', emailPasswordLink, name = 'emailPasswordLink'),
     url(r'^covidPortalApp/logoutUser/', logoutUser, name = 'logoutUser'),
-    url(r'^covidPortalApp/listUploadedFiles/', listUploadedFiles, name = 'listUploadedFiles'),
-    url(r'^covidPortalApp/getDatafile/', getDatafile, name = 'getDatafile'),
-    url(r'^covidPortalApp/saveComment/', saveComment, name = 'saveComment'),
-    url(r'^covidPortalApp/fetchAllComments/', fetchAllComments, name = 'fetchAllComments'),
-    url(r'^covidPortalApp/fetchCommentsByLocation/', fetchCommentsByLocation, name = 'fetchCommentsByLocation'),
-    url(r'^covidPortalApp/deleteDatafile/', deleteDatafile, name = 'deleteDatafile'),
-    url(r'^covidPortalApp/submitAnalysis/', submitAnalysis, name = 'submitAnalysis'),
 
-    url(r'^covidPortalApp/getMutationData/', getMutationData, name = 'getMutationData'),
     url(r'^covidPortalApp/listSequences/', listSequences, name = 'listSequences'),
     url(r'^covidPortalApp/showAlignment/', showAlignment, name = 'showAlignment'),
 
-    url(r'^covidPortalApp/updateDatafileName/', updateDatafileName, name = 'updateDatafileName'),
-    url(r'^covidPortalApp/searchUploadedFolders/', searchUploadedFolders, name = 'searchUploadedFolders'),
     url(r'^covidPortalApp/getUserProfile/', getUserProfile, name = 'getUserProfile'),
     url(r'^covidPortalApp/updateUser/', updateUser, name = 'updateUser'),
-    url(r'^covidPortalApp/getRunningJobs/', getRunningJobs, name = 'getRunningJobs'),
-    url(r'^covidPortalApp/terminateJob/', terminateJob, name = 'terminateJob'),
     url(r'^covidPortalApp/api-token-auth/', obtain_jwt_token),
     url(r'^covidPortalApp/api-token-refresh/', refresh_jwt_token),
 

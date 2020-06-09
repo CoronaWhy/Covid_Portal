@@ -1,19 +1,9 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
-from django.template import RequestContext
-# from django.shortcuts import render_to_response
-from django.shortcuts import render
 from django.http import HttpResponse
 from django.http import JsonResponse
-from django.shortcuts import render
 from django.conf import settings
 
-from rest_framework.authentication import get_authorization_header, BaseAuthentication, TokenAuthentication, SessionAuthentication, BasicAuthentication
-from rest_framework_jwt.authentication import JSONWebTokenAuthentication
-
-from django.core.mail import send_mail
-
-from operator import itemgetter
 import hashlib
 import pandas as pd
 import shutil
@@ -34,18 +24,10 @@ import base64
 from glob import glob
 import jwt
 import datetime
-from rest_framework.authentication import get_authorization_header
-from rest_framework.decorators import api_view, permission_classes, authentication_classes
-from django.contrib.auth import authenticate
 from rest_framework.response import Response
-from rest_framework.status import HTTP_401_UNAUTHORIZED
 from rest_framework.authtoken.models import Token
-from rest_framework import permissions
-from rest_framework.permissions import IsAuthenticated
 import json
 import glob
-import matplotlib.pyplot as plt
-
 from covidPortalApp.models import *
 from covidPortalApp.covidPortalAppObjs import *
 from covidPortalApp.covidPortalAppConstants import *
@@ -57,19 +39,6 @@ from conf import *
 import asyncio, asyncssh, sys
 
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
-# from django.utils import six
-
-class AccountActivationTokenGenerator(PasswordResetTokenGenerator):
-    def _make_hash_value(self, user, timestamp):
-        return str(user.pk)+str(timestamp);
-        # return (
-        #     six.text_type(user.pk) + six.text_type(timestamp) +
-        #     six.text_type(user.profile.email_confirmed)
-        # )
-
-class UploadFileForm(forms.Form):
-    title = forms.CharField(max_length=50)
-    file = forms.FileField()
 
 def monitorJobs(request):
     try:
@@ -254,378 +223,12 @@ def logoutUser(request):
         traceback.print_exc(file=sys.stdout)
     return HttpResponse(json.dumps(userString), content_type="application/json")
 
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def submitUploadFile(request):
-    try:
-        print("begin upload")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-        #jwt.decode(encoded_jwt
-        print(auth)
-        md5 = hashlib.md5()
-        print ( " items = " + str([(k,f) for k, f in request.FILES.items()]))
-        # f = request.FILES["name"]
-        f = request.FILES['file']
-
-        print(" start upload ")
-
-        with open(settings.UPLOAD_FOLDER + str(f.name) , 'wb+') as destination:
-                for chunk in f.chunks():
-                    destination.write(chunk)
-                    md5.update(chunk)
-
-        print(" end upload ")
-
-        chksum = md5.hexdigest()
-        print (chksum)
-
-        if f.name.find("nii.gz") != -1:
-            shutil.move(settings.UPLOAD_FOLDER + str(f.name), settings.UPLOAD_FOLDER + str(chksum) + ".nii.gz")
-        elif f.name.find("tar.gz") != -1:
-            shutil.move(settings.UPLOAD_FOLDER + str(f.name), settings.UPLOAD_FOLDER + str(chksum) + ".tar.gz")
-        elif f.name.find("zip") != -1:
-            shutil.move(settings.UPLOAD_FOLDER + str(f.name), settings.UPLOAD_FOLDER + str(chksum) + ".zip")
-        else:
-            shutil.move(settings.UPLOAD_FOLDER + str(f.name), settings.UPLOAD_FOLDER + str(chksum) )
-
-        print(" moved file ")
-
-        adminUser = User.objects.get(id=user_id)
-        uploadFolder = UploadFolder(name=str(f.name), description = str(f.name), chksum=chksum, user= adminUser, status = "Uploaded", uploadedDate=datetime.datetime.now())
-        uploadFolder.save()
-        outf = open(settings.UPLOAD_FOLDER + str(chksum) + ".user", "w")
-        outf.write(adminUser.username)
-        outf.close()
-
-        print(" created user file ")
-
-        uploadFolderJson = {'id':uploadFolder.id, 'name':uploadFolder.name,'chksum':uploadFolder.chksum,'user':str(uploadFolder.user),'description':uploadFolder.description,
-        'status':uploadFolder.status,
-        'fileName':uploadFolder.fileName,'uploadedDate':uploadFolder.uploadedDate.strftime('%Y-%m-%d'),
-        'analysisProtocol':uploadFolder.analysisProtocol,
-        'fileType':uploadFolder.fileType,
-        'analysisSubmittedDate':uploadFolder.analysisSubmittedDate.strftime('%Y-%m-%d') if uploadFolder.analysisSubmittedDate else '',
-        'rowColor':statusColorMap[uploadFolder.status]}
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return HttpResponse(json.dumps({ }), content_type="application/json")
-    return HttpResponse(json.dumps(uploadFolderJson), content_type="application/json")
-
-def updateDatafileName(request):
-    try:
-        print("update data file name")
-        data = json.loads(request.body.decode('utf-8'))
-
-        datafileName = data["datafileName"]
-        uploadFolderId = int(data["uploadFolderId"])
-
-        uploadFolder = UploadFolder.objects.get(pk = uploadFolderId)
-        uploadFolder.fileName = datafileName
-        uploadFolder.save()
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return HttpResponse(json.dumps({"message":"Failed"}), content_type="application/json")
-    return HttpResponse(json.dumps({"message":"Success"}), content_type="application/json")
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def searchUploadedFolders(request):
-    try:
-        searchString = request.GET.get("searchString","0")
-        print(searchString)
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        userId = int(tokendata['user_id'])
-        print(userId)
-        user = User.objects.get(pk = userId)
-        fileList = UploadFolder.objects.filter(user = user)
-        print(" search = " + searchString)
-        if searchString != '':
-            fileList = [{'name':x.name,'chksum':x.chksum,'user':str(x.user),'description':x.description, 'id':x.id,'status':x.status, 'rowColor':statusColorMap[x.status]} for x in fileList if x.name.find(searchString) != -1]
-        else:
-            fileList = [{'name':x.name,'chksum':x.chksum,'user':str(x.user),'description':x.description, 'id':x.id,'status':x.status, 'rowColor':statusColorMap[x.status]} for x in fileList]
-
-        print(fileList)
-    except:
-        traceback.print_exc(file=sys.stdout)
-    return HttpResponse(json.dumps(fileList), content_type="application/json")
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def listUploadedFiles(request):
-    try:
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        userId = int(tokendata['user_id'])
-        print(userId)
-        user = User.objects.get(pk = userId)
-        fileList = UploadFolder.objects.filter(user = user)
-        fileObjList = fileList
-        fileList = [{'name':x.name,'chksum':x.chksum,'user':str(x.user),'description':x.description, 'id':x.id,'status':x.status, 'rowColor':statusColorMap[x.status], "resultsAvailable":"no"} for x in fileList]
-        for index, fileObj in enumerate(fileList):
-            if os.path.exists("/data/Synology_Scans/Processing/Ants/" + user.username + "/" + fileObj['chksum'] + "/T1/Completed/Brain_Extraction.completed") and os.path.exists("/data/Synology_Scans/Processing/Ants/" + user.username + "/" + fileObj['chksum'] + "/T1/Completed/Prediction.completed"):
-              fileObj["resultsAvailable"] = "yes"
-              fileObj["rowColor"] = statusColorMap["Score Calculated"]
-              fileObjList[index].status = "Score Calculated"
-              if os.path.exists("/data/Synology_Scans/Processing/Ants/" + user.username + "/" + fileObj['chksum'] + "/T1/Completed/ROI.completed"):
-                fileObj["rowColor"] = statusColorMap["Analysis Completed"]
-                fileObjList[index].status = "Analysis Completed"
-              fileObjList[index].save()
-    except:
-        traceback.print_exc(file=sys.stdout)
-    return HttpResponse(json.dumps(fileList), content_type="application/json")
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def getRunningJobs(request):
-    try:
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        userId = int(tokendata['user_id'])
-        print(userId)
-        user = User.objects.get(pk = userId)
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-    return HttpResponse(json.dumps(fileList), content_type="application/json")
-
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def deleteDatafile(request):
-    try:
-        data = json.loads(request.body.decode('utf-8'))
-        datafileId = data["datafileId"]
-        print(" datafileId " + datafileId)
-        uploadFolder = UploadFolder.objects.get(pk = int(datafileId) )
-        if os.path.exists("/data/Synology_Scans/Processing/Ants/" + uploadFolder.user.username + "/" + uploadFolder.chksum ):
-            shutil.rmtree("/data/Synology_Scans/Processing/Ants/" + uploadFolder.user.username + "/" + uploadFolder.chksum)
-        uploadFolder.delete()
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"File delete failed."})
-
-    return JsonResponse({"message":"File deleted."})
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def getDatafile(request):
-    try:
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-
-        submitUser = User.objects.get(id=user_id)
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-    return JsonResponse(uploadFolderJSON)
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def fetchAllComments(request):
-    try:
-
-        print(" ******* in fetch comments ")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-
-        submitUser = User.objects.get(id=user_id)
-
-        data = json.loads(request.body.decode('utf-8'))
-
-        uploadFolderId = data["uploadFolderId"]
-        uploadFolder = UploadFolder.objects.get(pk = int(uploadFolderId) )
-
-        comments = Comment.objects.filter(uploadFolder= uploadFolder)
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"Error in fetching comment."})
-
-    return JsonResponse(commentsJSON, safe=False)
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def fetchCommentsByLocation(request):
-    try:
-
-        print(" ******* in fetch comments ")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-
-        submitUser = User.objects.get(id=user_id)
-
-        data = json.loads(request.body.decode('utf-8'))
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"Error in fetching comment."})
-
-    return JsonResponse(commentsJSON)
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def saveComment(request):
-    try:
-
-        print(" ******* in save comment ")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-
-        submitUser = User.objects.get(id=user_id)
-
-        data = json.loads(request.body.decode('utf-8'))
-
-        uploadFolderId = data["uploadFolderId"]
-        uploadFolder = UploadFolder.objects.get(pk = int(uploadFolderId) )
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"Error in saving comment."})
-
-    return JsonResponse({"message":"Comment saved."})
-
-def terminateJob(request):
-    try:
-
-        print(" ******* in submit analysis 0000000000000000 ")
-        print("begin upload")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-
-        submitUser = User.objects.get(id=user_id)
-
-        data = json.loads(request.body.decode('utf-8'))
-        datafileId = data["datafileId"]
-
-        outf = open(settings.UPLOAD_FOLDER + uploadFolder.chksum + ".analysis", "w")
-        outf.write(analysisProtocol)
-        outf.close()
-
-        uploadFolder.status = "Analysis Terminated"
-        # uploadFolder.analysisSubmittedDate = datetime.datetime.now()
-
-        uploadFolder.save()
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"Error in job termination.", "uploadFolder":{}})
-
-    return JsonResponse({"message":"Job successfully terminated.", "uploadFolder":uploadFolderJSON})
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-def submitAnalysis(request):
-    try:
-
-        print(" ******* in submit analysis 0000000000000000 ")
-        print("begin upload")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"Error in job submission.", "uploadFolder":{}})
-
-    return JsonResponse({"message":"Job successfully submitted.", "uploadFolder":uploadFolderJSON})
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-# @api_view(['GET', 'POST'])
-# @authentication_classes([TokenAuthentication ])
-# @permission_classes([IsAuthenticated])
-def getMutationData(request):
-    mutationData = {}
-    try:
-        print (" in overlay ")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-        df = pf.from_csv()
-    except:
-        traceback.print_exc(file=sys.stdout)
-        return JsonResponse({"message":"Error in job submission.", "uploadFolder":{}})
-
-    return JsonResponse({"message":"Job successfully submitted.", "uploadFolder":uploadFolderJSON})
-
-def getOverlayData(request):
-    brainViewerData = {}
-    try:
-        print (" in overlay ")
-    except:
-        traceback.print_exc(file=sys.stdout)
-
-    return HttpResponse(json.dumps(brainViewerData), content_type='application/json')
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-# @api_view(['GET', 'POST'])
-# @authentication_classes([TokenAuthentication ])
-# @permission_classes([IsAuthenticated])
-
-def getFullScreenOverlayData(request):
-    brainViewerData = {}
-    try:
-        print (" in full screen overlay ")
-        auth = get_authorization_header(request).split()
-        tokendata = auth[1].decode("utf-8")
-
-        print(tokendata)
-        tokendata = jwt.decode(auth[1].decode("utf-8"),settings.SECRET_KEY, algorithms=['HS256'])
-        user_id = int(tokendata['user_id'])
-    except:
-        traceback.print_exc(file=sys.stdout)
-
-    return HttpResponse(json.dumps(brainViewerData), content_type='application/json')
-
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-# @api_view(['GET', 'POST'])
-# @authentication_classes([TokenAuthentication ])
-# @permission_classes([IsAuthenticated])
 def listSequences(request):
     sequenceObjList = {}
     sequenceResultObj = {}
     try:
-        # /home/siddhartha/Downloads/sequence.csv
-        # /home/siddhartha/Downloads/sequencerecord.csv
         df = pd.read_csv('data/db_inserts/sequencerecord.csv', index_col=None, na_filter=False)
-        # df = df[:6]
         print(df.columns)
-        # df.fillna(" ").replace(":"," ")
-        # accession	organism	collection_date	country	host	isolation_source	coded_by	protein_id	taxon_id	isolate
-
         sequenceObjList = [
         {"id":row["id"], "accession":row["accession"],
          "organism":row["organism"], "collection_date":row["collection_date"], "country":row["country"], "host":row["host"], "isolation_source":row["isolation_source"], "coded_by":row["coded_by"],
@@ -638,33 +241,12 @@ def listSequences(request):
         traceback.print_exc(file=sys.stdout)
     return HttpResponse(json.dumps(sequenceResultObj), content_type='application/json')
 
-# @api_view([ "GET", "POST"])
-# @permission_classes((IsAuthenticated, ))
-# @api_view(['GET', 'POST'])
-# @authentication_classes([TokenAuthentication ])
-# @permission_classes([IsAuthenticated])
 def showAlignment(request):
     alignment = {}
     alignmentObjList = []
     try:
 
         print (" alignment ")
-
-
-
-
-# .residue_C, .residue_M { background: rgba(230,230,0, 0.5); }
-# .residue_R, .residue_K { background: rgba(20,90,255, 0.5); }
-# .residue_S, .residue_T { background: rgba(250,150,0, 0.5); }
-# .residue_F, .residue_Y { background: rgba(50,50,170, 0.5); }
-# .residue_N, .residue_Q { background: rgba(0,220,220, 0.5); }
-# .residue_G { background: rgba(235,235,235, 0.5); }
-# .residue_L, .residue_V, .residue_I { background: rgba(15,130,15, 0.5); }
-# .residue_A { background: rgba(200,200,200, 0.5); }
-# .residue_W { background: rgba(180,90,180, 0.5); }
-# .residue_H { background: rgba(130,130,210, 0.5); }
-# .residue_P { background: rgba(220,150,130, 0.5); }
-
 
         residueColorMap = {
             'D':'rgba(230,10,10, 0.5)',
@@ -694,17 +276,20 @@ def showAlignment(request):
                  "first": "--------MFVFLVLLP--------------LVSSQCVNLT---------TRTQ-------LPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFH--AIHVSGTNG-------------TKRFDNPVLPFNDGVYFASTEKSNI-------------------IRGWIFGTTLDSKTQSLLI--VN--------------------NATNVVIKVCE---------FQFCNDPFLGVYYHKN-NKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGN-F--KNLREFVFKNIDGYFKIYSKHTPINLV----RDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTP----GDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRF-PNITN-LCPFGEVF--NATRFASVYAWNRKRISNCVADYSVLYNS-ASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKV---------------------------GGNYNYLYRLFRKSNLKPFERDISTEIYQ-------------------AGSTPCNGVEGFNCYF---------------------------PLQSY--------------------------GFQ-----------------------------------P-----TNGVGYQPYRVVVLSFELLHAPATVCGPK-K-----STNLVKNKCVNFNFNGLTGTGVLTE-SNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYST-----GSNVFQTRAGCLIGAEHVNN----SYECDIPIGAGICASYQTQTNSPRRA-RSVA-----SQSIIAYTMSLG-AENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIY--KTPPIK----DFGGFNFSQILPDPS-----------KPSKRSFIEDLLFNKVTLADAGFIKQYGDCLG---DIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHD---GKAHFPREGVFVSNGT----------",
                  "second": "MKIL---IFAFLANLAK---------------AQEGCGIIS---------RKPQ-------PKMAQVSSSRRGVYYNDDIFRSDVLHLTQDYFLPFDSNLTQYF--SLNVD-SDR-------------YTYFDNPILDFGDGVYFAATEKSNV-------------------IRGWIFGSSFDNTTQSAVI--VN--------------------NSTHIIIRVCN---------FNLCKEPMYTVSRG---TQ----QNAWVYQSAFNCTYDRVEKSFQLDTTP-KTGNF--KDLREYVFKNRDGFLSVYQTYTAVNLP----RGLPTGFSVLKPILKLPFGINITSYRVVMAMFSQ----------TTSNFLPESAAYYVGNLKYSTFMLRFNENGTITDAVDCSQNPLAELKCTIKNFNVDKGIYQTSNFRVSPTQEVIRF-PNITN-RCPFDKVF--NATRFPNVYAWERTKISDCVADYTVLYNS-TSFSTFKCYGVSPSKLIDLCFTSVYADTFLIRSSEVRQVAPGETGVIADYNYKLPDDFTGCVIAWNTAKHDT--------------------------------GNYYYRSHRKTKLKPFERDLSSDD--------------------------------GNGVY---------------------------TLSTY--------------------------DFN-----------------------------------P-----NVPVAYQATRVVVLSFELLNAPATVCGPK-L-----STELVKNQCVNFNFNGLKGTGVLTS-SSKRFQSFQQFGRDTSDFTDSVRDPQTLEILDISPCSFGGVSVITPGTNASSEVAVLYQDVNCTDVPTAIRADQLTPAWRVYST-----GVNVFQTQAGCLIGAEHVNA----SYECDIPIGAGICASYHTASV----L-RSTG-----QKSIVAYTMSLG-AENSIAYANNSIAIPTNFSISVTTEVMPVSMAKTAVDCTMYICGDSLECSNLLLQYGSFCTQLNRALTGIAIEQDKNTQEVFAQVKQMY--KTPAIK----DFGGFNFSQILPDPS-----------KPTKRSFIEDLLFNKVTLADAGFMKQYGDCLG---DVSARDLICAQKFNGLTVLPPLLTDDMVAAYTAALVSGTATAGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQESLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPSQEKNFTTAPAICHE---GKAYFPREGVFVSNGT----------",
                  'third': "----MFIFLLFLTLTSG--------------SDLDRCTTFD---------DVQA-------PNYTQHTSSMRGVYYPDEIFRSDTLYLTQDLFLPFYSNVTGFH--TINH--------------------TFGNPVIPFKDGIYFAATEKSNV-------------------VRGWVFGSTMNNKSQSVII--IN--------------------NSTNVVIRACN---------FELCDNPFFAVSKP-M-GT---QTHTMIFDNAFNCTFEYISDAFSLDVSE-KSGNF--KHLREFVFKNKDGFLYVYKGYQPIDVV----RDLPSGFNTLKPIFKLPLGINITNFRAILTAFSP----------AQDIWGTSAAAYFVGYLKPTTFMLKYDENGTITDAVDCSQNPLAELKCSVKSFEIDKGIYQTSNFRVVPSGDVVRF-PNITN-LCPFGEVF--NATKFPSVYAWERKKISNCVADYSVLYNS-TFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATS---------------------------TGNYNYKYRYLRHGKLRPFERDISNVPFS-------------------PDGKPCT-PPALNCYW---------------------------PLNDY--------------------------GFY-----------------------------------T-----TTGIGYQPYRVVVLSFELLNAPATVCGPK-L-----STDLIKNQCVNFNFNGLTGTGVLTP-SSKRFQPFQQFGRDVSDFTDSVRDPKTSEILDISPCSFGGVSVITPGTNASSEVAVLYQDVNCTDVSTAIHADQLTPAWRIYST-----GNNVFQTQAGCLIGAEHVDT----SYECDIPIGAGICASYHTVSL----L-RSTS-----QKSIVAYTMSLG-ADSSIAYSNNTIAIPTNFSISITTEVMPVSMAKTSVDCNMYICGDSTECANLLLQYGSFCTQLNRALSGIAAEQDRNTREVFAQVKQMY--KTPTLK----YFGGFNFSQILPDPL-----------KPTKRSFIEDLLFNKVTLADAGFMKQYGECLG---DINARDLICAQKFNGLTVLPPLLTDDMIAAYTAALVSGTATAGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQAAPHGVVFLHVTYVPSQERNFTTAPAICHE---GKAYFPREGVFVFNGT----------",
-
-
+                 "first1": "--------MFVFLVLLP--------------LVSSQCVNLT---------TRTQ-------LPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFH--AIHVSGTNG-------------TKRFDNPVLPFNDGVYFASTEKSNI-------------------IRGWIFGTTLDSKTQSLLI--VN--------------------NATNVVIKVCE---------FQFCNDPFLGVYYHKN-NKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGN-F--KNLREFVFKNIDGYFKIYSKHTPINLV----RDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTP----GDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRF-PNITN-LCPFGEVF--NATRFASVYAWNRKRISNCVADYSVLYNS-ASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKV---------------------------GGNYNYLYRLFRKSNLKPFERDISTEIYQ-------------------AGSTPCNGVEGFNCYF---------------------------PLQSY--------------------------GFQ-----------------------------------P-----TNGVGYQPYRVVVLSFELLHAPATVCGPK-K-----STNLVKNKCVNFNFNGLTGTGVLTE-SNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYST-----GSNVFQTRAGCLIGAEHVNN----SYECDIPIGAGICASYQTQTNSPRRA-RSVA-----SQSIIAYTMSLG-AENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIY--KTPPIK----DFGGFNFSQILPDPS-----------KPSKRSFIEDLLFNKVTLADAGFIKQYGDCLG---DIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHD---GKAHFPREGVFVSNGT----------",
+                 "second1": "MKIL---IFAFLANLAK---------------AQEGCGIIS---------RKPQ-------PKMAQVSSSRRGVYYNDDIFRSDVLHLTQDYFLPFDSNLTQYF--SLNVD-SDR-------------YTYFDNPILDFGDGVYFAATEKSNV-------------------IRGWIFGSSFDNTTQSAVI--VN--------------------NSTHIIIRVCN---------FNLCKEPMYTVSRG---TQ----QNAWVYQSAFNCTYDRVEKSFQLDTTP-KTGNF--KDLREYVFKNRDGFLSVYQTYTAVNLP----RGLPTGFSVLKPILKLPFGINITSYRVVMAMFSQ----------TTSNFLPESAAYYVGNLKYSTFMLRFNENGTITDAVDCSQNPLAELKCTIKNFNVDKGIYQTSNFRVSPTQEVIRF-PNITN-RCPFDKVF--NATRFPNVYAWERTKISDCVADYTVLYNS-TSFSTFKCYGVSPSKLIDLCFTSVYADTFLIRSSEVRQVAPGETGVIADYNYKLPDDFTGCVIAWNTAKHDT--------------------------------GNYYYRSHRKTKLKPFERDLSSDD--------------------------------GNGVY---------------------------TLSTY--------------------------DFN-----------------------------------P-----NVPVAYQATRVVVLSFELLNAPATVCGPK-L-----STELVKNQCVNFNFNGLKGTGVLTS-SSKRFQSFQQFGRDTSDFTDSVRDPQTLEILDISPCSFGGVSVITPGTNASSEVAVLYQDVNCTDVPTAIRADQLTPAWRVYST-----GVNVFQTQAGCLIGAEHVNA----SYECDIPIGAGICASYHTASV----L-RSTG-----QKSIVAYTMSLG-AENSIAYANNSIAIPTNFSISVTTEVMPVSMAKTAVDCTMYICGDSLECSNLLLQYGSFCTQLNRALTGIAIEQDKNTQEVFAQVKQMY--KTPAIK----DFGGFNFSQILPDPS-----------KPTKRSFIEDLLFNKVTLADAGFMKQYGDCLG---DVSARDLICAQKFNGLTVLPPLLTDDMVAAYTAALVSGTATAGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQESLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPSQEKNFTTAPAICHE---GKAYFPREGVFVSNGT----------",
+                 'third1': "----MFIFLLFLTLTSG--------------SDLDRCTTFD---------DVQA-------PNYTQHTSSMRGVYYPDEIFRSDTLYLTQDLFLPFYSNVTGFH--TINH--------------------TFGNPVIPFKDGIYFAATEKSNV-------------------VRGWVFGSTMNNKSQSVII--IN--------------------NSTNVVIRACN---------FELCDNPFFAVSKP-M-GT---QTHTMIFDNAFNCTFEYISDAFSLDVSE-KSGNF--KHLREFVFKNKDGFLYVYKGYQPIDVV----RDLPSGFNTLKPIFKLPLGINITNFRAILTAFSP----------AQDIWGTSAAAYFVGYLKPTTFMLKYDENGTITDAVDCSQNPLAELKCSVKSFEIDKGIYQTSNFRVVPSGDVVRF-PNITN-LCPFGEVF--NATKFPSVYAWERKKISNCVADYSVLYNS-TFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATS---------------------------TGNYNYKYRYLRHGKLRPFERDISNVPFS-------------------PDGKPCT-PPALNCYW---------------------------PLNDY--------------------------GFY-----------------------------------T-----TTGIGYQPYRVVVLSFELLNAPATVCGPK-L-----STDLIKNQCVNFNFNGLTGTGVLTP-SSKRFQPFQQFGRDVSDFTDSVRDPKTSEILDISPCSFGGVSVITPGTNASSEVAVLYQDVNCTDVSTAIHADQLTPAWRIYST-----GNNVFQTQAGCLIGAEHVDT----SYECDIPIGAGICASYHTVSL----L-RSTS-----QKSIVAYTMSLG-ADSSIAYSNNTIAIPTNFSISITTEVMPVSMAKTSVDCNMYICGDSTECANLLLQYGSFCTQLNRALSGIAAEQDRNTREVFAQVKQMY--KTPTLK----YFGGFNFSQILPDPL-----------KPTKRSFIEDLLFNKVTLADAGFMKQYGECLG---DINARDLICAQKFNGLTVLPPLLTDDMIAAYTAALVSGTATAGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQAAPHGVVFLHVTYVPSQERNFTTAPAICHE---GKAYFPREGVFVFNGT----------",
+                 "first2": "--------MFVFLVLLP--------------LVSSQCVNLT---------TRTQ-------LPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWFH--AIHVSGTNG-------------TKRFDNPVLPFNDGVYFASTEKSNI-------------------IRGWIFGTTLDSKTQSLLI--VN--------------------NATNVVIKVCE---------FQFCNDPFLGVYYHKN-NKSWMESEFRVYSSANNCTFEYVSQPFLMDLEGKQGN-F--KNLREFVFKNIDGYFKIYSKHTPINLV----RDLPQGFSALEPLVDLPIGINITRFQTLLALHRSYLTP----GDSSSGWTAGAAAYYVGYLQPRTFLLKYNENGTITDAVDCALDPLSETKCTLKSFTVEKGIYQTSNFRVQPTESIVRF-PNITN-LCPFGEVF--NATRFASVYAWNRKRISNCVADYSVLYNS-ASFSTFKCYGVSPTKLNDLCFTNVYADSFVIRGDEVRQIAPGQTGKIADYNYKLPDDFTGCVIAWNSNNLDSKV---------------------------GGNYNYLYRLFRKSNLKPFERDISTEIYQ-------------------AGSTPCNGVEGFNCYF---------------------------PLQSY--------------------------GFQ-----------------------------------P-----TNGVGYQPYRVVVLSFELLHAPATVCGPK-K-----STNLVKNKCVNFNFNGLTGTGVLTE-SNKKFLPFQQFGRDIADTTDAVRDPQTLEILDITPCSFGGVSVITPGTNTSNQVAVLYQDVNCTEVPVAIHADQLTPTWRVYST-----GSNVFQTRAGCLIGAEHVNN----SYECDIPIGAGICASYQTQTNSPRRA-RSVA-----SQSIIAYTMSLG-AENSVAYSNNSIAIPTNFTISVTTEILPVSMTKTSVDCTMYICGDSTECSNLLLQYGSFCTQLNRALTGIAVEQDKNTQEVFAQVKQIY--KTPPIK----DFGGFNFSQILPDPS-----------KPSKRSFIEDLLFNKVTLADAGFIKQYGDCLG---DIAARDLICAQKFNGLTVLPPLLTDEMIAQYTSALLAGTITSGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQDSLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPAQEKNFTTAPAICHD---GKAHFPREGVFVSNGT----------",
+                 "second2": "MKIL---IFAFLANLAK---------------AQEGCGIIS---------RKPQ-------PKMAQVSSSRRGVYYNDDIFRSDVLHLTQDYFLPFDSNLTQYF--SLNVD-SDR-------------YTYFDNPILDFGDGVYFAATEKSNV-------------------IRGWIFGSSFDNTTQSAVI--VN--------------------NSTHIIIRVCN---------FNLCKEPMYTVSRG---TQ----QNAWVYQSAFNCTYDRVEKSFQLDTTP-KTGNF--KDLREYVFKNRDGFLSVYQTYTAVNLP----RGLPTGFSVLKPILKLPFGINITSYRVVMAMFSQ----------TTSNFLPESAAYYVGNLKYSTFMLRFNENGTITDAVDCSQNPLAELKCTIKNFNVDKGIYQTSNFRVSPTQEVIRF-PNITN-RCPFDKVF--NATRFPNVYAWERTKISDCVADYTVLYNS-TSFSTFKCYGVSPSKLIDLCFTSVYADTFLIRSSEVRQVAPGETGVIADYNYKLPDDFTGCVIAWNTAKHDT--------------------------------GNYYYRSHRKTKLKPFERDLSSDD--------------------------------GNGVY---------------------------TLSTY--------------------------DFN-----------------------------------P-----NVPVAYQATRVVVLSFELLNAPATVCGPK-L-----STELVKNQCVNFNFNGLKGTGVLTS-SSKRFQSFQQFGRDTSDFTDSVRDPQTLEILDISPCSFGGVSVITPGTNASSEVAVLYQDVNCTDVPTAIRADQLTPAWRVYST-----GVNVFQTQAGCLIGAEHVNA----SYECDIPIGAGICASYHTASV----L-RSTG-----QKSIVAYTMSLG-AENSIAYANNSIAIPTNFSISVTTEVMPVSMAKTAVDCTMYICGDSLECSNLLLQYGSFCTQLNRALTGIAIEQDKNTQEVFAQVKQMY--KTPAIK----DFGGFNFSQILPDPS-----------KPTKRSFIEDLLFNKVTLADAGFMKQYGDCLG---DVSARDLICAQKFNGLTVLPPLLTDDMVAAYTAALVSGTATAGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKLIANQFNSAIGKIQESLSSTASALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQSAPHGVVFLHVTYVPSQEKNFTTAPAICHE---GKAYFPREGVFVSNGT----------",
+                 'third2': "----MFIFLLFLTLTSG--------------SDLDRCTTFD---------DVQA-------PNYTQHTSSMRGVYYPDEIFRSDTLYLTQDLFLPFYSNVTGFH--TINH--------------------TFGNPVIPFKDGIYFAATEKSNV-------------------VRGWVFGSTMNNKSQSVII--IN--------------------NSTNVVIRACN---------FELCDNPFFAVSKP-M-GT---QTHTMIFDNAFNCTFEYISDAFSLDVSE-KSGNF--KHLREFVFKNKDGFLYVYKGYQPIDVV----RDLPSGFNTLKPIFKLPLGINITNFRAILTAFSP----------AQDIWGTSAAAYFVGYLKPTTFMLKYDENGTITDAVDCSQNPLAELKCSVKSFEIDKGIYQTSNFRVVPSGDVVRF-PNITN-LCPFGEVF--NATKFPSVYAWERKKISNCVADYSVLYNS-TFFSTFKCYGVSATKLNDLCFSNVYADSFVVKGDDVRQIAPGQTGVIADYNYKLPDDFMGCVLAWNTRNIDATS---------------------------TGNYNYKYRYLRHGKLRPFERDISNVPFS-------------------PDGKPCT-PPALNCYW---------------------------PLNDY--------------------------GFY-----------------------------------T-----TTGIGYQPYRVVVLSFELLNAPATVCGPK-L-----STDLIKNQCVNFNFNGLTGTGVLTP-SSKRFQPFQQFGRDVSDFTDSVRDPKTSEILDISPCSFGGVSVITPGTNASSEVAVLYQDVNCTDVSTAIHADQLTPAWRIYST-----GNNVFQTQAGCLIGAEHVDT----SYECDIPIGAGICASYHTVSL----L-RSTS-----QKSIVAYTMSLG-ADSSIAYSNNTIAIPTNFSISITTEVMPVSMAKTSVDCNMYICGDSTECANLLLQYGSFCTQLNRALSGIAAEQDRNTREVFAQVKQMY--KTPTLK----YFGGFNFSQILPDPL-----------KPTKRSFIEDLLFNKVTLADAGFMKQYGECLG---DINARDLICAQKFNGLTVLPPLLTDDMIAAYTAALVSGTATAGWTFGAGAALQIPFAMQMAYRFNGIGVTQNVLYENQKQIANQFNKAISQIQESLTTTSTALGKLQDVVNQNAQALNTLVKQLSSNFGAISSVLNDILSRLDKVEAEVQIDRLITGRLQSLQTYVTQQLIRAAEIRASANLAATKMSECVLGQSKRVDFCGKGYHLMSFPQAAPHGVVFLHVTYVPSQERNFTTAPAICHE---GKAYFPREGVFVFNGT----------",
 
                 }
-        for k,v in alignmentMap.items():
 
+        for k,v in alignmentMap.items():
             residueObjList = [{"residueValue":x,"residueColor":residueColorMap[x], "residuePosition":i} for i,x in enumerate(v)]
             alignmentObj = {"label":k,"residueObjList":residueObjList}
             alignmentObjList.append(alignmentObj)
             print (alignmentObjList)
-
 
     except:
         traceback.print_exc(file=sys.stdout)

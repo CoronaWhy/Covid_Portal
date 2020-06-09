@@ -1,0 +1,62 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+  <br/>
+	<br/>
+	<br/>
+
+	<div  *ngIf="!displayAlignmentObjList" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
+		Loading ..
+	</div>
+	<div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+    <table width="2000">
+      <tr style="text-align:center;">
+        <td width="10%" >
+
+          <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
+          <!-- <div style="background-color:blue;inline-block;height:100px;width:15px;text-align:center">&nbsp;
+          </div>  -->
+        </td>
+        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+          <div *ngIf="displayAlignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
+    			    <div style="inline-block;position:relative;" *ngFor="let displayAlignmentObj of displayAlignmentObjList" id="{{displayAlignmentObj.label}}" >
+    						<!-- <div style="inline-block;;float:left; border: 1px solid red; margin-right: 5px;"> -->
+    							<div style="inline-block;;float:left; margin-right: 5px;width:60px;text-align:left;">
+    							{{displayAlignmentObj.label}}
+    						</div>
+    						<div style="width:15px;display: inline-block;float:left;font-weight:bold;opacity: 0.8;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"
+                (click)="handleResidueClick(residueObj.residueLabel, residueObj.position);">
+    							{{residueObj.residueValue}}
+    						</div>
+    					</div>
+    			</div>
+    			<div *ngIf="displayAlignmentObjList?.length == 0">
+    				<b>No data to display.</b>
+    			</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br/>
+  <div style="float:clear;">
+
+    <div style=" max-width: 2000px;" *ngIf="displayAlignmentObjList">
+        Begin position:&nbsp;
+        <!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
+        <div class="slidecontainer" style="float:left;">
+          <input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
+          <div>Slider Value: {{positionSliderValue}}</div>
+        </div>&nbsp;
+            <!-- <div class="row" style="float:clear;">
+              <br/>
+              <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider>
+              <br/>
+            </div> -->
+    </div>
+
+<!--
+    </div> -->
+
+
+	</div>
+</div>

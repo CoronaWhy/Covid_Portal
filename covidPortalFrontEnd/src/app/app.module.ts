@@ -52,9 +52,9 @@ import { LoginComponent } from './login/login.component';
 
 import { LoginModule } from './login/login.module';
 
-import {
-  AgmCoreModule
-} from '@agm/core';
+// import {
+//   AgmCoreModule
+// } from '@agm/core';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -86,9 +86,9 @@ export function createTranslateLoader(http: HttpClient) {
     ReactiveFormsModule,
     RouterModule,
     AppRoutingModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
+    // AgmCoreModule.forRoot({
+    //   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
+    // })
   ],
   entryComponents: [
        HelpModalComponent,
