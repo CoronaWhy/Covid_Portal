@@ -291,7 +291,6 @@ def showInitialAlignment(request):
         selectedAccessions.extend([x.accession for x in additionalSequenceRecords])
 
         sequences.extend(list(Sequence.objects.filter(sequence_record__in = additionalSequenceRecords, alignment = alignment) ) )
-
         for sequence in sequences:
 
             sequenceString = sequence.sequence
@@ -306,9 +305,13 @@ def showInitialAlignment(request):
 
         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
 
+        # nomenclature = Nomenclature.objects.filter(accession__in = selectedAccessions, alignment = alignment)
+
         alignmentResultObj["alignmentObjList"] = alignmentObjList
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["selectedAccessions"] = selectedAccessions
+        # alignmentResultObj["nomenclature"] = nomenclature
+
 
         print (sequenceResultObj)
 

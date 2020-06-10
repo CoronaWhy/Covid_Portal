@@ -16,12 +16,14 @@
 			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="!showFiltersFlag">Show Filters&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i>
 			</button>&nbsp;
 		</div>
-		<div id="spacerDiv" *ngIf="showFiltersFlag">
-			<!-- <br/> -->
+		<div id="spacerDiv" *ngIf="showFiltersFlag" class= "row" style="float:clear;">
+
+    	<br/>
 		</div>
+  </div>
 <br/>
 <br/>
-		<div id="paramsDiv" *ngIf="showFiltersFlag" style="border: 2px dashed;padding:5px;">
+		<div id="paramsDiv" *ngIf="showFiltersFlag" style="border: 2px dashed;padding:20px;">
       Filters
       <ngb-tabset type="pills" [activeId]="activeTabTitle">
 
@@ -54,47 +56,31 @@
           <ng-template ngbTabContent>
  -->
 
-            <div class="row" style="float:clear;">
+            <div class="row" style="float:clear;overflow: scroll;">
 
                 <div *ngIf="sequenceResultObj.sequenceObjList?.length > 0">
-
-                  <table>
-                    <thead>
-
-                    <tr>
-                      <th >
-                        Select
-                      </th>
-                      <th *ngFor="let column of sequenceResultObj.sequenceTablecolumns">
-                      </th>
-                    </tr>
-                  </thead>
-
-                    <tbody>
-                    <tr *ngFor="let sequenceObj of sequenceResultObj.sequenceObjList">
-                      <td >
-                        <input type="checkbox" [checked] = "sequenceObj.isSelected" [(ngModel)]="sequenceObj.isSelected" [ngModelOptions]="{standalone: true}" >&nbsp;
-
-                      </td>
-                      <td >
-                        {{sequenceObj.accession}}
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-
-
-                  <div >
+                  <!-- <div  class="btn-group">
                     <button   id="button_0" style = "background-color:#90EE7F;" (click)="submitSequences();"  >Submit&nbsp;</button>
-                  </div>&nbsp;
-                  <!-- <div style="display: inline-block;float:left;" *ngFor="let selectedAccession of selectedAccessions">
-                    {{selectedAccession}}
-                  </div> -->
+                  </div>&nbsp; -->
 
-                  <br/>
+                  <!-- <br/> -->
 
-                  <ngx-datatable class="material" [rows]="sequenceResultObj.sequenceObjList" [columns] = "sequenceResultObj.sequenceTablecolumns" [columnMode]="force" [headerHeight]="50" [footerHeight]="50"
-                    [rowHeight]="50" [scrollbarV]="true" [limit]="10">
+                  <ngx-datatable
+                  class="material"
+                   [rows]="sequenceResultObj.sequenceObjList"
+                    [columns] = "sequenceResultObj.sequenceTablecolumns"
+                    [columnMode]="force"
+                    [headerHeight]="50"
+                    [footerHeight]="50"
+                    [rowHeight]="50"
+                    [scrollbarV]="true"
+                    [limit]="10"
+
+
+                    [loadingIndicator]="isLoading"
+                    [scrollbarV]="true"
+
+                    >
 
                     <ngx-datatable-column name="Select">
                       <ng-template let-row="row" ngx-datatable-cell-template>
@@ -204,6 +190,9 @@
     </ng-template>
 
     </div>
+
+    <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+
     <table width="2000">
       <tr style="text-align:center;">
         <td width="10%" >

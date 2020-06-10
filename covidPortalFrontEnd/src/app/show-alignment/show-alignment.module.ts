@@ -8,13 +8,16 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
 // import { BrowserModule } from '@angular/platform-browser';
 import { Ng5SliderModule } from 'ng5-slider';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
 @NgModule({
     imports: [CommonModule,
               ShowAlignmentRoutingModule,
               FormsModule,
               ReactiveFormsModule,
               NgbModule,
-              Ng5SliderModule
+              Ng5SliderModule,
+              NgxDatatableModule
               // BrowserModule,
               // ReactiveFormsModule
             ],
