@@ -108,7 +108,7 @@ An array of:
 ### Sequence
 
 #### Usage
-`explorer/sequencerecord?mesh_id=[MESH ID]&alignment=[ALIGNMENT NAME]&accession=[COMMA-SEPARATED ACCESSION NUMBERS]`
+`explorer/sequences?mesh_id=[MESH ID]&alignment=[ALIGNMENT NAME]&accession=[COMMA-SEPARATED ACCESSION NUMBERS]`
 
 **Example**: http://localhost:8000/explorer/sequences?mesh_id=D064370&alignment=20200505&accession=P15777.1%2CABP38295.1%2CABP38267.1%2CP25190.1%2CP25191.1%2CQ9QAQ8.1%2C
 
