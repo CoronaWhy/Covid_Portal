@@ -6,6 +6,7 @@ import { Datafile, UploadFolder } from '../models/datafile';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../models/alignment';
+import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
 
@@ -43,6 +44,18 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     indexValue:number;
     maxVerticalSliderValue:number;
     verticalSliderValue:number;
+    showFiltersFlag:boolean;
+    sequences:SequenceObj[];
+    sequenceResultObj:SequenceResultObj;
+
+    showHideFilters(){
+      if(this.showFiltersFlag ){
+        this.showFiltersFlag  = false;
+      }
+      else{
+        this.showFiltersFlag  = true;
+      }// if flag
+    }
 
     setVerticalSliderValue(event){
       let verticalSlider = document.getElementById('verticalSlider') as HTMLInputElement;
@@ -77,6 +90,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
         console.log(this.selectedAccessions);
       })
 
+      this.showFiltersFlag = false;
       this.rowNum = 0;
       this.indexValue = 0;
       this.message = "";
@@ -88,9 +102,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
       this.maxVerticalSliderValue = 10;
       this.verticalSliderValue = 10;
 
-      this.showAlignmentService.showAlignment().then(alignmentObjList => {
+      this.showAlignmentService.showAlignment().then(alignmentResult => {
          // console.log(alignmentObjList);
-         this.alignmentObjList = alignmentObjList;
+         this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
+         this.alignmentObjList = alignmentResult.alignmentObjList;
+         this.sequenceResultObj = alignmentResult.sequenceResultObj;
+         console.log(this.sequenceResultObj);
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
          for (let i = 0; i < this.alignmentObjList.length; i++){
            if (i == 0){

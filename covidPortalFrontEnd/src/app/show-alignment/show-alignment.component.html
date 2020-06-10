@@ -9,6 +9,201 @@
 		Loading ..
 	</div>
 	<div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+
+		<div  class="btn-group">
+			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="showFiltersFlag">Hide Filters&nbsp;<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+				</button>&nbsp;
+			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="!showFiltersFlag">Show Filters&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</button>&nbsp;
+		</div>
+		<div id="spacerDiv" *ngIf="showFiltersFlag">
+			<!-- <br/> -->
+		</div>
+<br/>
+<br/>
+		<div id="paramsDiv" *ngIf="showFiltersFlag" style="border: 2px dashed;padding:5px;">
+      Filters
+      <ngb-tabset type="pills" [activeId]="activeTabTitle">
+
+      <ngb-tab title="Sequences" id="sequencesId" name="sequencesDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="sequencesTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+      <ngb-tab title="Epitopes" id="epitopesId" name="epitopesDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="epitopesTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+    </ngb-tabset>
+
+    <!-- mri qc tabset -->
+    <ng-template #sequencesTabset>
+
+      <!-- <ngb-tabset type="pills" [activeId]="activeTabTitle">
+
+        <ngb-tab *ngFor = "let sequenceHostObj of sequenceHostObjList; let selectedIndex = index" [attr.data-index]="selectedStatsImageIndex" (click) = "setSelectedStatsImage(selectedStatsImageIndex)"
+                  title="{{statsImageObj.name}}" >
+
+          <ng-template ngbTabContent>
+ -->
+
+            <div class="row" style="float:clear;">
+
+                <div *ngIf="sequenceResultObj.sequenceObjList?.length > 0">
+
+                  <table>
+                    <thead>
+
+                    <tr>
+                      <th >
+                        Select
+                      </th>
+                      <th *ngFor="let column of sequenceResultObj.sequenceTablecolumns">
+                      </th>
+                    </tr>
+                  </thead>
+
+                    <tbody>
+                    <tr *ngFor="let sequenceObj of sequenceResultObj.sequenceObjList">
+                      <td >
+                        <input type="checkbox" [checked] = "sequenceObj.isSelected" [(ngModel)]="sequenceObj.isSelected" [ngModelOptions]="{standalone: true}" >&nbsp;
+
+                      </td>
+                      <td >
+                        {{sequenceObj.accession}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                  <div >
+                    <button   id="button_0" style = "background-color:#90EE7F;" (click)="submitSequences();"  >Submit&nbsp;</button>
+                  </div>&nbsp;
+                  <!-- <div style="display: inline-block;float:left;" *ngFor="let selectedAccession of selectedAccessions">
+                    {{selectedAccession}}
+                  </div> -->
+
+                  <br/>
+
+                  <ngx-datatable class="material" [rows]="sequenceResultObj.sequenceObjList" [columns] = "sequenceResultObj.sequenceTablecolumns" [columnMode]="force" [headerHeight]="50" [footerHeight]="50"
+                    [rowHeight]="50" [scrollbarV]="true" [limit]="10">
+
+                    <ngx-datatable-column name="Select">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" >
+                      </ng-template>
+                    </ngx-datatable-column>
+
+                    <ngx-datatable-column name="Accession">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.accession}}
+                      </ng-template>
+                    </ngx-datatable-column>
+
+                    <ngx-datatable-column name="Organism">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.organism}}
+                      </ng-template>
+                    </ngx-datatable-column>
+
+                    <ngx-datatable-column name="Collection Date">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.collection_date}}
+                      </ng-template>
+                    </ngx-datatable-column>
+
+                    <ngx-datatable-column name="Country">
+                    </ngx-datatable-column>
+
+                    <ngx-datatable-column name="host">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.collection_date}}
+                      </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="isolation_source">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.isolation_source}}
+                      </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="coded_by">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.coded_by}}
+                      </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="protein_id">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.protein_id}}
+                      </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="taxon_id">
+                      <ng-template let-row="row" ngx-datatable-cell-template>
+                        {{row.taxon_id}}
+                      </ng-template>
+                    </ngx-datatable-column>
+                    <ngx-datatable-column name="isolate">
+                    </ngx-datatable-column>
+
+                    <!-- <ngx-datatable-footer>
+                      <ng-template
+                        ngx-datatable-footer-template
+                        let-rowCount="rowCount"
+                        let-pageSize="pageSize"
+                        let-selectedCount="selectedCount"
+                        let-curPage="curPage"
+                        let-offset="offset"
+                        let-isVisible="isVisible">
+                          <div class="page-count">
+                            <span *ngIf="selectedMessage">
+                              {{selectedCount.toLocaleString()}} {{selectedMessage}} /
+                            </span>
+                            {{rowCount.toLocaleString()}} {{totalMessage}}
+                          </div>
+                          <datatable-pager
+                              [pagerLeftArrowIcon]="'datatable-icon-left'"
+                              [pagerRightArrowIcon]="'datatable-icon-right'"
+                              [pagerPreviousIcon]="'datatable-icon-prev'"
+                              [pagerNextIcon]="'datatable-icon-skip'"
+                              [page]="curPage"
+                              [size]="pageSize"
+                              [count]="rowCount"
+                              [hidden]="!((rowCount / pageSize) > 1)"
+                              (change)="table.onFooterPage($event)">
+                          </datatable-pager>
+                      </ng-template>
+                    </ngx-datatable-footer> -->
+
+                  </ngx-datatable>
+
+                  <!-- <div class="alert alert-success" role="alert" *ngIf="message">
+                    {{message}}
+                  </div> -->
+                </div>
+                <div *ngIf="sequenceResultObj.sequenceObjList?.length == 0">
+                  <b>No data to display.</b>
+                </div>
+
+              </div>
+
+           <!-- </ng-template>
+
+        </ngb-tab>
+
+      </ngb-tabset> -->
+
+    </ng-template>
+
+    <ng-template #sequenceTabset>
+    </ng-template>
+
+    </div>
     <table width="2000">
       <tr style="text-align:center;">
         <td width="10%" >
@@ -21,7 +216,7 @@
           <div *ngIf="displayAlignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
     			    <div style="inline-block;position:relative;" *ngFor="let displayAlignmentObj of displayAlignmentObjList" id="{{displayAlignmentObj.label}}" >
     						<!-- <div style="inline-block;;float:left; border: 1px solid red; margin-right: 5px;"> -->
-    							<div style="inline-block;;float:left; margin-right: 5px;width:60px;text-align:left;">
+    							<div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
     							{{displayAlignmentObj.label}}
     						</div>
     						<div style="width:15px;display: inline-block;float:left;font-weight:bold;opacity: 0.8;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"

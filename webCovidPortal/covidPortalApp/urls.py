@@ -25,7 +25,7 @@ urlpatterns = [
     url(r'^covidPortalApp/logoutUser/', logoutUser, name = 'logoutUser'),
 
     url(r'^covidPortalApp/listSequences/', listSequences, name = 'listSequences'),
-    url(r'^covidPortalApp/showAlignment/', showAlignment, name = 'showAlignment'),
+    url(r'^covidPortalApp/showInitialAlignment/',showInitialAlignment, name = 'showInitialAlignment'),
 
     url(r'^covidPortalApp/getUserProfile/', getUserProfile, name = 'getUserProfile'),
     url(r'^covidPortalApp/updateUser/', updateUser, name = 'updateUser'),

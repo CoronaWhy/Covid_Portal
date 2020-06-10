@@ -1,3 +1,5 @@
+import { SequenceResultObj } from './sequence';
+
 export class ResidueObj {
   residueValue:number;
   residueColor:string;
@@ -9,4 +11,10 @@ export class AlignmentObj {
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
 
+}
+
+export class AlignmentResultObj {
+  sequenceResultObj:SequenceResultObj;
+  alignmentObjList:AlignmentObj[];
+  selectedAccessions:string[];
 }

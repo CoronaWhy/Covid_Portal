@@ -3,36 +3,20 @@ import { Injectable, OnInit }     from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
-import { AlignmentObj, ResidueObj } from '../models/alignment';
+import { AlignmentResultObj } from '../models/alignment';
 
 import {AppSettings} from '../app.settings';
 
 @Injectable()
 export class ShowAlignmentService {
 
-    public showAlignmentUrl = AppSettings.BASE_URL + "/covidPortalApp/showAlignment/";
-    public searchDatafilesUrl = AppSettings.BASE_URL + "/covidPortalApp/showAlignment/";
-    public getDatafilesUrl = AppSettings.BASE_URL + "/covidPortalApp/showAlignment/";
-    public deleteDatafileUrl = AppSettings.BASE_URL + "/covidPortalApp/showAlignment/";
+    public showInitialAlignmentUrl = AppSettings.BASE_URL + "/covidPortalApp/showInitialAlignment/";
 
     constructor (private http: HttpClient) {}
 
-    getDatafiles(): Promise<UploadFolder[]> {
-      return this.http.post(this.getDatafilesUrl, {}).toPromise().then(res => res as UploadFolder[]).catch(this.handleError);
-    }
 
-    deleteDatafile(datafileId:string): Promise<string> {
-       return this.http.post(this.deleteDatafileUrl, {"datafileId":datafileId}).toPromise().then(res => res)
-       .catch(this.handleError);
-    }
-
-    showAlignment(): Promise<AlignmentObj[]> {
-       return this.http.post(this.showAlignmentUrl, {}).toPromise().then(res => res)
-       .catch(this.handleError);
-    }
-
-    searchDatafiles(searchString:string): Promise<UploadFolder[]> {
-       return this.http.post(this.searchDatafilesUrl, {"searchString":searchString}).toPromise().then(res => res as UploadFolder[])
+    showAlignment(): Promise<AlignmentResultObj> {
+       return this.http.post(this.showInitialAlignmentUrl, {}).toPromise().then(res => res)
        .catch(this.handleError);
     }
 
