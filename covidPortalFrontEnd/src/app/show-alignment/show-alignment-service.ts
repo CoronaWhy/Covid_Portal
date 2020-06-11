@@ -9,13 +9,12 @@ import {AppSettings} from '../app.settings';
 @Injectable()
 export class ShowAlignmentService {
 
-    public showInitialAlignmentUrl = AppSettings.BASE_URL + "/covidPortalApp/showInitialAlignment/";
+    public showAlignmentUrl = AppSettings.BASE_URL + "/covidPortalApp/showAlignment/";
 
     constructor (private http: HttpClient) {}
 
-
-    showAlignment(): Promise<AlignmentResultObj> {
-       return this.http.post(this.showInitialAlignmentUrl, {}).toPromise().then(res => res)
+    showAlignment(selectedAccessions:string[], initialAlignment:boolean): Promise<AlignmentResultObj> {
+       return this.http.post(this.showAlignmentUrl, {"selectedAccessions":selectedAccessions, "initialAlignment":initialAlignment}).toPromise().then(res => res)
        .catch(this.handleError);
     }
 

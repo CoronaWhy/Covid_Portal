@@ -62,6 +62,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     cache: any;
     isLoading: boolean;
 
+    selectedAccessions:string [];
+    initialAlignment: boolean;
+
     @ViewChild('sequenceTable') sequenceTable;
 
     /**
@@ -212,7 +215,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.maxVerticalSliderValue = 10;
       this.verticalSliderValue = 10;
 
-      this.showAlignmentService.showAlignment().then(alignmentResult => {
+      this.selectedAccessions = [];
+      this.initialAlignment = true;
+
+      this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
          this.alignmentObjList = alignmentResult.alignmentObjList;

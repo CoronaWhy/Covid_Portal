@@ -241,68 +241,68 @@ def listSequences(request):
         traceback.print_exc(file=sys.stdout)
     return HttpResponse(json.dumps(sequenceResultObj), content_type='application/json')
 
-def fetchSelectedSequences(request):
-    '''
-        Params: selectedAccessions - list of accession ids to get sequences for
-        Returns: selectedSequenceObjs
-    '''
+# def fetchSelectedSequences(request):
+#     '''
+#         Params: selectedAccessions - list of accession ids to get sequences for
+#         Returns: selectedSequenceObjs
+#     '''
+#
+#     alignmentResultObj = {}
+#
+#     try:
+#         # get params from request
+#         data = json.loads(request.body.decode('utf-8'))
+#         selectedaccessions = data["selectedaccessions"]
+#
+#         selectedSequenceRecords =  SequenceRecord.objects.filter(accession__in = selectedaccessions)
+#
+#         sequenceObjList = [
+#         {"id":row.id, "accession":row.accession,
+#          "organism":row.organism, "collection_date":row.collection_date.strftime('%M/%D/%Y'), "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
+#          "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
+#           if row.collection_date else
+#         {"id":row.id, "accession":row.accession,
+#          "organism":row.organism, "collection_date":'', "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
+#          "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
+#          for row in selectedSequenceRecords
+#           ]
+#
+#         alignment = Alignment.objects.get (pk = 1)
+#
+#         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
+#
+#         # build list of alighment objs
+#         alignmentObjList = []
+#         for sequence in sequences:
+#
+#             sequenceString = sequence.sequence
+#             if sequence.offset != 0 :
+#                 sequenceString = '-' * sequence.offset + sequenceString
+#
+#             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+#             alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
+#             alignmentObjList.append(alignmentObj)
+#
+#         fieldList = [str(x) for x in SequenceRecord._meta.fields]
+#
+#         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
+#
+#         nomenclature = Nomenclature.objects.filter(accession__in = selectedAccessions, alignment = alignment)
+#
+#         alignmentResultObj["alignmentObjList"] = alignmentObjList
+#         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
+#         alignmentResultObj["selectedAccessions"] = selectedAccessions
+#         alignmentResultObj["nomenclature"] = nomenclature
+#
+#
+#         print (sequenceResultObj)
+#
+#     except:
+#         traceback.print_exc(file=sys.stdout)
+#
+#     return HttpResponse(json.dumps(alignmentResultObj), content_type='application/json')
 
-    alignmentResultObj = {}
-
-    try:
-        # get params from request
-        data = json.loads(request.body.decode('utf-8'))
-        selectedaccessions = data["selectedaccessions"]
-
-        selectedSequenceRecords =  SequenceRecord.objects.filter(accession__in = selectedaccessions)
-
-        sequenceObjList = [
-        {"id":row.id, "accession":row.accession,
-         "organism":row.organism, "collection_date":row.collection_date.strftime('%M/%D/%Y'), "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
-         "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
-          if row.collection_date else
-        {"id":row.id, "accession":row.accession,
-         "organism":row.organism, "collection_date":'', "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
-         "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
-         for row in selectedSequenceRecords
-          ]
-
-        alignment = Alignment.objects.get (pk = 1)
-
-        sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
-
-        # build list of alighment objs
-        alignmentObjList = []
-        for sequence in sequences:
-
-            sequenceString = sequence.sequence
-            if sequence.offset != 0 :
-                sequenceString = '-' * sequence.offset + sequenceString
-
-            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-            alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
-            alignmentObjList.append(alignmentObj)
-
-        fieldList = [str(x) for x in SequenceRecord._meta.fields]
-
-        sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
-
-        nomenclature = Nomenclature.objects.filter(accession__in = selectedAccessions, alignment = alignment)
-
-        alignmentResultObj["alignmentObjList"] = alignmentObjList
-        alignmentResultObj["sequenceResultObj"] = sequenceResultObj
-        alignmentResultObj["selectedAccessions"] = selectedAccessions
-        alignmentResultObj["nomenclature"] = nomenclature
-
-
-        print (sequenceResultObj)
-
-    except:
-        traceback.print_exc(file=sys.stdout)
-
-    return HttpResponse(json.dumps(alignmentResultObj), content_type='application/json')
-
-def showInitialAlignment(request):
+def showAlignment(request):
     '''
         Params: None
         Returns: alignmentResultObj (all sequences + selected sequenceRecord)
@@ -315,10 +315,17 @@ def showInitialAlignment(request):
 
         print (" alignment ")
 
-        sequences = Sequence.objects.all()
+         # get params from request
+        data = json.loads(request.body.decode('utf-8'))
 
-        selectedSequenceRecords =  SequenceRecord.objects.filter(accession__in = SELECTED_ACCESSIONS)
+        # initialAlignment = data["initialAlignment"]
+        selectedaccessions = data["selectedAccessions"]
+        initialAlignment = data["initialAlignment"]
 
+        if initialAlignment:
+            selectedSequenceRecords =  SequenceRecord.objects.filter(accession__in = SELECTED_ACCESSIONS)
+        else:
+            selectedSequenceRecords =  SequenceRecord.objects.filter(accession__in = selectedaccessions)
         sequenceObjList = [
         {"id":row.id, "accession":row.accession,
          "organism":row.organism, "collection_date":row.collection_date.strftime('%M/%D/%Y'), "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
@@ -331,27 +338,28 @@ def showInitialAlignment(request):
           ]
 
         selectedAccessions = SELECTED_ACCESSIONS
-
         alignment = Alignment.objects.get (pk = 1)
-
         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
 
-        additionalSequenceRecords = list(SequenceRecord.objects.all() ) [:10]
+        if initialAlignment:
 
-        sequenceObjList.extend([
-        {"id":row.id, "accession":row.accession,
-         "organism":row.organism, "collection_date":row.collection_date.strftime('%M/%D/%Y'), "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
-         "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
-         if row.collection_date else
-        {"id":row.id, "accession":row.accession,
-         "organism":row.organism, "collection_date":'', "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
-         "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
-         for row in additionalSequenceRecords
-          ])
+            additionalSequenceRecords = list(SequenceRecord.objects.all() ) [:10]
 
-        selectedAccessions.extend([x.accession for x in additionalSequenceRecords])
+            sequenceObjList.extend([
+            {"id":row.id, "accession":row.accession,
+             "organism":row.organism, "collection_date":row.collection_date.strftime('%M/%D/%Y'), "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
+             "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
+             if row.collection_date else
+            {"id":row.id, "accession":row.accession,
+             "organism":row.organism, "collection_date":'', "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
+             "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
+             for row in additionalSequenceRecords
+              ])
 
-        sequences.extend(list(Sequence.objects.filter(sequence_record__in = additionalSequenceRecords, alignment = alignment) ) )
+            selectedAccessions.extend([x.accession for x in additionalSequenceRecords])
+
+            sequences.extend(list(Sequence.objects.filter(sequence_record__in = additionalSequenceRecords, alignment = alignment) ) )
+
         for sequence in sequences:
 
             sequenceString = sequence.sequence
@@ -365,15 +373,11 @@ def showInitialAlignment(request):
         fieldList = [str(x) for x in SequenceRecord._meta.fields]
 
         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
-
-        nomenclature = Nomenclature.objects.filter(accession__in = selectedAccessions, alignment = alignment)
-
+        # nomenclature = Nomenclature.objects.filter(accession__in = selectedAccessions, alignment = alignment)
         alignmentResultObj["alignmentObjList"] = alignmentObjList
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["selectedAccessions"] = selectedAccessions
-        alignmentResultObj["nomenclature"] = nomenclature
-
-
+        # alignmentResultObj["nomenclature"] = nomenclature
         print (sequenceResultObj)
 
     except:
