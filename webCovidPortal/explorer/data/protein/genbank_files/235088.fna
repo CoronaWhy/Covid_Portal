@@ -1,0 +1,78 @@
+LOCUS       AAP72986                1255 aa            linear   VRL 18-MAR-2004
+DEFINITION  spike protein S [SARS coronavirus HSR 1].
+ACCESSION   AAP72986
+VERSION     AAP72986.1
+DBSOURCE    accession AY323977.2
+KEYWORDS    .
+SOURCE      SARS coronavirus HSR 1
+  ORGANISM  SARS coronavirus HSR 1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Vicenzi,E., Canducci,F., Pinna,D., Mancini,N., Carletti,S.,
+            Lazzarin,A., Bordignon,C., Poli,G. and Clementi,M.
+  TITLE     Coronaviridae and SARS-associated coronavirus strain HSR1
+  JOURNAL   Emerging Infect. Dis. 10 (3), 413-418 (2004)
+   PUBMED   15109406
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Canducci,F., Clementi,M., Poli,G. and Vicenzi,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-JUN-2003) Universita Vita-Salute San Raffaele,
+            Diagnostica e Ricerca San Raffaele, Scientific Research Institute
+            San Raffaele, via Olgettina58, Milano 20132, Italy
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Canducci,F., Clementi,M., Poli,G. and Vicenzi,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-JUL-2003) Universita Vita-Salute San Raffaele,
+            Diagnostica e Ricerca San Raffaele, Scientific Research Institute
+            San Raffaele, via Olgettina58, Milano 20132, Italy
+  REMARK    Nucleotide and amino acid sequences updated by submitter
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus HSR 1"
+                     /isolate="HSR 1"
+                     /isolation_source="second passage virus isolate grown in
+                     VERO cells inoculated with sputum sample from Italian
+                     patient"
+                     /db_xref="taxon:235088"
+                     /country="Italy"
+     Protein         1..1255
+                     /product="spike protein S"
+                     /name="structural protein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="AY323977.2:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

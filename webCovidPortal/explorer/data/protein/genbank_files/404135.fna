@@ -1,0 +1,82 @@
+LOCUS       ABI93999                1363 aa            linear   VRL 19-JUN-2007
+DEFINITION  spike protein [Bovine coronavirus isolate Alpaca].
+ACCESSION   ABI93999
+VERSION     ABI93999.2
+DBSOURCE    accession DQ915164.2
+KEYWORDS    .
+SOURCE      Bovine coronavirus isolate Alpaca
+  ORGANISM  Bovine coronavirus isolate Alpaca
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Jin,L., Cebra,C.K., Baker,R.J., Mattson,D.E., Cohen,S.A.,
+            Alvarado,D.E. and Rohrmann,G.F.
+  TITLE     Analysis of the genome sequence of an alpaca coronavirus
+  JOURNAL   Virology 365 (1), 198-203 (2007)
+   PUBMED   17459444
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Jin,L., Christopher,C.K., Baker,R.J., Mattson,D.E., Cohen,S.A. and
+            George,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-AUG-2006) Biomedical Sciences, Oregon State
+            Unviversity, 214 Dryden, Corvallis, OR 97331, USA
+REFERENCE   3  (residues 1 to 1363)
+  AUTHORS   Jin,L., Christopher,C.K., Baker,R.J., Mattson,D.E., Cohen,S.A. and
+            George,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JAN-2007) Biomedical Sciences, Oregon State
+            Unviversity, 214 Dryden, Corvallis, OR 97331, USA
+  REMARK    Sequence update by submitter
+COMMENT     On Jan 30, 2007 this sequence version replaced ABI93999.1.
+            Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Bovine coronavirus isolate Alpaca"
+                     /serotype="Bovine"
+                     /host="alpaca"
+                     /db_xref="taxon:404135"
+                     /country="USA"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          800..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="DQ915164.2:23641..27732"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 efpaitigst fvntsysvvv qphttilgnk lqgfleisvc qytmceypnt icnsnlgnrr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsaltley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgng pgidagykts gigtcpagtn yltchnaaqc nclctpdpit
+      541 skatgpykcp qtkylvgige hcsgpaiksd ycggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep aslfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lepvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvklsdvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsdnqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 ldaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagg rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hed
+//
+

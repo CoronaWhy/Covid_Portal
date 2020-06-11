@@ -1,0 +1,82 @@
+LOCUS       ADX59466                1264 aa            linear   VRL 25-MAY-2012
+DEFINITION  spike protein [Eidolon bat coronavirus/Kenya/KY24/2006].
+ACCESSION   ADX59466
+VERSION     ADX59466.1
+DBSOURCE    accession HQ728482.1
+KEYWORDS    .
+SOURCE      Eidolon bat coronavirus/Kenya/KY24/2006
+  ORGANISM  Eidolon bat coronavirus/Kenya/KY24/2006
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1264)
+  AUTHORS   Tong,S., Conrardy,C., Ruone,S., Kuzmin,I.V., Guo,X., Tao,Y.,
+            Niezgoda,M., Haynes,L., Agwanda,B., Breiman,R.F., Anderson,L.J. and
+            Rupprecht,C.E.
+  TITLE     Detection of novel SARS-like and other coronaviruses in bats from
+            Kenya
+  JOURNAL   Emerging Infect. Dis. 15 (3), 482-485 (2009)
+   PUBMED   19239771
+REFERENCE   2  (residues 1 to 1264)
+  AUTHORS   Tao,Y., Tang,K., Shi,M., Conrardy,C., Li,K.S., Lau,S.K.,
+            Anderson,L.J. and Tong,S.
+  TITLE     Genomic characterization of seven distinct bat coronaviruses in
+            Kenya
+  JOURNAL   Virus Res. 167 (1), 67-73 (2012)
+   PUBMED   22561208
+REFERENCE   3  (residues 1 to 1264)
+  AUTHORS   Tao,Y., Tang,K., Conrardy,C., Kuzmin,I., Agwanda,B., Li,K.S.M.,
+            Lau,S.K.P., Niezgoda,M., Breiman,R.F., Rupprecht,C.E.,
+            Anderson,L.J. and Tong,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-DEC-2010) Division of Viral Diseases, Centers for
+            Disease Control and Prevention, 1600 Clifton Rd, Atlanta, GA 30033,
+            USA
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1264
+                     /organism="Eidolon bat coronavirus/Kenya/KY24/2006"
+                     /strain="BtKY24"
+                     /isolation_source="fecal swab"
+                     /host="Eidolon helvum (bat)"
+                     /db_xref="taxon:983924"
+                     /country="Kenya"
+                     /collection_date="Aug-2006"
+     Protein         1..1264
+                     /product="spike protein"
+     Region          362..546
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          657..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1264
+                     /gene="S"
+                     /coded_by="HQ728482.1:8035..11829"
+ORIGIN      
+        1 mvvllfaifs vasaldpnrt acvanygssy lpssitsval sdvnflsrvv pefdiartsl
+       61 vvrqslyvas vvfdkisvtp pagqlyndts vafgdgifvn vhmyrrlqgi tdsnlkycqe
+      121 pfgvafgntf vqepiviiii apgnygrlpa lqiptiatvt iavcsngtlc rnpvlprwgt
+      181 sgnivvndal kcfgsityfd qknisyteaa srfnfaflhe dgniltyyas igaalnisap
+      241 yrfvpyrrvp agfnpsvaqf fqvytrpipy drtcqvynvs wyssplskqd vlvsydnqss
+      301 iidaascssd atselkcilt tfdppngvys lsnyrsqpsa ivrlssadgi cnvnythflr
+      361 pplpfywrrf qiksckfdfn tlvsalptyd lwckgisper lgsmcfgavt ldsmlintth
+      421 yndlksnvpd aftrfnyklp tnfygcvhty ylndssfnya vvndpgwfqe irpggrpdnp
+      481 gylntlayka ascnekcfgm ivisltiasg ntmvcpvgnd tnvisgvcvn yniygyqgtg
+      541 visnssavip gskvfslssh gdvslfkynn kvyalypcay apitaafyag yntsllfnnl
+      601 qcdlraraiy eptspywrit qqatnafdts agcvynaina tnitvsdcsl llgdsyclrp
+      661 tvsartlgge smlelvlydp lydslvpitp vyqidvptnf tlaatteyiq tyaskisidc
+      721 skylcgdsvq cknvllqygt fcndvntalt rvfslldtal vetvsslkst apadlaytgd
+      781 fnftslvgcl gtscnqnsyr salsdllfnk vsvadpgfmq ayqkcldsqw ggnirdlict
+      841 qsfngisvlp pivspsmqal yttalvggia asgftfgvss aavipfatql qfrlnglgvt
+      901 tnvlmenqkl ianafnkalv siqtgfeatn qalnkiqtvv nhnalqlqal vqqlgntfga
+      961 isssvneifs rldqleanae vdrlisgrmv vlntyvtqll iqaselrsqa qlanqkmsec
+     1021 vkaqssrndf cgngthvfsi pqvapngmlf ihysyqptey kqlyttaglc fngtgyvpkd
+     1081 glfvrednts tvwyftkaaf yspsnlsydn trqldscgvn ytvvnntvlt pfeppnfnfd
+     1141 eefdkyfknq ssqlnitfds sqfnatlldl sgqmktldqv vkelnesfin lkelgvytqt
+     1201 ikwpwyawlg miaglvglam avfmlccmtn ccsglkgics ckqcqyddya dvypavrvsg
+     1261 krtv
+//
+

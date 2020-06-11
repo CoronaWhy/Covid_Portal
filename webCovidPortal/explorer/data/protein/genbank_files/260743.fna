@@ -1,0 +1,69 @@
+LOCUS       AAR91586                1255 aa            linear   VRL 17-JAN-2004
+DEFINITION  spike glycoprotein S [SARS coronavirus NS-1].
+ACCESSION   AAR91586
+VERSION     AAR91586.1
+DBSOURCE    accession AY508724.1
+KEYWORDS    .
+SOURCE      SARS coronavirus NS-1
+  ORGANISM  SARS coronavirus NS-1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Zheng,H., Wei,C., Ding,R., Wang,W., Li,W., Wang,J., Tao,W., Yu,X.,
+            Guo,H., Chen,J., Wei,W., Li,J., Zhang,Y., Wang,X., Sun,Y., Jiao,J.,
+            Wang,Y. and Zhou,C.
+  TITLE     SARS coronavirus NS-1 complete genome sequence
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Zheng,H., Wei,C., Ding,R., Wang,W., Li,W., Wang,J., Tao,W., Yu,X.,
+            Guo,H., Chen,J., Wei,W., Li,J., Zhang,Y., Wang,X., Sun,Y., Jiao,J.,
+            Wang,Y. and Zhou,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-DEC-2003) Beijing Hua Te Sen Gene Scientific Inc.;
+            Beijing Import-Exit Inspection and Quarantine Bureau; Beijing Pu
+            Shi Kang Medicine Technic Developmental Center; Beijing Bai Ou Sai
+            Di Technic Developmental Center, #15 Fengtai Western Road, Beijing,
+            Beijing 100071, P.R.China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus NS-1"
+                     /strain="NS-1"
+                     /db_xref="taxon:260743"
+     Protein         1..1255
+                     /product="spike glycoprotein S"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY508724.1:21476..25243"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei masanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

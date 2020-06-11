@@ -1,0 +1,278 @@
+LOCUS       YP_009513010            1330 aa            linear   VRL 24-AUG-2018
+DEFINITION  S [Betacoronavirus Erinaceus/VMC/DEU/2012].
+ACCESSION   YP_009513010
+VERSION     YP_009513010.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_039207.1
+KEYWORDS    RefSeq.
+SOURCE      Betacoronavirus Erinaceus/VMC/DEU/2012
+  ORGANISM  Betacoronavirus Erinaceus/VMC/DEU/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Kallies,R., Philipps,H., Gopner,G., Muller,M.A.,
+            Eckerle,I., Brunink,S., Drosten,C. and Drexler,J.F.
+  TITLE     Characterization of a novel betacoronavirus related to middle East
+            respiratory syndrome coronavirus in European hedgehogs
+  JOURNAL   J. Virol. 88 (1), 717-724 (2014)
+   PUBMED   24131722
+REFERENCE   2  (residues 1 to 1330)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-AUG-2018) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Drexler,J.F. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2013) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+  REMARK    Sequence update by submitter
+REFERENCE   4  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Drexler,J.F. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JAN-2013) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AGX27799.
+            
+            ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1330
+                     /organism="Betacoronavirus Erinaceus/VMC/DEU/2012"
+                     /isolate="ErinaceusCoV/2012-174/GER/2012"
+                     /isolation_source="feces"
+                     /host="Erinaceus europaeus"
+                     /db_xref="taxon:1385427"
+                     /country="Germany"
+                     /collection_date="2012"
+     Protein         1..1330
+                     /product="S"
+                     /calculated_mol_wt=147516
+     Region          42..333
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          368..>493
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <587..651
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          752..1329
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1330
+                     /gene="S"
+                     /locus_tag="D1Y28_gp03"
+                     /coded_by="NC_039207.1:21610..25602"
+                     /db_xref="GeneID:37627011"
+ORIGIN      
+        1 mirsacllmc llmfikatps egtcisvdmq psyfiknwsm pinmskadgv lypvertysn
+       61 ititleglfp hqadrgdmyv ysqshkgrpf isnyslvtnd fgngivirig saanktgspi
+      121 isniasnfqi mkklypallf gsavgkfpan nktgayfnhs lvilpekcgt vitalycvle
+      181 pkndtnctgs sgyvsyvlfe nfscdattdg nlknslqqwf nikdclfekn ynvtdderee
+      241 wfgiiqdqqg vhlytsrkng ysnnmflfat lpiydqilyy tvmprsinas nyasyhafsa
+      301 fyiyklhkin ymvdfdvngy itravdcgyn dytqlqcsyg qfdmdsgvys asyfnarsrg
+      361 yyyeaaelte cdldvlfknd apiianysrr vftncnynlt kllslvqvde fvchkttpea
+      421 latgcysslt vdwfalpfsm kstlaigsae aismfnynqd ysnptcriha avtanvstal
+      481 nftananyay isrcqgvdgk pillqpgqmt niacrsgvla rpsdadyfgy sfqgrnyylg
+      541 rksykpktde gdvqmvyvit pkydkgpdtv cplkdmgaas ssldgllgqc idydihgvvg
+      601 rgvfqvcntt giasqifvyd gfgniigfhs kngtyycmap cvsvpvsviy dkssdvhatl
+      661 yssvecnhik svatvfsrqt esklrssdng llqtavgcvi gfrntsdtve dctlplgqsl
+      721 cakppsfssr stnvnntfal vhmlfqnplk vsvlnstefq vsipqnfsfg iteefietsi
+      781 qkvtvdckqy vcngferceq llvqygqfcs kinqalhgvn lrqddatksl fedikvpqsv
+      841 plmtsltgdy nlslfeapni gsgnnnyrsa ledllfdkvt lsdpgymkgy decmkkgpps
+      901 ardlicaqyv sgykvlpply danmeamyta sltgsiagsf wtgglssaaa lpfaqsmfyr
+      961 mngigitqnv lmknqreian kfnqalgamq tgftatnqaf qkvqdvvnan aqalsklase
+     1021 lantfgaiss sigdilkrld vleqevqidr lingrltsln afvsqqlvrs eaaarssqla
+     1081 kekinecvka qstrsgfcgq gthivsfvin apngfyfihv gyhpqdyvnq taayglcdss
+     1141 sskciaakng yfvkndsdsd swsytgssfy qpepitsfns rfvqpeftfq nltnnlpppl
+     1201 lsnnsdvtfe deleefykni tseipnfgsi sqinttmlnl sremsilqqv vkdlnnsyie
+     1261 lkelgnytyy qkspwyvwlg fiaglvalal clffilcctg cgtsclgkin ctrccdkydd
+     1321 fdmpekihih
+//
+
+LOCUS       AGX27799                1330 aa            linear   VRL 11-MAR-2014
+DEFINITION  S [Betacoronavirus Erinaceus/VMC/DEU/2012].
+ACCESSION   AGX27799
+VERSION     AGX27799.1
+DBSOURCE    accession KC545383.1
+KEYWORDS    .
+SOURCE      Betacoronavirus Erinaceus/VMC/DEU/2012
+  ORGANISM  Betacoronavirus Erinaceus/VMC/DEU/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Kallies,R., Philipps,H., Gopner,G., Muller,M.A.,
+            Eckerle,I., Brunink,S., Drosten,C. and Drexler,J.F.
+  TITLE     Characterization of a novel betacoronavirus related to middle East
+            respiratory syndrome coronavirus in European hedgehogs
+  JOURNAL   J. Virol. 88 (1), 717-724 (2014)
+   PUBMED   24131722
+REFERENCE   2  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Drexler,J.F. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JAN-2013) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+REFERENCE   3  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Drexler,J.F. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2013) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+  REMARK    Sequence update by submitter
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1330
+                     /organism="Betacoronavirus Erinaceus/VMC/DEU/2012"
+                     /isolate="ErinaceusCoV/2012-174/GER/2012"
+                     /isolation_source="feces"
+                     /host="Erinaceus europaeus"
+                     /db_xref="taxon:1385427"
+                     /country="Germany"
+                     /collection_date="2012"
+     Protein         1..1330
+                     /product="S"
+     Region          42..333
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          368..>493
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <587..651
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          752..1329
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1330
+                     /gene="S"
+                     /coded_by="KC545383.1:21610..25602"
+ORIGIN      
+        1 mirsacllmc llmfikatps egtcisvdmq psyfiknwsm pinmskadgv lypvertysn
+       61 ititleglfp hqadrgdmyv ysqshkgrpf isnyslvtnd fgngivirig saanktgspi
+      121 isniasnfqi mkklypallf gsavgkfpan nktgayfnhs lvilpekcgt vitalycvle
+      181 pkndtnctgs sgyvsyvlfe nfscdattdg nlknslqqwf nikdclfekn ynvtdderee
+      241 wfgiiqdqqg vhlytsrkng ysnnmflfat lpiydqilyy tvmprsinas nyasyhafsa
+      301 fyiyklhkin ymvdfdvngy itravdcgyn dytqlqcsyg qfdmdsgvys asyfnarsrg
+      361 yyyeaaelte cdldvlfknd apiianysrr vftncnynlt kllslvqvde fvchkttpea
+      421 latgcysslt vdwfalpfsm kstlaigsae aismfnynqd ysnptcriha avtanvstal
+      481 nftananyay isrcqgvdgk pillqpgqmt niacrsgvla rpsdadyfgy sfqgrnyylg
+      541 rksykpktde gdvqmvyvit pkydkgpdtv cplkdmgaas ssldgllgqc idydihgvvg
+      601 rgvfqvcntt giasqifvyd gfgniigfhs kngtyycmap cvsvpvsviy dkssdvhatl
+      661 yssvecnhik svatvfsrqt esklrssdng llqtavgcvi gfrntsdtve dctlplgqsl
+      721 cakppsfssr stnvnntfal vhmlfqnplk vsvlnstefq vsipqnfsfg iteefietsi
+      781 qkvtvdckqy vcngferceq llvqygqfcs kinqalhgvn lrqddatksl fedikvpqsv
+      841 plmtsltgdy nlslfeapni gsgnnnyrsa ledllfdkvt lsdpgymkgy decmkkgpps
+      901 ardlicaqyv sgykvlpply danmeamyta sltgsiagsf wtgglssaaa lpfaqsmfyr
+      961 mngigitqnv lmknqreian kfnqalgamq tgftatnqaf qkvqdvvnan aqalsklase
+     1021 lantfgaiss sigdilkrld vleqevqidr lingrltsln afvsqqlvrs eaaarssqla
+     1081 kekinecvka qstrsgfcgq gthivsfvin apngfyfihv gyhpqdyvnq taayglcdss
+     1141 sskciaakng yfvkndsdsd swsytgssfy qpepitsfns rfvqpeftfq nltnnlpppl
+     1201 lsnnsdvtfe deleefykni tseipnfgsi sqinttmlnl sremsilqqv vkdlnnsyie
+     1261 lkelgnytyy qkspwyvwlg fiaglvalal clffilcctg cgtsclgkin ctrccdkydd
+     1321 fdmpekihih
+//
+
+LOCUS       AGX27810                1330 aa            linear   VRL 11-MAR-2014
+DEFINITION  S [Betacoronavirus Erinaceus/VMC/DEU/2012].
+ACCESSION   AGX27810
+VERSION     AGX27810.1
+DBSOURCE    accession KC545386.1
+KEYWORDS    .
+SOURCE      Betacoronavirus Erinaceus/VMC/DEU/2012
+  ORGANISM  Betacoronavirus Erinaceus/VMC/DEU/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Kallies,R., Philipps,H., Gopner,G., Muller,M.A.,
+            Eckerle,I., Brunink,S., Drosten,C. and Drexler,J.F.
+  TITLE     Characterization of a novel betacoronavirus related to middle East
+            respiratory syndrome coronavirus in European hedgehogs
+  JOURNAL   J. Virol. 88 (1), 717-724 (2014)
+   PUBMED   24131722
+REFERENCE   2  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Drexler,J.F. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-JAN-2013) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+REFERENCE   3  (residues 1 to 1330)
+  AUTHORS   Corman,V.M., Drexler,J.F. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2013) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+  REMARK    Sequence update by submitter
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1330
+                     /organism="Betacoronavirus Erinaceus/VMC/DEU/2012"
+                     /isolate="ErinaceusCoV/2012-216/GER/2012"
+                     /isolation_source="feces"
+                     /host="Erinaceus europaeus"
+                     /db_xref="taxon:1385427"
+                     /country="Germany"
+                     /collection_date="2012"
+     Protein         1..1330
+                     /product="S"
+     Region          42..333
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          368..>493
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <587..651
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          752..1329
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1330
+                     /coded_by="KC545386.1:21637..25629"
+ORIGIN      
+        1 mirsacllmc llmfikatps egtcisvdmq psyfiknwsm pinmskadgv lypvgrtysn
+       61 ititleglfp hqadrgdmyv ysqshkgrpf isnyslvtnd fgngivirig saanktgspi
+      121 isniasnfqi mkklypallf gsavgkfpan nktgayfnhs lvilpekcgt vitalycvle
+      181 pkndtnctgs sgyvsyvlfe nfscdattdg nlknslqqwf nikdclfekn ynvtdderee
+      241 wfgiiqdqqg vhlytsrkng ysnnmflfat lpiydqilyy tvmprsinas nyasyhafsa
+      301 fyiyklhkin ymvdfdvngy itravdcgyn dytqlqcsyg qfdmdsgvys asyfnarsrg
+      361 yyyeaaelte cdldvlfknd apiianysrr vftncnynlt kllslvqvde fvchkttpea
+      421 latgcysslt vdwfalpfsm kstlaigsae aismfnynqd ysnptcriha avtanvstal
+      481 nftananyay isrcqgvdgk pillqpgqmt niacrsgvla rpsdadyfgy sfqgrnyylg
+      541 rksykpktde gdvqmvyvit pkydkgpdtv cplkdmgaas ssldgllgqc idydihgvvg
+      601 rgvfqvcntt giasqifvyd gfgniigfhs kngtyycmap cvsvpvsviy dkssdvhatl
+      661 yssvecnhik svatvfsrqt esklrssdng llqtavgcvi gfrntsdtve dctlplgqsl
+      721 cakppsfssr stnvnntfal vhmlfqnplk vsvlnstefq vsipqnfsfg iteefietsi
+      781 qkvtvdckqy vcngferceq llvqygqfcs kinqalhgvn lrqddatksl fedikvpqsv
+      841 plmtsltgdy nlslfeapni gsgnnnyrsa ledllfdkvt lsdpgymkgy decmkkgpps
+      901 ardlicaqyv sgykvlpply danmeamyta sltgsiagsf wtgglssaaa lpfaqsmfyr
+      961 mngigitqnv lmknqreian kfnqalgamq tgftatnqaf qkvqdvvnan aqalsklase
+     1021 lantfgaisa sigdilkrld vleqevqidr lingrltsln afvsqqlvrs eaaarssqla
+     1081 kekinecvka qstrsgfcgq gthivsfvin apngfyfihv gyhpqdyvnq taayglcdss
+     1141 skkciaakng yfvkndsdsg swsytgssfy qpepittfns rfvepevtfq nlsnnlpppl
+     1201 lsnntditfe deleefykni tseipnfgsl sqinttmlnl sqemstlqqv vkdlnnsyie
+     1261 lkelgnhtyy qkwpwyvwlg fiagllalal clffilcctg cgtsclgkis ctrccdkydd
+     1321 fempdkvhih
+//
+

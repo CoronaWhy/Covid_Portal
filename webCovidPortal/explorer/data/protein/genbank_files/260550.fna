@@ -1,0 +1,88 @@
+LOCUS       AAS01063                  95 aa            linear   VRL 10-JUN-2016
+DEFINITION  spike glycoprotein, partial [SARS coronavirus CUHK-L2].
+ACCESSION   AAS01063
+VERSION     AAS01063.1
+DBSOURCE    accession AH013657.2
+KEYWORDS    .
+SOURCE      SARS coronavirus CUHK-L2
+  ORGANISM  SARS coronavirus CUHK-L2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 95)
+  AUTHORS   Chim,S.S., Tong,Y.K., Hung,E.C., Chiu,R.W. and Lo,Y.M.
+  TITLE     Genomic sequencing of a SARS coronavirus isolate that predated the
+            Metropole Hotel case cluster in Hong Kong
+  JOURNAL   Clin. Chem. 50 (1), 231-233 (2004)
+   PUBMED   14709660
+REFERENCE   2  (residues 1 to 95)
+  AUTHORS   Chim,S.S.C., Tong,Y.K., Hung,E.C., Chiu,R.W. and Lo,Y.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2003) Chemical Pathology, Chinese University of
+            Hong Kong, Prince of Wales Hospital, 30-32 Ngan Shing Street,
+            Shatin, Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..95
+                     /organism="SARS coronavirus CUHK-L2"
+                     /db_xref="taxon:260550"
+     Protein         <1..95
+                     /product="spike glycoprotein"
+     Region          <1..92
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..95
+                     /coded_by="AH013657.2:<9093..9381"
+                     /codon_start=2
+ORIGIN      
+        1 iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl gfiagliaiv mvtillccmt
+       61 sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AAS01062                 381 aa            linear   VRL 10-JUN-2016
+DEFINITION  spike glycoprotein, partial [SARS coronavirus CUHK-L2].
+ACCESSION   AAS01062
+VERSION     AAS01062.1
+DBSOURCE    accession AH013657.2
+KEYWORDS    .
+SOURCE      SARS coronavirus CUHK-L2
+  ORGANISM  SARS coronavirus CUHK-L2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 381)
+  AUTHORS   Chim,S.S., Tong,Y.K., Hung,E.C., Chiu,R.W. and Lo,Y.M.
+  TITLE     Genomic sequencing of a SARS coronavirus isolate that predated the
+            Metropole Hotel case cluster in Hong Kong
+  JOURNAL   Clin. Chem. 50 (1), 231-233 (2004)
+   PUBMED   14709660
+REFERENCE   2  (residues 1 to 381)
+  AUTHORS   Chim,S.S.C., Tong,Y.K., Hung,E.C., Chiu,R.W. and Lo,Y.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2003) Chemical Pathology, Chinese University of
+            Hong Kong, Prince of Wales Hospital, 30-32 Ngan Shing Street,
+            Shatin, Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..381
+                     /organism="SARS coronavirus CUHK-L2"
+                     /db_xref="taxon:260550"
+     Protein         <1..>381
+                     /product="spike glycoprotein"
+     Region          276..>381
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..381
+                     /coded_by="AH013657.2:<7850..>8992"
+ORIGIN      
+        1 ypdeifrsdt lyltqdlflp fysnvtgfht inhtfdnpvi pfkdgiyfaa teksnvvrgw
+       61 vfgstmnnks qsviiinnst nvviracnfe lcdnpffavs kpmgtqthtm ifdnafnctf
+      121 eyisdafsld vseksgnfkh lrefvfknkd gflyvykgyq pidvvrdlps gfntlkpifk
+      181 lplginitnf railtafspa qdtwgtsaaa yfvgylkptt fmlkydengt itdavdcsqn
+      241 plaelkcsvk sfeidkgiyq tsnfrvvpsg dvvrfpnitn lcpfgevfna tkfpsvyawe
+      301 rkkisncvad ysvlynstff stfkcygvsa tklndlcfsn vyadsfvvkg ddvrqiapgq
+      361 tgviadynyk lpddfmgcvl a
+//
+

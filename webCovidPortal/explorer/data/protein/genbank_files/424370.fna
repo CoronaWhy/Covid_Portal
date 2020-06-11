@@ -1,0 +1,73 @@
+LOCUS       ABN10935                1272 aa            linear   VRL 07-FEB-2007
+DEFINITION  Spike glycoprotein [Bat coronavirus HKU9-4].
+ACCESSION   ABN10935
+VERSION     ABN10935.1
+DBSOURCE    accession EF065516.1
+KEYWORDS    .
+SOURCE      Bat coronavirus HKU9-4
+  ORGANISM  Bat coronavirus HKU9-4
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus.
+REFERENCE   1  (residues 1 to 1272)
+  AUTHORS   Woo,P.C., Wang,M., Lau,S.K., Xu,H., Poon,R.W., Guo,R., Wong,B.H.,
+            Gao,K., Tsoi,H.W., Huang,Y., Li,K.S., Lam,C.S., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Comparative analysis of twelve genomes of three novel group 2c and
+            group 2d coronaviruses reveals unique group and subgroup features
+  JOURNAL   J. Virol. 81 (4), 1574-1585 (2007)
+   PUBMED   17121802
+REFERENCE   2  (residues 1 to 1272)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wang,M., Xu,H.F., Poon,R.W.S., Guo,R.T.,
+            Wong,B.H.L., Gao,K., Tsoi,H.W., Huang,Y., Li,K.S.M., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-OCT-2006) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1272
+                     /organism="Bat coronavirus HKU9-4"
+                     /strain="BF_141I"
+                     /host="bat"
+                     /db_xref="taxon:424370"
+                     /country="China: Guangdong province"
+     Protein         1..1272
+                     /product="spike glycoprotein"
+     Region          367..551
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          703..1267
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1272
+                     /gene="S"
+                     /coded_by="EF065516.1:20959..24777"
+ORIGIN      
+        1 mlliafillp vvtasrpfcl grdfdvsrvl phnistgsfv vnklstllpd pyiaysgqtv
+       61 rqtlfvanat dttiypitpy kegdrayyyn tslylvsqgf fvhsymfknq ieglycqqpf
+      121 gvvfgntfeq driaiviiap dvygrwitat prsytnvtil vcsnatican pafnrwgpag
+      181 dylannafte hddscfinnt mripyntsri nlafrfqdgn lliyysdwlp hgsldlsapw
+      241 plnfytsvav ggnlkyaqff qsvvrnyntp tqsltdgncv gdlvnlyvap lvkrellvqy
+      301 slagrpinva dcaldsgeel ycvtgtftpd agvyslsryr aqtvghvsit qqfetcdipy
+      361 aalqtppqpi awrryavskc gfdfeavinr lptfelkcfg vsparlasmc ygkvtidvfr
+      421 invthlanli agvpdafsky nyalprdfyg cvhafyvnms sdyiiadswp avviqpggrq
+      481 tdsslvgtwl nspakshcti lscfgvavig lqpasgtqlv cpkqndttli edqcvtynvy
+      541 gytgtgvftt snltipdnkl fsasatgais avsihnavya ispcvsvpvs vgfspnfdkv
+      601 llfnglacke ravavsipas dywmrvrsse ndtifdtesg cvynahnrtd lvvnecslpl
+      661 gnslclindt astrreasnl ltlvsfqpgi iasvkvltpv ywvrvptnft ltattefiet
+      721 tapkitidca rylcgdssrc lavleqygtf cddvntalqr vntmldaavv sltsqlvsdi
+      781 vptensnfds tynftalmgc lgsscnskrs aisdllynkv kiadpgfmds yqkcidsqwg
+      841 gnirdlictq vfngiavlpp ivspgmqaly tsllvgavas sgytfgitsv gvipfatqlq
+      901 frlngigvtt qvlvdnqkli assfnnalnq iqkgfdatns alskiqavin qhatqlqtlv
+      961 lqlgntfgai sssiniifsr legleadaev drlisgrmvv lntyvtqllv qasrikaqsd
+     1021 lalqkinecv ksqtlrnefc gngthvlsvp qlapngimfi hysytptqya tvqtaaglcf
+     1081 ngtgyaprng lfilpnnsnf wyftqanfyn pvnisnsntq vlescsvnyt tvnytilspq
+     1141 eplynnfdee fnkfyknlss vfnntfnpga fnfstvelqs eiatlnevvq qlnksfidlk
+     1201 qmnvyeqtik wpwyvwlami aglvglalav vmllcmtncc scfkgmcscr hcyydeiedv
+     1261 ypavrvhnkr ta
+//
+

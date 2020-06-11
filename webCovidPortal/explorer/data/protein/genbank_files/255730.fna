@@ -1,0 +1,72 @@
+LOCUS       AAR23250                1255 aa            linear   VRL 18-NOV-2005
+DEFINITION  spike protein [SARS coronavirus Sino1-11].
+ACCESSION   AAR23250
+VERSION     AAR23250.1
+DBSOURCE    accession AY485277.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Sino1-11
+  ORGANISM  SARS coronavirus Sino1-11
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Zhang,J., Liu,Y., Hu,L., Gao,Q., Zhang,Z., Zhang,X., Chen,J.,
+            Gong,X., Song,L., Liu,Y., Li,J., Li,S., Huang,J., Ning,Y., Gao,H.,
+            Qin,C., Dong,X., Wei,J., Dong,G. and Yin,W.
+  TITLE     Preparation and characterization of SARS in-house reference
+            antiserum
+  JOURNAL   Vaccine 23 (48-49), 5666-5669 (2005)
+   PUBMED   16269206
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Jin,W.W., Feng,J.D., Du,Z.L., Hu,L.X., Liu,Y.X., Liu,Y.F.,
+            Zhang,X.M., Gao,H., Ning,Y., Zhang,J.S., Li,N. and Yin,W.D.
+  TITLE     Variance analysis of nucleic acid sequence of candidate strain
+            Sino1 for identification of SARS inactivated vaccine
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Jin,W.W., Feng,J.D., Du,Z.L., Hu,L.X., Liu,Y.X., Liu,Y.F.,
+            Zhang,X.M., Gao,H., Ning,Y., Zhang,J.S., Li,N. and Yin,W.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-NOV-2003) Sino Biotech Co., Ltd., No. 39 Shangdi Xi
+            Rd. Haidian District, Beijing 100085, P.R. China
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Sino1-11"
+                     /strain="Sino1-11"
+                     /db_xref="taxon:255730"
+     Protein         1..1255
+                     /product="spike protein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY485277.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rslrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

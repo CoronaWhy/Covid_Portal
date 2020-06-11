@@ -1,0 +1,167 @@
+LOCUS       ATI09449                1366 aa            linear   VRL 10-OCT-2017
+DEFINITION  spike protein [Camel coronavirus HKU23].
+ACCESSION   ATI09449
+VERSION     ATI09449.1
+DBSOURCE    accession MF593476.1
+KEYWORDS    .
+SOURCE      Camel coronavirus HKU23
+  ORGANISM  Camel coronavirus HKU23
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1366)
+  AUTHORS   Li,Y., Khalafalla,A.I., Paden,C.R., Yusof,M.F., Eltahir,Y.M., Al
+            Hammadi,Z.M., Tao,Y., Queen,K., Al Hosani,F., Gerber,S.I.,
+            Hall,A.J., Al Muhairi,S. and Tong,S.
+  TITLE     Identification of diverse viruses in upper respiratory samples in
+            dromedary camels from United Arab Emirates
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1366)
+  AUTHORS   Li,Y., Paden,C.R., Tao,Y., Khalafalla,A.I., Yusof,M.F.,
+            Eltahir,Y.M., Al Hammadi,Z.M., Queen,K., Al Hosani,F., Gerber,S.I.,
+            Hall,A.J., Al Muhairi,S. and Tong,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (02-AUG-2017) Division of Viral Diseases, Centers for
+            Disease Control and Prevention, 1600 Clifton Rd, Atlanta, GA 30333,
+            USA
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC Genomics Workbench version v. 9.0;
+                                     Sequencher v. 5.2.4
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1366
+                     /organism="Camel coronavirus HKU23"
+                     /strain="camel/Abu Dhabi/B101"
+                     /isolation_source="nasopharyngeal swab"
+                     /host="camel"
+                     /db_xref="taxon:1699096"
+                     /country="United Arab Emirates"
+                     /collection_date="2015"
+     Protein         1..1366
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          327..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          803..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1366
+                     /gene="S"
+                     /coded_by="MF593476.1:23479..27579"
+ORIGIN      
+        1 mfsillislp tafavigdlk cttvsindvd tgvpsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft agifakvknt kvvksgvtys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmceypnt ichpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 ispstgvyel ngytvqpiad vyrripnlpd cnieswlndk svpsplnwer ktfsncnfnm
+      361 sslmssiqad sftcxnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpasnvsv srfnpstwnr rfgfteqavf kpqpagvftn hdvvyaqhcf
+      481 kapttfcpck lngslcvgsg pgidagykys gigtcpagty yltcynynqc tclcapdpit
+      541 stvagsyngv kcpqtrylvg vgehcsglai nsdhcggnlc tcqpqaflgw svdsclqgdr
+      601 cnifsnlilh gvnsgttcst dlqkantdii lgvcvnydly gisgqgifve vnatyynswq
+      661 nllydsngnl ygfrdyltnr tfmirscysg rvsaafhans sepallfrnv kcnyvfnntl
+      721 arqvqsinyf dsylgcvvna dnstsiavqt cdltvgsgyc ldysidrrsr raittgyrft
+      781 nfepftvkav ndslepvggl yeiqipseft ignmeefiqt sspkvtidca afvcgdyaac
+      841 ksqlveygsf cdninailte vnelfdttql qvanslmnga tlstklkdgv nfnvddinfs
+      901 pvlgclgsdc nkastrsaie dllfdkvkls dvgfveaynn ctggaeirdl lcvqsyngik
+      961 vlppllsenq isgytlaats aslfppwtaa agvpfylnvq yringlgvtm dvlsqnqkli
+     1021 anafnnalta iqngfdatns alvkiqsvvn anaealnkll qqlsnrfgai saslqeilsr
+     1081 ldaleaeaqi drlingrlta lnayvsqqls dstlvkfsaa qamekvnecv ksqssrinfc
+     1141 gngnhiislv qnapyglyfi hfnyvptkyv takvspglci agdrgiapks gyfvnvnntw
+     1201 mftgsgyyyp epitennvvv mstcavnytk apdvmlntsi pnlpdfkeel dqwfknqtsv
+     1261 apdlsldyin vtfldlqdem nrlqeaikvl nhsyinlkdi gtyeyyvkwp wyvwlligfa
+     1321 gvamlvllff iccctgcgts cfkkcggccd dytghpelvi ktlhdd
+//
+
+LOCUS       ALA50080                1366 aa            linear   VRL 17-DEC-2015
+DEFINITION  spike protein [Camel coronavirus HKU23].
+ACCESSION   ALA50080
+VERSION     ALA50080.1
+DBSOURCE    accession KT368891.1
+KEYWORDS    .
+SOURCE      Camel coronavirus HKU23
+  ORGANISM  Camel coronavirus HKU23
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1366)
+  AUTHORS   Sabir,J.S.M., Lam,T.Y., Ahmed,M.M., Li,L., Shen,Y., AboAba,S.,
+            Qureshi,M.I., Abu-Zaid,M., Zhang,Y., Khiyami,M.A., Alharbi,N.S.,
+            Hajrah,N.H., Sabir,M.J., Mutwakil,M.H.Z., Kabli,S.A.,
+            Alsulaimany,F.A.S., Obaid,A.Y., Zhou,B., Smith,D.K., Holmes,E.C.,
+            Zhu,H. and Guan,Y.
+  TITLE     Co-circulation of three camel coronavirus species and recombination
+            of MERS-CoVs in Saudi Arabia
+  JOURNAL   Science (2015) In press
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1366)
+  AUTHORS   Sabir,J.S.M., Lam,T.Y., Ahmed,M.M., Li,L., Shen,Y., AboAba,S.,
+            Qureshi,M.I., Abu-Zaid,M., Zhang,Y., Khiyami,M.A., Alharbi,N.S.,
+            Hajrah,N.H., Sabir,M.J., Mutwakil,M.H.Z., Kabli,S.A.,
+            Alsulaimany,F.A.S., Obaid,A.Y., Zhou,B., Smith,D.K., Holmes,E.C.,
+            Zhu,H. and Guan,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-AUG-2015) Centre of Influenza Research & State Key
+            Laboratory of Emerging Infectious Diseases, The University of Hong
+            Kong, Laboratory Block, 21 Sassoon Road, Pokfulam, Hong Kong SAR,
+            China
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1366
+                     /organism="Camel coronavirus HKU23"
+                     /isolate="camel/Riyadh/Ry123/2015"
+                     /host="camel"
+                     /db_xref="taxon:1699096"
+                     /country="Saudi Arabia"
+                     /collection_date="Mar-2015"
+     Protein         1..1366
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          803..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1366
+                     /gene="S"
+                     /coded_by="KT368891.1:23645..27745"
+ORIGIN      
+        1 mfsillislp tafavigdlk cttvsindvd tgvpsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft agifakvknt kvvksgvtys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmceypnt ichpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltskqy llafnqdgvi fnavdcnsdf mseikcktls
+      301 ispstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmssiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqavf kpqpagvftn hdvvyaqhcf
+      481 kapttfcpck lngslcvgsg pgidagykys gigtcpagty yltcynynqc tclcapdpit
+      541 stvagsyngv kcpqtrylvg vgehcsglai nsdhcggnlc tcqpqaflgw svdsclqgdr
+      601 cnifsnlilh gvnsgttcst dlqkantdii lgvcvnydly gisgqgifve vnatyynswq
+      661 nllydsngnl ygfrdyltnr tfmirscysg rvsaafhans sepallfrnv kcnyvfnntl
+      721 arqvqsinyf dsylgcvvna dnstsiavqt cdltvgsgyc ldysidrrsr raittgyrft
+      781 nfepftvkav ndslepvggl yeiqipseft ignmeefiqt sspkvtidca afvcgdyaac
+      841 ksqlveygsf cdninailte vnelfdttql qvanslmnga tlstklkdgv nfnvddinfs
+      901 pvlgclgsdc nkastrsaie dllfdkvkls dvgfveaynn ctggaeirdl lcvqsyngik
+      961 vlppllsenq isgytlaats aslfppwtaa agvpfylnvq yringlgvtm dvlsqnqkli
+     1021 anafnnalta iqngfdatns alvkiqsvvn anaealnkll qqlsnrfgai saslqeilsr
+     1081 ldaleaeaqi drlingrlta lnayvsqqls dstlvkfsaa qamekvnecv ksqssrinfc
+     1141 gngnhiislv qnapyglyfi hfnyvptkyv takvspglci agdrgiapks gyfvnvnntw
+     1201 mftgsgyyyp epitennvvv mstcavnytk apdvmlntsi pnlpdfkeel dqwfknqtsv
+     1261 apdlsldyin vtfldlqdem nrlqeaikvl nhsyinlkdi gtyeyyvkwp wyvwlligfa
+     1321 gvamlvllff iccctgcgts cfkkcggccd dytghpelvi ktshdd
+//
+

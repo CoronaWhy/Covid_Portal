@@ -1,0 +1,1808 @@
+LOCUS       VVV07109                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07109
+VERSION     VVV07109.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721772.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721772.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07106                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07106
+VERSION     VVV07106.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721770.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721770.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07095                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07095
+VERSION     VVV07095.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721764.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721764.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsesnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07094                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07094
+VERSION     VVV07094.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721762.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721762.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqlvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07089                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07089
+VERSION     VVV07089.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721761.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721761.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07088                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07088
+VERSION     VVV07088.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721759.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721759.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07087                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07087
+VERSION     VVV07087.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721758.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721758.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 axaxxgxxkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVV07084                1337 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   VVV07084
+VERSION     VVV07084.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721757.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1337
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         <1..>1337
+                     /product="Spike protein"
+     CDS             1..1337
+                     /coded_by="LR721757.1:<1..>4011"
+                     /note="source:Prodigal:2.6"
+ORIGIN      
+        1 afavigdlkc ttvsindvdt gapsistdvv dvtnglgtyy vldrvylntt lllngyypts
+       61 gstyrnmalk gtlllstlwf kppflsdfid gvfakvkntk vikdgvvyse fpaitigstf
+      121 vntsysvvvq phttnldnkl qglleisvcq ytmcdyphtm chpnlgnkri elwhwdtgvv
+      181 sclykrnfty dvnadylyfh fyqeggtfya yftdtgvvtk flfhvylgtv lshyyvmplt
+      241 cnsamtleyw vtpltfkqyl lafnhdgvif navdcksdfm seikcktlsi apstgvyeln
+      301 gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms slmsfiqads
+      361 ftcnnidaak iygmcffsit idkfaipngr kvdlqmgnlg ylqsfnyrid ttatscqlyy
+      421 tlpasnvsis rfnpsiwnrr fgfteqsvfk pqpvgvftdh dvvyaqhcfk aptnfcpckl
+      481 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+      541 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      601 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      661 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      721 gcvvnadnst sssvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      781 qpvgglyeiq ipseftignm defiqtsspk vtidcsvfvc gdyaacksql veygsfcdni
+      841 nailtevnel ldttqlqvad slmngvtlst klkdgfnfnv ddinfspvlg clgsecnkvs
+      901 srsaiedllf skvklsdvgf vdaynnctgg aeirdlicvq syngikvlpp llsenqisgy
+      961 tvaatfaslf ppwsaaagvp fylnvqyrin gigvtmdvls qnqklisnaf nnaldaiqeg
+     1021 fdatnsalvk iqavvnanae alnnllqqls nrfgaisasl qeilsrldal eaqaqidrli
+     1081 ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn hiislvqnap
+     1141 yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg sgyyypepit
+     1201 annvvvmstc avnytkapdv mlnistpklp dfkeeldqwf knqtltapdl sldyinvtfl
+     1261 dlqdemnrlq eaikvlnhsy inlkdigtye yyvkwpwyvw lliglagvam lvllfficcc
+     1321 tgcgtscfkk cggccdd
+//
+
+LOCUS       VVU96382                1363 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein [Canine respiratory coronavirus].
+ACCESSION   VVU96382
+VERSION     VVU96382.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721664.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         1..1363
+                     /product="Spike protein"
+     CDS             1..1363
+                     /coded_by="LR721664.1:23737..27828"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA
+                     sequence:uniprot-
+                     coronaviridae.fasta:tr|Q1ERQ3|Q1ERQ3_9BETC"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnhdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ytlpasnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign mdefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva dslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tannvvvmst cavnytkapd vmlnistpkl pdfkeeldqw fknqtltapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       VVU96367                1363 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike protein [Canine respiratory coronavirus].
+ACCESSION   VVU96367
+VERSION     VVU96367.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721663.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         1..1363
+                     /product="Spike protein"
+     CDS             1..1363
+                     /coded_by="LR721663.1:8674..12765"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA
+                     sequence:uniprot-
+                     coronaviridae.fasta:tr|Q1ERQ3|Q1ERQ3_9BETC"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnhdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ytlpasnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign mdefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva dslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tannvvvmst cavnytkapd vmlnistpkl pdfkeeldqw fknqtltapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       VVU96373                1363 aa            linear   VRL 26-MAR-2020
+DEFINITION  Spike [Canine respiratory coronavirus].
+ACCESSION   VVU96373
+VERSION     VVU96373.1
+DBLINK      BioProject: PRJEB34079
+DBSOURCE    embl accession LR721662.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Hayer,J., Malmberg,M., Hayer,J. and Malmberg,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-SEP-2019) Swedish University of Agricultural
+            Sciences, SGBC, Ulls vag 26, 75651, Sweden
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+     Protein         1..1363
+                     /product="Spike"
+                     /function="Spike protein"
+     CDS             1..1363
+                     /coded_by="LR721662.1:526..4617"
+                     /inference="ab initio prediction:Prodigal:2.6"
+                     /inference="similar to AA
+                     sequence:uniprot-
+                     coronaviridae.fasta:tr|Q1ERQ3|Q1ERQ3_9BETC"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnhdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ytlpasnvsi srfnpsiwnr rfgfteqsvf kpqlvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign mdefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva dslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tannvvvmst cavnytkapd vmlnistpkl pdfkeeldqw fknqtltapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       QAY30020                 818 aa            linear   VRL 06-FEB-2019
+DEFINITION  spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   QAY30020
+VERSION     QAY30020.1
+DBSOURCE    accession MH249786.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 818)
+  AUTHORS   More,G., Biggs,P., Dunowska,M. and Cave,N.J.
+  TITLE     Characterisation of the 3' region of canine respiratory coronavirus
+            from New Zealand
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 818)
+  AUTHORS   More,G., Biggs,P., Dunowska,M. and Cave,N.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-APR-2018) School of Veterinary Science, Massey
+            University, Tennent Drive, Palmerston North, Manawatu 4410, New
+            Zealand
+FEATURES             Location/Qualifiers
+     source          1..818
+                     /organism="Canine respiratory coronavirus"
+                     /isolate="NZ.046/16"
+                     /host="Canis lupus familiaris"
+                     /db_xref="taxon:215681"
+                     /country="New Zealand"
+                     /collection_date="2016"
+     Protein         <1..818
+                     /product="spike protein"
+     CDS             1..818
+                     /gene="ORF3"
+                     /coded_by="MH249786.1:<4073..6529"
+                     /note="S; coding region disrupted by sequencing gap"
+ORIGIN      
+        1 sykcpqtkyl vgigehcsgl aiksdycggn pctcqpkafl gwsvdsclqg drcnifanfi
+       61 lhginsgttc stdlqksntd iilgvcvnyd lygitgqgif vevnatyyns wqnllydsng
+      121 nlygfrdylt nrtfmirscy sgrvsaafhs nssepallfr nikcnyvfnn tlsrqlqpin
+      181 yfdsylgcvv nadnstsssv htcdltvgsg ycvdystkrr srrsittgyr ftnfepftvn
+      241 svndslqpvg glyeiqipse ftignmeefi qtrspkvtid csvfvcgdya acksqlveyg
+      301 sfcdninail tevnelldtt qlqvadslmn gvtlstklkd gfnfnvddin fspvlgclgs
+      361 ecnkvssrsa iedllfskvk lsdvgfvday nnctggaeir dlicvqsyng ikvlppllse
+      421 nqisgytvaa tfaslfppws aaagvpfyln vqyringigv tmdvlsqnqk lisnafnnal
+      481 daiqegfdat nsalvkiqsv vnanaealnn llqqlsnrfg aisaslqeil srldaleaqa
+      541 qidrlingrl talnayvsqq lsdstlvkfs aaqamekvne cvksqssrin fcgngnhiis
+      601 lvqnapygly fihfsyvptk yvtakvspgl ciagnrgiap ksgyfvnvnn twmftgsgyy
+      661 ypepitgnnv vvmstcavny tkapdvmlni stpklpdfke eldqwfknqt ltapdlsldy
+      721 invtfldlqd emnrlqeaik vlnhsyinlk digtyeyyvk wpwyvwllig lagvamlvll
+      781 fficcctgcg tscfkkcggc cddytghqel viktlhdd
+//
+
+LOCUS       AQT26509                 312 aa            linear   VRL 04-MAR-2017
+DEFINITION  spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   AQT26509
+VERSION     AQT26509.1
+DBSOURCE    accession KX432217.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 312)
+  AUTHORS   Wang,Y., Lu,S. and Tan,W.
+  TITLE     Phylogenetic Evidence for Cross-species Recombination between
+            Canine Respiratory Coronavirus and Bovine Coronavirus
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 312)
+  AUTHORS   Lu,S., Wang,Y. and Tan,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JUN-2016) Chinese Center for Disease Control and
+            Prevention, National Institute for Viral Disease Control and
+            Prevention, 155 Changbai Road, Changping District, Beijing 102206,
+            China
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..312
+                     /organism="Canine respiratory coronavirus"
+                     /strain="CRCoV/BJ-221"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="China"
+                     /collection_date="2014"
+     Protein         <1..>312
+                     /product="spike protein"
+     Region          <1..46
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <101..186
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     CDS             1..312
+                     /gene="S"
+                     /coded_by="KX432217.1:<1..>938"
+ORIGIN      
+        1 slcvgsgsgi dagyknsgig tcpagtnylt cynanqcdcl ctpdpilsks tgpykcpqtk
+       61 hlvgigehcs glaiksdycg gnpctcqpka flgwsvdscl qgdrcnifan filhgvnsgt
+      121 tcstdlqksn tdiilgvcvn ydlygitgqg ifvevnatyy nswqnllyds ngnlygfrdy
+      181 ltnrtfmirs cysgrvsaaf hsnssepall frnikcnyvf nntlsrqlqp inyfdsylgc
+      241 vvnadnstsi svqtcdltvg sgycvdystk rrsrrsittg yrftnfepft vnsvndslqp
+      301 vgglyeiqip se
+//
+
+LOCUS       AQT26507                 305 aa            linear   VRL 04-MAR-2017
+DEFINITION  spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   AQT26507
+VERSION     AQT26507.1
+DBSOURCE    accession KX432215.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 305)
+  AUTHORS   Wang,Y., Lu,S. and Tan,W.
+  TITLE     Phylogenetic Evidence for Cross-species Recombination between
+            Canine Respiratory Coronavirus and Bovine Coronavirus
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 305)
+  AUTHORS   Lu,S., Wang,Y. and Tan,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JUN-2016) Chinese Center for Disease Control and
+            Prevention, National Institute for Viral Disease Control and
+            Prevention, 155 Changbai Road, Changping District, Beijing 102206,
+            China
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..305
+                     /organism="Canine respiratory coronavirus"
+                     /strain="CRCoV/BJ-34"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="China"
+                     /collection_date="2014"
+     Protein         <1..>305
+                     /product="spike protein"
+     Region          <3..48
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <103..188
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     CDS             1..305
+                     /gene="S"
+                     /coded_by="KX432215.1:<1..>914"
+ORIGIN      
+        1 ngslcvgsgs gidagyknsg igtcpagtny ltcynanqcd clctpdpils kstgpykcpq
+       61 tkhlvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+      121 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      181 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      241 gcvvnadnst sisvqtcdlt vgsgycvdys tkrrsrrsit tgyrftnfep ftvnsvndsl
+      301 qpvgg
+//
+
+LOCUS       AQT26498                1363 aa            linear   VRL 04-MAR-2017
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   AQT26498
+VERSION     AQT26498.1
+DBSOURCE    accession KX432213.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Wang,Y., Lu,S. and Tan,W.
+  TITLE     Phylogenetic Evidence for Cross-species Recombination between
+            Canine Respiratory Coronavirus and Bovine Coronavirus
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Wang,Y., Lu,S. and Tan,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JUN-2016) Chinese Center for Disease Control and
+            Prevention, National Institute for Viral Disease Control and
+            Prevention, 155 Changbai Road, Changping District, Beijing 102206,
+            China
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="BJ232"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="China"
+                     /collection_date="2014"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          327..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="KX432213.1:23574..27665"
+ORIGIN      
+        1 mflillislp mafavigdlk cttasinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttaiscqly ynlpagnvsi srfnpsiwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsisvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign mqefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsesqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ABJ16386                 134 aa            linear   VRL 14-JUL-2016
+DEFINITION  spike protein, partial [Canine respiratory coronavirus].
+ACCESSION   ABJ16386
+VERSION     ABJ16386.1
+DBSOURCE    accession DQ983324.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 134)
+  AUTHORS   Huang,C.Y., Liu,C.H. and Chueh,L.L.
+  TITLE     Viral Nucleic Acid Diagnostic Assays for Canine Infectious
+            Respiratory Disease and Analysis of Clinical Cases in Taiwan
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 134)
+  AUTHORS   Huang,C.Y., Liu,C.H. and Chueh,L.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-SEP-2006) Graduate Institute of Veterinary Medicine,
+            National Taiwan University, No. 1, Sec. 4, Roosevelt Road, Taipei
+            106, Taiwan
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..134
+                     /organism="Canine respiratory coronavirus"
+                     /strain="CRCoV/NTU1/05"
+                     /serotype="group 2 coronavirus"
+                     /isolation_source="nasal swab from dog showing respiratory
+                     symptoms"
+                     /db_xref="taxon:215681"
+                     /country="Taiwan"
+                     /collection_date="2005"
+                     /note="PCR_primers=fwd_name: SP1, rev_name: SP2;
+                     PCR_primers=fwd_name: SP3, rev_name: SP4"
+     Protein         <1..>134
+                     /product="spike protein"
+     Region          <26..111
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..134
+                     /coded_by="DQ983324.1:<1..>404"
+                     /codon_start=2
+ORIGIN      
+        1 sdycggnpct cqpkaflgws vdsclqgdrc nifanfilhg vnsgttcstd lqksntdiil
+       61 gvcvnydlyg itgqgifvev natyynswqn llydsngnly gfrdyltnrt fmirscysgr
+      121 vsaafhsnss epal
+//
+
+LOCUS       ABG49511                 197 aa            linear   VRL 14-JUL-2016
+DEFINITION  spike glycoprotein, partial [Canine respiratory coronavirus].
+ACCESSION   ABG49511
+VERSION     ABG49511.1
+DBSOURCE    accession DQ662401.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 197)
+  AUTHORS   Decaro,N., Desario,C., Elia,G., Mari,V., Lucente,M.S., Cordioli,P.,
+            Colaianni,M.L., Martella,V. and Buonavoglia,C.
+  TITLE     Serological and molecular evidence that canine respiratory
+            coronavirus is circulating in Italy
+  JOURNAL   Vet. Microbiol. 121 (3-4), 225-230 (2007)
+   PUBMED   17215093
+REFERENCE   2  (residues 1 to 197)
+  AUTHORS   Decaro,N., Desario,C., Elia,G., Martella,V. and Buonavoglia,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-MAY-2006) Animal Health and Well-Being, University of
+            Bari, Strada per Casamassima Km 3, Valenzano, Bari 70010, Italy
+FEATURES             Location/Qualifiers
+     source          1..197
+                     /organism="Canine respiratory coronavirus"
+                     /strain="240/05"
+                     /isolation_source="lung"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="Italy"
+     Protein         <1..>197
+                     /product="spike glycoprotein"
+     Region          <43..128
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..197
+                     /gene="S"
+                     /coded_by="DQ662401.1:<1..>595"
+                     /codon_start=3
+ORIGIN      
+        1 tkylvgigeh csglaiksdy cggnpctcqp kaflgwsvds clqgdrcnif anfilhgvns
+       61 gttcstdlqk sntdiilgvc vnydlygitg qgifvevnat yynswqnlly dsngnlygfr
+      121 dyltnrtfmi rscysgrvsa afhsnssepa llfrnikcny vfnntlsrql qpinyfdsyl
+      181 gcvvnahnst sssvqtc
+//
+
+LOCUS       AFW97360                1363 aa            linear   VRL 12-MAR-2013
+DEFINITION  S protein [Canine respiratory coronavirus].
+ACCESSION   AFW97360
+VERSION     AFW97360.1
+DBSOURCE    accession JX860640.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Lim,S.I., Choi,S., Lim,J.A., Jeoung,H.Y., Song,J.Y., Dela Pena,R.C.
+            and An,D.J.
+  TITLE     Complete genome analysis of canine respiratory coronavirus
+  JOURNAL   Genome Announc 1 (1), E00093-12 (2013)
+   PUBMED   23405345
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Lim,S.I., Lim,J.A., Jeoung,H.Y., Song,J.Y., Pena,R.Cd.C. and
+            An,D.J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-SEP-2012) Viral Disease Division, Animal, Plant and
+            Fisheries Quarantine and Inspection Agency, Anyang 6 Dong, Anyang,
+            Gyeonggi 430-824, Korea
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="K37"
+                     /isolation_source="lung"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="2008"
+     Protein         1..1363
+                     /product="S protein"
+                     /name="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="JX860640.1:23641..27732"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitmgst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvsi srfnpsiwnk rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngsfcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlvcv qsyngikvlp
+      961 pllsesqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq psrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ACX46860                1363 aa            linear   VRL 11-OCT-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACX46860
+VERSION     ACX46860.1
+DBSOURCE    accession GQ918143.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,J.-W., Yoon,S.-H., Jeong,H.-Y., Kim,H.-J. and
+            Park,B.-K.
+  TITLE     Genetic analysis of canine group 2 coronavirus in Korean dogs
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,J.-W., Yoon,S.-H., Jeong,H.-Y., Kim,H.-J. and
+            Park,B.-K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-SEP-2009) Veterinary Biotechnology Division, National
+            Veterinary Research and Quarantine Service, Anyang 6-Dong, Anyang
+            City, Gyeonggi 430-824, South Korea
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="K39"
+                     /isolation_source="lung"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="2008"
+     Protein         1..1363
+                     /product="spike protein"
+                     /name="S protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="GQ918143.1:2306..6397"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikhgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtsy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvpi srfnpsiwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngsfcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn ggttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsgsqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrpda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ACX46850                1363 aa            linear   VRL 11-OCT-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACX46850
+VERSION     ACX46850.1
+DBSOURCE    accession GQ918142.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,J.-W., Yoon,S.-H., Jeong,H.-Y., Kim,H.-J. and
+            Park,B.-K.
+  TITLE     Genetic analysis of canine group 2 coronavirus in Korean dogs
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,J.-W., Yoon,S.-H., Jeong,H.-Y., Kim,H.-J. and
+            Park,B.-K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-SEP-2009) Veterinary Biotechnology Division, National
+            Veterinary Research and Quarantine Service, Anyang 6-Dong, Anyang
+            City, Gyeonggi 430-824, South Korea
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="K37"
+                     /isolation_source="lung"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="2008"
+     Protein         1..1363
+                     /product="spike protein"
+                     /name="S protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="GQ918142.1:2306..6397"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitmgst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvsi srfnpsiwnk rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngsfcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlvcv qsyngikvlp
+      961 pllsesqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq psrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ACX46840                1363 aa            linear   VRL 11-OCT-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACX46840
+VERSION     ACX46840.1
+DBSOURCE    accession GQ918141.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   An,D.J., Jeong,W., Yoon,S.H., Jeoung,H.Y., Kim,H.J. and Park,B.K.
+  TITLE     Genetic analysis of canine group 2 coronavirus in Korean dogs
+  JOURNAL   Vet. Microbiol. 141 (1-2), 46-52 (2010)
+   PUBMED   19819086
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,J.-W., Yoon,S.-H., Jeong,H.-Y., Kim,H.-J. and
+            Park,B.-K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-SEP-2009) Veterinary Biotechnology Division, National
+            Veterinary Research and Quarantine Service, Anyang 6-Dong, Anyang
+            City, Gyeonggi 430-824, South Korea
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="K9"
+                     /isolation_source="lung"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="2008"
+     Protein         1..1363
+                     /product="spike protein"
+                     /name="S protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="GQ918141.1:2306..6397"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigsa fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylst
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa niygmcfssl tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvsi srfnpsiwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglatksd ycggspctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygis gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsesqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqd gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqr fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       AAO06124                1363 aa            linear   VRL 03-JUN-2003
+DEFINITION  spike glycoprotein [Canine respiratory coronavirus].
+ACCESSION   AAO06124
+VERSION     AAO06124.1
+DBSOURCE    accession AY150272.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Erles,K., Toomey,C., Brooks,H.W. and Brownlie,J.
+  TITLE     Detection of a group 2 coronavirus in dogs with canine infectious
+            respiratory disease
+  JOURNAL   Virology 310 (2), 216-223 (2003)
+   PUBMED   12781709
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Erles,K., Toomey,C., Brooks,H.W. and Brownlie,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-SEP-2002) Pathology and Infectious Diseases, The
+            Royal Veterinary College, Hawkshead Lane, Hatfield AL9 7TA, UK
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="respiratory"
+                     /db_xref="taxon:215681"
+                     /clone="T101"
+     Protein         1..1363
+                     /product="spike glycoprotein"
+                     /name="surface protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          783..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="AY150272.1:1..4092"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vpclykrnft ydvnadylys hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpasnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg fgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs agfhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgywgdy stqrrsrrti ttgyrftnfe
+      781 pftvnpvnds lhpvgglyei qipseftign meefiqtrsp kvtidcpvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl tqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snkfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+
+LOCUS       ACL93320                1363 aa            linear   VRL 05-AUG-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACL93320
+VERSION     ACL93320.1
+DBSOURCE    accession EU983107.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,W.-S., Yoon,S.H., Kim,H.-J. and Park,B.-K.
+  TITLE     Genetic diversity of group 2 coronavirus isolates from dogs in
+            Korea
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,W.-S., Yoon,S.H., Kim,H.-J. and Park,B.-K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-AUG-2008) National Veterinary Research and Quarantine
+            Service, Anyang 6-dong, Anyang, Kyunggi-do 430-824, South Korea
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /isolate="CRCVK39"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="Jun-2008"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="EU983107.1:1..4092"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikhgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtsy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvpi srfnpsiwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngsfcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn ggttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsgsqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrpda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ACL93319                1363 aa            linear   VRL 05-AUG-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACL93319
+VERSION     ACL93319.1
+DBSOURCE    accession EU983106.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,W.-S., Yoon,S.H., Kim,H.-J. and Park,B.-K.
+  TITLE     Genetic diversity of group 2 coronavirus isolates from dogs in
+            Korea
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,W.-S., Yoon,S.H., Kim,H.-J. and Park,B.-K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-AUG-2008) National Veterinary Research and Quarantine
+            Service, Anyang 6-dong, Anyang, Kyunggi-do 430-824, South Korea
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /isolate="CRCVK37"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="Jun-2008"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="EU983106.1:1..4092"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitmgst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvsi srfnpsiwnk rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngsfcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlvcv qsyngikvlp
+      961 pllsesqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq psrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ACL93318                1363 aa            linear   VRL 05-AUG-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACL93318
+VERSION     ACL93318.1
+DBSOURCE    accession EU983105.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,W.-S., Yoon,S.H., Kim,H.-J. and Park,B.-K.
+  TITLE     Genetic diversity of group 2 coronavirus isolates from dogs in
+            Korea
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   An,D.-J., Jeong,W.-S., Yoon,S.H., Kim,H.-J. and Park,B.-K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-AUG-2008) National Veterinary Research and Quarantine
+            Service, Anyang 6-dong, Anyang, Kyunggi-do 430-824, South Korea
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /isolate="CRCVK9"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="South Korea"
+                     /collection_date="Jun-2008"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="EU983105.1:1..4092"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsinnvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigsa fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylst
+      241 vlshyyvmpl tcnsvmtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa niygmcfssl tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpagnvsi srfnpsiwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkhlvgige hcsglatksd ycggspctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygis gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsesqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqd gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqr fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       ACL12996                1363 aa            linear   VRL 20-MAR-2009
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ACL12996
+VERSION     ACL12996.1
+DBSOURCE    accession EU999954.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Lorusso,A., Desario,C., Mari,V., Campolo,M., Lorusso,E., Elia,G.,
+            Martella,V., Buonavoglia,C. and Decaro,N.
+  TITLE     Molecular characterization of a canine respiratory coronavirus
+            strain detected in Italy
+  JOURNAL   Virus Res. 141 (1), 96-100 (2009)
+   PUBMED   19162098
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Lorusso,A., Desario,C., Mari,V., Campolo,M., Lorusso,E., Elia,G.,
+            Martella,V. and Buonavoglia,N.C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-AUG-2008) Public Health and Animal Sciences, Faculty
+            of Veterinary Medicine of Bari, Strada per Casamassima Km 3,
+            Valenzano, Bari 70010, Italy
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /strain="240/05"
+                     /isolation_source="lung"
+                     /host="dog"
+                     /db_xref="taxon:215681"
+                     /country="Italy"
+                     /collection_date="2005"
+     Protein         1..1363
+                     /product="spike protein"
+                     /name="S protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1325
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="EU999954.1:2306..6397"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftetgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnhdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ytlpasnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnahns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign mnefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva dslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsesqisg ytlaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfyicc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       BAG48179                1363 aa            linear   VRL 26-JUL-2008
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   BAG48179
+VERSION     BAG48179.1
+DBSOURCE    accession AB370269.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Mochizuki,M., Yachi,A., Ohshima,T., Ohuchi,A. and Ishida,T.
+  TITLE     Etiologic study of upper respiratory infections of household dogs
+  JOURNAL   J. Vet. Med. Sci. 70 (6), 563-569 (2008)
+   PUBMED   18628596
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Yachi,A. and Mochizuki,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (04-DEC-2007) Contact:Masami Mochizuki Kyoritsu Seiyaku
+            Corporation, Laboratory of Clinical Microbiology; Kudankita 1-12-4,
+            Chiyoda-ku, Tokyo 102-0073, Japan
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /isolate="06/075"
+                     /db_xref="taxon:215681"
+                     /note="nasal specimen"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="AB370269.1:1..4092"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttvtscqly ynlpagnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg fgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyvtnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssfvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytvaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vssglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikss hdd
+//
+
+LOCUS       ABG78748                1363 aa            linear   VRL 23-FEB-2007
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   ABG78748
+VERSION     ABG78748.1
+DBSOURCE    accession DQ682406.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Erles,K., Shiu,K.B. and Brownlie,J.
+  TITLE     Isolation and sequence analysis of canine respiratory coronavirus
+  JOURNAL   Virus Res. 124 (1-2), 78-87 (2007)
+   PUBMED   17092595
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Erles,K.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-JUN-2006) PID, The Royal Veterinary College,
+            Hawkshead Lane, Hatfield, Herts AL9 7TA, UK
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /isolate="4182"
+                     /isolation_source="whole cell lysate from infected HRT-18
+                     cells"
+                     /db_xref="taxon:215681"
+                     /country="United Kingdom"
+                     /collection_date="2003"
+     Protein         1..1363
+                     /product="spike protein"
+                     /name="surface glycoprotein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="DQ682406.1:2485..6576"
+ORIGIN      
+        1 mflillislp mafavigdlk cttvsindvd tgapsvstdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgsiyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcnypht ichpslgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ynlpasnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stqrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtrsp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fprwpaaagv pfylnvqyri ngigvtmdvl tqnqkliana
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigtf eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+
+LOCUS       BAE96086                1363 aa            linear   VRL 21-JUN-2006
+DEFINITION  spike protein [Canine respiratory coronavirus].
+ACCESSION   BAE96086
+VERSION     BAE96086.1
+DBSOURCE    accession AB242262.1
+KEYWORDS    .
+SOURCE      Canine respiratory coronavirus
+  ORGANISM  Canine respiratory coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1
+  AUTHORS   Yachi,A. and Mochizuki,M.
+  TITLE     Survey of dogs in Japan for group 2 canine coronavirus infection
+  JOURNAL   J. Clin. Microbiol. 44 (7), 2615-2618 (2006)
+   PUBMED   16825396
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Yachi,A. and Mochizuki,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-NOV-2005) Akiko Yachi, Kyoritsu Seiyaku Corporation,
+            Laboratory of Clinical Microbiology; Kudankita 1-12-4, Chiyoda-ku,
+            Tokyo 102-0073, Japan (E-mail:a_yachi@kyoritsuseiyaku.com,
+            Tel:81-3-3264-7117, Fax:81-3-3264-6094)
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Canine respiratory coronavirus"
+                     /db_xref="taxon:215681"
+                     /clone="02/005"
+                     /note="nasal specimen"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /coded_by="AB242262.1:1..4092"
+ORIGIN      
+        1 mfltllislp mafavigdlk cttvsindvd tgapsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdfi dgvfakvknt kvikdgvvys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmcdypht mchpnlgnkr
+      181 ielwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfhvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltfkqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcffsi tidkfaipng rkvdlqmgnl gylqsfnyri
+      421 dttatscqly ytlpasnvsi srfnpsiwnr rfgfteqsvf kpqpvgvftd hdvvyaqhcf
+      481 kaptnfcpck lngslcvgsg sgidagykns gigtcpagtn yltcynanqc dclctpdpil
+      541 skstgpykcp qtkylvgige hcsglaiksd ycggnpctcq pkaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhsnssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tsssvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign mdefiqtssp kvtidcsvfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva dslmngvtls tklkdgfnfn vddinfspvl
+      901 gclgsecnkv ssrsaiedll fskvklsdvg fvdaynnctg gaeirdlicv qsyngikvlp
+      961 pllsesqisg ytlaatfasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqklisna
+     1021 fnnaldaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisas lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtlmapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnhs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelviktl hdd
+//
+

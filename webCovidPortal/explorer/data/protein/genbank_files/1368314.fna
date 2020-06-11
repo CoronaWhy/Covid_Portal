@@ -1,0 +1,111 @@
+LOCUS       AGY29650                1344 aa            linear   VRL 13-NOV-2014
+DEFINITION  spike protein [Coronavirus Neoromicia/PML-PHE1/RSA/2011].
+ACCESSION   AGY29650
+VERSION     AGY29650.2
+DBSOURCE    accession KC869678.4
+KEYWORDS    .
+SOURCE      Coronavirus Neoromicia/PML-PHE1/RSA/2011
+  ORGANISM  Coronavirus Neoromicia/PML-PHE1/RSA/2011
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1344)
+  AUTHORS   Ithete,N.L., Stoffberg,S., Corman,V.M., Cottontail,V.M.,
+            Richards,L.R., Schoeman,M.C., Drosten,C., Drexler,J.F. and
+            Preiser,W.
+  TITLE     Close relative of human middle East respiratory syndrome
+            coronavirus in bat, South Africa
+  JOURNAL   Emerging Infect. Dis. 19 (10), 1697-1699 (2013)
+   PUBMED   24050621
+REFERENCE   2  (residues 1 to 1344)
+  AUTHORS   Corman,V.M., Ithete,N.L., Richards,L.R., Schoeman,M.C., Preiser,W.,
+            Drosten,C. and Drexler,J.F.
+  TITLE     Rooting the phylogenetic tree of middle East respiratory syndrome
+            coronavirus by characterization of a conspecific virus from an
+            African bat
+  JOURNAL   J. Virol. 88 (19), 11297-11303 (2014)
+   PUBMED   25031349
+REFERENCE   3  (residues 1 to 1344)
+  AUTHORS   Ithete,N.L., Stoffberg Hockey,S., Corman,V.M., Cottontail,V.M.,
+            Richards,L., Drosten,C., Drexler,J.F. and Preiser,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-2013) Division of Medical Virology, Pathology,
+            Stellenbosch University, Francie van Zijl Avenue, Parow Valley,
+            Cape Town, Western Cape 7500, South Africa
+REFERENCE   4  (residues 1 to 1344)
+  AUTHORS   Ithete,N.L., Stoffberg Hockey,S., Corman,V.M., Cottontail,V.M.,
+            Richards,L., Drosten,C., Drexler,J.F. and Preiser,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-AUG-2013) Division of Medical Virology, Pathology,
+            Stellenbosch University, Francie van Zijl Avenue, Parow Valley,
+            Cape Town, Western Cape 7500, South Africa
+  REMARK    Sequence update by submitter
+REFERENCE   5  (residues 1 to 1344)
+  AUTHORS   Ithete,N.L., Stoffberg Hockey,S., Corman,V.M., Cottontail,V.M.,
+            Richards,L., Drosten,C., Drexler,J.F. and Preiser,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-OCT-2013) Division of Medical Virology, Pathology,
+            Stellenbosch University, Francie van Zijl Avenue, Parow Valley,
+            Cape Town, Western Cape 7500, South Africa
+  REMARK    Sequence update by submitter
+REFERENCE   6  (residues 1 to 1344)
+  AUTHORS   Ithete,N.L., Stoffberg Hockey,S., Corman,V.M., Cottontail,V.M.,
+            Richards,L., Drosten,C., Drexler,J.F. and Preiser,W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-JUL-2014) Division of Medical Virology, Pathology,
+            Stellenbosch University, Francie van Zijl Avenue, Parow Valley,
+            Cape Town, Western Cape 7500, South Africa
+  REMARK    Sequence update by submitter
+COMMENT     On Jul 18, 2014 this sequence version replaced AGY29650.1.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1344
+                     /organism="Coronavirus Neoromicia/PML-PHE1/RSA/2011"
+                     /strain="Neoromicia/PML-PHE1/RSA/2011"
+                     /host="Neoromicia capensis"
+                     /db_xref="taxon:1368314"
+                     /country="South Africa"
+                     /collection_date="2011"
+     Protein         1..1344
+                     /product="spike protein"
+     Region          50..348
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          384..628
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          761..1343
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1344
+                     /gene="S"
+                     /coded_by="KC869678.4:21470..25504"
+ORIGIN      
+        1 mtysvfplmc lltfiganak ivtlpgndat gycpsvdmqp syfiqhnwpe pidmnkadgv
+       61 iypngrtysn itlqttnlfp kngdlgtqyv ysasnhksta ndafisnysy ygnpfgdgiv
+      121 irigqnankt gsvivgqaqt tmkkiypalm lgssfgnfsa nnksgayfnh tllilpskcg
+      181 tvfqvaycll qprteskcpg nsnyvsyfla dspsdcssts deirrnglrd irkffnlvnc
+      241 tyfeefnvta deraewfgiv qdaqgvhlyt srkngfnsnn lflfatvpiy dklnyytvip
+      301 rsvitpsnqr dawaafyiyp lhqlsyllnf dvngyitqaa dcgyndytql icsygdfnmk
+      361 sgvystsyys akpvgayyea hvypdcnfte lfreraptim qykrevftrc nynlslllsl
+      421 vqvdefvcdk itpealatgc yssltvdwfa fpyawksyla igsadrivrf nynqdysnps
+      481 crihskvnss igisyagays yitncnygat nkddvvkpgg rasqqcitga lnspttgqlw
+      541 aynfggvpyr vsrltytdhl sdpldmvyvi tvkyepgaet vcpkqirpdy stnithllgs
+      601 cisydiygit gtgvfqlcna tgirqqkfvy dkfdniigfh sddgnyycva pcvsvpvsvi
+      661 yddktnqyat lfgsvacqhi stmaaqfsre traslvsrnm qnllqtsvgc vmgfhetndt
+      721 veechlslgq slcaippntn lrsgrstfgl gslaynsplr vdalnssefk vslplnftfg
+      781 vtqeyietsi qkitvdckqy vcngfakcek lleqygqfcs kinqalhgan lrqddsvrnl
+      841 fesvktpqtv plttgfggef nltlleplsv stgssnarsa leellfdsvt iadpgymqgy
+      901 ddcmqqgpas ardlicaqyv agykvlpplm dvnmeaayts sllgsiagag wtaglssfaa
+      961 ipfaqsifyr lngvgitqqv lsenqkiian kfnqalgamq tgftttneaf qkvqdavntn
+     1021 aqalaklase lsntfgaiss sigdiiqrld vleqevqidr lingrlttln afvaqqlvrs
+     1081 esaarsaqla kdkvnecvks qstrsgfcgq gthivsfvin apnglyfmhv gyhpsqhiev
+     1141 vaayglcdsa nptnciapvn gyfiknqttr sadewsytgs sfyapepitt lntryvapqv
+     1201 tfqnisnnlp ppllsnstgt dfkdeldeff knvstnipnf galtqinttl ldlsgemlal
+     1261 qevvkalnes yidlkelgny tyynkwpwyi wlgfiaglla lalcvffilc ctgcgtsclg
+     1321 klkcnrccdk yeeydlephk ihvh
+//
+

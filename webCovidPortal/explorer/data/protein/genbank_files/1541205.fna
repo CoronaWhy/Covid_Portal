@@ -1,0 +1,338 @@
+LOCUS       YP_009072440            1317 aa            linear   VRL 13-AUG-2018
+DEFINITION  spike protein [Bat Hp-betacoronavirus/Zhejiang2013].
+ACCESSION   YP_009072440
+VERSION     YP_009072440.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_025217.1
+KEYWORDS    RefSeq.
+SOURCE      Bat Hp-betacoronavirus/Zhejiang2013
+  ORGANISM  Bat Hp-betacoronavirus/Zhejiang2013
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Hibecovirus; Bat Hp-betacoronavirus Zhejiang2013.
+REFERENCE   1  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   2  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   3  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Characterization of a novel betacoronavirus subgroup related to
+            subgroup B from Hipposideros pratti bats in China
+  JOURNAL   Unpublished
+REFERENCE   4  (residues 1 to 1317)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-OCT-2014) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   5  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-SEP-2013) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No. 6 Rongjing
+            East Street, Yizhuang, Beijing 100176, China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AIL94216.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1317
+                     /organism="Bat Hp-betacoronavirus/Zhejiang2013"
+                     /isolate="Zhejiang2013"
+                     /host="Hipposideros pratti"
+                     /db_xref="taxon:1541205"
+                     /country="China"
+                     /collection_date="29-Apr-2013"
+     Protein         1..1317
+                     /product="spike protein"
+                     /name="S"
+                     /calculated_mol_wt=147118
+     Region          56..313
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          357..611
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <579..646
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          748..1313
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1317
+                     /locus_tag="NA39_gp3"
+                     /coded_by="NC_025217.1:23563..27516"
+                     /db_xref="GeneID:20522555"
+ORIGIN      
+        1 mvaryrlcil qlilsachls itrdvqpyvh eanctkqvat egpfmaaypl gkygfintyy
+       61 pdrifrsntt alftdlfpvi gttvtpwkaf nalttnerkd krnferhpfg egvfvtikht
+      121 qvsgpstppm ylfgtyfnss sytlaisldg lyrrievcnf qvcqnpvmyy akvsnpaqgn
+      181 pliysqrayt dynscvsqts qsfnitsqgd kngafskdti ttyvfkyqng ifsvfhgfhn
+      241 gtdhvpypkp afefpldipi thfiipptve epaqgqgytr gnyvvyyaql kkstfmfgfd
+      301 snglitryid caagpkdelm csqgsfnitp gvytttnyra tpkqhvvits advsaecpfq
+      361 slinvteati pspafwrrhy vrncnydisv ftdnadvysl qcygvapssl admcweeahi
+      421 dymkisekdi fsfkpsgagd fakynyklps dfmgctvvft nqeltcnats gqlchvytnn
+      481 ltnypaeata wdkshyesie ryqmwssenv yncelqevgp qqfnrmprnc yvrsnnsndy
+      541 wqpmsfrgvn slmvamaitl kptrtsatvc gykqkttplv lnecityhiy gykgtgvivs
+      601 anytfqsfqt vqltstgslh sfkynntiyg ilpcaqaqvs ivtagsnhdn vavvynglgc
+      661 nafqskmqgv dntewsvytn fsspidtpvg cltgaiqaqe nstecqfalg ldscvnytad
+      721 trlrtaraad raltfnymyf aqelpsqseq svafdnstlq ipinftigie yetipvtmpk
+      781 vtvdcaqyvc gdnsecrtll vqygtfceti ndalrgvalq qdvnqkdvfs svrrlakvss
+      841 pmnlgnlngf nfssilnqea ingnnfqars aiedlffdki etadvgfqkk ydectggsvv
+      901 kdlgcaqsfn glmvlppqmt dahvaaytts aalgsffsip ntmqmayrfn giavtqkvlv
+      961 dnqkqiankf nqammsvqtg fkatssalek lqkvvndnaq alnnlvaqlt nnfgaissai
+     1021 nditqrldkl eadaqidrli ngrlqvlqtf vtqqlirase irasaklaaq kmsecvqgqs
+     1081 qrldfcgrgm hlmsfpqaap ygmvflhvly kptdyinvtt vpaicsndva yfpvdgvfvy
+     1141 ynnslmftkr nyfepeiiti dnirsagscn vdvtyvnhti ynpempeled fkqeleeirk
+     1201 nfstglpnrp nftlpglegi nasmvdlsee vkilndvvke lnaslinlqe lgvnsqyikw
+     1261 pwyiwlgfia gliaivmati mlccmtsccs cfkglcackr ccdsfdepde pikyhyp
+//
+
+LOCUS       YP_009072439             451 aa            linear   VRL 13-AUG-2018
+DEFINITION  hypothetical protein [Bat Hp-betacoronavirus/Zhejiang2013].
+ACCESSION   YP_009072439
+VERSION     YP_009072439.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_025217.1
+KEYWORDS    RefSeq.
+SOURCE      Bat Hp-betacoronavirus/Zhejiang2013
+  ORGANISM  Bat Hp-betacoronavirus/Zhejiang2013
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Hibecovirus; Bat Hp-betacoronavirus Zhejiang2013.
+REFERENCE   1  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   2  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   3  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Characterization of a novel betacoronavirus subgroup related to
+            subgroup B from Hipposideros pratti bats in China
+  JOURNAL   Unpublished
+REFERENCE   4  (residues 1 to 451)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-OCT-2014) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   5  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-SEP-2013) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No. 6 Rongjing
+            East Street, Yizhuang, Beijing 100176, China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AIL94215.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..451
+                     /organism="Bat Hp-betacoronavirus/Zhejiang2013"
+                     /isolate="Zhejiang2013"
+                     /host="Hipposideros pratti"
+                     /db_xref="taxon:1541205"
+                     /country="China"
+                     /collection_date="29-Apr-2013"
+     Protein         1..451
+                     /product="hypothetical protein"
+                     /name="S-related ORF2"
+                     /calculated_mol_wt=50096
+     Region          63..268
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     CDS             1..451
+                     /locus_tag="NA39_gp2"
+                     /coded_by="NC_025217.1:22058..23413"
+                     /db_xref="GeneID:20522554"
+ORIGIN      
+        1 mfvlvllfsi asaklvkpng qhpttddtaa ysnclrlspq whiglsnltv nhdtflipqp
+       61 tfnattlsag yypkigdtvv tweaivtgds aenqkfkvdy dnyiphefgq givlkvfnrd
+      121 kasastppaf lfgstfdntt htmliavntt hrtvavcrfe fcstpvvasm inngnfqqyn
+      181 hsslftsaed ciyvnyqnft mnntmgdlsr tgtvyysfqy lngyfsiyya yralhnltep
+      241 kflspfmhfp lsiavtnflv ppvwnrnyqn qnaqtqargq fvieyamlrl qsmyfdyqng
+      301 tlinytscdd lscltqtpcs tqapcpttsc ptqksttsvt tttpttistt ikpttisstt
+      361 stttqttsrt ttaetttttv astvsqgttn etystlppcn nyttitqspc ndvayfwtmv
+      421 ftiiisisfi lgvllcssid syeeevklhq i
+//
+
+LOCUS       AIL94216                1317 aa            linear   VRL 07-JUL-2017
+DEFINITION  spike protein [Bat Hp-betacoronavirus/Zhejiang2013].
+ACCESSION   AIL94216
+VERSION     AIL94216.1
+DBSOURCE    accession KF636752.1
+KEYWORDS    .
+SOURCE      Bat Hp-betacoronavirus/Zhejiang2013
+  ORGANISM  Bat Hp-betacoronavirus/Zhejiang2013
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Hibecovirus; Bat Hp-betacoronavirus Zhejiang2013.
+REFERENCE   1  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   2  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   3  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Characterization of a novel betacoronavirus subgroup related to
+            subgroup B from Hipposideros pratti bats in China
+  JOURNAL   Unpublished
+REFERENCE   4  (residues 1 to 1317)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-SEP-2013) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No. 6 Rongjing
+            East Street, Yizhuang, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1317
+                     /organism="Bat Hp-betacoronavirus/Zhejiang2013"
+                     /isolate="Zhejiang2013"
+                     /host="Hipposideros pratti"
+                     /db_xref="taxon:1541205"
+                     /country="China"
+                     /collection_date="29-Apr-2013"
+     Protein         1..1317
+                     /product="spike protein"
+                     /name="S"
+     Region          56..313
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          357..611
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <579..646
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          748..1313
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1317
+                     /coded_by="KF636752.1:23563..27516"
+ORIGIN      
+        1 mvaryrlcil qlilsachls itrdvqpyvh eanctkqvat egpfmaaypl gkygfintyy
+       61 pdrifrsntt alftdlfpvi gttvtpwkaf nalttnerkd krnferhpfg egvfvtikht
+      121 qvsgpstppm ylfgtyfnss sytlaisldg lyrrievcnf qvcqnpvmyy akvsnpaqgn
+      181 pliysqrayt dynscvsqts qsfnitsqgd kngafskdti ttyvfkyqng ifsvfhgfhn
+      241 gtdhvpypkp afefpldipi thfiipptve epaqgqgytr gnyvvyyaql kkstfmfgfd
+      301 snglitryid caagpkdelm csqgsfnitp gvytttnyra tpkqhvvits advsaecpfq
+      361 slinvteati pspafwrrhy vrncnydisv ftdnadvysl qcygvapssl admcweeahi
+      421 dymkisekdi fsfkpsgagd fakynyklps dfmgctvvft nqeltcnats gqlchvytnn
+      481 ltnypaeata wdkshyesie ryqmwssenv yncelqevgp qqfnrmprnc yvrsnnsndy
+      541 wqpmsfrgvn slmvamaitl kptrtsatvc gykqkttplv lnecityhiy gykgtgvivs
+      601 anytfqsfqt vqltstgslh sfkynntiyg ilpcaqaqvs ivtagsnhdn vavvynglgc
+      661 nafqskmqgv dntewsvytn fsspidtpvg cltgaiqaqe nstecqfalg ldscvnytad
+      721 trlrtaraad raltfnymyf aqelpsqseq svafdnstlq ipinftigie yetipvtmpk
+      781 vtvdcaqyvc gdnsecrtll vqygtfceti ndalrgvalq qdvnqkdvfs svrrlakvss
+      841 pmnlgnlngf nfssilnqea ingnnfqars aiedlffdki etadvgfqkk ydectggsvv
+      901 kdlgcaqsfn glmvlppqmt dahvaaytts aalgsffsip ntmqmayrfn giavtqkvlv
+      961 dnqkqiankf nqammsvqtg fkatssalek lqkvvndnaq alnnlvaqlt nnfgaissai
+     1021 nditqrldkl eadaqidrli ngrlqvlqtf vtqqlirase irasaklaaq kmsecvqgqs
+     1081 qrldfcgrgm hlmsfpqaap ygmvflhvly kptdyinvtt vpaicsndva yfpvdgvfvy
+     1141 ynnslmftkr nyfepeiiti dnirsagscn vdvtyvnhti ynpempeled fkqeleeirk
+     1201 nfstglpnrp nftlpglegi nasmvdlsee vkilndvvke lnaslinlqe lgvnsqyikw
+     1261 pwyiwlgfia gliaivmati mlccmtsccs cfkglcackr ccdsfdepde pikyhyp
+//
+
+LOCUS       AIL94215                 451 aa            linear   VRL 07-JUL-2017
+DEFINITION  hypothetical protein [Bat Hp-betacoronavirus/Zhejiang2013].
+ACCESSION   AIL94215
+VERSION     AIL94215.1
+DBSOURCE    accession KF636752.1
+KEYWORDS    .
+SOURCE      Bat Hp-betacoronavirus/Zhejiang2013
+  ORGANISM  Bat Hp-betacoronavirus/Zhejiang2013
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Hibecovirus; Bat Hp-betacoronavirus Zhejiang2013.
+REFERENCE   1  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   2  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   3  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Characterization of a novel betacoronavirus subgroup related to
+            subgroup B from Hipposideros pratti bats in China
+  JOURNAL   Unpublished
+REFERENCE   4  (residues 1 to 451)
+  AUTHORS   Wu,Z., Yang,L., Yang,F., Ren,X. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-SEP-2013) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No. 6 Rongjing
+            East Street, Yizhuang, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..451
+                     /organism="Bat Hp-betacoronavirus/Zhejiang2013"
+                     /isolate="Zhejiang2013"
+                     /host="Hipposideros pratti"
+                     /db_xref="taxon:1541205"
+                     /country="China"
+                     /collection_date="29-Apr-2013"
+     Protein         1..451
+                     /product="hypothetical protein"
+                     /name="S-related ORF2"
+     Region          63..268
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     CDS             1..451
+                     /coded_by="KF636752.1:22058..23413"
+ORIGIN      
+        1 mfvlvllfsi asaklvkpng qhpttddtaa ysnclrlspq whiglsnltv nhdtflipqp
+       61 tfnattlsag yypkigdtvv tweaivtgds aenqkfkvdy dnyiphefgq givlkvfnrd
+      121 kasastppaf lfgstfdntt htmliavntt hrtvavcrfe fcstpvvasm inngnfqqyn
+      181 hsslftsaed ciyvnyqnft mnntmgdlsr tgtvyysfqy lngyfsiyya yralhnltep
+      241 kflspfmhfp lsiavtnflv ppvwnrnyqn qnaqtqargq fvieyamlrl qsmyfdyqng
+      301 tlinytscdd lscltqtpcs tqapcpttsc ptqksttsvt tttpttistt ikpttisstt
+      361 stttqttsrt ttaetttttv astvsqgttn etystlppcn nyttitqspc ndvayfwtmv
+      421 ftiiisisfi lgvllcssid syeeevklhq i
+//
+

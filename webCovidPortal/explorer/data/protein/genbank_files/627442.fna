@@ -1,0 +1,64 @@
+LOCUS       ACQ82725                1255 aa            linear   VRL 12-MAY-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus P2].
+ACCESSION   ACQ82725
+VERSION     ACQ82725.1
+DBSOURCE    accession FJ882963.1
+KEYWORDS    .
+SOURCE      SARS coronavirus P2
+  ORGANISM  SARS coronavirus P2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J. and Kistner,O.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus P2"
+                     /strain="P2"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:627442"
+                     /country="USA"
+                     /collection_date="10-Aug-2004"
+                     /note="seed virus"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882963.1:21473..25240"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqg
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pvgagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

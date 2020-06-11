@@ -1,0 +1,76 @@
+LOCUS       AF207551_3              1360 aa            linear   VRL 07-AUG-2000
+DEFINITION  spike protein [Rat sialodacryoadenitis coronavirus].
+ACCESSION   AAF97738
+VERSION     AAF97738.1
+DBSOURCE    accession AF207551.1
+KEYWORDS    .
+SOURCE      Rat sialodacryoadenitis coronavirus (SDAV)
+  ORGANISM  Rat sialodacryoadenitis coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1360)
+  AUTHORS   Yoo,D., Pei,Y., Christie,N. and Cooper,M.
+  TITLE     Primary structure of the sialodacryoadenitis virus genome: sequence
+            of the structural-protein region and its application for
+            differential diagnosis
+  JOURNAL   Clin. Diagn. Lab. Immunol. 7 (4), 568-573 (2000)
+   PUBMED   10882653
+REFERENCE   2  (residues 1 to 1360)
+  AUTHORS   Yoo,D., Pei,Y., Christie,N. and Cooper,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-NOV-1999) Department of Pathobiology, Ontario
+            Veterinary College, University of Guelph, Guelph, ON N1G 2W1,
+            Canada
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1360
+                     /organism="Rat sialodacryoadenitis coronavirus"
+                     /strain="SDAV-681"
+                     /db_xref="taxon:92931"
+                     /map="downstream of RNA polymerase 1b to 3' end of the
+                     genome"
+     Protein         1..1360
+                     /product="spike protein"
+                     /name="membrane glycoprotein; receptor binding protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..530
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          743..1322
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1360
+                     /gene="S"
+                     /coded_by="AF207551.1:2303..6385"
+ORIGIN      
+        1 mlfvfltllp sclgyigdfr cinlvntris narapsvste vvdvskglgt yyvldrvyln
+       61 atllltgyyp vdgsmyrnma lmgtntlsln wfeppflsef ndgiyakvkn lkaslpigsa
+      121 syfptiiigs nfvntsytvv lepyngiima sicqyticql phtdckpntg gntligfwht
+      181 dlrppvcilk rnftfnvnae wlyfhfyqqg gtfyayyadv ssattflfss yigavltqyf
+      241 vlpymcsptt sgvsspqywv tplvkrqylf nfnqkgiits avdcassyts eikcktqsmn
+      301 pntgvydlsg ytvqpvglvy rrvrnlpdck ieewlaantv psplnwerkt fqncnfnlss
+      361 llrfvqaesl scsnidaskv ygmcfgsisi dkfaipnsrr vdlqlgksgl lqsfnykidt
+      421 ratscqlyys laqdnvtvin hnpsswnrry gfndvatfhs gehdvayaea cftvgasycp
+      481 cakpstvysc vtgkpksanc ptgtsnrecn vqasgfkskc dctcnpsplt tydprclqar
+      541 smlgvgdhce glgiledkcg gsnicncsad afvgwamdsc lsnarchifs nlmlnginsg
+      601 ttcstdfqlp ntevvtgvcv kydlygstgq gvfkevkady ynswqnllyd vngnlngfrd
+      661 ivtnktyllr scysgrvsaa yhqdapepal lyrnlkcdyv fnnnisreet plnyfdsylg
+      721 cvinadnste qsvdacdlrm gsglcvnysi ahrarrsvst gyklttfepf tvsivndsve
+      781 svgglyemqi ptnftiashq efiqtrspkv tidcaafvcg dytacrqqlv dygsfcdnin
+      841 ailgevnnli dtmqlqvasa liqgvtlssr ladgisgqid dinfspllgc lgsdcsegtk
+      901 aaqgrsaied vlfdkvklsd vgfvesynnc tggqevrdll cvqsfngikv lppvlsesqi
+      961 sgytagatas amfppwsaaa gvpfalsvqy ringlgvtmn vlsenqkmia ssfnnaigai
+     1021 qegfdatnsa lakiqsvvna naealnnlln qlsnrfgais aslqeilsrl daleaqaqid
+     1081 rlingrltal nayvskqlsd mtlikvsaaq aiekvnecvk sqsprinfcg ngnhilslvq
+     1141 napyglyfih fsyvptsftt vnvspglcis gdrglapkag yfvqdhgewk ftgsnyyype
+     1201 sitdknsvvm sscavnytka pevflntsit nlpdfkeeld kwfknqtsiv pdlsfdigkl
+     1261 nvtfldlsye mnriqdaikn lnesyinlke igtyemyvkw pwyvwlligl agvavcvllf
+     1321 ficcctgcgs ccfkkcgncc deyggrqagi vihnisshed
+//
+

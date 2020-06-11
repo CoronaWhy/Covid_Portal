@@ -1,0 +1,207 @@
+LOCUS       HEMA_CVBON               424 aa            linear   VRL 11-DEC-2019
+DEFINITION  RecName: Full=Hemagglutinin-esterase; Short=HE protein; AltName:
+            Full=E3 glycoprotein; Flags: Precursor.
+ACCESSION   Q9DR81
+VERSION     Q9DR81.1
+DBSOURCE    UniProtKB: locus HEMA_CVBON, accession Q9DR81;
+            class: standard.
+            extra accessions:Q98VL2
+            created: Jun 16, 2003.
+            sequence updated: Mar 1, 2001.
+            annotation updated: Dec 11, 2019.
+            xrefs: AF239308.1, AAG60544.1, AF239309.1, AAG40622.1
+            xrefs (non-sequence databases): SMR:Q9DR81, GO:0020002, GO:0016021,
+            GO:0019031, GO:0055036, GO:0046789, GO:0001681, GO:0019064,
+            HAMAP:MF_04207, InterPro:IPR008980, InterPro:IPR042545,
+            InterPro:IPR007142, InterPro:IPR003860, Pfam:PF03996, Pfam:PF02710,
+            SUPFAM:SSF49818
+KEYWORDS    Disulfide bond; Glycoprotein; Hemagglutinin; Host cell membrane;
+            Host membrane; Hydrolase; Membrane; Signal; Transmembrane;
+            Transmembrane helix; Viral envelope protein; Virion.
+SOURCE      Bovine coronavirus strain Ontario
+  ORGANISM  Bovine coronavirus strain Ontario
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 424)
+  AUTHORS   Gelinas,A.M., Boutin,M., Sasseville,A.M. and Dea,S.
+  TITLE     Bovine coronaviruses associated with enteric and respiratory
+            diseases in Canadian dairy cattle display different reactivities to
+            anti-HE monoclonal antibodies and distinct amino acid changes in
+            their HE, S and ns4.9 protein
+  JOURNAL   Virus Res. 76 (1), 43-57 (2001)
+   PUBMED   11376845
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].;
+            STRAIN=Isolate BCO.43277, and Isolate BCO.44175
+REFERENCE   2  (residues 1 to 424)
+  AUTHORS   Gelinas,A.M., Sasseville,A.M. and Dea,S.
+  TITLE     Identification of specific variations within the HE, S1, and ORF4
+            genes of bovine coronaviruses associated with enteric and
+            respiratory diseases in dairy cattle
+  JOURNAL   Adv. Exp. Med. Biol. 494, 63-67 (2001)
+   PUBMED   11774537
+  REMARK    NUCLEOTIDE SEQUENCE.;
+            STRAIN=Isolate BCO.43277, and Isolate BCO.44175
+COMMENT     [FUNCTION] Structural protein that makes short spikes at the
+            surface of the virus. Contains receptor binding and
+            receptor-destroying activities. Mediates de-O-acetylation of
+            N-acetyl-4-O-acetylneuraminic acid, which is probably the receptor
+            determinant recognized by the virus on the surface of erythrocytes
+            and susceptible cells. This receptor-destroying activity is
+            important for virus release as it probably helps preventing
+            self-aggregation and ensures the efficient spread of the progeny
+            virus from cell to cell. May serve as a secondary viral attachment
+            protein for initiating infection, the spike protein being the major
+            one. May become a target for both the humoral and the cellular
+            branches of the immune system. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-9-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:22600,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:28999,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-4-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:25564,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:29006,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBUNIT] Homodimer; disulfide-linked. Forms a complex with the M
+            protein in the pre-Golgi. Associates then with S-M complex to form
+            a ternary complex S-M-HE. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Note=In infected cells
+            becomes incorporated into the envelope of virions during virus
+            assembly at the endoplasmic reticulum and cis Golgi. However, some
+            may escape incorporation into virions and subsequently migrate to
+            the cell surface. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [PTM] N-glycosylated in the host RER.
+            {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SIMILARITY] Belongs to the influenza type C/coronaviruses
+            hemagglutinin-esterase family. {ECO:0000255|HAMAP-Rule:MF_04207}.
+FEATURES             Location/Qualifiers
+     source          1..424
+                     /organism="Bovine coronavirus strain Ontario"
+                     /host="Bos taurus (Bovine)"
+                     /db_xref="taxon:231422"
+     gene            1..424
+                     /gene="HE"
+                     /locus_tag="2b"
+     Protein         1..424
+                     /product="Hemagglutinin-esterase"
+                     /EC_number="3.1.1.53"
+                     /note="HE protein; E3 glycoprotein"
+                     /UniProtKB_evidence="Inferred from homology"
+     Region          1..16
+                     /region_name="Signal"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          7..127
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 1.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          17..424
+                     /region_name="Mature chain"
+                     /note="Hemagglutinin-esterase.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207.
+                     /id=PRO_0000037141."
+     Region          17..392
+                     /region_name="Topological domain"
+                     /note="Virion surface.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          23..377
+                     /region_name="Hema_esterase"
+                     /note="Hemagglutinin esterase; pfam03996"
+                     /db_xref="CDD:281925"
+     Site            40
+                     /site_type="active"
+                     /note="Nucleophile.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(44,65)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            54
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            89
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(113,162)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          128..266
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor binding.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            153
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(197,276)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(205,249)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            236
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          267..379
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 2.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            301
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(307,312)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            316
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            326
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            329
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(347,371)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            358
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          393..413
+                     /region_name="Transmembrane region"
+                     /note="Helical.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          394
+                     /region_name="Variant"
+                     /note="F -> L (in strain: Isolate BCO.43277)."
+     Region          414..424
+                     /region_name="Topological domain"
+                     /note="Intravirion.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            417
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+ORIGIN      
+        1 mfllprfvlv sciigslgfd npptnvvshl ngdwflfgds rsdcnhvvtt nprnysymdl
+       61 npalcgsgki sskagnsifr sfhftdfyny tgegqqiify egvnftpyha fkcttsgsnd
+      121 iwmqnkglfy tqvyknmavy rsltfvnvpy vyngsaqsta lcksgslvln npayiarean
+      181 fgdyyykvea dfylsgcdey ivplcifngk flsntkyydd sqyyfnkdtg viyglnstet
+      241 ittgfdfnch ylvlpsgnyl aisnellltv ptkaiclnkr kdftpvqvvd srwnnarqsd
+      301 nmtavacqpp ycyfrnsttn yvgvydinhg dagftsilsg llydspcfsq qgvfrydnvs
+      361 svwplypygr cptaadintp dvpicvydpl piiflgillg vaviiivvll lyfmvdngtr
+      421 lhda
+//
+

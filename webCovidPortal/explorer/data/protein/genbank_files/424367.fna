@@ -1,0 +1,131 @@
+LOCUS       QJX58366                 582 aa            linear   VRL 26-MAY-2020
+DEFINITION  spike glycoprotein [Bat coronavirus HKU9-1].
+ACCESSION   QJX58366
+VERSION     QJX58366.1
+DBSOURCE    accession MT337384.1
+KEYWORDS    .
+SOURCE      Bat coronavirus HKU9-1
+  ORGANISM  Bat coronavirus HKU9-1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus.
+REFERENCE   1  (residues 1 to 582)
+  AUTHORS   Yadav,P.D., Shete-Aich,A., Nyayanit,D.A., Pardeshi,P., Majumdar,T.,
+            Balasubramanian,R., Ullas,P.T., Mohandas,S., Dighe,H., Sawant,P.,
+            Patil,S., Patil,D., Gokhale,M.D., Mathapati,B., Sudeep,A.B.,
+            Baradkar,S., Kumar,A., Kharde,R., Salve,M., Joshi,Y., Gupta,N. and
+            Mourya,D.T.
+  TITLE     Detection of coronaviruses in Pteropus & Rousettus species of bats
+            from different States of India
+  JOURNAL   Indian J. Med. Res. (2020) In press
+   PUBMED   32317409
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 582)
+  AUTHORS   Yadav,P.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-APR-2020) Maximum Containment Laboratory, National
+            Institute of Virology, Pashan, Pune, Maharashtra 411021, India
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC GENOMICS WORKBENCH v. 11.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..582
+                     /organism="Bat coronavirus HKU9-1"
+                     /isolate="MCL_20_Bat_76_10"
+                     /isolation_source="intestine"
+                     /host="Rousettus sp."
+                     /db_xref="taxon:424367"
+                     /country="India"
+                     /collection_date="2020"
+     Protein         1..582
+                     /product="spike glycoprotein"
+     CDS             1..582
+                     /gene="S"
+                     /coded_by="MT337384.1:20775..22523"
+ORIGIN      
+        1 mllilvlgvs lsaasrpecf nnarftltpl nhtlsytsvd fkvsnvllpe pyiaysgqtl
+       61 rqnlfmadms nttlypitpp angvsggfiy ntsiisvaag lfvntwmyrx xxxxxxxcqe
+      121 pfgvafgdtf eydriaivim apdklgswnh asprsqtniy llvcsnatlc inpgfnrwgp
+      181 agsfiasnal vdhsnscfvn nsfsvnvsts rinlaflfkd gdlliyhsgw lptasfaqgf
+      241 sngshpmtff mslpvggnlp raqffqsivr hnitqsgdgm ctnfdvnlpi ahlinrdllv
+      301 syfnngsvan aancadsase elycvtgsfs ppmgiyplsr yraqvegfvx xxxxxxxcsp
+      361 pysvlqippq pivwqrymlr dcafdfsvvi dslptyqlqc ygispkrlas mcyssvtldv
+      421 mrvnathlhn llnxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx
+      481 xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx
+      541 xxxxxxxxxx xxxxxgkvft asstgaiigv singtmysih tm
+//
+
+LOCUS       ABN10911                1274 aa            linear   VRL 07-FEB-2007
+DEFINITION  Spike glycoprotein [Bat coronavirus HKU9-1].
+ACCESSION   ABN10911
+VERSION     ABN10911.1
+DBSOURCE    accession EF065513.1
+KEYWORDS    .
+SOURCE      Bat coronavirus HKU9-1
+  ORGANISM  Bat coronavirus HKU9-1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus.
+REFERENCE   1  (residues 1 to 1274)
+  AUTHORS   Woo,P.C., Wang,M., Lau,S.K., Xu,H., Poon,R.W., Guo,R., Wong,B.H.,
+            Gao,K., Tsoi,H.W., Huang,Y., Li,K.S., Lam,C.S., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Comparative analysis of twelve genomes of three novel group 2c and
+            group 2d coronaviruses reveals unique group and subgroup features
+  JOURNAL   J. Virol. 81 (4), 1574-1585 (2007)
+   PUBMED   17121802
+REFERENCE   2  (residues 1 to 1274)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wang,M., Xu,H.F., Poon,R.W.S., Guo,R.T.,
+            Wong,B.H.L., Gao,K., Tsoi,H.W., Huang,Y., Li,K.S.M., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-OCT-2006) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1274
+                     /organism="Bat coronavirus HKU9-1"
+                     /strain="BF_005I"
+                     /host="bat"
+                     /db_xref="taxon:424367"
+                     /country="China: Guangdong province"
+     Protein         1..1274
+                     /product="spike glycoprotein"
+     Region          368..549
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          663..1262
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1274
+                     /gene="S"
+                     /coded_by="EF065513.1:20974..24798"
+ORIGIN      
+        1 mllilvlgvs laaasrpecf nprftltpln htlnytsika kvsnvllpdp yiaysgqtlr
+       61 qnlfmadmsn tilypvtppa nganggfiyn tsiipvsagl fvntwmyrqp assraycqep
+      121 fgvafgdtfe ndriailima pdnlgswsav aprnqtniyl lvcsnatlci npgfnrwgpa
+      181 gsfiapdalv dhsnscfvnn tfsvnistsr islaflfkdg dlliyhsgwl ptsnfehgfs
+      241 rgshpmtyfm slpvggnlpr aqffqsivrs naidkgdgmc tnfdvnlhva hlinrdllvs
+      301 yfnngsvana adcadsaaee lycvtgsfdp ptgvyplsry raqvagfvrv tqrgsyctpp
+      361 ysvlqdppqp vvwrrymlyd cvfdftvvvd slpthqlqcy gvsprrlasm cygsvtldvm
+      421 rinethlnnl fnrvpdtfsl ynyalpdnfy gclhafylns tapyavanrf pikpggrqsn
+      481 safidtvina ahyspfsyvy glavitlkpa agsklvcpva ndtvvitdrc vqynlygytg
+      541 tgvlskntsl vipdgkvfta sstgtiigvs insttysimp cvtvpvsvgy hpnferallf
+      601 nglscsqrsr avtepvsvlw sasataqdaf dtpsgcvvnv elrnttivnt campignslc
+      661 fingsiatan adslprlqlv nydplydnst atpmtpvywv kvptnftlsa teeyiqttap
+      721 kitidcaryl cgdssrclnv llhygtfcnd inkalsrvst ildsallslv kelsintrde
+      781 vttfsfdgdy nftglmgclg pncgattyrs afsdllydkv ritdpgfmqs yqkcidsqwg
+      841 gsirdllctq tyngiavlpp ivspamqaly tsllvgavas sgytfgitsa gvipfatqlq
+      901 frlngigvtt qvlvenqkli assfnnalvn iqkgftetsi alskmqdvin qhaaqlhtlv
+      961 vqlgnsfgai sssineifsr leglaanaev drlingrmmv lntyvtqlli qaseakaqna
+     1021 laaqkisecv kaqslrndfc gngthvlsip qlapngvlfi hyaytpteya fvqtsaglch
+     1081 ngtgyaprqg mfvlpnntnm whfttmqfyn pvnisasntq vltscsvnyt svnytvleps
+     1141 vpgdydfqke fdkfyknlst ifnntfnpnd fnfstvdvta qikslhdvvn qlnqsfidlk
+     1201 klnvyektik wpwyvwlami agivglvlav imlmcmtncc scfkgmcdcr rccgsydsyd
+     1261 dvypavrvnk krtv
+//
+

@@ -1,0 +1,82 @@
+LOCUS       ABV74054                1363 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike protein [Bovine coronavirus Bubalus/Italy/179/07-11].
+ACCESSION   ABV74054
+VERSION     ABV74054.1
+DBSOURCE    accession EU019216.1
+KEYWORDS    .
+SOURCE      Bovine coronavirus Bubalus/Italy/179/07-11
+  ORGANISM  Bovine coronavirus Bubalus/Italy/179/07-11
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Decaro,N., Martella,V., Elia,G., Campolo,M., Mari,V., Desario,C.,
+            Lucente,M.S., Lorusso,A., Greco,G., Corrente,M., Tempesta,M. and
+            Buonavoglia,C.
+  TITLE     Biological and genetic analysis of a bovine-like coronavirus
+            isolated from water buffalo (Bubalus bubalis) calves
+  JOURNAL   Virology 370 (1), 213-222 (2008)
+   PUBMED   17916374
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Decaro,N., Martella,V., Elia,G., Campolo,M., Mari,V., Desario,C.,
+            Lucente,M.S., Lorusso,A., Greco,G., Corrente,M., Tempesta,M. and
+            Buonavoglia,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JUL-2007) Animal Health and Well-being, Faculty of
+            Veterinary Medicine of Bari, Strada per Casamassima Km 3,
+            Valenzano, Bari 70010, Italy
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Bovine coronavirus Bubalus/Italy/179/07-11"
+                     /strain="179/07-11"
+                     /isolation_source="feces"
+                     /host="Bubalus bubalis"
+                     /db_xref="taxon:473588"
+                     /country="Italy"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          800..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Region          <999..>1135
+                     /region_name="Tar"
+                     /note="Methyl-accepting chemotaxis protein [Cell motility,
+                     Signal transduction mechanisms]; COG0840"
+                     /db_xref="CDD:223910"
+     CDS             1..1363
+                     /coded_by="EU019216.1:2337..6428"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv qpyttnfdnk iqgllevsvc qytmceypnt icnpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsalnley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqptad vyrripnfpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgsg sgidagykns gigtcpagtn yltcynaaqc dclctpdpit
+      541 skatgpykcp qtkylvgige hcsglaiksd hcggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanfilhgvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvksvnds lepvgglyei qipsdftign meefiqtssp kvtidcstfv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvkfn vddinfspvl
+      901 gclgsdcnrv ssrsaiedll fskvkladvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapn
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+

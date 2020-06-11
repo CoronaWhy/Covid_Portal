@@ -1,0 +1,87 @@
+LOCUS       AGC74165                1240 aa            linear   VRL 07-JUL-2017
+DEFINITION  spike protein [Bat coronavirus Rp/Shaanxi2011].
+ACCESSION   AGC74165
+VERSION     AGC74165.1
+DBSOURCE    accession JX993987.1
+KEYWORDS    .
+SOURCE      Bat coronavirus Rp/Shaanxi2011
+  ORGANISM  Bat coronavirus Rp/Shaanxi2011
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1240)
+  AUTHORS   Yang,L., Wu,Z., Ren,X., Yang,F., He,G., Zhang,J., Dong,J., Sun,L.,
+            Zhu,Y., Du,J., Zhang,S. and Jin,Q.
+  TITLE     Novel SARS-like Betacoronaviruses in Bats, China, 2011
+  JOURNAL   Emerging Infect. Dis. 19 (6) (2013)
+   PUBMED   23739658
+REFERENCE   2  (residues 1 to 1240)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   3  (residues 1 to 1240)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   4  (residues 1 to 1240)
+  AUTHORS   Yang,L., Wu,Z., Ren,X. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-OCT-2012) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No. 6, Rongjing
+            East Street, BDA, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1240
+                     /organism="Bat coronavirus Rp/Shaanxi2011"
+                     /isolate="Rp/Shaanxi2011"
+                     /host="Rhinolophus pusillus"
+                     /db_xref="taxon:1283332"
+                     /country="China"
+                     /collection_date="Sep-2011"
+     Protein         1..1240
+                     /product="spike protein"
+     Region          <106..287
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          320..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          633..1237
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1240
+                     /coded_by="JX993987.1:21394..25116"
+ORIGIN      
+        1 millllflss akaqegcgvi snkpqrtfdq ysstfrgvyy nddifrsdvl hltqdyflpf
+       61 ntnvtrylsl naaqntivyf dnhvipfydg iyfaatersn virgwifgst fdnrsqsaii
+      121 vnnsthilvk vcnfvlctep mftvsrnqhy kswvyqharn ctydvaypsf qldvslknnv
+      181 nfqhlrefif knvdgflkiy ssyepinvvs gipsgfsvlk pvmslplgin itgmrvvmtm
+      241 fsntqanflt enaayyvgyl kprtfmlqfn tngtivnavd csqdplselk ctlknfnitk
+      301 giyqtsnfrv sptqevvrfp nitnrcpfdk vfnatrfpsv yawertkisd cvadytvlyn
+      361 stsfstfkcy gvspsklidl cftsvyadtf lirssevrqv apgetgviad ynyklpddft
+      421 gcviawntan qdqgqyyyrs srkeklkpfe rdlssdengv ytlstydfyp svpldyqatr
+      481 vvvlsfelln apatvcgpkl sttlvknqcv nfnfnglkgt gvltasskkf qsfqqfgrda
+      541 sdftdsvrdp qtleildisp csfggvsvit pgtnasteva vlyqdvnctd vptainadql
+      601 tpawrvystg invfqtqagc ligaehvnas yecdipigag icasyhtasv lrstgqksiv
+      661 aytmslgaen siayannsia iptnfsisvt tevmpvsmak tsvdctmyic gdslecsnll
+      721 lqygsfctql nraltgiaie qdkntqevfa qvkqmyktpa ikdfggfnfs qilpdpskpt
+      781 krsfiedllf nkvtladagf mkqygeclgd isardlicaq kfngltvlpp lltdemiaay
+      841 taalvsgtat agwtfgagaa lqipfamqma yrfngigvtq nvlyenqkqi anqfnkaisq
+      901 iqesltttst algklqdvvn qnaqalntlv kqlssnfgai ssvlndilsr ldkveaevqi
+      961 drlitgrlqs lqtyvtqqli raaeirasan laatkmsecv lgqskrvdfc gkgyhlmsfp
+     1021 qaaphgvvfl hvtyvpsqer nfttapaich egkayfpreg vfvsngtswf itqrnfyspq
+     1081 iittdntfva gscnvvigii nntvydplqp eldsfkeeld kyfknhtspd vdlgdisgin
+     1141 asvvniqkei drlnevaknl neslidlqel gkyeqyikwp wyvwlgfiag liaivmvtil
+     1201 lccmtsccsc lkgacscgsc ckfdeddsep vlkgvklhyt
+//
+

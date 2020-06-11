@@ -1,0 +1,80 @@
+LOCUS       ACN89777                1324 aa            linear   VRL 24-JUL-2016
+DEFINITION  spike protein [Murine coronavirus repJHM/RA59].
+ACCESSION   ACN89777
+VERSION     ACN89777.1
+DBSOURCE    accession FJ647227.1
+KEYWORDS    .
+SOURCE      Murine coronavirus repJHM/RA59
+  ORGANISM  Murine coronavirus repJHM/RA59
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1324)
+  AUTHORS   Navas-Martin,S., Brom,M., Chua,M.M., Watson,R., Qiu,Z. and
+            Weiss,S.R.
+  TITLE     Replicase genes of murine coronavirus strains A59 and JHM are
+            interchangeable: differences in pathogenesis map to the 3'
+            one-third of the genome
+  JOURNAL   J. Virol. 81 (2), 1022-1026 (2007)
+   PUBMED   17079303
+REFERENCE   2  (residues 1 to 1324)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1324
+                     /organism="Murine coronavirus repJHM/RA59"
+                     /strain="repJHM/RA59"
+                     /host="Mus musculus"
+                     /db_xref="taxon:429330"
+                     /country="USA: Pennsylvania"
+     Protein         1..1324
+                     /product="spike protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          325..534
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <580..633
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          725..1286
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1324
+                     /coded_by="FJ647227.1:23879..27853"
+ORIGIN      
+        1 mlfvfilflp sclgyigdfr ciqlvnsnga nvsapsiste tvevsqglgt yyvldrvyln
+       61 atllltgyyp vdgskfrnla ltgtnsvsls wfqppylsqf ndgifakvqn lktstpsgat
+      121 ayfptivigs lfgytsytvv iepyngvima svcqyticql pytdckpntn gnkligfwht
+      181 dvkppicvlk rnftlnvnad afyfhfyqhg gtfyayyadk psattflfsv yigdiltqyy
+      241 vlpficnpta gstfaprywv tplvkrqylf nfnqkgvits avdcassyts eikcktqsml
+      301 pstgvyelsg ytvqpvgvvy rrvanlpacn ieewltarsv psplnwerkt fqncnfnlss
+      361 llryvqaesl fcnnidaskv ygrcfgsisv dkfavprsrq vdlqlgnsgf lqtanykidt
+      421 aatscqlhyt lpknnvtinn hnpsswnrry gfndagvfgk nqhdvvyaqq cftvrssycp
+      481 caqpdivspc ttqtkpksaf vnvgdhcegl gvledncgna dphkgcican nsfigwshdt
+      541 clvndrcqif anillngins gttcstdlql pntevvtgic vkydlygitg qgvfkevkad
+      601 yynswqtlly dvngnlngfr dlttnktyti rscysgrvsa afhkdapepa llyrnincsy
+      661 vfsnnisree nplnyfdsyl gcvvnadnrt dealpncdlr mgaglcvdys ksrrahrsvs
+      721 tgyrlttfep ytpmlvndsv qsvdglyemq iptnftighh eefiqtrspk vtidcaafvc
+      781 gdntacrqql veygsfcvnv nailnevnnl ldnmqlqvas almqgvtiss rlpdgisgpi
+      841 ddinfspllg cigstcaedg ngpsairgrs aiedllfdkv klsdvgfvea ynnctggqev
+      901 rdllcvqsfn gikvlppvls esqisgyttg ataaamfppw saaagvpfsl svqyringlg
+      961 vtmnvlsenq kmiasafnna lgaiqdgfda tnsalgkiqs vvnanaealn nllnqlsnrf
+     1021 gaisaslqei ltrleaveak aqidrlingr ltalnayisk qlsdstlikv saaqaiekvn
+     1081 ecvksqttri nfcgngnhil slvqnapygl yfihfsyvpi sfttanvspg lcisgdrgla
+     1141 pkagyfvqdd gewkftgssy yypepitdkn svimsscavn ytkapevfln tsipnppdfk
+     1201 eeldkwfknq tsiapdlsld feklnvtlld ltyemnriqd aikklnesyi nlkevgtyem
+     1261 yvkwpwyvwl liglagvavc vllfficcct gcgsccfkkc gnccdeyggh qdsivihnis
+     1321 shed
+//
+

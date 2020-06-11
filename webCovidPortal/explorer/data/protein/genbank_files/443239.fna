@@ -1,0 +1,994 @@
+LOCUS       5GNB_A                   371 aa            linear   VRL 24-SEP-2018
+DEFINITION  Chain A, Spike glycoprotein.
+ACCESSION   5GNB_A
+VERSION     5GNB_A
+DBSOURCE    pdb: molecule 5GNB, chain 65, release Sep 27, 2017;
+            deposition: Jul 20, 2016;
+            class: VIRAL PROTEIN;
+            source: Mmdb_id: 163386, Pdb_id 1: 5GNB;
+            Exp. method: X-ray Diffraction.
+KEYWORDS    .
+SOURCE      Human coronavirus HKU1 (isolate N1)
+  ORGANISM  Human coronavirus HKU1 (isolate N1)
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 371)
+  AUTHORS   Ou,X., Guan,H., Qin,B., Mu,Z., Wojdyla,J.A., Wang,M.,
+            Dominguez,S.R., Qian,Z. and Cui,S.
+  TITLE     Crystal structure of the receptor binding domain of the spike
+            glycoprotein of human betacoronavirus HKU1
+  JOURNAL   Nat Commun 8, 15216 (2017)
+   PUBMED   28534504
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 371)
+  AUTHORS   Guan,H., Wojdyla,J.A., Wang,M. and Cui,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JUL-2016)
+COMMENT     Crystal Structure of the Receptor Binding Domain of the Spike
+            Glycoprotein of Human Betacoronavirus HKU1 (HKU1 1A-CTD, 2.3
+            angstrom, native-SAD phasing).
+FEATURES             Location/Qualifiers
+     source          1..371
+                     /organism="Human coronavirus HKU1 (isolate N1)"
+                     /db_xref="taxon:443239"
+     Region          join(1..18,307..371)
+                     /region_name="Domain 1"
+                     /note="NCBI Domains"
+     SecStr          10..14
+                     /sec_str_type="sheet"
+                     /note="strand 1"
+     Region          17..220
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          join(19..162,271..306)
+                     /region_name="Domain 2"
+                     /note="NCBI Domains"
+     Bond            bond(21,46)
+                     /bond_type="disulfide"
+     SecStr          22..29
+                     /sec_str_type="helix"
+                     /note="helix 1"
+     SecStr          30..34
+                     /sec_str_type="sheet"
+                     /note="strand 2"
+     SecStr          38..44
+                     /sec_str_type="sheet"
+                     /note="strand 3"
+     SecStr          45..49
+                     /sec_str_type="sheet"
+                     /note="strand 4"
+     Het             bond(49)
+                     /heterogen="(NAG,5746)"
+     SecStr          50..57
+                     /sec_str_type="helix"
+                     /note="helix 2"
+     SecStr          58..66
+                     /sec_str_type="sheet"
+                     /note="strand 5"
+     Bond            bond(64,117)
+                     /bond_type="disulfide"
+     Bond            bond(76,299)
+                     /bond_type="disulfide"
+     SecStr          78..87
+                     /sec_str_type="sheet"
+                     /note="strand 6"
+     SecStr          115..124
+                     /sec_str_type="sheet"
+                     /note="strand 7"
+     Het             bond(127)
+                     /heterogen="(NAG,5662)"
+     SecStr          128..132
+                     /sec_str_type="sheet"
+                     /note="strand 8"
+     SecStr          136..143
+                     /sec_str_type="helix"
+                     /note="helix 3"
+     Het             bond(148)
+                     /heterogen="(NAG,5718)"
+     SecStr          152..158
+                     /sec_str_type="sheet"
+                     /note="strand 9"
+     Bond            bond(160,240)
+                     /bond_type="disulfide"
+     Region          163..270
+                     /region_name="Domain 3"
+                     /note="NCBI Domains"
+     Het             bond(164)
+                     /heterogen="(NAG,5690)"
+     SecStr          166..169
+                     /sec_str_type="sheet"
+                     /note="strand 10"
+     Bond            bond(168,189)
+                     /bond_type="disulfide"
+     Bond            bond(170,261)
+                     /bond_type="disulfide"
+     Bond            bond(179,210)
+                     /bond_type="disulfide"
+     SecStr          185..188
+                     /sec_str_type="sheet"
+                     /note="strand 11"
+     SecStr          193..196
+                     /sec_str_type="sheet"
+                     /note="strand 12"
+     SecStr          197..204
+                     /sec_str_type="sheet"
+                     /note="strand 13"
+     Bond            bond(198,212)
+                     /bond_type="disulfide"
+     SecStr          205..213
+                     /sec_str_type="sheet"
+                     /note="strand 14"
+     Bond            bond(214,227)
+                     /bond_type="disulfide"
+     SecStr          243..246
+                     /sec_str_type="sheet"
+                     /note="strand 15"
+     Bond            bond(250,263)
+                     /bond_type="disulfide"
+     SecStr          254..257
+                     /sec_str_type="sheet"
+                     /note="strand 16"
+     SecStr          267..270
+                     /sec_str_type="sheet"
+                     /note="strand 17"
+     SecStr          271..279
+                     /sec_str_type="sheet"
+                     /note="strand 18"
+     Bond            bond(276,282)
+                     /bond_type="disulfide"
+     SecStr          280..292
+                     /sec_str_type="sheet"
+                     /note="strand 19"
+     SecStr          297..301
+                     /sec_str_type="sheet"
+                     /note="strand 20"
+     SecStr          312..321
+                     /sec_str_type="sheet"
+                     /note="strand 21"
+     Region          <313..368
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Bond            bond(315,368)
+                     /bond_type="disulfide"
+     SecStr          322..326
+                     /sec_str_type="sheet"
+                     /note="strand 22"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 23"
+     SecStr          342..347
+                     /sec_str_type="sheet"
+                     /note="strand 24"
+     SecStr          349..357
+                     /sec_str_type="sheet"
+                     /note="strand 25"
+     SecStr          360..367
+                     /sec_str_type="sheet"
+                     /note="strand 26"
+ORIGIN      
+        1 sgftvkpvat vhrripdlpd cdidkwlnnf nvpsplnwer kifsncnfnl stllrlvhtd
+       61 sfscnnfdes kiygscfksi vldkfaipns rrsdlqlgss gflqssnyki dttssscqly
+      121 yslpainvti nnynpsswnr rygfnnfnls shsvvysryc fsvnntfcpc akpsfassck
+      181 shkppsascp igtnyrsces ttvldhtdwc rcsclpdpit aydprscsqk kslvgvgehc
+      241 agfgvdeekc gvldgsynvs clcstdaflg wsydtcvsnn rcnifsnfil nginsgttcs
+      301 ndllqpntev ftdvcvdydl ygitgqgifk evsavyynsw qnllydsngn iigfkdfvtn
+      361 ktynifpcya g
+//
+
+LOCUS       HEMA_CVHN1               386 aa            linear   VRL 11-DEC-2019
+DEFINITION  RecName: Full=Hemagglutinin-esterase; Short=HE protein; AltName:
+            Full=E3 glycoprotein; Flags: Precursor.
+ACCESSION   Q5MQD1
+VERSION     Q5MQD1.1
+DBSOURCE    UniProtKB: locus HEMA_CVHN1, accession Q5MQD1;
+            class: standard.
+            created: Aug 21, 2007.
+            sequence updated: Feb 1, 2005.
+            annotation updated: Dec 11, 2019.
+            xrefs: AY597011.2, AAT98579.1, YP_173237.1
+            xrefs (non-sequence databases): SMR:Q5MQD1, GeneID:3200425,
+            KEGG:vg:3200425, KO:K19253, Proteomes:UP000008170, GO:0020002,
+            GO:0016021, GO:0019031, GO:0055036, GO:0046789, GO:0001681,
+            GO:0019064, HAMAP:MF_04207, InterPro:IPR008980, InterPro:IPR042545,
+            InterPro:IPR007142, InterPro:IPR003860, Pfam:PF03996, Pfam:PF02710,
+            SUPFAM:SSF49818
+KEYWORDS    Disulfide bond; Glycoprotein; Hemagglutinin; Host cell membrane;
+            Host membrane; Hydrolase; Membrane; Signal; Transmembrane;
+            Transmembrane helix; Viral envelope protein; Virion.
+SOURCE      Human coronavirus HKU1 (isolate N1)
+  ORGANISM  Human coronavirus HKU1 (isolate N1)
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 386)
+  AUTHORS   Woo,P.C., Lau,S.K., Chu,C.M., Chan,K.H., Tsoi,H.W., Huang,Y.,
+            Wong,B.H., Poon,R.W., Cai,J.J., Luk,W.K., Poon,L.L., Wong,S.S.,
+            Guan,Y., Peiris,J.S. and Yuen,K.Y.
+  TITLE     Characterization and complete genome sequence of a novel
+            coronavirus, coronavirus HKU1, from patients with pneumonia
+  JOURNAL   J. Virol. 79 (2), 884-895 (2005)
+   PUBMED   15613317
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].
+COMMENT     [FUNCTION] Structural protein that makes short spikes at the
+            surface of the virus. Contains receptor binding and
+            receptor-destroying activities. Mediates de-O-acetylation of
+            N-acetyl-4-O-acetylneuraminic acid, which is probably the receptor
+            determinant recognized by the virus on the surface of erythrocytes
+            and susceptible cells. This receptor-destroying activity is
+            important for virus release as it probably helps preventing
+            self-aggregation and ensures the efficient spread of the progeny
+            virus from cell to cell. May serve as a secondary viral attachment
+            protein for initiating infection, the spike protein being the major
+            one. May become a target for both the humoral and the cellular
+            branches of the immune system. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-9-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:22600,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:28999,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-4-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:25564,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:29006,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBUNIT] Homodimer; disulfide-linked. Forms a complex with the M
+            protein in the pre-Golgi. Associates then with S-M complex to form
+            a ternary complex S-M-HE. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Note=In infected cells
+            becomes incorporated into the envelope of virions during virus
+            assembly at the endoplasmic reticulum and cis Golgi. However, some
+            may escape incorporation into virions and subsequently migrate to
+            the cell surface. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [PTM] N-glycosylated in the host RER.
+            {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [MISCELLANEOUS] Isolate N1 belongs to genotype A.
+            [SIMILARITY] Belongs to the influenza type C/coronaviruses
+            hemagglutinin-esterase family. {ECO:0000255|HAMAP-Rule:MF_04207}.
+FEATURES             Location/Qualifiers
+     source          1..386
+                     /organism="Human coronavirus HKU1 (isolate N1)"
+                     /host="Homo sapiens (Human)"
+                     /db_xref="taxon:443239"
+     gene            1..386
+                     /gene="HE"
+                     /locus_tag="2"
+     Protein         1..386
+                     /product="Hemagglutinin-esterase"
+                     /EC_number="3.1.1.53"
+                     /note="HE protein; E3 glycoprotein"
+                     /UniProtKB_evidence="Inferred from homology"
+     Region          1..121
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 1.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          1..11
+                     /region_name="Signal"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          12..386
+                     /region_name="Mature chain"
+                     /note="Hemagglutinin-esterase.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207.
+                     /id=PRO_0000297761."
+     Region          12..359
+                     /region_name="Topological domain"
+                     /note="Virion surface.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          16..343
+                     /region_name="Hema_esterase"
+                     /note="Hemagglutinin esterase; pfam03996"
+                     /db_xref="CDD:281925"
+     Site            34
+                     /site_type="active"
+                     /note="Nucleophile.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(38,59)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            83
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(107,154)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            110
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          122..236
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor binding.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            145
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            168
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(180,246)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(188,219)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          237..349
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 2.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(277,282)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            286
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            296
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            299
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(317,341)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            328
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          360..380
+                     /region_name="Transmembrane region"
+                     /note="Helical.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          381..386
+                     /region_name="Topological domain"
+                     /note="Intravirion.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+ORIGIN      
+        1 mliiflffyf cygfneplnv vshlnhdwfl fgdsrsdcnh innlkiknfd yldihpslcn
+       61 ngkisssagd sifksfhftr fynytgegdq iifyegvnfn pyhrfkcfpn gsndvwllnk
+      121 vrfyralysn maffryltfv dipynvslsk fnscksdils lnnpifinys kevyftllgc
+      181 slylvplclf ksnfsqyyyn idtgsvygfs nvvypdldci yislkpgsyk vsttapflsl
+      241 ptkalcfdks kqfvpvqvvd srwnnerasd islsvacqlp ycyfrnssan yvgkydinhg
+      301 dsgfisilsg llynvscisy ygvflydnft siwpyysfgr cptssiikhp icvydflpii
+      361 lqgillclal lfvvfllfll yndksh
+//
+
+LOCUS       SPIKE_CVHN1             1356 aa            linear   VRL 13-NOV-2019
+DEFINITION  RecName: Full=Spike glycoprotein; Short=S glycoprotein; AltName:
+            Full=E2; AltName: Full=Peplomer protein; Contains: RecName:
+            Full=Spike protein S1; Contains: RecName: Full=Spike protein S2;
+            Contains: RecName: Full=Spike protein S2'; Flags: Precursor.
+ACCESSION   Q5MQD0
+VERSION     Q5MQD0.1
+DBSOURCE    UniProtKB: locus SPIKE_CVHN1, accession Q5MQD0;
+            class: standard.
+            created: Aug 21, 2007.
+            sequence updated: Feb 1, 2005.
+            annotation updated: Nov 13, 2019.
+            xrefs: AY597011.2, AAT98580.1, YP_173238.1, 5GNB_A, 5KWB_A
+            xrefs (non-sequence databases): PDBsum:5GNB, PDBsum:5KWB,
+            SMR:Q5MQD0, PRIDE:Q5MQD0, GeneID:3200426, KEGG:vg:3200426,
+            KO:K19254, Proteomes:UP000008170, GO:0044173, GO:0020002,
+            GO:0016021, GO:0019031, GO:0055036, GO:0075509, GO:0039654,
+            GO:0019064, GO:0009405, GO:0046813, Gene3D:1.20.5.790,
+            HAMAP:MF_04099, InterPro:IPR042578, InterPro:IPR002552,
+            InterPro:IPR027400, InterPro:IPR032500, InterPro:IPR018548,
+            InterPro:IPR036326, Pfam:PF01601, Pfam:PF16451, Pfam:PF09408,
+            SUPFAM:SSF143587
+KEYWORDS    3D-structure; Coiled coil; Complete proteome; Disulfide bond;
+            Fusion of virus membrane with host endosomal membrane; Fusion of
+            virus membrane with host membrane; Glycoprotein; Host cell
+            membrane; Host membrane; Host-virus interaction; Lipoprotein;
+            Membrane; Palmitate; Reference proteome; Signal; Transmembrane;
+            Transmembrane helix; Viral attachment to host cell; Viral envelope
+            protein; Viral penetration into host cytoplasm; Virion; Virulence;
+            Virus entry into host cell.
+SOURCE      Human coronavirus HKU1 (isolate N1)
+  ORGANISM  Human coronavirus HKU1 (isolate N1)
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1356)
+  AUTHORS   Woo,P.C., Lau,S.K., Chu,C.M., Chan,K.H., Tsoi,H.W., Huang,Y.,
+            Wong,B.H., Poon,R.W., Cai,J.J., Luk,W.K., Poon,L.L., Wong,S.S.,
+            Guan,Y., Peiris,J.S. and Yuen,K.Y.
+  TITLE     Characterization and complete genome sequence of a novel
+            coronavirus, coronavirus HKU1, from patients with pneumonia
+  JOURNAL   J. Virol. 79 (2), 884-895 (2005)
+   PUBMED   15613317
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].
+COMMENT     [FUNCTION] Spike protein S1: attaches the virion to the cell
+            membrane by interacting with host receptor, initiating the
+            infection. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [FUNCTION] Spike protein S2: mediates fusion of the virion and
+            cellular membranes by acting as a class I viral fusion protein.
+            Under the current model, the protein has at least three
+            conformational states: pre-fusion native state, pre-hairpin
+            intermediate state, and post-fusion hairpin state. During viral and
+            target cell membrane fusion, the coiled coil regions (heptad
+            repeats) assume a trimer-of-hairpins structure, positioning the
+            fusion peptide in close proximity to the C-terminal region of the
+            ectodomain. The formation of this structure appears to drive
+            apposition and subsequent fusion of viral and target cell
+            membranes. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [FUNCTION] Spike protein S2': Acts as a viral fusion peptide which
+            is unmasked following S2 cleavage occurring upon virus endocytosis.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SUBUNIT] Homotrimer; each monomer consists of a S1 and a S2
+            subunit. The resulting peplomers protrude from the virus surface as
+            spikes. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Host endoplasmic
+            reticulum-Golgi intermediate compartment membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Note=Accumulates in the
+            endoplasmic reticulum-Golgi intermediate compartment, where it
+            participates in virus particle assembly. Some S oligomers are
+            transported to the host plasma membrane, where they may mediate
+            cell-cell fusion. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [PTM] Specific enzymatic cleavages in vivo yield mature proteins.
+            The precursor is processed into S1 and S2 by host cell furin or
+            another cellular protease to yield the mature S1 and S2 proteins.
+            Additionally, a second cleavage leads to the release of a fusion
+            peptide after viral attachment to host cell receptor.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [PTM] The cytoplasmic Cys-rich domain is palmitoylated. Spike
+            glycoprotein is digested within host endosomes.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [MISCELLANEOUS] Isolate N1 belongs to genotype A.
+            [SIMILARITY] Belongs to the betacoronaviruses spike protein family.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+FEATURES             Location/Qualifiers
+     source          1..1356
+                     /organism="Human coronavirus HKU1 (isolate N1)"
+                     /host="Homo sapiens (Human)"
+                     /db_xref="taxon:443239"
+     gene            1..1356
+                     /gene="S"
+                     /locus_tag="3"
+     Protein         1..1356
+                     /product="Spike glycoprotein"
+                     /note="S glycoprotein; E2; Peplomer protein"
+                     /UniProtKB_evidence="Evidence at protein level"
+     Region          1..12
+                     /region_name="Signal"
+                     /note="{ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          13..1356
+                     /region_name="Mature chain"
+                     /note="Spike glycoprotein. /FTId=PRO_0000297803."
+     Region          13..1300
+                     /region_name="Topological domain"
+                     /note="Extracellular. {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          13..760
+                     /region_name="Mature chain"
+                     /note="Spike protein S1. {ECO:0000250}.
+                     /FTId=PRO_0000297804."
+     Region          15..288
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Site            19
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            29
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            58
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            114
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            132
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            171
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            188
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            192
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            251
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          310..624
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor-binding domain.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          316..319
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          322..526
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Bond            bond(327,352)
+                     /bond_type="disulfide"
+                     /note="{ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          329..333
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          336..339
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          341..343
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          345..349
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          351..354
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            355
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          356..362
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          364..373
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Bond            bond(370,423)
+                     /bond_type="disulfide"
+                     /note="{ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          375..377
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          382..392
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          395..401
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          408..412
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          418..420
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          422..430
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          431..433
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            433
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          435..437
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          443..447
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            454
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          459..464
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            470
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          479..482
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          504..509
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          512..520
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          524..526
+                     /region_name="Hydrogen bonded turn"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          530..532
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          534..537
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          553..555
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          556..558
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            564
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          571..573
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          576..581
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          587..598
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          602..606
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          <619..713
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          619..626
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          629..638
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          640..642
+                     /region_name="Helical region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          646..651
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          657..661
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Region          663..665
+                     /region_name="Hydrogen bonded turn"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            666
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          668..672
+                     /region_name="Beta-strand region"
+                     /note="{ECO:0000244|PDB:5KWB}."
+     Site            686
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            705
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            726
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          749..755
+                     /region_name="Compositionally biased region"
+                     /note="Poly-Ser."
+     Site            760..761
+                     /site_type="cleavage"
+                     /note="Cleavage; by host. {ECO:0000250}."
+     Region          761..1356
+                     /region_name="Mature chain"
+                     /note="Spike protein S2. {ECO:0000250}.
+                     /FTId=PRO_0000297805."
+     Region          769..1339
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Site            775
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            780
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            797
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          870..892
+                     /region_name="Region of interest in the sequence"
+                     /note="Fusion peptide. {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            904..905
+                     /site_type="cleavage"
+                     /note="Cleavage. {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          905..1356
+                     /region_name="Mature chain"
+                     /note="Spike protein S2'.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}. /FTId=PRO_0000444078."
+     Site            928
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1005..1055
+                     /region_name="Region of interest in the sequence"
+                     /note="Heptad repeat 1.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1034..1078
+                     /region_name="Coiled-coil region"
+                     /note="{ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            1215
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            1225
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            1244
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1249..1289
+                     /region_name="Region of interest in the sequence"
+                     /note="Heptad repeat 2.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            1251
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            1260
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1262..1290
+                     /region_name="Coiled-coil region"
+                     /note="{ECO:0000255|HAMAP-Rule:MF_04099}."
+     Site            1281
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1301..1321
+                     /region_name="Transmembrane region"
+                     /note="Helical. {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1322..1356
+                     /region_name="Topological domain"
+                     /note="Cytoplasmic. {ECO:0000255|HAMAP-Rule:MF_04099}."
+     Region          1322..1339
+                     /region_name="Compositionally biased region"
+                     /note="Cys-rich."
+     Region          1352..1356
+                     /region_name="Short sequence motif of biological interest"
+                     /note="KxHxx. {ECO:0000255|HAMAP-Rule:MF_04099}."
+ORIGIN      
+        1 mlliifilpt tlavigdfnc tnfaindlnt tvpriseyvv dvsyglgtyy ildrvylntt
+       61 ilftgyfpks ganfrdlslk gttylstlwy qkpflsdfnn gifsrvkntk lyvnktlyse
+      121 fstivigsvf innsytivvq phngvleita cqytmceyph tickskgssr neswhfdkse
+      181 plclfkknft ynvstdwlyf hfyqergtfy ayyadsgmpt tflfslylgt llshyyvlpl
+      241 tcnaissntd netlqywvtp lskrqyllkf dnrgvitnav dcsssffsei qcktksllpn
+      301 tgvydlsgft vkpvatvhrr ipdlpdcdid kwlnnfnvps plnwerkifs ncnfnlstll
+      361 rlvhtdsfsc nnfdeskiyg scfksivldk faipnsrrsd lqlgssgflq ssnykidtts
+      421 sscqlyyslp ainvtinnyn psswnrrygf nnfnlsshsv vysrycfsvn ntfcpcakps
+      481 fassckshkp psascpigtn yrscesttvl dhtdwcrcsc lpdpitaydp rscsqkkslv
+      541 gvgehcagfg vdeekcgvld gsynvsclcs tdaflgwsyd tcvsnnrcni fsnfilngin
+      601 sgttcsndll qpntevftdv cvdydlygit gqgifkevsa vyynswqnll ydsngniigf
+      661 kdfvtnktyn ifpcyagrvs aafhqnassl allyrnlkcs yvlnnisltt qpyfdsylgc
+      721 vfnadnltdy svsscalrmg sgfcvdynsp sssssrrkrr sisasyrfvt fepfnvsfvn
+      781 dsiesvggly eikiptnfti vgqeefiqtn spkvtidcsl fvcsnyaach dllseygtfc
+      841 dninsildev nglldttqlh vadtlmqgvt lssnlntnlh fdvdninfks lvgclgphcg
+      901 sssrsffedl lfdkvklsdv gfveaynnct ggseirdllc vqsfngikvl ppilsesqis
+      961 gyttaatvaa mfppwsaaag ipfslnvqyr inglgvtmdv lnknqkliat afnnallsiq
+     1021 ngfsatnsal akiqsvvnsn aqalnsllqq lfnkfgaiss slqeilsrld aleaqvqidr
+     1081 lingrltaln ayvsqqlsdi slvkfgaala mekvnecvks qsprinfcgn gnhilslvqn
+     1141 apygllfmhf sykpisfktv lvspglcisg dvgiapkqgy fikhndhwmf tgssyyypep
+     1201 isdknvvfmn tcsvnftkap lvylnhsvpk lsdfeselsh wfknqtsiap nltlnlhtin
+     1261 atfldlyyem nliqesiksl nnsyinlkdi gtyemyvkwp wyvwllisfs fiiflvllff
+     1321 iccctgcgsa cfskchnccd eygghhdfvi ktshdd
+//
+
+LOCUS       5KWB_A                   371 aa            linear   VRL 19-JUN-2017
+DEFINITION  Chain A, Spike Glycoprotein.
+ACCESSION   5KWB_A
+VERSION     5KWB_A
+DBSOURCE    pdb: molecule 5KWB, chain 65, release Jun 14, 2017;
+            deposition: Jul 17, 2016;
+            class: Viral Protein;
+            source: Mmdb_id: 151502, Pdb_id 1: 5KWB;
+            Exp. method: X-Ray Diffraction.
+KEYWORDS    .
+SOURCE      Human coronavirus HKU1 (isolate N1)
+  ORGANISM  Human coronavirus HKU1 (isolate N1)
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 371)
+  AUTHORS   Ou,X., Guan,H., Qin,B., Mu,Z., Wojdyla,J.A., Wang,M.,
+            Dominguez,S.R., Qian,Z. and Cui,S.
+  TITLE     Crystal structure of the receptor binding domain of the spike
+            glycoprotein of human betacoronavirus HKU1
+  JOURNAL   Nat Commun 8, 15216 (2017)
+   PUBMED   28534504
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 371)
+  AUTHORS   Guan,H., Wojdyla,J.A., Wang,M. and Cui,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-JUL-2016)
+COMMENT     Crystal Structure Of The Receptor Binding Domain Of The Spike
+            Glycoprotein Of Human Betacoronavirus Hku1 (hku1 1a-ctd, 1.9
+            Angstrom, Molecular Replacement).
+FEATURES             Location/Qualifiers
+     source          1..371
+                     /organism="Human coronavirus HKU1 (isolate N1)"
+                     /db_xref="taxon:443239"
+     Region          join(1..22,307..371)
+                     /region_name="Domain 1"
+                     /note="NCBI Domains"
+     SecStr          10..14
+                     /sec_str_type="sheet"
+                     /note="strand 1"
+     Region          17..220
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Bond            bond(21,46)
+                     /bond_type="disulfide"
+     Het             bond(21)
+                     /heterogen="(MG,1009)"
+     Region          join(23..159,271..306)
+                     /region_name="Domain 2"
+                     /note="NCBI Domains"
+     SecStr          30..34
+                     /sec_str_type="sheet"
+                     /note="strand 2"
+     SecStr          38..44
+                     /sec_str_type="sheet"
+                     /note="strand 3"
+     SecStr          45..49
+                     /sec_str_type="sheet"
+                     /note="strand 4"
+     Het             bond(49)
+                     /heterogen="(NAG,1003)"
+     SecStr          50..57
+                     /sec_str_type="helix"
+                     /note="helix 1"
+     SecStr          58..66
+                     /sec_str_type="sheet"
+                     /note="strand 5"
+     Bond            bond(64,117)
+                     /bond_type="disulfide"
+     Bond            bond(76,299)
+                     /bond_type="disulfide"
+     SecStr          78..87
+                     /sec_str_type="sheet"
+                     /note="strand 6"
+     Het             join(bond(83),bond(287),bond(289),bond(289))
+                     /heterogen="(MG,1010)"
+     SecStr          115..124
+                     /sec_str_type="sheet"
+                     /note="strand 7"
+     Het             bond(127)
+                     /heterogen="(NAG,1000)"
+     SecStr          128..132
+                     /sec_str_type="sheet"
+                     /note="strand 8"
+     SecStr          136..143
+                     /sec_str_type="helix"
+                     /note="helix 2"
+     Het             bond(148)
+                     /heterogen="(NAG,1002)"
+     SecStr          152..158
+                     /sec_str_type="sheet"
+                     /note="strand 9"
+     Het             bond(158)
+                     /heterogen="(MG,1006)"
+     Region          160..270
+                     /region_name="Domain 3"
+                     /note="NCBI Domains"
+     Bond            bond(160,240)
+                     /bond_type="disulfide"
+     SecStr          160..163
+                     /sec_str_type="sheet"
+                     /note="strand 10"
+     Het             bond(164)
+                     /heterogen="(NAG,1001)"
+     SecStr          166..169
+                     /sec_str_type="sheet"
+                     /note="strand 11"
+     Bond            bond(168,189)
+                     /bond_type="disulfide"
+     Bond            bond(170,261)
+                     /bond_type="disulfide"
+     Bond            bond(179,210)
+                     /bond_type="disulfide"
+     SecStr          185..188
+                     /sec_str_type="sheet"
+                     /note="strand 12"
+     SecStr          193..196
+                     /sec_str_type="sheet"
+                     /note="strand 13"
+     SecStr          197..204
+                     /sec_str_type="sheet"
+                     /note="strand 14"
+     Bond            bond(198,212)
+                     /bond_type="disulfide"
+     SecStr          205..213
+                     /sec_str_type="sheet"
+                     /note="strand 15"
+     Bond            bond(214,227)
+                     /bond_type="disulfide"
+     SecStr          229..232
+                     /sec_str_type="sheet"
+                     /note="strand 16"
+     SecStr          243..246
+                     /sec_str_type="sheet"
+                     /note="strand 17"
+     Bond            bond(250,263)
+                     /bond_type="disulfide"
+     SecStr          254..257
+                     /sec_str_type="sheet"
+                     /note="strand 18"
+     SecStr          267..270
+                     /sec_str_type="sheet"
+                     /note="strand 19"
+     SecStr          271..279
+                     /sec_str_type="sheet"
+                     /note="strand 20"
+     Bond            bond(276,282)
+                     /bond_type="disulfide"
+     SecStr          280..290
+                     /sec_str_type="sheet"
+                     /note="strand 21"
+     SecStr          291..294
+                     /sec_str_type="sheet"
+                     /note="strand 22"
+     SecStr          297..301
+                     /sec_str_type="sheet"
+                     /note="strand 23"
+     SecStr          312..321
+                     /sec_str_type="sheet"
+                     /note="strand 24"
+     Region          <313..368
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Bond            bond(315,368)
+                     /bond_type="disulfide"
+     SecStr          322..326
+                     /sec_str_type="sheet"
+                     /note="strand 25"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 26"
+     SecStr          342..346
+                     /sec_str_type="sheet"
+                     /note="strand 27"
+     SecStr          350..357
+                     /sec_str_type="sheet"
+                     /note="strand 28"
+     SecStr          360..367
+                     /sec_str_type="sheet"
+                     /note="strand 29"
+     Het             join(bond(364),bond(364),bond(364))
+                     /heterogen="(MG,1007)"
+ORIGIN      
+        1 sgftvkpvat vhrripdlpd cdidkwlnnf nvpsplnwer kifsncnfnl stllrlvhtd
+       61 sfscnnfdes kiygscfksi vldkfaipns rrsdlqlgss gflqssnyki dttssscqly
+      121 yslpainvti nnynpsswnr rygfnnfnls shsvvysryc fsvnntfcpc akpsfassck
+      181 shkppsascp igtnyrsces ttvldhtdwc rcsclpdpit aydprscsqk kslvgvgehc
+      241 agfgvdeekc gvldgsynvs clcstdaflg wsydtcvsnn rcnifsnfil nginsgttcs
+      301 ndllqpntev ftdvcvdydl ygitgqgifk evsavyynsw qnllydsngn iigfkdfvtn
+      361 ktynifpcya g
+//
+

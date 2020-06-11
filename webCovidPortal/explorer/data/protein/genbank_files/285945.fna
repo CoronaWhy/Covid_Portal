@@ -1,0 +1,71 @@
+LOCUS       AAU04646                1255 aa            linear   VRL 01-DEC-2005
+DEFINITION  spike glycoprotein [Civet SARS CoV 007/2004].
+ACCESSION   AAU04646
+VERSION     AAU04646.1
+DBSOURCE    accession AY572034.1
+KEYWORDS    .
+SOURCE      Civet SARS CoV 007/2004
+  ORGANISM  Civet SARS CoV 007/2004
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Wang,M., Yan,M., Xu,H., Liang,W., Kan,B., Zheng,B., Chen,H.,
+            Zheng,H., Xu,Y., Zhang,E., Wang,H., Ye,J., Li,G., Li,M., Cui,Z.,
+            Liu,Y.F., Guo,R.T., Liu,X.N., Zhan,L.H., Zhou,D.H., Zhao,A.,
+            Hai,R., Yu,D., Guan,Y. and Xu,J.
+  TITLE     SARS-CoV infection in a restaurant from palm civet
+  JOURNAL   Emerging Infect. Dis. 11 (12), 1860-1865 (2005)
+   PUBMED   16485471
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Xu,J., Kan,B., Yan,M., Zheng,H., Xu,Y., Liang,W., Wang,H. and
+            Zhang,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-MAR-2004) Diarrhea Department, National Institute of
+            Communicable Diseases Control and Prevention, China CDC, P O Box 5,
+            Changping, Beijing 102206, P R China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="Civet SARS CoV 007/2004"
+                     /isolate="civet007"
+                     /isolation_source="rectal swab"
+                     /host="civet"
+                     /db_xref="taxon:285945"
+                     /country="China: Southern China"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY572034.1:21466..25233"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffvv skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplgikitn frailtafsp
+      241 aqgtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkrisncva dysvlynsts
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf ssdgkpctpp apncywplrg
+      481 ygfyttsgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstli haeqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsslrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fcrqlnrals giaaeqdrnt revfvqvkqm yktptlkdfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfs
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqeeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

@@ -1,0 +1,53 @@
+LOCUS       AGC94914                  45 aa            linear   VRL 01-APR-2013
+DEFINITION  spike protein, partial [Bat coronavirus
+            BtCoV/8-691/Pip_nat/ROU/2009].
+ACCESSION   AGC94914
+VERSION     AGC94914.1
+DBSOURCE    accession KC243391.1
+KEYWORDS    .
+SOURCE      Bat coronavirus BtCoV/8-691/Pip_nat/ROU/2009
+  ORGANISM  Bat coronavirus BtCoV/8-691/Pip_nat/ROU/2009
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 45)
+  AUTHORS   Annan,A., Baldwin,H.J., Corman,V.M., Klose,S.M., Owusu,M.,
+            Nkrumah,E.E., Badu,E.K., Anti,P., Agbenyega,O., Meyer,B.,
+            Oppong,S., Sarkodie,Y.A., Kalko,E.K., Lina,P.H., Godlevska,E.V.,
+            Reusken,C., Seebens,A., Gloza-Rausch,F., Vallo,P., Tschapka,M.,
+            Drosten,C. and Drexler,J.F.
+  TITLE     Human Betacoronavirus 2c EMC/2012-related Viruses in Bats, Ghana
+            and Europe
+  JOURNAL   Emerging Infect. Dis. 19 (3), 456-459 (2013)
+   PUBMED   23622767
+REFERENCE   2  (residues 1 to 45)
+  AUTHORS   Drexler,F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-NOV-2012) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..45
+                     /organism="Bat coronavirus BtCoV/8-691/Pip_nat/ROU/2009"
+                     /isolate="BtCoV/8-691/Pip_nat/ROU/2009"
+                     /host="Pipistrellus nathusii"
+                     /db_xref="taxon:1284372"
+                     /country="Romania"
+                     /collection_date="2009"
+     Protein         <1..45
+                     /product="spike protein"
+                     /name="S"
+     Region          <2..44
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..45
+                     /coded_by="KC243391.1:<1005..1144"
+                     /codon_start=3
+ORIGIN      
+        1 alalcvffll cctgcgtscm gklkcnrccd kyeeydfeph kihih
+//
+

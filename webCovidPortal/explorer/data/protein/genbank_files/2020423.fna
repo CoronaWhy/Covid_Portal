@@ -1,0 +1,148 @@
+LOCUS       ASL68953                1346 aa            linear   VRL 23-JAN-2018
+DEFINITION  spike glycoprotein [Hypsugo bat coronavirus HKU25].
+ACCESSION   ASL68953
+VERSION     ASL68953.1
+DBSOURCE    accession KX442565.1
+KEYWORDS    .
+SOURCE      Hypsugo bat coronavirus HKU25
+  ORGANISM  Hypsugo bat coronavirus HKU25
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus; unclassified Merbecovirus.
+REFERENCE   1  (residues 1 to 1346)
+  AUTHORS   Lau,S.K.P., Zhang,L., Luk,H.K.H., Xiong,L., Peng,X., Li,K.S.M.,
+            He,X., Zhao,P.S.-H., Fan,R.Y.Y., Wong,A.C.P., Ahmed,S.S.,
+            Cai,J.-P., Chan,J.F.W., Sun,Y., Jin,D., Chen,H., Lau,T.C.K.,
+            Kok,R.K.H., Li,W., Yuen,K.-Y. and Woo,P.C.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2016) Department of Microbiology, University of
+            Hong Kong, Rm440, University Pathology Building, Queen Mary
+            Hospital, 102 Pokfulam Road, Pokfulam, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1346
+                     /organism="Hypsugo bat coronavirus HKU25"
+                     /isolate="NL140462"
+                     /isolation_source="anal swab"
+                     /host="Hypsugo pulveratus"
+                     /db_xref="taxon:2020423"
+                     /country="China"
+                     /collection_date="08-May-2014"
+     Protein         1..1346
+                     /product="spike glycoprotein"
+     Region          <212..350
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          391..635
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          762..1345
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1346
+                     /coded_by="KX442565.1:21817..25857"
+ORIGIN      
+        1 mtlsmfllmf llthikgdvd lgpdssaqsc qevdiqpqyf qkdwtkpidp akadgiiypt
+       61 grsysnitls yqglfprqgd qgqlylysvs hadpntgkmg pdgigklfis nytnetntfd
+      121 ngfvvrigda anssypiiis pqgpartikk iypafmlgay ignftnnrtv rylnhtlvil
+      181 pegcgtslsv fycvliprtq hrcpednays syviwetphq dcegstvnrn islnafkhyf
+      241 nltqckffys ynitedehae wfgitqdarg vhlyssrkgd lyggnmflfa slpiydtlky
+      301 ytviprsirs kynsrqgwaa fyiyklhqlt ylldftvdgy irravdcghd dlaqlrcsye
+      361 sfdvdsgvys vssfeaqprg afieqssgke cdfspmltgt ppqvynfrrl vftdcnynlt
+      421 kllslfqvse fschqvspda lasgcysslt vdyfayptsl asylqqgstg eitqynykqd
+      481 fsnptcrila tapanitltk psnynwltqc ykgsafgnqp hyvqtgqytp clglavqgfs
+      541 aayqshrdpi tklvatgnia amtdnlqmaf iisvqygtdt nsvcpmqalr ndtsvhdklg
+      601 qcidyslygl tgrgvfqnct avglsqqrfv ydgfdiltgy hsddgnyycv rpcvsvplsv
+      661 vydkpsnnya tifgsvacdy vntmttqlsr mtqaklrsrs fttpiqtavg cviglvnssl
+      721 vvdddkctlp lgqslcavps knrdttsnlq lavinftrph lvealnssgf vvqiptnfsf
+      781 sitqeyiqtt iqkvtvdckq yvcngfekce tllreygqfc akinqalhga nlrqdesvan
+      841 lfaniktqtt qaldaglngd fnltllqvpk vttsqysyrs tiedllfnkv tiadpgymqg
+      901 ydecmqqgpp sardlicaqf vagykvlppl ydpnmeaayt ssllgsilga gwtaglssfa
+      961 aipfaqsify rmngigitqq vlsenqkqid kkfnqalnam qtgftttnla fskvqdavna
+     1021 naqalaklas elsntfgais ssisdilkrl daveqeaqid rlingrltsl nafvaqqlvr
+     1081 setaarsaql asdkvnecvk sqskrngfcg sgthivsfvi napdglyffh vgyvptdhin
+     1141 ataayglcnn dnpprciapi dgyfvrnsst trdandewyy tgssyynpep ismantryvs
+     1201 qdtkfenltt nipppllnrt dsdfkdelee ffknvssqgp nfaeiskint tlldlstemn
+     1261 alnevvkqln qsyidlkelg nysyyqkwpw yiwlgfiagl valalcvffl lcctgcgtnc
+     1321 mgklkcnrcc dkyeeyeiep hkihvh
+//
+
+LOCUS       ASL68941                1346 aa            linear   VRL 23-JAN-2018
+DEFINITION  spike glycoprotein [Hypsugo bat coronavirus HKU25].
+ACCESSION   ASL68941
+VERSION     ASL68941.1
+DBSOURCE    accession KX442564.1
+KEYWORDS    .
+SOURCE      Hypsugo bat coronavirus HKU25
+  ORGANISM  Hypsugo bat coronavirus HKU25
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus; unclassified Merbecovirus.
+REFERENCE   1  (residues 1 to 1346)
+  AUTHORS   Lau,S.K.P., Zhang,L., Luk,H.K.H., Xiong,L., Peng,X., Li,K.S.M.,
+            He,X., Zhao,P.S.-H., Fan,R.Y.Y., Wong,A.C.P., Ahmed,S.S.,
+            Cai,J.-P., Chan,J.F.W., Sun,Y., Jin,D., Chen,H., Lau,T.C.K.,
+            Kok,R.K.H., Li,W., Yuen,K.-Y. and Woo,P.C.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2016) Department of Microbiology, University of
+            Hong Kong, Rm440, University Pathology Building, Queen Mary
+            Hospital, 102 Pokfulam Road, Pokfulam, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1346
+                     /organism="Hypsugo bat coronavirus HKU25"
+                     /isolate="YD131305"
+                     /isolation_source="anal swab"
+                     /host="Hypsugo pulveratus"
+                     /db_xref="taxon:2020423"
+                     /country="China"
+                     /collection_date="14-Sep-2013"
+     Protein         1..1346
+                     /product="spike glycoprotein"
+     Region          <211..349
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          390..>530
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <584..662
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          735..1345
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1346
+                     /coded_by="KX442564.1:21817..25857"
+ORIGIN      
+        1 mtlsmfllmf llthikgdvd lgpdsvaqsc qevdiqpqyf qkhwtkpidp akadgiiypt
+       61 grsysnitls yqglfprqgd qgqlylysvs hadpkqntgs dgigklfisn ytnetntfdn
+      121 gfvvrigdaa nstypiiisp qgpprtikki ypafmlgayi gnftnnrtvr ylnhtlvilp
+      181 egcgtslsvf ycvliprnqp rcpedngyss yviwetphqd cegsnvnrnv slnafkhyfn
+      241 ltqckffysy nitedehsew fgitqdargv hlyssrkgdl yggnmflfas lpvydtlkyy
+      301 tviprsirsk ynaregwaaf yiyklhqlty lldftvdgyi rravdcghdd laqlrcsyes
+      361 fdvdsgvysv ssfeaqprga fieqssgkec dfspmltgtp pqvynfrrlv ftdcnynltk
+      421 llslfqvsef schqvspdal asgcyssltv dyfayplsla sylqqgstge itqynykqdf
+      481 snptcrilat apanitltkp nnynwltecy hstafgkqpy yvqpgqytpc lglaisgftt
+      541 syetrrdpnt kmaatglvta mttslqmafi isvqygtdtn svcpmqalrn dtsvhdklgq
+      601 cidyslygvt grgvfhncta igirqqrfvy dsfdnligyh sddgnyycvr pcvsvplsvv
+      661 ydkqsnnhat ifgsvaceyv ntmstqfsrm tqanlraraa nqpiqtavgc aiglvnsslv
+      721 idddkctlpl gqslcavpfv trdtsgslql avinftrphl vealnssgfv vqiptnfsfs
+      781 itqeyiqtti qkvtvdckqy vcngfekcet llreygqfca kinqalhgan lrqdesvanl
+      841 faniktqttq alnaglngdf nltllqvpkv ttsqysyrst iedllfnkvt iadpgymqgy
+      901 decmqqgpps ardlicaqfv agykvlpply dpnmeaayts sllgsilgag wtaglssfaa
+      961 ipfaqsifyr mngigitqqv lsenqkqian kfnqalnamq tgftttnlaf skvqdavnan
+     1021 aqalaklase lsntfgaiss sisdilkrld aveqeaqidr lingrltsln afvaqqlvrs
+     1081 etaarsaqla sdkvnecvks qskrngfcgs gthivsfvin apdglyffhv gyvptdhina
+     1141 taayglcnnd npprciapid gyfvrnsttt rdandewyyt gssyynpepi smantryvsq
+     1201 dtkfenltsn ipppllnnrt dtdfkdeled ffknvssqgp nfaeiskint tlldlstemn
+     1261 alnevvkqln qsyidlkelg nysyyqkwpw yiwlgfiagl valalcvffl lcctgcgtnc
+     1321 mgklkcnrcc dkyeeyeiep hkihvh
+//
+

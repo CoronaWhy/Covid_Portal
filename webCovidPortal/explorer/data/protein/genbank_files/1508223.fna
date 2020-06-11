@@ -1,0 +1,251 @@
+LOCUS       AID16661                1365 aa            linear   VRL 25-AUG-2015
+DEFINITION  spike protein [Longquan Rl rat coronavirus].
+ACCESSION   AID16661
+VERSION     AID16661.1
+DBSOURCE    accession KF294372.1
+KEYWORDS    .
+SOURCE      Longquan Rl rat coronavirus
+  ORGANISM  Longquan Rl rat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1365)
+  AUTHORS   Wang,W., Lin,X.D., Guo,W.P., Zhou,R.H., Wang,M.R., Wang,C.Q.,
+            Ge,S., Mei,S.H., Li,M.H., Shi,M., Holmes,E.C. and Zhang,Y.Z.
+  TITLE     Discovery, diversity and evolution of novel coronaviruses sampled
+            from rodents in China
+  JOURNAL   Virology 474, 19-27 (2015)
+   PUBMED   25463600
+REFERENCE   2  (residues 1 to 1365)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Discovery and phylogeny of coronaviruses harbored by birds and
+            mammals
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1365)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2013) Department of Zoonoses, National Institute
+            of Communicable Disease Control and Prevention, Chinese Center for
+            Disease Control and Prevention, Changping Liuzi 5, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1365
+                     /organism="Longquan Rl rat coronavirus"
+                     /isolate="Longquan-708"
+                     /host="Niviventer confucianus"
+                     /db_xref="taxon:1508223"
+                     /country="China"
+                     /collection_date="2011"
+     Protein         1..1365
+                     /product="spike protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..534
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          794..1345
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1365
+                     /coded_by="KF294372.1:23280..27377"
+ORIGIN      
+        1 mlfvfvsllv pclgyigdfr ciqltntdts nasapsvste vvdvskgvgt yyvldrvyln
+       61 atlllngfyp vdgsnyrnla ltgtntvslm wfkppflsef ndgifakvkn lkasvptgst
+      121 syfptivigs sfvntsytiv lepyngviia sicqytmcql pytdcklntn gnnlvgfwht
+      181 dlkppvcilk rnftfnvnad wlyfhfyqqg gtfyayyadv asattflfsi yigdvltqyf
+      241 vlpymctptt agvfspqywi tplvkrqylf nfnqkgiits avdcassyts eikcktqsmn
+      301 pntgvydlsg ytvqpvglvy rrvrnlpgrs deewlaaksv psplnwerkt fqncnfnlss
+      361 llrfvqaesl scsnidaskv ygmcfgsisi dkfaipnsrr gdlqlgnsgf lqsfnyridt
+      421 ratscqlyys laqnnvtvnn hnpsswnrry gfndvatfgs gkhdvayaeq cfivgksycp
+      481 canpsivssc tidkpkfanc ptgtsnrdcn vvsvwsrlvn sfkcdctcnp splntydvrc
+      541 lqgktvlgvg dhcdglgvle dkcggsnmcn csadafvgws kdtclsngrc hifsnlllng
+      601 fnsgttcstd sqlpntevvt gvcvkydlyg mtgqgvfkev qadyynswqn llydvngnln
+      661 gfrdfvtnkt ytirscysgr vsaayhedap epallyrnlk cdyvfknnis reeiplnyfd
+      721 sylgcvvnad nsteeavvfc dlrvgsglcv nystshrarr sistgykltt fepftvnivn
+      781 dsvesvggly emqiptnfti gchqefiqtr spkvtidcaa fvcgdytacr hqlveygsfc
+      841 dninailgev ntlidsmqlq vasaliqgvt lssrladgia gqiddinfsp llgclgsdcg
+      901 erttsaltgr saiedllfdk iklsdvgfve aynnctggqe vrdllcvqsf ngikvlppvl
+      961 sesqisgytv gatasamfpp fsaaagvpfs lnvqyringl gvtmnvlsen qkmiasafnt
+     1021 algaiqngfd atnsvlakiq svvnenvdal nnllqqlsnr fgaisaslqe ilsrldalea
+     1081 qaqidrling rltalnayvs kqlsdmtlvk vsasqaiekv necvksqspr infcgngnhi
+     1141 lslvqnapyg lyfihfiyvp tafktanvsp glciagdrgl apkagyfvkd ngewkftgss
+     1201 yyypepindk nsvvmsscgv nytkapevll nssistlsdf keeldkwfkn qtstapdlsl
+     1261 dlekinvtfl dlseemnriq daikklnesy inlkevgtye myvkwpwyvw lliglagvav
+     1321 cvllfficcc tgcgascfkk cgnccdeygg rqgsivihni sshed
+//
+
+LOCUS       AID16655                1349 aa            linear   VRL 25-AUG-2015
+DEFINITION  spike protein [Longquan Rl rat coronavirus].
+ACCESSION   AID16655
+VERSION     AID16655.1
+DBSOURCE    accession KF294371.1
+KEYWORDS    .
+SOURCE      Longquan Rl rat coronavirus
+  ORGANISM  Longquan Rl rat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1349)
+  AUTHORS   Wang,W., Lin,X.D., Guo,W.P., Zhou,R.H., Wang,M.R., Wang,C.Q.,
+            Ge,S., Mei,S.H., Li,M.H., Shi,M., Holmes,E.C. and Zhang,Y.Z.
+  TITLE     Discovery, diversity and evolution of novel coronaviruses sampled
+            from rodents in China
+  JOURNAL   Virology 474, 19-27 (2015)
+   PUBMED   25463600
+REFERENCE   2  (residues 1 to 1349)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Discovery and phylogeny of coronaviruses harbored by birds and
+            mammals
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1349)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2013) Department of Zoonoses, National Institute
+            of Communicable Disease Control and Prevention, Chinese Center for
+            Disease Control and Prevention, Changping Liuzi 5, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1349
+                     /organism="Longquan Rl rat coronavirus"
+                     /isolate="Longquan-370"
+                     /host="Rattus losea"
+                     /db_xref="taxon:1508223"
+                     /country="China"
+                     /collection_date="2013"
+     Protein         1..1349
+                     /product="spike protein"
+     Region          15..285
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          319..526
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <616..669
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          763..1332
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1349
+                     /coded_by="KF294371.1:23224..27273"
+ORIGIN      
+        1 mlfilfmlps afavigdlkc ttvsindant gvpsissevv dvsnglgtyy vldrvylntt
+       61 lllngyypis gasfrnlalk gtlllstlwy eppflsdfnn gifakvsntk lvsngvtyse
+      121 fntivigsvf vntsytivvq phngileatv cqytmceypn tichsnlgnq rqelwhyegn
+      181 nqplclfkkn ftydvnadwl yfhfyqeggt fyayyadygq pttflfsiyl gsvlshyyvv
+      241 pftcnaqapn mqywvtplak rqyllkfder gvitnavdcv ssyiseiqck tqaispntgv
+      301 ydlsrftvqp vatvyrrvpn lpdcgienwl ndkyvpspln werkmfincn fnlssllryv
+      361 qadsfscnnm daskvygmcf ssilidkfai pnsrkvdlql gnsgflqsfn ykidttatsc
+      421 qlyyslhqsn vtvknqnpss wnrrygfsdf nlgsfsdyry rvaysqqcfq ttndycpcas
+      481 psvvnsctvd kpqaglcptg ttqrrcsigg asgaqctcsc rpnplttyat nsclqkksvv
+      541 gvgehcsglg vnedkcgspt gcscaadafi gwshdsclin grcqifanli lngvnsgttc
+      601 stdtqiante vltgvcvdyd lygitgrgif kevsadyyns wqnllydvng nlygfkdyqt
+      661 nktytirpcy sgrvsaalhq eapepvllyr nlkcsyvynn sisreaqplk yfdsylgcvv
+      721 nadnytydsv htcdlrmgsg fcvdystarr krrdlstgyr fttfepynvs vvndsveavg
+      781 glyeiqipin ftigsheefi qtsspkvtid caafvcsdya acrqqlveyg tfcdnintil
+      841 sevnglldnt qlqvanslmq gvtlsstlks gidldvddin fnpvmgclgs scgssyrsti
+      901 edllfnkvki advgfveayn nctggnelrd licvqsfngi kvlppvlses qisgyttaat
+      961 aasifppwsa aagvpfslsv qyringlgvt mdvlsenqkl ianafnnalg aiqngfdatn
+     1021 salakiqnvv nanaealnnl llqlsnrfga isaslqeils rldaleaqvq idrlingrlt
+     1081 alnayvsqql sditlvkfsa sqaiekvnec vksqsprinf cgngnhilsl vqnapyglyf
+     1141 ihfsyvpiaf ktayvspglc iagdrglapk agyfvkengq wlftgssyyy pepitdknsv
+     1201 vmstcavnyt kapdvflnns ipnlpdfkee ldqwfknqts iapdlsldle kinvtfldlh
+     1261 demnriqeai kklnesyinl keigtyemyv kwpwyvwlli glagvavcvl lfficcctgc
+     1321 gascfkkcgn ccdeygghqd iviktshdd
+//
+
+LOCUS       AID16649                1349 aa            linear   VRL 25-AUG-2015
+DEFINITION  spike protein [Longquan Rl rat coronavirus].
+ACCESSION   AID16649
+VERSION     AID16649.1
+DBSOURCE    accession KF294370.1
+KEYWORDS    .
+SOURCE      Longquan Rl rat coronavirus
+  ORGANISM  Longquan Rl rat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1349)
+  AUTHORS   Wang,W., Lin,X.D., Guo,W.P., Zhou,R.H., Wang,M.R., Wang,C.Q.,
+            Ge,S., Mei,S.H., Li,M.H., Shi,M., Holmes,E.C. and Zhang,Y.Z.
+  TITLE     Discovery, diversity and evolution of novel coronaviruses sampled
+            from rodents in China
+  JOURNAL   Virology 474, 19-27 (2015)
+   PUBMED   25463600
+REFERENCE   2  (residues 1 to 1349)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Discovery and phylogeny of coronaviruses harbored by birds and
+            mammals
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1349)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2013) Department of Zoonoses, National Institute
+            of Communicable Disease Control and Prevention, Chinese Center for
+            Disease Control and Prevention, Changping Liuzi 5, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1349
+                     /organism="Longquan Rl rat coronavirus"
+                     /isolate="Longquan-189"
+                     /host="Rattus tanezumi"
+                     /db_xref="taxon:1508223"
+                     /country="China"
+                     /collection_date="2013"
+     Protein         1..1349
+                     /product="spike protein"
+     Region          15..285
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          319..526
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <616..669
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          763..1332
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1349
+                     /coded_by="KF294370.1:23224..27273"
+ORIGIN      
+        1 mlfilfmlps afavigdlkc ttvsindant gvpsissevv dvsnglgtyy vldrvylntt
+       61 lllngyypis gasfrnlalk gtlllstlwy eppflsdfnn gifakvsntk lvsngvtyse
+      121 fntivigsvf vntsytivvq phngileatv cqytmceypn tichpnlgnq rqelwhyegn
+      181 nqplclfkkn ftydvnadwl yfhfyqeggt fyayyadygq pttflfsiyl gsvlshyyvv
+      241 pltcnaqapn mqywvtplak rqyllkfder gvitnavdcv ssyiseiqck tqaispntgv
+      301 ydlsgftvqp vatvyrrvpn lpdcgienwl ndkyvpspln werkmfincn fnlssllryv
+      361 qadsfscnnm daskvygmcf ssilidkfai pnsrkvdlql gnsgflqsfn ykidttaisc
+      421 qlyyslhqsn vtvknqnpss wnrrygfsdf nlgsfsdyry rvaysqqcfq ttndycpcas
+      481 psvvnsctvd kpqaglcptg ttqrrcsigg vsgaqctcsc rpnplttyat nsclqkksvv
+      541 gvgehcsglg vnedkcgspt gcscaadafi gwshdsclin grcqifanli lngvnsgttc
+      601 stdtqiante vltgvcvdyd lygitgrgif kevsadyyns wqnllydvng nlygfkdyqt
+      661 nktytirpcy sgrvsaalhq eapepvllyr nlkcsyvynn sisreaqplk yfdsylgcvv
+      721 nadnytddsv htcdlrmgsg fcvdystarr krrdlstgyr fttfepynvs vvndsveavg
+      781 glyeiqipin ftigsheefi qtsspkvtid caafvcsdya acrqqlveyg tfcdnintil
+      841 sevnglldnt qlqvanslmq gvtlsstlks gidldvddin fnpvmgclgs scgssyrsti
+      901 edllfnkvki advgfveayn nctggnelrd licvqsfngi kvlppvlses qisgyttaat
+      961 aasifppwsa aagvpfslsv qyringlgvt mdvlsenqkl ianafnnalg aiqngfdatn
+     1021 salakiqnvv nanaealnnl llqlsnrfga isaslqeils rldaleaqvq idrlingrlt
+     1081 alnayvsqql sditlvkfsa sqaiekvnec vksqsprinf cgngnhilsl vqnapyglyf
+     1141 ihfsyvpiaf ktayvspglc iagdrglapk agyfvkengq wlftgssyyy pepitdknsv
+     1201 vmstcavnyt kapdvflnns ipnlpdfkee ldqwfknqts iapdlsldle kinvtfldlh
+     1261 demnriqeai kklnesyinl keigtyemyv kwpwyvwlli glagvavcvl lfficcctgc
+     1321 gascfkkcgn ccdeygghqd iviktshdd
+//
+

@@ -1,0 +1,51 @@
+LOCUS       AAS44781                 445 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike glycoprotein, partial [SARS coronavirus TW-GD4].
+ACCESSION   AAS44781
+VERSION     AAS44781.1
+DBSOURCE    accession AY451902.1
+KEYWORDS    .
+SOURCE      SARS coronavirus TW-GD4
+  ORGANISM  SARS coronavirus TW-GD4
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 445)
+  AUTHORS   Lan,Y.C., Liu,T.T., Yang,J.Y., Lee,C.M., Chen,Y.J., Chan,Y.J.,
+            Lu,J.J., Liu,H.F., Hsiung,C.A., Ho,M.S., Hsiao,K.J., Chen,H.Y. and
+            Chen,Y.M.
+  TITLE     Molecular epidemiology of severe acute respiratory
+            syndrome-associated coronavirus infections in Taiwan
+  JOURNAL   J. Infect. Dis. 191 (9), 1478-1489 (2005)
+   PUBMED   15809907
+REFERENCE   2  (residues 1 to 445)
+  AUTHORS   Lan,Y.-C., Chen,Y.-J., Lee,C.-M., Liu,T.-T., Lu,J.-J., Chan,Y.-J.,
+            Yang,J.-Y., Chen,H.-Y. and Chen,Y.-M.Arthur.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-OCT-2003) National Yang-Ming University, AIDS
+            Prevention and Research Center, 155, Li-Nong St., Sec.2, Peitou,
+            Taipei, Taiwan 112, R.O.C.
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..445
+                     /organism="SARS coronavirus TW-GD4"
+                     /isolate="TW-GD4_SC22-23"
+                     /db_xref="taxon:264381"
+     Protein         1..>445
+                     /product="spike glycoprotein"
+     Region          316..>445
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..445
+                     /coded_by="AY451902.1:256..>1591"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhsssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tnhtfgnpvi pfkdgiyfaa teksnvvrgw vfgstmnnks qsviiinnst
+      121 nvviracnfe lcdnpffavs kpmgtqthtm ifdnafnctf eyisdafsld vseksgnfkh
+      181 lrefvfknkd gflyvykgyq pidvvrdlps gfntlkpifk lplginitnf railtafspa
+      241 qdiwgtsaaa yfvgylkptt fmlkydengt itdavdcsqn plaelkcsvk sfeidkgiyq
+      301 tsnfrvvpsg dvvrfpnitn lcpfgevfna tkfpsvyawe rkkisncvad ysvlynstff
+      361 stfkcygvsa tklndlcfsn vyadsfvvkg ddvrqiapgq tgviadynyk lpddfmgcvl
+      421 awntrnidat stgnynykyr ylrhg
+//
+

@@ -1,0 +1,77 @@
+LOCUS       AAQ01609                1255 aa            linear   VRL 25-JUL-2016
+DEFINITION  S protein [SARS coronavirus Taiwan TC2].
+ACCESSION   AAQ01609
+VERSION     AAQ01609.1
+DBSOURCE    accession AY338175.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Taiwan TC2
+  ORGANISM  SARS coronavirus Taiwan TC2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Shih,M.C., Peck,K., Chan,W.L., Chu,Y.P., Chen,J.C., Tsai,C.H. and
+            Chang,J.G.
+  TITLE     SARS-CoV infection was from at least two origins in the Taiwan area
+  JOURNAL   Intervirology 48 (2-3), 124-132 (2005)
+   PUBMED   15812185
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Chang,J., Lin,T., Chen,C., Lin,T., Chan,W. and Shih,M.
+  TITLE     SARS coronavirus TC2, clinical specimen
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Chang,J., Lin,T., Chen,C., Lin,T., Chan,W. and Shih,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-JUL-2003) Department of Molecular Medicine, China
+            Medical University Hospital, 2, Yuh Der Road, Taichung, Taichung
+            404, Taiwan
+REFERENCE   4  (residues 1 to 1255)
+  AUTHORS   Chang,J., Lin,T., Chen,C., Lin,T., Chan,W. and Shih,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JUL-2003) Department of Molecular Medicine, China
+            Medical University Hospital, 2, Yuh Der Road, Taichung, Taichung
+            404, Taiwan
+  REMARK    Amino acid sequence updated by submitter
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Taiwan TC2"
+                     /isolate="TC2"
+                     /db_xref="taxon:237640"
+                     /note="clinical specimen"
+     Protein         1..1255
+                     /product="S protein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY338175.1:21423..25190"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

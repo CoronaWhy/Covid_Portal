@@ -1,0 +1,76 @@
+LOCUS       AVN88332                1364 aa            linear   VRL 21-MAR-2018
+DEFINITION  spike protein [Water deer coronavirus].
+ACCESSION   AVN88332
+VERSION     AVN88332.1
+DBSOURCE    accession MG518518.1
+KEYWORDS    .
+SOURCE      Water deer coronavirus
+  ORGANISM  Water deer coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1364)
+  AUTHORS   Kim,J.H., Jang,J.H., Yoon,S.W., Noh,J.Y., Ahn,M.J., Kim,Y.,
+            Jeong,D.G. and Kim,H.K.
+  TITLE     Detection of bovine coronavirus in nasal swab of non-captive wild
+            water deer, Korea
+  JOURNAL   Transbound Emerg Dis (2018) In press
+   PUBMED   29508550
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1364)
+  AUTHORS   Kim,J.H., Kim,H.K. and Noh,J.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (14-NOV-2017) Infectious Disease Research Center, Korea
+            Research Institute of Bioscience & Biotechnology, 125 Gwahak-ro,
+            Yuseong-gu, Daejeon 34141, Republic of Korea
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1364
+                     /organism="Water deer coronavirus"
+                     /isolate="W17-18"
+                     /host="Hydropotes inermis (water deer)"
+                     /db_xref="taxon:2126133"
+                     /country="South Korea: Chungnam"
+                     /collection_date="24-Feb-2017"
+     Protein         1..1364
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          327..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          800..1347
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1364
+                     /coded_by="MG518518.1:23641..27735"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvptistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 efpaitigst fvntsysvvv qphttnfdsk lqglleisvc qytmceypnt icnpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vllhyyvmpl tcnsaltley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgtg sgidagyknt gigtcpagtn yltchnaaqc dclctpdpit
+      541 skatgpykcp qtkylvgige hcsglaiksd ycggnpcscq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lepvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvklsdvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqd gfdstnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepy ncgnnvvvms tcavnytkap dvmlnistpn lpdfkeeldq wfknqisvap
+     1261 dlsldyinvt fldlqdemnr lqeaikvlnq syinlkdigt yeyyvkwpwy vwlligfagv
+     1321 amlvllffic cctgcgtscf kkcggccddy tghqelvikt shdd
+//
+

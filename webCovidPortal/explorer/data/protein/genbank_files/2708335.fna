@@ -1,0 +1,293 @@
+LOCUS       QIQ54048                1269 aa            linear   VRL 23-APR-2020
+DEFINITION  spike protein [Pangolin coronavirus].
+ACCESSION   QIQ54048
+VERSION     QIQ54048.1
+DBSOURCE    accession MT072864.1
+KEYWORDS    .
+SOURCE      Pangolin coronavirus
+  ORGANISM  Pangolin coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1269)
+  AUTHORS   Cao,W., Jia,N., Zhang,Y., Tong,Y., Jiang,J., Jiang,B., Li,J.,
+            Yuan,T., Li,W., Qiang,X., Qin,S. and Pei,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-FEB-2020) State Key Laboratory of Pathogen and
+            Biosecurity, Beijing Institute of Microbiology and Epidemiology,
+            No. 20 Dong Da Street, Beijing, Beijing 100071, China
+FEATURES             Location/Qualifiers
+     source          1..1269
+                     /organism="Pangolin coronavirus"
+                     /isolate="PCoV_GX-P2V"
+                     /host="pangolin"
+                     /db_xref="taxon:2708335"
+                     /country="China"
+                     /collection_date="2018"
+                     /note="passaged in Vero E6"
+     Protein         1..1269
+                     /product="spike protein"
+     CDS             1..1269
+                     /gene="S"
+                     /coded_by="MT072864.1:21522..25331"
+ORIGIN      
+        1 mfvflfvlpl vssqcvnltt rtgippgytn sstrgvyypd kvfrssilhl tqdlflpffs
+       61 nvtwfntihl nyqggfkkfd npvlpxndgv yfasteksni irgwifgttl dartqslliv
+      121 nnatnvvikv cefqfctdpf lgvyyhnnnk twvenefrvy ssannctfey isqpflmdle
+      181 gkqgnfknlr efvfknvdgy fkiyskhtpi dlvrdlprgf aaleplvdlp iginitrfqt
+      241 llalhrsylt pgklesgwtt gaaayyvgyl qqrtfllsyn qngtitdavd csldplsetk
+      301 ctlksltvek giyqtsnfrv qptisivrfp nitnlcpfge vfnaskfasv yawnrkrisn
+      361 cvadysvlyn stsfstfkcy gvsptklndl cftnvyadsf vvkgdevrqi apgqtgviad
+      421 ynyklpddft gcviawnsvk qdaltggnyg ylyrlfrksk lkpferdist eiyqagstpc
+      481 ngqvglncyy plerygfhpt tgvnyqpfrv vvlsxellng patvcgpkls ttlvkdkcvn
+      541 fnfngltgtg vlttskkqfl pfqqfgrdis dttdavrdpq tleilditpc sfggvsvitp
+      601 gtntsnqvav lyqdvnctev pmaihaeqlt pawrvysaga nvfqtragcl vgaehvnnsy
+      661 ecdipvgagi casyhsmssf rsvnqrsiia ytmslgaens vaysnnsiai ptnftisvtt
+      721 eilpvsmtkt svdctmyicg dsiecsnlll qygsfctqln raltgiaveq dkntqevfaq
+      781 vkqiyktppi kdfggfnflq ilpdpskpsk rsfiedllfn kvtladagfi kqygdclgdi
+      841 aardlicaqk fngltvlppl ltdemiaqyt sallagtits gwtfgagaal qipfamqmay
+      901 rfngigvtqn vlyenqklia nqfnsaigki qdslsstasa lgklqdvvnq naqalntlvk
+      961 qlssnfgais svlndilsrl dkveaevqid rlitgrlqsl qtyvtqqlir aaeirasanl
+     1021 aatkmsecvl gqskrvdfcg kgyhlmsfpq saphgvvflh vtyvpaqekn fttapaiche
+     1081 gkahfpregv fvsngthwfi tqrnfyepqi ittdntfvsg scdvvigivn ntvydplqpe
+     1141 ldsfkeeldk yfknhtspdv dlgdisgina svvniqkeid rlnevaknln eslidlqelg
+     1201 kyeqyikwpw yiwlgfiagl iaiimvtiml ccmtsccscl kgccscgscc kfdeddsepv
+     1261 lkgvklhyt
+//
+
+LOCUS       QIA48641                1267 aa            linear   VRL 23-APR-2020
+DEFINITION  spike protein [Pangolin coronavirus].
+ACCESSION   QIA48641
+VERSION     QIA48641.1
+DBSOURCE    accession MT040336.1
+KEYWORDS    .
+SOURCE      Pangolin coronavirus
+  ORGANISM  Pangolin coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1267)
+  AUTHORS   Cao,W., Jia,N., Zhang,Y., Tong,Y., Jiang,J., Jiang,B., Li,J.,
+            Yuan,T., Li,W., Qiang,X., Qin,S. and Pei,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-FEB-2020) State Key Laboratory of Pathogen and
+            Biosecurity, Beijing Institute of Microbiology and Epidemiology,
+            No. 20 Dong Da Street, Bejing, Bejing 100071, China
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC Genomic Workbench v. v.9.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1267
+                     /organism="Pangolin coronavirus"
+                     /isolate="PCoV_GX-P5E"
+                     /host="Manis javanica (Malayan pangolin)"
+                     /db_xref="taxon:2708335"
+                     /country="China"
+                     /collection_date="2017"
+     Protein         1..1267
+                     /product="spike protein"
+     CDS             1..1267
+                     /coded_by="MT040336.1:21540..25343"
+ORIGIN      
+        1 mfvflfvlpl vssqcvnltt rtgippgytn sstrgvyypd kvfrssilhl tqdlflpffs
+       61 nvtwfntity qggskkfdnp vlpfndgvyf asteksniir gwifgttlda rtqsllivnn
+      121 atnvvikvce fqfctdpflg vyyhnnnktw venefrvyss annctfeyis qpflmdlegk
+      181 qgnfknlref vfknvdgyfk iyskhtpidl vrdlprgfaa leplvdlpig initrfqtll
+      241 alhrsyltpg klesgwttga aayyvgylqq rtfllsynqn gtitdavdcs ldplsetkct
+      301 lksltvekgi yqtsnfrvqp tisivrfpni tnlcpfgevf naskfasvya wnrkrisncv
+      361 adysvlynst sfstfkcygv sptklndlcf tnvyadsfvv kgdevrqiap gqtgviadyn
+      421 yklpddftgc viawnsvkqd altgdnygyl yrlfrksklk pferdistei yqagstpcng
+      481 qvglncyypl erygfhpttg vnyqpfrvvv lsfellngpa tvcgpklstt lvkdkcvnfn
+      541 fngltgtgvl ttskkqflpf qqfgrdisdt tdavrdpqtl eilditpcsf ggvsvitpgt
+      601 ntsnqvavly qdvnctevpm aihaeqltpa wrvysaganv fqtragclvg aehvnnsyec
+      661 dipvgagica syhsmssfrs vnqrsiiayt mslgaensva ysnnsiaipt nftisvttei
+      721 lpvsmtktsv dctmyicgds iecsnlllqy gsfctqlnra ltgiaveqdk ntqevfaqvk
+      781 qiyktppikd fggfnfsqil pdpskpskrs fiedllfnkv tladagfikq ygdclgdiaa
+      841 rdlicaqkfn gltvlppllt demiaqytsa llagtitsgw tfgagaalqi pfamqmayrf
+      901 ngigvtqnvl yenqklianq fnsaigkiqd slsstasalg klqdvvnqna qalntlvkql
+      961 ssnfgaissv lndilsrldk veaevqidrl itgrlqslqt yvtqqliraa eirasanlaa
+     1021 tkmsecvlgq skrvdfcgkg yhlmsfpqsa phgvvflhvt yvpaqeknft tapaichegk
+     1081 ahfpregvfv sngthwfitq rnfyepqiit tdntfvsgsc dvvigivnnt vydplqpeld
+     1141 sfkeeldkyf knhtspdvdl gdisginasv vniqkeidrl nevaknlnes lidlqelgky
+     1201 eqyikwpwyi wlgfiaglia iimvtimlcc mtsccsclkg ccscgscckf deddsepvlk
+     1261 gvklhyt
+//
+
+LOCUS       QIA48632                1267 aa            linear   VRL 23-APR-2020
+DEFINITION  spike protein [Pangolin coronavirus].
+ACCESSION   QIA48632
+VERSION     QIA48632.1
+DBSOURCE    accession MT040335.1
+KEYWORDS    .
+SOURCE      Pangolin coronavirus
+  ORGANISM  Pangolin coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1267)
+  AUTHORS   Cao,W., Jia,N., Zhang,Y., Tong,Y., Jiang,J., Jiang,B., Li,J.,
+            Yuan,T., Li,W., Qiang,X., Qin,S. and Pei,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-FEB-2020) State Key Laboratory of Pathogen and
+            Biosecurity, Beijing Institute of Microbiology and Epidemiology,
+            No. 20 Dong Da Street, Bejing, Bejing 100071, China
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC Genomic Workbench v. v.9.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1267
+                     /organism="Pangolin coronavirus"
+                     /isolate="PCoV_GX-P5L"
+                     /host="Manis javanica (Malayan pangolin)"
+                     /db_xref="taxon:2708335"
+                     /country="China"
+                     /collection_date="2017"
+     Protein         1..1267
+                     /product="spike protein"
+     CDS             1..1267
+                     /coded_by="MT040335.1:21540..25343"
+ORIGIN      
+        1 mfvflfvlpl vssqcvnltt rtgippgytn sstrgvyypd kvfrssilhl tqdlflpffs
+       61 nvtwfntiny qggfkkfdnp vlpfndgvyf asteksniir gwifgttlda rtqsllivnn
+      121 atnvvikvce fqfctdpflg vyyhnnnktw venefrvyss annctfeyis qpflmdlegk
+      181 qgnfknlref vfknvdgyfk iyskhtpidl vrdlprgfaa leplvdlpig initrfqtll
+      241 alhrsyltpg klesgwttga aayyvgylqq rtfllsynqn gtitdavdcs ldplsetkct
+      301 lksltvekgi yqtsnfrvqp tisivrfpni tnlcpfgevf naskfasvya wnrkrisncv
+      361 adysvlynst sfstfkcygv sptklndlcf tnvyadsfvv kgdevrqiap gqtgviadyn
+      421 yklpddftgc viawnsvkqd altggnygyl yrlfrksklk pferdistei yqagstpcng
+      481 qvglncyypl erygfhpttg vnyqpfrvvv lsfellngpa tvcgpklstt lvkdkcvnfn
+      541 fngltgtgvl ttskkqflpf qqfgrdisdt tdavrdpqtl eilditpcsf ggvsvitpgt
+      601 ntsnqvavly qdvnctevpm aihaeqltpa wrvysaganv fqtragclvg aehvnnsyec
+      661 dipvgagica syhsmssfrs vnqrsiiayt mslgaensva ysnnsiaipt nftisvttei
+      721 lpvsmtktsv dctmyicgds iecsnlllqy gsfctqlnra ltgiaveqdk ntqevfaqvk
+      781 qiyktppikd fggfnfsqil pdpskpskrs fiedllfnkv tladagfikq ygdclgdiaa
+      841 rdlicaqkfn gltvlppllt demiaqytsa llagtitsgw tfgagaalqi pfamqmayrf
+      901 ngigvtqnvl yenqklianq fnsaigkiqd slsstasalg klqdvvnqna qalntlvkql
+      961 ssnfgaissv lndilsrldk veaevqidrl itgrlqslqt yvtqqliraa eirasanlaa
+     1021 tkmsecvlgq skrvdfcgkg yhlmsfpqsa phgvvflhvt yvpaqeknft tapaichegk
+     1081 ahfpregvfv sngthwfitq rnfyepqiit tdntfvsgsc dvvigivnnt vydplqpeld
+     1141 sfkeeldkyf knhtspdvdl gdisginasv vniqkeidrl nevaknlnes lidlqelgky
+     1201 eqyikwpwyi wlgfiaglia iimvtimlcc mtsccsclkg ccscgscckf deddsepvlk
+     1261 gvklhyt
+//
+
+LOCUS       QIA48623                1265 aa            linear   VRL 23-APR-2020
+DEFINITION  spike protein [Pangolin coronavirus].
+ACCESSION   QIA48623
+VERSION     QIA48623.1
+DBSOURCE    accession MT040334.1
+KEYWORDS    .
+SOURCE      Pangolin coronavirus
+  ORGANISM  Pangolin coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1265)
+  AUTHORS   Cao,W., Jia,N., Zhang,Y., Tong,Y., Jiang,J., Jiang,B., Li,J.,
+            Yuan,T., Li,W., Qiang,X., Qin,S. and Pei,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-FEB-2020) State Key Laboratory of Pathogen and
+            Biosecurity, Beijing Institute of Microbiology and Epidemiology,
+            No. 20 Dong Da Street, Bejing, Bejing 100071, China
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC Genomic Workbench v. v.9.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1265
+                     /organism="Pangolin coronavirus"
+                     /isolate="PCoV_GX-P1E"
+                     /host="Manis javanica (Malayan pangolin)"
+                     /db_xref="taxon:2708335"
+                     /country="China"
+                     /collection_date="2017"
+     Protein         1..1265
+                     /product="spike protein"
+     CDS             1..1265
+                     /coded_by="MT040334.1:21540..25337"
+ORIGIN      
+        1 mfvflfvlpl vssqcvnltt rtgiqpgytn sstrgvyypd kvfrssilhl tqdlflpffs
+       61 nvtwfntiny qggfkkfdnp vlpfndgvyf asteksniir gwifgttlda rtqsllivnn
+      121 atnvvikvce fqfctdpflg vyyhnnnktw venefrvyss annctfeyis qpflmdlegk
+      181 qgnfknlref vfknvdgyfk iyskhtpidl vrdlprgfaa leplvdlpig initrfqtll
+      241 alhrsyltpg klesgwttga aayyvgylqq rtfllsynqn gtitdavdcs ldplsetkct
+      301 lksltvekgi yqtsnfrvqp tisivrfpni tnlcpfgevf naskfasvya wnrkrisncv
+      361 adysvlynst sfstfkcygv sptklndlcf tnvyadsfvv kgdevrqiap gqtgviadyn
+      421 yklpddftgc viawnsvkqd altggnylyr lfrksklkpf erdisteiyq agstpcngqv
+      481 glncyypler ygfhpttgvn yqpfrvvvls fellngpatv cgpklsttlv kdkcvnfnfn
+      541 gltgtgvltt skkqflpfqq fgrdisdttd avrdpqtlei lditpcsfgg vsvitpgtnt
+      601 snqvavlyqd vnctevpmai haeqltpawr vysaganvfq tragclvgae hvnnsyecdi
+      661 pvgagicasy hsmsslrsvn qrsiiaytms lgaensvays nnsiaiptnf tisvtteilp
+      721 vsmtktsvdc tmyicgdsie csnlllqygs fctqlnralt giaveqdknt qevfaqvkqi
+      781 yktppikdfg gfnfsqilpd pskpskrsfi edllfnkvtl adagfikqyg dclgdiaard
+      841 licaqkfngl tvlpplltde miaqytsall agtitsgwtf gagaalqipf amqmayrfng
+      901 igvtqnvlye nqklianqfn saigkiqdsl sstasalgkl qdvvnqnaqa lntlvkqlss
+      961 nfgaissvln dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk
+     1021 msecvlgqsk rvdfcgkgyh lmsfpqsaph gvvflhvtyv paqeknftta paichegkah
+     1081 fpregvfvsn gthwfitqrn fyepqiittd ntfvsgscdv vigivnntvy dplqpeldsf
+     1141 keeldkyfkn htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq
+     1201 yikwpwyiwl gfiagliaii mvtimlccmt sccsclkgcc scgscckfde ddsepvlkgv
+     1261 klhyt
+//
+
+LOCUS       QIA48614                1267 aa            linear   VRL 23-APR-2020
+DEFINITION  spike protein [Pangolin coronavirus].
+ACCESSION   QIA48614
+VERSION     QIA48614.1
+DBSOURCE    accession MT040333.1
+KEYWORDS    .
+SOURCE      Pangolin coronavirus
+  ORGANISM  Pangolin coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1267)
+  AUTHORS   Cao,W., Jia,N., Zhang,Y., Tong,Y., Jiang,J., Jiang,B., Li,J.,
+            Yuan,T., Li,W., Qiang,X., Qin,S. and Pei,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-FEB-2020) State Key Laboratory of Pathogen and
+            Biosecurity, Beijing Institute of Microbiology and Epidemiology,
+            No. 20 Dong Da Street, Bejing, Bejing 100071, China
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC Genomic Workbench v. v.9.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1267
+                     /organism="Pangolin coronavirus"
+                     /isolate="PCoV_GX-P4L"
+                     /host="Manis javanica (Malayan pangolin)"
+                     /db_xref="taxon:2708335"
+                     /country="China"
+                     /collection_date="2017"
+     Protein         1..1267
+                     /product="spike protein"
+     CDS             1..1267
+                     /coded_by="MT040333.1:21540..25343"
+ORIGIN      
+        1 mfvflfvlpl vssqcvnltt rtgippgytn sstrgvyypd kvfrssilhl tqdlflpffs
+       61 nvtwfntiny qggfkkfdnp vlpfndgvyf asteksniir gwifgttlda rtqsllivnn
+      121 atnvvikvce fqfctdpflg vyyhnnnktw venefrvyss annctfeyis qpflmdlegk
+      181 qgnfknlref vfknvdgyfk iyskhtpidl vrdlprgfaa leplvdlpig initrfqtll
+      241 alhrsyltpg nlesgwttga aayyvgylqq rtfllsynqn gtitdavdcs ldplsetkct
+      301 lksltvekgi yqtsnfrvqp tisivrfpni tnlcpfgevf naskfasvya wnrkrisncv
+      361 adysvlynst sfstfkcygv sptklndlcf tnvyadsfvv kgdevrqiap gqtgviadyn
+      421 yklpddftgc viawnsvkqd altggnygyl yrlfrksklk pferdistei yqagstpcng
+      481 qvglncyypl erygfhpttg vnyqpfrvvv lsfellngpa tvcgpklstt lvkdkcvnfn
+      541 fngltgtgvl ttskkqflpf qqfgrdisdt tdavrdpqtl eilditpcsf ggvsvitpgt
+      601 ntsnqvavly qdvnctevpm aihaeqltpa wrvysaganv fqtragclvg aehvnnsyec
+      661 dipvgagica syhsmsslrs vnqrsiiayt mslgaensva ysnnsiaipt nftisvttei
+      721 lpvsmtktsv dctmyicgds iecsnlllqy gsfctqlnra ltgiaveqdk ntqevfaqvk
+      781 qiyktppikd fggfnfsqil pdpskpskrs fiedllfnkv tladagfikq ygdclgdiaa
+      841 rdlicaqkfn gltvlppllt demiaqytsa llagtitsgw tfgagaalqi pfamqmayrf
+      901 ngigvtqnvl yenqklianq fnsaigkiqd slsstasalg klqdvvnqna qalntlvkql
+      961 ssnfgaissv lndilsrldk veaevqidrl itgrlqslqt yvtqqliraa eirasanlaa
+     1021 tkmsecvlgq skrvdfcgkg yhlmsfpqsa phgvvflhvt yvpaqeknft tapaichegk
+     1081 ahfpregvfv sngthwfitq rnfyepqiit tdntfvsgsc dvvigivnnt vydplqpeld
+     1141 sfkeeldkyf knhtspdvdl gdisginasv vniqkeidrl nevaknlnes pidlqelgky
+     1201 eqyikwpwyi wlgfiaglia iimvtimlcc mtsccsclkg ccscgscckf deddsepvlk
+     1261 gvklhyt
+//
+

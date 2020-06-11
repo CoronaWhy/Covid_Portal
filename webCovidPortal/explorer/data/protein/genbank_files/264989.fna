@@ -1,0 +1,48 @@
+LOCUS       AAS48578                 281 aa            linear   VRL 08-MAR-2004
+DEFINITION  spike glycoprotein, partial [SARS coronavirus cw049].
+ACCESSION   AAS48578
+VERSION     AAS48578.1
+DBSOURCE    accession AY541756.1
+KEYWORDS    .
+SOURCE      SARS coronavirus cw049
+  ORGANISM  SARS coronavirus cw049
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 281)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     PCR product of SARS coronavirus S gene from clinical urine sample
+            of recovered SARS patient
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 281)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-2004) Department of Diarrheal Diseases, National
+            Institute For Communicable Disease Control and Prevention, P.O. Box
+            5 Changping, Beijing 102206, P.R.China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..281
+                     /organism="SARS coronavirus cw049"
+                     /isolate="cw049"
+                     /isolation_source="clinical urine sample of recovered SARS
+                     patient"
+                     /db_xref="taxon:264989"
+                     /country="China"
+     Protein         <1..>281
+                     /product="spike glycoprotein"
+     Region          221..>281
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..281
+                     /gene="S"
+                     /coded_by="AY541756.1:<1..>843"
+ORIGIN      
+        1 vvrgwvfgst mnnksqsvii innstnvvir acnfelcdnp ffavskpmgt qthtmifdna
+       61 fnctfeyisd afsldvseks gnfkhlrefv fknkdgflyv ykgyqpidvv rdlpsgfntl
+      121 kpifklplgi nitnfrailt afspaqdtwg tsaaayfvgy lkpttfmlky dengtitdav
+      181 dcsqnplael kcsvksfeid kgiyqtsnfr vvpsgdvvrf pnitnlcpfg evfnatkfps
+      241 vyawerkkis ncvadysvly nstffstfkc ygvsatklnd l
+//
+

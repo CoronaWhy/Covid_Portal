@@ -1,0 +1,72 @@
+LOCUS       BAC81390                1255 aa            linear   VRL 17-MAY-2006
+DEFINITION  spike protein S [SARS coronavirus TWS].
+ACCESSION   BAC81390
+VERSION     BAC81390.1
+DBSOURCE    accession AP006560.1
+KEYWORDS    .
+SOURCE      SARS coronavirus TWS
+  ORGANISM  SARS coronavirus TWS
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1
+  AUTHORS   Shu,H.Y., Wu,K.M. and Tsai,S.F.
+  TITLE     The complete genome of SARS coronavirus TWS
+  JOURNAL   Published Only in Database (2003)
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Shu,H.Y., Wu,K.M. and Tsai,S.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JUL-2003) Shih Feng Tsai, National Health Research
+            Institutes, Division of Molecular and Genomic Medicine; 128,
+            Yen-Chiu-Yuan Road, Sec 2, Taipei, Taiwan 115, Republic of China
+            (E-mail:petsai@nhri.org.tw, Tel:886-2-8146-1041,
+            Fax:886-2-2789-0484)
+COMMENT     This sequence was determined by the Sequencing Core of the National
+            Research Program for Genomic Medicine
+            (http://genmed.sinica.edu.tw) at the National Yang-Ming University
+            Genome Research Center (YMGC; http://genome.ym.edu.tw).
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus TWS"
+                     /isolate="TWS"
+                     /isolation_source="primary sample from patient #04 with
+                     severe acute respiratory syndrome (SARS)"
+                     /db_xref="taxon:240552"
+     Protein         1..1255
+                     /product="spike protein S"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="AP006560.1:21492..25259"
+                     /note="structural protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

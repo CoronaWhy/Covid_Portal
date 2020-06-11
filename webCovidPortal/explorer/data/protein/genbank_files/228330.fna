@@ -1,0 +1,1319 @@
+LOCUS       QJE50600                  98 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF9b [SARS coronavirus Urbani].
+ACCESSION   QJE50600
+VERSION     QJE50600.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 98)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..98
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..98
+                     /product="ORF9b"
+     CDS             1..98
+                     /coded_by="MT308984.1:28133..28429"
+ORIGIN      
+        1 mdpnqtnvvp palhlvdpqi qltitrmeda mgqgqnsadp kvypiilrlg sqlslsmarr
+       61 nldslearaf qstpivvqmt klatteelpd efvvvtak
+//
+
+LOCUS       QJE50599                 422 aa            linear   SYN 02-MAY-2020
+DEFINITION  nucleocapsid protein [SARS coronavirus Urbani].
+ACCESSION   QJE50599
+VERSION     QJE50599.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 422)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..422
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..422
+                     /product="nucleocapsid protein"
+     CDS             1..422
+                     /coded_by="MT308984.1:28123..29391"
+ORIGIN      
+        1 msdngpqsnq rsapritfgg ptdstdnnqn ggrngarpkq rrpqglpnnt aswftaltqh
+       61 gkeelrfprg qgvpintnsg pddqigyyrr atrrvrggdg kmkelsprwy fyylgtgpea
+      121 slpygankeg ivwvategal ntpkdhigtr npnnnaatvl qlpqgttlpk gfyaegsrgg
+      181 sqassrsssr srgnsrnstp gssrgnspar masgggetal alllldrlnq leskvsgkgq
+      241 qqqgqtvtkk saaeaskkpr qkrtatkqyn vtqafgrrgp eqtqgnfgdq dlirqgtdyk
+      301 hwpqiaqfap sasaffgmsr igmevtpsgt wltyhgaikl ddkdpqfkdn villnkhida
+      361 yktfpptepk kdkkkktdea qplpqrqkkq ptvtllpaad mddfsrqlqn smsgasadst
+      421 qa
+//
+
+LOCUS       QJE50598                  84 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF8b [SARS coronavirus Urbani].
+ACCESSION   QJE50598
+VERSION     QJE50598.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 84)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..84
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..84
+                     /product="ORF8b"
+     CDS             1..84
+                     /coded_by="MT308984.1:27867..28121"
+ORIGIN      
+        1 mclkilvryn trgntystaw lcalgkvlpf hrwhtmvqtc tpnvtincqd paggaliarc
+       61 wylheghqta afrdvlvvln krtn
+//
+
+LOCUS       QJE50597                  39 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF8a [SARS coronavirus Urbani].
+ACCESSION   QJE50597
+VERSION     QJE50597.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 39)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..39
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..39
+                     /product="ORF8a"
+     CDS             1..39
+                     /coded_by="MT308984.1:27782..27901"
+ORIGIN      
+        1 mkllivltci slcscictvv qrcasnkphv ledpckvqh
+//
+
+LOCUS       QJE50596                  44 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF7b [SARS coronavirus Urbani].
+ACCESSION   QJE50596
+VERSION     QJE50596.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 44)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..44
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..44
+                     /product="ORF7b"
+     CDS             1..44
+                     /coded_by="MT308984.1:27641..27775"
+ORIGIN      
+        1 mneltlidfy lcflafllfl vlimliifwf sleiqdleep ctkv
+//
+
+LOCUS       QJE50595                 122 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF7a [SARS coronavirus Urbani].
+ACCESSION   QJE50595
+VERSION     QJE50595.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 122)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..122
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..122
+                     /product="ORF7a"
+     CDS             1..122
+                     /coded_by="MT308984.1:27276..27644"
+ORIGIN      
+        1 mkiilfltli vftscelyhy qecvrgttvl lkepcpsgty egnspfhpla dnkfaltcts
+       61 thfafacadg trhtyqlrar svspklfirq eevqqelysp lflivaalvf lilcftikrk
+      121 te
+//
+
+LOCUS       QJE50594                  63 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF6 [SARS coronavirus Urbani].
+ACCESSION   QJE50594
+VERSION     QJE50594.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 63)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..63
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..63
+                     /product="ORF6"
+     CDS             1..63
+                     /coded_by="MT308984.1:27077..27268"
+ORIGIN      
+        1 mfhlvdfqvt iaeiliiimr tfriaiwnld viissivrql fkpltkknys elddeepmel
+       61 dyp
+//
+
+LOCUS       QJE50593                 221 aa            linear   SYN 02-MAY-2020
+DEFINITION  membrane protein [SARS coronavirus Urbani].
+ACCESSION   QJE50593
+VERSION     QJE50593.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 221)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..221
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..221
+                     /product="membrane protein"
+     CDS             1..221
+                     /coded_by="MT308984.1:26401..27066"
+ORIGIN      
+        1 madngtitve klkqlleqwn lvigflflaw imllqfaysn rnrflyiikl vflwllwpvt
+       61 lacfvlaavy rinwvtggia iamacivglm wlsyfvasfr lfartrsmws fnpetnilln
+      121 vplrgtivtr plmeselvig aviirghlrm aghplgrcdi kdlpkeitva tsrtlsyykl
+      181 gasqrvgtds gfaaynryri gnyklntdha gsndniallv q
+//
+
+LOCUS       QJE50592                  76 aa            linear   SYN 02-MAY-2020
+DEFINITION  envelope protein [SARS coronavirus Urbani].
+ACCESSION   QJE50592
+VERSION     QJE50592.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 76)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..76
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..76
+                     /product="envelope protein"
+     CDS             1..76
+                     /coded_by="MT308984.1:26120..26350"
+ORIGIN      
+        1 mysfvseetg tlivnsvllf lafvvfllvt lailtalrlc ayccnivnvs lvkptvyvys
+       61 rvknlnsseg vpdllv
+//
+
+LOCUS       QJE50591                 154 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF3b [SARS coronavirus Urbani].
+ACCESSION   QJE50591
+VERSION     QJE50591.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 154)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..154
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..154
+                     /product="ORF3b"
+     CDS             1..154
+                     /coded_by="MT308984.1:25692..26156"
+ORIGIN      
+        1 mmpttlfagt hitmttvyhi tvsqiqlsll kvtafqhqns kkttklvvil rigtqvlktm
+       61 slymaispkf ttslslhkll qtlvlkmlhs ssltsllkth rmckytqsta lqelliqqwi
+      121 qfmmsrrrll aclckhkkvs tnlcthsfrk kqvr
+//
+
+LOCUS       QJE50590                 274 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF3a [SARS coronavirus Urbani].
+ACCESSION   QJE50590
+VERSION     QJE50590.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 274)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..274
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..274
+                     /product="ORF3a"
+     CDS             1..274
+                     /coded_by="MT308984.1:25271..26095"
+ORIGIN      
+        1 mdlfmrfftl gsitaqpvki dnaspastvh atatiplqas lpfgwlvigv aflavfqsat
+       61 kiialnkrwq lalykgfqfi cnllllfvti yshlllvaag meaqflylya liyflqcina
+      121 criimrcwlc wkcksknpll ydanyfvcwh thnydycipy nsvtdtivvt egdgistpkl
+      181 kedyqiggys edrhsgvkdy vvvhgyftev yyqlestqit tdtgienatf fifnklvkdp
+      241 pnvqihtidg ssgvanpamd piydeptttt svpl
+//
+
+LOCUS       QJE50589                1256 aa            linear   SYN 02-MAY-2020
+DEFINITION  SHC014 spike [SARS coronavirus Urbani].
+ACCESSION   QJE50589
+VERSION     QJE50589.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1256)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..1256
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..1256
+                     /product="SHC014 spike"
+     CDS             1..1256
+                     /coded_by="MT308984.1:21492..25262"
+ORIGIN      
+        1 mkllvlvfat lvssytiekc ldfddrtppa ntqflsshrg vyypddifrs nvlhlvqdhf
+       61 lpfdsnvtrf itfglnfdnp iipfrdgiyf aateksnvir gwvfgstmnn ksqsviimnn
+      121 stnlviracn felcdnpffv vlksnntqip syifnnafnc tfeyvskdfn ldlgekpgnf
+      181 kdlrefvfrn kdgflhvysg yqpisaasgl ptgfnalkpi fklplginit nfrtlltafp
+      241 prpdywgtsa aayfvgylkp ttfmlkyden gtitdavdcs qnplaelkcs vksfeidkgi
+      301 yqtsnfrvap skevvrfpni tnlcpfgevf nattfpsvya werkrisncv adysvlynst
+      361 sfstfkcygv satklndlcf snvyadsfvv kgddvrqiap gqtgviadyn yklpddflgc
+      421 vlawntnskd sstsgnynyl yrwvrrskln pyerdlsndi yspggqscsa vgpncynplr
+      481 pygffttagv ghqpyrvvvl sfellnapat vcgpklstdl iknqcvnfnf ngltgtgvlt
+      541 psskrfqpfq qfgrdvsdft dsvrdpktse ildispcsfg gvsvitpgtn tssevavlyq
+      601 dvnctdvpva ihadqltpsw rvystgnnvf qtqagcliga ehvdtsyecd ipigagicas
+      661 yhtvsslrst sqksivaytm slgadssiay snntiaiptn fsisittevm pvsmaktsvd
+      721 cnmyicgdst ecanlllqyg sfctqlnral sgiaveqdrn trevfaqvkq myktptlkdf
+      781 ggfnfsqilp dplkptkrsf iedllfnkvt ladagfmkqy geclgdinar dlicaqkfng
+      841 ltvlpplltd dmiaaytaal vsgtatagwt fgagaalqip famqmayrfn gigvtqnvly
+      901 enqkqianqf nkaisqiqes ltttstalgk lqdvvnqnaq alntlvkqls snfgaissvl
+      961 ndilsrldkv eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs
+     1021 krvdfcgkgy hlmsfpqaap hgvvflhvty vpsqernftt apaichegka yfpregvfvf
+     1081 ngtswfitqr nffspqiitt dntfvsgscd vvigiinntv ydplqpelds fkeeldkyfk
+     1141 nhtspdvdlg disginasvv niqkeidrln evaknlnesl idlqelgkye qyikwpwyvw
+     1201 lgfiagliai vmvtillccm tsccsclkga cscgscckfd eddsepvlkg vklhyt
+//
+
+LOCUS       QJE50588                4382 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF1a [SARS coronavirus Urbani].
+ACCESSION   QJE50588
+VERSION     QJE50588.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 4382)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..4382
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..4382
+                     /product="ORF1a"
+     CDS             1..4382
+                     /coded_by="MT308984.1:265..13413"
+ORIGIN      
+        1 meslvlgvne kthvqlslpv lqvrdvlvrg fgdsveeals earehlkngt cglvelekgv
+       61 lpqleqpyvf ikrsdalstn hghkvvelva emdgiqygrs gitlgvlvph vgetpiayrn
+      121 vllrkngnkg agghsygidl ksydlgdelg tdpiedyeqn wntkhgsgal reltrelngg
+      181 avtryvdnnf cgpdgypldc ikdflaragk smctlseqld yieskrgvyc crdheheiaw
+      241 ftersdksye hqtpfeiksa kkfdtfkgec pkfvfplnsk vkviqprvek kktegfmgri
+      301 rsvypvaspq ecnnmhlstl mkcnhcdevs wqtcdflkat cehcgtenlv iegpttcgyl
+      361 ptnavvkmpc pacqdpeigp ehsvadyhnh snietrlrkg grtrcfggcv fayvgcynkr
+      421 aywvprasad igsghtgitg dnvetlnedl leilsrervn inivgdfhln eevaiilasf
+      481 sastsafidt iksldyksfk tivescgnyk vtkgkpvkga wnigqqrsvl tplcgfpsqa
+      541 agvirsifar tldaanhsip dlqraavtil dgiseqslrl vdamvytsdl ltnsviimay
+      601 vtgglvqqts qwlsnllgtt veklrpifew ieaklsagve flkdaweilk flitgvfdiv
+      661 kgqiqvasdn ikdcvkcfid vvnkalemci dqvtiagakl rslnlgevfi aqskglyrqc
+      721 irgkeqlqll mplkapkevt flegdshdtv ltseevvlkn gelealetpv dsftngaivg
+      781 tpvcvnglml leikdkeqyc alspgllatn nvfrlkggap ikgvtfgedt vwevqgyknv
+      841 ritfelderv dkvlnekcsv ytvesgtevt efacvvaeav vktlqpvsdl ltnmgidlde
+      901 wsvatfylfd dageenfssr mycsfyppde eeeddaecee eeidetcehe ygteddyqgl
+      961 plefgasaet vrveeeeeed wlddtteqse iepepeptpe epvnqftgyl kltdnvaikc
+     1021 vdivkeaqsa npmvivnaan ihlkhgggva galnkatnga mqkesddyik lngpltvggs
+     1081 cllsghnlak kclhvvgpnl nagediqllk aayenfnsqd illapllsag ifgakplqsl
+     1141 qvcvqtvrtq vyiavndkal yeqvvmdyld nlkprveapk qeeppnteds kteeksvvqk
+     1201 pvdvkpkika cidevtttle etkfltnkll lfadingkly hdsqnmlrge dmsflekdap
+     1261 ymvgdvitsg ditcvvipsk kaggttemls ralkkvpvde yittypgqgc agytleeakt
+     1321 alkkcksafy vlpseapnak eeilgtvswn lremlahaee trklmpicmd vraimatiqr
+     1381 kykgikiqeg ivdygvrfff ytskepvasi itklnslnep lvtmpigyvt hgfnleeaar
+     1441 cmrslkapav vsvsspdavt tyngyltsss ktseehfvet vslagsyrdw sysgqrtelg
+     1501 veflkrgdki vyhtlespve fhldgevlsl dklksllslr evktikvftt vdntnlhtql
+     1561 vdmsmtygqq fgptyldgad vtkikphvnh egktffvlps ddtlrseafe yyhtldesfl
+     1621 grymsalnht kkwkfpqvgg ltsikwadnn cylssvllal qqlevkfnap alqeayyrar
+     1681 agdaanfcal ilaysnktvg elgdvretmt hllqhanles akrvlnvvck hcgqktttlt
+     1741 gveavmymgt lsydnlktgv sipcvcgrda tqylvqqess fvmmsappae yklqqgtflc
+     1801 aneytgnyqc ghythitake tlyridgahl tkmseykgpv tdvfyketsy tttikpvsyk
+     1861 ldgvtyteie pkldgyykkd nayyteqpid lvptqplpna sfdnfkltcs ntkfaddlnq
+     1921 mtgftkpasr elsvtffpdl ngdvvaidyr hysasfkkga kllhkpivwh inqattkttf
+     1981 kpntwclrcl wstkpvdtsn sfevlavedt qgmdnlaces qqptseevve nptiqkevie
+     2041 cdvkttevvg nvilkpsdeg vkvtqelghe dlmaayvent sitikkpnel slalglktia
+     2101 thgiaainsv pwskilayvk pflgqaaitt sncakrlaqr vfnnympyvf tllfqlctft
+     2161 kstnsriras lpttiaknsv ksvaklclda ginyvkspkf sklftiamwl lllsiclgsl
+     2221 icvtaafgvl lsnfgapsyc ngvrelylns snvttmdfce gsfpcsicls gldsldsypa
+     2281 letiqvtiss ykldltilgl aaewvlayml ftkffyllgl saimqvffgy fashfisnsw
+     2341 lmwfiisivq mapvsamvrm yiffasfyyi wksyvhimdg ctsstcmmcy krnratrvec
+     2401 ttivngmkrs fyvyanggrg fckthnwncl ncdtfctgst fisdevardl slqfkrpinp
+     2461 tdqssyivds vavkngalhl yfdkagqkty erhplshfvn ldnlranntk gslpinvivf
+     2521 dgkskcdesa sksasvyysq lmcqpillld qvlvsdvgds tevsvkmfda yvdtfsatfs
+     2581 vpmeklkalv atahselakg valdgvlstf vsaarqgvvd tdvdtkdvie clklshhsdl
+     2641 evtgdscnnf mltynkvenm tprdlgacid cnarhinaqv akshnvsliw nvkdymslse
+     2701 qlrkqirsaa kknnipfrlt cattrqvvnv ittkislkgg kivstcfklm lkatllcvla
+     2761 alvcyivmpv htlsihdgyt neiigykaiq dgvtrdiist ddcfankhag fdawfsqrgg
+     2821 sykndkscpv vaaiitreig fivpglpgtv lraingdflh flprvfsavg nicytpskli
+     2881 eysdfatsac vlaaectifk damgkpvpyc ydtnllegsi syselrpdtr yvlmdgsiiq
+     2941 fpntylegsv rvvttfdaey crhgtcerse vgiclstsgr wvlnnehyra lsgvfcgvda
+     3001 mnlianiftp lvqpvgaldv sasvvaggii ailvtcaayy fmkfrrvfge ynhvvaanal
+     3061 lflmsftilc lvpaysflpg vysvfylylt fyftndvsfl ahlqwfamfs pivpfwitai
+     3121 yvfcislkhc hwffnnylrk rvmfngvtfs tfeeaalctf llnkemylkl rsetllpltq
+     3181 ynrylalynk ykyfsgaldt tsyreaacch lakalndfsn sgadvlyqpp qtsitsavlq
+     3241 sgfrkmafps gkvegcmvqv tcgtttlngl wlddtvycpr hvictaedml npnyedllir
+     3301 ksnhsflvqa gnvqlrvigh smqncllrlk vdtsnpktpk ykfvriqpgq tfsvlacyng
+     3361 spsgvyqcam rpnytikgsf lngscgsvgf nidydcvsfc ymhhmelptg vhagtdlegk
+     3421 fygpfvdrqt aqaagtdtti tlnvlawlya avingdrwfl nrftttlndf nlvamkynye
+     3481 pltqdhvdil gplsaqtgia vldmcaalka llqngmngrt ilgstilede ftpfdvvrqc
+     3541 sgvtfqgkfk kivkgthhwm lltfltslli lvqstqwslf ffvyenaflp ftlgimaiaa
+     3601 camllvkhkh aflclfllps latvayfnmv ympaswvmri mtwleladts lsgyrlkdcv
+     3661 myasalvlli lmtartvydd aarrvwtlmn vitlvykvyy gnaldqaism walvisvtsn
+     3721 ysgvvttimf laraivfvcv eyypllfitg ntlqcimlvy cflgyccccy fglfcllnry
+     3781 frltlgvydy lvstqefrym nsqgllppks sidafklnik llgiggkpci kvatvqskms
+     3841 dvkctsvvll svlqqlrves ssklwaqcvq lhndillakd tteafekmvs llsvllsmqg
+     3901 avdinrlcee mldnratlqa iasefsslps yaayataqea yeqavangds evvlkklkks
+     3961 lnvaksefdr daamqrklek madqamtqmy kqarsedkra kvtsamqtml ftmlrkldnd
+     4021 alnniinnar dgcvplniip lttaaklmvv vpdygtyknt cdgntftyas alweiqqvvd
+     4081 adskivqlse inmdnspnla wplivtalra nsavklqnne lspvalrqms caagttqtac
+     4141 tddnalayyn nskggrfvla llsdhqdlkw arfpksdgtg tiyaeleppc rfvtdtpkgp
+     4201 kvkylyfikg lnnlnrgmvl gslaatvrlq agnatevpan stvlsfcafa vdpakaykdy
+     4261 lasggqpitn cvkmlcthtg tgqaitvtpe anmdqesfgg ascclycrch idhpnpkgfc
+     4321 dlkgkyvqip ttcandpvgf tlrntvctvc gmwkgygcsc dqlreplmqs adastflngf
+     4381 av
+//
+
+LOCUS       QJE50587                7073 aa            linear   SYN 02-MAY-2020
+DEFINITION  ORF1ab [SARS coronavirus Urbani].
+ACCESSION   QJE50587
+VERSION     QJE50587.1
+DBSOURCE    accession MT308984.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 7073)
+  AUTHORS   Menachery,V.D., Yount,B.L. Jr., Debbink,K., Agnihothram,S.,
+            Gralinski,L.E., Plante,J.A., Graham,R.L., Scobey,T., Ge,X.-Y.,
+            Donaldson,E.F., Randell,S.H., Lanzavecchia,A., Marasco,W.A.,
+            Shi,Z.-L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-APR-2020) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+FEATURES             Location/Qualifiers
+     source          1..7073
+                     /organism="SARS coronavirus Urbani"
+                     /host="mouse"
+                     /db_xref="taxon:228330"
+                     /clone="SARS-Urbani-MA_SHC014-spike"
+                     /note="mouse-adapted; spike protein derived from bat
+                     coronavirus SHC014"
+     Protein         1..7073
+                     /product="ORF1ab"
+     CDS             1..7073
+                     /coded_by="join(MT308984.1:265..13398,
+                     MT308984.1:13398..21485)"
+                     /ribosomal_slippage
+ORIGIN      
+        1 meslvlgvne kthvqlslpv lqvrdvlvrg fgdsveeals earehlkngt cglvelekgv
+       61 lpqleqpyvf ikrsdalstn hghkvvelva emdgiqygrs gitlgvlvph vgetpiayrn
+      121 vllrkngnkg agghsygidl ksydlgdelg tdpiedyeqn wntkhgsgal reltrelngg
+      181 avtryvdnnf cgpdgypldc ikdflaragk smctlseqld yieskrgvyc crdheheiaw
+      241 ftersdksye hqtpfeiksa kkfdtfkgec pkfvfplnsk vkviqprvek kktegfmgri
+      301 rsvypvaspq ecnnmhlstl mkcnhcdevs wqtcdflkat cehcgtenlv iegpttcgyl
+      361 ptnavvkmpc pacqdpeigp ehsvadyhnh snietrlrkg grtrcfggcv fayvgcynkr
+      421 aywvprasad igsghtgitg dnvetlnedl leilsrervn inivgdfhln eevaiilasf
+      481 sastsafidt iksldyksfk tivescgnyk vtkgkpvkga wnigqqrsvl tplcgfpsqa
+      541 agvirsifar tldaanhsip dlqraavtil dgiseqslrl vdamvytsdl ltnsviimay
+      601 vtgglvqqts qwlsnllgtt veklrpifew ieaklsagve flkdaweilk flitgvfdiv
+      661 kgqiqvasdn ikdcvkcfid vvnkalemci dqvtiagakl rslnlgevfi aqskglyrqc
+      721 irgkeqlqll mplkapkevt flegdshdtv ltseevvlkn gelealetpv dsftngaivg
+      781 tpvcvnglml leikdkeqyc alspgllatn nvfrlkggap ikgvtfgedt vwevqgyknv
+      841 ritfelderv dkvlnekcsv ytvesgtevt efacvvaeav vktlqpvsdl ltnmgidlde
+      901 wsvatfylfd dageenfssr mycsfyppde eeeddaecee eeidetcehe ygteddyqgl
+      961 plefgasaet vrveeeeeed wlddtteqse iepepeptpe epvnqftgyl kltdnvaikc
+     1021 vdivkeaqsa npmvivnaan ihlkhgggva galnkatnga mqkesddyik lngpltvggs
+     1081 cllsghnlak kclhvvgpnl nagediqllk aayenfnsqd illapllsag ifgakplqsl
+     1141 qvcvqtvrtq vyiavndkal yeqvvmdyld nlkprveapk qeeppnteds kteeksvvqk
+     1201 pvdvkpkika cidevtttle etkfltnkll lfadingkly hdsqnmlrge dmsflekdap
+     1261 ymvgdvitsg ditcvvipsk kaggttemls ralkkvpvde yittypgqgc agytleeakt
+     1321 alkkcksafy vlpseapnak eeilgtvswn lremlahaee trklmpicmd vraimatiqr
+     1381 kykgikiqeg ivdygvrfff ytskepvasi itklnslnep lvtmpigyvt hgfnleeaar
+     1441 cmrslkapav vsvsspdavt tyngyltsss ktseehfvet vslagsyrdw sysgqrtelg
+     1501 veflkrgdki vyhtlespve fhldgevlsl dklksllslr evktikvftt vdntnlhtql
+     1561 vdmsmtygqq fgptyldgad vtkikphvnh egktffvlps ddtlrseafe yyhtldesfl
+     1621 grymsalnht kkwkfpqvgg ltsikwadnn cylssvllal qqlevkfnap alqeayyrar
+     1681 agdaanfcal ilaysnktvg elgdvretmt hllqhanles akrvlnvvck hcgqktttlt
+     1741 gveavmymgt lsydnlktgv sipcvcgrda tqylvqqess fvmmsappae yklqqgtflc
+     1801 aneytgnyqc ghythitake tlyridgahl tkmseykgpv tdvfyketsy tttikpvsyk
+     1861 ldgvtyteie pkldgyykkd nayyteqpid lvptqplpna sfdnfkltcs ntkfaddlnq
+     1921 mtgftkpasr elsvtffpdl ngdvvaidyr hysasfkkga kllhkpivwh inqattkttf
+     1981 kpntwclrcl wstkpvdtsn sfevlavedt qgmdnlaces qqptseevve nptiqkevie
+     2041 cdvkttevvg nvilkpsdeg vkvtqelghe dlmaayvent sitikkpnel slalglktia
+     2101 thgiaainsv pwskilayvk pflgqaaitt sncakrlaqr vfnnympyvf tllfqlctft
+     2161 kstnsriras lpttiaknsv ksvaklclda ginyvkspkf sklftiamwl lllsiclgsl
+     2221 icvtaafgvl lsnfgapsyc ngvrelylns snvttmdfce gsfpcsicls gldsldsypa
+     2281 letiqvtiss ykldltilgl aaewvlayml ftkffyllgl saimqvffgy fashfisnsw
+     2341 lmwfiisivq mapvsamvrm yiffasfyyi wksyvhimdg ctsstcmmcy krnratrvec
+     2401 ttivngmkrs fyvyanggrg fckthnwncl ncdtfctgst fisdevardl slqfkrpinp
+     2461 tdqssyivds vavkngalhl yfdkagqkty erhplshfvn ldnlranntk gslpinvivf
+     2521 dgkskcdesa sksasvyysq lmcqpillld qvlvsdvgds tevsvkmfda yvdtfsatfs
+     2581 vpmeklkalv atahselakg valdgvlstf vsaarqgvvd tdvdtkdvie clklshhsdl
+     2641 evtgdscnnf mltynkvenm tprdlgacid cnarhinaqv akshnvsliw nvkdymslse
+     2701 qlrkqirsaa kknnipfrlt cattrqvvnv ittkislkgg kivstcfklm lkatllcvla
+     2761 alvcyivmpv htlsihdgyt neiigykaiq dgvtrdiist ddcfankhag fdawfsqrgg
+     2821 sykndkscpv vaaiitreig fivpglpgtv lraingdflh flprvfsavg nicytpskli
+     2881 eysdfatsac vlaaectifk damgkpvpyc ydtnllegsi syselrpdtr yvlmdgsiiq
+     2941 fpntylegsv rvvttfdaey crhgtcerse vgiclstsgr wvlnnehyra lsgvfcgvda
+     3001 mnlianiftp lvqpvgaldv sasvvaggii ailvtcaayy fmkfrrvfge ynhvvaanal
+     3061 lflmsftilc lvpaysflpg vysvfylylt fyftndvsfl ahlqwfamfs pivpfwitai
+     3121 yvfcislkhc hwffnnylrk rvmfngvtfs tfeeaalctf llnkemylkl rsetllpltq
+     3181 ynrylalynk ykyfsgaldt tsyreaacch lakalndfsn sgadvlyqpp qtsitsavlq
+     3241 sgfrkmafps gkvegcmvqv tcgtttlngl wlddtvycpr hvictaedml npnyedllir
+     3301 ksnhsflvqa gnvqlrvigh smqncllrlk vdtsnpktpk ykfvriqpgq tfsvlacyng
+     3361 spsgvyqcam rpnytikgsf lngscgsvgf nidydcvsfc ymhhmelptg vhagtdlegk
+     3421 fygpfvdrqt aqaagtdtti tlnvlawlya avingdrwfl nrftttlndf nlvamkynye
+     3481 pltqdhvdil gplsaqtgia vldmcaalka llqngmngrt ilgstilede ftpfdvvrqc
+     3541 sgvtfqgkfk kivkgthhwm lltfltslli lvqstqwslf ffvyenaflp ftlgimaiaa
+     3601 camllvkhkh aflclfllps latvayfnmv ympaswvmri mtwleladts lsgyrlkdcv
+     3661 myasalvlli lmtartvydd aarrvwtlmn vitlvykvyy gnaldqaism walvisvtsn
+     3721 ysgvvttimf laraivfvcv eyypllfitg ntlqcimlvy cflgyccccy fglfcllnry
+     3781 frltlgvydy lvstqefrym nsqgllppks sidafklnik llgiggkpci kvatvqskms
+     3841 dvkctsvvll svlqqlrves ssklwaqcvq lhndillakd tteafekmvs llsvllsmqg
+     3901 avdinrlcee mldnratlqa iasefsslps yaayataqea yeqavangds evvlkklkks
+     3961 lnvaksefdr daamqrklek madqamtqmy kqarsedkra kvtsamqtml ftmlrkldnd
+     4021 alnniinnar dgcvplniip lttaaklmvv vpdygtyknt cdgntftyas alweiqqvvd
+     4081 adskivqlse inmdnspnla wplivtalra nsavklqnne lspvalrqms caagttqtac
+     4141 tddnalayyn nskggrfvla llsdhqdlkw arfpksdgtg tiyaeleppc rfvtdtpkgp
+     4201 kvkylyfikg lnnlnrgmvl gslaatvrlq agnatevpan stvlsfcafa vdpakaykdy
+     4261 lasggqpitn cvkmlcthtg tgqaitvtpe anmdqesfgg ascclycrch idhpnpkgfc
+     4321 dlkgkyvqip ttcandpvgf tlrntvctvc gmwkgygcsc dqlreplmqs adastflnrv
+     4381 cgvsaarltp cgtgtstdvv yrafdiynek vagfakflkt nccrfqekde egnlldsyfv
+     4441 vkrhtmsnyq heetiynlvk dcpavavhdf fkfrvdgdmv phisrqrltk ytmadlvyal
+     4501 rhfdegncdt lkeilvtync cdddyfnkkd wydfvenpdi lrvyanlger vrqsllktvq
+     4561 fcdamrdagi vgvltldnqd lngnwydfgd fvqvapgcgv pivdsyysll mpiltltral
+     4621 aaeshmdadl akplikwdll kydfteerlc lfdryfkywd qtyhpncinc lddrcilhca
+     4681 nfnvlfstvf pptsfgplvr kifvdgvpfv vstgyhfrel gvvhnqdvnl hssrlsfkel
+     4741 lvyaadpamh aasgnllldk rttcfsvaal tnnvafqtvk pgnfnkdfyd favskgffke
+     4801 gssvelkhff faqdgnaais dydyyrynlp tmcdirqllf vvevvdkyfd cydggcinan
+     4861 qvivnnldks agfpfnkwgk arlyydsmsy edqdalfayt krnviptitq mnlkyaisak
+     4921 nrartvagvs icstmtnrqf hqkllksiaa trgatvvigt skfyggwhnm lktvysdvet
+     4981 phlmgwdypk cdrampnmlr imaslvlark hntccnlshr fyrlanecaq vlsemvmcgg
+     5041 slyvkpggts sgdattayan svfnicqavt anvnallstd gnkiadkyvr nlqhrlyecl
+     5101 yrnrdvdhef vdefyaylrk hfsmmilsdd avvcynsnya aqglvasikn fkavlyyqnn
+     5161 vfmseakcwt etdltkgphe fcsqhtmlvk qgddyvylpy pdpsrilgag cfvddivktd
+     5221 gtlmierfvs laidaypltk hpnqeyadvf hlylqyirkl hdeltghmld mysvmltndn
+     5281 tsrywepefy eamytphtvl qavgvcvlcn sqtslrcgac irrpflcckc cydhvistsh
+     5341 klvlsvnpyv cnapgcdvtd vtqlylggms yyckshkppi sfplcangqv fglykntcvg
+     5401 sdnvtdfnai atcdwtnagd yilantcter lklfaaetlk ateetfklsy giatvrevls
+     5461 drelhlswev gkprpplnrn yvftgyrvtk nskvqigeyt fekgdygdav vyrgtttykl
+     5521 nvgdyfvlts htvmplsapt lvpqehyvri tglyptlnis defssnvany qkvgmqkyst
+     5581 lqgppgtgks hfaiglalyy psarivytac shaavdalce kalkylpidk csriiparar
+     5641 vecfdkfkvn stleqyvfct vnalpettad ivvfdeisma tnydlsvvna rlrakhyvyi
+     5701 gdpaqlpapr tlltkgtlep eyfnsvcrlm ktigpdmflg tcrrcpaeiv dtvsalvydn
+     5761 klkahkdksa qcfkmfykgv ithdvssain rpqigvvref ltrnpawrka vfispynsqn
+     5821 avaskilglp tqtvdssqgs eydyviftqt tetahscnvn rfnvaitrak igilcimsdr
+     5881 dlydklqfts leiprrnvat lqaenvtglf kdcskiitgl hptqapthls vdikfktegl
+     5941 cvdipgipkd mtyrrlismm gfkmnyqvng ypnmfitree airhvrawig fdvegchatr
+     6001 davgtnlplq lgfstgvnlv avptgyvdte nnteftrvna kpppgdqfkh liplmykglp
+     6061 wnvvrikivq mlsdtlkgls drvvfvlwah gfeltsmkyf vkigpertcc lcdkratcfs
+     6121 tssdtyacwn hsvgfdyvyn pfmidvqqwg ftgnlqsnhd qhcqvhgnah vascdaimtr
+     6181 clavhecfvk rvdwsveypi igdelrvnsa crkvqhmvvk salladkfpv lhdignpkai
+     6241 kcvpqaevew kfydaqpcsd kaykieelfy syathhdkft dgvclfwncn vdrypanaiv
+     6301 crfdtrvlsn lnlpgcdggs lyvnkhafht pafdksaftn lkqlpffyys dspceshgkq
+     6361 vvsdidyvpl ksatcitrcn lggavcrhha neyrqylday nmmisagfsl wiykqfdtyn
+     6421 lwntftrlqs lenvaynvvn kghfdghage apvsiinnav ytkvdgidve ifenkttlpv
+     6481 nvafelwakr nikpvpeiki lnnlgvdiaa ntviwdykre apahvstigv ctmtdiakkp
+     6541 tesacssltv lfdgrvegqv dlfrnarngv litegsvkgl tpskgpaqas vngvtliges
+     6601 vktqfnyfkk vdgiiqqlpe tyftqsrdle dfkprsqmet dflelamdef iqryklegya
+     6661 fehivygdfs hgqlgglhlm iglakrsqds plkledfipm dstvknyfit daqtgsskcv
+     6721 csvidllldd fveiiksqdl sviskvvkvt idyaeisfml wckdghvetf ypklqasqaw
+     6781 qpgvampnly kmqrmllekc dlqnygenav ipkgimmnva kytqlcqyln tltlavpynm
+     6841 rvihfgagsd kgvapgtavl rqwlptgtll vdsdlndfvs dadstligdc atvhtankwd
+     6901 liisdmydpr tkhvtkends kegfftylcg fikqklalgg siavkitehs wnadlyklmg
+     6961 hfswwtafvt nvnassseaf liganylgkp keqidgytmh anyifwrntn piqlssyslf
+     7021 dmskfplklr gtavmslken qindmiysll ekgrliiren nrvvvssdil vnn
+//
+
+LOCUS       AYV99817                1255 aa            linear   VRL 21-NOV-2018
+DEFINITION  spike [SARS coronavirus Urbani].
+ACCESSION   AYV99817
+VERSION     AYV99817.1
+DBSOURCE    accession MK062184.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Evaluation of a recombination-resistant coronavirus as a broadly
+            applicable, rapidly implementable vaccine platform
+  JOURNAL   Commun Biol 1, 179 (2018)
+   PUBMED   30393776
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2018) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /isolate="icSARS-C7-MA"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:228330"
+                     /country="USA"
+                     /collection_date="01-Jun-2017"
+                     /collected_by="R. Graham"
+                     /identified_by="B. Yount"
+     Protein         1..1255
+                     /product="spike"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="MK062184.1:21494..25261"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AYV99803                1255 aa            linear   VRL 21-NOV-2018
+DEFINITION  spike [SARS coronavirus Urbani].
+ACCESSION   AYV99803
+VERSION     AYV99803.1
+DBSOURCE    accession MK062183.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Evaluation of a recombination-resistant coronavirus as a broadly
+            applicable, rapidly implementable vaccine platform
+  JOURNAL   Commun Biol 1, 179 (2018)
+   PUBMED   30393776
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2018) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /isolate="icSARS-C7"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:228330"
+                     /country="USA"
+                     /collection_date="31-May-2017"
+                     /collected_by="R. Graham"
+                     /identified_by="B. Yount"
+     Protein         1..1255
+                     /product="spike"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="MK062183.1:21494..25261"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AYV99789                1255 aa            linear   VRL 21-NOV-2018
+DEFINITION  spike [SARS coronavirus Urbani].
+ACCESSION   AYV99789
+VERSION     AYV99789.1
+DBSOURCE    accession MK062182.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Evaluation of a recombination-resistant coronavirus as a broadly
+            applicable, rapidly implementable vaccine platform
+  JOURNAL   Commun Biol 1, 179 (2018)
+   PUBMED   30393776
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2018) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /isolate="icSARS-C3-MA"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:228330"
+                     /country="USA"
+                     /collection_date="30-May-2017"
+                     /collected_by="R. Graham"
+                     /identified_by="B. Yount"
+     Protein         1..1255
+                     /product="spike"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="MK062182.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AYV99775                1255 aa            linear   VRL 21-NOV-2018
+DEFINITION  spike [SARS coronavirus Urbani].
+ACCESSION   AYV99775
+VERSION     AYV99775.1
+DBSOURCE    accession MK062181.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Evaluation of a recombination-resistant coronavirus as a broadly
+            applicable, rapidly implementable vaccine platform
+  JOURNAL   Commun Biol 1, 179 (2018)
+   PUBMED   30393776
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2018) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /isolate="icSARS-C3"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:228330"
+                     /country="USA"
+                     /collection_date="29-May-2017"
+                     /collected_by="R. Graham"
+                     /identified_by="B. Yount"
+     Protein         1..1255
+                     /product="spike"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="MK062181.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AYV99761                1255 aa            linear   VRL 21-NOV-2018
+DEFINITION  spike [SARS coronavirus Urbani].
+ACCESSION   AYV99761
+VERSION     AYV99761.1
+DBSOURCE    accession MK062180.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Evaluation of a recombination-resistant coronavirus as a broadly
+            applicable, rapidly implementable vaccine platform
+  JOURNAL   Commun Biol 1, 179 (2018)
+   PUBMED   30393776
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2018) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /isolate="icSARS-MA"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:228330"
+                     /country="USA"
+                     /collection_date="28-May-2017"
+                     /collected_by="R. Graham"
+                     /identified_by="B. Yount"
+     Protein         1..1255
+                     /product="spike"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="MK062180.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AYV99747                1255 aa            linear   VRL 21-NOV-2018
+DEFINITION  spike [SARS coronavirus Urbani].
+ACCESSION   AYV99747
+VERSION     AYV99747.1
+DBSOURCE    accession MK062179.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Evaluation of a recombination-resistant coronavirus as a broadly
+            applicable, rapidly implementable vaccine platform
+  JOURNAL   Commun Biol 1, 179 (2018)
+   PUBMED   30393776
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Graham,R.L., Deming,D.J., Deming,M.E., Yount,B.L. and Baric,R.S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-OCT-2018) Epidemiology, University of North Carolina
+            at Chapel Hill, 2107 McGavran-Greenberg CB7435, Chapel Hill, NC
+            27599, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /isolate="icSARS"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:228330"
+                     /country="USA"
+                     /collection_date="27-May-2017"
+                     /collected_by="R. Graham"
+                     /identified_by="B. Yount"
+     Protein         1..1255
+                     /product="spike"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="MK062179.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AAP13441                1255 aa            linear   VRL 25-JUL-2016
+DEFINITION  S protein [SARS coronavirus Urbani].
+ACCESSION   AAP13441
+VERSION     AAP13441.1
+DBSOURCE    accession AY278741.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Rota,P.A., Oberste,M.S., Monroe,S.S., Nix,W.A., Campagnoli,R.,
+            Icenogle,J.P., Penaranda,S., Bankamp,B., Maher,K., Chen,M.H.,
+            Tong,S., Tamin,A., Lowe,L., Frace,M., DeRisi,J.L., Chen,Q.,
+            Wang,D., Erdman,D.D., Peret,T.C., Burns,C., Ksiazek,T.G.,
+            Rollin,P.E., Sanchez,A., Liffick,S., Holloway,B., Limor,J.,
+            McCaustland,K., Olsen-Rasmussen,M., Fouchier,R., Gunther,S.,
+            Osterhaus,A.D., Drosten,C., Pallansch,M.A., Anderson,L.J. and
+            Bellini,W.J.
+  TITLE     Characterization of a novel coronavirus associated with severe
+            acute respiratory syndrome
+  JOURNAL   Science 300 (5624), 1394-1399 (2003)
+   PUBMED   12730500
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Monroe,S.S.
+  CONSRTM   CDC SARS Coronavirus Sequencing Team
+  TITLE     SARS coronavirus (SARS-CoV), Urbani strain
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Bellini,W.J., Campagnoli,R.P., Icenogle,J.P., Monroe,S.S.,
+            Nix,W.A., Oberste,M.S., Pallansch,M.A. and Rota,P.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-APR-2003) Division of Viral and Rickettsial Diseases,
+            Centers for Disease Control and Prevention, 1600 Clifton RD, NE,
+            Atlanta, GA 30333, USA
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /strain="Urbani"
+                     /db_xref="taxon:228330"
+                     /cell_line="Vero"
+     Protein         1..1255
+                     /product="S protein"
+                     /name="surface spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY278741.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       CAL40866                1255 aa            linear   PAT 08-SEP-2006
+DEFINITION  unnamed protein product [SARS coronavirus Urbani].
+ACCESSION   CAL40866
+VERSION     CAL40866.1
+DBSOURCE    embl accession CS406442.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Urbani
+  ORGANISM  SARS coronavirus Urbani
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1
+  AUTHORS   Kew,O.M., Burns,C.C., Shaw,J., Campagnoli,R. and Quay,J.
+  TITLE     Modulation of replicative fitness by using less frequently used
+            synonymous codons
+  JOURNAL   Patent: WO 2006042156-A2 20-APR-2006;
+            Department of Health and Human Services (US)
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Urbani"
+                     /db_xref="taxon:228330"
+     Protein         1..1255
+                     /name="unnamed protein product"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="CS406442.1:1..3768"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

@@ -1,0 +1,75 @@
+LOCUS       ADE34812                1242 aa            linear   VRL 05-APR-2010
+DEFINITION  spike glycoprotein [Bat SARS coronavirus HKU3-12].
+ACCESSION   ADE34812
+VERSION     ADE34812.1
+DBSOURCE    accession GQ153547.1
+KEYWORDS    .
+SOURCE      Bat SARS coronavirus HKU3-12
+  ORGANISM  Bat SARS coronavirus HKU3-12
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1242)
+  AUTHORS   Lau,S.K., Li,K.S., Huang,Y., Shek,C.T., Tse,H., Wang,M., Choi,G.K.,
+            Xu,H., Lam,C.S., Guo,R., Chan,K.H., Zheng,B.J., Woo,P.C. and
+            Yuen,K.Y.
+  TITLE     Ecoepidemiology and complete genome comparison of different strains
+            of severe acute respiratory syndrome-related Rhinolophus bat
+            coronavirus in China reveal bats as a reservoir for acute,
+            self-limiting infection that allows recombination events
+  JOURNAL   J. Virol. 84 (6), 2808-2819 (2010)
+   PUBMED   20071579
+REFERENCE   2  (residues 1 to 1242)
+  AUTHORS   Lau,S.K.P., Li,K.S.M., Huang,Y., Choi,G.K.Y., Wang,M., Xu,H.,
+            Guo,R., Chan,K.-H., Zheng,B.-J., Woo,P.C.Y. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-MAY-2009) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Pokfulam, Hong
+            Kong, Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1242
+                     /organism="Bat SARS coronavirus HKU3-12"
+                     /strain="HKU3-12"
+                     /db_xref="taxon:741999"
+     Protein         1..1242
+                     /product="spike glycoprotein"
+     Region          <81..283
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          321..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          635..1239
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1242
+                     /gene="S"
+                     /coded_by="GQ153547.1:21471..25199"
+ORIGIN      
+        1 mkilifafla nlakaqegcg iisrkpqpkm aqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaatek snvirgwifg ssfdnttqsa
+      121 vivnnsthii irvcnfnlck epmytvsrgt qqnawvyqsa fnctydrvek sfqldttpkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglptgfsvl kpilklpfgi nitsyrvvma
+      241 mfsqttsnfl pesaayyvgn lkystfmlrf nengtitdav dcsqnplael kctiknfnvd
+      301 kgiyqtsnfr vsptqevirf pnitnrcpfd kvfnatrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta khdtgnyyyr shrktklkpf erdlssddgn gvytlstydf npnvpvayqa
+      481 trvvvlsfel lnapatvcgp klstelvknq cvnfnfnglk gtgvltsssk rfqsfqqfgr
+      541 dtsdftdsvr dpqtleildi spcsfggvsv itpgtnasse vavlyqdvnc tdvptairad
+      601 qltpawrvys tgvnvfqtqa gcligaehvn asyecdipig agicasyhta svlrstgqks
+      661 ivaytmslga ensiayanns iaiptnfsis vttevmpvsm aktsvdctmy icgdslecsn
+      721 lllqygsfct qlnraltgia ieqdkntqev faqvkqmykt paikdfggfn fsqilpdpsk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdvsardlic aqkfngltvl pplltdemia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk lianqfnsai
+      901 gkiqeslsst asalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqsaphgvv flhvtyvpsq eknfttapai chegkayfpr egvfvsngts wfitqrnfys
+     1081 pqlittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik wpwyvwlgfi agliaivmvt
+     1201 illccmtscc sclkgacscg scckfdedds epvlkgvklh yt
+//
+

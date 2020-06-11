@@ -1,0 +1,2093 @@
+LOCUS       5X5B_C                  1228 aa            linear   VRL 01-JUN-2017
+DEFINITION  Chain C, Spike Glycoprotein.
+ACCESSION   5X5B_C
+VERSION     5X5B_C
+DBSOURCE    pdb: molecule 5X5B, chain 67, release May 26, 2017;
+            deposition: Feb 15, 2017;
+            class: Viral Protein;
+            source: Mmdb_id: 150560, Pdb_id 1: 5X5B;
+            Exp. method: Electron Microscopy.
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y., Zhang,X. and Gao,G.F.
+  TITLE     Cryo-EM structures of MERS-CoV and SARS-CoV spike glycoproteins
+            reveal the dynamic receptor binding domains
+  JOURNAL   Nat Commun 8, 15092 (2017)
+   PUBMED   28393837
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-FEB-2017)
+COMMENT     Prefusion Structure Of Sars-cov Spike Glycoprotein, Conformation 2.
+FEATURES             Location/Qualifiers
+     source          1..1228
+                     /organism="SARS coronavirus BJ01"
+                     /db_xref="taxon:228407"
+     Region          1..267
+                     /region_name="Domain 13"
+                     /note="NCBI Domains"
+     SecStr          18..23
+                     /sec_str_type="sheet"
+                     /note="strand 120"
+     SecStr          36..46
+                     /sec_str_type="sheet"
+                     /note="strand 121"
+     SecStr          49..57
+                     /sec_str_type="sheet"
+                     /note="strand 122"
+     SecStr          67..70
+                     /sec_str_type="sheet"
+                     /note="strand 123"
+     SecStr          73..81
+                     /sec_str_type="sheet"
+                     /note="strand 124"
+     SecStr          86..92
+                     /sec_str_type="sheet"
+                     /note="strand 125"
+     SecStr          94..97
+                     /sec_str_type="sheet"
+                     /note="strand 126"
+     SecStr          99..106
+                     /sec_str_type="sheet"
+                     /note="strand 127"
+     SecStr          109..119
+                     /sec_str_type="sheet"
+                     /note="strand 128"
+     Bond            bond(115,146)
+                     /bond_type="disulfide"
+     SecStr          123..129
+                     /sec_str_type="sheet"
+                     /note="strand 129"
+     SecStr          131..139
+                     /sec_str_type="sheet"
+                     /note="strand 130"
+     SecStr          147..152
+                     /sec_str_type="sheet"
+                     /note="strand 131"
+     SecStr          165..178
+                     /sec_str_type="sheet"
+                     /note="strand 132"
+     SecStr          179..188
+                     /sec_str_type="sheet"
+                     /note="strand 133"
+     SecStr          189..193
+                     /sec_str_type="sheet"
+                     /note="strand 134"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 135"
+     SecStr          216..222
+                     /sec_str_type="sheet"
+                     /note="strand 136"
+     SecStr          237..244
+                     /sec_str_type="sheet"
+                     /note="strand 137"
+     SecStr          245..255
+                     /sec_str_type="sheet"
+                     /note="strand 138"
+     SecStr          257..265
+                     /sec_str_type="sheet"
+                     /note="strand 139"
+     Region          join(268..293,565..672)
+                     /region_name="Domain 14"
+                     /note="NCBI Domains"
+     SecStr          269..277
+                     /sec_str_type="helix"
+                     /note="helix 23"
+     SecStr          281..285
+                     /sec_str_type="sheet"
+                     /note="strand 140"
+     SecStr          286..290
+                     /sec_str_type="sheet"
+                     /note="strand 141"
+     Region          join(294..314,505..564)
+                     /region_name="Domain 15"
+                     /note="NCBI Domains"
+     SecStr          296..302
+                     /sec_str_type="sheet"
+                     /note="strand 142"
+     Region          305..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          315..504
+                     /region_name="Domain 16"
+                     /note="NCBI Domains"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 143"
+     SecStr          334..337
+                     /sec_str_type="sheet"
+                     /note="strand 144"
+     SecStr          349..355
+                     /sec_str_type="sheet"
+                     /note="strand 145"
+     SecStr          367..375
+                     /sec_str_type="sheet"
+                     /note="strand 146"
+     SecStr          391..398
+                     /sec_str_type="helix"
+                     /note="helix 24"
+     SecStr          404..413
+                     /sec_str_type="sheet"
+                     /note="strand 147"
+     SecStr          426..429
+                     /sec_str_type="sheet"
+                     /note="strand 148"
+     Bond            bond(454,461)
+                     /bond_type="disulfide"
+     SecStr          464..467
+                     /sec_str_type="sheet"
+                     /note="strand 149"
+     SecStr          479..490
+                     /sec_str_type="sheet"
+                     /note="strand 150"
+     SecStr          496..499
+                     /sec_str_type="sheet"
+                     /note="strand 151"
+     SecStr          510..517
+                     /sec_str_type="sheet"
+                     /note="strand 152"
+     Bond            bond(511,563)
+                     /bond_type="disulfide"
+     SecStr          518..528
+                     /sec_str_type="sheet"
+                     /note="strand 153"
+     SecStr          537..541
+                     /sec_str_type="sheet"
+                     /note="strand 154"
+     SecStr          545..552
+                     /sec_str_type="sheet"
+                     /note="strand 155"
+     SecStr          555..562
+                     /sec_str_type="sheet"
+                     /note="strand 156"
+     SecStr          567..576
+                     /sec_str_type="sheet"
+                     /note="strand 157"
+     SecStr          582..587
+                     /sec_str_type="sheet"
+                     /note="strand 158"
+     SecStr          590..597
+                     /sec_str_type="helix"
+                     /note="helix 25"
+     SecStr          614..619
+                     /sec_str_type="sheet"
+                     /note="strand 159"
+     SecStr          620..625
+                     /sec_str_type="sheet"
+                     /note="strand 160"
+     SecStr          626..629
+                     /sec_str_type="sheet"
+                     /note="strand 161"
+     Region          635..1180
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Bond            bond(635,644)
+                     /bond_type="disulfide"
+     SecStr          636..640
+                     /sec_str_type="sheet"
+                     /note="strand 162"
+     SecStr          642..648
+                     /sec_str_type="sheet"
+                     /note="strand 163"
+     SecStr          660..666
+                     /sec_str_type="sheet"
+                     /note="strand 164"
+     Region          673..1050
+                     /region_name="Domain 17"
+                     /note="NCBI Domains"
+     SecStr          679..685
+                     /sec_str_type="sheet"
+                     /note="strand 165"
+     SecStr          686..698
+                     /sec_str_type="sheet"
+                     /note="strand 166"
+     SecStr          702..706
+                     /sec_str_type="sheet"
+                     /note="strand 167"
+     Bond            bond(712,718)
+                     /bond_type="disulfide"
+     SecStr          715..723
+                     /sec_str_type="helix"
+                     /note="helix 26"
+     SecStr          729..751
+                     /sec_str_type="helix"
+                     /note="helix 27"
+     SecStr          764..767
+                     /sec_str_type="sheet"
+                     /note="strand 168"
+     SecStr          768..771
+                     /sec_str_type="sheet"
+                     /note="strand 169"
+     SecStr          786..793
+                     /sec_str_type="helix"
+                     /note="helix 28"
+     SecStr          826..830
+                     /sec_str_type="sheet"
+                     /note="strand 170"
+     SecStr          836..852
+                     /sec_str_type="helix"
+                     /note="helix 29"
+     SecStr          867..878
+                     /sec_str_type="helix"
+                     /note="helix 30"
+     SecStr          890..909
+                     /sec_str_type="helix"
+                     /note="helix 31"
+     SecStr          916..934
+                     /sec_str_type="helix"
+                     /note="helix 32"
+     SecStr          946..953
+                     /sec_str_type="helix"
+                     /note="helix 33"
+     SecStr          959..998
+                     /sec_str_type="helix"
+                     /note="helix 34"
+     Bond            bond(1001,1012)
+                     /bond_type="disulfide"
+     SecStr          1015..1019
+                     /sec_str_type="sheet"
+                     /note="strand 171"
+     SecStr          1020..1026
+                     /sec_str_type="sheet"
+                     /note="strand 172"
+     SecStr          1027..1036
+                     /sec_str_type="sheet"
+                     /note="strand 173"
+     SecStr          1037..1043
+                     /sec_str_type="sheet"
+                     /note="strand 174"
+     Region          1051..1228
+                     /region_name="Domain 18"
+                     /note="NCBI Domains"
+     SecStr          1057..1060
+                     /sec_str_type="sheet"
+                     /note="strand 175"
+     SecStr          1063..1068
+                     /sec_str_type="sheet"
+                     /note="strand 176"
+     SecStr          1069..1074
+                     /sec_str_type="sheet"
+                     /note="strand 177"
+     SecStr          1088..1091
+                     /sec_str_type="sheet"
+                     /note="strand 178"
+     Region          <1149..1228
+                     /region_name="RasGAP_C"
+                     /note="RasGAP C-terminus; cl27227"
+                     /db_xref="CDD:332048"
+ORIGIN      
+        1 sdldrcttfd dvqapnytqh tssmrgvyyp deifrsdtly ltqdlflpfy snvtgfhtin
+       61 htfdnpvipf kdgiyfaate ksnvvrgwvf gstmnnksqs viiinnstnv viracnfelc
+      121 dnpffavskp mgtqthtmif dnafnctfey isdafsldvs eksgnfkhlr efvfknkdgf
+      181 lyvykgyqpi dvvrdlpsgf ntlkpifklp lginitnfra iltafspaqd twgtsaaayf
+      241 vgylkpttfm lkydengtit davdcsqnpl aelkcsvksf eidkgiyqts nfrvvpsgdv
+      301 vrfpnitnlc pfgevfnatk fpsvyawerk kisncvadys vlynstffst fkcygvsatk
+      361 lndlcfsnvy adsfvvkgdd vrqiapgqtg viadynyklp ddfmgcvlaw ntrnidatst
+      421 gnynykyryl rhgklrpfer disnvpfspd gkpctppaln cywplndygf ytttgigyqp
+      481 yrvvvlsfel lnapatvcgp klstdliknq cvnfnfnglt gtgvltpssk rfqpfqqfgr
+      541 dvsdftdsvr dpktseildi spcsfggvsv itpgtnasse vavlyqdvnc tdvstaihad
+      601 qltpawriys tgnnvfqtqa gcligaehvd tsyecdipig agicasyhtv sllrstsqks
+      661 ivaytmslga dssiaysnnt iaiptnfsis ittevmpvsm aktsvdcnmy icgdstecan
+      721 lllqygsfct qlnralsgia aeqdrntrev faqvkqmykt ptlkyfggfn fsqilpdplk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqaaphgvv flhvtyvpsq ernfttapai chegkayfpr egvfvfngts wfitqrnffs
+     1081 pqiittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik ikrmkqiedk ieeieskqkk
+     1201 ieneiarikk iklvprgsle wshpqfek
+//
+
+LOCUS       5X5B_B                  1228 aa            linear   VRL 01-JUN-2017
+DEFINITION  Chain B, Spike Glycoprotein.
+ACCESSION   5X5B_B
+VERSION     5X5B_B
+DBSOURCE    pdb: molecule 5X5B, chain 66, release May 26, 2017;
+            deposition: Feb 15, 2017;
+            class: Viral Protein;
+            source: Mmdb_id: 150560, Pdb_id 1: 5X5B;
+            Exp. method: Electron Microscopy.
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y., Zhang,X. and Gao,G.F.
+  TITLE     Cryo-EM structures of MERS-CoV and SARS-CoV spike glycoproteins
+            reveal the dynamic receptor binding domains
+  JOURNAL   Nat Commun 8, 15092 (2017)
+   PUBMED   28393837
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-FEB-2017)
+COMMENT     Prefusion Structure Of Sars-cov Spike Glycoprotein, Conformation 2.
+FEATURES             Location/Qualifiers
+     source          1..1228
+                     /organism="SARS coronavirus BJ01"
+                     /db_xref="taxon:228407"
+     Region          1..267
+                     /region_name="Domain 7"
+                     /note="NCBI Domains"
+     SecStr          18..23
+                     /sec_str_type="sheet"
+                     /note="strand 61"
+     SecStr          36..46
+                     /sec_str_type="sheet"
+                     /note="strand 62"
+     SecStr          49..57
+                     /sec_str_type="sheet"
+                     /note="strand 63"
+     SecStr          67..70
+                     /sec_str_type="sheet"
+                     /note="strand 64"
+     SecStr          73..81
+                     /sec_str_type="sheet"
+                     /note="strand 65"
+     SecStr          86..92
+                     /sec_str_type="sheet"
+                     /note="strand 66"
+     SecStr          94..97
+                     /sec_str_type="sheet"
+                     /note="strand 67"
+     SecStr          99..106
+                     /sec_str_type="sheet"
+                     /note="strand 68"
+     SecStr          109..119
+                     /sec_str_type="sheet"
+                     /note="strand 69"
+     Bond            bond(115,146)
+                     /bond_type="disulfide"
+     SecStr          123..129
+                     /sec_str_type="sheet"
+                     /note="strand 70"
+     SecStr          131..139
+                     /sec_str_type="sheet"
+                     /note="strand 71"
+     SecStr          147..152
+                     /sec_str_type="sheet"
+                     /note="strand 72"
+     SecStr          165..178
+                     /sec_str_type="sheet"
+                     /note="strand 73"
+     SecStr          179..188
+                     /sec_str_type="sheet"
+                     /note="strand 74"
+     SecStr          189..193
+                     /sec_str_type="sheet"
+                     /note="strand 75"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 76"
+     SecStr          216..222
+                     /sec_str_type="sheet"
+                     /note="strand 77"
+     SecStr          237..244
+                     /sec_str_type="sheet"
+                     /note="strand 78"
+     SecStr          245..255
+                     /sec_str_type="sheet"
+                     /note="strand 79"
+     SecStr          257..265
+                     /sec_str_type="sheet"
+                     /note="strand 80"
+     Region          join(268..293,565..672)
+                     /region_name="Domain 8"
+                     /note="NCBI Domains"
+     SecStr          269..277
+                     /sec_str_type="helix"
+                     /note="helix 11"
+     SecStr          281..285
+                     /sec_str_type="sheet"
+                     /note="strand 81"
+     SecStr          286..290
+                     /sec_str_type="sheet"
+                     /note="strand 82"
+     Region          join(294..314,505..564)
+                     /region_name="Domain 9"
+                     /note="NCBI Domains"
+     SecStr          296..302
+                     /sec_str_type="sheet"
+                     /note="strand 83"
+     Region          305..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          315..504
+                     /region_name="Domain 10"
+                     /note="NCBI Domains"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 84"
+     SecStr          334..337
+                     /sec_str_type="sheet"
+                     /note="strand 85"
+     SecStr          349..355
+                     /sec_str_type="sheet"
+                     /note="strand 86"
+     SecStr          367..375
+                     /sec_str_type="sheet"
+                     /note="strand 87"
+     SecStr          391..398
+                     /sec_str_type="helix"
+                     /note="helix 12"
+     SecStr          404..413
+                     /sec_str_type="sheet"
+                     /note="strand 88"
+     SecStr          426..429
+                     /sec_str_type="sheet"
+                     /note="strand 89"
+     Bond            bond(454,461)
+                     /bond_type="disulfide"
+     SecStr          464..467
+                     /sec_str_type="sheet"
+                     /note="strand 90"
+     SecStr          479..490
+                     /sec_str_type="sheet"
+                     /note="strand 91"
+     SecStr          496..499
+                     /sec_str_type="sheet"
+                     /note="strand 92"
+     SecStr          510..517
+                     /sec_str_type="sheet"
+                     /note="strand 93"
+     Bond            bond(511,563)
+                     /bond_type="disulfide"
+     SecStr          518..528
+                     /sec_str_type="sheet"
+                     /note="strand 94"
+     SecStr          537..541
+                     /sec_str_type="sheet"
+                     /note="strand 95"
+     SecStr          545..552
+                     /sec_str_type="sheet"
+                     /note="strand 96"
+     SecStr          555..562
+                     /sec_str_type="sheet"
+                     /note="strand 97"
+     SecStr          567..576
+                     /sec_str_type="sheet"
+                     /note="strand 98"
+     SecStr          582..587
+                     /sec_str_type="sheet"
+                     /note="strand 99"
+     SecStr          590..597
+                     /sec_str_type="helix"
+                     /note="helix 13"
+     SecStr          614..619
+                     /sec_str_type="sheet"
+                     /note="strand 100"
+     SecStr          620..625
+                     /sec_str_type="sheet"
+                     /note="strand 101"
+     SecStr          626..629
+                     /sec_str_type="sheet"
+                     /note="strand 102"
+     Region          635..1180
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Bond            bond(635,644)
+                     /bond_type="disulfide"
+     SecStr          636..640
+                     /sec_str_type="sheet"
+                     /note="strand 103"
+     SecStr          642..648
+                     /sec_str_type="sheet"
+                     /note="strand 104"
+     SecStr          660..666
+                     /sec_str_type="sheet"
+                     /note="strand 105"
+     Region          673..1050
+                     /region_name="Domain 11"
+                     /note="NCBI Domains"
+     SecStr          679..685
+                     /sec_str_type="sheet"
+                     /note="strand 106"
+     SecStr          686..698
+                     /sec_str_type="sheet"
+                     /note="strand 107"
+     SecStr          702..706
+                     /sec_str_type="sheet"
+                     /note="strand 108"
+     Bond            bond(712,718)
+                     /bond_type="disulfide"
+     SecStr          715..723
+                     /sec_str_type="helix"
+                     /note="helix 14"
+     SecStr          729..751
+                     /sec_str_type="helix"
+                     /note="helix 15"
+     SecStr          764..767
+                     /sec_str_type="sheet"
+                     /note="strand 109"
+     SecStr          768..771
+                     /sec_str_type="sheet"
+                     /note="strand 110"
+     SecStr          786..793
+                     /sec_str_type="helix"
+                     /note="helix 16"
+     SecStr          826..830
+                     /sec_str_type="sheet"
+                     /note="strand 111"
+     SecStr          836..852
+                     /sec_str_type="helix"
+                     /note="helix 17"
+     SecStr          867..878
+                     /sec_str_type="helix"
+                     /note="helix 18"
+     SecStr          890..906
+                     /sec_str_type="helix"
+                     /note="helix 19"
+     SecStr          916..934
+                     /sec_str_type="helix"
+                     /note="helix 20"
+     SecStr          946..953
+                     /sec_str_type="helix"
+                     /note="helix 21"
+     SecStr          959..998
+                     /sec_str_type="helix"
+                     /note="helix 22"
+     Bond            bond(1001,1012)
+                     /bond_type="disulfide"
+     SecStr          1015..1019
+                     /sec_str_type="sheet"
+                     /note="strand 112"
+     SecStr          1020..1026
+                     /sec_str_type="sheet"
+                     /note="strand 113"
+     SecStr          1027..1036
+                     /sec_str_type="sheet"
+                     /note="strand 114"
+     SecStr          1037..1043
+                     /sec_str_type="sheet"
+                     /note="strand 115"
+     Region          1051..1228
+                     /region_name="Domain 12"
+                     /note="NCBI Domains"
+     SecStr          1057..1060
+                     /sec_str_type="sheet"
+                     /note="strand 116"
+     SecStr          1063..1068
+                     /sec_str_type="sheet"
+                     /note="strand 117"
+     SecStr          1069..1074
+                     /sec_str_type="sheet"
+                     /note="strand 118"
+     SecStr          1088..1091
+                     /sec_str_type="sheet"
+                     /note="strand 119"
+     Region          <1149..1228
+                     /region_name="RasGAP_C"
+                     /note="RasGAP C-terminus; cl27227"
+                     /db_xref="CDD:332048"
+ORIGIN      
+        1 sdldrcttfd dvqapnytqh tssmrgvyyp deifrsdtly ltqdlflpfy snvtgfhtin
+       61 htfdnpvipf kdgiyfaate ksnvvrgwvf gstmnnksqs viiinnstnv viracnfelc
+      121 dnpffavskp mgtqthtmif dnafnctfey isdafsldvs eksgnfkhlr efvfknkdgf
+      181 lyvykgyqpi dvvrdlpsgf ntlkpifklp lginitnfra iltafspaqd twgtsaaayf
+      241 vgylkpttfm lkydengtit davdcsqnpl aelkcsvksf eidkgiyqts nfrvvpsgdv
+      301 vrfpnitnlc pfgevfnatk fpsvyawerk kisncvadys vlynstffst fkcygvsatk
+      361 lndlcfsnvy adsfvvkgdd vrqiapgqtg viadynyklp ddfmgcvlaw ntrnidatst
+      421 gnynykyryl rhgklrpfer disnvpfspd gkpctppaln cywplndygf ytttgigyqp
+      481 yrvvvlsfel lnapatvcgp klstdliknq cvnfnfnglt gtgvltpssk rfqpfqqfgr
+      541 dvsdftdsvr dpktseildi spcsfggvsv itpgtnasse vavlyqdvnc tdvstaihad
+      601 qltpawriys tgnnvfqtqa gcligaehvd tsyecdipig agicasyhtv sllrstsqks
+      661 ivaytmslga dssiaysnnt iaiptnfsis ittevmpvsm aktsvdcnmy icgdstecan
+      721 lllqygsfct qlnralsgia aeqdrntrev faqvkqmykt ptlkyfggfn fsqilpdplk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqaaphgvv flhvtyvpsq ernfttapai chegkayfpr egvfvfngts wfitqrnffs
+     1081 pqiittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik ikrmkqiedk ieeieskqkk
+     1201 ieneiarikk iklvprgsle wshpqfek
+//
+
+LOCUS       5X5B_A                  1228 aa            linear   VRL 01-JUN-2017
+DEFINITION  Chain A, Spike Glycoprotein.
+ACCESSION   5X5B_A
+VERSION     5X5B_A
+DBSOURCE    pdb: molecule 5X5B, chain 65, release May 26, 2017;
+            deposition: Feb 15, 2017;
+            class: Viral Protein;
+            source: Mmdb_id: 150560, Pdb_id 1: 5X5B;
+            Exp. method: Electron Microscopy.
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y., Zhang,X. and Gao,G.F.
+  TITLE     Cryo-EM structures of MERS-CoV and SARS-CoV spike glycoproteins
+            reveal the dynamic receptor binding domains
+  JOURNAL   Nat Commun 8, 15092 (2017)
+   PUBMED   28393837
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-FEB-2017)
+COMMENT     Prefusion Structure Of Sars-cov Spike Glycoprotein, Conformation 2.
+FEATURES             Location/Qualifiers
+     source          1..1228
+                     /organism="SARS coronavirus BJ01"
+                     /db_xref="taxon:228407"
+     Region          1..267
+                     /region_name="Domain 1"
+                     /note="NCBI Domains"
+     SecStr          11..14
+                     /sec_str_type="sheet"
+                     /note="strand 1"
+     SecStr          18..22
+                     /sec_str_type="sheet"
+                     /note="strand 2"
+     SecStr          36..47
+                     /sec_str_type="sheet"
+                     /note="strand 3"
+     SecStr          51..57
+                     /sec_str_type="sheet"
+                     /note="strand 4"
+     SecStr          61..64
+                     /sec_str_type="sheet"
+                     /note="strand 5"
+     SecStr          67..70
+                     /sec_str_type="sheet"
+                     /note="strand 6"
+     SecStr          72..81
+                     /sec_str_type="sheet"
+                     /note="strand 7"
+     SecStr          84..92
+                     /sec_str_type="sheet"
+                     /note="strand 8"
+     SecStr          99..107
+                     /sec_str_type="sheet"
+                     /note="strand 9"
+     SecStr          108..113
+                     /sec_str_type="sheet"
+                     /note="strand 10"
+     SecStr          114..118
+                     /sec_str_type="sheet"
+                     /note="strand 11"
+     Bond            bond(115,146)
+                     /bond_type="disulfide"
+     SecStr          123..129
+                     /sec_str_type="sheet"
+                     /note="strand 12"
+     SecStr          131..134
+                     /sec_str_type="sheet"
+                     /note="strand 13"
+     SecStr          136..139
+                     /sec_str_type="sheet"
+                     /note="strand 14"
+     SecStr          142..145
+                     /sec_str_type="sheet"
+                     /note="strand 15"
+     SecStr          147..153
+                     /sec_str_type="sheet"
+                     /note="strand 16"
+     SecStr          165..178
+                     /sec_str_type="sheet"
+                     /note="strand 17"
+     SecStr          179..188
+                     /sec_str_type="sheet"
+                     /note="strand 18"
+     SecStr          189..192
+                     /sec_str_type="sheet"
+                     /note="strand 19"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 20"
+     SecStr          216..223
+                     /sec_str_type="sheet"
+                     /note="strand 21"
+     SecStr          237..245
+                     /sec_str_type="sheet"
+                     /note="strand 22"
+     SecStr          246..251
+                     /sec_str_type="sheet"
+                     /note="strand 23"
+     SecStr          260..265
+                     /sec_str_type="sheet"
+                     /note="strand 24"
+     Region          join(268..295,564..672)
+                     /region_name="Domain 2"
+                     /note="NCBI Domains"
+     SecStr          269..277
+                     /sec_str_type="helix"
+                     /note="helix 1"
+     SecStr          281..285
+                     /sec_str_type="sheet"
+                     /note="strand 25"
+     SecStr          286..293
+                     /sec_str_type="sheet"
+                     /note="strand 26"
+     Region          join(296..314,502..522)
+                     /region_name="Domain 3"
+                     /note="NCBI Domains"
+     SecStr          298..301
+                     /sec_str_type="sheet"
+                     /note="strand 27"
+     Region          305..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          315..501
+                     /region_name="Domain 4"
+                     /note="NCBI Domains"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 28"
+     SecStr          349..354
+                     /sec_str_type="sheet"
+                     /note="strand 29"
+     SecStr          368..378
+                     /sec_str_type="sheet"
+                     /note="strand 30"
+     SecStr          405..413
+                     /sec_str_type="sheet"
+                     /note="strand 31"
+     Bond            bond(454,461)
+                     /bond_type="disulfide"
+     SecStr          479..489
+                     /sec_str_type="sheet"
+                     /note="strand 32"
+     Bond            bond(511,563)
+                     /bond_type="disulfide"
+     SecStr          513..517
+                     /sec_str_type="sheet"
+                     /note="strand 33"
+     SecStr          518..522
+                     /sec_str_type="sheet"
+                     /note="strand 34"
+     Region          523..563
+                     /region_name="Domain 5"
+                     /note="NCBI Domains"
+     SecStr          523..527
+                     /sec_str_type="sheet"
+                     /note="strand 35"
+     SecStr          537..540
+                     /sec_str_type="sheet"
+                     /note="strand 36"
+     SecStr          547..551
+                     /sec_str_type="sheet"
+                     /note="strand 37"
+     SecStr          556..562
+                     /sec_str_type="sheet"
+                     /note="strand 38"
+     SecStr          564..576
+                     /sec_str_type="sheet"
+                     /note="strand 39"
+     SecStr          582..587
+                     /sec_str_type="sheet"
+                     /note="strand 40"
+     SecStr          590..597
+                     /sec_str_type="helix"
+                     /note="helix 2"
+     SecStr          614..619
+                     /sec_str_type="sheet"
+                     /note="strand 41"
+     SecStr          620..625
+                     /sec_str_type="sheet"
+                     /note="strand 42"
+     SecStr          626..629
+                     /sec_str_type="sheet"
+                     /note="strand 43"
+     Region          635..1180
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Bond            bond(635,644)
+                     /bond_type="disulfide"
+     SecStr          636..641
+                     /sec_str_type="sheet"
+                     /note="strand 44"
+     SecStr          642..648
+                     /sec_str_type="sheet"
+                     /note="strand 45"
+     SecStr          660..665
+                     /sec_str_type="sheet"
+                     /note="strand 46"
+     Region          673..1228
+                     /region_name="Domain 6"
+                     /note="NCBI Domains"
+     SecStr          679..685
+                     /sec_str_type="sheet"
+                     /note="strand 47"
+     SecStr          686..698
+                     /sec_str_type="sheet"
+                     /note="strand 48"
+     SecStr          702..706
+                     /sec_str_type="sheet"
+                     /note="strand 49"
+     Bond            bond(712,718)
+                     /bond_type="disulfide"
+     SecStr          729..750
+                     /sec_str_type="helix"
+                     /note="helix 3"
+     SecStr          764..767
+                     /sec_str_type="sheet"
+                     /note="strand 50"
+     SecStr          768..771
+                     /sec_str_type="sheet"
+                     /note="strand 51"
+     SecStr          785..792
+                     /sec_str_type="helix"
+                     /note="helix 4"
+     SecStr          826..830
+                     /sec_str_type="sheet"
+                     /note="strand 52"
+     SecStr          836..852
+                     /sec_str_type="helix"
+                     /note="helix 5"
+     SecStr          867..878
+                     /sec_str_type="helix"
+                     /note="helix 6"
+     SecStr          889..905
+                     /sec_str_type="helix"
+                     /note="helix 7"
+     SecStr          912..933
+                     /sec_str_type="helix"
+                     /note="helix 8"
+     SecStr          958..991
+                     /sec_str_type="helix"
+                     /note="helix 9"
+     SecStr          992..1000
+                     /sec_str_type="helix"
+                     /note="helix 10"
+     Bond            bond(1001,1012)
+                     /bond_type="disulfide"
+     SecStr          1016..1026
+                     /sec_str_type="sheet"
+                     /note="strand 53"
+     SecStr          1027..1036
+                     /sec_str_type="sheet"
+                     /note="strand 54"
+     SecStr          1037..1043
+                     /sec_str_type="sheet"
+                     /note="strand 55"
+     SecStr          1044..1047
+                     /sec_str_type="sheet"
+                     /note="strand 56"
+     SecStr          1057..1060
+                     /sec_str_type="sheet"
+                     /note="strand 57"
+     SecStr          1063..1068
+                     /sec_str_type="sheet"
+                     /note="strand 58"
+     SecStr          1069..1074
+                     /sec_str_type="sheet"
+                     /note="strand 59"
+     SecStr          1088..1091
+                     /sec_str_type="sheet"
+                     /note="strand 60"
+     Region          <1149..1228
+                     /region_name="RasGAP_C"
+                     /note="RasGAP C-terminus; cl27227"
+                     /db_xref="CDD:332048"
+ORIGIN      
+        1 sdldrcttfd dvqapnytqh tssmrgvyyp deifrsdtly ltqdlflpfy snvtgfhtin
+       61 htfdnpvipf kdgiyfaate ksnvvrgwvf gstmnnksqs viiinnstnv viracnfelc
+      121 dnpffavskp mgtqthtmif dnafnctfey isdafsldvs eksgnfkhlr efvfknkdgf
+      181 lyvykgyqpi dvvrdlpsgf ntlkpifklp lginitnfra iltafspaqd twgtsaaayf
+      241 vgylkpttfm lkydengtit davdcsqnpl aelkcsvksf eidkgiyqts nfrvvpsgdv
+      301 vrfpnitnlc pfgevfnatk fpsvyawerk kisncvadys vlynstffst fkcygvsatk
+      361 lndlcfsnvy adsfvvkgdd vrqiapgqtg viadynyklp ddfmgcvlaw ntrnidatst
+      421 gnynykyryl rhgklrpfer disnvpfspd gkpctppaln cywplndygf ytttgigyqp
+      481 yrvvvlsfel lnapatvcgp klstdliknq cvnfnfnglt gtgvltpssk rfqpfqqfgr
+      541 dvsdftdsvr dpktseildi spcsfggvsv itpgtnasse vavlyqdvnc tdvstaihad
+      601 qltpawriys tgnnvfqtqa gcligaehvd tsyecdipig agicasyhtv sllrstsqks
+      661 ivaytmslga dssiaysnnt iaiptnfsis ittevmpvsm aktsvdcnmy icgdstecan
+      721 lllqygsfct qlnralsgia aeqdrntrev faqvkqmykt ptlkyfggfn fsqilpdplk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqaaphgvv flhvtyvpsq ernfttapai chegkayfpr egvfvfngts wfitqrnffs
+     1081 pqiittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik ikrmkqiedk ieeieskqkk
+     1201 ieneiarikk iklvprgsle wshpqfek
+//
+
+LOCUS       5X58_C                  1228 aa            linear   VRL 05-MAY-2017
+DEFINITION  Chain C, Spike Glycoprotein.
+ACCESSION   5X58_C
+VERSION     5X58_C
+DBSOURCE    pdb: molecule 5X58, chain 67, release May 5, 2017;
+            deposition: Feb 15, 2017;
+            class: Viral Protein;
+            source: Mmdb_id: 150558, Pdb_id 1: 5X58;
+            Exp. method: Electron Microscopy.
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y., Zhang,X. and Gao,G.F.
+  TITLE     Cryo-EM structures of MERS-CoV and SARS-CoV spike glycoproteins
+            reveal the dynamic receptor binding domains
+  JOURNAL   Nat Commun 8, 15092 (2017)
+   PUBMED   28393837
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-FEB-2017)
+COMMENT     Prefusion Structure Of Sars-cov Spike Glycoprotein, Conformation 1.
+FEATURES             Location/Qualifiers
+     source          1..1228
+                     /organism="SARS coronavirus BJ01"
+                     /db_xref="taxon:228407"
+     Region          1..267
+                     /region_name="Domain 13"
+                     /note="NCBI Domains"
+     SecStr          18..22
+                     /sec_str_type="sheet"
+                     /note="strand 123"
+     SecStr          36..47
+                     /sec_str_type="sheet"
+                     /note="strand 124"
+     SecStr          51..59
+                     /sec_str_type="sheet"
+                     /note="strand 125"
+     Het             bond(52)
+                     /heterogen="(NAG,1040)"
+     SecStr          67..70
+                     /sec_str_type="sheet"
+                     /note="strand 126"
+     SecStr          72..81
+                     /sec_str_type="sheet"
+                     /note="strand 127"
+     SecStr          84..92
+                     /sec_str_type="sheet"
+                     /note="strand 128"
+     SecStr          99..107
+                     /sec_str_type="sheet"
+                     /note="strand 129"
+     Het             bond(106)
+                     /heterogen="(NAG,1039)"
+     SecStr          108..113
+                     /sec_str_type="sheet"
+                     /note="strand 130"
+     SecStr          114..118
+                     /sec_str_type="sheet"
+                     /note="strand 131"
+     Bond            bond(115,146)
+                     /bond_type="disulfide"
+     SecStr          123..128
+                     /sec_str_type="sheet"
+                     /note="strand 132"
+     SecStr          133..136
+                     /sec_str_type="sheet"
+                     /note="strand 133"
+     SecStr          142..145
+                     /sec_str_type="sheet"
+                     /note="strand 134"
+     Het             bond(145)
+                     /heterogen="(NAG,1038)"
+     SecStr          146..153
+                     /sec_str_type="sheet"
+                     /note="strand 135"
+     SecStr          165..178
+                     /sec_str_type="sheet"
+                     /note="strand 136"
+     SecStr          179..187
+                     /sec_str_type="sheet"
+                     /note="strand 137"
+     SecStr          188..192
+                     /sec_str_type="sheet"
+                     /note="strand 138"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 139"
+     Het             bond(214)
+                     /heterogen="(NAG,1037)"
+     SecStr          216..226
+                     /sec_str_type="sheet"
+                     /note="strand 140"
+     SecStr          236..245
+                     /sec_str_type="sheet"
+                     /note="strand 141"
+     SecStr          246..251
+                     /sec_str_type="sheet"
+                     /note="strand 142"
+     SecStr          252..255
+                     /sec_str_type="sheet"
+                     /note="strand 143"
+     Het             bond(256)
+                     /heterogen="(NAG,1036)"
+     SecStr          258..265
+                     /sec_str_type="sheet"
+                     /note="strand 144"
+     Region          join(268..295,565..672)
+                     /region_name="Domain 14"
+                     /note="NCBI Domains"
+     SecStr          269..277
+                     /sec_str_type="helix"
+                     /note="helix 23"
+     SecStr          283..290
+                     /sec_str_type="sheet"
+                     /note="strand 145"
+     SecStr          291..294
+                     /sec_str_type="sheet"
+                     /note="strand 146"
+     Region          join(296..314,506..523)
+                     /region_name="Domain 15"
+                     /note="NCBI Domains"
+     SecStr          297..302
+                     /sec_str_type="sheet"
+                     /note="strand 147"
+     Region          305..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Het             bond(305)
+                     /heterogen="(NAG,1035)"
+     Region          315..505
+                     /region_name="Domain 16"
+                     /note="NCBI Domains"
+     Het             bond(317)
+                     /heterogen="(NAG,1034)"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 148"
+     SecStr          335..338
+                     /sec_str_type="sheet"
+                     /note="strand 149"
+     Het             bond(344)
+                     /heterogen="(NAG,1033)"
+     SecStr          349..354
+                     /sec_str_type="sheet"
+                     /note="strand 150"
+     SecStr          368..378
+                     /sec_str_type="sheet"
+                     /note="strand 151"
+     SecStr          405..413
+                     /sec_str_type="sheet"
+                     /note="strand 152"
+     Bond            bond(454,461)
+                     /bond_type="disulfide"
+     SecStr          479..489
+                     /sec_str_type="sheet"
+                     /note="strand 153"
+     SecStr          496..499
+                     /sec_str_type="sheet"
+                     /note="strand 154"
+     Bond            bond(511,563)
+                     /bond_type="disulfide"
+     SecStr          511..517
+                     /sec_str_type="sheet"
+                     /note="strand 155"
+     SecStr          518..523
+                     /sec_str_type="sheet"
+                     /note="strand 156"
+     Region          524..564
+                     /region_name="Domain 17"
+                     /note="NCBI Domains"
+     SecStr          524..527
+                     /sec_str_type="sheet"
+                     /note="strand 157"
+     SecStr          537..540
+                     /sec_str_type="sheet"
+                     /note="strand 158"
+     SecStr          547..551
+                     /sec_str_type="sheet"
+                     /note="strand 159"
+     SecStr          556..562
+                     /sec_str_type="sheet"
+                     /note="strand 160"
+     SecStr          566..574
+                     /sec_str_type="sheet"
+                     /note="strand 161"
+     SecStr          582..587
+                     /sec_str_type="sheet"
+                     /note="strand 162"
+     Het             bond(589)
+                     /heterogen="(NAG,1028)"
+     SecStr          590..598
+                     /sec_str_type="helix"
+                     /note="helix 24"
+     SecStr          601..604
+                     /sec_str_type="sheet"
+                     /note="strand 163"
+     SecStr          614..619
+                     /sec_str_type="sheet"
+                     /note="strand 164"
+     SecStr          620..625
+                     /sec_str_type="sheet"
+                     /note="strand 165"
+     SecStr          626..629
+                     /sec_str_type="sheet"
+                     /note="strand 166"
+     Region          635..1180
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Bond            bond(635,644)
+                     /bond_type="disulfide"
+     SecStr          636..640
+                     /sec_str_type="sheet"
+                     /note="strand 167"
+     SecStr          642..648
+                     /sec_str_type="sheet"
+                     /note="strand 168"
+     SecStr          662..666
+                     /sec_str_type="sheet"
+                     /note="strand 169"
+     Region          673..1228
+                     /region_name="Domain 18"
+                     /note="NCBI Domains"
+     Het             bond(678)
+                     /heterogen="(NAG,1029)"
+     SecStr          679..685
+                     /sec_str_type="sheet"
+                     /note="strand 170"
+     SecStr          686..698
+                     /sec_str_type="sheet"
+                     /note="strand 171"
+     Het             bond(686)
+                     /heterogen="(NAG,1030)"
+     SecStr          702..706
+                     /sec_str_type="sheet"
+                     /note="strand 172"
+     Bond            bond(712,718)
+                     /bond_type="disulfide"
+     SecStr          715..723
+                     /sec_str_type="helix"
+                     /note="helix 25"
+     SecStr          728..751
+                     /sec_str_type="helix"
+                     /note="helix 26"
+     SecStr          764..767
+                     /sec_str_type="sheet"
+                     /note="strand 173"
+     SecStr          768..771
+                     /sec_str_type="sheet"
+                     /note="strand 174"
+     Het             bond(770)
+                     /heterogen="(NAG,1031)"
+     SecStr          786..793
+                     /sec_str_type="helix"
+                     /note="helix 27"
+     Het             bond(819)
+                     /heterogen="(NAG,1014)"
+     SecStr          826..830
+                     /sec_str_type="sheet"
+                     /note="strand 175"
+     SecStr          836..852
+                     /sec_str_type="helix"
+                     /note="helix 28"
+     SecStr          867..878
+                     /sec_str_type="helix"
+                     /note="helix 29"
+     SecStr          889..907
+                     /sec_str_type="helix"
+                     /note="helix 30"
+     SecStr          915..933
+                     /sec_str_type="helix"
+                     /note="helix 31"
+     SecStr          959..989
+                     /sec_str_type="helix"
+                     /note="helix 32"
+     SecStr          990..1000
+                     /sec_str_type="helix"
+                     /note="helix 33"
+     Bond            bond(1001,1012)
+                     /bond_type="disulfide"
+     SecStr          1016..1026
+                     /sec_str_type="sheet"
+                     /note="strand 176"
+     SecStr          1027..1036
+                     /sec_str_type="sheet"
+                     /note="strand 177"
+     SecStr          1037..1043
+                     /sec_str_type="sheet"
+                     /note="strand 178"
+     Het             bond(1043)
+                     /heterogen="(NAG,1032)"
+     SecStr          1044..1047
+                     /sec_str_type="sheet"
+                     /note="strand 179"
+     SecStr          1057..1060
+                     /sec_str_type="sheet"
+                     /note="strand 180"
+     SecStr          1063..1068
+                     /sec_str_type="sheet"
+                     /note="strand 181"
+     SecStr          1069..1074
+                     /sec_str_type="sheet"
+                     /note="strand 182"
+     SecStr          1088..1091
+                     /sec_str_type="sheet"
+                     /note="strand 183"
+     Region          <1149..1228
+                     /region_name="RasGAP_C"
+                     /note="RasGAP C-terminus; cl27227"
+                     /db_xref="CDD:332048"
+ORIGIN      
+        1 sdldrcttfd dvqapnytqh tssmrgvyyp deifrsdtly ltqdlflpfy snvtgfhtin
+       61 htfdnpvipf kdgiyfaate ksnvvrgwvf gstmnnksqs viiinnstnv viracnfelc
+      121 dnpffavskp mgtqthtmif dnafnctfey isdafsldvs eksgnfkhlr efvfknkdgf
+      181 lyvykgyqpi dvvrdlpsgf ntlkpifklp lginitnfra iltafspaqd twgtsaaayf
+      241 vgylkpttfm lkydengtit davdcsqnpl aelkcsvksf eidkgiyqts nfrvvpsgdv
+      301 vrfpnitnlc pfgevfnatk fpsvyawerk kisncvadys vlynstffst fkcygvsatk
+      361 lndlcfsnvy adsfvvkgdd vrqiapgqtg viadynyklp ddfmgcvlaw ntrnidatst
+      421 gnynykyryl rhgklrpfer disnvpfspd gkpctppaln cywplndygf ytttgigyqp
+      481 yrvvvlsfel lnapatvcgp klstdliknq cvnfnfnglt gtgvltpssk rfqpfqqfgr
+      541 dvsdftdsvr dpktseildi spcsfggvsv itpgtnasse vavlyqdvnc tdvstaihad
+      601 qltpawriys tgnnvfqtqa gcligaehvd tsyecdipig agicasyhtv sllrstsqks
+      661 ivaytmslga dssiaysnnt iaiptnfsis ittevmpvsm aktsvdcnmy icgdstecan
+      721 lllqygsfct qlnralsgia aeqdrntrev faqvkqmykt ptlkyfggfn fsqilpdplk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqaaphgvv flhvtyvpsq ernfttapai chegkayfpr egvfvfngts wfitqrnffs
+     1081 pqiittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik ikrmkqiedk ieeieskqkk
+     1201 ieneiarikk iklvprgsle wshpqfek
+//
+
+LOCUS       5X58_B                  1228 aa            linear   VRL 05-MAY-2017
+DEFINITION  Chain B, Spike Glycoprotein.
+ACCESSION   5X58_B
+VERSION     5X58_B
+DBSOURCE    pdb: molecule 5X58, chain 66, release May 5, 2017;
+            deposition: Feb 15, 2017;
+            class: Viral Protein;
+            source: Mmdb_id: 150558, Pdb_id 1: 5X58;
+            Exp. method: Electron Microscopy.
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y., Zhang,X. and Gao,G.F.
+  TITLE     Cryo-EM structures of MERS-CoV and SARS-CoV spike glycoproteins
+            reveal the dynamic receptor binding domains
+  JOURNAL   Nat Commun 8, 15092 (2017)
+   PUBMED   28393837
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-FEB-2017)
+COMMENT     Prefusion Structure Of Sars-cov Spike Glycoprotein, Conformation 1.
+FEATURES             Location/Qualifiers
+     source          1..1228
+                     /organism="SARS coronavirus BJ01"
+                     /db_xref="taxon:228407"
+     Region          1..267
+                     /region_name="Domain 7"
+                     /note="NCBI Domains"
+     SecStr          18..22
+                     /sec_str_type="sheet"
+                     /note="strand 62"
+     SecStr          36..47
+                     /sec_str_type="sheet"
+                     /note="strand 63"
+     SecStr          51..59
+                     /sec_str_type="sheet"
+                     /note="strand 64"
+     Het             bond(52)
+                     /heterogen="(NAG,1026)"
+     SecStr          67..70
+                     /sec_str_type="sheet"
+                     /note="strand 65"
+     SecStr          72..81
+                     /sec_str_type="sheet"
+                     /note="strand 66"
+     SecStr          84..92
+                     /sec_str_type="sheet"
+                     /note="strand 67"
+     SecStr          99..107
+                     /sec_str_type="sheet"
+                     /note="strand 68"
+     Het             bond(106)
+                     /heterogen="(NAG,1025)"
+     SecStr          108..113
+                     /sec_str_type="sheet"
+                     /note="strand 69"
+     SecStr          114..118
+                     /sec_str_type="sheet"
+                     /note="strand 70"
+     Bond            bond(115,146)
+                     /bond_type="disulfide"
+     SecStr          123..128
+                     /sec_str_type="sheet"
+                     /note="strand 71"
+     SecStr          133..136
+                     /sec_str_type="sheet"
+                     /note="strand 72"
+     SecStr          142..145
+                     /sec_str_type="sheet"
+                     /note="strand 73"
+     Het             bond(145)
+                     /heterogen="(NAG,1024)"
+     SecStr          146..153
+                     /sec_str_type="sheet"
+                     /note="strand 74"
+     SecStr          165..178
+                     /sec_str_type="sheet"
+                     /note="strand 75"
+     SecStr          179..187
+                     /sec_str_type="sheet"
+                     /note="strand 76"
+     SecStr          188..192
+                     /sec_str_type="sheet"
+                     /note="strand 77"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 78"
+     Het             bond(214)
+                     /heterogen="(NAG,1023)"
+     SecStr          216..225
+                     /sec_str_type="sheet"
+                     /note="strand 79"
+     SecStr          236..245
+                     /sec_str_type="sheet"
+                     /note="strand 80"
+     SecStr          246..251
+                     /sec_str_type="sheet"
+                     /note="strand 81"
+     SecStr          252..255
+                     /sec_str_type="sheet"
+                     /note="strand 82"
+     Het             bond(256)
+                     /heterogen="(NAG,1022)"
+     SecStr          258..265
+                     /sec_str_type="sheet"
+                     /note="strand 83"
+     Region          join(268..295,565..672)
+                     /region_name="Domain 8"
+                     /note="NCBI Domains"
+     SecStr          269..277
+                     /sec_str_type="helix"
+                     /note="helix 12"
+     SecStr          283..290
+                     /sec_str_type="sheet"
+                     /note="strand 84"
+     SecStr          291..294
+                     /sec_str_type="sheet"
+                     /note="strand 85"
+     Region          join(296..314,506..523)
+                     /region_name="Domain 9"
+                     /note="NCBI Domains"
+     SecStr          297..302
+                     /sec_str_type="sheet"
+                     /note="strand 86"
+     Region          305..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Het             bond(305)
+                     /heterogen="(NAG,1021)"
+     Region          315..505
+                     /region_name="Domain 10"
+                     /note="NCBI Domains"
+     Het             bond(317)
+                     /heterogen="(NAG,1020)"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 87"
+     SecStr          335..338
+                     /sec_str_type="sheet"
+                     /note="strand 88"
+     Het             bond(344)
+                     /heterogen="(NAG,1019)"
+     SecStr          349..354
+                     /sec_str_type="sheet"
+                     /note="strand 89"
+     SecStr          368..378
+                     /sec_str_type="sheet"
+                     /note="strand 90"
+     SecStr          405..413
+                     /sec_str_type="sheet"
+                     /note="strand 91"
+     Bond            bond(454,461)
+                     /bond_type="disulfide"
+     SecStr          479..489
+                     /sec_str_type="sheet"
+                     /note="strand 92"
+     SecStr          496..499
+                     /sec_str_type="sheet"
+                     /note="strand 93"
+     Bond            bond(511,563)
+                     /bond_type="disulfide"
+     SecStr          511..517
+                     /sec_str_type="sheet"
+                     /note="strand 94"
+     SecStr          518..523
+                     /sec_str_type="sheet"
+                     /note="strand 95"
+     Region          524..564
+                     /region_name="Domain 11"
+                     /note="NCBI Domains"
+     SecStr          524..527
+                     /sec_str_type="sheet"
+                     /note="strand 96"
+     SecStr          537..540
+                     /sec_str_type="sheet"
+                     /note="strand 97"
+     SecStr          547..551
+                     /sec_str_type="sheet"
+                     /note="strand 98"
+     SecStr          556..562
+                     /sec_str_type="sheet"
+                     /note="strand 99"
+     SecStr          566..574
+                     /sec_str_type="sheet"
+                     /note="strand 100"
+     SecStr          582..587
+                     /sec_str_type="sheet"
+                     /note="strand 101"
+     Het             bond(589)
+                     /heterogen="(NAG,1014)"
+     SecStr          590..598
+                     /sec_str_type="helix"
+                     /note="helix 13"
+     SecStr          601..604
+                     /sec_str_type="sheet"
+                     /note="strand 102"
+     SecStr          614..619
+                     /sec_str_type="sheet"
+                     /note="strand 103"
+     SecStr          620..625
+                     /sec_str_type="sheet"
+                     /note="strand 104"
+     SecStr          626..629
+                     /sec_str_type="sheet"
+                     /note="strand 105"
+     Region          635..1180
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Bond            bond(635,644)
+                     /bond_type="disulfide"
+     SecStr          636..640
+                     /sec_str_type="sheet"
+                     /note="strand 106"
+     SecStr          642..648
+                     /sec_str_type="sheet"
+                     /note="strand 107"
+     SecStr          660..666
+                     /sec_str_type="sheet"
+                     /note="strand 108"
+     Region          673..1228
+                     /region_name="Domain 12"
+                     /note="NCBI Domains"
+     Het             bond(678)
+                     /heterogen="(NAG,1015)"
+     SecStr          679..685
+                     /sec_str_type="sheet"
+                     /note="strand 109"
+     SecStr          686..698
+                     /sec_str_type="sheet"
+                     /note="strand 110"
+     Het             bond(686)
+                     /heterogen="(NAG,1016)"
+     SecStr          702..706
+                     /sec_str_type="sheet"
+                     /note="strand 111"
+     Bond            bond(712,718)
+                     /bond_type="disulfide"
+     SecStr          715..723
+                     /sec_str_type="helix"
+                     /note="helix 14"
+     SecStr          728..751
+                     /sec_str_type="helix"
+                     /note="helix 15"
+     SecStr          764..767
+                     /sec_str_type="sheet"
+                     /note="strand 112"
+     SecStr          768..771
+                     /sec_str_type="sheet"
+                     /note="strand 113"
+     Het             bond(770)
+                     /heterogen="(NAG,1017)"
+     SecStr          786..793
+                     /sec_str_type="helix"
+                     /note="helix 16"
+     Het             bond(819)
+                     /heterogen="(NAG,1013)"
+     SecStr          826..830
+                     /sec_str_type="sheet"
+                     /note="strand 114"
+     SecStr          836..852
+                     /sec_str_type="helix"
+                     /note="helix 17"
+     SecStr          867..878
+                     /sec_str_type="helix"
+                     /note="helix 18"
+     SecStr          889..907
+                     /sec_str_type="helix"
+                     /note="helix 19"
+     SecStr          915..933
+                     /sec_str_type="helix"
+                     /note="helix 20"
+     SecStr          959..989
+                     /sec_str_type="helix"
+                     /note="helix 21"
+     SecStr          990..1000
+                     /sec_str_type="helix"
+                     /note="helix 22"
+     Bond            bond(1001,1012)
+                     /bond_type="disulfide"
+     SecStr          1016..1026
+                     /sec_str_type="sheet"
+                     /note="strand 115"
+     SecStr          1027..1036
+                     /sec_str_type="sheet"
+                     /note="strand 116"
+     SecStr          1037..1043
+                     /sec_str_type="sheet"
+                     /note="strand 117"
+     Het             bond(1043)
+                     /heterogen="(NAG,1018)"
+     SecStr          1044..1047
+                     /sec_str_type="sheet"
+                     /note="strand 118"
+     SecStr          1057..1060
+                     /sec_str_type="sheet"
+                     /note="strand 119"
+     SecStr          1063..1068
+                     /sec_str_type="sheet"
+                     /note="strand 120"
+     SecStr          1069..1074
+                     /sec_str_type="sheet"
+                     /note="strand 121"
+     SecStr          1088..1091
+                     /sec_str_type="sheet"
+                     /note="strand 122"
+     Region          <1149..1228
+                     /region_name="RasGAP_C"
+                     /note="RasGAP C-terminus; cl27227"
+                     /db_xref="CDD:332048"
+ORIGIN      
+        1 sdldrcttfd dvqapnytqh tssmrgvyyp deifrsdtly ltqdlflpfy snvtgfhtin
+       61 htfdnpvipf kdgiyfaate ksnvvrgwvf gstmnnksqs viiinnstnv viracnfelc
+      121 dnpffavskp mgtqthtmif dnafnctfey isdafsldvs eksgnfkhlr efvfknkdgf
+      181 lyvykgyqpi dvvrdlpsgf ntlkpifklp lginitnfra iltafspaqd twgtsaaayf
+      241 vgylkpttfm lkydengtit davdcsqnpl aelkcsvksf eidkgiyqts nfrvvpsgdv
+      301 vrfpnitnlc pfgevfnatk fpsvyawerk kisncvadys vlynstffst fkcygvsatk
+      361 lndlcfsnvy adsfvvkgdd vrqiapgqtg viadynyklp ddfmgcvlaw ntrnidatst
+      421 gnynykyryl rhgklrpfer disnvpfspd gkpctppaln cywplndygf ytttgigyqp
+      481 yrvvvlsfel lnapatvcgp klstdliknq cvnfnfnglt gtgvltpssk rfqpfqqfgr
+      541 dvsdftdsvr dpktseildi spcsfggvsv itpgtnasse vavlyqdvnc tdvstaihad
+      601 qltpawriys tgnnvfqtqa gcligaehvd tsyecdipig agicasyhtv sllrstsqks
+      661 ivaytmslga dssiaysnnt iaiptnfsis ittevmpvsm aktsvdcnmy icgdstecan
+      721 lllqygsfct qlnralsgia aeqdrntrev faqvkqmykt ptlkyfggfn fsqilpdplk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqaaphgvv flhvtyvpsq ernfttapai chegkayfpr egvfvfngts wfitqrnffs
+     1081 pqiittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik ikrmkqiedk ieeieskqkk
+     1201 ieneiarikk iklvprgsle wshpqfek
+//
+
+LOCUS       5X58_A                  1228 aa            linear   VRL 05-MAY-2017
+DEFINITION  Chain A, Spike Glycoprotein.
+ACCESSION   5X58_A
+VERSION     5X58_A
+DBSOURCE    pdb: molecule 5X58, chain 65, release May 5, 2017;
+            deposition: Feb 15, 2017;
+            class: Viral Protein;
+            source: Mmdb_id: 150558, Pdb_id 1: 5X58;
+            Exp. method: Electron Microscopy.
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y., Zhang,X. and Gao,G.F.
+  TITLE     Cryo-EM structures of MERS-CoV and SARS-CoV spike glycoproteins
+            reveal the dynamic receptor binding domains
+  JOURNAL   Nat Commun 8, 15092 (2017)
+   PUBMED   28393837
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1228)
+  AUTHORS   Yuan,Y., Cao,D., Zhang,Y., Ma,J., Qi,J., Wang,Q., Lu,G., Wu,Y.,
+            Yan,J., Shi,Y. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-FEB-2017)
+COMMENT     Prefusion Structure Of Sars-cov Spike Glycoprotein, Conformation 1.
+FEATURES             Location/Qualifiers
+     source          1..1228
+                     /organism="SARS coronavirus BJ01"
+                     /db_xref="taxon:228407"
+     Region          1..267
+                     /region_name="Domain 1"
+                     /note="NCBI Domains"
+     SecStr          18..22
+                     /sec_str_type="sheet"
+                     /note="strand 1"
+     SecStr          36..47
+                     /sec_str_type="sheet"
+                     /note="strand 2"
+     SecStr          51..59
+                     /sec_str_type="sheet"
+                     /note="strand 3"
+     Het             bond(52)
+                     /heterogen="(NAG,1011)"
+     SecStr          67..70
+                     /sec_str_type="sheet"
+                     /note="strand 4"
+     SecStr          72..81
+                     /sec_str_type="sheet"
+                     /note="strand 5"
+     SecStr          84..92
+                     /sec_str_type="sheet"
+                     /note="strand 6"
+     SecStr          99..107
+                     /sec_str_type="sheet"
+                     /note="strand 7"
+     Het             bond(106)
+                     /heterogen="(NAG,1010)"
+     SecStr          108..113
+                     /sec_str_type="sheet"
+                     /note="strand 8"
+     SecStr          114..118
+                     /sec_str_type="sheet"
+                     /note="strand 9"
+     Bond            bond(115,146)
+                     /bond_type="disulfide"
+     SecStr          123..128
+                     /sec_str_type="sheet"
+                     /note="strand 10"
+     SecStr          133..136
+                     /sec_str_type="sheet"
+                     /note="strand 11"
+     SecStr          142..145
+                     /sec_str_type="sheet"
+                     /note="strand 12"
+     Het             bond(145)
+                     /heterogen="(NAG,1009)"
+     SecStr          146..153
+                     /sec_str_type="sheet"
+                     /note="strand 13"
+     SecStr          165..178
+                     /sec_str_type="sheet"
+                     /note="strand 14"
+     SecStr          179..187
+                     /sec_str_type="sheet"
+                     /note="strand 15"
+     SecStr          188..192
+                     /sec_str_type="sheet"
+                     /note="strand 16"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 17"
+     Het             bond(214)
+                     /heterogen="(NAG,1008)"
+     SecStr          216..225
+                     /sec_str_type="sheet"
+                     /note="strand 18"
+     SecStr          236..245
+                     /sec_str_type="sheet"
+                     /note="strand 19"
+     SecStr          246..251
+                     /sec_str_type="sheet"
+                     /note="strand 20"
+     SecStr          252..255
+                     /sec_str_type="sheet"
+                     /note="strand 21"
+     Het             bond(256)
+                     /heterogen="(NAG,1007)"
+     SecStr          258..265
+                     /sec_str_type="sheet"
+                     /note="strand 22"
+     Region          join(268..295,565..672)
+                     /region_name="Domain 2"
+                     /note="NCBI Domains"
+     SecStr          269..277
+                     /sec_str_type="helix"
+                     /note="helix 1"
+     SecStr          283..290
+                     /sec_str_type="sheet"
+                     /note="strand 23"
+     SecStr          291..294
+                     /sec_str_type="sheet"
+                     /note="strand 24"
+     Region          join(296..314,506..523)
+                     /region_name="Domain 3"
+                     /note="NCBI Domains"
+     SecStr          297..302
+                     /sec_str_type="sheet"
+                     /note="strand 25"
+     Region          305..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Het             bond(305)
+                     /heterogen="(NAG,1006)"
+     Region          315..505
+                     /region_name="Domain 4"
+                     /note="NCBI Domains"
+     Het             bond(317)
+                     /heterogen="(NAG,1005)"
+     SecStr          327..332
+                     /sec_str_type="sheet"
+                     /note="strand 26"
+     SecStr          335..338
+                     /sec_str_type="sheet"
+                     /note="strand 27"
+     Het             bond(344)
+                     /heterogen="(NAG,1004)"
+     SecStr          349..354
+                     /sec_str_type="sheet"
+                     /note="strand 28"
+     SecStr          368..378
+                     /sec_str_type="sheet"
+                     /note="strand 29"
+     SecStr          405..413
+                     /sec_str_type="sheet"
+                     /note="strand 30"
+     Bond            bond(454,461)
+                     /bond_type="disulfide"
+     SecStr          479..489
+                     /sec_str_type="sheet"
+                     /note="strand 31"
+     SecStr          496..499
+                     /sec_str_type="sheet"
+                     /note="strand 32"
+     Bond            bond(511,563)
+                     /bond_type="disulfide"
+     SecStr          511..517
+                     /sec_str_type="sheet"
+                     /note="strand 33"
+     SecStr          518..523
+                     /sec_str_type="sheet"
+                     /note="strand 34"
+     Region          524..564
+                     /region_name="Domain 5"
+                     /note="NCBI Domains"
+     SecStr          524..527
+                     /sec_str_type="sheet"
+                     /note="strand 35"
+     SecStr          537..540
+                     /sec_str_type="sheet"
+                     /note="strand 36"
+     SecStr          547..551
+                     /sec_str_type="sheet"
+                     /note="strand 37"
+     SecStr          556..562
+                     /sec_str_type="sheet"
+                     /note="strand 38"
+     SecStr          566..574
+                     /sec_str_type="sheet"
+                     /note="strand 39"
+     SecStr          582..587
+                     /sec_str_type="sheet"
+                     /note="strand 40"
+     SecStr          590..598
+                     /sec_str_type="helix"
+                     /note="helix 2"
+     SecStr          601..604
+                     /sec_str_type="sheet"
+                     /note="strand 41"
+     SecStr          614..619
+                     /sec_str_type="sheet"
+                     /note="strand 42"
+     SecStr          620..625
+                     /sec_str_type="sheet"
+                     /note="strand 43"
+     SecStr          626..629
+                     /sec_str_type="sheet"
+                     /note="strand 44"
+     Region          635..1180
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Bond            bond(635,644)
+                     /bond_type="disulfide"
+     SecStr          636..640
+                     /sec_str_type="sheet"
+                     /note="strand 45"
+     SecStr          642..648
+                     /sec_str_type="sheet"
+                     /note="strand 46"
+     SecStr          660..666
+                     /sec_str_type="sheet"
+                     /note="strand 47"
+     Region          673..1228
+                     /region_name="Domain 6"
+                     /note="NCBI Domains"
+     Het             bond(678)
+                     /heterogen="(NAG,1000)"
+     SecStr          679..685
+                     /sec_str_type="sheet"
+                     /note="strand 48"
+     SecStr          686..698
+                     /sec_str_type="sheet"
+                     /note="strand 49"
+     Het             bond(686)
+                     /heterogen="(NAG,1001)"
+     SecStr          702..706
+                     /sec_str_type="sheet"
+                     /note="strand 50"
+     Bond            bond(712,718)
+                     /bond_type="disulfide"
+     SecStr          715..723
+                     /sec_str_type="helix"
+                     /note="helix 3"
+     SecStr          728..751
+                     /sec_str_type="helix"
+                     /note="helix 4"
+     SecStr          764..767
+                     /sec_str_type="sheet"
+                     /note="strand 51"
+     SecStr          768..771
+                     /sec_str_type="sheet"
+                     /note="strand 52"
+     Het             bond(770)
+                     /heterogen="(NAG,1002)"
+     SecStr          786..793
+                     /sec_str_type="helix"
+                     /note="helix 5"
+     Het             bond(819)
+                     /heterogen="(NAG,1028)"
+     SecStr          826..830
+                     /sec_str_type="sheet"
+                     /note="strand 53"
+     SecStr          836..852
+                     /sec_str_type="helix"
+                     /note="helix 6"
+     SecStr          867..878
+                     /sec_str_type="helix"
+                     /note="helix 7"
+     SecStr          889..907
+                     /sec_str_type="helix"
+                     /note="helix 8"
+     SecStr          915..933
+                     /sec_str_type="helix"
+                     /note="helix 9"
+     SecStr          959..989
+                     /sec_str_type="helix"
+                     /note="helix 10"
+     SecStr          990..1000
+                     /sec_str_type="helix"
+                     /note="helix 11"
+     Bond            bond(1001,1012)
+                     /bond_type="disulfide"
+     SecStr          1016..1026
+                     /sec_str_type="sheet"
+                     /note="strand 54"
+     SecStr          1027..1036
+                     /sec_str_type="sheet"
+                     /note="strand 55"
+     SecStr          1037..1043
+                     /sec_str_type="sheet"
+                     /note="strand 56"
+     Het             bond(1043)
+                     /heterogen="(NAG,1003)"
+     SecStr          1044..1047
+                     /sec_str_type="sheet"
+                     /note="strand 57"
+     SecStr          1057..1060
+                     /sec_str_type="sheet"
+                     /note="strand 58"
+     SecStr          1063..1068
+                     /sec_str_type="sheet"
+                     /note="strand 59"
+     SecStr          1069..1074
+                     /sec_str_type="sheet"
+                     /note="strand 60"
+     SecStr          1088..1091
+                     /sec_str_type="sheet"
+                     /note="strand 61"
+     Region          <1149..1228
+                     /region_name="RasGAP_C"
+                     /note="RasGAP C-terminus; cl27227"
+                     /db_xref="CDD:332048"
+ORIGIN      
+        1 sdldrcttfd dvqapnytqh tssmrgvyyp deifrsdtly ltqdlflpfy snvtgfhtin
+       61 htfdnpvipf kdgiyfaate ksnvvrgwvf gstmnnksqs viiinnstnv viracnfelc
+      121 dnpffavskp mgtqthtmif dnafnctfey isdafsldvs eksgnfkhlr efvfknkdgf
+      181 lyvykgyqpi dvvrdlpsgf ntlkpifklp lginitnfra iltafspaqd twgtsaaayf
+      241 vgylkpttfm lkydengtit davdcsqnpl aelkcsvksf eidkgiyqts nfrvvpsgdv
+      301 vrfpnitnlc pfgevfnatk fpsvyawerk kisncvadys vlynstffst fkcygvsatk
+      361 lndlcfsnvy adsfvvkgdd vrqiapgqtg viadynyklp ddfmgcvlaw ntrnidatst
+      421 gnynykyryl rhgklrpfer disnvpfspd gkpctppaln cywplndygf ytttgigyqp
+      481 yrvvvlsfel lnapatvcgp klstdliknq cvnfnfnglt gtgvltpssk rfqpfqqfgr
+      541 dvsdftdsvr dpktseildi spcsfggvsv itpgtnasse vavlyqdvnc tdvstaihad
+      601 qltpawriys tgnnvfqtqa gcligaehvd tsyecdipig agicasyhtv sllrstsqks
+      661 ivaytmslga dssiaysnnt iaiptnfsis ittevmpvsm aktsvdcnmy icgdstecan
+      721 lllqygsfct qlnralsgia aeqdrntrev faqvkqmykt ptlkyfggfn fsqilpdplk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqaaphgvv flhvtyvpsq ernfttapai chegkayfpr egvfvfngts wfitqrnffs
+     1081 pqiittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik ikrmkqiedk ieeieskqkk
+     1201 ieneiarikk iklvprgsle wshpqfek
+//
+
+LOCUS       AAS48453                 165 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike protein, partial [SARS coronavirus BJ01].
+ACCESSION   AAS48453
+VERSION     AAS48453.1
+DBSOURCE    accession AY536757.3
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 165)
+  AUTHORS   Li,T., Li,X., Chang,Z. and Liu,L.
+  TITLE     Identification of SARS-CoV mRNA leader sequence
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 165)
+  AUTHORS   Li,T., Li,X., Liu,L. and Chang,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-JAN-2004) Institute of Biomedicine,Tsinghua
+            University, Beijing, Beijing 100084, China
+REFERENCE   3  (residues 1 to 165)
+  AUTHORS   Li,T., Li,X., Liu,L. and Chang,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JUL-2004) Institute of Biomedicine,Tsinghua
+            University, Beijing, Beijing 100084, China
+  REMARK    Sequence update by submitter
+REFERENCE   4  (residues 1 to 165)
+  AUTHORS   Li,T., Li,X., Chang,Z. and Liu,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-SEP-2004) Institute of Biomedicine, Tsinghua
+            University, Beijing 100084, China
+  REMARK    Sequence update by submitter
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..165
+                     /organism="SARS coronavirus BJ01"
+                     /strain="BJ01"
+                     /db_xref="taxon:228407"
+                     /country="China"
+     Protein         1..>165
+                     /product="spike protein"
+     CDS             1..165
+                     /coded_by="AY536757.3:73..>569"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafkct feyis
+//
+
+LOCUS       AAP30030                1255 aa            linear   VRL 01-SEP-2009
+DEFINITION  spike glycoprotein S [SARS coronavirus BJ01].
+ACCESSION   AAP30030
+VERSION     AAP30030.1
+DBSOURCE    accession AY278488.2
+KEYWORDS    .
+SOURCE      SARS coronavirus BJ01
+  ORGANISM  SARS coronavirus BJ01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Wu,Q., Zhang,Y., Lu,H., Wang,J., He,X., Liu,Y., Ye,C., Lin,W.,
+            Hu,J., Ji,J., Xu,J., Ye,J., Hu,Y., Chen,W., Li,S., Wang,J.,
+            Wang,J., Bi,S. and Yang,H.
+  TITLE     The E protein is a multifunctional membrane protein of SARS-CoV
+  JOURNAL   Genomics Proteomics Bioinformatics 1 (2), 131-144 (2003)
+   PUBMED   15626343
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Qin,E., Zhu,Q., Yu,M., Fan,B., Chang,G., Si,B., Yang,B., Peng,W.,
+            Jiang,T., Liu,B., Deng,Y., Liu,H., Zhang,Y., Wang,C., Li,Y.,
+            Gan,Y., Li,X., Lu,F., Tan,G., Yang,R., Cao,W., Wang,J., Chen,W.,
+            Cong,L., Deng,Y., Dong,W., Han,Y., Hu,W., Lei,M., Li,C., Li,G.,
+            Li,G., Li,H., Li,S., Li,S., Li,W., Li,W., Lin,W., Liu,J., Liu,Z.,
+            Lu,H., Ni,P., Qi,Q., Sun,Y., Tang,L., Tong,Z., Wang,J., Wang,X.,
+            Wu,Q., Xi,Y., Xu,Z., Yang,L., Ye,C., Ye,J., Zhang,B., Zhang,F.,
+            Zhang,J., Zhang,X., Zhou,J. and Yang,H.
+  TITLE     SARS coronavirus BJ01 isolate genome sequence
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Qin,E., Zhu,Q., Yu,M., Fan,B., Chang,G., Si,B., Yang,B., Peng,W.,
+            Jiang,T., Liu,B., Deng,Y., Liu,H., Zhang,Y., Wang,C., Li,Y.,
+            Gan,Y., Li,X., Lu,F., Tan,G., Yang,R., Cao,W., Wang,J., Chen,W.,
+            Cong,L., Deng,Y., Dong,W., Han,Y., Hu,W., Lei,M., Li,C., Li,G.,
+            Li,G., Li,H., Li,S., Li,S., Li,W., Li,W., Lin,W., Liu,J., Liu,Z.,
+            Lu,H., Ni,P., Qi,Q., Sun,Y., Tang,L., Tong,Z., Wang,J., Wang,X.,
+            Wu,Q., Xi,Y., Xu,Z., Yang,L., Ye,C., Ye,J., Zhang,B., Zhang,F.,
+            Zhang,J., Zhang,X., Zhou,J. and Yang,H.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-APR-2003) Institute of Microbiology and Epidemiology,
+            Academy of Military Medical Sciences / Beijing Genomics Institute,
+            Chinese Academy of Sciences, Beijing, Beijing 101300, China
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus BJ01"
+                     /isolate="BJ01"
+                     /db_xref="taxon:228407"
+     Protein         1..1255
+                     /product="spike glycoprotein S"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY278488.2:21473..25240"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

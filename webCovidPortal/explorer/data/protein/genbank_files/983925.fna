@@ -1,0 +1,86 @@
+LOCUS       ADX59474                1278 aa            linear   VRL 25-MAY-2012
+DEFINITION  spike protein [Rousettus bat coronavirus/Kenya/KY06/2006].
+ACCESSION   ADX59474
+VERSION     ADX59474.1
+DBSOURCE    accession HQ728483.1
+KEYWORDS    .
+SOURCE      Rousettus bat coronavirus/Kenya/KY06/2006
+  ORGANISM  Rousettus bat coronavirus/Kenya/KY06/2006
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1278)
+  AUTHORS   Tong,S., Conrardy,C., Ruone,S., Kuzmin,I.V., Guo,X., Tao,Y.,
+            Niezgoda,M., Haynes,L., Agwanda,B., Breiman,R.F., Anderson,L.J. and
+            Rupprecht,C.E.
+  TITLE     Detection of novel SARS-like and other coronaviruses in bats from
+            Kenya
+  JOURNAL   Emerging Infect. Dis. 15 (3), 482-485 (2009)
+   PUBMED   19239771
+REFERENCE   2  (residues 1 to 1278)
+  AUTHORS   Tao,Y., Tang,K., Shi,M., Conrardy,C., Li,K.S., Lau,S.K.,
+            Anderson,L.J. and Tong,S.
+  TITLE     Genomic characterization of seven distinct bat coronaviruses in
+            Kenya
+  JOURNAL   Virus Res. 167 (1), 67-73 (2012)
+   PUBMED   22561208
+REFERENCE   3  (residues 1 to 1278)
+  AUTHORS   Tao,Y., Tang,K., Conrardy,C., Kuzmin,I., Agwanda,B., Li,K.S.M.,
+            Lau,S.K.P., Niezgoda,M., Breiman,R.F., Rupprecht,C.E.,
+            Anderson,L.J. and Tong,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-DEC-2010) Division of Viral Diseases, Centers for
+            Disease Control and Prevention, 1600 Clifton Rd, Atlanta, GA 30033,
+            USA
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1278
+                     /organism="Rousettus bat coronavirus/Kenya/KY06/2006"
+                     /strain="BtKY06"
+                     /isolation_source="fecal swab"
+                     /host="Rousettus aegyptiacus"
+                     /db_xref="taxon:983925"
+                     /country="Kenya"
+                     /collection_date="Aug-2006"
+     Protein         1..1278
+                     /product="spike protein"
+     Region          371..552
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <524..584
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          704..1266
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1278
+                     /gene="S"
+                     /coded_by="HQ728483.1:8047..11883"
+ORIGIN      
+        1 mrlivvlsla liacdasatr pecfdnsnfq lhplnhtvnt tslvvnvvnl llpdpyiays
+       61 gqtlrqnlfm adlsrtmiyp itppakdrng gyiynttils vasglfvhtw myrqdsastk
+      121 ycqepfgvaf gdtfiqdria ivviapdrlg swaqstyrsv ttvhlvvcsn atlcinpgfn
+      181 rwgpagniia snalvdhsns cfvnnsfnvn istsrinlaf lfkdgdllvy hsnwlpkgsf
+      241 dfnqsfplqy fmtlpvggnl praqffqsiv rqggtnngvd dqctdfninl hiahlvnrdl
+      301 lvsyfdngsv anaadcadsa sqelycvtgs fqpptgvypl sryraqvdgf vrvtqrgayc
+      361 rppynalldp pqpvvwrrfm lydcafdfsv vidnlpthql qcygisprrl asmcyssvti
+      421 dvmrinathl nnllnrvpds fslynyavpd dfygclhafy lnsttayava nqfrinpggr
+      481 qsnsayiatv lnaaeyaksy fmyglavitl kpasgnklvc piandtdiit drcvqyslyg
+      541 ytgtgvlstn tsltvpkgkv ftasstgaii gvfingtmys itpcvtvpvs vgyhanferv
+      601 llfnglscsq rsravsrpts tlwslsvsdg saidtlsgcv vnailrngtt vstcsmplgn
+      661 slclindttv avaraaglpr lylvnydply dnnsatpmtp vywvkiptnf tltatdefiq
+      721 tnapkvtidc arylcgdssr clnvllhygt fcddinkala kvntildgal lslskelsin
+      781 trdeiqsfaf ggdynftglm gclgpncgat tyrsalsdll ydkvkitdpg fmqsyqkcid
+      841 sqwggsvrdl lctqtyngia vlppivspam qalytsllvg avassgytfg itsagvipfa
+      901 tqlqfrlngi gvttqvlven qkliassfnn alvniqkgft etsialskmq dvinqhaaql
+      961 qtlvtqlgns fgaisssine ifsrleglaa naevdrling rmmvlntyvt qlllqaseak
+     1021 aqnalaiqki secvkaqslr ndfcgngthv lsipqlapng vlfihyaytp tdyalvqtsa
+     1081 glcyngtgya plrgmfvlpn ntnmwhftsm qfynpvnisy sntqiltscs vnytsvnysv
+     1141 lqpsapsdyd fqkefdkfyk nlstsfnntf npndfnfsmv dvtaqitslh qvvnqlnqsf
+     1201 idlkklnvye ktikwpwyiw lamiagivgl vlavimlmcm tnccscfkgm cdcrrccgsy
+     1261 dsyddvypav rvnkkrtv
+//
+

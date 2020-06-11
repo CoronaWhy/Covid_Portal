@@ -1,0 +1,83 @@
+LOCUS       AID16631                1357 aa            linear   VRL 25-AUG-2015
+DEFINITION  spike structural protein [Longquan Aa mouse coronavirus].
+ACCESSION   AID16631
+VERSION     AID16631.1
+DBSOURCE    accession KF294357.1
+KEYWORDS    .
+SOURCE      Longquan Aa mouse coronavirus
+  ORGANISM  Longquan Aa mouse coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1357)
+  AUTHORS   Wang,W., Lin,X.D., Guo,W.P., Zhou,R.H., Wang,M.R., Wang,C.Q.,
+            Ge,S., Mei,S.H., Li,M.H., Shi,M., Holmes,E.C. and Zhang,Y.Z.
+  TITLE     Discovery, diversity and evolution of novel coronaviruses sampled
+            from rodents in China
+  JOURNAL   Virology 474, 19-27 (2015)
+   PUBMED   25463600
+REFERENCE   2  (residues 1 to 1357)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Discovery and phylogeny of coronaviruses harbored by birds and
+            mammals
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1357)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2013) Department of Zoonoses, National Institute
+            of Communicable Disease Control and Prevention, Chinese Center for
+            Disease Control and Prevention, Changping Liuzi 5, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1357
+                     /organism="Longquan Aa mouse coronavirus"
+                     /isolate="Longquan-343"
+                     /host="Apodemus agrarius"
+                     /db_xref="taxon:1508222"
+                     /country="China"
+                     /collection_date="2011"
+     Protein         1..1357
+                     /product="spike structural protein"
+                     /note="ribosomal slippage"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          327..514
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          794..1340
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1357
+                     /coded_by="KF294357.1:23376..27449"
+                     /ribosomal_slippage
+ORIGIN      
+        1 mviiflflla kpifgiigdf kctqmwinsa atsqpsiste vvdvfngvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivfgt sfvnttytiv iepstqving kllgtlsasv cqytmceypn tacnpalgng
+      181 rpslwhasig avpclyqrnf tynvaadniy fhfyqdggtf yayvgdespi ttllfqvylg
+      241 tvvthyyvlp fvcnaretye ywvtpltkre yllvfdgngv itnavdcasd hmseiqcmtq
+      301 nikpltgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtkknlsgwn nrygfgefkp lnsgqnydky saiystmcfn
+      481 vpndycpcki gcptgtvvrp qigtstsgqp iydcpgypwl tsssckqtpa tvaigqhcpg
+      541 vgvvadecap smpgnsiltc scsntqysag ssqpyhyawt sfgadtclsg ancqvfanvl
+      601 lnnvnsgstc atdlqkante iivgvcvkyd lygtsgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvvr
+      721 yfdsylgcvv naddditeav gscnltvgsg ycvdyqllga pretytgyrl tnfepfvptl
+      781 vndsvesvgg lyeiqiptef tignleefvq ttspkvtidc aafvcgdyaa creqlveygs
+      841 fcdnintiln evnsmidtsq yqlastlmng vtlssrlkdg isfnqddinf ssvmgcvgsn
+      901 cishrsaied ilfnkvklsd vgfvdaynnc tqgseirdlv cvqsfngikv lppvlsesqm
+      961 sgyatgvgls mlfppfsaaa gvpftmsvqy ringlgvtmd vlnqnqklia nafnnaltai
+     1021 qngfdatnsa lakiqsvvna naealnnllq qlsnrfgais sslqeilsrl daleaevqid
+     1081 rlingrltal nayvsqqlsd itlvkfsasq aiekinecvk sqstrvnfcg ngnhilslvq
+     1141 napyglyfih fsyqptkytt ayvspglcla gdvgvapksg yfikvndkwm ftgsgyyhpe
+     1201 pitndnvimm sncavnftka pdvvlntsip nlpdfkeeld kwfknqssva pdlsldleri
+     1261 nvtfldlqee mdriqdaikk lndsyinlke igtyemyvkw pwyvwlligl agvavlvllf
+     1321 fvccctgcga scfkkcgscc ddygghqdiv vktshdd
+//
+

@@ -1,0 +1,66 @@
+LOCUS       ABF68958                1255 aa            linear   VRL 30-APR-2007
+DEFINITION  spike glycoprotein [SARS coronavirus CS21].
+ACCESSION   ABF68958
+VERSION     ABF68958.1
+DBSOURCE    accession DQ514531.1
+KEYWORDS    .
+SOURCE      SARS coronavirus CS21
+  ORGANISM  SARS coronavirus CS21
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Deng,F., Song,H., Pan,C., Zhang,G., Wang,H., An,X., Tang,L.,
+            Chen,Z., Wang,H., Zhao,G. and Hu,Z.
+  TITLE     Investigation of SARS-CoV like virus in farmed palm civets in China
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Deng,F., Song,H., Pan,C., Zhang,G., Wang,H., An,X., Tang,L.,
+            Chen,Z., Wang,H., Zhao,G. and Hu,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-APR-2006) State Key Laboratory of Virology, Wuhan
+            Institute of Virology, Chinese Acedamy of Sciences, Xiaohongshan
+            44, Wuchang, Wuhan, Hubei 430071, P.R. China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus CS21"
+                     /isolate="CS21"
+                     /host="palm civet cats"
+                     /db_xref="taxon:385683"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="DQ514531.1:394..4161"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp apncywplng
+      481 ygfyttsgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

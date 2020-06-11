@@ -1,0 +1,87 @@
+LOCUS       AAS48580                 270 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike glycoprotein, partial [SARS coronavirus sf098].
+ACCESSION   AAS48580
+VERSION     AAS48580.1
+DBSOURCE    accession AY541758.1
+KEYWORDS    .
+SOURCE      SARS coronavirus sf098
+  ORGANISM  SARS coronavirus sf098
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 270)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     PCR product of SARS coronavirus S gene from clinical stool sample
+            of SARS patient
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 270)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-2004) Department of Diarrheal Diseases, National
+            Institute For Communicable Disease Control and Prevention, P.O. Box
+            5 Changping, Beijing 102206, P.R.China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..270
+                     /organism="SARS coronavirus sf098"
+                     /isolate="sf098"
+                     /isolation_source="clinical stool sample of SARS patient"
+                     /db_xref="taxon:264990"
+                     /country="China"
+     Protein         <1..>270
+                     /product="spike glycoprotein"
+     Region          210..>270
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..270
+                     /gene="S"
+                     /coded_by="AY541758.1:<1..>811"
+ORIGIN      
+        1 nnksqsviii nnstnvvira cnfelcdnpf favskpmgtq thtmifdnaf nctfeyisda
+       61 fsldvseksg nfkhlrefvf knkdgflyvy kgyqpidvvr dlpsgfntlk pifklplgin
+      121 itnfrailta fspaqdiwgt saaayfvgyl kpttfmlkyd engtitdavd csqnplaelk
+      181 csvksfeidk giyqtsnfrv vpsgdvvrfp nitnlcpfge vfnatkfpsv yawerkkisn
+      241 cvadysvlyn stsfstfkcy gvsatklndl
+//
+
+LOCUS       AAS48582                  88 aa            linear   VRL 08-MAR-2004
+DEFINITION  spike glycoprotein, partial [SARS coronavirus sf098].
+ACCESSION   AAS48582
+VERSION     AAS48582.1
+DBSOURCE    accession AY541759.1
+KEYWORDS    .
+SOURCE      SARS coronavirus sf098
+  ORGANISM  SARS coronavirus sf098
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 88)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     PCR product of SARS coronavirus RNA polymerase gene and S gene from
+            clinical stool sample of SARS patient
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 88)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-2004) Department of Diarrheal Diseases, National
+            Institute For Communicable Disease Control and Prevention, P.O. Box
+            5 Changping, Beijing 102206, P.R.China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..88
+                     /organism="SARS coronavirus sf098"
+                     /isolate="sf098"
+                     /isolation_source="clinical stool sample of SARS patient"
+                     /db_xref="taxon:264990"
+                     /country="China"
+     Protein         1..>88
+                     /product="spike glycoprotein"
+     CDS             1..88
+                     /gene="S"
+                     /coded_by="AY541759.1:805..>1068"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiy
+//
+

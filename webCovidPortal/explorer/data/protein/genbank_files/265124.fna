@@ -1,0 +1,48 @@
+LOCUS       AAS48579                 272 aa            linear   VRL 08-MAR-2004
+DEFINITION  spike glycoprotein, partial [SARS coronavirus cw037].
+ACCESSION   AAS48579
+VERSION     AAS48579.1
+DBSOURCE    accession AY541757.1
+KEYWORDS    .
+SOURCE      SARS coronavirus cw037
+  ORGANISM  SARS coronavirus cw037
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 272)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     PCR product of SARS coronavirus S gene from clinical urine sample
+            of recovered SARS patient
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 272)
+  AUTHORS   Liang,W., Yan,M., Wang,H., Kan,B., Zhang,Z., Zhang,E. and Xu,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-2004) Department of Diarrheal Diseases, National
+            Institute For Communicable Disease Control and Prevention, P.O. Box
+            5 Changping, Beijing 102206, P.R.China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..272
+                     /organism="SARS coronavirus cw037"
+                     /isolate="cw037"
+                     /isolation_source="clinical urine sample of recovered SARS
+                     patient"
+                     /db_xref="taxon:265124"
+                     /country="China"
+     Protein         <1..>272
+                     /product="spike glycoprotein"
+     Region          212..>272
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..272
+                     /gene="S"
+                     /coded_by="AY541757.1:<1..>816"
+ORIGIN      
+        1 tmnnrsqsvi iinnstnvvi racnfelcdn pffavskpmg tqthtmifdn afnctfeyis
+       61 dafsldvsek sgnfkhlrdf vfknkdgfly vykgyqpidv vrdlpsgfnt lkpifklplg
+      121 initnfrail tafspaqdtw gtsaaayfvg ylkpttfmlk ydengtitda vdcsqnplae
+      181 lkcsvksfei dkgiyqtsnf rvvpsgdvvr fpnitnlcpf gevfnatkfp svyawerkki
+      241 sncvadysvl ynstffstfk cygvsatkln dl
+//
+

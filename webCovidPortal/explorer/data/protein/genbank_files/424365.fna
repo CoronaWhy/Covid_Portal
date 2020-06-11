@@ -1,0 +1,78 @@
+LOCUS       ABN10893                1357 aa            linear   VRL 07-FEB-2007
+DEFINITION  Spike glycoprotein [Bat coronavirus HKU5-3].
+ACCESSION   ABN10893
+VERSION     ABN10893.1
+DBSOURCE    accession EF065511.1
+KEYWORDS    .
+SOURCE      Bat coronavirus HKU5-3
+  ORGANISM  Bat coronavirus HKU5-3
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1357)
+  AUTHORS   Woo,P.C., Wang,M., Lau,S.K., Xu,H., Poon,R.W., Guo,R., Wong,B.H.,
+            Gao,K., Tsoi,H.W., Huang,Y., Li,K.S., Lam,C.S., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Comparative analysis of twelve genomes of three novel group 2c and
+            group 2d coronaviruses reveals unique group and subgroup features
+  JOURNAL   J. Virol. 81 (4), 1574-1585 (2007)
+   PUBMED   17121802
+REFERENCE   2  (residues 1 to 1357)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wang,M., Xu,H.F., Poon,R.W.S., Guo,R.T.,
+            Wong,B.H.L., Gao,K., Tsoi,H.W., Huang,Y., Li,K.S.M., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-OCT-2006) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1357
+                     /organism="Bat coronavirus HKU5-3"
+                     /strain="TT06f"
+                     /host="bat"
+                     /db_xref="taxon:424365"
+                     /country="China: Guangdong province"
+     Protein         1..1357
+                     /product="spike glycoprotein"
+     Region          392..>533
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <603..692
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          772..1356
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1357
+                     /gene="S"
+                     /coded_by="EF065511.1:21725..25798"
+ORIGIN      
+        1 mirsvlvlmc sltfignrts cqsvdigtpv tgsclrsqvr peyfdivhnt wpmpidtska
+       61 egviypngks ysnisltytg lypkakdlgk qylfsdghsa pnqlndlfvs nysaqvesfd
+      121 dgfvvrigaa snktgttvis qttfkpikki ypgfmlghav gnytptnitg rylnhtlvil
+      181 pdgcgtlvha fycilqprtq ancpgassft svtlwdtpat dcapsgvyns lanlnafkly
+      241 fdlinctfry nytitedena ewfgitqdtq gvhlyssrke nvfrnnmfhf atlpvyqkil
+      301 yytviprsir spfndrkawa afyiyklhpl tyllnfdveg yitkavdcgy ddfaqlqcsy
+      361 enfdvetgvy svssfeaspr gefieqattq ecdftpmltg tpppiydfkr lvftncnynl
+      421 tkllslfqvs efschqvsps slatgcyssl tvdyfaystd mssylqpgsa geivqfnykq
+      481 dfsnptcrvl atvptnltti tkssnyvhlt ecykstaygk nylynapggy tpclslasrg
+      541 fttnrqshsl elpdgylvtt gsvypvngnl qmafiisvqy gtdtnsvcpm qalrndtsie
+      601 dkldvcveys lhgitgrgvf hnctsvglrn qrfvydtfdn lvgyhsdngn yycvrpcvsv
+      661 pvsviydkas nshatlfgsv acshvttmms qfsrmtktnl parttpgplq ttvgcamgfi
+      721 nssmvvdecq lplgqslcai ppttstrfrr atsipdvfqi atlnftsplt lapinstgfv
+      781 vavptnftfg vtqefietti qkitvdckqy vcngfkkced llkeygqfcs kinqalhgan
+      841 lrqdesianl fssiktqntq plqaglngdf nltmlqipqv ttgerkyrst iedllfnkvt
+      901 iadpgymqgy decmqqgpqs ardlicaqyv agykvlpply dpymeaayts sllgsiagas
+      961 wtaglssfaa ipfaqsifyr lngvgitqqv lsenqkiian kfnqalgamq tgftttnlaf
+     1021 nkvqdavnan amalsklaae lsntfgaiss sisdilarld tveqeaqidr lingrltsln
+     1081 afvaqqlvrt eaaarsaqla qdkvnecvks qskrngfcgt gthivsfain apnglyffhv
+     1141 gyqptshvna taayglcnte nppkciapid gyfvlnqtts tarssgdqhw yytgssffhp
+     1201 epiteansky vsmdvkfenl tnklppplls nstdldfkde leeffknvss qgpnfqeisk
+     1261 inttllnlnt elmvlsevvk qlnesyidlk elgnytfyqk wpwyiwlgfi aglvalalcv
+     1321 ffilcctgcg tsclgklkcn rccdsydeye vekihvh
+//
+

@@ -1,0 +1,74 @@
+LOCUS       QHR63300                1269 aa            linear   VRL 24-MAR-2020
+DEFINITION  spike glycoprotein [Bat coronavirus RaTG13].
+ACCESSION   QHR63300
+VERSION     QHR63300.2
+DBSOURCE    accession MN996532.1
+KEYWORDS    .
+SOURCE      Bat coronavirus RaTG13
+  ORGANISM  Bat coronavirus RaTG13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1269)
+  AUTHORS   Zhou,P., Yang,X.-L., Wang,X.-G., Hu,B., Zhang,L., Zhang,W.,
+            Si,H.-R., Zhu,Y., Li,B., Huang,C.-L., Chen,H.-D., Chen,J., Luo,Y.,
+            Guo,H., Jiang,R.-D., Liu,M.-Q., Chen,Y., Shen,X.-R., Wang,X.,
+            Zheng,X.-S., Zhao,K., Chen,Q.-J., Deng,F., Liu,L.-L., Yan,B.,
+            Zhan,F.-X., Wang,Y.-Y., Xiao,G.-F. and Shi,Z.-L.
+  TITLE     A pneumonia outbreak associated with a new coronavirus of probable
+            bat origin
+  JOURNAL   Nature 579 (7798), 270-273 (2020)
+  REMARK    DOI: 10.1038/s41586-020-2012-7
+REFERENCE   2  (residues 1 to 1269)
+  AUTHORS   Zhu,Y., Yu,P., Li,B., Hu,B., Si,H.R., Yang,X.L., Zhou,P. and
+            Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (27-JAN-2020) CAS Key Laboratory of Special Pathogens,
+            Wuhan Institute of Virology, Center for Biosafety Mega-Science,
+            Chinese Academy of Sciences, No. 44 Xiao Hong Shan, Wuhan, Hubei
+            430071, China
+COMMENT     On Feb 10, 2020 this sequence version replaced QHR63300.1.
+            
+            ##Assembly-Data-START##
+            Assembly Method       :: CLC Genomics Workbench v. 12.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1269
+                     /organism="Bat coronavirus RaTG13"
+                     /isolate="RaTG13"
+                     /isolation_source="fecal swab"
+                     /host="Rhinolophus affinis"
+                     /db_xref="taxon:2709072"
+                     /country="China"
+                     /collection_date="24-Jul-2013"
+     Protein         1..1269
+                     /product="spike glycoprotein"
+     CDS             1..1269
+                     /gene="S"
+                     /coded_by="MN996532.1:21545..25354"
+ORIGIN      
+        1 mfvflvllpl vssqcvnltt rtqlppaytn sstrgvyypd kvfrssvlhl tqdlflpffs
+       61 nvtwfhaihv sgtngikrfd npvlpfndgv yfasteksni irgwifgttl dsktqslliv
+      121 nnatnvvikv cefqfcndpf lgvyyhknnk swmesefrvy ssannctfey vsqpflmdle
+      181 gkqgnfknlr efvfknidgy fkiyskhtpi nlvrdlppgf saleplvdlp iginitrfqt
+      241 llalhrsylt pgdsssgwta gaaayyvgyl qprtfllkyn engtitdavd caldplsetk
+      301 ctlksftvek giyqtsnfrv qptdsivrfp nitnlcpfge vfnattfasv yawnrkrisn
+      361 cvadysvlyn stsfstfkcy gvsptklndl cftnvyadsf vitgdevrqi apgqtgkiad
+      421 ynyklpddft gcviawnskh idakeggnfn ylyrlfrkan lkpferdist eiyqagskpc
+      481 ngqtglncyy plyrygfypt dgvghqpyrv vvlsfellna patvcgpkks tnlvknkcvn
+      541 fnfngltgtg vltesnkkfl pfqqfgrdia dttdavrdpq tleilditpc sfggvsvitp
+      601 gtnasnqvav lyqdvnctev pvaihadqlt ptwrvystgs nvfqtragcl igaehvnnsy
+      661 ecdipigagi casyqtqtns rsvasqsiia ytmslgaens vaysnnsiai ptnftisvtt
+      721 eilpvsmtkt svdctmyicg dstecsnlll qygsfctqln raltgiaveq dkntqevfaq
+      781 vkqiyktppi kdfggfnfsq ilpdpskpsk rsfiedllfn kvtladagfi kqygdclgdi
+      841 aardlicaqk fngltvlppl ltdemiaqyt sallagtits gwtfgagaal qipfamqmay
+      901 rfngigvtqn vlyenqklia nqfnsaigki qdslsstasa lgklqdvvnq naqalntlvk
+      961 qlssnfgais svlndilsrl dkveaevqid rlitgrlqsl qtyvtqqlir aaeirasanl
+     1021 aatkmsecvl gqskrvdfcg kgyhlmsfpq saphgvvflh vtyvpaqekn fttapaichd
+     1081 gkahfpregv fvsngthwfv tqrnfyepqi ittdntfvsg scdvvigivn ntvydplqpe
+     1141 ldsfkeeldk yfknhtspdv dlgdisgina svvniqkeid rlnevaknln eslidlqelg
+     1201 kyeqyikwpw yiwlgfiagl iaiimvtiml ccmtsccscl kgccscgscc kfdeddsepv
+     1261 lkgvklhyt
+//
+

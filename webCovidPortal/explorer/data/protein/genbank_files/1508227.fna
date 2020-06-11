@@ -1,0 +1,1073 @@
+LOCUS       AID16716                1242 aa            linear   VRL 16-MAR-2020
+DEFINITION  spike glycoprotein [Bat SARS-like coronavirus].
+ACCESSION   AID16716
+VERSION     AID16716.1
+DBSOURCE    accession KF294457.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1242)
+  AUTHORS   Lin,X.D., Wang,W., Hao,Z.Y., Wang,Z.X., Guo,W.P., Guan,X.Q.,
+            Wang,M.R., Wang,H.W., Zhou,R.H., Li,M.H., Tang,G.P., Wu,J.,
+            Holmes,E.C. and Zhang,Y.Z.
+  TITLE     Extensive diversity of coronaviruses in bats from China
+  JOURNAL   Virology 507, 1-10 (2017)
+   PUBMED   28384506
+REFERENCE   2  (residues 1 to 1242)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Discovery and phylogeny of coronaviruses harbored by birds and
+            mammals
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1242)
+  AUTHORS   Wang,W., Lin,X.-D., Zhou,R.-H., Guo,W.-P. and Zhang,Y.-Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-JUN-2013) Department of Zoonoses, National Institute
+            of Communicable Disease Control and Prevention, Chinese Center for
+            Disease Control and Prevention, Changping Liuzi 5, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1242
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Longquan-140"
+                     /host="Rhinolophus monoceros"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="2012"
+     Protein         1..1242
+                     /product="spike glycoprotein"
+     Region          <81..283
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          321..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          635..1239
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1242
+                     /coded_by="KF294457.1:21461..25189"
+ORIGIN      
+        1 mkililafla nlakaqegcg iisrkpqpkm aqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaatek snvirgwifg ssfdnttqsa
+      121 vivnnsthii irvcnfnlcr epmytvsrgt qqnswvyqsa fnctydrvek sfqldttpkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglpegfsvl rpilklpfgi nitsyrvvma
+      241 mfsqftsnfl pesaayyvgn lkystfmlrf nengtitdav dcsqnplael kctiknfnvd
+      301 kgiyqtsnfr vsptqevirf pnitnrcpfd kvfnvtrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta kqdignyyyr shrktklkpf erdlssddgn gvytlstydf npnvpvayqa
+      481 trvvvlsfel lnapatvcgp klstqlvknq cvnfnfnglk gtgvltsssk rfqsfqqfgr
+      541 dtsdftdsvr dpqtleildi spcsfggvsv itpgtnasse vavlyqdvnc tdvptairad
+      601 qltpawrvys tginvfqtqa gcligaehvn asyecdipig agicasyhta svlrstgqks
+      661 ivaytmslga ensiayanns iaiptnfsis vttevmpvsm aktsvdctmy icgdslecsn
+      721 lllqygsfct qlnraltgia ieqdkntqev faqvkqmykt paikdfggfn fsqilpdpsk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdvsardlic aqkfngltvl pplltdemia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk lianqfnsai
+      901 gkiqeslsst asalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqsaphgvv flhvtyvpsq eknfttapai chegkayfpr egvfvsngts wfitqrnfys
+     1081 pqlittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik wpwyvwlgfi agliaivmvt
+     1201 illccmtscc sclkgacscg scckfdedds epvlkgvklh yt
+//
+
+LOCUS       AVP78042                1245 aa            linear   VRL 05-FEB-2020
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   AVP78042
+VERSION     AVP78042.1
+DBSOURCE    accession MG772934.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1245)
+  AUTHORS   Hu,D., Zhu,C., Ai,L., He,T., Wang,Y., Ye,F., Yang,L., Ding,C.,
+            Zhu,X., Lv,R., Zhu,J., Hassan,B., Feng,Y., Tan,W. and Wang,C.
+  TITLE     Genomic characterization and infectivity of a novel SARS-like
+            coronavirus in Chinese bats
+  JOURNAL   Emerg Microbes Infect 7 (1), 154 (2018)
+   PUBMED   30209269
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1245)
+  AUTHORS   Hu,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2018) Institute of Military Medicine Nanjing
+            Command, Nanjing, Institute of Military Medicine Nanjing Command,
+            Nanjing, NO. 293 East Zhongshan Road, Nanjing, JangSu 210002, China
+FEATURES             Location/Qualifiers
+     source          1..1245
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="bat-SL-CoVZXC21"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="Jul-2015"
+     Protein         1..1245
+                     /product="spike protein"
+                     /name="S"
+     Region          35..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          326..559
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          638..1242
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1245
+                     /coded_by="MG772934.1:21483..25220"
+ORIGIN      
+        1 mlfflflqfa lvnsqcdltg rtplnpnytn ssqrgvyypd tiyrsdtlvl sqgyflpfys
+       61 nvswyysltt nnaatkrtdn pildfkdgiy faatehsniv rgwifgttld ntsqsllivn
+      121 natnviikvc nfdfcydpyl sgyyhnnktw sirefavysf yanctfeyvs ksfmlnisgn
+      181 gglfntlref vfrnvdghfk iyskftpvnl nrglptglsv lqplvelpvs initkfrtll
+      241 tihrgdpmsn ngwtafsaay fvgylkprtf mlkynengti tdavdcaldp lsetkctlks
+      301 lsvqkgiyqt snfrvqptqs ivrfpnitnv cpfhkvfnat rfpsvyawer tkisdciady
+      361 tvfynstsfs tfkcygvsps klidlcftsv yadtflirfs evrqvapgqt gviadynykl
+      421 pddftgcvia wntakqdtgh yfyrshrstk lkpferdlss dengvrtlst ydfnpnvple
+      481 yqatrvvvls fellnapatv cgpklstqlv knqcvnfnfn glkgtgvltd sskrfqsfqq
+      541 fgkdasdfid svrdpqtlei lditpcsfgg vsvitpgtnt ssevavlyqd vnctdvptti
+      601 hadqltpawr iyaigtsvfq tqagcligae hvnasyecdi pigagicasy htasilrstg
+      661 qkaivaytms lgaensiaya nnsiaiptnf sisvttevmp vsmaktsvdc tmyicgdsie
+      721 csnlllqygs fctqlnrals giaieqdknt qevfaqvkqi yktppikdfg gfnfsqilpd
+      781 pskpskrsfi edllfnkvtl adagfikqyg dclgdisard licaqkfngl tvlpplltde
+      841 miaaytaali sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye nqklianqfn
+      901 saigkiqesl tstasalgkl qdvvnqnaqa lntlvkqlss nfgaissvln dilsrldkve
+      961 aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk rvdfcgkgyh
+     1021 lmsfpqsaph gvvflhvtyi psqeknftta paichegkah fpregvfvsn gthwfvtqrn
+     1081 fyepqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn htspdidlgd
+     1141 isginasvvn iqkeidrlne varnlnesli dlqelgkyeh yikwpwyvwl gfiagliaiv
+     1201 mvtillccmt sccsclkgcc scgfcckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AVP78031                1246 aa            linear   VRL 05-FEB-2020
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   AVP78031
+VERSION     AVP78031.1
+DBSOURCE    accession MG772933.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1246)
+  AUTHORS   Hu,D., Zhu,C., Ai,L., He,T., Wang,Y., Ye,F., Yang,L., Ding,C.,
+            Zhu,X., Lv,R., Zhu,J., Hassan,B., Feng,Y., Tan,W. and Wang,C.
+  TITLE     Genomic characterization and infectivity of a novel SARS-like
+            coronavirus in Chinese bats
+  JOURNAL   Emerg Microbes Infect 7 (1), 154 (2018)
+   PUBMED   30209269
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1246)
+  AUTHORS   Hu,D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (05-JAN-2018) Institute of Military Medicine Nanjing
+            Command, Nanjing, Institute of Military Medicine Nanjing Command,
+            Nanjing, NO. 293 East Zhongshan Road, Nanjing, JangSu 210002, China
+FEATURES             Location/Qualifiers
+     source          1..1246
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="bat-SL-CoVZC45"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="Feb-2017"
+     Protein         1..1246
+                     /product="spike protein"
+                     /name="S"
+     Region          36..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          327..560
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          639..1243
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1246
+                     /coded_by="MG772933.1:21549..25289"
+ORIGIN      
+        1 mlfflflqfa lvnsqcvnlt grtplnpnyt nssqrgvyyp dtiyrsdtlv lsqgyflpfy
+       61 snvswyyslt tnnaatkrtd npildfkdgi yfaatehsni irgwifgttl dntsqslliv
+      121 nnatnviikv cnfdfcydpy lsgyyhnnkt wsirefavys syanctfeyv sksfmlnisg
+      181 ngglfntlre fvfrnvdghf kiyskftpvn lnrglptgls vlqplvelpv sinitkfrtl
+      241 ltihrgdpmp nngwtafsaa yfvgylkprt fmlkynengt itdavdcald plsetkctlk
+      301 sltvqkgiyq tsnfrvqptq svvrfpnitn vcpfhkvfna trfpsvyawe rtkisdciad
+      361 ytvfynstsf stfkcygvsp sklidlcfts vyadtflirf sevrqvapgq tgviadynyk
+      421 lpddftgcvi awntakqdvg nyfyrshrst klkpferdls sdengvrtls tydfnpnvpl
+      481 eyqatrvvvl sfellnapat vcgpklstql vknqcvnfnf nglkgtgvlt dsskrfqsfq
+      541 qfgkdasdfi dsvrdpqtle ilditpcsfg gvsvitpgtn tslevavlyq dvnctdvptt
+      601 ihadqltpaw riyatgtnvf qtqagcliga ehvnasyecd ipigagicas yhtasilrst
+      661 sqkaivaytm slgaensiay annsiaiptn fsisvttevm pvsmaktsvd ctmyicgdsi
+      721 ecsnlllqyg sfctqlnral sgiaieqdkn tqevfaqvkq iyktppikdf ggfnfsqilp
+      781 dpskpskrsf iedllfnkvt ladagfikqy gdclggisar dlicaqkfng ltvlpplltd
+      841 emiaaytaal isgtatagwt fgagaalqip famqmayrfn gigvtqnvly enqklianqf
+      901 nsaigkiqes ltstasalgk lqdvvnqnaq alntlvkqls snfgaissvl ndilsrldkv
+      961 eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs krvdfcgkgy
+     1021 hlmsfpqsap hgvvflhvty ipsqeknftt apaichegka hfpregvfvs ngthwfvtqr
+     1081 nfyepkiitt dntfvsgncd vvigiinntv ydplqpelds fkeeldkyfk nhtspdidlg
+     1141 disginasvv niqkeidrln evarnlnesl idlqelgkye qyikwpwyvw lgfiagliai
+     1201 vmvtillccm tsccsclkgc cscgscckfd eddsepvlkg vklhyt
+//
+
+LOCUS       ATO98231                1256 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98231
+VERSION     ATO98231.1
+DBSOURCE    accession KY417152.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1256)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1256)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1256
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs9401"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="16-Oct-2015"
+     Protein         1..1256
+                     /product="spike protein"
+                     /name="S"
+     Region          <103..280
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          319..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          649..1253
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1256
+                     /coded_by="KY417152.1:21492..25262"
+ORIGIN      
+        1 mkllvlvfat lvssytiekc ldfddrtppa ntqflsshrg vyypddifrs nvlhlvqdhf
+       61 lpfdsnvtrf itfglnfdnp iipfrdgiyf aateksnvir gwvfgstmnn ksqsviimnn
+      121 stnlviracn felcdnpffv vlksnntqip syifnnafnc tfeyvskdfn ldlgekpgnf
+      181 kdlrefvfrn kdgflhvysg yqpisaasgl ptgfnalkpi fklplginit nfrtlltafp
+      241 prpdywgtsa aayfvgylkp ttfmlkyden gtitdavdcs qnplaelkcs vksfeidkgi
+      301 yqtsnfrvap skevvrfpni tnlcpfgevf nattfpsvya werkrisncv adysvlynst
+      361 sfstfkcygv satklndlcf snvyadsfvv kgddvrqiap gqtgviadyn yklpddfmgc
+      421 vlawntrnid atstgnynyk yrslrhgklr pferdisnvp fspdgkpctp pafncywpln
+      481 dygffttngi gyqpyrvvvl sfellnapat vcgpklstdl iknqcvnfnf ngltgtgvlt
+      541 ssskrfqpfq qfgrdvsdft dsvrdpktse ildispcsfg gvsvitpgtn tssevavlyq
+      601 dvnctdvpva ihadqltpaw riystgnnvf qtqagcliga ehvdtsyecd ipigagicas
+      661 yhtvsslrst sqksivaytm slgadssivy snntiaiptn fsisittevm pvsmaktsvd
+      721 cnmyicgdst ecanlllqyg sfctqlnral sgiaveqdrn trevfaqvkq myktptlkdf
+      781 ggfnfsqilp dplkptkrsf iedllfnkvt ladagfmkqy geclgdinar dlicaqkfng
+      841 ltvlpplltd dmiaaytaal vsgtatagwt fgagaalqip famqmayrfn gigvtqnvly
+      901 enqkqianqf nkaisqiqes ltttstalgk lqdvvnqnaq alntlvkqls snfgaissvl
+      961 ndilsrldkv eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs
+     1021 krvdfcgkgy hlmsfpqaap hgvvflhvty vpsqernftt apaichegka yfpregvfvf
+     1081 ngtswfitqr nffspqiitt dntfvsgncd vvigiinntv ydplqpelds fkeeldkyfk
+     1141 nhtspdvdlg disginasvv niqkeidrln evaknlnesl idlqelgkye qyikwpwyvw
+     1201 lgfiagliai vmvtillccm tsccsclkga cscgscckfd eddpepvlkg vklhyt
+//
+
+LOCUS       ATO98218                1256 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98218
+VERSION     ATO98218.1
+DBSOURCE    accession KY417151.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1256)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1256)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1256
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs7327"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="24-Oct-2014"
+     Protein         1..1256
+                     /product="spike protein"
+                     /name="S"
+     Region          <103..280
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          319..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          649..1253
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1256
+                     /coded_by="KY417151.1:21492..25262"
+ORIGIN      
+        1 mkllvlvfat lvssytiekc ldfddrtppa ntqflsshrg vyypddifrs nvlhlvqdhf
+       61 lpfdsnvtrf itfglnfdnp iipfrdgiyf aateksnvir gwvfgstmnn ksqsviimnn
+      121 stnlviracn felcdnpffv vlksnntqip syifnnafnc tfeyvskdfn ldlgekpgnf
+      181 kdlrefvfrn kdgflhvysg yqpisaasgl ptgfnalkpi fklplginit nfrtlltafp
+      241 prpdywgtsa aayfvgylkp ttfmlkyden gtitdavdcs qnplaelkcs vksfeidkgi
+      301 yqtsnfrvap skevvrfpni tnlcpfgevf nattfpsvya werkrisncv adysvlynst
+      361 sfstfkcygv satklndlcf snvyadsfvv kgddvrqiap gqtgviadyn yklpddfmgc
+      421 vlawntrnid atstgnynyk yrslrhgklr pferdisnvp fspdgkpctp pafncywpln
+      481 dygffttngi gyqpyrvvvl sfellnapat vcgpklstdl iknqcvnfnf ngltgtgvlt
+      541 ssskrfqpfq qfgrdvsdft dsvrdpktse ildispcsfg gvsvitpgtn tssevavlyq
+      601 dvnctdvpva ihadqltpaw riystgnnvf qtqagcliga ehvdtsyecd ipigagicas
+      661 yhtvsslrst sqksivaytm slgadssivy snntiaiptn fsisittevm pvsmaktsvd
+      721 cnmyicgdst ecanlllqyg sfctqlnral sgiaveqdrn trevfaqvkq myktptlkdf
+      781 ggfnfsqilp dplkptkrsf iedllfnkvt ladagfmkqy geclgdinar dlicaqkfng
+      841 ltvlpplltd dmiaaytaal vsgtatagwt fgagaalqip famqmayrfn gigvtqnvly
+      901 enqkqianqf nkaisqiqes ltttstalgk lqdvvnqnaq alntlvkqls snfgaissvl
+      961 ndilsrldkv eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs
+     1021 krvdfcgkgy hlmsfpqaap hgvvflhvty vpsqernftt apaichegka yfpregvfvf
+     1081 ngtswfitqr nffspqiitt dntfvsgncd vvigiinntv ydplqpelds fkeeldkyfk
+     1141 nhtspdvdlg disginasvv niqkeidrln evaknlnesl idlqelgkye qyikwpwyvw
+     1201 lgfiagliai vmvtillccm tsccsclkga cscgscckfd eddsepvlkg vklhyt
+//
+
+LOCUS       ATO98205                1255 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98205
+VERSION     ATO98205.1
+DBSOURCE    accession KY417150.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4874"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="21-Jul-2013"
+     Protein         1..1255
+                     /product="spike protein"
+                     /name="S"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="KY417150.1:21493..25260"
+ORIGIN      
+        1 mfiflffltl tsgsdlesct tfddvqapny pqhsssrrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhrfdnpv ipfkdgvyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skptgtqtht mifdnafnct feyisdsfsl dvaeksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfnilkpif klplginitn frailtaflp
+      241 aqdtwgtsaa ayfvgylkpa tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvaps kevvrfpnit nlcpfgevfn attfpsvyaw erkrisncva dysvlynsts
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddftgcv
+      421 lawntrnida tqtgnynyky rslrhgklrp ferdisnvpf spdgkpctpp afncywplnd
+      481 ygfyitngig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtnt ssevavlyqd
+      601 vnctdvpvai hadqltpswr vystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsslrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaveqdrnt revfaqvkqm yktptlkdfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgscdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ATO98193                1241 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98193
+VERSION     ATO98193.1
+DBSOURCE    accession KY417149.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4255"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="17-Apr-2013"
+     Protein         1..1241
+                     /product="spike protein"
+                     /name="S"
+     Region          <108..288
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          322..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          634..1238
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1241
+                     /coded_by="KY417149.1:21492..25217"
+ORIGIN      
+        1 mkvlivllcl glvtaqdgcg histkpqplm dkfsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdtnltryl sfnmdsatkv yfdnptlpfg dgiyfaatek snvvrgwifg stmdnttqsa
+      121 iivnnsthii irvcyfnlck epmyaisneq hykswvyqna ynctydrvgq sfqldtapqt
+      181 gnfkdlreyv fknkdgflsv ynayspidip rglpvgfsvl kpilklpigi nitsfkvvms
+      241 mfsrttsnfl pevaayfvgn lkystfmlnf nengtitdai dcaqnplsel kctiknfnvs
+      301 kgiyqtsnfr vspthevirf pnitnrcpfd kvfnasrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta kqdqgqyyyr ssrktklkpf erdlssdeng vrtlstydfy ptvpieyqat
+      481 rvvvlsfell napatvcgpk lstglvknqc vnfnfnglkg tgvltdsskr fqsfqqfgrd
+      541 tsdftdsvrd pqtlqildit pcsfggvsvi tpgtnassev avlyqdvnct dvptairadq
+      601 ltpawriyst ginvfqtqag cligaehvna syecdipiga gicasyhtas tlrsvgqksi
+      661 vaytmslgae nsiayannsi aiptnfsisv ttevmpvsms ktsvdctmyi cgdsqecsnl
+      721 llqygsfctq lnraltgiai eqdkntqevf aqvkqmyktp aikdfggfnf sqilpdpskp
+      781 tkrsfiedll fnkvtladag fmkqygeclg dinardlica qkfngltvlp plltddmiaa
+      841 ytaalvsgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkais
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issvlndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgrgyhlmsf
+     1021 pqaaphgvvf lhvtyvpsqe knfttapaic hegkayfpre gvfvsngtsw fitqrnfysp
+     1081 qiittdntfv agncdvvigi inntvydplq peldsfkeel dkyfknhtsp dvdlgdisgi
+     1141 nasvvniqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia gliaivmati
+     1201 llccmtsccs clkgacscgs cckfdeddse pvlkgvklhy t
+//
+
+LOCUS       ATO98181                1242 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98181
+VERSION     ATO98181.1
+DBSOURCE    accession KY417148.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1242)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1242)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1242
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4247"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="17-Apr-2013"
+     Protein         1..1242
+                     /product="spike protein"
+                     /name="S"
+     Region          <81..283
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          322..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          635..1239
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1242
+                     /coded_by="KY417148.1:21492..25220"
+ORIGIN      
+        1 mkilifaflv tlvkaqegcg iisrkpqpkm aqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaatek snvirgwifg stfdnttqsa
+      121 vivnnsthii irvcnfnlck epmytvsrgt qqsswvyqsa fnctydrver sfqldtapkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglptgfsvl rpilklpfgi nitsyrvvma
+      241 mfsqttsnfl pesaayyvgn lkyttfmlsf nengtitdai dcaqnplael kctiknfnvs
+      301 kgiyqtsnfr vsptqevirf pnitnrcpfd kvfnasrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta kqdtghyyyr shrktklkpf erdlssddgn gvytlstydf npnvpvayqa
+      481 trvvvlsfel lnapatvcgp klstqlvknq cvnfnfnglk gtgvltdssk rfqsfqqfgr
+      541 dtsdftdsvr dpqtleildi tpcsfggvsv itpgtnasse vavlyqdvnc tdvptairad
+      601 qltpawrvys tginvfqtqa gcligaehvn asyecdipig agicasyhta stlrsvgqks
+      661 ivaytmslga ensiayanns iaiptnfsis vttevmpvsm sktsvdctmy icgdsqecsn
+      721 lllqygsfct qlnraltgia ieqdkntqev faqvkqmykt paikdfggfn fsqilpdpsk
+      781 ptkrsfiedl lfnkvtlada gfmkqygecl gdinardlic aqkfngltvl pplltddmia
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk qianqfnkai
+      901 sqiqeslttt stalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgrgyhlms
+     1021 fpqaaphgvv flhvtyvpsq eknfttapai chegkayfpr egvfvsngts wfitqrnfys
+     1081 pqiittdntf vagncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik wpwyvwlgfi agliaivmat
+     1201 illccmtscc sclkgacscg scckfdedds epvlkgvklh yt
+//
+
+LOCUS       ATO98169                1241 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98169
+VERSION     ATO98169.1
+DBSOURCE    accession KY417147.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4237"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="17-Apr-2013"
+     Protein         1..1241
+                     /product="spike protein"
+                     /name="S"
+     Region          <81..283
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          322..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          634..1238
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1241
+                     /coded_by="KY417147.1:21492..25217"
+ORIGIN      
+        1 mkilifaflv tlvkaqegcg lisrkpqpkm aqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaatek snvirgwifg stfdnttqsa
+      121 vivnnsthii irvcnfnlck epmytvsrgt qqsswvyqsa fnctydrver sfqldtapkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglptgfsvl rpilklpfgi nitsyrvvma
+      241 mfsqttsnfl pesaayyvgn lkyttfmlsf nengtitdai dcaqnplael kctiknfnvs
+      301 kgiyqtsnfr vsptqevirf pnitnrcpfd kvfnasrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta kqdqgqyyyr ssrktklkpf erdlssdeng vrtlstydfy ptvpieyqat
+      481 rvvvlsfell napatvcgpk lstglvknqc vnfnfnglkg tgvltdsskr fqsfqqfgrd
+      541 msdftdsvrd pqtlqildit pcsfggvsvi tpgtnassev avlyqdvnct dvptairadq
+      601 ltpawrvyst ginvfqtqag cligaehvna syecdipiga gicasyhtas tlrsvgqksi
+      661 vaytmslgae nsiayannsi aiptnfsisv ttevmpvsms ktsvdctmyi cgdsqecsnl
+      721 llqygsfctq lnraltgiai eqdkntqevf aqvkqmyktp aikdfggfnf sqilpdpskp
+      781 tkrsfiedll fnkvtladag fmkqygeclg dinardlica qkfngltvlp plltddmiaa
+      841 ytaalvsgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkais
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issvlndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgrgyhlmsf
+     1021 pqaaphgvvf lhvtyvpsqe knfttapaic hegkayfpre gvfvsngtsw fitqrnfysp
+     1081 qiittdntfv agncdvvigi inntvydplq peldsfkeel dkyfknhtsp dvdlgdisgi
+     1141 nasvvniqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia gliaivmati
+     1201 llccmtsccs clkgacscgs cckfdeddse pvlkgvklhy t
+//
+
+LOCUS       ATO98157                1255 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98157
+VERSION     ATO98157.1
+DBSOURCE    accession KY417146.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4231"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="17-Apr-2013"
+     Protein         1..1255
+                     /product="spike protein"
+                     /name="S"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="KY417146.1:21493..25260"
+ORIGIN      
+        1 mfiflffltl tsgsdlesct tfddvqapny pqhsssrrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhrfdnpv ipfkdgvyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skptgtqtht mifdnafnct feyisdsfsl dvaeksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfnilkpif klplginitn frailtaflp
+      241 aqdtwgtsaa ayfvgylkpa tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvaps kevvrfpnit nlcpfgevfn attfpsvyaw erkrisncva dysvlynsts
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddflgcv
+      421 lawntnskds stsgnynyly rwvrrsklnp yerdlsndiy spggqscsai gpncynplrp
+      481 ygffttagvg hqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvlts
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtnt ssevavlyqd
+      601 vnctdvpvai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsslrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaveqdrnt revfaqvkqm yktpalkdfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdvnard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtcv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgscdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ATO98145                1234 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98145
+VERSION     ATO98145.1
+DBSOURCE    accession KY417145.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1234)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1234)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1234
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rf4092"
+                     /host="Rhinilophus ferrumequinum"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="18-Sep-2012"
+     Protein         1..1234
+                     /product="spike protein"
+                     /name="S"
+     Region          315..548
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          627..1231
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1234
+                     /coded_by="KY417145.1:21492..25196"
+ORIGIN      
+        1 mffligytaf ligytaattc vtgpttenkl nissgsrgvy ypddifrsdv svlvtgpflr
+       61 fnttltwyns wnqaysspil pfghgvyfst idksnvvrgw ifgttldntt qsallvnngs
+      121 aitiqvcyfq fcdnpafvvt agaqtstaiy tnlrnctyvd tlrdlplslt evdggfkhlr
+      181 efvfktsdgf lhiygayqpy dhaigataal paqflplkpl wklplglnit sykvvttlkp
+      241 tnqafqavyi vgnlkhttmm lsfnengtms navdcsqdpl aelkctlkls dvgkgiyqts
+      301 nfrvqptvdv vrfpnitnlc pfdavfnatr fpsvyawerv kisncvadyt afynstsfst
+      361 fkcygvspsk lidlcftsvy adtflirfse vrqvapgetg viadynyklp ddftgcviaw
+      421 ntakqdvgsy fyrshrsskl kpferdlssd engvrtlsty dfnpnvpldy qatrvvvlsf
+      481 ellnapatvc gpklstqlvk nqcvnfnfng lkgtgvltds skrfqsfqqf grdtsdftds
+      541 vrdpqtldil ditpcsfggv svitpgtnas sevavlyqdv nctdvptvir adqltpawrv
+      601 ystgvnvfqt qagcligaeh vnasyecdip igagicasyh tastlrgvgq ksivaytmsl
+      661 gaensiayan nsiaiptnfs isvttevmpv smaktsvdct myicgdsqec snlllqygsf
+      721 ctqlnraltg valeqdkntq dvfaqvkqmy ktpaikdfgg fnfsqilpdp skptkrsfie
+      781 dllfnkvtla dagfmkqyge clgdisardl icaqkfnglt vlpplltdem iaaytaalvs
+      841 gtatagwtfg agaalqipfa mqmayrfngi gvtqnvlyen qkqianqfnk aisqiqeslt
+      901 ttstalgklq dvvnqnaqal ntlvkqlssn fgaissvlnd ilsrldkvea evqidrlitg
+      961 rlqslqtyvt qqliraaeir asanlaatkm secvlgqskr vdfcgrgyhl msfpqaaphg
+     1021 vvflhvtyvp sheknfttap aichegkayf pregvfvsng tswfitqrnf yspqiittdn
+     1081 tfvagncdvv igiinntvyd plqpeldsfk eeldkyfknh tspdvdlgdi sginasvvni
+     1141 qkeidrlnev aknlneslid lqelgkyeqy ikwpwyvwlg fiagliaivm atillccmts
+     1201 ccsclkgacs cgscckfded dsepvlkgvk lhyt
+//
+
+LOCUS       ATO98132                1256 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98132
+VERSION     ATO98132.1
+DBSOURCE    accession KY417144.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1256)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1256)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1256
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4084"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="18-Sep-2012"
+     Protein         1..1256
+                     /product="spike protein"
+                     /name="S"
+     Region          <103..280
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          319..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          649..1253
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1256
+                     /coded_by="KY417144.1:21492..25262"
+ORIGIN      
+        1 mkllvlvfat lvssytiekc ldfddrtppa ntqflsshrg vyypddifrs nvlhlvqdhf
+       61 lpfdsnvtrf itfglnfdnp iipfrdgiyf aateksnvir gwvfgstmnn ksqsviimnn
+      121 stnlviracn felcdnpffv vlksnntqip syifnnafnc tfeyvskdfn ldlgekpgnf
+      181 kdlrefvfrn kdgflhvysg yqpisaasgl ptgfnalkpi fklplginit nfrtlltafp
+      241 prpdywgtsa aayfvgylkp ttfmlkyden gtitdavdcs qnplaelkcs vksfeidkgi
+      301 yqtsnfrvap skevvrfpni tnlcpfgevf nattfpsvya werkrisncv adysilynst
+      361 sfstfkcygv satklndlcf snvyadsfvv kgddvrqiap gqtgviadyn yklpddflgc
+      421 vlawntnskd sstsgnynyl yrwvrrskln pyerdlsndi yspggqscsa vgpncynplr
+      481 pygffttagv ghqpyrvvvl sfellnapat vcgpklstdl iknqcvnfnf ngltgtgvlt
+      541 psskrfqpfq qfgrdvsdft dsvrdpktse ildispcsfg gvsvitpgtn tssevavlyq
+      601 dvnctdvpva ihadqltpsw rvystgnnvf qtqagcliga ehvdtsyecd ipigagicas
+      661 yhtvsslrst sqksivaytm slgadssiay snntiaiptn fsisittevm pvsmaktsvd
+      721 cnmyicgdst ecanlllqyg sfctqlnral sgiaveqdrn trevfaqvkq myktptlkdf
+      781 ggfnfsqilp dplkptkrsf iedllfnkvt ladagfmkqy geclgdinar dlicaqkfng
+      841 ltvlpplltd dmiaaytaal vsgtatagwt fgagaalqip famqmayrfn gigvtqnvly
+      901 enqkqianqf nkaisqiqes ltttstalgk lqdvvnqnaq alntlvkqls snfgaissvl
+      961 ndilsrldkv eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs
+     1021 krvdfcgkgy hlmsfpqaap hgvvflhvty vpsqernftt apaichegka yfpregvfvf
+     1081 ngtswfitqr nffspqiitt dntfvsgscd vvigiinntv ydplqpelds fkeeldkyfk
+     1141 nhtspdvdlg disginasvv niqkeidrln evaknlnesl idlqelgkye qyikwpwyvw
+     1201 lgfiagliai vmvtillccm tsccsclkga cscgscckfd eddsepvlkg vklhyt
+//
+
+LOCUS       ATO98120                1241 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98120
+VERSION     ATO98120.1
+DBSOURCE    accession KY417143.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="Rs4081"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="18-Sep-2012"
+     Protein         1..1241
+                     /product="spike protein"
+                     /name="S"
+     Region          <108..288
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          322..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          634..1238
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1241
+                     /coded_by="KY417143.1:21492..25217"
+ORIGIN      
+        1 mkvlivllsl glvtaqdgcg histkpqplm dkfsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdtnltryl sfnmdsatkv yfdnptlpfg dgiyfaatek snvvrgwifg stmdnttqsa
+      121 iivnnsthii irvcyfnlck epmyaisneq hykswvyqna ynctydrveq sfqldtapqt
+      181 gnfkdlreyv fknkdgflsv ynayspidip rglpvgfsvl kpilklpigi nitsfkvvms
+      241 mfsrttsnfl peiaayfvgn lkystfmlnf nengtitdai dcaqnplsel kctiknfnvs
+      301 kgiyqtsnfr vspthevvrf pnitnrcpfd kvfnasrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta kqdqgqyyyr ssrktklkpf erdltsdeng vrtlstydfy pnvpieyqat
+      481 rvvvlsfell napatvcgpk lstalvknqc vnfnfnglkg igvltdsskr fqsfqqfgrd
+      541 tsdftdsvrd pqtlqildit pcsfggvsvi tpgtnassev avlyqdvnct dvptairadq
+      601 ltpawrvyst ginvfqtqag cligaehvna syecdipiga gicasyhtas tlrsvgqksi
+      661 vaytmslgae nsiayannsi aiptnfsisv ttevmpvsms ktsvdctmyi cgdsqecsnl
+      721 llqygsfctq lnraltgiai eqdkntqevf aqvkqmyktp aikdfggfnf sqilpdpskp
+      781 tkrsfiedll fnkvtladag fmkqygeclg dinardlica qkfngltvlp plltddmiaa
+      841 ytaalvsgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkais
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issvlndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgrgyhlmsf
+     1021 pqaaphgvvf lhvtyvpsqe knfttapaic hegkayfpre gvfvsngtsw fitqrnfysp
+     1081 qiittdntfv agncdvvigi inntvydplq peldsfkeel dkyfknhtsp dvdlgdisgi
+     1141 nasvvniqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia gliaivmati
+     1201 llccmtsccs clkgacscgs cckfdeddse pvlkgvklhy t
+//
+
+LOCUS       ATO98108                1241 aa            linear   VRL 18-DEC-2017
+DEFINITION  spike protein [Bat SARS-like coronavirus].
+ACCESSION   ATO98108
+VERSION     ATO98108.1
+DBSOURCE    accession KY417142.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus
+  ORGANISM  Bat SARS-like coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Xie,J.Z.,
+            Shen,X.R., Zhang,Y.Z., Wang,N., Luo,D.S., Zheng,X.S., Wang,M.N.,
+            Daszak,P., Wang,L.F., Cui,J. and Shi,Z.L.
+  TITLE     Discovery of a rich gene pool of bat SARS-related coronaviruses
+            provides new insights into the origin of SARS coronavirus
+  JOURNAL   PLoS Pathog. 13 (11), e1006698 (2017)
+   PUBMED   29190287
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Hu,B., Zeng,L.P., Yang,X.L., Ge,X.Y., Zhang,W., Li,B., Luo,D.S.,
+            Zhang,Y.Z., Wang,M.N., Daszak,P., Wang,L., Cui,J. and Shi,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (30-DEC-2016) CAS Key Laboratory of Special Pathogens and
+            Biosafety and Center for Emerging Infectious Diseases, Wuhan
+            Institute of Virology, Chinese Academy of Sciences, No. 44 Xiao
+            Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Bat SARS-like coronavirus"
+                     /isolate="As6526"
+                     /host="Aselliscus stoliczkanus"
+                     /db_xref="taxon:1508227"
+                     /country="China"
+                     /collection_date="12-May-2014"
+     Protein         1..1241
+                     /product="spike protein"
+                     /name="S"
+     Region          <81..283
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          322..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          634..1238
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1241
+                     /coded_by="KY417142.1:21492..25217"
+ORIGIN      
+        1 mkilifaflv tlvkaqegcg iisrkpqpkm aqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaatek snvirgwifg stfdnttqsa
+      121 vivnnsthii irvcnfnlck epmytvsrgt qqsswvyqsa fnctydrver sfqldtapkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglpigfsvl rpilklpfgi nitsyrvvma
+      241 mfsqttsnfl pesaayyvgn lkyttfmlrf nengtitdai dcaqnplael kctiknfnvs
+      301 kgiyqtsnfr vsptqevvrf pnitnrcpfd kvfnatrfps vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta qqdkgqyyyr ssrktklkpf erdlssdeng vrtlstydfy ptvpieyqat
+      481 rvvvlsfell napatvcgpk lstglvknqc vnfnfnglkg tgvltdsskr fqsfqqfgrd
+      541 tsdftdsvrd pqtlqvldit pcsfggvsvi tpgtnassev avlyqdvnct dvptairadq
+      601 ltpawrvyst gvnvfqtqag cligaehvna syecdipiga gicasyhtas tlrsvgqksi
+      661 vaytmslgae nsiayannsi aiptnfsisv ttevmpvsma ktsvdctmyi cgdsqecsnl
+      721 llqygsfctq lnraltgval eqdkntqevf aqvkqmyktp aikdfggfnf sqilpdpskp
+      781 tkrsfiedll fnkvtladag fmkqygeclg dinardlica qkfngltvlp plltddmiaa
+      841 ytaalvsgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkais
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issvlndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgrgyhlmsf
+     1021 pqaaphgvvf lhvtyvpsqe knfttapaic hegkayfpre gvfvsngtsw fitqrnfysp
+     1081 qiittdntfv agncdvvigi inntvydplq peldsfkeel dkyfknhtsp dvdlgdisgi
+     1141 nasvvniqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia gliaivmati
+     1201 llccmtsccs clkgacscgs cckfdeddse pvlkgvklhy t
+//
+

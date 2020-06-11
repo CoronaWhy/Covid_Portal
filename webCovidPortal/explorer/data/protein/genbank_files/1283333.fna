@@ -1,0 +1,83 @@
+LOCUS       AGC74176                1241 aa            linear   VRL 07-JUL-2017
+DEFINITION  spike protein [Bat coronavirus Cp/Yunnan2011].
+ACCESSION   AGC74176
+VERSION     AGC74176.1
+DBSOURCE    accession JX993988.1
+KEYWORDS    .
+SOURCE      Bat coronavirus Cp/Yunnan2011
+  ORGANISM  Bat coronavirus Cp/Yunnan2011
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Yang,L., Wu,Z., Ren,X., Yang,F., He,G., Zhang,J., Dong,J., Sun,L.,
+            Zhu,Y., Du,J., Zhang,S. and Jin,Q.
+  TITLE     Novel SARS-like Betacoronaviruses in Bats, China, 2011
+  JOURNAL   Emerging Infect. Dis. 19 (6) (2013)
+   PUBMED   23739658
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   3  (residues 1 to 1241)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   4  (residues 1 to 1241)
+  AUTHORS   Yang,L., Wu,Z., Ren,X. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-OCT-2012) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No. 6, Rongjing
+            East Street, BDA, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Bat coronavirus Cp/Yunnan2011"
+                     /isolate="Cp/Yunnan2011"
+                     /host="Chaerephon plicata"
+                     /db_xref="taxon:1283333"
+                     /country="China"
+                     /collection_date="2011"
+     Protein         1..1241
+                     /product="spike protein"
+     Region          321..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          634..1238
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1241
+                     /coded_by="JX993988.1:21391..25116"
+ORIGIN      
+        1 mkiflfsllf saalaqegcg llsfkpqpkl aqfssskrgv yynddifrsd vlhltqdyfl
+       61 pfhsnltqyf slnvdsdrqv yfdnptlnfg dgvyfaatek snvirgwifg stmdnstqsa
+      121 iivnnsthii irvcnfnlck epmftvsrgv hfsswvyqsa fnctydrvek sfqldtapkt
+      181 gnfkdlreyv fknrdgflsv yhsytpvdii rgipvgfsvl kpilklpigi nitsfkvvmt
+      241 mysqttsnfl sesaayyvgn lkyvtfmfqf nengtiadav dcsqnplael kctlknfnvs
+      301 kgiyqtsnfr vspstevirf pnitnrcpfd rvfnasrfps vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirfsevrq iapgetgvia dynyklpdef
+      421 tgcviawnta nqdrgqyyyr ssrktklkpf erdlssdeng vrtlstydfy psvpleyqat
+      481 rvvvlsfell napatvcgpk lstsliknqc vnfnfnglkg tgvltdsskk fqsfqqfgrd
+      541 asdftdsvrd pqtlqildis pcsfggvsvi tpgtnassev avlyqdvnct dvptairadq
+      601 ltpawrvysa gvnvfqtqag cligaehvna syecdipiga gicasyhtas llrntgqksi
+      661 vaytmslgae nsiayannsi aiptnfsisv ttevmpvsma ktsvdctmyi cgdsqecsnl
+      721 llqygsfctq lnralsgiav eqdkntqevf aqvkqmyktp aikdfggfnf sqilpdpskp
+      781 tkrsfiedll fnkvtladag fmkqygeclg disardlica qkfngltvlp plltdemiaa
+      841 ytaalvsgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkais
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issvlndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgkgyhlmsf
+     1021 pqaaphgvvf lhvtyvpsqe rnfttapaic hqgkayfpre gvfvsngtsw fitqrnffsp
+     1081 qiittdntfv sgncdvvigi inntvydplq peldsfkeel dkyfknhtsp dvdlgdisgi
+     1141 nasvvniqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia gliaivmati
+     1201 llccmtsccs clkgacscgs cckfdeddse pvlkgvklhy t
+//
+
