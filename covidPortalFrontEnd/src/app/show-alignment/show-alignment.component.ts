@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, OnDestroy, Input, ElementRef} from '@angular/core';
+import { Component, ViewChild, OnInit, AfterViewInit, OnDestroy, Input, ElementRef} from '@angular/core';
 // import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
 import { ShowAlignmentService } from './show-alignment-service';
 // import { Observable} from 'rxjs';
@@ -62,6 +62,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     cache: any;
     isLoading: boolean;
 
+    @ViewChild('sequenceTable') sequenceTable;
+
     /**
      * A method that mocks a paged server response
      * @param page The selected page
@@ -89,7 +91,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             // let employee = new CorporateEmployee(jsonObj.name, jsonObj.gender, jsonObj.company, jsonObj.age);
             pagedData.data.push(this.sequenceObjList[i]);
         }
-        console.log("   pagedData.data len " +   pagedData.data.length );
+        console.log(" len pagedData.data " +   pagedData.data.length );
 
         pagedData.page = page;
         return pagedData;
@@ -105,7 +107,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.page.size = pageInfo.pageSize;
 
       this.getResults(this.page).subscribe(pagedData => {
-        console.log (" in get results " + pagedData);
+        console.log (" *** in get results pagedData.data.length " + pagedData.data.length);
         this.page = pagedData.page;
 
         let rows = this.rows;
@@ -167,9 +169,19 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     ngAfterViewInit() {
 
-      // setTimeout(function(){
-        // this.setPage({offset: 0, pageSize: 10});
-      // },1000);
+      this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
+        let offset = this.indexes.first / this.pageSize;
+
+        if (direction === 'up') {
+          offset = Math.ceil(offset);
+        } else if (direction === 'down') {
+          offset = Math.floor(offset);
+        }
+
+        if (direction !== undefined && !isNaN(offset)) {
+          this.page.emit({ offset });
+        }
+      }
 
     }
 
@@ -230,6 +242,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          // console.log(this.displayAignmentObjList);
       });
     }
+
 
     handleResidueClick(residueLabel, position){
 
