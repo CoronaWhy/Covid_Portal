@@ -1,6 +1,12 @@
-import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
+import { Component, OnInit, AfterViewInit, OnDestroy, Input, ElementRef} from '@angular/core';
+// import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
 import { ShowAlignmentService } from './show-alignment-service';
-import { Observable} from 'rxjs';
+// import { Observable} from 'rxjs';
+
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+import { delay } from 'rxjs/operators';
+
 import { HttpClient } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
 import 'rxjs/add/observable/interval';
@@ -9,6 +15,9 @@ import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
+import { Page } from '../models/page';
+import { PagedData } from '../models/page-data';
+import { of } from 'rxjs';
 
 @Component({
     selector: 'list-files',
@@ -17,7 +26,7 @@ import { Options } from 'ng5-slider';
     styleUrls: ['./show-alignment.component.scss']
 })
 
-export class ShowAlignmentComponent implements OnInit, OnDestroy{
+export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     @Input()
     datafiles : UploadFolder[];
@@ -47,6 +56,80 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     showFiltersFlag:boolean;
     sequences:SequenceObj[];
     sequenceResultObj:SequenceResultObj;
+    sequenceObjList:SequenceObj[];
+    page : Page;
+    rows : Array<SequenceObj>;
+    cache: any;
+    isLoading: boolean;
+
+    /**
+     * A method that mocks a paged server response
+     * @param page The selected page
+     * @returns {any} An observable containing the employee data
+     */
+    public getResults(page: Page): Observable<PagedData<SequenceObj>> {
+        return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
+    }
+
+    /**
+     * Package companyData into a PagedData object based on the selected Page
+     * @param page The page data used to get the selected data from companyData
+     * @returns {PagedData<SequenceObj>} An array of the selected data and page
+     */
+    private getPagedData(page: Page): PagedData<SequenceObj> {
+        let pagedData = new PagedData<SequenceObj>();
+        console.log ( " in paged data " + this.sequenceObjList.length);
+        page.totalElements = this.sequenceObjList.length;
+        console.log(" page.totalElements " + page.totalElements );
+        page.totalPages = page.totalElements / page.size;
+        let start = page.pageNumber * page.size;
+        let end = Math.min((start + page.size), page.totalElements);
+        for (let i = start; i < end; i++){
+            // let jsonObj = this.sequenceObjList[i];
+            // let employee = new CorporateEmployee(jsonObj.name, jsonObj.gender, jsonObj.company, jsonObj.age);
+            pagedData.data.push(this.sequenceObjList[i]);
+        }
+        console.log("   pagedData.data len " +   pagedData.data.length );
+
+        pagedData.page = page;
+        return pagedData;
+    }
+
+    /**
+     * Populate the table with new data based on the page number
+     * @param page The page to select
+     */
+    setPage(pageInfo) {
+      this.isLoading = true;
+      this.page.pageNumber = pageInfo.offset;
+      this.page.size = pageInfo.pageSize;
+
+      this.getResults(this.page).subscribe(pagedData => {
+        console.log (" in get results " + pagedData);
+        this.page = pagedData.page;
+
+        let rows = this.rows;
+
+        console.log (" rows.length " + rows.length);
+        console.log (" pagedData.page.totalElements " + pagedData.page.totalElements);
+
+        if (rows.length !== pagedData.page.totalElements) {
+          rows = Array.apply(null, Array(pagedData.page.totalElements));
+          rows = rows.map((x, i) => this.rows[i]);
+        }
+
+        console.log (" this.page.size " + this.page.size);
+
+        // calc start
+        const start = this.page.pageNumber * this.page.size;
+
+        // set rows to our new rows
+        pagedData.data.map((x, i) => rows[i + start] = x);
+        this.rows = rows;
+        this.isLoading = false;
+      });
+
+    }
 
     showHideFilters(){
       if(this.showFiltersFlag ){
@@ -82,13 +165,23 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
       }
     }
 
+    ngAfterViewInit() {
+
+      // setTimeout(function(){
+        // this.setPage({offset: 0, pageSize: 10});
+      // },1000);
+
+    }
+
     ngOnInit() {
       console.log( " on init ");
 
-      this.route.paramMap.subscribe(params => {
-        this.selectedAccessions = params["selectedAccessions"];
-        console.log(this.selectedAccessions);
-      })
+      // this.route.paramMap.subscribe(params => {
+      //   this.selectedAccessions = params["selectedAccessions"];
+      //   console.log(this.selectedAccessions);
+      // })
+
+      this.isLoading = false;
 
       this.showFiltersFlag = false;
       this.rowNum = 0;
@@ -99,6 +192,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
       this.endPosition = this.maxDisplayResidues;
       this.positionSliderValue = 0;
 
+      this.page = new Page();
+
+      this.cache = {};
+      this.rows = [];
+
       this.maxVerticalSliderValue = 10;
       this.verticalSliderValue = 10;
 
@@ -107,6 +205,17 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
          this.alignmentObjList = alignmentResult.alignmentObjList;
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
+         this.sequenceObjList = this.sequenceResultObj.sequenceObjList;
+          for (let i = 0; i < 10; i++){
+              this.rows.push(this.sequenceObjList[i]);
+          }
+         // this.rows =
+         // this.sequenceObjList.slice(0,9);
+
+         console.log( " init this.rows len " + this.rows.length);
+
+         this.setPage({offset: 0, pageSize: 10});
+
          console.log(this.sequenceResultObj);
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
          for (let i = 0; i < this.alignmentObjList.length; i++){

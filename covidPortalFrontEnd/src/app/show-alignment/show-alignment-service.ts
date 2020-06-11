@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
 import { AlignmentResultObj } from '../models/alignment';
-
 import {AppSettings} from '../app.settings';
 
 @Injectable()

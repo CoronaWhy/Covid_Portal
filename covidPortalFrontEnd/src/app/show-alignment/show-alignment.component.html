@@ -74,11 +74,14 @@
                     [footerHeight]="50"
                     [rowHeight]="50"
                     [scrollbarV]="true"
-                    [limit]="10"
-
 
                     [loadingIndicator]="isLoading"
                     [scrollbarV]="true"
+
+                    [externalPaging]="true"
+                    [count]="page.totalElements"
+                    [offset]="page.pageNumber"
+                    (page)='setPage($event)'>
 
                     >
 
