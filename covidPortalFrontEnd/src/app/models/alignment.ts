@@ -13,6 +13,15 @@ export class AlignmentObj {
 
 }
 
+export class NomenclaturePositionObj{
+
+  nomenclaturePositionMajor0s:string[];
+  nomenclaturePositionMajor1s:string[];
+  nomenclaturePositionMajor2s:string[];
+  nomenclaturePositionMinor0s:string[];
+  
+}
+
 export class AlignmentResultObj {
   sequenceResultObj:SequenceResultObj;
   alignmentObjList:AlignmentObj[];

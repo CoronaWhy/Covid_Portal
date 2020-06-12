@@ -61,9 +61,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     rows : Array<SequenceObj>;
     cache: any;
     isLoading: boolean;
-
-    selectedAccessions:string [];
+    displaySequenceObjList:SequenceObj[];
     initialAlignment: boolean;
+    searchString:string;
 
     @ViewChild('sequenceTable') sequenceTable;
 
@@ -76,6 +76,36 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
     }
 
+   reloadSequences(value){
+      console.log(value.currentTarget.defaultValue);
+      if (value.currentTarget.checked){
+        this.selectedAccessions.push(value.currentTarget.defaultValue);
+
+        console.log(this.selectedAccessions);
+
+        this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
+           this.alignmentObjList = alignmentResult.alignmentObjList;
+           // this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+           // this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+
+           this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             if (i == 0){
+               this.maxSliderValue = this.alignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
+             }
+             this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
+             this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
+           }
+        });
+      }
+    }
+
+    filterDatatable(){
+
+      this.displaySequenceObjList = this.sequenceObjList.filter(
+        sequenceObj => sequenceObj.accession.includes(this.searchString));
+
+     }
     /**
      * Package companyData into a PagedData object based on the selected Page
      * @param page The page data used to get the selected data from companyData
@@ -172,19 +202,21 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     ngAfterViewInit() {
 
-      this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
-        let offset = this.indexes.first / this.pageSize;
-
-        if (direction === 'up') {
-          offset = Math.ceil(offset);
-        } else if (direction === 'down') {
-          offset = Math.floor(offset);
-        }
-
-        if (direction !== undefined && !isNaN(offset)) {
-          this.page.emit({ offset });
-        }
-      }
+      // this.sequenceTable = document.getElementById("sequenceTable")
+      //
+      // this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
+      //   let offset = this.indexes.first / this.pageSize;
+      //
+      //   if (direction === 'up') {
+      //     offset = Math.ceil(offset);
+      //   } else if (direction === 'down') {
+      //     offset = Math.floor(offset);
+      //   }
+      //
+      //   if (direction !== undefined && !isNaN(offset)) {
+      //     this.page.emit({ offset });
+      //   }
+      // }
 
     }
 
@@ -218,12 +250,19 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.selectedAccessions = [];
       this.initialAlignment = true;
 
+      this.searchString = '';
+
       this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
          this.alignmentObjList = alignmentResult.alignmentObjList;
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
-         this.sequenceObjList = this.sequenceResultObj.sequenceObjList;
+         this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+         this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+         this.selectedAccessions = alignmentResult.selectedAccessions;
+
+         this.initialAlignment = false;
+
           for (let i = 0; i < 10; i++){
               this.rows.push(this.sequenceObjList[i]);
           }
