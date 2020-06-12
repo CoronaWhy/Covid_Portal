@@ -199,9 +199,13 @@
 
     </div>
 
-    <br/>
-
     <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+
+      <div class="row" style="float:clear;margin-left:70px;">
+        <div *ngFor="let selectedAccession of selectedAccessions">{{selectedAccession}}&nbsp;&nbsp;</div>
+      </div>
+      <br/>
+      <br/>
 
     <table width="2000">
       <tr style="text-align:center;">

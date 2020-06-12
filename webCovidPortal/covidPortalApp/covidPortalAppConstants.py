@@ -20,6 +20,7 @@ RESIDUE_COLOR_MAP = {
     'H':'rgba(130,130,210, 0.5)',
     'P':'rgba(220,150,130, 0.5)',
     '-':'rgba(255,255,255, 1)',
+    'X':'rgba(255,255,255, 1)',
     }
 
 # 1. Request sequence alignments for accession IDs  YP_009724390.1 (early SARS-CoV-2 isolate Wuhan-Hu-1), QIS61410.1 (late SARS-CoV-2 isolate SARS-CoV-2/human/USA/WA-UW376/2020) from API.
