@@ -117,7 +117,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     private getPagedData(page: Page): PagedData<SequenceObj> {
         let pagedData = new PagedData<SequenceObj>();
         console.log ( " in paged data " + this.sequenceObjList.length);
-        page.totalElements = this.sequenceObjList.length;
+        // page.totalElements = this.sequenceObjList.length;
+        page.totalElements = 6;        
         console.log(" page.totalElements " + page.totalElements );
         page.totalPages = page.totalElements / page.size;
         let start = page.pageNumber * page.size;
