@@ -71,9 +71,9 @@
                   <!-- <br/> -->
 
                   <ngx-datatable
-                  #sequenceTable
+                  id = "sequenceTable"
                   class="material"
-                   [rows]="displaySequenceObjList"
+                   [rows]="rows"
                     [columns] = "sequenceResultObj.sequenceTablecolumns"
                     [columnMode]="force"
                     [headerHeight]="50"
@@ -145,7 +145,7 @@
                     <ngx-datatable-column name="isolate">
                     </ngx-datatable-column>
 
-                    <!-- <ngx-datatable-footer>
+                    <ngx-datatable-footer>
                       <ng-template
                         ngx-datatable-footer-template
                         let-rowCount="rowCount"
@@ -172,7 +172,7 @@
                               (change)="table.onFooterPage($event)">
                           </datatable-pager>
                       </ng-template>
-                    </ngx-datatable-footer> -->
+                    </ngx-datatable-footer>
 
                   </ngx-datatable>
 
@@ -216,9 +216,26 @@
           </div>  -->
         </td>
         <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+          <!-- <div style="position:absolute;vertical-align:top;float:clear">
+            <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
+            Units&nbsp;&nbsp;
+            </div>
+            <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor0 of displayNomenclaturePositionObj.nomenclaturePositionMajor0s">
+              {{nomenclaturePositionMajor0}}
+            </div>
+          </div> -->
+          <!-- <div class="row" style="float:clear;margin-left:70px;">
+            Tens&nbsp;&nbsp;
+          </div>
+          <div class="row" style="float:clear;margin-left:70px;">
+            Units&nbsp;&nbsp;
+          </div>
+          <div class="row" style="float:clear;margin-left:70px;">
+            Minor&nbsp;&nbsp;
+          </div> -->
+
           <div *ngIf="displayAlignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
     			    <div style="inline-block;position:relative;" *ngFor="let displayAlignmentObj of displayAlignmentObjList" id="{{displayAlignmentObj.label}}" >
-    						<!-- <div style="inline-block;;float:left; border: 1px solid red; margin-right: 5px;"> -->
     							<div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
     							{{displayAlignmentObj.label}}
     						</div>
@@ -229,7 +246,7 @@
     					</div>
     			</div>
     			<div *ngIf="displayAlignmentObjList?.length == 0">
-    				<b>No data to display.</b>
+    				<!-- <b>No data to display.</b> -->
     			</div>
         </td>
       </tr>

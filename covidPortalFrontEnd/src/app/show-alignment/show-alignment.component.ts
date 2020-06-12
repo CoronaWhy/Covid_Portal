@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
-import { AlignmentObj, ResidueObj } from '../models/alignment';
+import { AlignmentObj, ResidueObj, NomenclaturePositionObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
@@ -64,6 +64,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     displaySequenceObjList:SequenceObj[];
     initialAlignment: boolean;
     searchString:string;
+
+    nomenclaturePositionObj:NomenclaturePositionObj;
+    displayNomenclaturePositionObj:NomenclaturePositionObj;
 
     @ViewChild('sequenceTable') sequenceTable;
 
@@ -202,21 +205,21 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     ngAfterViewInit() {
 
-      // this.sequenceTable = document.getElementById("sequenceTable")
-      //
-      // this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
-      //   let offset = this.indexes.first / this.pageSize;
-      //
-      //   if (direction === 'up') {
-      //     offset = Math.ceil(offset);
-      //   } else if (direction === 'down') {
-      //     offset = Math.floor(offset);
-      //   }
-      //
-      //   if (direction !== undefined && !isNaN(offset)) {
-      //     this.page.emit({ offset });
-      //   }
-      // }
+      this.sequenceTable = document.getElementById("sequenceTable")
+
+      this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
+        let offset = this.indexes.first / this.pageSize;
+
+        if (direction === 'up') {
+          offset = Math.ceil(offset);
+        } else if (direction === 'down') {
+          offset = Math.floor(offset);
+        }
+
+        if (direction !== undefined && !isNaN(offset)) {
+          this.page.emit({ offset });
+        }
+      }
 
     }
 
@@ -260,10 +263,16 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.selectedAccessions = alignmentResult.selectedAccessions;
+         this.nomenclaturePositionObj = alignmentResult.nomenclaturePositionObj;
+
+         this.displayNomenclaturePositionObj = alignmentResult.nomenclaturePositionObj;
+
+         this.displayNomenclaturePositionObj.nomenclaturePositionMajor0s = JSON.parse(JSON.stringify(this.nomenclaturePositionObj.nomenclaturePositionMajor0s));
+         this.displayNomenclaturePositionObj.nomenclaturePositionMajor0s = this.displayNomenclaturePositionObj.nomenclaturePositionMajor0s.slice(this.startPosition,this.endPosition);
 
          this.initialAlignment = false;
 
-          for (let i = 0; i < 10; i++){
+          for (let i = 0; i < 6; i++){
               this.rows.push(this.sequenceObjList[i]);
           }
          // this.rows =
@@ -271,7 +280,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          console.log( " init this.rows len " + this.rows.length);
 
-         this.setPage({offset: 0, pageSize: 10});
+         this.setPage({offset: 0, pageSize: 6});
 
          console.log(this.sequenceResultObj);
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
