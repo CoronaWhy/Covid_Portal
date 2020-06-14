@@ -1,45 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Bad Gateway!</title>
-<link rev="made" href="mailto:info@ncbi.nlm.nih.gov" />
-<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
-    body { color: #000000; background-color: #FFFFFF; }
-    a:link { color: #0000CC; }
-    p, address {margin-left: 3em;}
-    span {font-size: smaller;}
-/*]]>*/--></style>
-</head>
-
-<body>
-<h1>Bad Gateway!</h1>
-<p>
-
-
-    The proxy server received an invalid
-    response from an upstream server.
-
-  
-    </p>
-<p>
-
-    The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p>
-  
-    
-</p>
-<p>
-If you think this is a server error, please contact
-the <a href="mailto:info@ncbi.nlm.nih.gov">webmaster</a>.
-
-</p>
-
-<h2>Error 502</h2>
-<address>
-  <a href="/">eutils.ncbi.nlm.nih.gov</a><br />
-  <span>Apache</span>
-</address>
-</body>
-</html>
+LOCUS       ACJ66971                1363 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike protein [Waterbuck coronavirus US/OH-WD358/1994].
+ACCESSION   ACJ66971
+VERSION     ACJ66971.1
+DBSOURCE    accession FJ425186.1
+KEYWORDS    .
+SOURCE      Waterbuck coronavirus US/OH-WD358/1994
+  ORGANISM  Waterbuck coronavirus US/OH-WD358/1994
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Alekseev,K.P., Vlasova,A.N., Jung,K., Hasoksuz,M., Zhang,X.,
+            Halpin,R., Wang,S., Ghedin,E., Spiro,D. and Saif,L.J.
+  TITLE     Bovine-like coronaviruses isolated from four species of captive
+            wild ruminants are homologous to bovine coronaviruses, based on
+            complete genomic sequences
+  JOURNAL   J. Virol. 82 (24), 12422-12431 (2008)
+   PUBMED   18842722
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Sarmiento,M., Lorenzi,H., Caler,E., Sundaram,J., Hasoksus,M.,
+            Alekseev,K., Vlasova,A., Zhang,X. and Saif,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-OCT-2008) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Waterbuck coronavirus US/OH-WD358/1994"
+                     /host="waterbuck"
+                     /db_xref="taxon:422135"
+                     /country="USA: Ohio"
+                     /collection_date="01-Jan-1994"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          800..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Region          <999..>1135
+                     /region_name="Tar"
+                     /note="Methyl-accepting chemotaxis protein [Cell motility,
+                     Signal transduction mechanisms]; COG0840"
+                     /db_xref="CDD:223910"
+     CDS             1..1363
+                     /coded_by="FJ425186.1:23595..27686"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 efpaitigst fvntsysvvv qphttnldnk lqgfleisvc qytmceypnt icnpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsaltley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgsg sgidagyknt gigtcpagtn yltchnaaqc dclctpdpit
+      541 skatgpykcp qtkylvgige hcsglaiksd hcggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lepvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvklsdvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqsvvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
 

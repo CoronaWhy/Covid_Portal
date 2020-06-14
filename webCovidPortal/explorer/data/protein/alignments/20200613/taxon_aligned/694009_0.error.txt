@@ -1,0 +1,2 @@
+WARNING: BisectingKmeans(): Can't split cluster no. 1 which has 213 objects any further. Hope it's not too big and doesn't slow things down.
+WARNING: BisectingKmeans(): Can't split cluster no. 7 which has 155 objects any further. Hope it's not too big and doesn't slow things down.

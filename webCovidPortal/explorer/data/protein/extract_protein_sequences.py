@@ -1,147 +1,192 @@
-import sys, re;
+import sys, re, os;
 import numpy as np, pandas as pd;
 from Bio import SeqIO;
-import pprint;
+import logging;
 ################################################################################
-# infile = "test_gbs.fna";
-infile = "fetched_proteins.fna";
-outfile = "gb_extract.csv";
+genbank_file_path = os.path.join('.','genbank_files');
+triage_file = os.path.join('.','triage_genbank_files_output.csv');
+logfile = os.path.join('.','extract_protein_sequences.log');
 ################################################################################
-pp = pprint.PrettyPrinter(indent=4);
+with open(logfile, 'w') as fh:
+    pass;
+logging.basicConfig(
+    filename=logfile,
+    level=logging.DEBUG,
+    format='%(asctime)s:%(message)s',
+    datefmt='%m/%d/%Y %I:%M:%s'
+);
 ################################################################################
-rows = {};
-print("Loading "+infile);
-# These were not caught by prior filters
-invalids = [
-    'ACN89771.1',   # MHV orf1b
-    'ACN89724.1',   # MHV orf1b
-    'ACN89691.1',   # MHV orf1b
-    'ACN89704.1',   # MHV orf1b
-    'ACO72891.1',   # MHV orf1b
-    'ACO72882.1',   # MHV orf1b
-    'P0C6X9.1',     # MHV orf1a
-    'ACN89769.1',   # MHV orf1a
-    'ACN89729.1',   # MHV orf1a
-    'ACN89685.1',   # MHV orf1a
-    'ACN89709.1',   # MHV orf1a
-    'P0C6V0.1',     # MHV orf1a
-    'ACO72890.1',   # MHV orf1a
-    'AC072881.1',   # removed at submitter's request
-    'QJE50588.1',   # SARS Urbani orf1a
-    'QJE50587.1',   # SARS Urbani orf1ab
-    'ACO72881.1',   # MHC orf1a
-    'Q66165.2', 'Q9QAR6.1', 'P31613.1', 'P69609.1', 'P22052.1', 'P15779.1',
-    'P15778.1', 'P15776.1', 'P33468.1', 'P59710.1', 'Q9QAQ9.1', 'Q9DR81.1',
-    'P59709.1', 'P59711.1', 'Q8V437.1', 'P30215.1', '5N11_B.1', '5N11_A.1',
-    'Q8BB26.1', 'Q8JSP9.1', 'Q5MQD1.1', 'Q14EB1.1', 'Q0ZME8.1', 'ACN89770.1',
-    'ACN89768.1', 'ACN89767.1', 'ACN89766.1', 'ACN89765.1', 'ACN89764.1',
-    'ACN89762.1', 'ACN89761.1', 'ACN89692.1', 'ACN89690.1', 'ACN89688.1',
-    'ACN89687.1', 'ACN89686.1', 'ACN89684.1', 'ACN89711.1', 'ACN89710.1',
-    'ACN89708.1', 'ACN89707.1', 'ACN89706.1', 'ACN89733.1', 'ACN89732.1',
-    'ACN89731.1', 'ACN89730.1', 'ACN89728.1', 'ACN89727.1', 'ACN89726.1',
-    'ACN89725.1', 'O92367.1',
-    'AAB19590.1', 'P69614.2', 'P0C5A8.1', 'P0C5A7.1', 'P0C2R0.1',
-    'P03416.2', 'P31615.2', 'P19738.1', 'P03415.1', '1WDG_B.1', '1WDG_A.1',
-    '1WDF_B.1', '1WDF_A.1', 'ACO72898.1', 'ACO72897.1', 'ACO72896.1',
-    'ACO72895.1', 'ACO72894.1', 'ACO72892.1', 'ACO72889.1', 'ACO72888.1',
-    'ACO72887.1', 'ACO72885.1', 'ACO72883.1', 'Q83356.1', 'P31614.2',
-    'O91262.1',
-    'Q9IKD2.1', 'YP_009072439.1','AIL94215.1', 'ADY17911.1', 'Q0Q470.1', 'Q3I5J0.1',
-    'AAP94737.1', 'AAP94748.1', 'AAP94759.1', 'AAP30713.1', 'AAP13567.1',
-    'AAT52330.1', 'AAR14803.1', 'AAR14807.1', 'AAR14811.1', '2OFZ_A.1',
-    '2OG3_A.1', 'AAP37017.1', 'AAR87501.1', 'AAR87512.1', 'AAR87523.1',
-    'AAR87534.1', 'AAR87545.1', 'AAR87556.1', 'AAR87567.1', 'AAR87578.1',
-    'AAR87589.1', 'AAR87600.1', 'QJE50600.1', 'QJE50599.1', 'QJE50598.1',
-    'QJE50597.1', 'QJE50596.1', 'QJE50595.1', 'QJE50594.1', 'QJE50593.1',
-    'QJE50592.1', 'QJE50591.1', 'QJE50590.1', 'CAL40866.1', 'P0DTC7.1',
-    '1ZV7_A.1', '1ZV7_B.1', '3JCL_A.1', '3JCL_B.1', '3JCL_C.1', '4KQZ_A.1',
-    '4KQZ_B.1', '4KR0_B.1', '4L3N_A.1', '4L3N_B.1', '4MOD_A.1', '4MOD_B.1',
-    '4XAK_A.1', '4XAK_B.1', '4ZPT_R.1', '4ZPT_S.1', '4ZPV_R.1', '4ZPV_S.1',
-    '4ZPW_R.1', '4ZPW_S.1', '5GNB_A.1', '5I08_A.1', '5I08_B.1', '5I08_C.1',
-    '5KWB_A.1', '5X58_A.1', '5X58_B.1', '5X58_C.1', '5X5B_A.1', '5X5B_B.1',
-    '5X5B_C.1', '6B3O_A.1', '6B3O_B.1', '6B3O_C.1', '6C6Y_R.1', '6C6Y_S.1',
-    '6JHY_A.1', '6LVN_A.1', '6LVN_B.1', '6LVN_C.1', '6LVN_D.1', '6LXT_A.1',
-    '6LXT_B.1', '6LXT_C.1', '6LXT_D.1', '6LXT_E.1', '6LXT_F.1', '6LZG_B.1',
-    '6M0J_E.1', '6M17_E.1', '6M17_F.1', '6NZK_A.1', '6NZK_B.1', '6NZK_C.1',
-    '6OHW_A.1', '6OHW_B.1', '6OHW_C.1', '6Q04_A.1', '6Q04_B.1', '6Q04_C.1',
-    '6Q05_A.1', '6Q05_B.1', '6Q05_C.1', '6Q06_A.1', '6Q06_B.1', '6Q06_C.1',
-    '6Q07_A.1', '6Q07_B.1', '6Q07_C.1', '6VSB_A.1', '6VSB_B.1', '6VSB_C.1',
-    '6VSJ_A.1', '6VSJ_B.1', '6VSJ_C.1', '6VXX_A.1', '6VXX_B.1', '6VXX_C.1',
-    '6VYB_A.1', '6VYB_B.1', '6VYB_C.1', '6W41_C.1', '6YLA_A.1', '6YLA_E.1',
-    '6YM0_E.1', '6YOR_A.1', '6YOR_E.1', '7BZ5_A.1',
-];
-for record in SeqIO.parse(infile,"genbank"):
-    row = {};
-    row['taxon_id'] = "";
-    row['description'] = record.description;
-    row['accession'] = record.annotations['accessions'][0];
-    row['organism'] = record.annotations['organism'];
-    version = (
-        row['accession']+"."+
-        str(record.annotations.get('sequence_version',"1"))
-    );
-    if version in invalids:
-        continue; # skip
-    row['version'] = version;
-    row['seq'] = str(record.seq);
+def extract_sequence_data(ffn, ignore_accessions=[], min_seq_length=500):
+    """Extract sequence and metadata from genbank file containing >= 1 genbank record. Specifically written to extract from NCBI protein records.
 
-    if version in rows:
-        # compare sequences
-        if row['seq']!=rows[version]['seq']:
-            raise Exception("Distinct sequences for version "+version);
-        else:
-            print("\t"+row['organism']+" ... SKIP");
-            continue; #skip to next
+    Parameters
+    ----------
+    ffn : str
+        Full path and file name.
+    ignore_accessions : list
+        List of non-version accession numbers to skip if found.
+    min_seq_length : int
+        Minimum length of sequence to keep, otherwise will skip.
 
-    print("\t"+row['organism']+" ... ",end="", flush=True);
-    row['references'] = [];
-    for r in record.annotations['references']:
-        if r.pubmed_id!="":
-            row['references'].append(r.pubmed_id);
+    Returns
+    -------
+    pd.DataFrame
+        Extracted meta data and sequences.
 
-    def dgf(d, k):
-        return d.get(k, [""])[0];
+    """
+    rows = [];
+    # for every record in file
+    for record in SeqIO.parse(ffn,"genbank"):
+        row = {};
+        # record basics --------------------------------------------------------
+        row['taxon_id'] = ""; # extracted later from dbxref feature
+        row['description'] = record.description;
+        row['organism'] = record.annotations['organism'];
+        row['accession'] = record.annotations['accessions'][0];
+        logtitle = str(ffn)+" "+str(row['accession'])+": ";
 
-    record_cds = 0;
-    for f in record.features:
-        if f.type=="source":
-            d = f.qualifiers;
-            row['collection_date'] = dgf(d, "collection_date");
-            row['country'] = dgf(d, "country");
-            row['host'] = dgf(d, "host");
-            row['isolation_source'] = dgf(d, "isolation_source");
-            if "strain" in d:
-                row['isolate'] = dgf(d, "strain");
-            elif "isolate" in d:
-                row['isolate'] = dgf(d, "isolate");
+        if row['accession'] in ignore_accessions:
+            logging.info(logtitle+" ignored due to ignore_accessions.");
+            continue;
+
+        # build accession.version ----------------------------------------------
+        version = (
+            row['accession']+"."+
+            str(record.annotations.get('sequence_version',"1"))
+        );
+        row['version'] = version;
+        # GET SEQUENCE
+        row['seq'] = str(record.seq);
+        if len(row['seq']) < min_seq_length:
+            logging.info(
+                logtitle+"ignored, sequence is <"+str(min_seq_length)+".");
+            continue;
+        # ----------------------------------------------------------------------
+        # get publication references -------------------------------------------
+        row['references'] = [];
+        for r in record.annotations['references']:
+            if r.pubmed_id!="":
+                row['references'].append(r.pubmed_id);
+        # ----------------------------------------------------------------------
+        # extract relevant feature data ----------------------------------------
+        def dgf(d, k): # simplify BioPython's arrayifying/OOPing everything
+            return d.get(k, [""])[0];
+        record_cds = 0;
+        for f in record.features:
+            # meta-data
+            if f.type=="source":
+                d = f.qualifiers;
+                row['collection_date'] = dgf(d, "collection_date");
+                row['country'] = dgf(d, "country");
+                row['host'] = dgf(d, "host");
+                row['isolation_source'] = dgf(d, "isolation_source");
+                if "strain" in d:
+                    row['isolate'] = dgf(d, "strain");
+                elif "isolate" in d:
+                    row['isolate'] = dgf(d, "isolate");
+                else:
+                    row['isolate'] = row['organism']
+                if "db_xref" in d:
+                    for ref in d['db_xref']:
+                        if ref[0:5]=="taxon":
+                            row['taxon_id'] = ref[6:];
+            # coding regions, should only one: the spike protein
+            elif f.type=="CDS":
+                record_cds+=1;
+                if record_cds>1:
+                    raise Exception("Multiple CDS identified for "+row['organism']);
+                d = f.qualifiers;
+                row['coded_by'] = dgf(d, "coded_by");
+        # ----------------------------------------------------------------------
+        # add row
+        logging.info(logtitle+" stored.");
+        rows.append(row);
+    return pd.DataFrame(rows);
+################################################################################
+def extract_genbank_files(
+    # path to genbank protein files by taxon id
+    path=os.path.join('.','genbank_files'),
+    # triage file
+    triage_file=os.path.join('.','triage_genbank_files_output.csv'),
+    # output file for sequences and data
+    sequence_file=os.path.join('.','extract_protein_sequences_output.csv'),
+    # overwrite output file if True
+    overwrite=True,
+    record_buffer=10000,
+):
+    """Extracts sequence data and metadata from genbank protein sequence files
+    whose accession numbers have been triaged.
+
+    Parameters
+    ----------
+    path : str
+        Path to genbank file repository.
+    triage_file : str
+        Full file name and path of genbank accession triage output file.
+    sequence_file : str
+        Full file name and path of file to output to.
+    overwrite : bool
+        Overwrite output file if True, otherwise will append.
+    record_buffer : int
+        Number of genbank records to buffer before write.
+
+    Returns
+    -------
+    None
+
+    """
+    # load triage file
+    triaged = pd.read_csv(triage_file);
+    # delete extract sequence output file if exists
+    if os.path.isfile(sequence_file):
+        os.remove(sequence_file);
+    # initialize rows buffer
+    rows = [];
+    # go by unique filename
+    for ffn in triaged['ffn'].unique():
+        # subset traige records
+        ss = triaged[triaged['ffn']==ffn];
+
+        # get data from records in file
+        # NOTE: accessions here do not include version numbers
+        rows.append(
+            extract_sequence_data(
+                ffn,
+                ignore_accessions=ss['accession'][
+                    ss['valid']==False
+                ].astype(str).to_list()
+            )
+        );
+
+        # check buffer size and save if needed
+        if len(rows)>=record_buffer:
+            df = pd.concat(rows);
+            if os.path.isfile(sequence_file):
+                df.to_csv(sequence_file, mode='a', header=False);
             else:
-                row['isolate'] = row['organism']
-            if "db_xref" in d:
-                for ref in d['db_xref']:
-                    if ref[0:5]=="taxon":
-                        row['taxon_id'] = ref[6:];
+                df.to_csv(sequence_file, header=True);
+            rows = [];
 
-        elif f.type=="CDS":
-            record_cds+=1;
-            if record_cds>1:
-                raise Exception("Multiple CDS identified for "+row['organism']);
-            d = f.qualifiers;
-            row['coded_by'] = dgf(d, "coded_by");
-
-    rows[version] = row;
-    print("OK");
-print("Concatenating...");
-df = pd.DataFrame(rows.values(), index=rows.keys());
-print("Checking for duplicate versions...");
-if len(list(df['version'].unique())) != len(df):
-    print(
-        "ERROR: There are "+str(len(list(df['version'].unique())))+
-        " unique accession.versions and "+str(len(df))+" total records..."
+    # final save.
+    if len(rows)>0:
+            df = pd.concat(rows, ignore_index=True, sort=False);
+            if os.path.isfile(sequence_file):
+                df.to_csv(sequence_file, mode='a', header=False);
+            else:
+                df.to_csv(sequence_file, header=True);
+################################################################################
+if __name__ == '__main__':
+    extract_genbank_files(
+        path=genbank_file_path,
+        # triage file
+        triage_file=triage_file,
+        # output file for sequences and data
+        sequence_file=os.path.join('.','extract_protein_sequences_output.csv'),
+        # overwrite output file if True
+        overwrite=True,
+        record_buffer=10000,
     );
-print("Writing "+outfile);
-df.to_csv(outfile);
-
-
+################################################################################
 # Issues to be aware of:
 #   1. Strain vs. Isolate in record.features type "source", some have neither.
 #       Use strain, then isolate, then organism name in that order.

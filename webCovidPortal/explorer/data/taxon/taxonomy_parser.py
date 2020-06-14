@@ -86,7 +86,12 @@ for l in buffer:
         new_branch = True;
         continue;
     elif l.strip()=="</UL>":
-        end_branch = True;
+        if len(path)>0:
+            parent = path.pop();
+            end_branch = False;
+        else:
+            print("End of path");
+            break;
         continue;
     else:
         edict = parseline(l);
@@ -97,9 +102,6 @@ for l in buffer:
             path.append(previous_taxon_id);
             child_count[previous_taxon_id] = 0;
             new_branch = False;
-        if end_branch == True:
-            parent = path.pop();
-            end_branch = False;
         child_count[path[-1]]+=1;
         extracted.append({
             **{
@@ -109,7 +111,7 @@ for l in buffer:
             **edict
         });
         previous_taxon_id = edict['taxon_id'];
-
+        print("\t"*len(path)+edict['name']);
 # Designate leaf and node using child counts
 parent_ids = list(child_count.keys());
 for i in range(0,len(extracted)):
@@ -118,7 +120,6 @@ for i in range(0,len(extracted)):
         extracted[i]['leaf'] = False;
     else:
         extracted[i]['leaf'] = True;
-
 ################################################################################
 # Convert to dataframe and store
 df = pd.DataFrame(extracted);
@@ -127,5 +128,4 @@ df['pcount'] = df['pcount'].replace(',','',regex=True).astype(int);
 df['gb_taxon_id'] = df['taxon_id'];
 df['level'] = df['title'];
 cols = ['leaf','path','gb_taxon_id','name','level','type','href','plink','pcount'];
-
 df[cols].to_csv(outfile, header=True, index=False);

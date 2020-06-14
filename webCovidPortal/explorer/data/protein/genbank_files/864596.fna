@@ -1,45 +1,165 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Bad Gateway!</title>
-<link rev="made" href="mailto:info@ncbi.nlm.nih.gov" />
-<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
-    body { color: #000000; background-color: #FFFFFF; }
-    a:link { color: #0000CC; }
-    p, address {margin-left: 3em;}
-    span {font-size: smaller;}
-/*]]>*/--></style>
-</head>
+LOCUS       YP_003858584            1259 aa            linear   VRL 13-AUG-2018
+DEFINITION  spike protein [Bat coronavirus BM48-31/BGR/2008].
+ACCESSION   YP_003858584
+VERSION     YP_003858584.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_014470.1
+KEYWORDS    RefSeq.
+SOURCE      Bat coronavirus BM48-31/BGR/2008
+  ORGANISM  Bat coronavirus BM48-31/BGR/2008
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1259)
+  AUTHORS   Drexler,J.F., Gloza-Rausch,F., Glende,J., Corman,V.M., Muth,D.,
+            Goettsche,M., Seebens,A., Niedrig,M., Pfefferle,S., Yordanov,S.,
+            Zhelyazkov,L., Hermanns,U., Vallo,P., Lukashev,A., Muller,M.A.,
+            Deng,H., Herrler,G. and Drosten,C.
+  TITLE     Genomic characterization of SARS-related Coronavirus in European
+            bats and classification of Coronaviruses based on partial
+            RNA-dependent RNA polymerase gene sequences
+  JOURNAL   J. Virol. (2010) In press
+   PUBMED   20686038
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1259)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-AUG-2010) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (residues 1 to 1259)
+  AUTHORS   Drexler,J.F., Corman,V.M. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-NOV-2009) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to ADK66841.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1259
+                     /organism="Bat coronavirus BM48-31/BGR/2008"
+                     /strain="BtCoV/BM48-31/BGR/2008"
+                     /host="Rhinolophus blasii"
+                     /db_xref="taxon:864596"
+                     /country="Bulgaria"
+                     /collection_date="2008"
+     Protein         1..1259
+                     /product="spike protein"
+                     /calculated_mol_wt=139173
+     Region          <105..288
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          321..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          651..1250
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1259
+                     /gene="S"
+                     /locus_tag="BtCoVBM48_gp2"
+                     /coded_by="NC_014470.1:21391..25170"
+                     /db_xref="GeneID:9714824"
+ORIGIN      
+        1 mkflaflcll gfanaqdgkc gtlsnkspsk ltqtpssrrg fyyfddifrs sirvlttghf
+       61 lpfntnltwy ltlksngkqr iyydnpninf gdgvyfglte ksnvfrgwif gstldnttqs
+      121 avlfnngthi vidvcnfnfc adpmfavnsg qpyktwiyts aanctyhrah afnistnmnp
+      181 gkfkhfrehl fknvdgflyv yhnyepidln sgfpsgfsvl kpilklpfgl nityvkaimt
+      241 lfsstqsnfd adasayfvgh lkpltmlvdf dengtiidai dcsqdplsel kcttksftve
+      301 kgiyqtsnfr vtpttevvrf pnitqlcpfn evfnitsfps vyawermrit ncvadysvly
+      361 nssasfstfq cygvsptkln dlcfssvyad yfvvkgddvr qiapaqtgvi adynyklpdd
+      421 ftgcviawnt nsldssneff yrrfrhgkik pygrdlsnvl fnpsggtcsa eglncykpla
+      481 sygftqssgi gfqpyrvvvl sfellnapat vcgpkqstel vknkcvnfnf ngltgtgvlt
+      541 nstkkfqpfq qfgrdvsdft dsvrdpktle ildiapcsyg gvsvitpgtn asssvavlyq
+      601 dvnctdvptm lhadqishdw rvyafrndgn ifqtqagcli gaaydnssye cdipigagic
+      661 akytnvsstl vrsgghsila ytmslgdnqd ivysnntiai pmnfsisvtt evlpvsmtkt
+      721 svdcnmyicg dstecsnlll qygsfctqln ralagiaveq drntrdvfaq tkamyktpsl
+      781 kdfggfnfsq ilpdpakpss rsfiedllyn kvtladpgfm kqygdclggv nardlicaqk
+      841 fngltvlppl ltdemiaayt aalisgtata gftfgagaal qipfamqmay rfngigvtqn
+      901 vlyenqkqia nqfnkaisqi qdslstttta lgklqdvinq naialntlvk qlssnfgais
+      961 svlndilsrl dkveaevqid rlitgrlqsl qtyvtqqlir aaeirasanl aatkmsecvl
+     1021 gqskrvdfcg kgyhlmsfpq aaphgvvflh vtyvpsqeqn fttapaiche gkahfpregv
+     1081 fvtngthwfi tqrnfyspqp ittdntfvsg ncdvvigivn ntvydplqpe ldsfkeeldk
+     1141 yfknhtsqnv sldglnnina svvdikkeie hlneiaksln eslidlqelg kyeqyikwpw
+     1201 yvwlgfiagl iaivmatiml ccmtsccscl kgvcscascc kfdedhsepv ltgvklhyt
+//
 
-<body>
-<h1>Bad Gateway!</h1>
-<p>
-
-
-    The proxy server received an invalid
-    response from an upstream server.
-
-  
-    </p>
-<p>
-
-    The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p>
-  
-    
-</p>
-<p>
-If you think this is a server error, please contact
-the <a href="mailto:info@ncbi.nlm.nih.gov">webmaster</a>.
-
-</p>
-
-<h2>Error 502</h2>
-<address>
-  <a href="/">eutils.ncbi.nlm.nih.gov</a><br />
-  <span>Apache</span>
-</address>
-</body>
-</html>
+LOCUS       ADK66841                1259 aa            linear   VRL 08-OCT-2010
+DEFINITION  spike protein [Bat coronavirus BM48-31/BGR/2008].
+ACCESSION   ADK66841
+VERSION     ADK66841.1
+DBSOURCE    accession GU190215.1
+KEYWORDS    .
+SOURCE      Bat coronavirus BM48-31/BGR/2008
+  ORGANISM  Bat coronavirus BM48-31/BGR/2008
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1259)
+  AUTHORS   Drexler,J.F., Gloza-Rausch,F., Glende,J., Corman,V.M., Muth,D.,
+            Goettsche,M., Seebens,A., Niedrig,M., Pfefferle,S., Yordanov,S.,
+            Zhelyazkov,L., Hermanns,U., Vallo,P., Lukashev,A., Muller,M.A.,
+            Deng,H., Herrler,G. and Drosten,C.
+  TITLE     Genomic Characterization of Severe Acute Respiratory
+            Syndrome-Related Coronavirus in European Bats and Classification of
+            Coronaviruses Based on Partial RNA-Dependent RNA Polymerase Gene
+            Sequences
+  JOURNAL   J. Virol. 84 (21), 11336-11349 (2010)
+   PUBMED   20686038
+REFERENCE   2  (residues 1 to 1259)
+  AUTHORS   Drexler,J.F., Corman,V.M. and Drosten,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-NOV-2009) Institute of Virology, University of Bonn
+            Medical Centre, Sigmund Freud-Str. 25, Bonn 53127, Germany
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1259
+                     /organism="Bat coronavirus BM48-31/BGR/2008"
+                     /strain="BtCoV/BM48-31/BGR/2008"
+                     /host="Rhinolophus blasii"
+                     /db_xref="taxon:864596"
+                     /country="Bulgaria"
+                     /collection_date="2008"
+     Protein         1..1259
+                     /product="spike protein"
+     Region          <105..288
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          321..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          651..1250
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1259
+                     /gene="S"
+                     /coded_by="GU190215.1:21391..25170"
+ORIGIN      
+        1 mkflaflcll gfanaqdgkc gtlsnkspsk ltqtpssrrg fyyfddifrs sirvlttghf
+       61 lpfntnltwy ltlksngkqr iyydnpninf gdgvyfglte ksnvfrgwif gstldnttqs
+      121 avlfnngthi vidvcnfnfc adpmfavnsg qpyktwiyts aanctyhrah afnistnmnp
+      181 gkfkhfrehl fknvdgflyv yhnyepidln sgfpsgfsvl kpilklpfgl nityvkaimt
+      241 lfsstqsnfd adasayfvgh lkpltmlvdf dengtiidai dcsqdplsel kcttksftve
+      301 kgiyqtsnfr vtpttevvrf pnitqlcpfn evfnitsfps vyawermrit ncvadysvly
+      361 nssasfstfq cygvsptkln dlcfssvyad yfvvkgddvr qiapaqtgvi adynyklpdd
+      421 ftgcviawnt nsldssneff yrrfrhgkik pygrdlsnvl fnpsggtcsa eglncykpla
+      481 sygftqssgi gfqpyrvvvl sfellnapat vcgpkqstel vknkcvnfnf ngltgtgvlt
+      541 nstkkfqpfq qfgrdvsdft dsvrdpktle ildiapcsyg gvsvitpgtn asssvavlyq
+      601 dvnctdvptm lhadqishdw rvyafrndgn ifqtqagcli gaaydnssye cdipigagic
+      661 akytnvsstl vrsgghsila ytmslgdnqd ivysnntiai pmnfsisvtt evlpvsmtkt
+      721 svdcnmyicg dstecsnlll qygsfctqln ralagiaveq drntrdvfaq tkamyktpsl
+      781 kdfggfnfsq ilpdpakpss rsfiedllyn kvtladpgfm kqygdclggv nardlicaqk
+      841 fngltvlppl ltdemiaayt aalisgtata gftfgagaal qipfamqmay rfngigvtqn
+      901 vlyenqkqia nqfnkaisqi qdslstttta lgklqdvinq naialntlvk qlssnfgais
+      961 svlndilsrl dkveaevqid rlitgrlqsl qtyvtqqlir aaeirasanl aatkmsecvl
+     1021 gqskrvdfcg kgyhlmsfpq aaphgvvflh vtyvpsqeqn fttapaiche gkahfpregv
+     1081 fvtngthwfi tqrnfyspqp ittdntfvsg ncdvvigivn ntvydplqpe ldsfkeeldk
+     1141 yfknhtsqnv sldglnnina svvdikkeie hlneiaksln eslidlqelg kyeqyikwpw
+     1201 yvwlgfiagl iaivmatiml ccmtsccscl kgvcscascc kfdedhsepv ltgvklhyt
+//
 

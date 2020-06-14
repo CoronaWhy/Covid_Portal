@@ -1,8 +1,9 @@
 import sys;
 import numpy as np, pandas as pd;
 ################################################################################
-infile = "gb_extract.csv";
-outfile = "gb_foralignment_byaccession.fasta";
+infile = "extract_protein_sequences_output.csv";
+prealign_folder = os.path.join('.','prealigned');
+batch_size = 2000; # sequence batch size per fasta file
 ################################################################################
 print("Loading "+infile);
 df = pd.read_csv(infile);

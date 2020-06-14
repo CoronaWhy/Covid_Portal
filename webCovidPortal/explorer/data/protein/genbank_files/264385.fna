@@ -1,45 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Bad Gateway!</title>
-<link rev="made" href="mailto:info@ncbi.nlm.nih.gov" />
-<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
-    body { color: #000000; background-color: #FFFFFF; }
-    a:link { color: #0000CC; }
-    p, address {margin-left: 3em;}
-    span {font-size: smaller;}
-/*]]>*/--></style>
-</head>
-
-<body>
-<h1>Bad Gateway!</h1>
-<p>
-
-
-    The proxy server received an invalid
-    response from an upstream server.
-
-  
-    </p>
-<p>
-
-    The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p>
-  
-    
-</p>
-<p>
-If you think this is a server error, please contact
-the <a href="mailto:info@ncbi.nlm.nih.gov">webmaster</a>.
-
-</p>
-
-<h2>Error 502</h2>
-<address>
-  <a href="/">eutils.ncbi.nlm.nih.gov</a><br />
-  <span>Apache</span>
-</address>
-</body>
-</html>
+LOCUS       AAS44789                 445 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike glycoprotein, partial [SARS coronavirus TW-YM3].
+ACCESSION   AAS44789
+VERSION     AAS44789.1
+DBSOURCE    accession AY451906.1
+KEYWORDS    .
+SOURCE      SARS coronavirus TW-YM3
+  ORGANISM  SARS coronavirus TW-YM3
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 445)
+  AUTHORS   Lan,Y.C., Liu,T.T., Yang,J.Y., Lee,C.M., Chen,Y.J., Chan,Y.J.,
+            Lu,J.J., Liu,H.F., Hsiung,C.A., Ho,M.S., Hsiao,K.J., Chen,H.Y. and
+            Chen,Y.M.
+  TITLE     Molecular epidemiology of severe acute respiratory
+            syndrome-associated coronavirus infections in Taiwan
+  JOURNAL   J. Infect. Dis. 191 (9), 1478-1489 (2005)
+   PUBMED   15809907
+REFERENCE   2  (residues 1 to 445)
+  AUTHORS   Lan,Y.-C., Chen,Y.-J., Lee,C.-M., Liu,T.-T., Lu,J.-J., Chan,Y.-J.,
+            Yang,J.-Y., Chen,H.-Y. and Chen,Y.-M.Arthur.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-OCT-2003) National Yang-Ming University, AIDS
+            Prevention and Research Center, 155, Li-Nong St., Sec.2, Peitou,
+            Taipei, Taiwan 112, R.O.C.
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..445
+                     /organism="SARS coronavirus TW-YM3"
+                     /isolate="TW-YM3_SC22-23"
+                     /db_xref="taxon:264385"
+     Protein         1..>445
+                     /product="spike glycoprotein"
+     Region          316..>445
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     CDS             1..445
+                     /coded_by="AY451906.1:256..>1591"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tnhtfgnpvi pfkdgiyfaa teksnvvrgw vfgstmnnks qsviiinnst
+      121 nvviracnfe lcdnpffavs kpmgtqthtm ifdnafnctf eyisdafsld vseksgnfkh
+      181 lrefvfknkd gflyvykgyq pidvvrdlps gfntlkpifk lplginitnf railtafspa
+      241 qdiwgtsaaa yfvgylkptt fmlkydengt itdavdcsqn plaelkcsvk sfeidkgiyq
+      301 tsnfrvvpsg dvvrfpnitn lcpfgevfna tkfpsvyawe rkkisncvad ysvlynstff
+      361 stfkcygvsa tklndlcfsn vyadsfvvkg ddvrqiapgq tgviadynyk lpddfmgcvl
+      421 awntrnidat stgnynykyr ylrhg
+//
 

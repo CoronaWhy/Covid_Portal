@@ -1,24 +1,24 @@
-import sys, time, os;
+import sys, time, os, re;
 import numpy as np, pandas as pd;
 import urllib, requests, xmltodict, pprint;
 ################################################################################
-txidfile = "../taxon/taxonomy_parsed.csv"; # taxon ID file
-outfile = "./fetched_proteins.fna"; # GB records for all proteins fetched
-failfile = "./failed_fetch_taxa.csv"; # taxon_ids whose protein fetch failed
+txidfile = os.path.join('..','taxon','taxonomy_parsed.csv');
+genbank_file_path = os.path.join('.','genbank_files');
+overwrite = False;
 ################################################################################
-def fetch_protein_ids_from_taxon_id(taxon_id, protein_name="spike"):
-    base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?";
-    options = {
-        'term'          : "txid"+taxon_id+"[Organism:noexp] AND "+protein_name,
-        'db'            : "protein",
-        'usehistory'    : "n",
-    }
-    url = base + urllib.parse.urlencode(options);
-    r = xmltodict.parse(requests.get(url).text);
-    try: returnval = r['eSearchResult']['IdList']['Id'];
-    except: return None;
-    if type(returnval)==list: return returnval;
-    else: return [returnval];
+# def fetch_protein_ids_from_taxon_id(taxon_id, protein_name="spike"):
+#     base = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?";
+#     options = {
+#         'term'          : "txid"+taxon_id+"[Organism:noexp] AND "+protein_name,
+#         'db'            : "protein",
+#         'usehistory'    : "n",
+#     }
+#     url = base + urllib.parse.urlencode(options);
+#     r = xmltodict.parse(requests.get(url).text);
+#     try: returnval = r['eSearchResult']['IdList']['Id'];
+#     except: return None;
+#     if type(returnval)==list: return returnval;
+#     else: return [returnval];
 
 def fetch_protein_gbs_from_taxon_id(taxon_id, protein_name="spike", retmax=500):
     base_search = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?";
@@ -48,36 +48,37 @@ def fetch_protein_gbs_from_taxon_id(taxon_id, protein_name="spike", retmax=500):
             buffer.append(gbs);
             print('.', end='', flush=True);
     return buffer;
-
-
 ################################################################################
 failed_ids = [];
-df = pd.read_csv(txidfile);
-taxon_ids = df['gb_taxon_id'][
-    (df['leaf']==True) &
-    (df['pcount']>0)
-].astype(str);
-
+taxa = pd.read_csv(txidfile);
+taxa['gb_taxon_id'] = taxa['gb_taxon_id'].astype(str);
+leafs = taxa[(taxa['leaf']==True) & (taxa['pcount']>0)];
+rx_count_gbs = re.compile('[\n]?LOCUS       ');
 # fh = open(outfile, "w");
-for taxon_id in taxon_ids:
-    print("Downloading for "+taxon_id+" ... ", end='', flush=True);
+for i,leaf in leafs.iterrows():
+    # print("Downloading for "+taxon_id+" ... ", end='', flush=True);
+    taxon_id = leaf['gb_taxon_id'];
     filename = os.path.join('genbank_files',taxon_id+'.fna');
     if os.path.isfile(filename):
-        print("File exists.");
-        continue;
-    try:
-        gbs = fetch_protein_gbs_from_taxon_id(taxon_id);
-        with open(filename,'w') as fh:
-            fh.write("".join(gbs));
-        print("--> "+filename+" ("+str(len(gbs))+")");
-        # fh.write("".join(gbs));
-    except Exception as e:
-        print("Failed "+taxon_id+": "+str(e));
-        failed_ids.append(taxon_id);
-        continue;
+        if overwrite:
+            os.remove(filename);
+        else:
+            print(
+                taxon_id.ljust(10)+" "+
+                leaf['name'].ljust(20)+" exists");
+            continue;
+
+    print(
+        taxon_id.ljust(10)+" "+
+        leaf['name'].ljust(20)+" ...");
+    gbs = fetch_protein_gbs_from_taxon_id(str(taxon_id));
+    record_count = len(re.findall(rx_count_gbs, "".join(gbs)));
+    with open(filename,'w') as fh:
+        fh.write("".join(gbs));
+    print(("--> ").rjust(14)+filename+" ("+str(record_count)+")");
     time.sleep(1);
 # fh.close();
-print("Wrote to "+outfile);
-failed_ids = pd.DataFrame({'taxon_id': failed_ids});
-print("Writing "+failfile);
-failed_ids.to_csv(failfile);
+# print("Wrote to "+outfile);
+# failed_ids = pd.DataFrame({'taxon_id': failed_ids});
+# print("Writing "+failfile);
+# failed_ids.to_csv(failfile);

@@ -1,45 +1,151 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head>
-<title>Bad Gateway!</title>
-<link rev="made" href="mailto:info@ncbi.nlm.nih.gov" />
-<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
-    body { color: #000000; background-color: #FFFFFF; }
-    a:link { color: #0000CC; }
-    p, address {margin-left: 3em;}
-    span {font-size: smaller;}
-/*]]>*/--></style>
-</head>
+LOCUS       1ZV7_B                    44 aa            linear   VRL 10-OCT-2012
+DEFINITION  Chain B, Spike Glycoprotein.
+ACCESSION   1ZV7_B
+VERSION     1ZV7_B
+DBSOURCE    pdb: molecule 1ZV7, chain 66, release Sep 4, 2012;
+            deposition: Jun 1, 2005;
+            class: Viral Protein;
+            source: Mmdb_id: 38995, Pdb_id 1: 1ZV7;
+            Exp. method: X-Ray Diffraction.
+KEYWORDS    .
+SOURCE      SARS coronavirus FRA
+  ORGANISM  SARS coronavirus FRA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 44)
+  AUTHORS   Deng,Y., Liu,J., Zheng,Q., Yong,W. and Lu,M.
+  TITLE     Structures and polymorphic interactions of two heptad-repeat
+            regions of the SARS virus S2 protein
+  JOURNAL   Structure 14 (5), 889-899 (2006)
+   PUBMED   16698550
+REFERENCE   2  (residues 1 to 44)
+  AUTHORS   Deng,Y., Liu,J., Zheng,Q., Yong,W., Dai,J. and Lu,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2005)
+COMMENT     A Structure-Based Mechanism Of Sars Virus Membrane Fusion.
+FEATURES             Location/Qualifiers
+     source          1..44
+                     /organism="SARS coronavirus FRA"
+                     /db_xref="taxon:242743"
+     Region          <1..44
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     SecStr          7..35
+                     /sec_str_type="helix"
+                     /note="helix 2"
+ORIGIN      
+        1 disginasvv niqkeidrln evaknlnesl idlqelgkye qyik
+//
 
-<body>
-<h1>Bad Gateway!</h1>
-<p>
+LOCUS       1ZV7_A                    44 aa            linear   VRL 10-OCT-2012
+DEFINITION  Chain A, Spike Glycoprotein.
+ACCESSION   1ZV7_A
+VERSION     1ZV7_A
+DBSOURCE    pdb: molecule 1ZV7, chain 65, release Sep 4, 2012;
+            deposition: Jun 1, 2005;
+            class: Viral Protein;
+            source: Mmdb_id: 38995, Pdb_id 1: 1ZV7;
+            Exp. method: X-Ray Diffraction.
+KEYWORDS    .
+SOURCE      SARS coronavirus FRA
+  ORGANISM  SARS coronavirus FRA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 44)
+  AUTHORS   Deng,Y., Liu,J., Zheng,Q., Yong,W. and Lu,M.
+  TITLE     Structures and polymorphic interactions of two heptad-repeat
+            regions of the SARS virus S2 protein
+  JOURNAL   Structure 14 (5), 889-899 (2006)
+   PUBMED   16698550
+REFERENCE   2  (residues 1 to 44)
+  AUTHORS   Deng,Y., Liu,J., Zheng,Q., Yong,W., Dai,J. and Lu,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (01-JUN-2005)
+COMMENT     A Structure-Based Mechanism Of Sars Virus Membrane Fusion.
+FEATURES             Location/Qualifiers
+     source          1..44
+                     /organism="SARS coronavirus FRA"
+                     /db_xref="taxon:242743"
+     Region          <1..44
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     SecStr          2..36
+                     /sec_str_type="helix"
+                     /note="helix 1"
+ORIGIN      
+        1 disginasvv niqkeidrln evaknlnesl idlqelgkye qyik
+//
 
-
-    The proxy server received an invalid
-    response from an upstream server.
-
-  
-    </p>
-<p>
-
-    The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p>
-  
-    
-</p>
-<p>
-If you think this is a server error, please contact
-the <a href="mailto:info@ncbi.nlm.nih.gov">webmaster</a>.
-
-</p>
-
-<h2>Error 502</h2>
-<address>
-  <a href="/">eutils.ncbi.nlm.nih.gov</a><br />
-  <span>Apache</span>
-</address>
-</body>
-</html>
+LOCUS       AAP50485                1255 aa            linear   VRL 12-DEC-2003
+DEFINITION  spike glycoprotein [SARS coronavirus FRA].
+ACCESSION   AAP50485
+VERSION     AAP50485.1
+DBSOURCE    accession AY310120.1
+KEYWORDS    .
+SOURCE      SARS coronavirus FRA
+  ORGANISM  SARS coronavirus FRA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Stadler,K., Masignani,V., Eickmann,M., Becker,S., Abrignani,S.,
+            Klenk,H.D. and Rappuoli,R.
+  TITLE     SARS--beginning to understand a new virus
+  JOURNAL   Nat. Rev. Microbiol. 1 (3), 209-218 (2003)
+   PUBMED   15035025
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Censini,S., Guidotti,S., Masignani,V., Scarselli,M., Mora,M.,
+            Stadler,K., Abrignani,S., Covacci,A. and Rappuoli,R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-MAY-2003) Cellular Microbiology and Bioinformatics,
+            Chiron Srl, Via Fiorentina 1, Siena 53100, Italy
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus FRA"
+                     /strain="FRA"
+                     /isolation_source="patient from Frankfurt, Germany"
+                     /db_xref="taxon:242743"
+                     /note="similar to SARS coronavirus Frankfurt 1 sequence
+                     deposited in GenBank Accession Number AY291315"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+                     /name="ORF2; S"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY310120.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdfgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
 

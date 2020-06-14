@@ -1,63 +1,45 @@
-LOCUS       AAQ94060                1255 aa            linear   VRL 21-OCT-2003
-DEFINITION  spike protein S [SARS coronavirus AS].
-ACCESSION   AAQ94060
-VERSION     AAQ94060.1
-DBSOURCE    accession AY427439.1
-KEYWORDS    .
-SOURCE      SARS coronavirus AS
-  ORGANISM  SARS coronavirus AS
-            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
-            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
-            Betacoronavirus; Sarbecovirus.
-REFERENCE   1  (residues 1 to 1255)
-  AUTHORS   Balotta,C., Corvasce,S., Violin,M., Galli,M., Moroni,M.,
-            Vigevani,G.M., Ruan,Y.J. and Salemi,M.
-  TITLE     Direct Submission
-  JOURNAL   Submitted (02-OCT-2003) Institute of Infectious and Tropical
-            Diseases, 'L.Sacco' Hospital, University of Milan, Via G.B. Grassi,
-            74, Milan 20157, Italy
-COMMENT     Method: conceptual translation supplied by author.
-FEATURES             Location/Qualifiers
-     source          1..1255
-                     /organism="SARS coronavirus AS"
-                     /strain="AS"
-                     /isolation_source="sputum sample of March 2003"
-                     /db_xref="taxon:248485"
-     Protein         1..1255
-                     /product="spike protein S"
-     Region          318..569
-                     /region_name="Spike_rec_bind"
-                     /note="Spike receptor binding domain; pfam09408"
-                     /db_xref="CDD:312790"
-     Region          648..1252
-                     /region_name="Corona_S2"
-                     /note="Coronavirus S2 glycoprotein; pfam01601"
-                     /db_xref="CDD:279881"
-     CDS             1..1255
-                     /gene="S"
-                     /coded_by="AY427439.1:21476..25243"
-                     /note="structural protein"
-ORIGIN      
-        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
-       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
-      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
-      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
-      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
-      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
-      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
-      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
-      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
-      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
-      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
-      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
-      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
-      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
-      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
-      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
-      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
-     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
-     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
-     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
-     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
-//
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Bad Gateway!</title>
+<link rev="made" href="mailto:info@ncbi.nlm.nih.gov" />
+<style type="text/css"><!--/*--><![CDATA[/*><!--*/ 
+    body { color: #000000; background-color: #FFFFFF; }
+    a:link { color: #0000CC; }
+    p, address {margin-left: 3em;}
+    span {font-size: smaller;}
+/*]]>*/--></style>
+</head>
+
+<body>
+<h1>Bad Gateway!</h1>
+<p>
+
+
+    The proxy server received an invalid
+    response from an upstream server.
+
+  
+    </p>
+<p>
+
+    The proxy server could not handle the request<p>Reason: <strong>Error reading from remote server</strong></p>
+  
+    
+</p>
+<p>
+If you think this is a server error, please contact
+the <a href="mailto:info@ncbi.nlm.nih.gov">webmaster</a>.
+
+</p>
+
+<h2>Error 502</h2>
+<address>
+  <a href="/">eutils.ncbi.nlm.nih.gov</a><br />
+  <span>Apache</span>
+</address>
+</body>
+</html>
 
