@@ -66,7 +66,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
       })
 
       this.rowNum = 0;
-
       this.message = "";
       this.startPosition = 0;
       this.maxDisplayResidues = 60;

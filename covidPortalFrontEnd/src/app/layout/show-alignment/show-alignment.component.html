@@ -11,11 +11,32 @@
 	<div *ngIf="alignmentObjList" class="row" style="float:clear;">
     <table width="2000">
       <tr style="text-align:center;">
-        <td width="10%" >
-          <div style="background-color:blue;inline-block;height:100px;width:15px;">&nbsp;
+        <td>
+          <!-- <div style="background-color:blue;inline-block;height:100px;width:15px;">&nbsp;
           </div>
         </td>
-        <td width="90%">
+        <td width="90%"> -->
+          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;">
+    			    <div style="inline-block;" id="{{displayAlignmentObj.label}}" >
+    						<!-- <div style="inline-block;;float:left; border: 1px solid red; margin-right: 5px;"> -->
+    							<div style="inline-block;;float:left; margin-right: 5px;width:50px;text-align:left;">
+    						</div>
+    						<div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor0 of displayNomenclaturePositionObj.nomenclaturePositionMajor0s">
+    							{{displayNomenclaturePositionObj.nomenclaturePositionMajor0}}
+    						</div>
+    					</div>
+    			</div>
+    			<div *ngIf="alignmentObjList?.length == 0">
+    				<b>No data to display.</b>
+    			</div>
+        </td>
+      </tr>
+      <tr style="text-align:center;">
+        <td>
+          <!-- <div style="background-color:blue;inline-block;height:100px;width:15px;">&nbsp;
+          </div>
+        </td>
+        <td width="90%"> -->
           <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;">
     			    <div style="inline-block;" *ngFor="let displayAlignmentObj of alignmentObjList" id="{{displayAlignmentObj.label}}" >
     						<!-- <div style="inline-block;;float:left; border: 1px solid red; margin-right: 5px;"> -->

@@ -383,7 +383,11 @@ def showAlignment(request):
             nomenclaturePositionMajor2s = [str(x.major)[2] if len(str(x.major)) > 2 else ' ' for x in nomenclaturePositions]
             nomenclaturePositionMinor0s = [str(x.minor)[0] for x in nomenclaturePositions]
 
-            nomenclaturePositionObj = {"nomenclaturePositionMajor0s":nomenclaturePositionMajor0s, "nomenclaturePositionMajor1s":nomenclaturePositionMajor1s, "nomenclaturePositionMajor2s":nomenclaturePositionMajor2s}
+            nomenclaturePositionObj = {"nomenclaturePositionMajor0s":nomenclaturePositionMajor0s,
+                                       "nomenclaturePositionMajor1s":nomenclaturePositionMajor1s,
+                                       "nomenclaturePositionMajor2s":nomenclaturePositionMajor2s,
+                                       "nomenclaturePositionMinor0s":nomenclaturePositionMinor0s,
+                                       }
 
         alignmentResultObj["alignmentObjList"] = alignmentObjList
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
