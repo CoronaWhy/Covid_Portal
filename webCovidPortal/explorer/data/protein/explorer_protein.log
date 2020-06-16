@@ -1,0 +1,6 @@
+06/16/2020 02:47:1592333252:Using records from existing taxon file ./genbank/215681.fna
+06/16/2020 02:47:1592333252:Received 29 records
+06/16/2020 02:47:1592333252:Stored to ./genbank/215681.fna
+06/16/2020 02:47:1592333252:Filtered to 29 records
+06/16/2020 02:47:1592333252:Stored sequenceRecords to ./sequence_records/215681_sequenceRecords.csv
+06/16/2020 02:47:1592333252:Aligning in batches of 2000
