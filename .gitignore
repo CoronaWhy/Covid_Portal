@@ -2,7 +2,10 @@
 *.py[cod]
 __pycache__/
 *.sqlite3
+*.pyc
 webiCovidPortal/*.pyc
+webiCovidPortal/covidPortalApp/__pycache__/
+webiCovidPortal/explorer/__pycache__/
 webCovidPortal/conf.py
 covidPortalFrontEnd/dist/
 covidPortalFrontEnd/node_modules/
