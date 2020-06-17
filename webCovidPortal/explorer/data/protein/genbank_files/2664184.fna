@@ -1,0 +1,137 @@
+LOCUS       QGA70702                1327 aa            linear   VRL 11-NOV-2019
+DEFINITION  spike glycoprotein [Erinaceus hedgehog coronavirus HKU31].
+ACCESSION   QGA70702
+VERSION     QGA70702.1
+DBSOURCE    accession MK907287.1
+KEYWORDS    .
+SOURCE      Erinaceus hedgehog coronavirus HKU31
+  ORGANISM  Erinaceus hedgehog coronavirus HKU31
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus; unclassified Merbecovirus.
+REFERENCE   1  (residues 1 to 1327)
+  AUTHORS   Lau,S.K.P., Luk,H.K.H., Wong,A.C.P., Fan,R.Y.Y., Lam,C.S.F.,
+            Li,K.S.M., Ahmed,S.S., Chow,F.W., Cai,J.-P., Zhu,X., Chan,J.F.W.,
+            Lau,T.C.K., Cao,K., Li,M., Woo,P.C.Y. and Yuen,K.-Y.
+  TITLE     Identification of a Novel Betacoronavirus (Merbecovirus) in Amur
+            Hedgehogs from China
+  JOURNAL   Viruses 11 (11), 980 (2019)
+REFERENCE   2  (residues 1 to 1327)
+  AUTHORS   Lau,S.K.P., Luk,H.K.H., Wong,A.C.P., Fan,R.Y.Y., Lam,C.S.F.,
+            Li,K.S.M., Ahmed,S.S., Chow,F.W.N., Cai,J.-P., Chan,J.F.W.,
+            Lau,T.C.K., Li,M., Yuen,K.-Y. and Woo,P.C.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-MAY-2019) Department of Microbiology, The University
+            of Hong Kong, 21/F, Block T, Queen Mary Hospital, 102 Pokfulam
+            Road, Pokfulam, Hong Kong 518000, China
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1327
+                     /organism="Erinaceus hedgehog coronavirus HKU31"
+                     /strain="Rs13"
+                     /isolation_source="Alimentary sample"
+                     /host="Erinaceus amurensis"
+                     /db_xref="taxon:2664184"
+                     /country="China"
+                     /collection_date="Aug-2014"
+     Protein         1..1327
+                     /product="spike glycoprotein"
+     CDS             1..1327
+                     /coded_by="MK907287.1:21442..25425"
+ORIGIN      
+        1 mirsvfllmc lltliksgda ncivvdmqps yfqrdwprpi nmsaadgiiy pvgrtyanit
+       61 imlsglfphq adkgkqyiys myhmkfnqgv ndpfisnysy ytepfdngfv vrigansnit
+      121 gssvvgsana tvkkiypalm lgsvvgkfps nktgryfnht lvilpekcgt qitalycvlq
+      181 pknqtnctgh ttytsyvlve nktcstdadg nlkqslqtwf dlkdclfekk ynvsaderee
+      241 wfgitqdqqg vhlytsrkng fksnnmflfa tlpiyerlry ytvmprsikt tanndhmaws
+      301 afyiyqlhkl nylvefdveg yivrasdcga ndytqlqcsy gqfdmnsgvy sasyfnaqpr
+      361 gyyyvanele ecaldvlfkn iapqianysr rvftncnynl tkllslvevd efvcdkttpe
+      421 slatgcyssl vvdwfalpls mkstlaigsa eaismfnynq dysnptcrih atinsnvsss
+      481 lnftannnya yisrcqgtdg kpillqkgql pniacrsgvl glsndvdyfg ynfngrifyi
+      541 grksytprts egsiqmvyvi tanyaegpnn vcplkdttta tdnldsllgq cidydingvv
+      601 gqgvfqkcns tgipsqvfvy dsfhniigyh skngtyycma pcvsvpvsvi ydkssnshat
+      661 lygsvacdhi kmipsvlsre tatklrasdn gllqtavgcv igfhntsdtv edcnlplgqs
+      721 lcakppsltr sanntfglav mkyenplkve vlnssefeis vptnfsfrvt eefietsiqk
+      781 vtvdckqyvc ngferceqll eqygqfcaki nqalhgvnlr qddatkslfe sirvpqsapl
+      841 maslsgdynl slfetpsint ggsgnyrsal edllfdkvtl sdpgymkgyd ecmkkgppsa
+      901 rdlicaqyva gykvlpplyd snmeamytas ltgsiagalw tgglssaasl pfaqsiyyrm
+      961 ngigitqnvl menqkliank fnqalgamqt gftttnqafq kvqdavnana qalsklasel
+     1021 sntfgaisas igdilkrldt leqevqidrl ingrltslna fvsqqlvrse aaarssqlvk
+     1081 dkvnecvksq ssrngfcgqg thivsfavna pngfyfvhvg yhptdyvnqt sayglcdssn
+     1141 tkciaakngy fikngsddwm ftgssyyqpe pitnfnsrsv epevtfqnlt nnlppplsns
+     1201 tdvdfkdele effknitsev pnfgsitqin stvldlseem ktlqsvveal nqsyielkel
+     1261 gnytyynkwp wyvwlgfiag lvalalclff ilcctgcgts cmgklnctrc cdkyddydlq
+     1321 pekihih
+//
+
+LOCUS       QGA70692                1327 aa            linear   VRL 11-NOV-2019
+DEFINITION  spike glycoprotein [Erinaceus hedgehog coronavirus HKU31].
+ACCESSION   QGA70692
+VERSION     QGA70692.1
+DBSOURCE    accession MK907286.1
+KEYWORDS    .
+SOURCE      Erinaceus hedgehog coronavirus HKU31
+  ORGANISM  Erinaceus hedgehog coronavirus HKU31
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus; unclassified Merbecovirus.
+REFERENCE   1  (residues 1 to 1327)
+  AUTHORS   Lau,S.K.P., Luk,H.K.H., Wong,A.C.P., Fan,R.Y.Y., Lam,C.S.F.,
+            Li,K.S.M., Ahmed,S.S., Chow,F.W., Cai,J.-P., Zhu,X., Chan,J.F.W.,
+            Lau,T.C.K., Cao,K., Li,M., Woo,P.C.Y. and Yuen,K.-Y.
+  TITLE     Identification of a Novel Betacoronavirus (Merbecovirus) in Amur
+            Hedgehogs from China
+  JOURNAL   Viruses 11 (11), 980 (2019)
+REFERENCE   2  (residues 1 to 1327)
+  AUTHORS   Lau,S.K.P., Luk,H.K.H., Wong,A.C.P., Fan,R.Y.Y., Lam,C.S.F.,
+            Li,K.S.M., Ahmed,S.S., Chow,F.W.N., Cai,J.-P., Chan,J.F.W.,
+            Lau,T.C.K., Li,M., Yuen,K.-Y. and Woo,P.C.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (09-MAY-2019) Department of Microbiology, The University
+            of Hong Kong, 21/F, Block T, Queen Mary Hospital, 102 Pokfulam
+            Road, Pokfulam, Hong Kong 518000, China
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1327
+                     /organism="Erinaceus hedgehog coronavirus HKU31"
+                     /strain="F6"
+                     /isolation_source="Alimentary sample"
+                     /host="Erinaceus amurensis"
+                     /db_xref="taxon:2664184"
+                     /country="China"
+                     /collection_date="Aug-2014"
+     Protein         1..1327
+                     /product="spike glycoprotein"
+     CDS             1..1327
+                     /gene="S"
+                     /coded_by="MK907286.1:21442..25425"
+ORIGIN      
+        1 mirsvfllmc lltliksgda ncivvdmqps yfqrdwprpi nmsaadgiiy pvgrtyanit
+       61 imlsglfphq adkgkqyiys myhmkfnqgv ndpfisnysy ytepfdngfv vrigansnit
+      121 gssvvgsana tvkkiypalm lgsvvgkfps nktgryfnht lvilpekcgt qitalycvlq
+      181 pknqtnctgh ttytsyvlve nktcstdadg nlkqslqtwf dlkdclfekk ynvsaderee
+      241 wfgitqdqqg vhlytsrkng fksnnmflfa tlpiyerlry ytvmprsikt tanndhmaws
+      301 afyiyqlhkl nylvefdveg yivrasdcga ndytqlqcsy gqfdmnsgvy sasyfnaqpr
+      361 gyyyvanele ecaldvlfkn iapqianysr rvftncnynl tkllslvevd efvcdkttpe
+      421 slatgcyssl vvdwfalpls mkstlaigsa eaismfnynq dysnptcrih atinsnvsss
+      481 lnftannnya yisrcqgtdg kpillqkgql pniacrsgvl glsndvdyfg ynfngrifyi
+      541 grksytprts egsiqmvyvi tanyaegpnn vcplkdttta tdnldsllgq cidydingvv
+      601 gqgvfqkcns tgipsqvfvy dsfhniigyh skngtyycma pcvsvpvsvi ydkssnshat
+      661 lygsvacdhi kmipsvlsre tatklrasdn gllqtavgcv igfhntsdtv edcnlplgqs
+      721 lcakppsltr sanntfglav mkyenplkve vlnssefeis vptnfsfrvt eefietsiqk
+      781 vtvdckqyvc ngferceqll eqygqfcaki nqalhgvnlr qddatkslfe sirvpqsapl
+      841 maslsgdynl slfetpsint ggsgnyrsal edllfdkvtl svpgymkgyd ecmkkgppsa
+      901 rdlicaqyva gykvlpplyd snmeamytas ltgsiagalw tgglssaasl pfaqsiyyrm
+      961 ngigitqnvl menqkliank fnqalgamqt gftttnqafq kvqdavnana qalsklasel
+     1021 sntfgaisas igdilkrldt leqevqidrl ingrltslna fvsqqlvrse aaarssqlvk
+     1081 dkvnecvksq ssrngfcgqg thivsfavna pngfyfvhvg yhptdyvnqt sayglcdssn
+     1141 tkciaakngy fikngsddwm ftgssyyqpe pitnfnsrsv epevtfqnlt nnlppplsns
+     1201 tdvdfkdele effknitsev pnfgsitqin stvldlseem ktlqsvveal nqsyielkel
+     1261 gnytyynkwp wyvwlgfiag lvalalclff ilcctgcgts cmgklnctrc cdkyddydlq
+     1321 pekihih
+//
+

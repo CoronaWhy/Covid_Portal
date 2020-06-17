@@ -1,0 +1,81 @@
+LOCUS       AAP30713                1255 aa            linear   VRL 17-NOV-2003
+DEFINITION  putative spike glycoprotein [SARS coronavirus CUHK-Su10].
+ACCESSION   AAP30713
+VERSION     AAP30713.1
+DBSOURCE    accession AY282752.2
+KEYWORDS    .
+SOURCE      SARS coronavirus CUHK-Su10
+  ORGANISM  SARS coronavirus CUHK-Su10
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Tsui,S.K., Chim,S.S. and Lo,Y.M.
+  CONSRTM   Chinese University of Hong Kong Molecular SARS Research Group
+  TITLE     Coronavirus genomic-sequence variations and the epidemiology of the
+            severe acute respiratory syndrome
+  JOURNAL   N. Engl. J. Med. 349 (2), 187-188 (2003)
+   PUBMED   12853594
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Tsui,S.K.W., Chim,S.S.C., Au,T.C.H., Chan,A.K.C., Tse,C.H.,
+            Chiu,R.W.K., Au-Yeung,C., Chu,I., Au,K.W., Chan,A.H., Chan,C.W.,
+            Kou,C.Y.C., Lam,H.M., Lam,W.Y., Lau,S.K., Lau,Y.L., Lau,Y.M.,
+            Law,S.L., Law,P.T.W., Li,M.L.Y., Wan,A.W.K., Wong,C.H., Yiu,W.H.,
+            Ng,E.K.O., Tong,Y.K., Cheung,J.L.K., Hung,E.C.W., Lee,C.Y.,
+            Fung,K.P., Waye,M.M.Y., Chan,P.K.S., Tam,J.S. and Lo,D.Y.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-APR-2003) Biochemistry Department, The Chinese
+            University of Hong Kong, Room 606, Mong Man Wai Building, Shatin,
+            N.T., Hong Kong, China
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Tsui,S.K.W., Chim,S.S.C., Au,T.C.H., Chan,A.K.C., Tse,C.H.,
+            Chiu,R.W.K., Au-Yeung,C., Chu,I., Au,K.W., Chan,A.H., Chan,C.W.,
+            Kou,C.Y.C., Lam,H.M., Lam,W.Y., Lau,S.K., Lau,Y.L., Lau,Y.M.,
+            Law,S.L., Law,P.T.W., Li,M.L.Y., Wan,A.W.K., Wong,C.H., Yiu,W.H.,
+            Ng,E.K.O., Tong,Y.K., Cheung,J.L.K., Hung,E.C.W., Lee,C.Y.,
+            Fung,K.P., Waye,M.M.Y., Chan,P.K.S., Tam,J.S. and Lo,D.Y.M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-NOV-2003) Biochemistry Department, The Chinese
+            University of Hong Kong, Room 606, Mong Man Wai Building, Shatin,
+            N.T., Hong Kong, China
+  REMARK    Sequence update by submitter
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus CUHK-Su10"
+                     /db_xref="taxon:229206"
+     Protein         1..1255
+                     /product="putative spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY282752.2:21477..25244"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

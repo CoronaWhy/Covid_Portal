@@ -1,0 +1,3269 @@
+LOCUS       AGT21273                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21273
+VERSION     AGT21273.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514420.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5P10/2009"
+                     /isolate="c5P10"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="19-May-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P10"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514420.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21228                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21228
+VERSION     AGT21228.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514417.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.3P20/2010"
+                     /isolate="c5.3P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514417.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21213                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21213
+VERSION     AGT21213.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514416.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.8P20/2010"
+                     /isolate="c5.8P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514416.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21183                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21183
+VERSION     AGT21183.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514414.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5P20/2009"
+                     /isolate="c5P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Jul-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P20"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514414.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21153                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21153
+VERSION     AGT21153.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514412.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c13P20/2009"
+                     /isolate="c13P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Jul-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P20"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514412.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21138                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21138
+VERSION     AGT21138.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514411.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c13P10/2009"
+                     /isolate="c13P10"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="19-May-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P10"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514411.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21123                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21123
+VERSION     AGT21123.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514410.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c8P20/2009"
+                     /isolate="c8P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Jul-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P20"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514410.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21078                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21078
+VERSION     AGT21078.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514407.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.7P20/2010"
+                     /isolate="c5.7P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514407.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rslrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae yvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisiatevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtvtagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21063                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21063
+VERSION     AGT21063.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514406.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c13P1/2009"
+                     /isolate="c13P1"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Mar-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P1"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514406.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21048                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21048
+VERSION     AGT21048.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514405.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.2P20/2010"
+                     /isolate="c5.2P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514405.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21018                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21018
+VERSION     AGT21018.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514403.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.1P20/2010"
+                     /isolate="c5.1P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514403.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT21003                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT21003
+VERSION     AGT21003.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514402.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.6P20/2010"
+                     /isolate="c5.6P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514402.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT20988                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT20988
+VERSION     AGT20988.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514401.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.5P20/2010"
+                     /isolate="c5.5P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514401.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT20898                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT20898
+VERSION     AGT20898.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514395.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c8P1/2009"
+                     /isolate="c8P1"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Mar-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P1"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514395.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT20868                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT20868
+VERSION     AGT20868.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514393.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.10P20/2010"
+                     /isolate="c5.10P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514393.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT20838                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT20838
+VERSION     AGT20838.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514391.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.9P20/2010"
+                     /isolate="c5.9P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514391.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT20823                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT20823
+VERSION     AGT20823.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514390.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c5.4P20/2010"
+                     /isolate="c5.4P20"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="01-Oct-2010"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     cccaggaaaagccaaccaac, rev_name: 1_Reverse, rev_seq:
+                     agctacactccactcatcaag"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     tggagaagatactgtttgggaag, rev_name: 2_Reverse, rev_seq:
+                     acaggcttgatggttgtagtg"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     tgcaccagcacttcaagaggctt, rev_name: 3_Reverse, rev_seq:
+                     atacatgcgccaagatctctgggc"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     aggcacttgttgctacagctcaca, rev_name: 4_Reverse, rev_seq:
+                     accttggaaggtaacaccagagca"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     acagacaaactgcacaggctgcag, rev_name: 5_Reverse, rev_seq:
+                     cctgtgccgcacggtgtaagac"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     ggaccaagagtcctttggtggtgc, rev_name: 6_Reverse, rev_seq:
+                     aggttcccagtaccgtgaggtgt"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     ggcgcaggctgttttgtcgatg, rev_name: 7_Reverse, rev_seq:
+                     cccgtaaagccccactgctgaa"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     gcttgccctggaatgtagtgcgt, rev_name: 8_Reverse, rev_seq:
+                     tcaatttgttccttcggcttgcca"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     tgccaactggcacactacttgtcga, rev_name: 9_Reverse, rev_seq:
+                     cgtgtgttgcgatcctgttcagc"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tgctcttttgggggtgtaagt, rev_name: 10_Reverse, rev_seq:
+                     tcgtcgtcggctcatcataaa"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     tgcaagtactgttcatgctacagca, rev_name: 11_Reverse, rev_seq:
+                     agagcacaaagccaagcagtgc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     cggtagcaacgacaatattgc, rev_name: 12_Reverse, rev_seq:
+                     gtcattctcctaagaagctattaaa"
+                     /note="passage history: P20 plaque isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514390.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AGT20808                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein [SARS coronavirus ExoN1].
+ACCESSION   AGT20808
+VERSION     AGT20808.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession KF514389.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C.D., Halpin,R.A., Motley,J., Ransier,A., Fedorova,N.,
+            Overton,L., Tsitrin,T., Stockwell,T., Amedeo,P., Bishop,B.,
+            Edworthy,P., Gupta,N., Katzel,D., Li,K., Schobel,S.,
+            Shrivastava,S., Thovarai,V., Wang,S., Eckerle,L.D., Becker,M.M.,
+            Donaldson,E.F., Lu,X., Graham,R.L., Baric,R.S., Wentworth,D.E. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     The genome sequence was generated using overlapping PCR amplicons
+            spanning the genome. The amplicons were pooled by sample and then
+            barcoded and sequenced using Next Generation Sequencing platforms.
+            The consensus sequences of the internal PCR primer hybridization
+            sites were manually verified using reads from amplicons that
+            spanned across the sites.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="SARS/VeroE6_lab/USA/ExoN1_c8P10/2009"
+                     /isolate="c8P10"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Nashville, TN"
+                     /collection_date="19-May-2009"
+                     /PCR_primers="fwd_name: 1_Forward, fwd_seq:
+                     atattaggtttttacctacccagg, rev_name: 1_Reverse, rev_seq:
+                     gctccttgccacgtatacac"
+                     /PCR_primers="fwd_name: 2_Forward, fwd_seq:
+                     gaatggattgaggcgaaacttag, rev_name: 2_Reverse, rev_seq:
+                     gatgacgaagtgaggtatcc"
+                     /PCR_primers="fwd_name: 3_Forward, fwd_seq:
+                     gggcatcgttgactatggtg, rev_name: 3_Reverse, rev_seq:
+                     caattctctaacgccattac"
+                     /PCR_primers="fwd_name: 4_Forward, fwd_seq:
+                     gcgctaagagattagcacaac, rev_name: 4_Reverse, rev_seq:
+                     catctaccactggtagataggc"
+                     /PCR_primers="fwd_name: 5_Forward, fwd_seq:
+                     gttcttgctgctgagtgtac, rev_name: 5_Reverse, rev_seq:
+                     gatacactgtaaggtgttgcc"
+                     /PCR_primers="fwd_name: 6_Forward, fwd_seq:
+                     gctgggtgatgcgtatcatg, rev_name: 6_Reverse, rev_seq:
+                     cgctgacgtgatatatgtgg"
+                     /PCR_primers="fwd_name: 7_Forward, fwd_seq:
+                     gtactgatgtcgtctacagg, rev_name: 7_Reverse, rev_seq:
+                     catcaatagccagtgacacg"
+                     /PCR_primers="fwd_name: 8_Forward, fwd_seq:
+                     ctgatgatgccgttgtgtgc, rev_name: 8_Reverse, rev_seq:
+                     gcatctctagttgcatgacag"
+                     /PCR_primers="fwd_name: 9_Forward, fwd_seq:
+                     agtctagaaataccacgtcgc, rev_name: 9_Reverse, rev_seq:
+                     gtcaattgtaaccttgaccac"
+                     /PCR_primers="fwd_name: 10_Forward, fwd_seq:
+                     tggagatttcagtcatggac, rev_name: 10_Reverse, rev_seq:
+                     gcttgccatgtctaagatacc"
+                     /PCR_primers="fwd_name: 11_Forward, fwd_seq:
+                     ttcccttctgtctatgcatg, rev_name: 11_Reverse, rev_seq:
+                     gcgacctcattgaggcggtc"
+                     /PCR_primers="fwd_name: 12_Forward, fwd_seq:
+                     tgatcctctgcaacctgagc, rev_name: 12_Reverse, rev_seq:
+                     acaatcaatgtcaggaagag"
+                     /PCR_primers="fwd_name: 13_Forward, fwd_seq:
+                     ggactttcaggattgctatttg, rev_name: 13_Reverse, rev_seq:
+                     gtcattctcctaagaagcta"
+                     /note="passage history: P10"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="KF514389.1:21472..25239"
+                     /note="E2; peplomer protein"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA11013                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   AEA11013
+VERSION     AEA11013.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession JF292922.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JAN-2011) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="c5P1"
+                     /db_xref="taxon:627440"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Mar-2009"
+                     /note="derived from recombinant cDNA"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="JF292922.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AFM43867                1255 aa            linear   VRL 20-JUN-2012
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   AFM43867
+VERSION     AFM43867.1
+DBSOURCE    accession JX162087.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Town,C., Hostetler,J., Fedorova,N., Hine,E.,
+            Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Shrivastava,S.,
+            Sundaram,J., Wang,S., Becker,M., Eckerle,L., Graham,R., Baric,R.
+            and Denison,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-MAY-2012) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="c5P10"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="01-Jan-2009"
+                     /note="derived from recombinant cDNA;
+                     group: 2b"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="JX162087.1:21472..25239"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae yvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisiatevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72254                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ72254
+VERSION     ACZ72254.1
+DBSOURCE    accession FJ882960.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp34"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="06-Aug-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 34"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882960.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfki
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72195                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ72195
+VERSION     ACZ72195.1
+DBSOURCE    accession FJ882956.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp53"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="06-Aug-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 53"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882956.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct fexisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72180                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ72180
+VERSION     ACZ72180.1
+DBSOURCE    accession FJ882955.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Rosenberger,M., Hostetler,J.,
+            Hine,E., Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp19"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="28-Mar-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 19"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882955.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72166                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ72166
+VERSION     ACZ72166.1
+DBSOURCE    accession FJ882954.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp46"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="06-Aug-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 46"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882954.1:21445..25212"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72108                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ72108
+VERSION     ACZ72108.1
+DBSOURCE    accession FJ882950.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp60"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="06-Aug-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 60"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882950.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivvytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72020                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ72020
+VERSION     ACZ72020.1
+DBSOURCE    accession FJ882944.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Rosenberger,M., Hostetler,J.,
+            Hine,E., Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp23"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="28-Mar-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 23"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882944.1:21434..25201"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafpp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71976                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71976
+VERSION     ACZ71976.1
+DBSOURCE    accession FJ882941.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Rosenberger,M., Hostetler,J.,
+            Hine,E., Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp8"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="28-Mar-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 8"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882941.1:21471..25238"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkxfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne iaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71961                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71961
+VERSION     ACZ71961.1
+DBSOURCE    accession FJ882940.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D. and
+            Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp37"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="06-Aug-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 37"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882940.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesf tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpelnsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71826                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71826
+VERSION     ACZ71826.1
+DBSOURCE    accession FJ882931.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Rosenberger,M., Hostetler,J.,
+            Hine,E., Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp12"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="28-Mar-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 12"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882931.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71811                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71811
+VERSION     ACZ71811.1
+DBSOURCE    accession FJ882930.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., McAllen,J., Wang,S., Hostetler,J., Hine,E.,
+            Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="22-Sep-2007"
+                     /note="derived from recombinant cDNA"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882930.1:21472..25239"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71797                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71797
+VERSION     ACZ71797.1
+DBSOURCE    accession FJ882929.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Rosenberger,M., Hostetler,J.,
+            Hine,E., Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P3pp1"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="28-Mar-2008"
+                     /note="derived from recombinant cDNA; passage 3 virus
+                     stock, plaque pick 1"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882929.1:21471..25238"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps vdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnafq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmtktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isgintsvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71782                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71782
+VERSION     ACZ71782.1
+DBSOURCE    accession FJ882928.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., McAllen,J., Wang,S., Hostetler,J., Hine,E.,
+            Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /isolate="P1pp1"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="28-Aug-2007"
+                     /note="derived from recombinant cDNA; passage 1 virus
+                     stock, plaque pick 1"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882928.1:21472..25239"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71752                1255 aa            linear   VRL 18-MAY-2010
+DEFINITION  spike glycoprotein precursor [SARS coronavirus ExoN1].
+ACCESSION   ACZ71752
+VERSION     ACZ71752.1
+DBSOURCE    accession FJ882926.1
+KEYWORDS    .
+SOURCE      SARS coronavirus ExoN1
+  ORGANISM  SARS coronavirus ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yount,B., Curtis,K.M., Fritz,E.A., Hensley,L.E., Jahrling,P.B.,
+            Prentice,E., Denison,M.R., Geisbert,T.W. and Baric,R.S.
+  TITLE     Reverse genetics with a full-length infectious cDNA of severe acute
+            respiratory syndrome coronavirus
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 100 (22), 12995-13000 (2003)
+   PUBMED   14569023
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Eckerle,L.D., Becker,M.M., Halpin,R.A., Li,K., Venter,E., Lu,X.,
+            Scherbakova,S., Graham,R.L., Baric,R.S., Stockwell,T.B., Spiro,D.J.
+            and Denison,M.R.
+  TITLE     Infidelity of SARS-CoV Nsp14-exonuclease mutant virus replication
+            is revealed by complete genome sequencing
+  JOURNAL   PLoS Pathog. 6 (5), E1000896 (2010)
+   PUBMED   20463816
+  REMARK    Publication Status: Online-Only
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., McAllen,J., Wang,S., Hostetler,J., Hine,E.,
+            Overton,L., Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J.,
+            Amedeo,P., Caler,E., Lorenzi,H., Schobel,S., Sundaram,J.,
+            Becker,M.M., Eckerle,L.D. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus ExoN1"
+                     /strain="ExoN1 mutant"
+                     /db_xref="taxon:627440"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="22-Sep-2007"
+                     /note="derived from recombinant cDNA"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882926.1:21460..25227"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

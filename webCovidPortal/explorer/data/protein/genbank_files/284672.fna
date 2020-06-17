@@ -1,0 +1,73 @@
+LOCUS       AAT76147                1255 aa            linear   VRL 07-MAR-2005
+DEFINITION  spike glycoprotein [SARS coronavirus TJF].
+ACCESSION   AAT76147
+VERSION     AAT76147.1
+DBSOURCE    accession AY654624.1
+KEYWORDS    .
+SOURCE      SARS coronavirus TJF
+  ORGANISM  SARS coronavirus TJF
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Chen,W., Yan,M., Yang,L., Ding,B., He,B., Wang,Y., Liu,X., Liu,C.,
+            Zhu,H., You,B., Huang,S., Zhang,J., Mu,F., Xiang,Z., Feng,X.,
+            Wen,J., Fang,J., Yu,J., Yang,H. and Wang,J.
+  TITLE     SARS-associated coronavirus transmitted from human to pig
+  JOURNAL   Emerging Infect. Dis. 11 (3), 446-448 (2005)
+   PUBMED   15757562
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Chen,W., Yan,M. and Liu,M.
+  TITLE     Isolation and Identification of Viruses Related to the SARS
+            Coronavirus from swines in China
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Chen,W., Yan,M., Liu,M., Ding,B., He,B., Wang,Y., Yang,L., Liu,X.,
+            Liu,C., Zhu,H., Huang,S., Zhang,J., Xiang,Z., Feng,X., Wen,J.,
+            Fang,J., Mu,F. and Wang,J.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-JUN-2004) Chinese Academy of Sciences, Beijing Genome
+            Institute, Beijing Airport Industry Zone B-6, Beijing 101300, China
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus TJF"
+                     /isolate="TJF"
+                     /db_xref="taxon:284672"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+                     /name="S"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY654624.1:21491..25258"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrnts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgkcdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

@@ -1,0 +1,72 @@
+LOCUS       AAZ41329                1242 aa            linear   VRL 28-SEP-2005
+DEFINITION  spike glycoprotein [Bat SARS coronavirus HKU3-2].
+ACCESSION   AAZ41329
+VERSION     AAZ41329.1
+DBSOURCE    accession DQ084199.1
+KEYWORDS    .
+SOURCE      Bat SARS coronavirus HKU3-2
+  ORGANISM  Bat SARS coronavirus HKU3-2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1242)
+  AUTHORS   Lau,S.K., Woo,P.C., Li,K.S., Huang,Y., Tsoi,H.W., Wong,B.H.,
+            Wong,S.S., Leung,S.Y., Chan,K.H. and Yuen,K.Y.
+  TITLE     Severe acute respiratory syndrome coronavirus-like virus in Chinese
+            horseshoe bats
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 102 (39), 14040-14045 (2005)
+   PUBMED   16169905
+REFERENCE   2  (residues 1 to 1242)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Li,K.S.M., Tsoi,H.W., Huang,Y., Chan,K.H.
+            and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (03-JUN-2005) Department of Microbiology, The University
+            of Hong Kong, University Pathology Building, Queen Mary Hospital,
+            Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1242
+                     /organism="Bat SARS coronavirus HKU3-2"
+                     /isolate="HKU3-2"
+                     /db_xref="taxon:338605"
+     Protein         1..1242
+                     /product="spike glycoprotein"
+     Region          <81..283
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          321..556
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          635..1239
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1242
+                     /gene="S"
+                     /coded_by="DQ084199.1:21454..25182"
+ORIGIN      
+        1 mkilifafla nlakaqegcg iisrkpqpkm aqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaatek snvirgwifg ssfdnttqsa
+      121 vivnnsthii irvcnfnlck epmytvsrgt qqnawvyqsa fnctydrvek sfqldttpkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglptgfsvl kpilklpfgi nitsyrvvma
+      241 mfsqttsnfl pesaayyvgn lkystfmlrf nengtitdav dcsqnplael kctiknfnvd
+      301 kgiyqtsnfr vsptqevirf pnitnrcpfd kvfnatrfpn vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta khdtgnyyyr shrktklkpf erdlssddgn gvytlstydf npnvpvayqa
+      481 trvvvlsfel lnapatvcgp klstelvknq cvnfnfnglk gtgvltsssk rfqsfqqfgr
+      541 dtsdftdsvr dpqtleildi spcsfggvsv itpgtnasse vavlyqdvnc tdvptairad
+      601 qltpawrvys tgvnvfqtqa gcligaehvn asyecdipig agicasyhta fvlrstgqks
+      661 ivaytmslga ensiayanns iaiptnfsis vttevmpvsm aktavdctmy icgdslecsn
+      721 lllqygsfct qlnraltgia ieqdkntqev faqvkqmykt paikdfggfn fsqilpdpsk
+      781 ptkrsfiedl lfnkvtlada gfmkqygdcl gdvsardlic aqkfngltvl pplltdemva
+      841 aytaalvsgt atagwtfgag aalqipfamq mayrfngigv tqnvlyenqk lianqfnsai
+      901 gkiqeslsst asalgklqdv vnqnaqalnt lvkqlssnfg aissvlndil srldkveaev
+      961 qidrlitgrl qslqtyvtqq liraaeiras anlaatkmse cvlgqskrvd fcgkgyhlms
+     1021 fpqsaphgvv flhvtyvpsq eknfttapai chegkayfpr egvfvsngts wfitqrnfys
+     1081 pqlittdntf vsgncdvvig iinntvydpl qpeldsfkee ldkyfknhts pdvdlgdisg
+     1141 inasvvniqk eidrlnevak nlneslidlq elgkyeqyik wpwyvwlgfi agliaivmvt
+     1201 illccmtscc sclkgacscg scckfdedds epvlkgvklh yt
+//
+

@@ -1,0 +1,81 @@
+LOCUS       ACJ67000                1363 aa            linear   VRL 26-JUL-2016
+DEFINITION  spike protein [Sambar deer coronavirus US/OH-WD388/1994].
+ACCESSION   ACJ67000
+VERSION     ACJ67000.1
+DBSOURCE    accession FJ425189.1
+KEYWORDS    .
+SOURCE      Sambar deer coronavirus US/OH-WD388/1994
+  ORGANISM  Sambar deer coronavirus US/OH-WD388/1994
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Alekseev,K.P., Vlasova,A.N., Jung,K., Hasoksuz,M., Zhang,X.,
+            Halpin,R., Wang,S., Ghedin,E., Spiro,D. and Saif,L.J.
+  TITLE     Bovine-like coronaviruses isolated from four species of captive
+            wild ruminants are homologous to bovine coronaviruses, based on
+            complete genomic sequences
+  JOURNAL   J. Virol. 82 (24), 12422-12431 (2008)
+   PUBMED   18842722
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Sarmiento,M., Lorenzi,H., Caler,E., Sundaram,J., Hasoksus,M.,
+            Alekseev,K., Vlasova,A., Zhang,X. and Saif,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-OCT-2008) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Sambar deer coronavirus US/OH-WD388/1994"
+                     /host="sambar deer"
+                     /db_xref="taxon:422132"
+                     /country="USA: Ohio"
+                     /collection_date="01-Jan-1994"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          800..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Region          <999..>1135
+                     /region_name="Tar"
+                     /note="Methyl-accepting chemotaxis protein [Cell motility,
+                     Signal transduction mechanisms]; COG0840"
+                     /db_xref="CDD:223910"
+     CDS             1..1363
+                     /coded_by="FJ425189.1:23611..27702"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 efpaitigst fvntsysvvv qphttnldnk lqgfleisvc qytmceypnt icnpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsaltley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgsg sgidagyknt gigtcpagtn yltchnaaqc dclctpdpit
+      541 skatgpykcp qtkylvgige hcsglaiksd hcggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lepvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvklsdvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqsvvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+

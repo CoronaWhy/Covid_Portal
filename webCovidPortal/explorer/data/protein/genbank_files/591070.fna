@@ -1,0 +1,68 @@
+LOCUS       ACN89696                1376 aa            linear   VRL 24-JUL-2016
+DEFINITION  spike protein [Murine coronavirus RJHM/A].
+ACCESSION   ACN89696
+VERSION     ACN89696.1
+DBSOURCE    accession FJ647219.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RJHM/A
+  ORGANISM  Murine coronavirus RJHM/A
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1376)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1376
+                     /organism="Murine coronavirus RJHM/A"
+                     /strain="RJHM/A"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591070"
+                     /country="USA: Pennsylvania"
+     Protein         1..1376
+                     /product="spike protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          790..1338
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1376
+                     /coded_by="FJ647219.1:23896..28026"
+ORIGIN      
+        1 mlfvfilllp sclgyigdfr ciqtvnyngn nasapsiste avdvskglgt yyvldrvyln
+       61 atllltgyyp vdgsnyrnla ltgtntlslt wfkppflsef ndgifakvqn lktntptgat
+      121 syfptivigs lfgntsytvv lepynniima svctyticql pytpckpntn gnrvigfwht
+      181 dvkppicllk rnftfnvnap wlyfhfyqqg gtfyayyadk psattflfsv yigdiltqyf
+      241 vlpfictpta gstlaplywv tpllkrqylf nfnekgvits avdcassyis eikcktqsll
+      301 pstgvydlsg ytvqpvgvvy rrvpnlpdck ieewltaksv psplnwerrt fqncnfnlss
+      361 llryvqaesl scnnidaskv ygmcfgsvsv dkfaiprsrq idlqignsgf lqtanykidt
+      421 aatscqlyys lpknnvtinn ynpsswnrry gfndagvfgk skhdvayaqq cftvrpsycp
+      481 caqpdivsac tsqtkpmsay cptgtihrec slwngphlrs arvgsgtytc ectckpnpfd
+      541 tydlrcgqik tivnvgdhce glgvledkcg nsdphkgcsc andsfigwsh dtclvndrcq
+      601 ifanillngi nsgttcstdl qlpntevatg vcvrydlygi tgqgvfkevk adyynswqal
+      661 lydvngnlng frdlttnkty tirscysgrv saayhkeape pallyrninc syvftnnisr
+      721 eenplnyfds ylgcvvnadn rtdealpncd lrmgaglcvd ysksrrarrs vstgyrlttf
+      781 epympmlvnd svqsvgglye mqiptnftig hheefiqira pkvtidcaaf vcgdnaacrq
+      841 qlveygsfcd nvnailnevn nlldnmqlqv asalmqgvti ssrlpdgisg piddinfspl
+      901 lgcigstcae dgngpsairg rsaiedllfd kvklsdvgfv eaynnctggq evrdllcvqs
+      961 fngikvlppv lsesqisgyt agataaamfp pwtaaagvpf slnvqyring lgvtmnvlse
+     1021 nqkmiasafn nalgaiqegf datnsalgki qsvvnanaea lnnllnqlsn rfgaisaslq
+     1081 eiltrldave akaqidrlin grltalnayi skqlsdstli kfsaaqaiek vnecvksqtt
+     1141 rinfcgngnh ilslvqnapy glcfihfsyv ptsfktanvs pglcisgdrg lapkagyfvq
+     1201 dngewkftgs nyyypepitd knsvvmisca vnytkapevf lnnsipnlpd fkeeldkwfk
+     1261 nqtsiapdls ldfeklnvtf ldltyemnri qdaikklnes yinlkevgty emyvkwpwyv
+     1321 wlliglagva vcvllfficc ctgcgsccfr kcgsccdeyg ghqdsivihn isahed
+//
+

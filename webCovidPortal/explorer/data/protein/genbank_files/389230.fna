@@ -1,0 +1,385 @@
+LOCUS       SPIKE_BC133             1350 aa            linear   VRL 22-APR-2020
+DEFINITION  RecName: Full=Spike glycoprotein; Short=S glycoprotein; AltName:
+            Full=E2; AltName: Full=Peplomer protein; Contains: RecName:
+            Full=Spike protein S1; Contains: RecName: Full=Spike protein S2;
+            Contains: RecName: Full=Spike protein S2'; Flags: Precursor.
+ACCESSION   Q0Q4F2
+VERSION     Q0Q4F2.1
+DBSOURCE    UniProtKB: locus SPIKE_BC133, accession Q0Q4F2;
+            class: standard.
+            created: Jun 12, 2007.
+            sequence updated: Sep 5, 2006.
+            annotation updated: Apr 22, 2020.
+            xrefs: DQ648794.1, ABG47052.1
+            xrefs (non-sequence databases): SMR:Q0Q4F2, PRIDE:Q0Q4F2,
+            Proteomes:UP000007449, GO:0044173, GO:0020002, GO:0016021,
+            GO:0019031, GO:0055036, GO:0075509, GO:0039654, GO:0019064,
+            GO:0009405, GO:0046813, Gene3D:1.20.5.790, HAMAP:MF_04099,
+            InterPro:IPR042578, InterPro:IPR002552, InterPro:IPR027400,
+            InterPro:IPR018548, InterPro:IPR036326, Pfam:PF01601, Pfam:PF09408,
+            SUPFAM:SSF143587
+KEYWORDS    Coiled coil; Disulfide bond; Fusion of virus membrane with host
+            endosomal membrane; Fusion of virus membrane with host membrane;
+            Glycoprotein; Host cell membrane; Host membrane; Host-virus
+            interaction; Lipoprotein; Membrane; Palmitate; Signal;
+            Transmembrane; Transmembrane helix; Viral attachment to host cell;
+            Viral envelope protein; Viral penetration into host cytoplasm;
+            Virion; Virulence; Virus entry into host cell.
+SOURCE      Bat coronavirus (BtCoV/133/2005)
+  ORGANISM  Bat coronavirus (BtCoV/133/2005)
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1350)
+  AUTHORS   Tang,X.C., Zhang,J.X., Zhang,S.Y., Wang,P., Fan,X.H., Li,L.F.,
+            Li,G., Dong,B.Q., Liu,W., Cheung,C.L., Xu,K.M., Song,W.J.,
+            Vijaykrishna,D., Poon,L.L., Peiris,J.S., Smith,G.J., Chen,H. and
+            Guan,Y.
+  TITLE     Prevalence and genetic diversity of coronaviruses in bats from
+            China
+  JOURNAL   J. Virol. 80 (15), 7481-7490 (2006)
+   PUBMED   16840328
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].
+COMMENT     [FUNCTION] [Spike protein S1]: attaches the virion to the cell
+            membrane by interacting with host receptor, initiating the
+            infection. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [FUNCTION] [Spike protein S2]: mediates fusion of the virion and
+            cellular membranes by acting as a class I viral fusion protein.
+            Under the current model, the protein has at least three
+            conformational states: pre-fusion native state, pre-hairpin
+            intermediate state, and post-fusion hairpin state. During viral and
+            target cell membrane fusion, the coiled coil regions (heptad
+            repeats) assume a trimer-of-hairpins structure, positioning the
+            fusion peptide in close proximity to the C-terminal region of the
+            ectodomain. The formation of this structure appears to drive
+            apposition and subsequent fusion of viral and target cell
+            membranes. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [FUNCTION] [Spike protein S2']: Acts as a viral fusion peptide
+            which is unmasked following S2 cleavage occurring upon virus
+            endocytosis. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SUBUNIT] Homotrimer; each monomer consists of a S1 and a S2
+            subunit. The resulting peplomers protrude from the virus surface as
+            spikes. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Host endoplasmic
+            reticulum-Golgi intermediate compartment membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Note=Accumulates in the
+            endoplasmic reticulum-Golgi intermediate compartment, where it
+            participates in virus particle assembly. Some S oligomers are
+            transported to the host plasma membrane, where they may mediate
+            cell-cell fusion. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [PTM] Specific enzymatic cleavages in vivo yield mature proteins.
+            {ECO:0000250}.
+            [PTM] Specific enzymatic cleavages in vivo yield mature proteins.
+            The precursor is processed into S1 and S2 by host cell furin or
+            another cellular protease to yield the mature S1 and S2 proteins.
+            Additionally, a second cleavage leads to the release of a fusion
+            peptide after viral attachment to host cell receptor.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [PTM] The cytoplasmic Cys-rich domain is palmitoylated. Spike
+            glycoprotein is digested within host endosomes.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SIMILARITY] Belongs to the betacoronaviruses spike protein family.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+FEATURES             Location/Qualifiers
+     source          1..1350
+                     /organism="Bat coronavirus (BtCoV/133/2005)"
+                     /host="Tylonycteris pachypus (Lesser bamboo bat)"
+                     /db_xref="taxon:389230"
+     gene            1..1350
+                     /gene="S"
+                     /locus_tag="2"
+     Protein         1..1350
+                     /product="Spike glycoprotein"
+                     /note="S glycoprotein; E2; Peplomer protein"
+                     /UniProtKB_evidence="Inferred from homology"
+     Region          1..12
+                     /region_name="Signal"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          13..1350
+                     /region_name="Mature chain"
+                     /note="Spike glycoprotein. /id=PRO_0000290318."
+     Region          13..1295
+                     /region_name="Topological domain"
+                     /note="Extracellular.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          13..749
+                     /region_name="Mature chain"
+                     /note="Spike protein S1. /id=PRO_0000290319."
+     Site            30
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            71
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            111
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            132
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            162
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            172
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            227
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            241
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          372..611
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor-binding domain.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          383..>496
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Site            384
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Bond            bond(388,412)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            415
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Bond            bond(430,483)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            492
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          <605..694
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Site            624
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            723
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            749..750
+                     /site_type="cleavage"
+                     /note="Cleavage. /evidence=ECO:0000250."
+     Region          750..1235
+                     /region_name="Mature chain"
+                     /note="Spike protein S2. /id=PRO_0000290320."
+     Site            762
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          769..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Site            773
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            784
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          855..875
+                     /region_name="Region of interest in the sequence"
+                     /note="Fusion peptide.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            869
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            884..885
+                     /site_type="cleavage"
+                     /note="Cleavage.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          885..1350
+                     /region_name="Mature chain"
+                     /note="Spike protein S2'.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099.
+                     /id=PRO_0000444058."
+     Region          991..1041
+                     /region_name="Region of interest in the sequence"
+                     /note="Heptad repeat 1.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1020..1064
+                     /region_name="Coiled-coil region"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1142
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1145
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1172
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1224
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1240
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1245..1284
+                     /region_name="Region of interest in the sequence"
+                     /note="Heptad repeat 2.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1255
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1257..1285
+                     /region_name="Coiled-coil region"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1276
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1287
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1296..1316
+                     /region_name="Transmembrane region"
+                     /note="Helical.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1312..1336
+                     /region_name="Compositionally biased region"
+                     /note="Cys-rich."
+     Region          1317..1350
+                     /region_name="Topological domain"
+                     /note="Cytoplasmic.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1348..1350
+                     /region_name="Short sequence motif of biological interest"
+                     /note="KxHxx. /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+ORIGIN      
+        1 mtrlmcllms lsifvrgfds qfvdmspasn aseclesqvd aaafsklvwp ypidpakvdg
+       61 iiyplgrtys nitleytglf plqgdlgmqy lysvshavgn dgdptkayis nysllvndfd
+      121 ngfvvrigaa anstgtivis psvntkikka ypafilgssl tntsagkply anysltiipd
+      181 gcgtvlhafy cilkprtgnr cpsgsdynay fiyetihsdc qstinrnasl nsfksffdlv
+      241 nctffnswdi tadetkewfg itqdtqgvhl hssrkgdlyg gnmfrfatlp vyegikyytv
+      301 iprsfrskan kreawaafyv yklhqltyll dfsvdgyirr aidcghddls qlhcsytsfe
+      361 vdtgvysvss yeasatgtfi eqpnvtecdf spmltgvapq vynfkrlvfs ncnynltkll
+      421 slfavdefsc ngispdaiar gcystltvdy fayplsmksy irpgsagnip lynykqsfan
+      481 ptcrvmasvp dnvtitkpga ygyiskcsrl tgvnqdietp lyinpgeysi crdfaplgfs
+      541 edgqvfkrtl tqfeggglli gvgtrvpmta nlemgfvisv qygtgtdsvc pmldlgdslt
+      601 itnrlgkcvd yslygvtgrg vfqnctavgv kqqrfvydsf dnlvgyysdd gnyycvrpcv
+      661 svpvsviydk stnlhatlfg svacehvttm msqfsrltqs nlrrrdsntp lqtavgcvig
+      721 lsnnslvvsd cklplgqslc avppvsmfrs ysasqfqlav lnytspivvt pinssgftaa
+      781 iptnfsfslt qeyietsiqk vtvdckqyvc ngftrcekll veygqfcski nqalhganlr
+      841 qdesvyslys nikttstqtl eyglngdfnl tllqvpqigg ssyrsaiedl lfdkvtiadp
+      901 gymqgyddcm kqgpqsardl icaqyvsgyk vlpplydpnm eaaytssllg siagagwtag
+      961 lssfaaipfa qsmfyrlngv gitqqvlsen qkliankfnq algamqtgft tsnlafskvq
+     1021 davnanaqal sklaselsnt fgaisssisd ilarldtveq daqidrling rltslnafvs
+     1081 qqlvrsetaa rsaqlasdkv necvksqskr ngfcgsgthi vsfvvnapng fyffhvgyvp
+     1141 tnytnvtaay glcnhnnppl ciapidgyfi tnqtttysvd tewyytgssf fkpepitqan
+     1201 sryvssdvkf eklennlppp llenstdvdf kdeleeffkn vtshgpnfae iskinttlld
+     1261 lsdemailqe vvkqlndsyi dlkelgnyty ynkwpwyiwl gfiaglvall lcvffllcct
+     1321 gcgtsclgkm kcknccdsye eydvekihvh
+//
+
+LOCUS       ABG47052                1350 aa            linear   VRL 19-JUL-2006
+DEFINITION  spike protein [Bat coronavirus (BtCoV/133/2005)].
+ACCESSION   ABG47052
+VERSION     ABG47052.1
+DBSOURCE    accession DQ648794.1
+KEYWORDS    .
+SOURCE      Bat coronavirus (BtCoV/133/2005)
+  ORGANISM  Bat coronavirus (BtCoV/133/2005)
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1350)
+  AUTHORS   Tang,X.C., Zhang,J.X., Zhang,S.Y., Wang,P., Fan,X.H., Li,L.F.,
+            Li,G., Dong,B.Q., Liu,W., Cheung,C.L., Xu,K.M., Song,W.J.,
+            Vijaykrishna,D., Poon,L.L., Peiris,J.S., Smith,G.J., Chen,H. and
+            Guan,Y.
+  TITLE     Prevalence and genetic diversity of coronaviruses in bats from
+            China
+  JOURNAL   J. Virol. 80 (15), 7481-7490 (2006)
+   PUBMED   16840328
+REFERENCE   2  (residues 1 to 1350)
+  AUTHORS   Tang,X.C., Zhang,J.X., Zhang,S.Y., Wang,P., Fan,X.H., Li,L.F.,
+            Li,G., Dong,B.Q., Liu,W., Cheung,C.L., Xu,K.M., Song,W.J.,
+            Vijaykrishna,D., Poon,L.L.M., Peiris,J.S.M., Smith,G.J.D., Chen,H.
+            and Guan,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-MAY-2006) State Key Laboratory of Emerging Infectious
+            Diseases, Department of Microbiology, The University of Hong Kong,
+            Faculty of Medicine Building, No. 21 Sasoon Road, Pokfulam, Hong
+            Kong, SAR
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1350
+                     /organism="Bat coronavirus (BtCoV/133/2005)"
+                     /strain="BtCoV/133/2005"
+                     /db_xref="taxon:389230"
+     Protein         1..1350
+                     /product="spike protein"
+     Region          383..>496
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <605..694
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          769..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1350
+                     /coded_by="DQ648794.1:21584..25636"
+ORIGIN      
+        1 mtrlmcllms lsifvrgfds qfvdmspasn aseclesqvd aaafsklvwp ypidpakvdg
+       61 iiyplgrtys nitleytglf plqgdlgmqy lysvshavgn dgdptkayis nysllvndfd
+      121 ngfvvrigaa anstgtivis psvntkikka ypafilgssl tntsagkply anysltiipd
+      181 gcgtvlhafy cilkprtgnr cpsgsdynay fiyetihsdc qstinrnasl nsfksffdlv
+      241 nctffnswdi tadetkewfg itqdtqgvhl hssrkgdlyg gnmfrfatlp vyegikyytv
+      301 iprsfrskan kreawaafyv yklhqltyll dfsvdgyirr aidcghddls qlhcsytsfe
+      361 vdtgvysvss yeasatgtfi eqpnvtecdf spmltgvapq vynfkrlvfs ncnynltkll
+      421 slfavdefsc ngispdaiar gcystltvdy fayplsmksy irpgsagnip lynykqsfan
+      481 ptcrvmasvp dnvtitkpga ygyiskcsrl tgvnqdietp lyinpgeysi crdfaplgfs
+      541 edgqvfkrtl tqfeggglli gvgtrvpmta nlemgfvisv qygtgtdsvc pmldlgdslt
+      601 itnrlgkcvd yslygvtgrg vfqnctavgv kqqrfvydsf dnlvgyysdd gnyycvrpcv
+      661 svpvsviydk stnlhatlfg svacehvttm msqfsrltqs nlrrrdsntp lqtavgcvig
+      721 lsnnslvvsd cklplgqslc avppvsmfrs ysasqfqlav lnytspivvt pinssgftaa
+      781 iptnfsfslt qeyietsiqk vtvdckqyvc ngftrcekll veygqfcski nqalhganlr
+      841 qdesvyslys nikttstqtl eyglngdfnl tllqvpqigg ssyrsaiedl lfdkvtiadp
+      901 gymqgyddcm kqgpqsardl icaqyvsgyk vlpplydpnm eaaytssllg siagagwtag
+      961 lssfaaipfa qsmfyrlngv gitqqvlsen qkliankfnq algamqtgft tsnlafskvq
+     1021 davnanaqal sklaselsnt fgaisssisd ilarldtveq daqidrling rltslnafvs
+     1081 qqlvrsetaa rsaqlasdkv necvksqskr ngfcgsgthi vsfvvnapng fyffhvgyvp
+     1141 tnytnvtaay glcnhnnppl ciapidgyfi tnqtttysvd tewyytgssf fkpepitqan
+     1201 sryvssdvkf eklennlppp llenstdvdf kdeleeffkn vtshgpnfae iskinttlld
+     1261 lsdemailqe vvkqlndsyi dlkelgnyty ynkwpwyiwl gfiaglvall lcvffllcct
+     1321 gcgtsclgkm kcknccdsye eydvekihvh
+//
+

@@ -1,0 +1,322 @@
+LOCUS       YP_009113025            1358 aa            linear   VRL 13-AUG-2018
+DEFINITION  spike glycoprotein [Betacoronavirus HKU24].
+ACCESSION   YP_009113025
+VERSION     YP_009113025.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_026011.1
+KEYWORDS    RefSeq.
+SOURCE      Betacoronavirus HKU24
+  ORGANISM  Betacoronavirus HKU24
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; China Rattus coronavirus HKU24.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Lau,S.K., Woo,P.C., Li,K.S., Tsang,A.K., Fan,R.Y., Luk,H.K.,
+            Cai,J.P., Chan,K.H., Zheng,B.J., Wang,M. and Yuen,K.Y.
+  TITLE     Discovery of a novel coronavirus, China Rattus coronavirus HKU24,
+            from Norway rats supports the murine origin of Betacoronavirus 1
+            and has implications for the ancestor of Betacoronavirus lineage A
+  JOURNAL   J. Virol. 89 (6), 3076-3092 (2015)
+   PUBMED   25552712
+REFERENCE   2  (residues 1 to 1358)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (07-JAN-2015) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (residues 1 to 1358)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Li,K.S.M., Tsang,A.K.L., Fan,R.Y.Y.,
+            Luk,H.K.H., Cai,J.-P., Chan,K.-H. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-2014) Department of Microbiology, The University
+            of Hong Kong, University Pathology Building, Queen Mary Hospital,
+            Hong Kong, Hong Kong, China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AJA91196.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus HKU24"
+                     /strain="HKU24-R05005I"
+                     /host="Rattus norvegicus (Norway rat)"
+                     /db_xref="taxon:1590370"
+                     /country="China"
+                     /collection_date="17-May-2012"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+                     /calculated_mol_wt=149804
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          327..>490
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          795..1323
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /locus_tag="SF15_gp04"
+                     /coded_by="NC_026011.1:23777..27853"
+                     /db_xref="GeneID:22807881"
+ORIGIN      
+        1 mviiflllfa epvfgiigdf kctqswinsa aspqppiste vvdvsngvgt yyvlnrvyln
+       61 tsllltgyyp vsgsiyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivfgt sfvnttytiv iepstqivng kligtlsasv cqytmceypn tacnpvlgng
+      181 rpslwhasig ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnarqtye ywvtplikre yllvfdgngv itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtkknpsgwn nrygfvefkp lnigqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tssackqtpa tvgvgqycpg
+      541 vgvmadqcap smpgnsiltc scsntqysag nsqpyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn nisisrsvir
+      721 yfdsylgcvv nadddiaeav gscnltvgsg ycvdysstwr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekvnecv ksqstrvnfc gngnhilslv
+     1141 qnapyglyfi hfsyqptkyt tayvspglcl agdvgvapks gyfikvndkw mftgsayyhp
+     1201 epitndnvim mnncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg sscfkkcgsc cddygghqdi vvktshdd
+//
+
+LOCUS       AJA91217                1358 aa            linear   VRL 16-APR-2015
+DEFINITION  spike glycoprotein [Betacoronavirus HKU24].
+ACCESSION   AJA91217
+VERSION     AJA91217.1
+DBSOURCE    accession KM349744.1
+KEYWORDS    .
+SOURCE      Betacoronavirus HKU24
+  ORGANISM  Betacoronavirus HKU24
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; China Rattus coronavirus HKU24.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Lau,S.K., Woo,P.C., Li,K.S., Tsang,A.K., Fan,R.Y., Luk,H.K.,
+            Cai,J.P., Chan,K.H., Zheng,B.J., Wang,M. and Yuen,K.Y.
+  TITLE     Discovery of a novel coronavirus, China Rattus coronavirus HKU24,
+            from Norway rats supports the murine origin of Betacoronavirus 1
+            and has implications for the ancestor of Betacoronavirus lineage A
+  JOURNAL   J. Virol. 89 (6), 3076-3092 (2015)
+   PUBMED   25552712
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Li,K.S.M., Tsang,A.K.L., Fan,R.Y.Y.,
+            Luk,H.K.H., Cai,J.-P., Chan,K.-H. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-2014) Department of Microbiology, The University
+            of Hong Kong, University Pathology Building, Queen Mary Hospital,
+            Hong Kong, Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus HKU24"
+                     /strain="HKU24-R05010I"
+                     /host="Rattus norvegicus (Norway rat)"
+                     /db_xref="taxon:1590370"
+                     /country="China"
+                     /collection_date="17-May-2012"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          327..>490
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          795..1323
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /gene="S"
+                     /coded_by="KM349744.1:23777..27853"
+ORIGIN      
+        1 mviiflllfa epvfgiigdf kctqswinsa aspqppiste vvdvsngvgt yyvlnrvyln
+       61 tsllltgyyp vsgsiyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivfgt sfvnttytiv iepstqivng kligtlsasv cqytmceypn tacnpvlgng
+      181 rpslwhasig ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnarqtye ywvtplikre yllvfdgngv itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtkknpsgwn nrygfvefkp lnigqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tssackqtpa tvgvgqycpg
+      541 vgvmadqcap smpgnsiltc scsntqysag nsqpyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn nisisrsvir
+      721 yfdsylgcvv nadddiaeav gscnltvgsg ycvdysstwr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekvnecv ksqstrvnfc gngnhilslv
+     1141 qnapyglyfi hfsyqptkyt tayvspglcl agdvgvapks gyfikvndkw mftgsayyhp
+     1201 epitndnvim mnncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg sscfkkcgsc cddygghqdi vvktshdd
+//
+
+LOCUS       AJA91207                1358 aa            linear   VRL 16-APR-2015
+DEFINITION  spike glycoprotein [Betacoronavirus HKU24].
+ACCESSION   AJA91207
+VERSION     AJA91207.1
+DBSOURCE    accession KM349743.1
+KEYWORDS    .
+SOURCE      Betacoronavirus HKU24
+  ORGANISM  Betacoronavirus HKU24
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; China Rattus coronavirus HKU24.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Lau,S.K., Woo,P.C., Li,K.S., Tsang,A.K., Fan,R.Y., Luk,H.K.,
+            Cai,J.P., Chan,K.H., Zheng,B.J., Wang,M. and Yuen,K.Y.
+  TITLE     Discovery of a novel coronavirus, China Rattus coronavirus HKU24,
+            from Norway rats supports the murine origin of Betacoronavirus 1
+            and has implications for the ancestor of Betacoronavirus lineage A
+  JOURNAL   J. Virol. 89 (6), 3076-3092 (2015)
+   PUBMED   25552712
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Li,K.S.M., Tsang,A.K.L., Fan,R.Y.Y.,
+            Luk,H.K.H., Cai,J.-P., Chan,K.-H. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-2014) Department of Microbiology, The University
+            of Hong Kong, University Pathology Building, Queen Mary Hospital,
+            Hong Kong, Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus HKU24"
+                     /strain="HKU24-R05009I"
+                     /host="Rattus norvegicus (Norway rat)"
+                     /db_xref="taxon:1590370"
+                     /country="China"
+                     /collection_date="17-May-2012"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          327..>490
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          795..1323
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /gene="S"
+                     /coded_by="KM349743.1:23777..27853"
+ORIGIN      
+        1 mviiflllfa epvfgiigdf kctqswinsa aspqppiste vvdvsngvgt yyvlnrvyln
+       61 tsllltgyyp vsgsiyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivfgt sfvnttytiv iepstqivng kligtlsasv cqytmceypn tacnpvlgng
+      181 rpslwhasig ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnarqtye ywvtplikre yllvfdgngv itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtkknpsgwn nrygfvefkp lnigqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tssackqtpa tvgvgqycpg
+      541 vgvmadqcap smpgnsiltc scsntqysag nsqpyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn nisisrsvir
+      721 yfdsylgcvv nadddiaeav gscnltvgsg ycvdysstwr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekvnecv ksqstrvnfc gngnhilslv
+     1141 qnapyglyfi hfsyqptkyt tayvspglcl agdvgvapks gyfikvndkw mftgsayyhp
+     1201 epitndnvim mnncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg sscfkkcgsc cddygghqdi vvktshdd
+//
+
+LOCUS       AJA91196                1358 aa            linear   VRL 16-APR-2015
+DEFINITION  spike glycoprotein [Betacoronavirus HKU24].
+ACCESSION   AJA91196
+VERSION     AJA91196.1
+DBSOURCE    accession KM349742.1
+KEYWORDS    .
+SOURCE      Betacoronavirus HKU24
+  ORGANISM  Betacoronavirus HKU24
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; China Rattus coronavirus HKU24.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Lau,S.K., Woo,P.C., Li,K.S., Tsang,A.K., Fan,R.Y., Luk,H.K.,
+            Cai,J.P., Chan,K.H., Zheng,B.J., Wang,M. and Yuen,K.Y.
+  TITLE     Discovery of a novel coronavirus, China Rattus coronavirus HKU24,
+            from Norway rats supports the murine origin of Betacoronavirus 1
+            and has implications for the ancestor of Betacoronavirus lineage A
+  JOURNAL   J. Virol. 89 (6), 3076-3092 (2015)
+   PUBMED   25552712
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Li,K.S.M., Tsang,A.K.L., Fan,R.Y.Y.,
+            Luk,H.K.H., Cai,J.-P., Chan,K.-H. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-2014) Department of Microbiology, The University
+            of Hong Kong, University Pathology Building, Queen Mary Hospital,
+            Hong Kong, Hong Kong, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus HKU24"
+                     /strain="HKU24-R05005I"
+                     /host="Rattus norvegicus (Norway rat)"
+                     /db_xref="taxon:1590370"
+                     /country="China"
+                     /collection_date="17-May-2012"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          327..>490
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          795..1323
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /gene="S"
+                     /coded_by="KM349742.1:23777..27853"
+ORIGIN      
+        1 mviiflllfa epvfgiigdf kctqswinsa aspqppiste vvdvsngvgt yyvlnrvyln
+       61 tsllltgyyp vsgsiyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivfgt sfvnttytiv iepstqivng kligtlsasv cqytmceypn tacnpvlgng
+      181 rpslwhasig ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnarqtye ywvtplikre yllvfdgngv itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtkknpsgwn nrygfvefkp lnigqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tssackqtpa tvgvgqycpg
+      541 vgvmadqcap smpgnsiltc scsntqysag nsqpyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn nisisrsvir
+      721 yfdsylgcvv nadddiaeav gscnltvgsg ycvdysstwr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekvnecv ksqstrvnfc gngnhilslv
+     1141 qnapyglyfi hfsyqptkyt tayvspglcl agdvgvapks gyfikvndkw mftgsayyhp
+     1201 epitndnvim mnncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg sscfkkcgsc cddygghqdi vvktshdd
+//
+

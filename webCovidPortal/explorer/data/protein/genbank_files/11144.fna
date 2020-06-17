@@ -1,0 +1,605 @@
+LOCUS       HEMA_CVMJH               439 aa            linear   VRL 22-APR-2020
+DEFINITION  RecName: Full=Hemagglutinin-esterase; Short=HE protein; AltName:
+            Full=E3 glycoprotein; Flags: Precursor.
+ACCESSION   Q83356
+VERSION     Q83356.1
+DBSOURCE    UniProtKB: locus HEMA_CVMJH, accession Q83356;
+            class: standard.
+            extra accessions:Q83353
+            created: Dec 15, 1998.
+            sequence updated: Nov 1, 1996.
+            annotation updated: Apr 22, 2020.
+            xrefs: D00764.1, BAA00661.1, M28348.1, AAA46442.1, JQ0997
+            xrefs (non-sequence databases): SMR:Q83356, Proteomes:UP000007193,
+            GO:0020002, GO:0016021, GO:0019031, GO:0055036, GO:0046789,
+            GO:0001681, GO:0019064, HAMAP:MF_04207, InterPro:IPR008980,
+            InterPro:IPR042545, InterPro:IPR007142, InterPro:IPR003860,
+            Pfam:PF03996, Pfam:PF02710, SUPFAM:SSF49818
+KEYWORDS    Disulfide bond; Glycoprotein; Hemagglutinin; Host cell membrane;
+            Host membrane; Hydrolase; Membrane; Reference proteome; Signal;
+            Transmembrane; Transmembrane helix; Viral envelope protein; Virion.
+SOURCE      Murine hepatitis virus strain JHM
+  ORGANISM  Murine hepatitis virus strain JHM
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 439)
+  AUTHORS   Pfleiderer,M., Routledge,E., Herrler,G. and Siddell,S.G.
+  TITLE     High level transient expression of the murine coronavirus
+            haemagglutinin-esterase
+  JOURNAL   J. Gen. Virol. 72 (Pt 6), 1309-1315 (1991)
+   PUBMED   1646274
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].
+REFERENCE   2  (residues 1 to 439)
+  AUTHORS   Shieh,C.K., Lee,H.J., Yokomori,K., La Monica,N., Makino,S. and
+            Lai,M.M.
+  TITLE     Identification of a new transcriptional initiation site and the
+            corresponding functional gene 2b in the murine coronavirus RNA
+            genome
+  JOURNAL   J. Virol. 63 (9), 3729-3736 (1989)
+   PUBMED   2547994
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].
+REFERENCE   3  (residues 1 to 439)
+  AUTHORS   Pfleiderer,M., Routledge,E. and Siddell,S.G.
+  TITLE     Functional analysis of the coronavirus MHV-JHM surface
+            glycoproteins in vaccinia virus recombinants
+  JOURNAL   Adv. Exp. Med. Biol. 276, 21-31 (1990)
+   PUBMED   2103098
+  REMARK    NUCLEOTIDE SEQUENCE [GENOMIC RNA].
+REFERENCE   4  (residues 1 to 439)
+  AUTHORS   Wurzer,W.J., Obojes,K. and Vlasak,R.
+  TITLE     The sialate-4-O-acetylesterases of coronaviruses related to mouse
+            hepatitis virus: a proposal to reorganize group 2 Coronaviridae
+  JOURNAL   J. Gen. Virol. 83 (Pt 2), 395-402 (2002)
+   PUBMED   11807232
+  REMARK    CHARACTERIZATION.
+COMMENT     On Oct 25, 2005 this sequence version replaced gi:543553.
+            [FUNCTION] Structural protein that makes short spikes at the
+            surface of the virus. Contains receptor binding and
+            receptor-destroying activities. Mediates de-O-acetylation of
+            N-acetyl-4-O-acetylneuraminic acid, which is probably the receptor
+            determinant recognized by the virus on the surface of erythrocytes
+            and susceptible cells. This receptor-destroying activity is
+            important for virus release as it probably helps preventing
+            self-aggregation and ensures the efficient spread of the progeny
+            virus from cell to cell. May serve as a secondary viral attachment
+            protein for initiating infection, the spike protein being the major
+            one. May become a target for both the humoral and the cellular
+            branches of the immune system. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-9-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:22600,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:28999,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-4-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:25564,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:29006,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBUNIT] Homodimer; disulfide-linked. Forms a complex with the M
+            protein in the pre-Golgi. Associates then with S-M complex to form
+            a ternary complex S-M-HE. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Note=In infected cells
+            becomes incorporated into the envelope of virions during virus
+            assembly at the endoplasmic reticulum and cis Golgi. However, some
+            may escape incorporation into virions and subsequently migrate to
+            the cell surface. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [PTM] N-glycosylated in the host RER.
+            {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SIMILARITY] Belongs to the influenza type C/coronaviruses
+            hemagglutinin-esterase family. {ECO:0000255|HAMAP-Rule:MF_04207}.
+FEATURES             Location/Qualifiers
+     source          1..439
+                     /organism="Murine hepatitis virus strain JHM"
+                     /host="Mus musculus (Mouse)"
+                     /db_xref="taxon:11144"
+     gene            1..439
+                     /gene="HE"
+                     /locus_tag="2b"
+     Protein         1..439
+                     /product="Hemagglutinin-esterase"
+                     /EC_number="3.1.1.53"
+                     /note="HE protein; E3 glycoprotein"
+                     /UniProtKB_evidence="Evidence at protein level"
+     Region          1..22
+                     /region_name="Signal"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          12..132
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 1.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          23..439
+                     /region_name="Mature chain"
+                     /note="Hemagglutinin-esterase.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207.
+                     /id=PRO_0000037147."
+     Region          23..407
+                     /region_name="Topological domain"
+                     /note="Virion surface.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          23..394
+                     /region_name="Hema_esterase"
+                     /note="Hemagglutinin esterase; pfam03996"
+                     /db_xref="CDD:281925"
+     Site            45
+                     /site_type="active"
+                     /note="Nucleophile.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(49,70)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            94
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(118,167)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          133..281
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor binding.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          133
+                     /region_name="Conflict"
+                     /note="R -> A (in Ref. 2; AAA46442)."
+     Site            196
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(202,291)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(210,264)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          245
+                     /region_name="Conflict"
+                     /note="F -> L (in Ref. 2)."
+     Site            246
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          247
+                     /region_name="Conflict"
+                     /note="S -> C (in Ref. 2)."
+     Region          282..395
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 2.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            309
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            316
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(322,327)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            331
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            342
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            345
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            360
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(363,387)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            374
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          408..428
+                     /region_name="Transmembrane region"
+                     /note="Helical.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          429..439
+                     /region_name="Topological domain"
+                     /note="Intravirion.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+ORIGIN      
+        1 mgstciamap rtlllligcq lvfgfnepln ivshlnddwf lfgdsrsdct yvennghpkl
+       61 dwldldpklc nsgkisaksg nslfrsfhft dfynytgegd qivfyegvnf spnhgfkcla
+      121 ygdnkrwmgn karfyarvye kmaqyrslsf vnvpyayggk akptsickhk tltlnnptfi
+      181 skesnyvdyy yeseanftla gcdefivplc vfnghskgss sdpankyymd sqsyynmdtg
+      241 vlygfnstld vgntakdpgl dltcrylalt pgnykavsle yllslpskai clrkpkrfmp
+      301 vqvvdsrwns trqsdnmtav acqlpycffr ntsadysggt hdvhhgdfhf rqllsgllln
+      361 vsciaqqgaf lynnvssswp aygygqcpta anigymapvc iydplpvvll gvllgiavli
+      421 ivflilyfmt dsgvrlhea
+//
+
+LOCUS       SPIKE_CVMJH             1235 aa            linear   VRL 22-APR-2020
+DEFINITION  RecName: Full=Spike glycoprotein; Short=S glycoprotein; AltName:
+            Full=E2; AltName: Full=Peplomer protein; Contains: RecName:
+            Full=Spike protein S1; Contains: RecName: Full=Spike protein S2;
+            Contains: RecName: Full=Spike protein S2'; Flags: Precursor.
+ACCESSION   P11225
+VERSION     P11225.1
+DBSOURCE    UniProtKB: locus SPIKE_CVMJH, accession P11225;
+            class: standard.
+            created: Jul 1, 1989.
+            sequence updated: Jul 1, 1989.
+            annotation updated: Apr 22, 2020.
+            xrefs: X04797.1, CAA28484.1, VGIHMJ, 2ZSV_E, 2ZSV_F, 2ZSW_M,
+            2ZSW_N, 2ZSW_O, 2ZSW_P
+            xrefs (non-sequence databases): PDBsum:2ZSV, PDBsum:2ZSW,
+            SMR:P11225, PRIDE:P11225, EvolutionaryTrace:P11225,
+            Proteomes:UP000007193, GO:0044173, GO:0020002, GO:0016021,
+            GO:0019031, GO:0055036, GO:0075509, GO:0039654, GO:0019064,
+            GO:0009405, GO:0046813, Gene3D:1.20.5.790, Gene3D:2.60.120.960,
+            HAMAP:MF_04099, InterPro:IPR042578, InterPro:IPR002552,
+            InterPro:IPR027400, InterPro:IPR032500, InterPro:IPR043002,
+            InterPro:IPR018548, InterPro:IPR036326, Pfam:PF01601, Pfam:PF16451,
+            Pfam:PF09408, SUPFAM:SSF143587
+KEYWORDS    3D-structure; Coiled coil; Disulfide bond; Fusion of virus membrane
+            with host endosomal membrane; Fusion of virus membrane with host
+            membrane; Glycoprotein; Host cell membrane; Host membrane;
+            Host-virus interaction; Lipoprotein; Membrane; Palmitate; Reference
+            proteome; Signal; Transmembrane; Transmembrane helix; Viral
+            attachment to host cell; Viral envelope protein; Viral penetration
+            into host cytoplasm; Virion; Virulence; Virus entry into host cell.
+SOURCE      Murine hepatitis virus strain JHM
+  ORGANISM  Murine hepatitis virus strain JHM
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1235)
+  AUTHORS   Schmidt,I., Skinner,M. and Siddell,S.
+  TITLE     Nucleotide sequence of the gene encoding the surface projection
+            glycoprotein of coronavirus MHV-JHM
+  JOURNAL   J. Gen. Virol. 68 (Pt 1), 47-56 (1987)
+   PUBMED   3027248
+  REMARK    NUCLEOTIDE SEQUENCE [MRNA].
+REFERENCE   2  (residues 1 to 1235)
+  AUTHORS   Nedellec,P., Dveksler,G.S., Daniels,E., Turbide,C., Chow,B.,
+            Basile,A.A., Holmes,K.V. and Beauchemin,N.
+  TITLE     Bgp2, a new member of the carcinoembryonic antigen-related gene
+            family, encodes an alternative receptor for mouse hepatitis viruses
+  JOURNAL   J. Virol. 68 (7), 4525-4537 (1994)
+   PUBMED   8207827
+  REMARK    INTERACTION WITH MURINE CEACAM2.
+COMMENT     On Jul 5, 2005 this sequence version replaced gi:74850.
+            [FUNCTION] [Spike protein S1]: attaches the virion to the cell
+            membrane by interacting with host receptor, initiating the
+            infection. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [FUNCTION] [Spike protein S2]: mediates fusion of the virion and
+            cellular membranes by acting as a class I viral fusion protein.
+            Under the current model, the protein has at least three
+            conformational states: pre-fusion native state, pre-hairpin
+            intermediate state, and post-fusion hairpin state. During viral and
+            target cell membrane fusion, the coiled coil regions (heptad
+            repeats) assume a trimer-of-hairpins structure, positioning the
+            fusion peptide in close proximity to the C-terminal region of the
+            ectodomain. The formation of this structure appears to drive
+            apposition and subsequent fusion of viral and target cell
+            membranes. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [FUNCTION] [Spike protein S2']: Acts as a viral fusion peptide
+            which is unmasked following S2 cleavage occurring upon virus
+            endocytosis. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SUBUNIT] Homotrimer; each monomer consists of a S1 and a S2
+            subunit. The resulting peplomers protrude from the virus surface as
+            spikes. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Host endoplasmic
+            reticulum-Golgi intermediate compartment membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04099}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04099}. Note=Accumulates in the
+            endoplasmic reticulum-Golgi intermediate compartment, where it
+            participates in virus particle assembly. Some S oligomers are
+            transported to the host plasma membrane, where they may mediate
+            cell-cell fusion. {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [PTM] Specific enzymatic cleavages in vivo yield mature proteins.
+            The precursor is processed into S1 and S2 by host cell furin or
+            another cellular protease to yield the mature S1 and S2 proteins.
+            Additionally, a second cleavage leads to the release of a fusion
+            peptide after viral attachment to host cell receptor.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [PTM] The cytoplasmic Cys-rich domain is palmitoylated. Spike
+            glycoprotein is digested within host endosomes.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+            [SIMILARITY] Belongs to the betacoronaviruses spike protein family.
+            {ECO:0000255|HAMAP-Rule:MF_04099}.
+FEATURES             Location/Qualifiers
+     source          1..1235
+                     /organism="Murine hepatitis virus strain JHM"
+                     /host="Mus musculus (Mouse)"
+                     /db_xref="taxon:11144"
+     gene            1..1235
+                     /gene="S"
+                     /locus_tag="3"
+     Protein         1..1235
+                     /product="Spike glycoprotein"
+                     /note="S glycoprotein; E2; Peplomer protein"
+                     /UniProtKB_evidence="Evidence at protein level"
+     Region          1..330
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor binding site."
+     Region          1..13
+                     /region_name="Signal"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          14..1235
+                     /region_name="Mature chain"
+                     /note="Spike glycoprotein. /id=PRO_0000037220."
+     Region          14..1176
+                     /region_name="Topological domain"
+                     /note="Extracellular.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          14..628
+                     /region_name="Mature chain"
+                     /note="Spike protein S1. /evidence=ECO:0000250.
+                     /id=PRO_0000037221."
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Site            31
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            60
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            134
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            192
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          312..494
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor-binding domain.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          324..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Bond            bond(329,354)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            357
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Bond            bond(372,425)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            435
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            536
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            568
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            576
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            599
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            628..629
+                     /site_type="cleavage"
+                     /note="Cleavage; by host. /evidence=ECO:0000250."
+     Region          629..1235
+                     /region_name="Mature chain"
+                     /note="Spike protein S2. /evidence=ECO:0000250.
+                     /id=PRO_0000037222."
+     Site            648
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          649..1197
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Site            665
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          738..760
+                     /region_name="Region of interest in the sequence"
+                     /note="Fusion peptide.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            780..781
+                     /site_type="cleavage"
+                     /note="Cleavage.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          781..1235
+                     /region_name="Mature chain"
+                     /note="Spike protein S2'.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099.
+                     /id=PRO_0000444086."
+     Site            804
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          881..931
+                     /region_name="Region of interest in the sequence"
+                     /note="Heptad repeat 1.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          910..954
+                     /region_name="Coiled-coil region"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1091
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1101
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1120
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1125..1165
+                     /region_name="Region of interest in the sequence"
+                     /note="Heptad repeat 2.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1136
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1138..1166
+                     /region_name="Coiled-coil region"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Site            1157
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1177..1197
+                     /region_name="Transmembrane region"
+                     /note="Helical.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1198..1235
+                     /region_name="Topological domain"
+                     /note="Cytoplasmic.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+     Region          1198..1215
+                     /region_name="Compositionally biased region"
+                     /note="Cys-rich."
+     Region          1231..1235
+                     /region_name="Short sequence motif of biological interest"
+                     /note="KxHxx. /evidence=ECO:0000255|HAMAP-Rule:MF_04099."
+ORIGIN      
+        1 mlfvfilllp sclgyigdfr ciqtvnyngn nasapsiste avdvskgrgt yyvldrvyln
+       61 atllltgyyp vdgsnyrnla ltgtntlslt wfkppflsef ndgifakvqn lktntptgat
+      121 syfptivigs lfgntsytvv lepynniima svctyticql pytpckpntn gnrvigfwht
+      181 dvkppicllk rnftfnvnap wlyfhfyqqg gtfyayyadk psattflfsv yigdiltqyf
+      241 vlpfictpta gstlaplywv tpllkrqylf nfnekgvits avdcassyis eikcktqsll
+      301 pstgvydlsg ytvqpvgvvy rrvpnlpdck ieewltaksv psplnwerrt fqncnfnlss
+      361 llryvqaesl scnnidaskv ygmcfgsvsv dkfaiprsrq idlqignsgf lqtanykidt
+      421 aatscqlyys lpknnvtinn ynpsswnrry gfkvndrcqi fanillngin sgttcstdlq
+      481 lpntevatgv cvrydlygit gqgvfkevka dyynswqall ydvngnlngf rdlttnktyt
+      541 irscysgrvs aayhkeapep allyrnincs yvftnnisre enplnyfdsy lgcvvnadnr
+      601 tdealpncnl rmgaglcvdy sksrrarrsv stgyrlttfe pympmlvnds vqsvgglyem
+      661 qiptnftigh heefiqirap kvtidcaafv cgdnaacrqq lveygsfcdn vnailnevnn
+      721 lldnmqlqva salmqgvtis srlpdgisgp iddinfspll gcigstcaed gngpsairgr
+      781 saiedllfdk vklsdvgfve aynnctggqe vrdllcvqsf ngikvlppvl sesqisgyta
+      841 gataaamfpp wtaaagvpfs lnvqyringl gvtmnvlsen qkmiasafnn algaiqegfd
+      901 atnsalgkiq svvnanaeal nnllnqlsnr fgaisaslqe iltrldavea kaqidrling
+      961 rltalnayis kqlsdstlik fsaaqaiekv necvksqttr infcgngnhi lslvqnapyg
+     1021 lcfihfsyvp tsfktanvsp glcisgdrgl apkagyfvqd ngewkftgsn yyypepitdk
+     1081 nsvamiscav nytkapevfl nnsipnlpdf keeldkwfkn qtsiapdlsl dfeklnvtfl
+     1141 dltyemnriq daikklnesy inlkevgtye myvkwpwyvw lliglagvav cvllfficcc
+     1201 tgcgsccfrk cgsccdeygg hqdsivihni sahed
+//
+
+LOCUS       YP_209233               1376 aa            linear   VRL 13-AUG-2018
+DEFINITION  spike glycoprotein (S) [Murine hepatitis virus strain JHM].
+ACCESSION   YP_209233
+VERSION     YP_209233.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession AC_000192.1
+KEYWORDS    RefSeq.
+SOURCE      Murine hepatitis virus strain JHM
+  ORGANISM  Murine hepatitis virus strain JHM
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1376)
+  AUTHORS   Baker,S., Nielsen,E.M., Jukneliene,D. and the PATRIC-BRC project
+            (https://patric.vbi.vt.edu).
+  TITLE     MHV-JHM complete assembled genome sequence
+  JOURNAL   Unpublished
+  REMARK    This sequence was assembled from the following GenBank   sequences:
+            Gene 1: S51684 (Lee, et al. 1991 Virology 180: 567) as modified
+            by Bonilla, et al.(1994)to create the corrected replicase sequence;
+            Gene 2:   M34035 (Schwarz, et al. 1990 J Virol. 64: 4784); Gene
+            2-1: M28348 (Shieh, et   al. 1989 J Virol. 63: 3729) and D00764
+            (Pfleiderer, et al. 1991 J Gen Virol.   72: 1309); Gene 3: D10235
+            (Taguchi, et al. 1992 J Gen Virol. 73:1065); Gene 4: X04998
+            (Skinner, et al. 1985 J   Gen Virol. 66: 593); Gene 5: X04997
+            (Skinner, et al. 1985 J Gen Virol. 66:   581); Gene 6: X04223
+            (Pfleiderer, et al 1986 Nucleic Acids Res. 14: 6338); Gene 7:
+            X00990 (Skinner, et al. 1983 Nucleic Acids Res. 11: 5045 and Wu, et
+            al. 2003 Virology 315: 174)' } }
+REFERENCE   2  (residues 1 to 1376)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-FEB-2005) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (residues 1 to 1376)
+  AUTHORS   Baker,S., Nielsen,E.M., Jukneliene,D. and the PATRIC-BRC project
+            (https://patric.vbi.vt.edu).
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-FEB-2005) Loyola University
+  REMARK    MHV-JHM complete assembled genome sequence
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence was derived from MHV-JHMgp05.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1376
+                     /organism="Murine hepatitis virus strain JHM"
+                     /db_xref="taxon:11144"
+     Protein         1..1376
+                     /product="spike glycoprotein (S)"
+                     /calculated_mol_wt=151752
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          790..1338
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1376
+                     /locus_tag="MHV-JHMgp05"
+                     /coded_by="AC_000192.1:23940..28070"
+ORIGIN      
+        1 mlfvfilllp sclgyigdfr ciqtvnyngn nasapsiste avdvskglgt yyvldrvyln
+       61 atllltgyyp vdgsnyrnla ltgtntlslt wfkppflsef ndgifakvqn lktntptgat
+      121 syfptivigs lfgntsytvv lepynniima svctyticql pytpckpntn gnrvigfwht
+      181 dvkppicllk rnftfnvnap wlyfhfyqqg gtfyayyadk psattflfsv yigdiltqyf
+      241 vlpfictpta gstllplywv tpllkrqylf nfnekgvits avdcassyis eikcktqsll
+      301 pstgvydlsg ytvqpvgvvy rrvpnlpdck ieewltaksv psplnwerrt fqncnfnlss
+      361 llryvqaesl scnnidaskv ygmcfgsvsv dkfaiprsrq idlqignsgf lqtanykidt
+      421 aatscqlyys lpknnvtinn ynpsswnrry gfndagvfgk skhdvayaqq cftvrpsycp
+      481 caqpdivsac tsqtkpmsay cptgtihrec slwngphlrs arvgsgtytc ectckpnpfd
+      541 tydlrcgqik tivnvgdhce glgvledkcg nsdphkgcsc andsfigwsh dtclvndrcq
+      601 ifanillngi nsgttcstdl qlpntevatg vcvrydlygi tgqgvfkevk adyynswqal
+      661 lydvngnlng frdlttnkty tirscysgrv saayhkeape pallyrninc syvftnnisr
+      721 eenplnyfds ylgcvvnadn rtdealpncd lrmgaglcvd ysksrrarrs vstgyrlttf
+      781 epympmlvnd svqsvgglye mqiptnftig hheefiqira pkvtidcaaf vcgdnaacrq
+      841 qlveygsfcd nvnailnevn nlldnmqlqv asalmqgvti ssrlpdgisg piddinfspl
+      901 lgcigstcae dgngpsairg rsaiedllfd kvklsdvgfv eaynnctggq evrdllcvqs
+      961 fngikvlppv lsesqisgyt agataaamfp pwtaaagvpf slnvqyring lgvtmnvlse
+     1021 nqkmiasafn nalgaiqegf datnsalgki qsvvnanaea lnnllnqlsn rfgaisaslq
+     1081 eiltrldave akaqidrlin grltalnayi skqlsdstli kfsaaqaiek vnecvksqtt
+     1141 rinfcgngnh ilslvqnapy glcfihfsyv ptsfktanvs pglcisgdrg lapkagyfvq
+     1201 dngewkftgs nyyypepitd knsvvmisca vnytkapevf lnnsipnlpd fkeeldkwfk
+     1261 nqtsiapdls ldfeklnvtf ldltyemnri qdaikklnes yinlkevgty emyvkwpwyv
+     1321 wlliglagva vcvllfficc ctgcgsccfr kcgsccdeyg ghqdsivihn isahed
+//
+

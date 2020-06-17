@@ -1,0 +1,77 @@
+LOCUS       ABG47060                1241 aa            linear   VRL 19-JUL-2006
+DEFINITION  spike protein [Bat CoV 273/2005].
+ACCESSION   ABG47060
+VERSION     ABG47060.1
+DBSOURCE    accession DQ648856.1
+KEYWORDS    .
+SOURCE      Bat CoV 273/2005
+  ORGANISM  Bat CoV 273/2005
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Tang,X.C., Zhang,J.X., Zhang,S.Y., Wang,P., Fan,X.H., Li,L.F.,
+            Li,G., Dong,B.Q., Liu,W., Cheung,C.L., Xu,K.M., Song,W.J.,
+            Vijaykrishna,D., Poon,L.L., Peiris,J.S., Smith,G.J., Chen,H. and
+            Guan,Y.
+  TITLE     Prevalence and genetic diversity of coronaviruses in bats from
+            China
+  JOURNAL   J. Virol. 80 (15), 7481-7490 (2006)
+   PUBMED   16840328
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Tang,X.C., Zhang,J.X., Zhang,S.Y., Wang,P., Fan,X.H., Li,L.F.,
+            Li,G., Dong,B.Q., Liu,W., Cheung,C.L., Xu,K.M., Song,W.J.,
+            Vijaykrishna,D., Poon,L.L.M., Peiris,J.S.M., Smith,G.J.D., Chen,H.
+            and Guan,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-MAY-2006) State Key Laboratory of Emerging Infectious
+            Diseases, Department of Microbiology, The University of Hong Kong,
+            Faculty of Medicine Building, No. 21 Sasoon Road, Pokfulam, Hong
+            Kong, SAR
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Bat CoV 273/2005"
+                     /strain="BtCoV/273/2005"
+                     /db_xref="taxon:389166"
+     Protein         1..1241
+                     /product="spike protein"
+                     /name="S"
+     Region          <108..285
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          321..554
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          634..1238
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1241
+                     /coded_by="DQ648856.1:21476..25201"
+ORIGIN      
+        1 mkilifaflv tlvkaqegcg vinlrtqpkl tqvsssrrgv yynddifrsd vlhltqdyfl
+       61 pfhsnltqyf slniesdkiv yfdnpilkfg dgvyfaatek snvirgwvfg stfdnttqsa
+      121 iivnnsthii irvcyfnlck dpmytvsagt qksswvyqsa fnctydrvek sfqldtspkt
+      181 gnftdlrefv fknrdgffta yqtytpvnll rglpsglsvl kpilklpfgi nitsfrvvma
+      241 mfskttsnyv pesaayyvgn lkqstfmlsf nqngtivdav dcsqdplael kcttksfnvs
+      301 kgiyqtsnfr vspvtevvrf pnitnlcpfd kvfnatrfps vyawertkis dcvadytvfy
+      361 nstsfstfnc ygvspsklid lcftsvyadt flirfsevrq vapgqtgvia dynyklpddf
+      421 tgcviawnta kqdvgsyfyr shrssklkpf erdlssveen grtlstydfn qnvpleyqat
+      481 rvvvlsfell napatvcgpk lstslvknqc vnfnfngfkg tgvltdsskt fqsfqqfgrd
+      541 asdftdsvrd pqtlrildis pcsfggvsvi tpgtntssav avlyqdvnct dvprtiqadq
+      601 lapswrvytt gpyvfqtqag cligaehvna syqcdipiga gicasyhtas hlrstgqksi
+      661 vaytmslgae nsvayannsi aiptnfsisv ttevmpvsma ktsvdctmyi cgdslecsnl
+      721 llqygsfctq lnralsgiav eqdkntqevf aqvkqmyktp tirdfggfnf sqilpdplkp
+      781 tkrsfiedll ynkvtladag fmkqyadclg ginardlica qkfngltvlp plltddmiaa
+      841 ytaalisgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkait
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issalndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgkgyhlmsf
+     1021 pqsaphgvvf lhvtyvpsqe knfttapaic hegkayfpre gvfvsngssw fitqrnfysp
+     1081 qiittdntfv agscdvvigi inntvydplq peldsfkqel dkyfknhtsp dvdlgdisgi
+     1141 nasvvdiqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia glvglfmaii
+     1201 llcyftsccs cckgmcscgs ccrfdeddse pvlkgvklhy t
+//
+

@@ -1,0 +1,70 @@
+LOCUS       AAQ67205                1363 aa            linear   VRL 15-SEP-2003
+DEFINITION  spike protein [Equine coronavirus NC99].
+ACCESSION   AAQ67205
+VERSION     AAQ67205.1
+DBSOURCE    accession AY316300.1
+KEYWORDS    .
+SOURCE      Equine coronavirus NC99
+  ORGANISM  Equine coronavirus NC99
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Wu,H.-Y., Guy,J.S. and Brian,D.A.
+  TITLE     Deduced amino acid sequence of the HE, S, 5.3 kDa nonstructural,
+            12.7 kDa, E and M proteins of equine coronavirus strain NC99
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Wu,H.-Y., Guy,J.S. and Brian,D.A.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JUN-2003) Microbiology, University of Tennessee,
+            Knoxville, TN 37996-0845, USA
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Equine coronavirus NC99"
+                     /strain="NC99"
+                     /db_xref="taxon:202496"
+     Protein         1..1363
+                     /product="spike protein"
+                     /name="S protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="AY316300.1:1307..5398"
+ORIGIN      
+        1 mvllllfflp gafavvgdvk ctttgvnnfn sgapvistet vdvtnglgty yvldrvylnt
+       61 tlllngyypt sganyrnlal kasgllstlw ykppflsefn dgvfakvknt kvtkngivys
+      121 efptmaigtt fvntsytvvv qprttvvnsk lqglleitic qysmceypnt vcnsgigspr
+      181 kelwhyekav asclyrrnft ydvnsdwlyf hfyqqggtfy ayytdsgfit tflfniylgt
+      241 slshyyvmpl scsgkldlqy wvtpltnrqf llvfnqdgii ynavdcasdy mseikcntqn
+      301 vkpstgvydl tgytvqpiad vyrripnlpd cnmedwlsap tvasplnwer rtfsncnfnm
+      361 sslmsfiqad sfscsnidaa klygmcfgsv tidkfaipns rkvdlqlgnl gylqsfnyri
+      421 dttatscqly yslgadnvtv trsnpsawnr rygfndtmfk pqpagfftnh dvvyskqcfk
+      481 vpntycpckn ngatcvgngi sagvsgtttg sgtcpvgtsy rtcfnpiqca ctcdpepina
+      541 iltsgpracp qvkslvglge hcsglgihed fcggspcscp anafmawsad sclqdgrcni
+      601 fsnlilngvn sgatcstdlq rsnteivvgv cvkydlygit gqgifievna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aayhsdasep allyrnlkcn yvfnntiare
+      721 gnpinyfdsy lgcivnadns tssvvdtcvl tmgsgycvdy starrqrrsp stgyrltnfe
+      781 pfnvrlvnds vepvgglyei qipseftign feefiqtnsp kvtidcaafv rgdyaacreq
+      841 lveygsfcdn inailtevnd lldttqfqva nslmngvtls srlktginfn vddinfssvl
+      901 gcvgsdcntv ssrsaiedll fnkvrlsdvg fveaynnctg gaeirdllcv qtfngikvlp
+      961 pvlsenqisg ytlaatsasl fppwtaaagi pfylnvqyri nglgvtmdvl sqnqkmiana
+     1021 fnnalgaiqn gfdatnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdtt lvkfsasqai ekvnecvksq slrvnfcgng
+     1141 nhiislvqna pyglyfihfn yvptkyvtak vspglciagd kgiapksgyf vnvnniwmft
+     1201 gsgyyypepi tennvvvmst cavnytkapd vmlnisipnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf lnlqdemnrl qesikvlnqs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+

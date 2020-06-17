@@ -1,0 +1,761 @@
+LOCUS       ACN89771                2733 aa            linear   VRL 24-JUL-2016
+DEFINITION  ORF1b polyprotein, partial [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89771
+VERSION     ACN89771.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 2733)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 2733)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..2733
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         <1..2733
+                     /product="ORF1b polyprotein"
+     Region          25..373
+                     /region_name="Corona_RPol_N"
+                     /note="Coronavirus RPol N-terminus; pfam06478"
+                     /db_xref="CDD:284009"
+     Region          452..>702
+                     /region_name="RT_like"
+                     /note="RT_like: Reverse transcriptase (RT, RNA-dependent
+                     DNA polymerase)_like family. An RT gene is usually
+                     indicative of a mobile element such as a retrotransposon
+                     or retrovirus. RTs occur in a variety of mobile elements,
+                     including retrotransposons; cl02808"
+                     /db_xref="CDD:295487"
+     Site            order(625..630,689)
+                     /site_type="other"
+                     /note="NTP binding site [chemical binding]"
+                     /db_xref="CDD:238185"
+     Site            690
+                     /site_type="other"
+                     /note="nucleic acid binding site [nucleotide binding]"
+                     /db_xref="CDD:238185"
+     Region          1218..>1257
+                     /region_name="AAA_19"
+                     /note="Part of AAA domain; pfam13245"
+                     /db_xref="CDD:289986"
+     Region          1265..1511
+                     /region_name="Viral_helicase1"
+                     /note="Viral (Superfamily 1) RNA helicase; pfam01443"
+                     /db_xref="CDD:279750"
+     Region          1374..1513
+                     /region_name="UvrD_C_2"
+                     /note="UvrD-like helicase C-terminal domain; cl22977"
+                     /db_xref="CDD:304668"
+     Region          1540..2128
+                     /region_name="NSP11"
+                     /note="NSP11; pfam06471"
+                     /db_xref="CDD:284002"
+     Region          2436..2731
+                     /region_name="NSP13"
+                     /note="Coronavirus NSP13; pfam06460"
+                     /db_xref="CDD:283991"
+     CDS             1..2733
+                     /coded_by="FJ647226.1:<13533..21734"
+ORIGIN      
+        1 lllcryrlpv svkrheffkr vrgtsvnarl vpcasgldtd vqlrafdicn anragiglyy
+       61 kvnccrfqrv dedgnkldkf fvvkrtnlev ynkekecyel tkdcgvvaeh efftfdvegs
+      121 rvphivrkdl skftmldlcy alrhfdrndc stlkeillty aecdesyfqk kdwydfvenp
+      181 diinvykklg pifnrallnt akfadtlvea glvgvltldn qdlygqwydf gdfvktvpgc
+      241 gvavadsyys ymmpmltmch aldselfvng tyrefdlvqy dftdfklelf nkyfkhwsmt
+      301 yhpntseced drciihcanf nilfsmvlpk tcfgplvrqi fvdgvpfvvs igyhykelgv
+      361 vmnmdvdthr yrlslkdlll yaadpalhva sasalldlrt ccfsvaaits gvkfqtvkpg
+      421 nfnqdfyefi lskgllkegs svdlkhffft qdgnaaitdy nyykynlptm vdikqllfvl
+      481 evvnkyfeiy eggcipatqv ivnnydksag ypfnkfgkar lyyealsfee qdeiyaytkr
+      541 nvlptltqmn lkyaisaknr artvagvsil stmtgrmfhq kclksiaatr gvpvvigttk
+      601 fyggwddmlr rlikdvdspv lmgwdypkcd rampnilriv sslvlarkhd sccshtdrfy
+      661 rlanecaqvl seivmcggcy yvkpggtssg dattafansv fnicqavsan vcslmacngh
+      721 kiedlsirel qkrlysnvyr adhvdpafvs eyyeflnkhf smmilsddgv vcynsefask
+      781 gyianisafq qvlyyqnnvf mseakcwvet diekgphefc sqhtmlvkmd gdevylpypd
+      841 psrilgagcf vddllktdsv llierfvsla idayplvyhe npeyqnvfrv yleyikklyn
+      901 dlgnqildsy svilstcdgq kftdetfykn mylrsavmqs vgacvvcssq tslrcgscir
+      961 kpllcckcay dhvmstdhky vlsvspyvcn spgcdvndvt klylggmsyy ceahkpqysf
+     1021 klvmngmvfg lykqsctgsp yiedfnkias ckwtevddyv lanecterlk lfaaetqkat
+     1081 eeafkqcyas atireivsdr elilsweigk vrpplnknyv ftgyhftnng ktvlgeyvfd
+     1141 kseltngvyy ratttyklsv gdvfiltsha vsslsaptlv pqenytsirf asvysvpetf
+     1201 qnnvpnyqhi gmkryctvqg ppgtgkshla iglavyycta rvvytaasha avdalcekah
+     1261 kflnindctr ivpakvrvdc ydkfkvndtt rkyvfttina lpelvtdiiv vdevsmltny
+     1321 elsvinsrvr akhyvyigdp aqlpaprvll nkgtlepryf nsvtklmccl gpdiflgtcy
+     1381 rcpkeivdtv salvynnklk akndnsamcf kvyykgqtth esssavnmqq ihliskflka
+     1441 npswsnavfi spynsqnyva krvlglqtqt vdsaqgseyd fviysqtaet ahsvnvnrfn
+     1501 vaitrakkgi lcvmssmqlf eslnfttltl dkinnprlqc ttnlfkdcsk syvgyhpaha
+     1561 psflavddky kvsgdlavcl nvadsavtys rlislmgfkl dltldgyckl fitrdeaikr
+     1621 vrawvgfdae gahatrdsig tnfplqlgfs tgidfvveat gmfaerdgyv fkkaaarapp
+     1681 geqfkhlvpl msrgqkwdvv ririvqmlsd hlvdladsvv lvtwaasfel tclryfakvg
+     1741 kevvcsvcnk ratcfnsrtg yygcwrhsys cdylynpliv diqqwgytgs ltsnhdpics
+     1801 vhkgahvass daimtrclav hdcfcksvnw nleypiisne vsvntscrll qrvmfraaml
+     1861 cnrydvcydi gnpkglacvk gydfkfydas pvvksvkqfv ykyeahkdqf ldglcmfwnc
+     1921 nvdkypanav vcrfdtrvls klnlpgcngg slyvnkhafh tnpftraafe nlkpmpffyy
+     1981 sdtpcvymeg meskqvdyvp lrsatcitrc nlggavclkh aeeyreyles yntattagft
+     2041 fwvyktfdfy nlwntftrlq slenvvynlv naghfdgrag elpcavigek viakiqnedv
+     2101 evfknntpfp tnvavelfak rsirphpelk lfrnlnidvc wnhvlwdyak dsvfcsstyk
+     2161 vckytdlqci eslnvlfdgr dngaleafkk crngvyintt kikslsmikg pqradlngvv
+     2221 vekvgdsdve fwfamrrdgd dvifsrtgsl epshyrspqg npggnrvgdl sgnealargt
+     2281 iftqsrflss fsprsemekd fmdldedvfi akyslqdyaf ehvvygsfnq kiigglhlli
+     2341 glarrqkksn lviqefvpyd ssihsyfitd ensgssksvc tvidlllddf vdivkslnlk
+     2401 cvskvvnvnv dfkdfqfmlw cneekvmtfy prlqaaadwk pgyvmpvlyk ylespmervn
+     2461 lwnygkpitl ptgcmmnvak ytqlcqylst ttlavpanmr vlhlgagsdk gvapgsavlr
+     2521 qwlpsgsilv dndmnpfvsd svasyygnci tlpfdcqwdl iisdmydplt knigeynvsk
+     2581 dgfftylchl irdklalggs vaikitefsw naelyslmgk fafwtifctn vnasssegfl
+     2641 iginwlnrtr neidgktmha nylfwrnstm wnggayslfd mtkfplkaag tavvslkpdq
+     2701 indlvlslie kgkllvrdtr kevfvgdslv nvk
+//
+
+LOCUS       ACN89770                 265 aa            linear   VRL 24-JUL-2016
+DEFINITION  non-structural protein ns2 [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89770
+VERSION     ACN89770.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 265)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 265)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..265
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..265
+                     /product="non-structural protein ns2"
+     Region          6..257
+                     /region_name="Corona_NS2A"
+                     /note="Coronavirus NS2A protein; pfam05213"
+                     /db_xref="CDD:282997"
+     Region          11..186
+                     /region_name="AKAP7_NLS"
+                     /note="AKAP7 2'5' RNA ligase-like domain; pfam10469"
+                     /db_xref="CDD:287446"
+     CDS             1..265
+                     /coded_by="FJ647226.1:21748..22545"
+ORIGIN      
+        1 maarmafadk pnhfinfpla qfsgfmgkyl klqsqlvemg ldcklqkvph vsitlldika
+       61 dqykqvefai qeiiddlaay egdivfdnph mlgrclvldv kgfeelhedi veilrrrgct
+      121 adqsrqwiph ctvaqfdeek eikemqfyfk lpfylkhnnl ltdarlelvk igsskvdgfy
+      181 cselsiwcge rlcykpptpk fsdifgycci dkirgdleig dlppddeeaw aelsyhyqrn
+      241 tyffrhvhdn siyfrtvcrm kgcmc
+//
+
+LOCUS       ACN89769                4473 aa            linear   VRL 24-JUL-2016
+DEFINITION  ORF1a polyprotein [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89769
+VERSION     ACN89769.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 4473)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 4473)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..4473
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..4473
+                     /product="ORF1a polyprotein"
+     Region          1..355
+                     /region_name="DUF3477"
+                     /note="Protein of unknown function (DUF3477); pfam11963"
+                     /db_xref="CDD:152398"
+     Region          <922..1074
+                     /region_name="DUF3477"
+                     /note="Protein of unknown function (DUF3477); pfam11963"
+                     /db_xref="CDD:152398"
+     Region          1083..1331
+                     /region_name="Peptidase_C16"
+                     /note="Peptidase C16 family; pfam01831"
+                     /db_xref="CDD:280077"
+     Region          1322..1452
+                     /region_name="A1pp"
+                     /note="Appr-1'-p processing enzyme; smart00506"
+                     /db_xref="CDD:214701"
+     Site            order(1329,1347,1354,1356..1357,1437,1439..1441)
+                     /site_type="other"
+                     /note="ADP-ribose binding site [chemical binding]"
+                     /db_xref="CDD:239150"
+     Region          1607..1914
+                     /region_name="Viral_protease"
+                     /note="Papain like viral protease; pfam08715"
+                     /db_xref="CDD:285877"
+     Region          1937..2060
+                     /region_name="NAR"
+                     /note="Nucleic acid-binding domain (NAR); pfam16251"
+                     /db_xref="CDD:292868"
+     Region          3247..3334
+                     /region_name="Corona_NSP4_C"
+                     /note="Coronavirus nonstructural protein 4 C-terminus;
+                     pfam16348"
+                     /db_xref="CDD:292959"
+     Region          3365..3639
+                     /region_name="Peptidase_C30"
+                     /note="Coronavirus endopeptidase C30; pfam05409"
+                     /db_xref="CDD:283148"
+     Region          3927..4015
+                     /region_name="nsp7"
+                     /note="nsp7 replicase; pfam08716"
+                     /db_xref="CDD:285878"
+     Region          4016..4212
+                     /region_name="nsp8"
+                     /note="nsp8 replicase; pfam08717"
+                     /db_xref="CDD:285879"
+     Region          4213..4322
+                     /region_name="nsp9"
+                     /note="nsp9 replicase; pfam08710"
+                     /db_xref="CDD:285872"
+     Region          4334..4452
+                     /region_name="NSP10"
+                     /note="RNA synthesis protein NSP10; pfam09401"
+                     /db_xref="CDD:286486"
+     CDS             1..4473
+                     /coded_by="FJ647226.1:190..13611"
+ORIGIN      
+        1 makmgkyglg fkwapefpwm lpnaseklgn perseedgfc psaaqepkvk gktlvnhvrv
+       61 dcsrlpalec cvqsaiirdi fvdedpqkve astmmalqfg savlvkpskr lsvqawaklg
+      121 vlpktpamgl fkrfclcntr ecvcdahvaf qlftvqpdgv clgngrfigw fvpvtaipey
+      181 akqwlqpwsi llrkggnkgs vtsghfrrav tmpvydfnve daceevhlnp rgkysckaya
+      241 llrgyrgvkp ilfvdqygcd ytgclakgle dygdltlsem kelspvwrds ldnevvvawh
+      301 vdrdpravmr lqtlatvrsi eyvgqpiedm vdgdvvmrep ahllapnaiv krlprlvetm
+      361 lytdssvtef cyktklcdcg fitqfgyvdc cgdtcgfrgw vpgnmmdgfp cpgccksymp
+      421 weleaqssgv ipeggvlftq stdtvnresf klyghavvpf ggaaywspyp gmwlpviwss
+      481 vksysyltyt gvvgckaivq etdaicrsly mdyvqhkcgn leqrailgvd dvyhrqllvn
+      541 rgdyslllen vdlfvkrrae fackfatcgd glvpllldgl vprsyyliks gqaftslmvn
+      601 fsrevvdmcm dmallfmhdv kvatkyvkkv tgklavrfka lgiavvrkit ewfdlavdta
+      661 asaagwlcyq lvnglfavan gvitfvqevp elvknfvdkf ktffkvlids msvsilsglt
+      721 vvktasnrvc lagskvyevv qkslpayimp vgcseatclv geiepavfed dvvdvvkapl
+      781 tyqgcckpps sfekicivdk lymakcgdqf ypvvvdndtv gvldqcwrfp cagkkvvfnd
+      841 kpkvkevpst rkikiifald atfdsvlska csefevdkdv tldelldvvl davestlspc
+      901 kehgvigtkv callerlvdd yvylfdegge eviasrmycs fsapdedcva tdvvyadenq
+      961 dddaddpvvl vadtqeedgv akeqvdsads eicvahtggq emtepdavgs qtpiasaeet
+     1021 evgeacdreg iaevkatvca daldacpdqv eafdiekved silselqtel napadktyed
+     1081 vlafdaiyse tlsafyavps dethfkvcgf yspaiertnc wlrstlivmq slplefkdlg
+     1141 mqklwlsyka gydqcfvdkl vksapksiil pqggyvadfa yfflsqcsfk vhanwrclkc
+     1201 gmelklqgld amffygdvvs hmckcgnsmt llsadipytl hfgvrddkfc afytprkvfr
+     1261 aacavdvndc hsmavvdgkq idgkvvtkfn gdkfdfmvgh gmtfsmspfe iaqlygscit
+     1321 pnvcfvkgdv ikvlrrvgae vivnpangrm ahgagvagai akaagkafin etadmvkaqg
+     1381 vcqvggcyes tggklckkvl nivgpdargh gkqcysller ayqhinkcdn vvttlisagi
+     1441 fsvptdvslt yllgvvtknv ilvsnnqddf dviekcqvts vagtkalsfq laknlcrdvk
+     1501 fvtnacsslf sescfvssyd vlqevealrh diqldddarv fvqanmdclp tdwrlvnkfd
+     1561 svdgvrtiky fecpgevfvs sqgkkfgyvq ngsfkeasvs qirallankv dvlctvdgvn
+     1621 frsccvaege vfgktlgsvf cdginvtkvr csaihkgkvf fqysglsaad laavkdafgf
+     1681 depqllqyys mlgmckwpvv vcgnyfafkq snnncyinva clmlqhlslk fpkwqwqeaw
+     1741 nefrsgkplr fvslvlakgs fkfnepsdst dfirvvlrea dlsgatcdle fickcgvkqe
+     1801 qrkgvdavmh fgtldksglv kgyniactcg dklvhctqfn vpflicsntp egkklpddvv
+     1861 aaniftggsv ghythvkckp kyqlydacnv skvseakgnf tdclylknlk qtfssvltty
+     1921 ylddvkcvay kpdlsqyyce sgkyytkpii kaqfrtfekv egvytnfklv ghdiaeklna
+     1981 klgfdcnspf meykitewpt atgdvvlasd dlyvsrysgg cvtfgkpviw rgheeaslks
+     2041 ltyfnrpsvv cenkfnvlpv dvseptdrrp vpsavlvtga asgadasais tepgtakeqk
+     2101 acasdsvedq ivmeaqkrss vttvavkevk lngvkkpvkv edsvvvndpt setkvvksls
+     2161 ivdvydmflt gcryvvwtan elsrlinspt vreyvkwgms kliipanlll lrdekqefva
+     2221 pkvvkakaia cygavkwfll ycfswikfnt dnkviyttev askltfklcc lafknalqtf
+     2281 nwsvvsrgff lvatvfllwf nflyanvils dfylpnigpl pmfvgqivaw vkttfgvlti
+     2341 cdfyqvtdlg yrssfcngsm vcelcfsgfd mldnydainv vqhvvdrrvs fdyislfklv
+     2401 velvigysly tvcfyplfvl vgmqllttwl peffmlgtmh wsarlfvfva nmlpaftllr
+     2461 fyivvtamyk vyclcrhvmy gcskpgclfc ykrnrsvrvk cstvvggslr yydvmanggt
+     2521 gfctkhqwnc lncnswkpgn tfitheaaad lskelkrpvn ptdsayysvi evkqvgcsmr
+     2581 lfyerdgqrv yddvsaslfv dmngllhskv kgvpethvvv veneadkagf lnaavfyaqs
+     2641 lyrpmlmvek klittantgl svsrtmfdly vdsllsvldv drksltsfvn aahnslkegv
+     2701 qleqvmdtfv gcarrkcaid sdvetksitk svmaavnagv evtdescnnl vptyvksdti
+     2761 vaadlgvliq nnakhvqsnv akaanvaciw svdafnqlsa dlqhrlrkac vktglkiklt
+     2821 ynkqeanvpi lttpfslkgg avfsrvlqwl fvanlicfiv lwalmptyav hksdmqlply
+     2881 asfkvidngv lrdvsvtdac fankfnqfdq wyestfglvy yrnskacpvv vavidqdigh
+     2941 tlfnvptkvl rygfhvlhfi thafatdsvq cytphmqipy dnfyasgcvl sslctmlaha
+     3001 dgtphpycyt egvmhnasly sslvphvryn lassngyirf pevvsegivr vvrtrsmtyc
+     3061 rvglceeaee gicfnfnssw vlnnpyyram pgtfcgrnaf dlihqvlggl vqpidffalt
+     3121 assvagaila iivvlafyyl iklkrafgdy tsvvvinviv wcinflmlfv fqvyptlscl
+     3181 yacfyfyttl yfpseisvvm hlqwlvmyga implwfcity vavvvsnhal wlfsycrkig
+     3241 tdvrsdgtfe emalttfmit kesycklkns vsdvafnryl slynkyryfs gkmdtaayre
+     3301 aacsqlakam etfnhnngnd vlyqpptasv ttsflqsgiv kmvsptskve pcvvsvtygn
+     3361 mtlnglwldd kvycprhvic ssadmtdpdy pnllcrvtss dfcvmsdrms ltvmsyqmqg
+     3421 sllvltvtlq npntpkysfg vvkpgetftv laayngrpqg afhvvmrssh tikgsflcgs
+     3481 cgsvgyvltg dsvrfvymhq lelstgchtg tdfsgnfygp yrdaqvvqlp vqdytqtvnv
+     3541 vawlyaailn rcnwfvqsds csleefnvwa mtngfssika dlvldalasm tgvtveqmla
+     3601 aikrlhsgfq gkqilgscvl edeltpsdvy qqlagvklqs krtrvikgtc cwilastflf
+     3661 csiisafvkw tmfmyvtthm lgvtlcalcf vsfamllikh khlyltmyim pvlctlfytn
+     3721 ylvvykqsfr glayawlshf vpavdytymd evlygvvllv amvfvtmrsi nhdvfstmfl
+     3781 vgrlvslvsm wyfganleee vllfltslfg tytwttmlsl atakviakwl avnvlyftdi
+     3841 pqiklvllsy lcigyvcccy wgvlsllnsi frmplgvyny kisvqelrym nanglrpprn
+     3901 sfealmlnfk llgiggvpvi evsqiqsrlt dvkcanvvll nclqhlhias nsklwqycst
+     3961 lhneilatsd lsvafdklaq llvvlfanpa avdskclasi eevsddyvrd ntvlqalqse
+     4021 fvnmasfvey elakknldea kasgsanqqq ikqlekacni aksayerdra varklermad
+     4081 laltnmykea rindkkskvv salqtmlfsm vrkldnqaln sildnavkgc vplnaipplt
+     4141 sntltiivpd kqvfdqvvdn vyvtyagnvw hiqsiqdadg avkqlneidv nstwplvisa
+     4201 nrhnevstvv lqnnelmpqk lrtqvvnsgs dmncntptqc yynttgtgki vyailsdcdg
+     4261 lkytkivked gncvvleldp pckfsvqdvk glkikylyfv kgcntlargw vvgtlsstvr
+     4321 lqagtateya snsailslca fsvdpkktyl dyiqqggvpv tncvkmlcdh agtgmaitik
+     4381 peattnqdsy ggasvciycr srvehpdvdg lcklrgkfvq vplgikdpvs yvlthdvcqv
+     4441 cgfwrdgscs cvgtgsqfqs kdtnflngfg vqv
+//
+
+LOCUS       ACN89768                 228 aa            linear   VRL 24-JUL-2016
+DEFINITION  membrane protein [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89768
+VERSION     ACN89768.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 228)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 228)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..228
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..228
+                     /product="membrane protein"
+     Region          15..220
+                     /region_name="Corona_M"
+                     /note="Coronavirus M matrix/glycoprotein; pfam01635"
+                     /db_xref="CDD:279907"
+     CDS             1..228
+                     /coded_by="FJ647226.1:29120..29806"
+ORIGIN      
+        1 mssttqapgp vyqwtadeav qflkewnfsl giillfitii lqfgytsrsm fiyvvkmiil
+       61 wlmwpliivl cmfncvyaln nvylgfsivf tivsvvmwim yfvnsirlfi rtgswwsfnp
+      121 etnnlmcidm kgtvyvrpii edyhtltati irghlymqgv klgtgfslsd lpayvtvakv
+      181 shlctykraf ldkvdgvsgf avyvkskvgn yrlpsnkpsg adtallri
+//
+
+LOCUS       ACN89767                 107 aa            linear   VRL 24-JUL-2016
+DEFINITION  non-structural protein ns5 [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89767
+VERSION     ACN89767.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 107)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 107)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..107
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..107
+                     /product="non-structural protein ns5"
+     Region          3..107
+                     /region_name="Corona_NS2"
+                     /note="Coronavirus non-structural protein NS2; pfam04753"
+                     /db_xref="CDD:282591"
+     CDS             1..107
+                     /coded_by="FJ647226.1:28541..28864"
+ORIGIN      
+        1 meiwhvsdaw lrrtrdfgvt rledfcfqfn ycqprvgycr vplkawcsnq gkfaaqftlk
+       61 sceksghqkf itsftaygkt vkqavsklve eaadfiiwra tqlernv
+//
+
+LOCUS       ACN89766                  88 aa            linear   VRL 24-JUL-2016
+DEFINITION  envelope protein [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89766
+VERSION     ACN89766.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 88)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 88)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..88
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..88
+                     /product="envelope protein"
+     Region          4..77
+                     /region_name="NS3_envE"
+                     /note="Non-structural protein NS3/Small envelope protein
+                     E; pfam02723"
+                     /db_xref="CDD:280820"
+     CDS             1..88
+                     /coded_by="FJ647226.1:28857..29123"
+ORIGIN      
+        1 mfnlfltdtv wyvgqiifiv avclmvtiiv vaflasiklc iqlcglcntl llspsiyvyn
+       61 rskqlykyyn eevrppplev ddniiqtl
+//
+
+LOCUS       ACN89765                 136 aa            linear   VRL 24-JUL-2016
+DEFINITION  internal protein [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89765
+VERSION     ACN89765.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 136)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 136)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..136
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..136
+                     /product="internal protein"
+     Region          <1..136
+                     /region_name="Corona_I"
+                     /note="Corona nucleocapsid I protein; pfam03187"
+                     /db_xref="CDD:281216"
+     CDS             1..136
+                     /coded_by="FJ647226.1:30098..30508"
+ORIGIN      
+        1 mesqlhskrd igtdttdvpl khlmasrssy cpdgiftile qgpmlaqsma tiskelsgsq
+       61 anrptlgplp illkgtqvam rlfllglrpv ryclkvfmlk aqeglhllvd lvrghnpvgq
+      121 iialeavpts aslpll
+//
+
+LOCUS       ACN89764                 139 aa            linear   VRL 24-JUL-2016
+DEFINITION  non-structural protein ns4 [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89764
+VERSION     ACN89764.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 139)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 139)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..139
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..139
+                     /product="non-structural protein ns4"
+     Region          63..106
+                     /region_name="Corona_NS4"
+                     /note="Coronavirus non-structural protein NS4; pfam03905"
+                     /db_xref="CDD:146503"
+     CDS             1..139
+                     /coded_by="FJ647226.1:28140..28559"
+ORIGIN      
+        1 maligpktti aavfigpflv acmlgiglvy llqlqvqifh vkdtirvtgk patvsyttst
+       61 pvtpvattld gttytlirpt ssytrvylgs srgfdtstfg pktldyitss kphlnsgrpy
+      121 tlrhlpkymt ppatwrfgm
+//
+
+LOCUS       ACN89763                1376 aa            linear   VRL 24-JUL-2016
+DEFINITION  spike protein [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89763
+VERSION     ACN89763.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1376)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 1376)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1376
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..1376
+                     /product="spike protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          790..1338
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1376
+                     /coded_by="FJ647226.1:23918..28048"
+ORIGIN      
+        1 mlfvfilllp sclgyigdfr ciqtvnyngn nasapsiste avdvskglgt yyvldrvyln
+       61 ttllltgyyp vdgsnyrnla ltgtntlslt wfkppflsef ndgifakvqn lktntptgat
+      121 syfptivigs lfgntsytvv lepynniima svciyticql pytpckpntn gnrvigfwht
+      181 dvkppicllk rnftfnvnap wlyfhfyqqg gtfyayyadk psattflfsv yigdiltqyf
+      241 vlpfictpta gstlaplywv tpllkrqylf nfnekgvits avdcassyis eikcktqsll
+      301 pstgvydlss ytvqpvgvvy rrvpnlpdck ieewltaksv psplnwerrt fqncnfnlss
+      361 llryvqaesl scnnidaskv ygmcfgsvsv dkfaiprsrq idlqignsgf lqtanykidt
+      421 aatscqlyys lpknnvtinn ynpsswnrry gfndagvfgk skhdvayaqq cftvrpsycp
+      481 caqpdivsac tsqtkpmsay cptgtihrec slwngphlrs arvgsgtytc ectckpnpld
+      541 tydlrcgqik tivnvgdhce glgvledkcg nsdphkgcsc andsfigwsh dtclvndrcq
+      601 ifanillngi nsgttcstdl qlpntevatg vcvrydlygi tgqgvfkevk adyynswqal
+      661 lydvngnlng frdlttnkty tirscysgrv saayhkeape pallyrninc syvftnnisr
+      721 eenplnyfds ylgcvvnadn rtdealpncd lrmgaglcvd ysksrrarrs vstgyrlttf
+      781 epympmlvnd svqsvgglye mqiptnftig hheefiqira pkvtidcaaf vcgdnaacrq
+      841 qlveygsfcd nvnailnevn nlldnmqlqv asalmqgvti ssrlpdgisg piddinfspl
+      901 lgcigstcae dgngpsairg rsaiedllfd kvklsdvgfv eaynnctggq evrdllcvqs
+      961 fngikvlppv lsesqisgyt agataaamfp pwtaaagvpf slnvqyring lgvtmnvlse
+     1021 nqkmiasafn nalgaiqegf datnsalgki qsvvnanaea lnnllnqlsn rfgaisaslq
+     1081 eiltrldave akaqidrlin grltalnayi skqlsdstli kfsaaqaiek vnecvksqtt
+     1141 rinfcgngnh ilslvqnapy glcfihfsyv ptsfktanvs pglcisgdrg lapkagyfvq
+     1201 dngewkftgs nyyypepitd knsvvmisca vnytkapevf lnnsipnlpd fkeeldkwfk
+     1261 nqtsiapdls ldfeklnvtf ldltyemnri qdaikklnes yinlkevgty emyvkwpwyv
+     1321 wlliglagva vcvllfficc ctgcgsccfr kcgsccdeyg ghqdsivihn isahed
+//
+
+LOCUS       ACN89762                 439 aa            linear   VRL 24-JUL-2016
+DEFINITION  hemagglutinin-esterase [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89762
+VERSION     ACN89762.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 439)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 439)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..439
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..439
+                     /product="hemagglutinin-esterase"
+     Region          23..394
+                     /region_name="Hema_esterase"
+                     /note="Hemagglutinin esterase; pfam03996"
+                     /db_xref="CDD:281925"
+     CDS             1..439
+                     /coded_by="FJ647226.1:22591..23910"
+ORIGIN      
+        1 mgrtciamap rtlllligcq lvfgfnepln ivshlnddwf lfgdsrsdct yvennghpkl
+       61 dwldldpklc nsgkisaksg nslfrsfhft dfynytgegd qivfyegvnf spnhgfkcla
+      121 ygdnkrwmgn karfyarvye kmaqyrslsf vnvpyayggk akptsickhk tltlnnptfi
+      181 skesnyvdyy yeseanftla gcdefivplc vfnghskgss sdpankyymd sqsyynmdtg
+      241 vlygfnstld vgntakdpgl dltcrylalt pgnykavsle yllslpskai clrkpkrfmp
+      301 vqvvdsrwns trqsdnmtav acqlpycffr ntsadysggt hdvhhgdfhf rqllsgllln
+      361 vsciaqqgaf lynnvssswp aygygqcpta anigymapvc iydplpvvll gvllgiavli
+      421 ivflilyfmt dsgvrlhea
+//
+
+LOCUS       ACN89761                 455 aa            linear   VRL 24-JUL-2016
+DEFINITION  nucleocapsid protein [Murine coronavirus MHV-JHM.IA].
+ACCESSION   ACN89761
+VERSION     ACN89761.1
+DBSOURCE    accession FJ647226.1
+KEYWORDS    .
+SOURCE      Murine coronavirus MHV-JHM.IA
+  ORGANISM  Murine coronavirus MHV-JHM.IA
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 455)
+  AUTHORS   Ontiveros,E., Kim,T.S., Gallagher,T.M. and Perlman,S.
+  TITLE     Enhanced virulence mediated by the murine coronavirus, mouse
+            hepatitis virus strain JHM, is associated with a glycine at residue
+            310 of the spike glycoprotein
+  JOURNAL   J. Virol. 77 (19), 10260-10269 (2003)
+   PUBMED   12970410
+REFERENCE   2  (residues 1 to 455)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J., Perlman,S. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..455
+                     /organism="Murine coronavirus MHV-JHM.IA"
+                     /strain="MHV-JHM.IA"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591068"
+                     /country="USA: Pennsylvania"
+     Protein         1..455
+                     /product="nucleocapsid protein"
+     Region          27..400
+                     /region_name="Corona_nucleoca"
+                     /note="Coronavirus nucleocapsid protein; pfam00937"
+                     /db_xref="CDD:279305"
+     CDS             1..455
+                     /coded_by="FJ647226.1:29821..31188"
+ORIGIN      
+        1 msfvpgqena gsrsssgnra gngilkkttw adqterglnn qnrgrrnqpk qtattqpnsg
+       61 svvphyswfs gitqfqkgke fqfaqgqgvp iangipasqq kgywyrhnrr sfktpdgqqk
+      121 qllprwyfyy lgtgpyagae ygddiegvvw vasqqadtrt sadiverdps sheaiptrfa
+      181 pgtvlpqgfy vegsgrsapa srsgsrpqsr gpnnrarsss nqrqpastvk pdmaeeiaal
+      241 vlaklgkdag qpkqvtkqsa kevrqkilnk prqkrtpnkq cpvqqcfgkr gpnqnfggpe
+      301 mlklgtsdpq fpilaelapt agafffgskl elvkknsgga dgptkdvyel qysgavrfds
+      361 tlpgfetimk vlnenlnayq nqdggadvvs pkpqrkrgtk qkaqkdevdn vsvakpkssv
+      421 qrnvsreltp edrsllaqil ddgvvpdgle ddsnv
+//
+

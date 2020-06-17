@@ -1,0 +1,76 @@
+LOCUS       ALJ94036                1262 aa            linear   VRL 25-OCT-2015
+DEFINITION  spike glycoprotein [SARS-like coronavirus BatCoV/BB9904/BGR/2008].
+ACCESSION   ALJ94036
+VERSION     ALJ94036.1
+DBSOURCE    accession KR559017.1
+KEYWORDS    .
+SOURCE      SARS-like coronavirus BatCoV/BB9904/BGR/2008
+  ORGANISM  SARS-like coronavirus BatCoV/BB9904/BGR/2008
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1262)
+  AUTHORS   Hoffmann,M., Kruger,N., Gutzkow,T., Muller,M.A., Drexler,J.F.,
+            Drosten,C. and Herrler,G.
+  TITLE     Differential restrictions in the receptor-binding and fusion
+            activity of the surface protein S of European SARS-like
+            coronaviruses
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1262)
+  AUTHORS   Hoffmann,M., Kruger,N., Gutzkow,T., Muller,M.A., Drexler,J.F.,
+            Drosten,C. and Herrler,G.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-MAY-2015) Infection Biology Unit, German Primate
+            Center, Kellnerweg 4, Gottingen, Niedersachsen 37077, Germany
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1262
+                     /organism="SARS-like coronavirus BatCoV/BB9904/BGR/2008"
+                     /strain="BatCoV/BB9904/BGR/2008"
+                     /host="Rhinolophus euryale"
+                     /db_xref="taxon:1737344"
+                     /country="Bulgaria"
+                     /collection_date="2008"
+     Protein         1..1262
+                     /product="spike glycoprotein"
+     Region          <109..291
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..573
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          654..1253
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1262
+                     /coded_by="KR559017.1:1..3789"
+ORIGIN      
+        1 mkvliflsll slvsaqdgcd rfsskktpll tqfpsskrgl yyfddifrss trvltsghfl
+       61 pfnsnvtryt tqhsapgewm iyfdnpnitf gdgvyfgaae rsnalrgwif gstmdnttqs
+      121 ailynngthi visvcnfnlc eqpmikvfag rsyrsliytn aanctyqrvh afnittatgn
+      181 gnlihfrehv frnvdgflyv yhnyelvnls htnpsfpagf svlkpifklp fglnitfvra
+      241 imtvfsasts qfeadysayf vghlkpltml vdfdengtit davdcsqdpl selkcttksf
+      301 tvekgiyqts nfrvtpttev vrfpnitklc pfdqvfnass fpsvyawerv ritdcvanya
+      361 vlynssvsfs tfqcygvspt klndlcfssv yadyfivkgd dvrqiapsqt gviadynykl
+      421 pddftgcvia wntnaldsnk dfyyrlfrhg kikpygrdls nipyspsgtc stinnlncfa
+      481 plksygftqs sgisfqpyrv vvlsfellna patvcgpkqs telvkdkcvn fnfngltgtg
+      541 vltssskkfq pfqqfgrdvs dftdsvrdpk tleildiapc syggvsvitp gtnasnsvav
+      601 lyqdvnctdv ptmlhaeqis hdwrvytfss dsniyqtqag cligaaydns syecdipiga
+      661 gicakygiss ntrlrsnsqs ivaytmslge dqsiaysnnt iaipmnfsis vttevlpvsm
+      721 tktsvdcnmy icgdstecsn lllqygsfct qlnralagia veqdrntrdv faqtkamykt
+      781 pslkdfggfn fsqilpdpak pssrsfiedl lynkvtladp gfmkqygdcl ggvnardlic
+      841 aqkfngltvl pplltdemia aytaalvsgt atagftfgag aalqipfamq mayrfngigv
+      901 tqnvlyenqk qianqfnkai sqiqdslstt ttalgklqdv inqnaialnt lvkqlssnfg
+      961 aissvlndil srldkveaev qidrlitgrl qslqtyvtqq liraaeiras aniaatkmse
+     1021 cvlgqskrvd fcgkgyhlms fpqaaphgvv flhvtyvpsq eqnfttapai chggkahfpr
+     1081 egvfvtngth wfitqrnfys pqpittdntf vsgncdvvig ivnntvydpl qpelesfkee
+     1141 ldkyfknhts qnvsldglnn inasvvdikk eiehlneiak slneslidlq elgkyeqyik
+     1201 wpwyvwlgfi agliaivmat imlccmtscc sclkgvcsca scckfdedhs epvltgvklh
+     1261 yt
+//
+

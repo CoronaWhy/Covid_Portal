@@ -1,0 +1,145 @@
+LOCUS       YP_003029848            1360 aa            linear   VRL 13-AUG-2018
+DEFINITION  spike protein [Rat coronavirus Parker].
+ACCESSION   YP_003029848
+VERSION     YP_003029848.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_012936.1
+KEYWORDS    RefSeq.
+SOURCE      Rat coronavirus Parker
+  ORGANISM  Rat coronavirus Parker
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1360)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-JUL-2009) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   2  (residues 1 to 1360)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-APR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to ACT11042.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1360
+                     /organism="Rat coronavirus Parker"
+                     /strain="Parker"
+                     /host="rat"
+                     /db_xref="taxon:502102"
+     Protein         1..1360
+                     /product="spike protein"
+                     /calculated_mol_wt=149648
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..530
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          790..1322
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1360
+                     /locus_tag="PRCV_gp05"
+                     /coded_by="NC_012936.1:23891..27973"
+                     /db_xref="GeneID:11273169"
+ORIGIN      
+        1 mlfvfltllp sclgyigdfr cinrvntsis narapsvste vvdvskglgt yyvldrvyln
+       61 atllltgyyp vhgsmyrnma lmgtntlsln wfeppflsef ndgiyakvkn lkaslpigsa
+      121 syfptiiigs nfvntsytvv lepyngiima sicqyticql phtyckpntg gntligfwht
+      181 dlrspvcilt rnftfnvnae wlyfhfyqqg gtfyayyadv ssattflfss yigavltqyf
+      241 vlpymcnptt sgvfspqywv tplvkrqylf nfnqkgiits avdcassyts eikcktqsmn
+      301 pntgvydlsg ytvqpvglvy rrvrnlpdck ieewlaantv psplnwerkt fqncnfnlss
+      361 llrfvqaesl scsnidaskv ygmcfgsisi dkfaipnsrr vdlqlgksgl lqsfnykist
+      421 ratscqlyys laqnnvtvin hnpsswnrry gfndvatfgs gihdvayaea cftvgasycp
+      481 cakpsivysc vtgkpksanc ptgtshrecn vqasgfkhkc dctcnpsplt tydprclqar
+      541 smlgvgdhce glgiledkcg gsnicncsad afvgwakdsc lsndrchifs nlmlnginsg
+      601 ttcstdlqlp ntevvtgvcv kydlygitgq gvfkevkady ynswqnllyd vngnlngfrd
+      661 ivtnktyllr scysgrvsaa yhqdapepal lyrnlkcdyv fnnnisreet plnyfdnylg
+      721 cvvnadnste hsvdacdlrm gsglcvnyst ahrarrsvst gyklttfepf tvsivndsve
+      781 svgglyemqi ptnftiasqq efiqtrspkv tidcaafvcg dytvcrqqlv dygsfcdnin
+      841 ailgevnnli dtmqlqvasa liqgvtlnsr ladgisgqid dinfspllgc lgsycsegtm
+      901 avqgrsaied vlfdkvklsd vgfveaynnc tggqevrdll cvqsfngikv lppvlsesqi
+      961 sgytagatas amfppwsaaa gvpfalsvqy ringlgvtmn vlsenqkmia ssfnnaigai
+     1021 qegfdatnsa lakiqsvvns naealnnlln qlsnrfgais aslqeilsrl daleaqaqid
+     1081 rlingrltal nayvskhlsd mtlikvsaaq aiekvnecvk sqsprinfcg ngnhilslvq
+     1141 napyglyfih fsyvptsftt vnvspglcis gdrglapkag yfvqdhgewk ftgsnyyype
+     1201 sitdknsvvm sscavnytka pevflntsit nlpdfkeeld kwfknqtsiv pdlsfdigkl
+     1261 nvtfldlsye mnriqdaikn lnesyinlke igtyemyvkw pwyvwlligl agvavcvllf
+     1321 ficcctgcgs ccfkkcgncc deyggrqagi vihnisshed
+//
+
+LOCUS       ACT11042                1360 aa            linear   VRL 11-JUL-2009
+DEFINITION  spike protein [Rat coronavirus Parker].
+ACCESSION   ACT11042
+VERSION     ACT11042.1
+DBSOURCE    accession FJ938068.1
+KEYWORDS    .
+SOURCE      Rat coronavirus Parker
+  ORGANISM  Rat coronavirus Parker
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1360)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-APR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1360
+                     /organism="Rat coronavirus Parker"
+                     /strain="Parker"
+                     /host="rat"
+                     /db_xref="taxon:502102"
+     Protein         1..1360
+                     /product="spike protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..530
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          790..1322
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1360
+                     /coded_by="FJ938068.1:23891..27973"
+ORIGIN      
+        1 mlfvfltllp sclgyigdfr cinrvntsis narapsvste vvdvskglgt yyvldrvyln
+       61 atllltgyyp vhgsmyrnma lmgtntlsln wfeppflsef ndgiyakvkn lkaslpigsa
+      121 syfptiiigs nfvntsytvv lepyngiima sicqyticql phtyckpntg gntligfwht
+      181 dlrspvcilt rnftfnvnae wlyfhfyqqg gtfyayyadv ssattflfss yigavltqyf
+      241 vlpymcnptt sgvfspqywv tplvkrqylf nfnqkgiits avdcassyts eikcktqsmn
+      301 pntgvydlsg ytvqpvglvy rrvrnlpdck ieewlaantv psplnwerkt fqncnfnlss
+      361 llrfvqaesl scsnidaskv ygmcfgsisi dkfaipnsrr vdlqlgksgl lqsfnykist
+      421 ratscqlyys laqnnvtvin hnpsswnrry gfndvatfgs gihdvayaea cftvgasycp
+      481 cakpsivysc vtgkpksanc ptgtshrecn vqasgfkhkc dctcnpsplt tydprclqar
+      541 smlgvgdhce glgiledkcg gsnicncsad afvgwakdsc lsndrchifs nlmlnginsg
+      601 ttcstdlqlp ntevvtgvcv kydlygitgq gvfkevkady ynswqnllyd vngnlngfrd
+      661 ivtnktyllr scysgrvsaa yhqdapepal lyrnlkcdyv fnnnisreet plnyfdnylg
+      721 cvvnadnste hsvdacdlrm gsglcvnyst ahrarrsvst gyklttfepf tvsivndsve
+      781 svgglyemqi ptnftiasqq efiqtrspkv tidcaafvcg dytvcrqqlv dygsfcdnin
+      841 ailgevnnli dtmqlqvasa liqgvtlnsr ladgisgqid dinfspllgc lgsycsegtm
+      901 avqgrsaied vlfdkvklsd vgfveaynnc tggqevrdll cvqsfngikv lppvlsesqi
+      961 sgytagatas amfppwsaaa gvpfalsvqy ringlgvtmn vlsenqkmia ssfnnaigai
+     1021 qegfdatnsa lakiqsvvns naealnnlln qlsnrfgais aslqeilsrl daleaqaqid
+     1081 rlingrltal nayvskhlsd mtlikvsaaq aiekvnecvk sqsprinfcg ngnhilslvq
+     1141 napyglyfih fsyvptsftt vnvspglcis gdrglapkag yfvqdhgewk ftgsnyyype
+     1201 sitdknsvvm sscavnytka pevflntsit nlpdfkeeld kwfknqtsiv pdlsfdigkl
+     1261 nvtfldlsye mnriqdaikn lnesyinlke igtyemyvkw pwyvwlligl agvavcvllf
+     1321 ficcctgcgs ccfkkcgncc deyggrqagi vihnisshed
+//
+

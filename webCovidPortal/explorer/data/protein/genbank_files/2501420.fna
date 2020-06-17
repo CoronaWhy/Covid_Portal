@@ -1,0 +1,62 @@
+LOCUS       AZU96230                1363 aa            linear   VRL 13-JAN-2019
+DEFINITION  S protein [Yak coronavirus].
+ACCESSION   AZU96230
+VERSION     AZU96230.1
+DBSOURCE    accession MH741424.1
+KEYWORDS    .
+SOURCE      Yak coronavirus
+  ORGANISM  Yak coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   He,Q.F., Guo,Z.J., Yue,H. and Tang,C.
+  TITLE     Molecular Prevalence and Isolation of Bovine coronavirus from Yak
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   He,Q.F., Guo,Z.J., Yue,H. and Tang,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-AUG-2018) College of Life Science and Technology,
+            Southwest University for Nationalities, No. 16, South 4th Section
+            1st Ring Road, Chengdu, Sichuan 610041, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Yak coronavirus"
+                     /strain="YAK/HY24/CH/2017"
+                     /isolate="HY24"
+                     /host="yak"
+                     /db_xref="taxon:2501420"
+                     /country="China"
+                     /collection_date="2017"
+     Protein         1..1363
+                     /product="S protein"
+     CDS             1..1363
+                     /coded_by="MH741424.1:1..4092"
+                     /note="spike protein"
+ORIGIN      
+        1 mflillislp ttfavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 vfpaitigst fvntsysvvv qphttilgnk lqgfleisvc qytmceypnt icnsnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsaltlef wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpsiwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgsg sgidagykht gigtcpagtn yltchnaaqc dclctpdpit
+      541 skatgpykcp qtkylvgige hcsglaiksd hcggnpcscq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntllrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lepvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvkladvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vyvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hed
+//
+

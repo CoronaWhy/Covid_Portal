@@ -1,0 +1,79 @@
+LOCUS       ADY17911                1298 aa            linear   VRL 25-JUL-2016
+DEFINITION  putative spike glycoprotein [Zaria bat coronavirus].
+ACCESSION   ADY17911
+VERSION     ADY17911.1
+DBSOURCE    accession HQ166910.1
+KEYWORDS    .
+SOURCE      Zaria bat coronavirus
+  ORGANISM  Zaria bat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Hibecovirus; unclassified Hibecovirus.
+REFERENCE   1  (residues 1 to 1298)
+  AUTHORS   Quan,P.L., Firth,C., Street,C., Henriquez,J.A., Petrosov,A.,
+            Tashmukhamedova,A., Hutchison,S.K., Egholm,M., Osinubi,M.O.,
+            Niezgoda,M., Ogunkoya,A.B., Briese,T., Rupprecht,C.E. and
+            Lipkin,W.I.
+  TITLE     Identification of a severe acute respiratory syndrome
+            coronavirus-like virus in a leaf-nosed bat in Nigeria
+  JOURNAL   MBio 1 (4), e00208-10 (2010)
+   PUBMED   21063474
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1298)
+  AUTHORS   Quan,P.-L., Firth,C., Street,C., Henriquez,J.A., Petrosov,A.,
+            Tashmukhamedova,A., Briese,T. and Lipkin,W.I.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (23-AUG-2010) Center for Infection and Immunity, Columbia
+            University, 720 West 168 th, NY, NY 10032, USA
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1298
+                     /organism="Zaria bat coronavirus"
+                     /strain="ZBCoV"
+                     /isolation_source="gastrointestinal tract"
+                     /host="Hipposideros commersoni"
+                     /db_xref="taxon:989337"
+                     /country="Nigeria"
+                     /collection_date="2008"
+     Protein         1..1298
+                     /product="putative spike glycoprotein"
+     Region          355..>461
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <558..627
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          731..1293
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1298
+                     /gene="S"
+                     /coded_by="HQ166910.1:20951..24847"
+ORIGIN      
+        1 msfivaftvl lpivtaapsf aggcktysls gaytennyti ngtvsyglyy pdaifrsnvs
+       61 vlftrpflpl haeayqwyga ykdqgvsiny qysylphpfk dgiavkifhr vregytkgfs
+      121 tpaaylfgst fdsnsstlli gvngthriia vcqfvvcksp lvhlypynqt tppdtftkyy
+      181 leglfsaadn csllieqplw ldnstnsnrl vtaqtqyift yesgvfsvyh ahnpngsvgy
+      241 atlaftipvt ipitkfylpa vfdglkasgd ngvkrgnyhi efaylkrtty mftydgngyi
+      301 tshvycaegp lqelkcsqls nnvppgvyrt tnyraepqgh vvryaadvad fqqscgaerl
+      361 lnasidqipd pafwkrhvir nckfnfshim alshvydmqc ygidasklps tcwnevyadv
+      421 frlaqddfys fkpsasgdla tynyklpsdf lgctliltnp nlycgnsttc gipgfngvtg
+      481 dlhykvwrpg tticpmkyvn pgeqnamgyh cmsptehekk ltpvsfrggy yymyglaltl
+      541 kpatvastvc dvtaqqtnlt ldkcvsytvy gyngqgilve tnetfpsfqn vqlwpngqlk
+      601 afkdpqsnqv iavlpcaead vsvatagnht nevatlftga pcsgvqakll gvsttsmwrr
+      661 isenttkgid tpvgclfgav lstsnstecq fslgldtcln itrgrvgsrs aghlkessty
+      721 nyffqdmpke seipfsnftv eipdnftiai eyetlpirms kisvdcsryv cgtdvvcanq
+      781 lvqygkfcdn inealrgvsl qqdsnvaell sdikqltrvs dldlkdingf nfsslyntdy
+      841 ldatssgrrs aiedllfnkv vtadvgfmkk yeectggsvf kdldcaqsfn glkvlppqms
+      901 dahvgvytta aamgsffsip ntmqmayrfn giavtqsvlv dnqkeiankf nqaltsiqqg
+      961 ftatnsavqk lqdvvnanaa alntlvtqlg nnfgaissai nditqrldkl eaavqidrli
+     1021 ngrlqvlqtf vtqqlimase irasaqlakq kmsecvlsqs krqdfcgrgl hlmsfpqsap
+     1081 qgmvflhvly rptsyinvts tpaicsenka yfptdgvfvl hdnqwmitkr nfydpvnisl
+     1141 snvryagscd vittyanhti fepdnstlqd fmheleeirk nlsmsapnsp nftlpglsdi
+     1201 nasfvdlske metlqnvvrq lnksvidlke lgtyeyyekw pwyiwlgfia glvaialvlv
+     1261 liccstsccs cfkgmcsckk ccdsydddeq ilikqhyp
+//
+

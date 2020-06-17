@@ -1,0 +1,73 @@
+LOCUS       ALK02457                1255 aa            linear   VRL 13-JAN-2016
+DEFINITION  spike protein [SARS-like coronavirus WIV16].
+ACCESSION   ALK02457
+VERSION     ALK02457.1
+DBSOURCE    accession KT444582.1
+KEYWORDS    .
+SOURCE      SARS-like coronavirus WIV16
+  ORGANISM  SARS-like coronavirus WIV16
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yang,X.L., Hu,B., Wang,B., Wang,M.N., Zhang,Q., Zhang,W., Wu,L.J.,
+            Ge,X.Y., Zhang,Y.Z., Daszak,P., Wang,L.F. and Shi,Z.L.
+  TITLE     Isolation and characterization of a novel bat coronavirus closely
+            related to the direct progenitor of SARS coronavirus
+  JOURNAL   J. Virol. (2015) In press
+   PUBMED   26719272
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Yang,X.-L., Hu,B., Wang,B., Li,W., Wang,M.-N., Wu,L.-J., Zhang,Q.,
+            Zhang,W., Li,B., Ge,X.-Y., Zeng,L.-P., Zhang,Y.-Z. and Shi,Z.-L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-AUG-2015) Key Laboratory of Special Pathogens and
+            Center for Emerging Infectious Diseases, Wuhan Institute of
+            Virology, Xiaohongshan District No. 44, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS-like coronavirus WIV16"
+                     /isolate="WIV16"
+                     /isolation_source="feces"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1739625"
+                     /country="China"
+                     /collection_date="21-Jul-2013"
+     Protein         1..1255
+                     /product="spike protein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="KT444582.1:21492..25259"
+                     /note="S"
+ORIGIN      
+        1 mfiflffltl tsgsdlesct tfddvqapny pqhsssrrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhrfdnpv ipfkdgvyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skptgtqtht mifdnafnct feyisdsfsl dvaeksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfnilkpif klplginitn frailtaflp
+      241 aqdtwgtsaa ayfvgylkpa tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvaps kevvrfpnit nlcpfgevfn attfpsvyaw erkrisncva dysvlynsts
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddftgcv
+      421 lawntrnida tqtgnynyky rslrhgklrp ferdisnvpf spdgkpctpp afncywplnd
+      481 ygfyitngig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvldftd svrdpktsei ldispcsfgg vsvitpgtnt ssevavlyqd
+      601 vnctdvpvai hadqltpswr vystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsslrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaveqdrnt revfaqvkqm yktptlkdfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgscdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

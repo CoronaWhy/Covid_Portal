@@ -1,0 +1,84 @@
+LOCUS       ABP38306                1363 aa            linear   VRL 23-JUL-2016
+DEFINITION  spike protein [Sable antelope coronavirus US/OH1/2003].
+ACCESSION   ABP38306
+VERSION     ABP38306.1
+DBLINK      BioProject: PRJNA18591
+DBSOURCE    accession EF424621.1
+KEYWORDS    .
+SOURCE      Sable antelope coronavirus US/OH1/2003
+  ORGANISM  Sable antelope coronavirus US/OH1/2003
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Zhang,X., Hasoksuz,M., Spiro,D., Halpin,R., Wang,S., Vlasova,A.,
+            Janies,D., Jones,L., Ghedin,E. and Saif,L.
+  TITLE     Quasispecies of bovine enteric and respiratory coronaviruses based
+            on complete genome sequences and genetic changes after tissue
+            culture adaptation
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hasoksuz,M., Zhang,X., Alekseev,K.,
+            Vlasova,A., Janies,D., Ghedin,E. and Saif,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-2007) The Institute for Genomic Research, 9712
+            Medical Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Sable antelope coronavirus US/OH1/2003"
+                     /strain="US/OH1/2003"
+                     /isolate="WD1418"
+                     /host="antelope"
+                     /db_xref="taxon:422138"
+                     /country="USA:Ohio"
+                     /note="direct sequencing of viral RNA extracted from
+                     original antelope fecal sample WD1418"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          800..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Region          <999..>1135
+                     /region_name="Tar"
+                     /note="Methyl-accepting chemotaxis protein [Cell motility,
+                     Signal transduction mechanisms]; COG0840"
+                     /db_xref="CDD:223910"
+     CDS             1..1363
+                     /locus_tag="A5Y_005"
+                     /coded_by="EF424621.1:23626..27717"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 efpaitigst fvntsysvvv qphttilgnk lqgfleisvc qytmceypnt icnpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsaltley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgsg sgidagskht gigtcpagtn yltchnaaqc dclctpdpit
+      541 skatgpykcp qtkylvgige hcsglaiksd hcggnpcscq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lepvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvklsdvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hed
+//
+

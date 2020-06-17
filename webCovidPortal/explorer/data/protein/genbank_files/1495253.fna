@@ -1,0 +1,83 @@
+LOCUS       AHY61337                1322 aa            linear   VRL 07-JUL-2017
+DEFINITION  spike glycoprotein [BtVs-BetaCoV/SC2013].
+ACCESSION   AHY61337
+VERSION     AHY61337.1
+DBSOURCE    accession KJ473821.1
+KEYWORDS    .
+SOURCE      BtVs-BetaCoV/SC2013
+  ORGANISM  BtVs-BetaCoV/SC2013
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1322)
+  AUTHORS   Yang,L., Wu,Z., Ren,X., Yang,F., Zhang,J., He,G., Dong,J., Sun,L.,
+            Zhu,Y., Zhang,S. and Jin,Q.
+  TITLE     MERS-Related Betacoronavirus in Vespertilio superans Bats, China
+  JOURNAL   Emerging Infect. Dis. 20 (7), 1260-1262 (2014)
+   PUBMED   24960574
+REFERENCE   2  (residues 1 to 1322)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., Zhang,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     ORF8-Related Genetic Evidence for Chinese Horseshoe Bats as the
+            Source of Human Severe Acute Respiratory Syndrome Coronavirus
+  JOURNAL   J. Infect. Dis. 213 (4), 579-583 (2016)
+   PUBMED   26433221
+REFERENCE   3  (residues 1 to 1322)
+  AUTHORS   Wu,Z., Yang,L., Ren,X., He,G., Zhang,J., Yang,J., Qian,Z., Dong,J.,
+            Sun,L., Zhu,Y., Du,J., Yang,F., Zhang,S. and Jin,Q.
+  TITLE     Deciphering the bat virome catalog to better understand the
+            ecological diversity of bat viruses and the bat origin of emerging
+            infectious diseases
+  JOURNAL   ISME J 10 (3), 609-620 (2016)
+   PUBMED   26262818
+REFERENCE   4  (residues 1 to 1322)
+  AUTHORS   Yang,L., Wu,Z. and Jin,Q.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-FEB-2014) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, No. 6, Rongjing East
+            Street, BDA, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1322
+                     /organism="BtVs-BetaCoV/SC2013"
+                     /host="Vespertilio superans"
+                     /db_xref="taxon:1495253"
+                     /country="China"
+     Protein         1..1322
+                     /product="spike glycoprotein"
+                     /name="S"
+     Region          356..>462
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          739..1321
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1322
+                     /coded_by="KJ473821.1:21811..25779"
+ORIGIN      
+        1 mevdmrpeff nknwpmpida lkadgiiypt grsysnisla yqglfpkqgd lgqqyvysva
+       61 hadanynkgv qglgklfvsd yatkaetfgd gfvvrigaas nstgsviisq tqktikkiyp
+      121 afmlgtavgn fsngvfglyl nhtlvilpdg cgtnlwvfyc vleprngtkc pnngdyvtya
+      181 twdtpyidcr sggynanasl nsfkeyfnlh qckfmtsyni tedehdewfg vtqntqgvhl
+      241 yssrkgdlyg gnmflfatlp vyetlkyytv iprsirsrfy ereawaafyv yklhsltyll
+      301 dfsvdgyirr aidcghddla qlrcsyesfd vdtgvysvss feaqprgsfi eqaqgtecdf
+      361 spllkdeppq vynfsrlvft ncnynltkll alfqvsqfsc hqvspsalas gcyssltvdy
+      421 fayptymssy lqqgstgeis qfnykqdfsn ptcrilatvp anlsasgllp kpsnyvwlse
+      481 cyqnsftgkn fqyvkagqyt pclglaangf eksyqthrdp vsklavtgvv tpmtsalqma
+      541 fiisvqygtd snsvcpmqav rndtsvddkl glcidyslyg itgrgvfqnc tavgirqqrf
+      601 vydsfdnlvg yhadngnyyc vrpcvsvpvs vvfdrstnth atlfgsvace higtmmqqfs
+      661 rmtqsrlrmr isddsgplqt avgcaiglvn sslivddcrl plgqslcavp spnirvvsgd
+      721 pqpmqlatin ftqphvlnpl nssgfvveip tnfsfgvtqe yiqttiqkvt vdckqyvcng
+      781 fakceqllre ygqfcakinq alhganlrqd esianlfani kteatqplda glngdfnltl
+      841 lqvpkvvtse ysyrsaiedl lfnkvtiadp gymqgydecm kqgppsardl icaqfvagyk
+      901 vlpplydpnm eaaytsslvg silgagwtag assfaaipfa qsvffrmngi gitqqvlsen
+      961 qkqiankfnq algamqtgft ttnlafskvq davnanaqal sklaselsnt fgaisssisd
+     1021 ilkrldaveq eaqidrling rltslnafva qqlvrsetaa rsaqlasdkv necvksqskr
+     1081 ngfcgsgthi vsfvinapng lyffhvgfvp tsfvnataay glcntenppr ciapidgyfv
+     1141 lnstttraad qewyytgssf fspepitman aryvspdtky eqldnklppp llsnqtdqdf
+     1201 keeleeffkn vssqgpnfqe iskinatlld lsgemkilne vvkqlnesyi dlkelgnyty
+     1261 yqkwpwyiwl gfiaglvala lcvffllcct gcgtncmgkl kcnrccdkyd dydvephkih
+     1321 vh
+//
+

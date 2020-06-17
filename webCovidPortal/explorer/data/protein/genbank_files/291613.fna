@@ -1,0 +1,52 @@
+LOCUS       ABE77216                 721 aa            linear   VRL 26-JUL-2016
+DEFINITION  S1 protein, partial [SARS coronavirus GD322].
+ACCESSION   ABE77216
+VERSION     ABE77216.1
+DBSOURCE    accession DQ407820.1
+KEYWORDS    .
+SOURCE      SARS coronavirus GD322
+  ORGANISM  SARS coronavirus GD322
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 721)
+  AUTHORS   Zhou,H., Zhao,W., Yan,J.H., Long,G.B. and Jiang,F.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-FEB-2006) Microbiology, Southern Medical University,
+            Northern of Guangzhou Street, Guangzhou, Guang Dong 510515, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..721
+                     /organism="SARS coronavirus GD322"
+                     /isolate="GD322"
+                     /db_xref="taxon:291613"
+                     /country="China: Guang Dong"
+                     /collection_date="16-Oct-2003"
+     Protein         1..>721
+                     /product="S1 protein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..>721
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..721
+                     /coded_by="DQ407820.1:1..>2163"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdassl dvseksgnfk
+      181 hlrefvfknk dgflhvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydkng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyansfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 n
+//
+

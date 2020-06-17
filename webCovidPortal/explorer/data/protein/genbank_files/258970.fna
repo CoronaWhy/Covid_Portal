@@ -1,0 +1,70 @@
+LOCUS       AAR87578                1255 aa            linear   VRL 25-FEB-2004
+DEFINITION  putative spike glycoprotein [SARS coronavirus TW7].
+ACCESSION   AAR87578
+VERSION     AAR87578.1
+DBSOURCE    accession AY502930.1
+KEYWORDS    .
+SOURCE      SARS coronavirus TW7
+  ORGANISM  SARS coronavirus TW7
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Yeh,S.H., Wang,H.Y., Tsai,C.Y., Kao,C.L., Yang,J.Y., Liu,H.W.,
+            Su,I.J., Tsai,S.F., Chen,D.S. and Chen,P.J.
+  CONSRTM   National Taiwan University SARS Research Team
+  TITLE     Characterization of severe acute respiratory syndrome coronavirus
+            genomes in Taiwan: molecular epidemiology and genome evolution
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 101 (8), 2542-2547 (2004)
+   PUBMED   14983045
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Yeh,S.-H., Wang,H.-Y., Tsai,C.-Y., Kao,C.-L., Yang,J.-Y.,
+            Liu,H.-W., Su,I.-J., Tsai,S.-F., Chen,D.-S. and Chen,P.-J.
+  CONSRTM   National Taiwan University SARS Research Team
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-DEC-2003) College of Medicine, National Taiwan
+            University, 1 Chang-Te Street, Taipei 100, Taiwan
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus TW7"
+                     /isolate="TW7"
+                     /db_xref="taxon:258970"
+                     /country="Taiwan"
+     Protein         1..1255
+                     /product="putative spike glycoprotein"
+                     /name="S"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY502930.1:21492..25259"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

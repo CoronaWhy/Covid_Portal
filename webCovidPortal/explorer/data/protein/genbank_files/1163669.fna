@@ -1,0 +1,73 @@
+LOCUS       AFD97607                1361 aa            linear   VRL 24-MAR-2012
+DEFINITION  spike [Murine hepatitis virus strain S/3239-17].
+ACCESSION   AFD97607
+VERSION     AFD97607.1
+DBSOURCE    accession JQ173883.1
+KEYWORDS    .
+SOURCE      Murine hepatitis virus strain S/3239-17
+  ORGANISM  Murine hepatitis virus strain S/3239-17
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1361)
+  AUTHORS   Thor,S.W., Hilt,D.A., Kissinger,J.C., Robertson,J.S., Lemke,C.,
+            Paterson,A.H. and Jackwood,M.W.
+  TITLE     Genomic, phylogenetic and recombinational analysis of alpha- and
+            betacoronaviruses
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1361)
+  AUTHORS   Thor,S.W., Hilt,D.A., Kissinger,J.C., Robertson,J.S., Lemke,C.,
+            Paterson,A.H. and Jackwood,M.W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-NOV-2011) Population Health: Poultry Diagnostic and
+            Research Center, The University of Georgia, 953 College Station
+            Road, Athens, GA 30602, USA
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1361
+                     /organism="Murine hepatitis virus strain S/3239-17"
+                     /strain="MHV/S/3239-17"
+                     /db_xref="taxon:1163669"
+                     /note="original source ATCC VR-766"
+     Protein         1..1361
+                     /product="spike"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..531
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          791..1323
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1361
+                     /coded_by="JQ173883.1:23933..28018"
+ORIGIN      
+        1 mlsvfilflp sclgyigdfr cinlvntdts nasapsvste vvdvskgigt yyvldrvyln
+       61 atllltgyyp vdgsnyrnla ltgtntlsln wykppflsef ndgifakvkn lkaslpkdst
+      121 syfptivigs nfvttsytvv lepyngiima sicqyticll pytdckpntg gnkligfwhi
+      181 dlkspvcilk rnftfnvnad wlyfhfyqqg gtfyayyada gsattflfss yigdvltqyf
+      241 vlpyvctptt tgvfspqywv tplvkrqylf nfnqkgtits avdcassyts eikcktqsmn
+      301 pntgvydlsg ytvqpvglvy rrvrnlpdcr iedwlaaktv psplnwerkt fqncnfnlss
+      361 llrlvqaesl scsnidaakv ygmcfgsisi dkfaipnsrr vdlqlgnsgf lqsfnykidt
+      421 ratscqlyys laqsnvtvnn hnpsswnrry gfndvatfgr gkhdvayaea cftvgasycp
+      481 canpsivspc ttgkpkfanc ptgttnrecn vlalgsnlfk cdctcnpspl ttydlrclqg
+      541 rsmlgvgdhc eglgvledkc ggsntcncsa dafvgwakds clsngrchif snlmlngins
+      601 gttcstdlql pntevvtgic vkydlygitg qgvfkevkad yynswqnlly dvngnlngfr
+      661 divtnktylt rscysgrvsa ayhqdapepa llyrnlkcdy vfnnnisree tplnyfdsyl
+      721 gcvvnadnst eqavdacdlr mgsglcvnys tahrartsvs tgyklttfep ftvsivndsv
+      781 esvgglyemq iptnftiash qefiqtrapk vtidcaafvc gdyttcrqql veygsfcdni
+      841 nailgevnnl idtmqlpvas aliqgvtlss rladgisgqi ddinfspllg clgsqcsegt
+      901 maaqgrstve dllfdkvkls dvgfveaynn ctggqevrdl lcvqsfngik vlppvlsenq
+      961 vsgytagata ssmfppwsaa agvpfslsvq yringlgvtm nvlsenqkmi asafnnaiga
+     1021 iqegfdatns alakiqsvvn anaealnnll nqlsnrfgai saslqeilsr ldaleaqaqi
+     1081 drlingrlta lnayvskqls dmtlikvsaa qaiekvnecv ksqsprinfc gngnhilslv
+     1141 qnapyglyfl hfsyvptsft tanvspglci sgdrglapka gyfvqddgew kftgsnyyyp
+     1201 epitdknsvv msscavnytk apevflntsi snlpdfkeel dkwfknqtsv apdlsldfek
+     1261 lnvtfldlsd emnriqeaik klnesyinlk eigtyemyvk wpwyvwllig lagvavcvll
+     1321 fficcctgcg sccfkkcgnc cdeygghqds ivihnisshe d
+//
+

@@ -1,0 +1,273 @@
+LOCUS       QJX58383                1272 aa            linear   VRL 26-MAY-2020
+DEFINITION  spike glycoprotein [Coronavirus BtRt-BetaCoV/GX2018].
+ACCESSION   QJX58383
+VERSION     QJX58383.1
+DBSOURCE    accession MT337387.1
+KEYWORDS    .
+SOURCE      Coronavirus BtRt-BetaCoV/GX2018
+  ORGANISM  Coronavirus BtRt-BetaCoV/GX2018
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; unclassified Nobecovirus.
+REFERENCE   1  (residues 1 to 1272)
+  AUTHORS   Yadav,P.D., Shete-Aich,A., Nyayanit,D.A., Pardeshi,P., Majumdar,T.,
+            Balasubramanian,R., Ullas,P.T., Mohandas,S., Dighe,H., Sawant,P.,
+            Patil,S., Patil,D., Gokhale,M.D., Mathapati,B., Sudeep,A.B.,
+            Baradkar,S., Kumar,A., Kharde,R., Salve,M., Joshi,Y., Gupta,N. and
+            Mourya,D.T.
+  TITLE     Detection of coronaviruses in Pteropus & Rousettus species of bats
+            from different States of India
+  JOURNAL   Indian J. Med. Res. (2020) In press
+   PUBMED   32317409
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1272)
+  AUTHORS   Yadav,P.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-APR-2020) Maximum Containment Laboratory, National
+            Institute of Virology, Pashan, Pune, Maharashtra 411021, India
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC GENOMICS WORKBENCH v. 11.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1272
+                     /organism="Coronavirus BtRt-BetaCoV/GX2018"
+                     /isolate="MCL_19_Bat_606_10"
+                     /isolation_source="intestine"
+                     /host="Rousettus sp."
+                     /db_xref="taxon:2591238"
+                     /country="India"
+                     /collection_date="2019"
+     Protein         1..1272
+                     /product="spike glycoprotein"
+     CDS             1..1272
+                     /gene="S"
+                     /coded_by="MT337387.1:20942..24760"
+ORIGIN      
+        1 mlvillmlpl vlarpscvkv slpyvehnvt yqsfvlskvs cllpdpfiay sgqtlrqnly
+       61 yadtsnvtvy pvtpyafnnk atiyntttvl vgngllvhtf mfkeqpsnmy cqepfgvvfg
+      121 ttfvqdriav imivpgnlgs wytetkpttt kvyiivcsna ticaypsfnr wgtsnqfyad
+      181 dafvdhnssc fvnntfeipl ntsrinlafr fndgnlllyh skwlptsgln llddiplhff
+      241 msvgvganlp qaqffqslsr halqsggglc layqnnlyia pivrrellvs yndagvptkv
+      301 adcslnagee lfcvtgtfdp ptgvyplsry rallsgsvhi tqqlsqctlp yndildppqp
+      361 vvwrrytvan csfdfdvivn nlptyelkcy gvaptrlaqm cysgvtmdvm rinsthftnm
+      421 lgnvpdvfsm ynyalptnfy gcvhayyins tnkrytvayr rgfanlitag grqpyndyvr
+      481 tllntpneic trancfglvv itlnpasgsh lvcptnndtd vvenqcvkyn fygysgngvl
+      541 tksnltipdn klfvasntgs iiavkaqgtv ysispcvsvp vsvgydpnye qallfnglec
+      601 nqravavsip asaywmrtvs dnqtagvfdt psgcvynvin rtdvtvnacn mpignslclv
+      661 natstqmrav sndssksyls lvnydptyta ltkvltpvyw vsiptnftla agteyiqtts
+      721 pkinidcaky lcgdsdkclt vllqygtfcd dvnkalaevs svidstmvsl vseltadvvr
+      781 sentafdtty nftslmgclg sscnsrnyrs alsdllynkv kvadpgfmss yqkcidsqwg
+      841 gsvrdlictq nfngisvlpp ivspamqsly tsllvgavas agytfgitsv gvipfatqlq
+      901 frlnglgvtt qvlvqnqqli ansfnkalts iqkgfdatnl alsqmqavin qhaqqlqtlv
+      961 nqlgnsfgai sssineifsr ldgleanaqv drlingrtvv lntyvtqlll kasevraqaa
+     1021 larqkisecv kaqslrndfc gngthvfsvp qlapngvmfi hytyqptaya lvqtaaglcy
+     1081 ngtgyaplgg mfvlpndtnl whytkmnfyn pvnitfentq vldscvvnys yvnysviepi
+     1141 ppssydftee fnkwyknhss yfnntfnpgd fnftgvnise qlatltdvvn qlnksfidlk
+     1201 qmnvyeqtik wpwyvwlami aglvglvlav imllcmtncc scfkglcscr hcsydeiedv
+     1261 ypavrvhnkr te
+//
+
+LOCUS       QJX58378                1272 aa            linear   VRL 26-MAY-2020
+DEFINITION  spike glycoprotein [Coronavirus BtRt-BetaCoV/GX2018].
+ACCESSION   QJX58378
+VERSION     QJX58378.1
+DBSOURCE    accession MT337386.1
+KEYWORDS    .
+SOURCE      Coronavirus BtRt-BetaCoV/GX2018
+  ORGANISM  Coronavirus BtRt-BetaCoV/GX2018
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; unclassified Nobecovirus.
+REFERENCE   1  (residues 1 to 1272)
+  AUTHORS   Yadav,P.D., Shete-Aich,A., Nyayanit,D.A., Pardeshi,P., Majumdar,T.,
+            Balasubramanian,R., Ullas,P.T., Mohandas,S., Dighe,H., Sawant,P.,
+            Patil,S., Patil,D., Gokhale,M.D., Mathapati,B., Sudeep,A.B.,
+            Baradkar,S., Kumar,A., Kharde,R., Salve,M., Joshi,Y., Gupta,N. and
+            Mourya,D.T.
+  TITLE     Detection of coronaviruses in Pteropus & Rousettus species of bats
+            from different States of India
+  JOURNAL   Indian J. Med. Res. (2020) In press
+   PUBMED   32317409
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1272)
+  AUTHORS   Yadav,P.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-APR-2020) Maximum Containment Laboratory, National
+            Institute of Virology, Pashan, Pune, Maharashtra 411021, India
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC GENOMICS WORKBENCH v. 11.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1272
+                     /organism="Coronavirus BtRt-BetaCoV/GX2018"
+                     /isolate="MCL_19_Bat_606_2"
+                     /isolation_source="rectal swab"
+                     /host="Rousettus sp."
+                     /db_xref="taxon:2591238"
+                     /country="India"
+                     /collection_date="2019"
+     Protein         1..1272
+                     /product="spike glycoprotein"
+     CDS             1..1272
+                     /gene="S"
+                     /coded_by="MT337386.1:20936..24754"
+ORIGIN      
+        1 mlvillmlpl vlarpscvkv slpyvehnvt yqsfvlskvs cllpdpfiay sgqtlrqnly
+       61 yadtsnvtvy pvtpyafnnk atiyntttvl vgngllvhtf mfkeqpsnmy cqepfgvvfg
+      121 ttfvqdriav imivpgnlgs wytetkpttt kvyiivcsna ticaypsfnr wgtsnqfyad
+      181 dafvdhnssc fvnntfeipl ntsrinlafr fndgnlllyh skwlptsgln llddiplhff
+      241 msvgvganlp qaqffqslsr halqsggglc layqnnlyia pivrrellvs yndagvptkv
+      301 adcslnagee lfcvtgtfdp ptgvyplsry rallsgsvhi tqqlsqctlp yndildppqp
+      361 vvwrrytvan csfdfdvivn nlptyelkcy gvaptrlaqm cysgvtmdvm rinsthftnm
+      421 lgnvpdvfsm ynyalptnfy gcvhayyins tnkrytvayr rgfanlitag grqpyndyvr
+      481 tllntpneic trancfglvv itlnpasgsh lvcptnndtd vvenqcvkyn fygysgngvl
+      541 tksnltipdn klfvasntgs iiavkaqgtv ysispcvsvp vsvgydpnye qallfnglec
+      601 nqravavsip asaywmrtvs dnqtagvfdt psgcvynvin rtdvtvnacn mpignslclv
+      661 natstqmrav sndssksyls lvnydptyta ltkvltpvyw vsiptnftla agteyiqtts
+      721 pkinidcaky lcgdsdkclt vllqygtfcd dvnkalaevs svidstmvsl vseltadvvr
+      781 sentafdtty nftslmgclg sscnsrnyrs alsdllynkv kvadpgfmss yqkcidsqwg
+      841 gsvrdlictq nfngisvlpp ivspamqsly tsllvgavas agytfgitsv gvipfatqlq
+      901 frlnglgvtt qvlvqnqqli ansfnkalts iqkgfdatnl alsqmqavin qhaqqlqtlv
+      961 nqlgnsfgai sssineifsr ldgleanaqv drlingrtvv lntyvtqlll kasevraqaa
+     1021 larqkisecv kaqslrndfc gngthvfsvp qlapngvmfi hytyqptaya lvqtaaglcy
+     1081 ngtgyaplgg mfvlpndtnl whytkmnfyn pvnitfentq vldscvvnys yvnysviepi
+     1141 ppssydftee fnkwyknhss yfnntfnpgd fnftgvnise qlatltdvvn qlnksfidlk
+     1201 qmnvyeqtik wpwyvwlami aglvglvlav imllcmtncc scfkglcscr hcsydeiedv
+     1261 ypavrvhnkr te
+//
+
+LOCUS       QJX58373                1274 aa            linear   VRL 26-MAY-2020
+DEFINITION  spike glycoprotein [Coronavirus BtRt-BetaCoV/GX2018].
+ACCESSION   QJX58373
+VERSION     QJX58373.1
+DBSOURCE    accession MT337385.1
+KEYWORDS    .
+SOURCE      Coronavirus BtRt-BetaCoV/GX2018
+  ORGANISM  Coronavirus BtRt-BetaCoV/GX2018
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; unclassified Nobecovirus.
+REFERENCE   1  (residues 1 to 1274)
+  AUTHORS   Yadav,P.D., Shete-Aich,A., Nyayanit,D.A., Pardeshi,P., Majumdar,T.,
+            Balasubramanian,R., Ullas,P.T., Mohandas,S., Dighe,H., Sawant,P.,
+            Patil,S., Patil,D., Gokhale,M.D., Mathapati,B., Sudeep,A.B.,
+            Baradkar,S., Kumar,A., Kharde,R., Salve,M., Joshi,Y., Gupta,N. and
+            Mourya,D.T.
+  TITLE     Detection of coronaviruses in Pteropus & Rousettus species of bats
+            from different States of India
+  JOURNAL   Indian J. Med. Res. (2020) In press
+   PUBMED   32317409
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1274)
+  AUTHORS   Yadav,P.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (13-APR-2020) Maximum Containment Laboratory, National
+            Institute of Virology, Pashan, Pune, Maharashtra 411021, India
+COMMENT     ##Assembly-Data-START##
+            Assembly Method       :: CLC GENOMICS WORKBENCH v. 11.0
+            Sequencing Technology :: Illumina
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..1274
+                     /organism="Coronavirus BtRt-BetaCoV/GX2018"
+                     /isolate="MCL_20_Bat_76_8"
+                     /isolation_source="kidney"
+                     /host="Rousettus sp."
+                     /db_xref="taxon:2591238"
+                     /country="India"
+                     /collection_date="2020"
+     Protein         1..1274
+                     /product="spike glycoprotein"
+     CDS             1..1274
+                     /gene="S"
+                     /coded_by="MT337385.1:20853..24677"
+ORIGIN      
+        1 mlvillmlpl vlarpscvkv slpyvehnvt yqsfvlskvs cllpdpfiay sgqtlrqnly
+       61 yadtsnvtvy pvtpyaxxxx xatiyntttv lvgngllvht fmfkeqpsnm ycqepfgvvf
+      121 gttfvqdria vimivpgnlg swftetkptt tkvyiivcsn xticaypsfn rwgtsnqfya
+      181 ddafvdhnss cfvnntfvip lntsrinlaf xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx
+      241 xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxnt
+      301 kdaesslntg eelfcvtgtf dpptgvnpls ryralmrgsv hitqqlsqct lpyndildpp
+      361 qpvvwrrytv ancsfdfdvi vnnlptyxxx xxxxxxxxxx xxxxxgvsmv vmrinsthvt
+      421 nrlgnvpdvf smynyalptn fygcvhayyi nstnkrytva yrrgfanlit aggrqpyndy
+      481 vrtllntpne ictrancfgl vvitlnpasg shlvcptnnd tdvvenqcvk ynfygysgng
+      541 vltksnltip dnklfvasnt gsiiavkaqg tvysispcvs vpvsvgydpn yeqallfngl
+      601 eckqravavs ipasaywmrt vsenqtprvf dttsgcvynv inrtdvtvna cnmpignslc
+      661 lvnatstqmr avsndssksy lslvnydpty taltkvltpv ywvsiptnyt laagtqynqt
+      721 tspkikidca kylcgdsdkc ltvllqygtf cddvnkalae vssvidstmv slvseltadv
+      781 vrsentafdt tynftslmgc lgsscnsrny rsalsdllyn kvkvadpgfm ssyqkcidsq
+      841 wggsvrdlns tqnfngisvl ppivspamqs lytslhvgdv asagytfgst svgvitfatq
+      901 lxxrltglce ttqiklqkqq liansfnkal tsiqkgfdat nlalsqmqav inqhaqqlqt
+      961 lvnqlgnsfg aisssineif srldgleana qvdrlingrt vvlntyvtql llkasevraq
+     1021 aalarqkise cvkaqslrnd fcgngthvfs vpqlapngvm fihytyqpta yalvqtaagl
+     1081 cyngtgyapl ggmfvlpndt nlwhytkmnf ynpvnitfen tqvldscvvn ysyvnysvie
+     1141 pippssydft eefnkwyknh ssyfnntfnp gdfnftgvni seqlatltdv vnqlnksfid
+     1201 lkqmnvyeqt xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxfkglcs crhcsydeie
+     1261 dvypavrvhn krte
+//
+
+LOCUS       QDF43840                1277 aa            linear   VRL 30-JUN-2019
+DEFINITION  spike glycoprotein [Coronavirus BtRt-BetaCoV/GX2018].
+ACCESSION   QDF43840
+VERSION     QDF43840.1
+DBSOURCE    accession MK211379.1
+KEYWORDS    .
+SOURCE      Coronavirus BtRt-BetaCoV/GX2018
+  ORGANISM  Coronavirus BtRt-BetaCoV/GX2018
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; unclassified Nobecovirus.
+REFERENCE   1  (residues 1 to 1277)
+  AUTHORS   Han,Y. and Wu,Z.
+  TITLE     The identification of diverse bat alphacoronaviruses and
+            betacoronaviruses in Chinese provinces provides new insights into
+            the evolution and origin of CoV-related diseases
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1277)
+  AUTHORS   Han,Y. and Wu,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-NOV-2018) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No.1
+            Dishengdonglu, Yizhuang, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1277
+                     /organism="Coronavirus BtRt-BetaCoV/GX2018"
+                     /isolate="BtRt-BetaCoV/GX2018"
+                     /host="Rhinolophus affinis"
+                     /db_xref="taxon:2591238"
+                     /country="China"
+                     /collection_date="Sep-2016"
+     Protein         1..1277
+                     /product="spike glycoprotein"
+                     /name="S"
+     CDS             1..1277
+                     /coded_by="MK211379.1:20980..24813"
+ORIGIN      
+        1 mwaiwillil ptvlarpncv tlslphiehn vtyqsfvlsk vscvllpdpf iaysgqtlkq
+       61 siyyadttnv tvypvtpsan ggssatiynt tevlvdnglf vhtymyreqs pstycqepfg
+      121 vvfgttfeqd riaiimivpg nlgswpsvtk ptttkvyiiv csnaticayp afnrwgpaga
+      181 fyandafvnh gdscfvnntf eiplntsrin lafrfndgnl llyhskwlpt sglnhgfrgy
+      241 sitffmsvgv ganlpkaqff qslsrhlaag gdgaclavqn nlyiapivqr ellvaysdag
+      301 iptkvadcsl nageelfcvt gtfhpptgvy plsryralls gsvhitqqls hctlpyndil
+      361 dppqpvvwrr ytvancsfdf dvivnnlpth elkcygvapt rlaqmcysgv tldvmrinst
+      421 hftnmlgnvp dvfsmynyal ptdfygcvha yyinstnkry tvayrrgfak vitpggrqpy
+      481 ndyvrtllnt pneictranc fglvvislnp asgshlvcpt nndtdvvenq cvkynfygys
+      541 gngvltksnl tipdnklfva sntgsiiavk aqgtvysisp cvsvpvsvgy dpnyeqallf
+      601 nglecnqrav avsipasayw lrtvsdnqta gvfdtpsgcv ynvinrtdvt vnacnmpign
+      661 slclvnatst qifsvsddts ksylslvnyd ptydsttkvl tpvywvsipt nftlaagtey
+      721 iqttspkini dcakylcgds dkcltvllqy gtfcddvnka laevssvids tmvslvselt
+      781 advvrsenta fdttynftsl mgclgsscnt rnyrsalsdl lynkvkvadp gfmssyqkci
+      841 dsqwggsvrd lictqnfngi svlppivspa mqslytsllv gavasagytf gitsvgvipf
+      901 atqlqfrlng lgvttqvlvq nqqliansfn kaltsiqkgf datnlalsqm qavinqhaqq
+      961 lqtlvnqlgn sfgaisssin eifsrldgle anaqvdrlin grtvvlntyv tqlllkasev
+     1021 raqaalarqk isecvkaqsl rndfcgngth vfsvpqlapn gvmfihytyq ptayalvqta
+     1081 aglcyngtgy aplggmfvlp ndtnlwhytk mnfynpvnit fentqvldsc avnysyvnys
+     1141 vieptppssy nfteefnkwy knhssyfnnt fnpgdfnftg vniseqlatl tdvvnhlnks
+     1201 fidlkqmnvy qqtikwpwya wlamiaglvg lvlavimllc mtnccscfkg lcscrhcsyd
+     1261 eiedvypavr vhnkrte
+//
+

@@ -7,5 +7,6 @@ webiCovidPortal/*.pyc
 webiCovidPortal/covidPortalApp/__pycache__/
 webiCovidPortal/explorer/__pycache__/
 webCovidPortal/conf.py
+webCovidPortal/covidPortalApp/settings.py
 covidPortalFrontEnd/dist/
 covidPortalFrontEnd/node_modules/

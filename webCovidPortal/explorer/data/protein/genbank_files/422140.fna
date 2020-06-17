@@ -1,0 +1,91 @@
+LOCUS       ABP38334                1358 aa            linear   VRL 23-JUL-2016
+DEFINITION  spike protein [Calf-giraffe coronavirus US/OH3/2006].
+ACCESSION   ABP38334
+VERSION     ABP38334.1
+DBLINK      BioProject: PRJNA18577
+DBSOURCE    accession EF424624.1
+KEYWORDS    .
+SOURCE      Calf-giraffe coronavirus US/OH3/2006
+  ORGANISM  Calf-giraffe coronavirus US/OH3/2006
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Hasoksuz,M., Alekseev,K., Vlasova,A., Zhang,X., Spiro,D.,
+            Halpin,R., Wang,S., Ghedin,E. and Saif,L.J.
+  TITLE     Biologic, antigenic, and full-length genomic characterization of a
+            bovine-like coronavirus isolated from a giraffe
+  JOURNAL   J. Virol. 81 (10), 4981-4990 (2007)
+   PUBMED   17344285
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Zhang,X., Hasoksuz,M., Spiro,D., Halpin,R., Wang,S., Vlasova,A.,
+            Janies,D., Jones,L., Ghedin,E. and Saif,L.
+  TITLE     Quasispecies of bovine enteric and respiratory coronaviruses based
+            on complete genome sequences and genetic changes after tissue
+            culture adaptation
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1358)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hasoksuz,M., Zhang,X., Alekseev,K.,
+            Vlasova,A., Janies,D., Ghedin,E. and Saif,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-FEB-2007) The Institute for Genomic Research, 9712
+            Medical Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Calf-giraffe coronavirus US/OH3/2006"
+                     /strain="US/OH3/2006"
+                     /isolate="BO 13151"
+                     /host="giraffe"
+                     /db_xref="taxon:422140"
+                     /country="USA:Ohio"
+                     /note="sequence of viral RNA extracted from fecal sample
+                     (BO 13151) of calf infected with isolate WD1421"
+     Protein         1..1358
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Region          <994..>1130
+                     /region_name="Tar"
+                     /note="Methyl-accepting chemotaxis protein [Cell motility,
+                     Signal transduction mechanisms]; COG0840"
+                     /db_xref="CDD:223910"
+     CDS             1..1358
+                     /locus_tag="A5K_005"
+                     /coded_by="EF424624.1:23625..27701"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikdgvmys
+      121 efpaitigst fvntsysvvv qphttilgnk lqgfleisvc qytmceypnt icnpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsaltley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvftd hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgsg sgidagykht gigtcpagtn yltchnaaqc dclctpdpit
+      541 snkcpqtkyl vgigehcsgl aiksdhcggn pcscqpqafl gwsvdsclqg drcnifanfi
+      601 lhdvnsgttc stdlqksntd iilgvcvnyd lygitgqgif vevnatyyns wqnllydsng
+      661 nlygfrdylt nrtfmirscy sgrvsaafha nssepallfr nikcnyvfnn tlsrqlqpin
+      721 yfdsylgcvv nadnstssvv qtcdltvgsg ycvdystkrr srrsittgyr ftnfepftvn
+      781 svndslepvg glyeiqipse ftignmeefi qtsspkvtid csafvcgdya acksqlveyg
+      841 sfcdninail tevnelldtt qlqvanslmn gvtlstklkd gvnfnvddin fspvlgclgs
+      901 dcnkvssrsa iedllfskvk lsdvgfveay nnctggveir dlicvqsyng ikvlppllse
+      961 nqisgytlaa tsaslfppws aaagvpfyln vqyringigv tmdvlsqnqk lianafnnal
+     1021 gaiqegfdat nsalvkiqav vnanaealnn llqqlsnrfg aissslqeil srldaleaqa
+     1081 qidrlingrl talnayvsqq lsdstlvkfs aaqamekvne cvksqssrin fcgngnhiis
+     1141 lvqnapygly fihfsyvptk yvtakvspgl ciagdrgiap ksgyfvnvnn twmftgsgyy
+     1201 ypepitgnnv vvmstcavny tkapdvmlni stpnlpdfke eldqwfknqt svapdlsldy
+     1261 invtfldlqd emnrlqeaik vlnqsyinlk digtyeyyvk wpwyvwllig fagvamlvll
+     1321 fficcctgcg tscfkkcggc cddytghqel viktshed
+//
+

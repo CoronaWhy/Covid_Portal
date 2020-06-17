@@ -1,0 +1,212 @@
+LOCUS       YP_009273005            1290 aa            linear   VRL 13-AUG-2018
+DEFINITION  spike protein [Rousettus bat coronavirus].
+ACCESSION   YP_009273005
+VERSION     YP_009273005.1
+DBLINK      BioProject: PRJNA485481
+DBSOURCE    REFSEQ: accession NC_030886.1
+KEYWORDS    RefSeq.
+SOURCE      Rousettus bat coronavirus
+  ORGANISM  Rousettus bat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; Rousettus bat coronavirus GCCDC1.
+REFERENCE   1  (residues 1 to 1290)
+  AUTHORS   Huang,C., Liu,J., Xu,W., Jin,T., Shi,Y., Ji,W., Jia,H., Zhou,Y.,
+            Wen,H., Zhao,H., Liu,H., Li,H., Wang,Q., Wu,Y., Wang,L., Liu,D.,
+            Liu,G., Yu,H., Holmes,E., Lu,L. and Gao,G.F.
+  TITLE     A bat-derived cross-family recombinant coronavirus with a reovirus
+            gene
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1290)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-SEP-2016) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (residues 1 to 1290)
+  AUTHORS   Huang,C., Liu,J., Xu,W., Jin,T., Shi,Y., Ji,W., Jia,H., Zhou,Y.,
+            Wen,H., Zhao,H., Liu,H., Li,H., Wang,Q., Wu,Y., Wang,L., Liu,D.,
+            Liu,G., Yu,H., Holmes,E., Lu,L. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-FEB-2016) National Institute for Viral Disease
+            Control and Prevention, Chinese Center for Disease Control and
+            Prevention, Changbai Road, Changping District, Beijing 102206,
+            China
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AOG30822.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1290
+                     /organism="Rousettus bat coronavirus"
+                     /isolate="GCCDC1 356"
+                     /isolation_source="rectal swab"
+                     /host="Rousettus leschenaulti"
+                     /db_xref="taxon:1892416"
+                     /country="China"
+                     /collection_date="28-May-2014"
+     Protein         1..1290
+                     /product="spike protein"
+                     /calculated_mol_wt=140428
+     CDS             1..1290
+                     /gene="Spike"
+                     /locus_tag="BHT41_gp02"
+                     /coded_by="NC_030886.1:21121..24993"
+                     /db_xref="GeneID:28721348"
+ORIGIN      
+        1 mfrtlllaal fnacwcarpt cikptetwgt psftgveyvp hnttyvsvpl nklscllpdp
+       61 ymahsgqtvr qklymgntsn tlvypvtppm fnltygnvtp gvyntsflpv fdgllvhtym
+      121 nrfahldnpn rtcqepfgvv fgttfeqdri amviiapgef gmwgqvnrpn ttfvhvvacs
+      181 naticaypmf nrwgpagsih aensfvehns scflndtfei pmgtsrvnla frfqdgnlll
+      241 yhtawlpten ytlsgdyplr yarsvgvgsn lpfaqffqsv arardsacaf lhnnlyiapv
+      301 qpkellvkyn dqgmpveiad csadstqely citgtftpsv gvyqlsryra eakklvqvtq
+      361 qedscaipyt tileppspaa wvratisnct fdfesllrtl ptynlkcygi sparlstmcy
+      421 agvtldifkl ntthlsnmlg svpdavsiyn yalpsnfygc vhayhlnstt pyavavppga
+      481 ypikpggrql fnsfvsqvld sptsqctpan cmgvvviglt pasgsnlvcp kandtqvieg
+      541 qcvkynfygy agtgvinqsd laipnnklfv tsksgavlav ragdkvysit pcvsvpisvg
+      601 ydpghqralv fngldcsara navsmpasey wtaaasttar gsepvldtps gcvynvnnct
+      661 thtvsvcemp ignslclvsn ftcsdvatas lspnllslvv ydptdaglkv ltpvywvsip
+      721 tnftlaatte yiqttapkvn vdcvkylcgd sercidvlsq ygafcedvnk aladvsaiid
+      781 ssmvtmvsel tagvmwsetp qanvgsynfs glmgclgsnc qekqyrsais dllynkvkva
+      841 dpgfmgayqk cideqwggsv rdlictqtfn gisvlppivs pgmqalytsl lvgavassgy
+      901 tfgitsvgvi pfatqlqfrl nglgvttnvl menqkliana fnnaltgiqk gfdatnmala
+      961 kmqsvinqha qqlstlvdql gnsfgaisss ineifsrlde leanaqvdrl ingrmvvlnt
+     1021 yvtqlliras evkaqaalas qkisecvkaq sqrndfcgng thvlsipqma pngvlflhys
+     1081 yqptaynlvr taaglcfndt gyaplgglfv lpnntdrwlf tkmsfydpvn isvsntqvla
+     1141 acglnyssvn ytvlepavdt ssfnfteefe kwyvnqshif nntfnasafn fslvdvneql
+     1201 ailtdvvnql nqsyidlkql gtyeytvkwp wyvwlgmiag lvglvlavvl llcmtnccsc
+     1261 argvcscksc ayeehedvyp avrvhgkrta
+//
+
+LOCUS       AOG30822                1290 aa            linear   VRL 03-SEP-2016
+DEFINITION  spike protein [Rousettus bat coronavirus].
+ACCESSION   AOG30822
+VERSION     AOG30822.1
+DBSOURCE    accession KU762338.1
+KEYWORDS    .
+SOURCE      Rousettus bat coronavirus
+  ORGANISM  Rousettus bat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; Rousettus bat coronavirus GCCDC1.
+REFERENCE   1  (residues 1 to 1290)
+  AUTHORS   Huang,C., Liu,J., Xu,W., Jin,T., Shi,Y., Ji,W., Jia,H., Zhou,Y.,
+            Wen,H., Zhao,H., Liu,H., Li,H., Wang,Q., Wu,Y., Wang,L., Liu,D.,
+            Liu,G., Yu,H., Holmes,E., Lu,L. and Gao,G.F.
+  TITLE     A bat-derived cross-family recombinant coronavirus with a reovirus
+            gene
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1290)
+  AUTHORS   Huang,C., Liu,J., Xu,W., Jin,T., Shi,Y., Ji,W., Jia,H., Zhou,Y.,
+            Wen,H., Zhao,H., Liu,H., Li,H., Wang,Q., Wu,Y., Wang,L., Liu,D.,
+            Liu,G., Yu,H., Holmes,E., Lu,L. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-FEB-2016) National Institute for Viral Disease
+            Control and Prevention, Chinese Center for Disease Control and
+            Prevention, Changbai Road, Changping District, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1290
+                     /organism="Rousettus bat coronavirus"
+                     /isolate="GCCDC1 356"
+                     /isolation_source="rectal swab"
+                     /host="Rousettus leschenaulti"
+                     /db_xref="taxon:1892416"
+                     /country="China"
+                     /collection_date="28-May-2014"
+     Protein         1..1290
+                     /product="spike protein"
+     CDS             1..1290
+                     /gene="Spike"
+                     /coded_by="KU762338.1:21121..24993"
+ORIGIN      
+        1 mfrtlllaal fnacwcarpt cikptetwgt psftgveyvp hnttyvsvpl nklscllpdp
+       61 ymahsgqtvr qklymgntsn tlvypvtppm fnltygnvtp gvyntsflpv fdgllvhtym
+      121 nrfahldnpn rtcqepfgvv fgttfeqdri amviiapgef gmwgqvnrpn ttfvhvvacs
+      181 naticaypmf nrwgpagsih aensfvehns scflndtfei pmgtsrvnla frfqdgnlll
+      241 yhtawlpten ytlsgdyplr yarsvgvgsn lpfaqffqsv arardsacaf lhnnlyiapv
+      301 qpkellvkyn dqgmpveiad csadstqely citgtftpsv gvyqlsryra eakklvqvtq
+      361 qedscaipyt tileppspaa wvratisnct fdfesllrtl ptynlkcygi sparlstmcy
+      421 agvtldifkl ntthlsnmlg svpdavsiyn yalpsnfygc vhayhlnstt pyavavppga
+      481 ypikpggrql fnsfvsqvld sptsqctpan cmgvvviglt pasgsnlvcp kandtqvieg
+      541 qcvkynfygy agtgvinqsd laipnnklfv tsksgavlav ragdkvysit pcvsvpisvg
+      601 ydpghqralv fngldcsara navsmpasey wtaaasttar gsepvldtps gcvynvnnct
+      661 thtvsvcemp ignslclvsn ftcsdvatas lspnllslvv ydptdaglkv ltpvywvsip
+      721 tnftlaatte yiqttapkvn vdcvkylcgd sercidvlsq ygafcedvnk aladvsaiid
+      781 ssmvtmvsel tagvmwsetp qanvgsynfs glmgclgsnc qekqyrsais dllynkvkva
+      841 dpgfmgayqk cideqwggsv rdlictqtfn gisvlppivs pgmqalytsl lvgavassgy
+      901 tfgitsvgvi pfatqlqfrl nglgvttnvl menqkliana fnnaltgiqk gfdatnmala
+      961 kmqsvinqha qqlstlvdql gnsfgaisss ineifsrlde leanaqvdrl ingrmvvlnt
+     1021 yvtqlliras evkaqaalas qkisecvkaq sqrndfcgng thvlsipqma pngvlflhys
+     1081 yqptaynlvr taaglcfndt gyaplgglfv lpnntdrwlf tkmsfydpvn isvsntqvla
+     1141 acglnyssvn ytvlepavdt ssfnfteefe kwyvnqshif nntfnasafn fslvdvneql
+     1201 ailtdvvnql nqsyidlkql gtyeytvkwp wyvwlgmiag lvglvlavvl llcmtnccsc
+     1261 argvcscksc ayeehedvyp avrvhgkrta
+//
+
+LOCUS       AOG30812                1290 aa            linear   VRL 03-SEP-2016
+DEFINITION  spike protein [Rousettus bat coronavirus].
+ACCESSION   AOG30812
+VERSION     AOG30812.1
+DBSOURCE    accession KU762337.1
+KEYWORDS    .
+SOURCE      Rousettus bat coronavirus
+  ORGANISM  Rousettus bat coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus; Rousettus bat coronavirus GCCDC1.
+REFERENCE   1  (residues 1 to 1290)
+  AUTHORS   Huang,C., Liu,J., Xu,W., Jin,T., Shi,Y., Ji,W., Jia,H., Zhou,Y.,
+            Wen,H., Zhao,H., Liu,H., Li,H., Wang,Q., Wu,Y., Wang,L., Liu,D.,
+            Liu,G., Yu,H., Holmes,E., Lu,L. and Gao,G.F.
+  TITLE     A bat-derived cross-family recombinant coronavirus with a reovirus
+            gene
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1290)
+  AUTHORS   Huang,C., Liu,J., Xu,W., Jin,T., Shi,Y., Ji,W., Jia,H., Zhou,Y.,
+            Wen,H., Zhao,H., Liu,H., Li,H., Wang,Q., Wu,Y., Wang,L., Liu,D.,
+            Liu,G., Yu,H., Holmes,E., Lu,L. and Gao,G.F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (25-FEB-2016) National Institute for Viral Disease
+            Control and Prevention, Chinese Center for Disease Control and
+            Prevention, Changbai Road, Changping District, Beijing 102206,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1290
+                     /organism="Rousettus bat coronavirus"
+                     /isolate="GCCDC1 346"
+                     /isolation_source="rectal swab"
+                     /host="Rousettus leschenaulti"
+                     /db_xref="taxon:1892416"
+                     /country="China"
+                     /collection_date="28-May-2014"
+     Protein         1..1290
+                     /product="spike protein"
+     CDS             1..1290
+                     /gene="spike"
+                     /coded_by="KU762337.1:21084..24956"
+ORIGIN      
+        1 mfrtlllaal fnacwcarps clkpteywgt htfdgveyvp hnttyvsvsl nklscllpdp
+       61 ymahsgqtvr qklymgntsn tlvypvtppm fnltygnvtp gvyntsflpv fdgllvhtym
+      121 nrfahldnpn rtcqepfgvv fgttfeqdri amviiapgef gmwgqltrpn ttyvhvvacs
+      181 natvcaypmf nrwgpagsih addafvehns scflndtfei pmgtsrvnla frfqdgnlll
+      241 yhtawlpten ytlsgdyplr yarsvgvgsn lpfaqffqsv arardsacaf lhnnlyiapv
+      301 qpkellvkyn dqgmpveiad csadstqely citgtftpsv gvyqlsryra eakklvqvtq
+      361 qegscaipyt tileppspaa wvratisnct fdfesllrtl ptynlkcygi sparlstmcy
+      421 agvtldifkl ntthlsnmlg svpdavsiyn yalpsnfygc vhayhlnstt pyavavppga
+      481 ypikpggrql fnsfvsqvld spssqctpan cmgvvviglt pasgsnlvcp kandthvieg
+      541 qcvkynfygy agtgvinqsd laipnnklfv tsksgavlav ragdkvysit pcvsvpisvg
+      601 ydpghqralv fngldcsara navsmpasey wtaaastiar gsepvldtps gcvynvnnct
+      661 thtvsvcemp ignslclvsn ftcsnvatan lspnllslvv ydptdaglkv ltpvywvsip
+      721 tnftlaatte yiqttapkvn vdcvkylcgd sercidvlsq ygafcedvnk aladvsaiid
+      781 ssmvtmvsel tagvmwsetp qanvgsynfs glmgclgsnc qekqyrsais dllynkvkva
+      841 dpgfmgayqk cideqwggsv rdlictqtfn gisvlppivs pgmqalytsl lvgavassgy
+      901 tfgitsvgvi pfatqlqfrl nglgvttnvl menqkliana fnnaltgiqk gfdatnmala
+      961 kmqsvinqha qqlstlvdql gnsfgaisss ineifsrlde leanaqvdrl ingrmvvlnt
+     1021 yvtqlliras evkaqaalas qkisecvkaq sqrndfcgng thvlsipqma pngvlflhys
+     1081 yqptaynlvr taaglcfndt gyaplgglfv lpnntdrwlf tkmsfydpvn isvsntqvla
+     1141 acglnyssvn ytvlepavdt ssfnfteefe kwyvnqshif nntfnasafn fslvdvneql
+     1201 ailtdvvnql nqsyidlkql gtyeytvkwp wyvwlgmiag lvglvlavvl llcmtnccsc
+     1261 argvcscksc ayeehedvyp avrvhgkrta
+//
+

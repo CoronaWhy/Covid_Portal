@@ -1,0 +1,81 @@
+LOCUS       ABG89288                1363 aa            linear   VRL 29-APR-2011
+DEFINITION  spike protein [Bovine coronavirus DB2].
+ACCESSION   ABG89288
+VERSION     ABG89288.1
+DBSOURCE    accession DQ811784.2
+KEYWORDS    .
+SOURCE      Bovine coronavirus DB2
+  ORGANISM  Bovine coronavirus DB2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Stollar,S., Zhang,X., Hasoksuz,M.,
+            Janies,D., Hadya,N., Tang,Y., Ghedin,E. and Saif,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-JUN-2006) The Institute for Genomic Research 9712
+            Medical Center Drive, Rockville, MD, USA
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Spiro,D., Halpin,R., Hostetler,J., Fedorova,N., Overton,L.,
+            Stockwell,T., Sitz,J., Katzel,D., Li,K., Axelrod,N., Safford,T.,
+            Amedeo,P., Schobel,S., Shrivastava,S., Wang,S., Resnick,A.,
+            Thovarai,V., Kim,M., Vlasova,A. and Saif,L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (29-APR-2011) J. Craig Venter Institute, 704 Medical
+            Center Drive, Rockville, MD 20850, USA
+  REMARK    Sequence update by submitter
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Bovine coronavirus DB2"
+                     /strain="DB2"
+                     /host="bovine"
+                     /db_xref="taxon:398808"
+                     /collection_date="1983"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1346
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     Region          <999..>1135
+                     /region_name="Tar"
+                     /note="Methyl-accepting chemotaxis protein [Cell motility,
+                     Signal transduction mechanisms]; COG0840"
+                     /db_xref="CDD:223910"
+     CDS             1..1363
+                     /coded_by="DQ811784.2:23626..27717"
+ORIGIN      
+        1 mflillislp tafavigdlk cttvsindvd tgvpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmceypnt ichptlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcdsamtley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqsvf kpqpagvfta hdvvyaqhcf
+      481 kaptnfcpck ldgslcvgng pgidagykts gigtcpagtn yltchnaaqc dclctpdpis
+      541 skatgpykcp qtkylvgige hcsglaiksd ycggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanfilhdvn sgttcstdlq ksntdiilgv cvnydlygit gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntlsrq
+      721 lqpinyfdsy lgcvvnadns tssvvqtcdl tvgsgycvdy stkrrsrrsi ttgyrftnfe
+      781 pftvnsvnds lqpvgglyei qipseftign meefiqtssp kvtidcsafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnkv ssrsaiedll fskvklsdvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwsaaagv pfylnvqyri ngigvtmdvl sqnqkliana
+     1021 fnnalgaiqe gfdatnsalv kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaqaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tgnnvvvmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvaph
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlligfagva
+     1321 mlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+

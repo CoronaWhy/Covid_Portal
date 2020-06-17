@@ -1,0 +1,67 @@
+LOCUS       BAF42873                1255 aa            linear   VRL 23-DEC-2006
+DEFINITION  spike glycoprotein [SARS coronavirus Frankfurt1-v01].
+ACCESSION   BAF42873
+VERSION     BAF42873.1
+DBSOURCE    accession AB263618.1
+KEYWORDS    .
+SOURCE      SARS coronavirus Frankfurt1-v01
+  ORGANISM  SARS coronavirus Frankfurt1-v01
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1
+  AUTHORS   Fukushi,S., Mizutani,T., Saijo,M., Kurane,I., Taguchi,F. and
+            Morikawa,S.
+  TITLE     Characterization of a SARS-CoV variant with enhanced replication on
+            rat ACE2-expressing cells
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Fukushi,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-JUN-2006) Shuetsu Fukushi, National Institute of
+            Infectious Diseases, Virology 1; 4-7-1 Gakuen, Musashimurayama,
+            Tokyo 208-0011, Japan (E-mail:fukushi@nih.go.jp,
+            Tel:81-42-561-0771, Fax:81-42-561-2039)
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus Frankfurt1-v01"
+                     /isolate="Frankfurt1-v01"
+                     /db_xref="taxon:391355"
+                     /note="cultured isolate"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /gene="S"
+                     /coded_by="AB263618.1:1..3768"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae yvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl sdagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlsf nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdfgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

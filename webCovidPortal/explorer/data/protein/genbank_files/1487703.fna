@@ -1,0 +1,142 @@
+LOCUS       AHX37569                1259 aa            linear   VRL 29-MAY-2014
+DEFINITION  spike protein [Rhinolophus affinis coronavirus].
+ACCESSION   AHX37569
+VERSION     AHX37569.1
+DBSOURCE    accession KF569997.1
+KEYWORDS    .
+SOURCE      Rhinolophus affinis coronavirus
+  ORGANISM  Rhinolophus affinis coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1259)
+  AUTHORS   He,B., Zhang,Y., Xu,L., Yang,W., Yang,F., Feng,Y., Xia,L., Zhou,J.,
+            Zhen,W., Feng,Y., Guo,H., Zhang,H. and Tu,C.
+  TITLE     Identification of Diverse Alphacoronaviruses and Genomic
+            Characterization of a Novel Severe Acute Respiratory Syndrome-Like
+            Coronavirus from Bats in China
+  JOURNAL   J. Virol. 88 (12), 7070-7082 (2014)
+   PUBMED   24719429
+REFERENCE   2  (residues 1 to 1259)
+  AUTHORS   He,B., Xu,L., Feng,Y., Yang,F., Xia,L., Zhang,H. and Tu,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-AUG-2013) Virology Department, Institute of Military
+            Veterinary, Rd. Liuying West 666, Changchun, Jilin 130122, China
+FEATURES             Location/Qualifiers
+     source          1..1259
+                     /organism="Rhinolophus affinis coronavirus"
+                     /isolate="LYRa3"
+                     /isolation_source="alimentary"
+                     /host="Rhinolophus affinis"
+                     /db_xref="taxon:1487703"
+                     /country="China"
+                     /collection_date="2011"
+                     /collected_by="Yun Feng"
+                     /identified_by="Biao He"
+     Protein         1..1259
+                     /product="spike protein"
+     Region          321..573
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          652..1256
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1259
+                     /coded_by="KF569997.1:80..3859"
+ORIGIN      
+        1 mfltcfilif slfcvsgdsi dtcetfddvs ppqqnlvsss krgvyypddi yrsdahhlvq
+       61 dlflpfnsnv vglmsfnyrf dnpiipfkdg vyfaateksn vvrgwvfgst mnnksqsaii
+      121 mnnstnvvir acnfqlcdnp ffavirptsq qietilfena fnctfeyvsd sflmdvgekp
+      181 gnfkhlrefi fknkdgflyi ysgfqnidva nglpsgfsll kpllklplgl nitnfrvllt
+      241 afipnigtwg tspvayfvgy lkpttfmlky dyngtivdav dcsqhplael kcsvksfdid
+      301 kgiyqtsnfr vspsrevvrf pnitnlcpfg evfnattfps vyawerkris ncvadysvly
+      361 nstsfstfkc ygvsaiklnd lcfsnvyads fvvkgddvrq iapgqtgvia dynyklpddf
+      421 mgcvlawntr nidatssgnf hykyrslrhg klrpferdis nvpfspdgkp ctppafncyw
+      481 plndygfytt ngigyqpyrv vvlsfellna patvcgpkls tdlitnqcvn fnfngltgtg
+      541 vltpsskrfq pfqqfgrdvs dftdsvrdpk tlevldispc sfggvsvitp gtnissevav
+      601 lyqdvnctdv ptaihadqlt pawriysage nvfqtqagcl igaehvnasy ecdipigagi
+      661 casyhtasll rntgqksiva ytmslgaens iayannsiai ptnfsisitt evmpvsmakt
+      721 svdctmyicg dsqecsnlll qygsfctqln ralsgiaveq dsntqevfaq vkqiyktpai
+      781 kdfggfnfsq ilpdpskptk rsfiedllfn kvtladagfm kqygeclgdi sardlicaqk
+      841 fngltvlppl ltdemiaayt aalvsgtata gwtfgagaal qipfamqmay rfngigvtqn
+      901 vlyenqkqia nqfnkaisqi qesltttsta lgklqdvvnq naqalntlvk qlssnfgais
+      961 svlndilsrl dkveaevqid rlitgrlqsl qtyvtqqlir aaeirasanl aatkmsecvl
+     1021 gqskrvdfcg kgyhlmsfpq aaphgvvflh vtyvpsqern fttapaiche gkayfpregv
+     1081 fvfngtswfi tqrnffspql ittdntfvsg ncdvvigiin ntvydplqpe ldsfkeeldk
+     1141 yfknhtspdv dlgdisrina svvniqkeid rlnevaknln eslidlqelg kyeqyikwpw
+     1201 yvwlgfiagl iaivmatill ccmtsccscl kgacscgscc kfdeddsepv lkgvklhyt
+//
+
+LOCUS       AHX37558                1259 aa            linear   VRL 29-MAY-2014
+DEFINITION  spike protein [Rhinolophus affinis coronavirus].
+ACCESSION   AHX37558
+VERSION     AHX37558.1
+DBSOURCE    accession KF569996.1
+KEYWORDS    .
+SOURCE      Rhinolophus affinis coronavirus
+  ORGANISM  Rhinolophus affinis coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1259)
+  AUTHORS   He,B., Zhang,Y., Xu,L., Yang,W., Yang,F., Feng,Y., Xia,L., Zhou,J.,
+            Zhen,W., Feng,Y., Guo,H., Zhang,H. and Tu,C.
+  TITLE     Identification of Diverse Alphacoronaviruses and Genomic
+            Characterization of a Novel Severe Acute Respiratory Syndrome-Like
+            Coronavirus from Bats in China
+  JOURNAL   J. Virol. 88 (12), 7070-7082 (2014)
+   PUBMED   24719429
+REFERENCE   2  (residues 1 to 1259)
+  AUTHORS   He,B., Xu,L., Feng,Y., Yang,F., Xia,L., Zhang,H. and Tu,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (22-AUG-2013) Virology Department, Institute of Military
+            Veterinary, Rd. Liuying West 666, Changchun, Jilin 130122, China
+FEATURES             Location/Qualifiers
+     source          1..1259
+                     /organism="Rhinolophus affinis coronavirus"
+                     /isolate="LYRa11"
+                     /isolation_source="alimentary"
+                     /host="Rhinolophus affinis"
+                     /db_xref="taxon:1487703"
+                     /country="China"
+                     /collection_date="2011"
+                     /collected_by="Yun Feng"
+                     /identified_by="Biao He"
+     Protein         1..1259
+                     /product="spike protein"
+     Region          321..573
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          652..1256
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1259
+                     /coded_by="KF569996.1:21499..25278"
+ORIGIN      
+        1 mfltcfilsf slfcvsgdsi dtcetfddvs ppqqnlvsss krgvyypddi yrsdvhhlvq
+       61 dlflpfnsnv vglmsfnyrf dnpiipfkdg vyfaateksn vvrgwvfgst mnnksqsvii
+      121 mnnstnvvir acnfqlcdnp ffavirptsq qietilfena fnctfeyvsd sflmdvgekp
+      181 gnfkhlrefi fknkdgflni ysgfqnidva nglpsgfsll kpllklplgl nitnfrvllt
+      241 afipnigtwg tspvayfvgy lkpttfmlky dyngtivdav dcsqhplael kcsvksfeid
+      301 kgiyqtsnfr vspskevvrf pnitnlcpfg evfnattfps vyawerkris ncvadysvly
+      361 nstsfstfkc ygvsaiklnd lcfsnvyads fvvkgddvrq iapgqtgvia dynyklpddf
+      421 mgcvlawntr nidatssgnf nykyrslrhg klrpferdis nvpfspdgkp ctppafncyw
+      481 plndygfytt ngigyqpyrv vvlsfellna patvcgpkls tdlitnqcvn fnfngltgtg
+      541 vltpslkrfq pfqqfgrdfs dftdsvrdpk tlevldispc sfggvsvitp gtnissevav
+      601 lyqdvnctdv ptaihadqlt pawriysagv nvfqtqagcl igaehvnasy ecdipigagi
+      661 casyhtasll rntdqksiva ytmslgaens iayannsiai ptnfsisitt evmpvsmakt
+      721 svdctmyicg dsqecsnlll qygsfctqln ralsgiaveq dkntqevfaq vkqiyktpai
+      781 kdfggfnfsq ilpdpskptk rsfiedllfn kvtladagfm kqygeclgdi sardlicaqk
+      841 fngltvlppl ltdemiaayt aalvsgtata gwtfgagaal qipfamqmay rfngigvtqn
+      901 vlyenqkqia nqfnkaisqi qesltttsta lgklqdvvnq naqalntlvk qlssnfgais
+      961 svlndilsrl dkveaevqid rlitgrlqsl qtyvtqqlir aaeirasanl aatkmsecvl
+     1021 gqskrvdfcg kgyhlmsfpq aaphgvvflh vtyvpsqern fttapaiche gkayfpregv
+     1081 fvsngtswfi tqrnffspql ittdntfvsg ncdvvigiin ntvydplqpe ldsfkeeldk
+     1141 yfknhtspdv dlgdisrina svvniqkeid rlnevaknln eslidlqelg kyeqyikwpw
+     1201 yvwlgfiagl iaivmatill ccmtsccscl kgacscgscc kfdeddsepv lkgvklhyt
+//
+

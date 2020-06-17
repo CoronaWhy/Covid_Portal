@@ -1,0 +1,78 @@
+LOCUS       AAV49723                1255 aa            linear   VRL 28-FEB-2005
+DEFINITION  spike glycoprotein [SARS coronavirus PC4-241].
+ACCESSION   AAV49723
+VERSION     AAV49723.1
+DBSOURCE    accession AY627048.1
+KEYWORDS    .
+SOURCE      SARS coronavirus PC4-241
+  ORGANISM  SARS coronavirus PC4-241
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Song,H.D., Tu,C.C., Zhang,G.W., Wang,S.Y., Zheng,K., Lei,L.C.,
+            Chen,Q.X., Gao,Y.W., Zhou,H.Q., Xiang,H., Zheng,H.J., Chern,S.W.,
+            Cheng,F., Pan,C.M., Xuan,H., Chen,S.J., Luo,H.M., Zhou,D.H.,
+            Liu,Y.F., He,J.F., Qin,P.Z., Li,L.H., Ren,Y.Q., Liang,W.J.,
+            Yu,Y.D., Anderson,L., Wang,M., Xu,R.H., Wu,X.W., Zheng,H.Y.,
+            Chen,J.D., Liang,G., Gao,Y., Liao,M., Fang,L., Jiang,L.Y., Li,H.,
+            Chen,F., Di,B., He,L.J., Lin,J.Y., Tong,S., Kong,X., Du,L., Hao,P.,
+            Tang,H., Bernini,A., Yu,X.J., Spiga,O., Guo,Z.M., Pan,H.Y.,
+            He,W.Z., Manuguerra,J.C., Fontanet,A., Danchin,A., Niccolai,N.,
+            Li,Y.X., Wu,C.I. and Zhao,G.P.
+  TITLE     Cross-host evolution of severe acute respiratory syndrome
+            coronavirus in palm civet and human
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 102 (7), 2430-2435 (2005)
+   PUBMED   15695582
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Song,H.D.
+  TITLE     SARS spike sequences
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Song,H.D.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-MAY-2004) Shanghai Institute of Hematology, 197
+            Ruijin Road II, Shanghai 200025, China
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus PC4-241"
+                     /isolation_source="palm civet"
+                     /db_xref="taxon:296841"
+                     /country="China"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY627048.1:1..3768"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffvv skpmgtrtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkrisncva dysvlynsts
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp apncywplng
+      481 ygfyttsgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstli haeqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsslrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfvqvkqm yktptlkdfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqeeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

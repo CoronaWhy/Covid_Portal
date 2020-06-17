@@ -1,0 +1,76 @@
+LOCUS       AAP13567                1255 aa            linear   VRL 31-JUL-2003
+DEFINITION  putative E2 glycoprotein precursor [SARS coronavirus CUHK-W1].
+ACCESSION   AAP13567
+VERSION     AAP13567.1
+DBSOURCE    accession AY278554.2
+KEYWORDS    .
+SOURCE      SARS coronavirus CUHK-W1
+  ORGANISM  SARS coronavirus CUHK-W1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Tsui,S.K., Chim,S.S. and Lo,Y.M.
+  CONSRTM   Chinese University of Hong Kong Molecular SARS Research Group
+  TITLE     Coronavirus genomic-sequence variations and the epidemiology of the
+            severe acute respiratory syndrome
+  JOURNAL   N. Engl. J. Med. 349 (2), 187-188 (2003)
+   PUBMED   12853594
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Tsui,S.K.W., Lo,Y.M.D., Tam,J.S., Fung,K.P., Chim,S.S.C., Au,C.C.,
+            Chan,A.H., Wan,A.W.K., Au,K.W., Chan,C.W., Kou,C.Y.C., Lam,H.M.,
+            Lam,W.Y., Lau,S.K., Lau,Y.L., Lau,Y.M., Law,S.L., Law,T.W.,
+            Li,M.L.Y., Tse,C.H., Wong,C.H., Yiu,W.H., Lee,C.Y., Chan,A.K.C.,
+            Chiu,R.W.K., Ng,E.K.O., Tong,Y.K., Chan,P.K.S., Au-Yeung,C.,
+            Cheung,J.K.L., Chu,I., Hung,E.C.W. and Waye,M.M.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-APR-2003) Department of Biochemistry, Chinese
+            University of Hong Kong, MMW Bldg. Rm 608, Shatin, NT SAR, China
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus CUHK-W1"
+                     /isolate="CUHK-W1"
+                     /isolation_source="patient with Severe Acute Respiratory
+                     Syndrome (SARS)"
+                     /db_xref="taxon:228415"
+                     /country="China: Hong Kong, Prince of Wales Hospital"
+     Protein         1..1255
+                     /product="putative E2 glycoprotein precursor"
+                     /name="putative spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY278554.2:21477..25244"
+                     /inference="non-experimental evidence, no additional
+                     details recorded"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

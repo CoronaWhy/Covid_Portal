@@ -1,0 +1,203 @@
+LOCUS       HEMA_CVPV                439 aa            linear   VRL 11-DEC-2019
+DEFINITION  RecName: Full=Hemagglutinin-esterase; Short=HE protein; AltName:
+            Full=E3 glycoprotein; Flags: Precursor.
+ACCESSION   O91262
+VERSION     O91262.1
+DBSOURCE    UniProtKB: locus HEMA_CVPV, accession O91262;
+            class: standard.
+            created: Jun 16, 2003.
+            sequence updated: Nov 1, 1998.
+            annotation updated: Dec 11, 2019.
+            xrefs: AJ005960.1, CAA06776.1
+            xrefs (non-sequence databases): SMR:O91262, GO:0020002, GO:0016021,
+            GO:0019031, GO:0055036, GO:0046789, GO:0001681, GO:0019064,
+            HAMAP:MF_04207, InterPro:IPR008980, InterPro:IPR042545,
+            InterPro:IPR007142, InterPro:IPR003860, Pfam:PF03996, Pfam:PF02710,
+            SUPFAM:SSF49818
+KEYWORDS    Disulfide bond; Glycoprotein; Hemagglutinin; Host cell membrane;
+            Host membrane; Hydrolase; Membrane; Signal; Transmembrane;
+            Transmembrane helix; Viral envelope protein; Virion.
+SOURCE      Puffinosis coronavirus
+  ORGANISM  Puffinosis coronavirus
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 439)
+  AUTHORS   Klausegger,A., Strobl,B., Regl,G., Kaser,A., Luytjes,W. and
+            Vlasak,R.
+  TITLE     Identification of a coronavirus hemagglutinin-esterase with a
+            substrate specificity different from those of influenza C virus and
+            bovine coronavirus
+  JOURNAL   J. Virol. 73 (5), 3737-3743 (1999)
+   PUBMED   10196267
+  REMARK    NUCLEOTIDE SEQUENCE [MRNA].
+REFERENCE   2  (residues 1 to 439)
+  AUTHORS   Wurzer,W.J., Obojes,K. and Vlasak,R.
+  TITLE     The sialate-4-O-acetylesterases of coronaviruses related to mouse
+            hepatitis virus: a proposal to reorganize group 2 Coronaviridae
+  JOURNAL   J. Gen. Virol. 83 (Pt 2), 395-402 (2002)
+   PUBMED   11807232
+  REMARK    CHARACTERIZATION.
+COMMENT     [FUNCTION] Structural protein that makes short spikes at the
+            surface of the virus. Contains receptor binding and
+            receptor-destroying activities. Mediates de-O-acetylation of
+            N-acetyl-4-O-acetylneuraminic acid, which is probably the receptor
+            determinant recognized by the virus on the surface of erythrocytes
+            and susceptible cells. This receptor-destroying activity is
+            important for virus release as it probably helps preventing
+            self-aggregation and ensures the efficient spread of the progeny
+            virus from cell to cell. May serve as a secondary viral attachment
+            protein for initiating infection, the spike protein being the major
+            one. May become a target for both the humoral and the cellular
+            branches of the immune system. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-9-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:22600,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:28999,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [CATALYTIC ACTIVITY] Reaction=H2O + N-acetyl-4-O-acetylneuraminate
+            = acetate + H(+) + N-acetylneuraminate; Xref=Rhea:RHEA:25564,
+            ChEBI:CHEBI:15377, ChEBI:CHEBI:15378, ChEBI:CHEBI:29006,
+            ChEBI:CHEBI:30089, ChEBI:CHEBI:35418; EC=3.1.1.53;
+            Evidence={ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBUNIT] Homodimer; disulfide-linked. Forms a complex with the M
+            protein in the pre-Golgi. Associates then with S-M complex to form
+            a ternary complex S-M-HE. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SUBCELLULAR LOCATION] Virion membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Host cell membrane
+            {ECO:0000255|HAMAP-Rule:MF_04207}; Single-pass type I membrane
+            protein {ECO:0000255|HAMAP-Rule:MF_04207}. Note=In infected cells
+            becomes incorporated into the envelope of virions during virus
+            assembly at the endoplasmic reticulum and cis Golgi. However, some
+            may escape incorporation into virions and subsequently migrate to
+            the cell surface. {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [PTM] N-glycosylated in the host RER.
+            {ECO:0000255|HAMAP-Rule:MF_04207}.
+            [SIMILARITY] Belongs to the influenza type C/coronaviruses
+            hemagglutinin-esterase family. {ECO:0000255|HAMAP-Rule:MF_04207}.
+FEATURES             Location/Qualifiers
+     source          1..439
+                     /organism="Puffinosis coronavirus"
+                     /host="Puffinus puffinus (Manx shearwater)"
+                     /db_xref="taxon:76583"
+     gene            1..439
+                     /gene="HE"
+     Protein         1..439
+                     /product="Hemagglutinin-esterase"
+                     /EC_number="3.1.1.53"
+                     /note="HE protein; E3 glycoprotein"
+                     /UniProtKB_evidence="Evidence at protein level"
+     Region          1..22
+                     /region_name="Signal"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          12..132
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 1.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          23..439
+                     /region_name="Mature chain"
+                     /note="Hemagglutinin-esterase.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207.
+                     /id=PRO_0000037151."
+     Region          23..407
+                     /region_name="Topological domain"
+                     /note="Virion surface.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          27..394
+                     /region_name="Hema_esterase"
+                     /note="Hemagglutinin esterase; pfam03996"
+                     /db_xref="CDD:281925"
+     Site            45
+                     /site_type="active"
+                     /note="Nucleophile.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(49,70)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            94
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(118,167)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          133..281
+                     /region_name="Region of interest in the sequence"
+                     /note="Receptor binding.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            152
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            196
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(202,291)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(210,264)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            246
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          282..395
+                     /region_name="Region of interest in the sequence"
+                     /note="Esterase domain 2.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            316
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(322,327)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            331
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            337
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            342
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            345
+                     /site_type="active"
+                     /note="Charge relay system.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            360
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Bond            bond(363,387)
+                     /bond_type="disulfide"
+                     /note="/evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Site            374
+                     /site_type="glycosylation"
+                     /note="N-linked (GlcNAc...) asparagine; by host.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          408..428
+                     /region_name="Transmembrane region"
+                     /note="Helical.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+     Region          429..439
+                     /region_name="Topological domain"
+                     /note="Intravirion.
+                     /evidence=ECO:0000255|HAMAP-Rule:MF_04207."
+ORIGIN      
+        1 mgsmciamap rtlllligcq lalgfnepln vvshlsddwf lfgdsrsdcs yvennghpaf
+       61 dwldlpqelc hsgkisaksg nslfksfhft dwynytgegd qvifyegvnf spshgfkcla
+      121 egdnkrwmgn karfyalvyk kmayyrslsf vnvsysyggk akptaickdn tltlnnptfi
+      181 skesnyvdyy yesdanftle gcdefivplc vfnghsrgss sdpankyymd sqmyynmdtg
+      241 vfygfnstld vgntaqnpgl dltciyyalt pgnykavsle ylltipskai clrkpkrfmp
+      301 vqvvdsrwnn akhsdnmtav acqtpyclfr ntssgyngst hdvhhggfhf rkllsgllyn
+      361 vsciaqqgaf fynnvssqwp vlgygqcpta aniefiapvc lydplpvill gvllgiavli
+      421 ivfllfyfmt dsgvrlhea
+//
+

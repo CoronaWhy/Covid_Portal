@@ -1,0 +1,402 @@
+LOCUS       YP_005454245            1362 aa            linear   VRL 13-AUG-2018
+DEFINITION  S gene product [Rabbit coronavirus HKU14].
+ACCESSION   YP_005454245
+VERSION     YP_005454245.1
+DBLINK      Project: 157249
+DBSOURCE    REFSEQ: accession NC_017083.1
+KEYWORDS    RefSeq.
+SOURCE      Rabbit coronavirus HKU14
+  ORGANISM  Rabbit coronavirus HKU14
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1362)
+  AUTHORS   Lau,S.K., Woo,P.C., Yip,C.C., Fan,R.Y., Huang,Y., Wang,M., Guo,R.,
+            Lam,C.S., Tsang,A.K., Lai,K.K., Chan,K.H., Che,X.Y., Zheng,B.J. and
+            Yuen,K.Y.
+  TITLE     Isolation and characterization of a novel Betacoronavirus subgroup
+            A coronavirus, rabbit coronavirus HKU14, from domestic rabbits
+  JOURNAL   J. Virol. (2012) In press
+   PUBMED   22398294
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1362)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-APR-2012) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+REFERENCE   3  (residues 1 to 1362)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Yip,C.C.Y., Fan,R.Y.Y., Wang,M., Huang,Y.,
+            Guo,R.T., Lam,C.S.F., Lai,K.K.Y., Chan,K.H., Che,X.Y., Zheng,B.J.
+            and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2011) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to AFE48795.
+            Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1362
+                     /organism="Rabbit coronavirus HKU14"
+                     /strain="HKU14-1"
+                     /host="Oryctolagus cuniculus"
+                     /db_xref="taxon:1160968"
+                     /country="China"
+                     /collection_date="2006"
+     Protein         1..1362
+                     /product="spike protein"
+                     /calculated_mol_wt=150042
+     Region          16..291
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          325..538
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          782..1327
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1362
+                     /gene="S"
+                     /locus_tag="RbCoV-HKU14_gp07"
+                     /coded_by="NC_017083.1:23793..27881"
+                     /db_xref="GeneID:11948234"
+ORIGIN      
+        1 mflillislp tafavigdlk cttasindvd tgtpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypi sgstfrnmal kgtlllstlw fkppflsdfn ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv qphttisdkv lglleisvcq ytmceyphti chpnlgnkri
+      181 elwhfdtdvv sclykrnfty dvnadflyfh fyqeggtfya yftdtgfvtk flfnvylgtv
+      241 lshyyvmplt cdstlsleyw vtpltprqyl lafnqdgiif naadcmsdfm seikcktqsi
+      301 apstgvyeln gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms
+      361 slmsfiqads ftcnnidaak iygmcfssit idkfaipngr kvdlqlgnlg ylqsfnykid
+      421 tsatscqlyy nlpaanvsvs rlnpstwnrr fgfteqsvfk pqpagvftah dvvyaqhcfk
+      481 apttfcpckl dgslcvgsgs gvdagfkhtg igtcpagtny ltcynsvqcn cqctpdpils
+      541 katgpykcpq tkylvgvgeh csglaiksdy cggnpctcqp qaflgwsvds clqgdrcnif
+      601 anlilhgvns gttcstdlqk antdiivgvc vnydlygisg qgifvevnat yynswqnlly
+      661 dsngnlygfr dyltnrtfmi rscysgrvsa afhanssepa llfrnikcny vfnntfarql
+      721 qpinyfdsyl gcvvnadnst astvqtcdlt vgsgycvdys tqlrsrrait tgyrftnfep
+      781 ftvnavndsl qpvgglyeiq ipseftignm eefiqtsapk vtidcaafvc gdyaacksql
+      841 veygsfcdni nailtevnel ldttqlqvan slmngvtlst klkdgvnfnv ddinfspvlg
+      901 clgsdcnkas srsaiedllf dkvkladvgf veaynnctgg aeirdlicvq syngikvlpp
+      961 llsenqisgy tlaatsaslf ppwtaaagvp fylnvqfrin glgvtmdvls qnqklianaf
+     1021 nnaldaiqeg fdatnsalak iqavvnanae alnnllqqls nrfgaisssl qeilsrldal
+     1081 eaaaqidrli ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn
+     1141 hiislvqnap yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg
+     1201 sgyyypepit ennvavmstc avnytkapdv mlnistpnlp dfkeeldqwf knqtsvapdl
+     1261 sldyinvtfl dlqdemnrlq eaikvlnqsy inlkdigtye yyvkwpwyvw lliglagvav
+     1321 lvllfficcc tgcgtscfkk cggccddytg hqelviktsh dd
+//
+
+LOCUS       AFE48827                1363 aa            linear   VRL 30-APR-2012
+DEFINITION  spike protein [Rabbit coronavirus HKU14].
+ACCESSION   AFE48827
+VERSION     AFE48827.1
+DBSOURCE    accession JN874562.1
+KEYWORDS    .
+SOURCE      Rabbit coronavirus HKU14
+  ORGANISM  Rabbit coronavirus HKU14
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Lau,S.K., Woo,P.C., Yip,C.C., Fan,R.Y., Huang,Y., Wang,M., Guo,R.,
+            Lam,C.S., Tsang,A.K., Lai,K.K., Chan,K.H., Che,X.Y., Zheng,B.J. and
+            Yuen,K.Y.
+  TITLE     Isolation and Characterization of a Novel Betacoronavirus Subgroup
+            A Coronavirus, Rabbit Coronavirus HKU14, from Domestic Rabbits
+  JOURNAL   J. Virol. 86 (10), 5481-5496 (2012)
+   PUBMED   22398294
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Yip,C.C.Y., Fan,R.Y.Y., Wang,M., Huang,Y.,
+            Guo,R.T., Lam,C.S.F., Lai,K.K.Y., Chan,K.H., Che,X.Y., Zheng,B.J.
+            and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2011) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Rabbit coronavirus HKU14"
+                     /strain="HKU14-10"
+                     /host="Oryctolagus cuniculus"
+                     /db_xref="taxon:1160968"
+                     /country="China"
+                     /collection_date="2007"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          783..1328
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="JN874562.1:23593..27684"
+ORIGIN      
+        1 mflillislp tafavigdlk cttasindvd tgtppistat vdvtnglgty yvldrvylnt
+       61 tlllngyypi sgstyrnmal kgtlllstlw fkppflsdfn ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv lphttisdnk vlglleisvc qytmceypht ichpnlgnkr
+      181 ielwhfdtdv vsclykrnft ydvnadflyf hfyqeggtfy ayftdtgfvt kflfnvylgt
+      241 vlshyyvmpl tcdstlsley wvtpltprqy llafnqdgii fnaadcmsdf mseikcktqs
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyki
+      421 dtsatscqly ynlpaanvsv srlnpstwnr rfgfteqsvf kpqpagffta hdvvyaqhcf
+      481 kapttfcpck lngslcvgsg sgvdagfkht gigtcpagtn yltcynsvqc ncqctpdpil
+      541 skatgpykcp qtkylvgvge hcsglaiksd ycggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanlilhgvn sgttcstdlq kantdiivgv cvnydlygis gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntfarq
+      721 lqpinyfdsy lgcvvnadns tastvqtcdl tvgsgycvdy stqlrsrrai ttgyrftnfe
+      781 pftvnavnds lqpvgglyei qipseftign meefiqtsap kvtidcaafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnka ssrsaiedll fdkvkladvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwtaaagv pfylnvqfri nglgvtmdvl sqnqkliana
+     1021 fnnaldaiqe gfdatnsala kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaaaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tennvavmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lslgyinvtf ldiqdemnrl qealkvlnqs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 vlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+
+LOCUS       AFE48817                1363 aa            linear   VRL 30-APR-2012
+DEFINITION  spike protein [Rabbit coronavirus HKU14].
+ACCESSION   AFE48817
+VERSION     AFE48817.1
+DBSOURCE    accession JN874561.1
+KEYWORDS    .
+SOURCE      Rabbit coronavirus HKU14
+  ORGANISM  Rabbit coronavirus HKU14
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Lau,S.K., Woo,P.C., Yip,C.C., Fan,R.Y., Huang,Y., Wang,M., Guo,R.,
+            Lam,C.S., Tsang,A.K., Lai,K.K., Chan,K.H., Che,X.Y., Zheng,B.J. and
+            Yuen,K.Y.
+  TITLE     Isolation and Characterization of a Novel Betacoronavirus Subgroup
+            A Coronavirus, Rabbit Coronavirus HKU14, from Domestic Rabbits
+  JOURNAL   J. Virol. 86 (10), 5481-5496 (2012)
+   PUBMED   22398294
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Yip,C.C.Y., Fan,R.Y.Y., Wang,M., Huang,Y.,
+            Guo,R.T., Lam,C.S.F., Lai,K.K.Y., Chan,K.H., Che,X.Y., Zheng,B.J.
+            and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2011) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Rabbit coronavirus HKU14"
+                     /strain="HKU14-8"
+                     /host="Oryctolagus cuniculus"
+                     /db_xref="taxon:1160968"
+                     /country="China"
+                     /collection_date="2007"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          783..1328
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="JN874561.1:23789..27880"
+ORIGIN      
+        1 mflillislp tafavigdlk cttasindvd tgtpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypi sgstfrnmal kgtlllstlw fkppflsdfn ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv qphttisdnk vlglleisvc qytmceypht ichpnlgnkr
+      181 ielwhfdtdv vsclykrnft ydvnadflyf hfyqeggtfy ayftdtgfvt kflfnvylgt
+      241 vlshyyvmpl tcdstlsley wvtpltprqy llafnqdgii fnaadcmsdf mseikcktqs
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyki
+      421 dtsatscqly ynlpaanvsv srlnpstwnr rfgfteqsvf kpqpagvfta hdvvyaqhcf
+      481 kapttfcpck ldgslcvgsg sgvdagfkht gigtcpagtn yltcynsvqc ncqctpdpil
+      541 skatgpykcp qtkylvgvge hcsglaiksd ycggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanlilhgvn sgttcstdlq kantdiivgv cvnydlygis gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntfarq
+      721 lqpinyfdsy lgcvvnadns tastvqtcdl tvgsgycvdy stqlrsrrai ttgyrftnfe
+      781 pftvnavnds lqpvgglyei qipseftign meefiqtsap kvtidcaafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnka ssrsaiedll fdkvkladvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwtaaagv pfylnvqfri nglgvtmdvl sqnqkliana
+     1021 fnnaldaiqd gfdatnsala kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaaaqidrl ingrltalna yvsqqlsdst lvkfsaaqam ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tennvavmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 vlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+
+LOCUS       AFE48805                1363 aa            linear   VRL 30-APR-2012
+DEFINITION  spike protein [Rabbit coronavirus HKU14].
+ACCESSION   AFE48805
+VERSION     AFE48805.1
+DBSOURCE    accession JN874560.1
+KEYWORDS    .
+SOURCE      Rabbit coronavirus HKU14
+  ORGANISM  Rabbit coronavirus HKU14
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1363)
+  AUTHORS   Lau,S.K., Woo,P.C., Yip,C.C., Fan,R.Y., Huang,Y., Wang,M., Guo,R.,
+            Lam,C.S., Tsang,A.K., Lai,K.K., Chan,K.H., Che,X.Y., Zheng,B.J. and
+            Yuen,K.Y.
+  TITLE     Isolation and Characterization of a Novel Betacoronavirus Subgroup
+            A Coronavirus, Rabbit Coronavirus HKU14, from Domestic Rabbits
+  JOURNAL   J. Virol. 86 (10), 5481-5496 (2012)
+   PUBMED   22398294
+REFERENCE   2  (residues 1 to 1363)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Yip,C.C.Y., Fan,R.Y.Y., Wang,M., Huang,Y.,
+            Guo,R.T., Lam,C.S.F., Lai,K.K.Y., Chan,K.H., Che,X.Y., Zheng,B.J.
+            and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2011) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1363
+                     /organism="Rabbit coronavirus HKU14"
+                     /strain="HKU14-3"
+                     /host="Oryctolagus cuniculus"
+                     /db_xref="taxon:1160968"
+                     /country="China"
+                     /collection_date="2007"
+     Protein         1..1363
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..539
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          783..1328
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1363
+                     /gene="S"
+                     /coded_by="JN874560.1:23802..27893"
+ORIGIN      
+        1 mflillislp tafavigdlk cttasindvd tgtpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypi sgstfrnmal kgtlllstlw fkppflsdfn ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv qphttisdnk vlglleisvc qytmceypht ichpnlgnkr
+      181 ielwhfdtdv vsclykrnft ydvnadflyf hfyqeggtfy ayftdtgfvt kflfnvylgt
+      241 vlshyyvmpl tcdstlsley wvtpltprqy llafnqdgii fnaadcmsdf mseikcktqs
+      301 iapstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmsfiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsynyki
+      421 dtsgtscqly ynlpaanvsv srlnpstwnr rfgfteqsvf kpqpagvfta hdvvyaqhcf
+      481 kapttfcpck ldgslcvgsg sgvdagfkdt gigtcpagtn yltcynsvqc ncqctpdpil
+      541 skatgpykcp qtkylvgvge hcsglaiksd ycggnpctcq pqaflgwsvd sclqgdrcni
+      601 fanlilhgvn sgttcstdlq kantdiivgv cvnydlygis gqgifvevna tyynswqnll
+      661 ydsngnlygf rdyltnrtfm irscysgrvs aafhanssep allfrnikcn yvfnntfarq
+      721 lqpinyfdsy lgcivnadns tastvqtcdl tvgsgycvdy stqlrsrrai ttgyrftnfe
+      781 pftvnavnds lqpvgglyei qipseftign meefiqtsap kvtidcaafv cgdyaacksq
+      841 lveygsfcdn inailtevne lldttqlqva nslmngvtls tklkdgvnfn vddinfspvl
+      901 gclgsdcnka ssrsaiedll fdkvkladvg fveaynnctg gaeirdlicv qsyngikvlp
+      961 pllsenqisg ytlaatsasl fppwtaaagv pfylnvqfri nglgvtmdvl sqnqkliana
+     1021 fnnaldaiqe gfdatnsala kiqavvnana ealnnllqql snrfgaisss lqeilsrlda
+     1081 leaaaqidrl ingrltalna yvsqqlsdst lvkfsaaqai ekvnecvksq ssrinfcgng
+     1141 nhiislvqna pyglyfihfs yvptkyvtak vspglciagd rgiapksgyf vnvnntwmft
+     1201 gsgyyypepi tennvavmst cavnytkapd vmlnistpnl pdfkeeldqw fknqtsvapd
+     1261 lsldyinvtf ldlqdemnrl qeaikvlnqs yinlkdigty eyyvkwpwyv wlliglagva
+     1321 vlvllfficc ctgcgtscfk kcggccddyt ghqelvikts hdd
+//
+
+LOCUS       AFE48795                1362 aa            linear   VRL 30-APR-2012
+DEFINITION  spike protein [Rabbit coronavirus HKU14].
+ACCESSION   AFE48795
+VERSION     AFE48795.1
+DBSOURCE    accession JN874559.1
+KEYWORDS    .
+SOURCE      Rabbit coronavirus HKU14
+  ORGANISM  Rabbit coronavirus HKU14
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus; unclassified Embecovirus.
+REFERENCE   1  (residues 1 to 1362)
+  AUTHORS   Lau,S.K., Woo,P.C., Yip,C.C., Fan,R.Y., Huang,Y., Wang,M., Guo,R.,
+            Lam,C.S., Tsang,A.K., Lai,K.K., Chan,K.H., Che,X.Y., Zheng,B.J. and
+            Yuen,K.Y.
+  TITLE     Isolation and Characterization of a Novel Betacoronavirus Subgroup
+            A Coronavirus, Rabbit Coronavirus HKU14, from Domestic Rabbits
+  JOURNAL   J. Virol. 86 (10), 5481-5496 (2012)
+   PUBMED   22398294
+REFERENCE   2  (residues 1 to 1362)
+  AUTHORS   Lau,S.K.P., Woo,P.C.Y., Yip,C.C.Y., Fan,R.Y.Y., Wang,M., Huang,Y.,
+            Guo,R.T., Lam,C.S.F., Lai,K.K.Y., Chan,K.H., Che,X.Y., Zheng,B.J.
+            and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-OCT-2011) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1362
+                     /organism="Rabbit coronavirus HKU14"
+                     /strain="HKU14-1"
+                     /host="Oryctolagus cuniculus"
+                     /db_xref="taxon:1160968"
+                     /country="China"
+                     /collection_date="2006"
+     Protein         1..1362
+                     /product="spike protein"
+     Region          16..291
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          325..538
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          782..1327
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1362
+                     /gene="S"
+                     /coded_by="JN874559.1:23793..27881"
+ORIGIN      
+        1 mflillislp tafavigdlk cttasindvd tgtpsistdt vdvtnglgty yvldrvylnt
+       61 tlllngyypi sgstfrnmal kgtlllstlw fkppflsdfn ngifakvknt kvikngvmys
+      121 efpaitigst fvntsysvvv qphttisdkv lglleisvcq ytmceyphti chpnlgnkri
+      181 elwhfdtdvv sclykrnfty dvnadflyfh fyqeggtfya yftdtgfvtk flfnvylgtv
+      241 lshyyvmplt cdstlsleyw vtpltprqyl lafnqdgiif naadcmsdfm seikcktqsi
+      301 apstgvyeln gytvqpiadv yrripnlpdc nieawlndks vpsplnwerk tfsncnfnms
+      361 slmsfiqads ftcnnidaak iygmcfssit idkfaipngr kvdlqlgnlg ylqsfnykid
+      421 tsatscqlyy nlpaanvsvs rlnpstwnrr fgfteqsvfk pqpagvftah dvvyaqhcfk
+      481 apttfcpckl dgslcvgsgs gvdagfkhtg igtcpagtny ltcynsvqcn cqctpdpils
+      541 katgpykcpq tkylvgvgeh csglaiksdy cggnpctcqp qaflgwsvds clqgdrcnif
+      601 anlilhgvns gttcstdlqk antdiivgvc vnydlygisg qgifvevnat yynswqnlly
+      661 dsngnlygfr dyltnrtfmi rscysgrvsa afhanssepa llfrnikcny vfnntfarql
+      721 qpinyfdsyl gcvvnadnst astvqtcdlt vgsgycvdys tqlrsrrait tgyrftnfep
+      781 ftvnavndsl qpvgglyeiq ipseftignm eefiqtsapk vtidcaafvc gdyaacksql
+      841 veygsfcdni nailtevnel ldttqlqvan slmngvtlst klkdgvnfnv ddinfspvlg
+      901 clgsdcnkas srsaiedllf dkvkladvgf veaynnctgg aeirdlicvq syngikvlpp
+      961 llsenqisgy tlaatsaslf ppwtaaagvp fylnvqfrin glgvtmdvls qnqklianaf
+     1021 nnaldaiqeg fdatnsalak iqavvnanae alnnllqqls nrfgaisssl qeilsrldal
+     1081 eaaaqidrli ngrltalnay vsqqlsdstl vkfsaaqame kvnecvksqs srinfcgngn
+     1141 hiislvqnap yglyfihfsy vptkyvtakv spglciagdr giapksgyfv nvnntwmftg
+     1201 sgyyypepit ennvavmstc avnytkapdv mlnistpnlp dfkeeldqwf knqtsvapdl
+     1261 sldyinvtfl dlqdemnrlq eaikvlnqsy inlkdigtye yyvkwpwyvw lliglagvav
+     1321 lvllfficcc tgcgtscfkk cggccddytg hqelviktsh dd
+//
+

@@ -1,0 +1,62 @@
+LOCUS       QDF43830                1241 aa            linear   VRL 30-JUN-2019
+DEFINITION  spike glycoprotein [Coronavirus BtRs-BetaCoV/YN2018C].
+ACCESSION   QDF43830
+VERSION     QDF43830.1
+DBSOURCE    accession MK211377.1
+KEYWORDS    .
+SOURCE      Coronavirus BtRs-BetaCoV/YN2018C
+  ORGANISM  Coronavirus BtRs-BetaCoV/YN2018C
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus; unclassified Sarbecovirus.
+REFERENCE   1  (residues 1 to 1241)
+  AUTHORS   Han,Y. and Wu,Z.
+  TITLE     The identification of diverse bat alphacoronaviruses and
+            betacoronaviruses in Chinese provinces provides new insights into
+            the evolution and origin of CoV-related diseases
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1241)
+  AUTHORS   Han,Y. and Wu,Z.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-NOV-2018) MOH Key Laboratory of Systems Biology of
+            Pathogens, Institute of Pathogen Biology, Chinese Academy of
+            Medical Sciences & Peking Union Medical College, No.1
+            Dishengdonglu, Yizhuang, Beijing 100176, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1241
+                     /organism="Coronavirus BtRs-BetaCoV/YN2018C"
+                     /isolate="BtRs-BetaCoV/YN2018C"
+                     /host="Rhinolophus affinis"
+                     /db_xref="taxon:2591236"
+                     /country="China"
+                     /collection_date="Sep-2016"
+     Protein         1..1241
+                     /product="spike glycoprotein"
+                     /name="S"
+     CDS             1..1241
+                     /coded_by="MK211377.1:21490..25215"
+ORIGIN      
+        1 mkilifaflv tlvkaqegcg iiskkpqpkm aqvsssrqgv yynddifrsd vlhltqdyfl
+       61 pfdsnltqyf slnvdsdryt yfdnpildfg dgvyfaasek snvirgwifg stfdnttqsa
+      121 vivnnsthii irvcnfnlck epmytvsrgt qqsswvyqsa fnctydrver sfqldtapkt
+      181 gnfkdlreyv fknrdgflsv yqtytavnlp rglpigfsvl rpilklpfgi nitsyrvvma
+      241 mfsqttsnfl pesaayyvgn lkyttfmlrf nengtitdai dcaqnplael kctiknfnvs
+      301 kgiyqtsnfr vsptqevvrf pnitnrcpfd kvfnatrfps vyawertkis dcvadytvly
+      361 nstsfstfkc ygvspsklid lcftsvyadt flirssevrq vapgetgvia dynyklpddf
+      421 tgcviawnta qqdkgqyyyr ssrktklkpf erdlssdeng vrtlstydfy ptvpieyqat
+      481 rvvvlsfell napatvcgpk lstglvknqc vnfnfnglkg tgvltdsskr fqsfqqfgrd
+      541 tsdftdsvrd pqtlqvldit pcsfggvsvi tpgtnassev avlyqdvnct dvptairadq
+      601 ltpawrvyst gvnvfqtqag cligaehvna syecdipiga gicasyhtas tlrsvgqksi
+      661 vaytmslgae nsiayannsi aiptnfsisv ttevmpvsma ktsvdctmyi cgdsqecsnl
+      721 llqygsfctq lnraltgval eqdkntqevf aqvkqmyktp aikdfggfnf sqilpdpskp
+      781 tkrsfiedll fnkvtladag fmkqygeclg dinardlica qkfngltvlp plltddmiaa
+      841 ytaalvsgta tagwtfgaga alqipfamqm ayrfngigvt qnvlyenqkq ianqfnkais
+      901 qiqeslttts talgklqdvv nqnaqalntl vkqlssnfga issvlndils rldkveaevq
+      961 idrlitgrlq slqtyvtqql iraaeirasa nlaatkmsec vlgqskrvdf cgrgyhlmsf
+     1021 pqaaphgvvf lhvtyvpsqe knfttapaic hegkayfpre gvfvsngtsw fitqrnfysp
+     1081 qiittdntfv agncdvvigi inntvydplq peldsfkeel dkyfknhtsp dvdlgdisgi
+     1141 nasvvniqke idrlnevakn lneslidlqe lgkyeqyikw pwyvwlgfia gliaivmati
+     1201 llccmtsccs clkgacscgs cckfdeddse pvlkgvklhy t
+//
+

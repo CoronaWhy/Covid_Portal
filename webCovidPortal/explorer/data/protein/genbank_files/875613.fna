@@ -1,0 +1,76 @@
+LOCUS       ADM33582                1280 aa            linear   VRL 08-OCT-2010
+DEFINITION  spike glycoprotein [Bat coronavirus HKU9-10-2].
+ACCESSION   ADM33582
+VERSION     ADM33582.1
+DBSOURCE    accession HM211101.1
+KEYWORDS    .
+SOURCE      Bat coronavirus HKU9-10-2
+  ORGANISM  Bat coronavirus HKU9-10-2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus.
+REFERENCE   1  (residues 1 to 1280)
+  AUTHORS   Lau,S.K., Poon,R.W., Wong,B.H., Wang,M., Huang,Y., Xu,H., Guo,R.,
+            Li,K.S., Gao,K., Chan,K.H., Zheng,B.J., Woo,P.C. and Yuen,K.Y.
+  TITLE     Coexistence of Different Genotypes in the Same Bat and Serological
+            Characterization of Rousettus Bat Coronavirus HKU9 Belonging to a
+            Novel Betacoronavirus Subgroup
+  JOURNAL   J. Virol. 84 (21), 11385-11394 (2010)
+   PUBMED   20702646
+REFERENCE   2  (residues 1 to 1280)
+  AUTHORS   Lau,S.K.P., Poon,R.W.S., Wong,B.H., Wang,M., Huang,Y., Xu,H.,
+            Guo,R., Li,K.S., Gao,K., Chan,K.H., Zheng,B.J., Woo,P.C. and
+            Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-MAY-2010) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong
+FEATURES             Location/Qualifiers
+     source          1..1280
+                     /organism="Bat coronavirus HKU9-10-2"
+                     /host="bat BF_506I"
+                     /db_xref="taxon:875613"
+                     /country="China: Guangdong province"
+                     /collection_date="10-Apr-2006"
+     Protein         1..1280
+                     /product="spike glycoprotein"
+                     /name="S"
+     Region          365..550
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <532..582
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          709..1269
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1280
+                     /gene="S"
+                     /coded_by="HM211101.1:20898..24740"
+ORIGIN      
+        1 mlvillmlpl vfarpscvti snlqyvdhny thrsfdmsav srvfpdpfva ysgqtlkqsl
+       61 yladtsnttv ypvtppavng kpgiynltil pvgdgflvqt ymykdqpsdt ycqepfgvaf
+      121 gttfeydria ivtivpgykg swsavqkqtt tnvnilvcsn atlcaypafn rwgpagtiyt
+      181 tndfvvygds cfinntftis intsrlnlgf rfndgnlyly hskwlpmqgl nlmvdyplhf
+      241 lmsvgvganl pnmqfyqavv rqgtppvtga ykndanclaf qnnlylayis krdllvsydd
+      301 nglpiavadc sqnagdelyc vtgtfspqvg vyplsryral vsdyvqisqq gsicslpysd
+      361 ilkppqpivw krhtvtncsf dfdaivnrlp tfqlkcfgvs paklaqmcys svtldifran
+      421 tthlanmlgk vpdvfskyny alppdfygcv hsyyindtsp myaiaqqwpa tviapggrqp
+      481 ynsyvgtvln tpnpkctqlt cfgvvvislk pasgkhlvcp sandtdlvtr ecvkynlygy
+      541 tgtgvfness lvipdsklfv asstgdiiaa kvrgkvysit pcvsvpisvg ydpsferall
+      601 fnglscsers vavslpasdy wvaavadnas tgvvtfdtls gcvhnvrnat ditvptclmp
+      661 lgnslclani tqpsqyglst tssvnllslv tydptfqggv kvmspvywis iptnftlgai
+      721 teyiqttspk vnvdcvkylc gdsercttvl lqygtfcddv nkalsevssi idasmislvs
+      781 eitadvvrse nalfdttynf tgllgcvgsn cndrttyrsa lsdllynkvk vtdpgfmssy
+      841 qkcisqwggd irdlfctqnf ngisvlppiv spgmqalyts llvgavasag ytfgvtsvgv
+      901 ipfatqlqfr lnglgvttqv lvenqqlian sfnkalvsiq qgfdatneal skmqsvinqh
+      961 aqqlqtlvsq lgnsfgaiss sineifsrld gleanaqvdr lingrmvvln tyvtqllika
+     1021 sevksqalla kqkisecvks qslrndfcgn gthvfsvpql apngimflhy tykptsyalv
+     1081 qtaaglclnn tgyaprdglf vlpngsiywq ftkmnfynpv rltnsntqvl ttcsvnyttv
+     1141 nytvlpptdn mdfnftaefe kwyknhssqf nntfnpgdfn fstvdiqnel ntlnavvkql
+     1201 nesfidlkkl nvyeqtikwp wyiwlamiag lvglalavvm llcmtnccsc fkgmcackpc
+     1261 hydevedvyp avrvynkrta
+//
+

@@ -1,0 +1,75 @@
+LOCUS       AAV97984                1255 aa            linear   VRL 21-JUL-2006
+DEFINITION  spike glycoprotein [SARS coronavirus A001].
+ACCESSION   AAV97984
+VERSION     AAV97984.1
+DBSOURCE    accession AY687354.1
+KEYWORDS    .
+SOURCE      SARS coronavirus A001
+  ORGANISM  SARS coronavirus A001
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Kan,B., Wang,M., Jing,H., Xu,H., Jiang,X., Yan,M., Liang,W.,
+            Zheng,H., Wan,K., Liu,Q., Cui,B., Xu,Y., Zhang,E., Wang,H., Ye,J.,
+            Li,G., Li,M., Cui,Z., Qi,X., Chen,K., Du,L., Gao,K., Zhao,Y.T.,
+            Zou,X.Z., Feng,Y.J., Gao,Y.F., Hai,R., Yu,D., Guan,Y. and Xu,J.
+  TITLE     Molecular evolution analysis and geographic investigation of severe
+            acute respiratory syndrome coronavirus-like virus in palm civets at
+            an animal market and on farms
+  JOURNAL   J. Virol. 79 (18), 11892-11900 (2005)
+   PUBMED   16140765
+  REMARK    Erratum:[J Virol. 2006 Aug;80(15):7786]
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Xu,J., Kan,B., Yan,M., Liang,W., Zheng,H., Xu,Y., Wang,H., Li,G.,
+            Ye,J., Li,M. and Zhang,E.
+  TITLE     Characterization of SARS coronavirus from animals in Southern China
+  JOURNAL   Unpublished
+REFERENCE   3  (residues 1 to 1255)
+  AUTHORS   Xu,J., Kan,B., Yan,M., Liang,W., Zheng,H. and Xu,Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (16-JUL-2004) Diarrhea Department, Institute for
+            Communicable Disease Control and Prevention, PO Box 5, Changping,
+            Beijing 102206, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus A001"
+                     /isolation_source="palm civets"
+                     /db_xref="taxon:305401"
+     Protein         1..1255
+                     /product="spike glycoprotein"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="AY687354.1:1..3768"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfdnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffvv skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdtwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkrisncva dysvlynsts
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnynykx rylrhgklrp ferdisnvpf spxgkpctpp apncywplrg
+      481 ygfyttsgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstli haeqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsslrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fcrqlnrals giaaeqdrnt revfvqvkqm yktptlkdfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqeeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

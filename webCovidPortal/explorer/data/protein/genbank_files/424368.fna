@@ -1,0 +1,77 @@
+LOCUS       ABN10919                1275 aa            linear   VRL 07-FEB-2007
+DEFINITION  Spike glycoprotein [Bat coronavirus HKU9-2].
+ACCESSION   ABN10919
+VERSION     ABN10919.1
+DBSOURCE    accession EF065514.1
+KEYWORDS    .
+SOURCE      Bat coronavirus HKU9-2
+  ORGANISM  Bat coronavirus HKU9-2
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Nobecovirus.
+REFERENCE   1  (residues 1 to 1275)
+  AUTHORS   Woo,P.C., Wang,M., Lau,S.K., Xu,H., Poon,R.W., Guo,R., Wong,B.H.,
+            Gao,K., Tsoi,H.W., Huang,Y., Li,K.S., Lam,C.S., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Comparative analysis of twelve genomes of three novel group 2c and
+            group 2d coronaviruses reveals unique group and subgroup features
+  JOURNAL   J. Virol. 81 (4), 1574-1585 (2007)
+   PUBMED   17121802
+REFERENCE   2  (residues 1 to 1275)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wang,M., Xu,H.F., Poon,R.W.S., Guo,R.T.,
+            Wong,B.H.L., Gao,K., Tsoi,H.W., Huang,Y., Li,K.S.M., Chan,K.H.,
+            Zheng,B.J. and Yuen,K.Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (18-OCT-2006) Microbiology, The University of Hong Kong,
+            University Pathology Building, Queen Mary Hospital, Hong Kong,
+            China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1275
+                     /organism="Bat coronavirus HKU9-2"
+                     /strain="BF_017I"
+                     /host="bat"
+                     /db_xref="taxon:424368"
+                     /country="China: Guangdong province"
+     Protein         1..1275
+                     /product="spike glycoprotein"
+     Region          365..550
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <530..582
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          670..1264
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1275
+                     /gene="S"
+                     /coded_by="EF065514.1:20898..24725"
+ORIGIN      
+        1 mlvillilpl vsarpscvti enlsyvahnf thvsfsmskv srifpdpfva ysgqtlrqsl
+       61 yiadtsnttv ypitpppvgg npgiynlttl pvnegflvht fmyrdqpvdm ycqepfgvaf
+      121 gttfqndlia ivmivpgqyg swaevkrqnt tnvhilvcgn atlcqypafn rwgpagsiys
+      181 sdafttyges cfinntfsin lntsrlnlgf rfsdgnlyiy hsswlpisgl nlmldyplhy
+      241 ymsvgvgsnl pnmqffqsvs rkgtppaqga nnndgsclaf qnnlylayvt rrellvsydd
+      301 ngfptavadc sydagdelyc vtgsftpqvg vyplsryraq vsgyvqitqq gdtcvlpysd
+      361 ivrppqpvvw rrytvtscsf dfeaivnrlp tfelkcfgis parlaqmcys svtldlfran
+      421 tthlanmlgg vpdlfskyny alpsnfygcv hayyindtnk dyaiaqrwpa tpitpggrqp
+      481 ysdyvrtvln tpnpscttlt cfgvvvislk pasgrklvcp svndtdmrtn ecvkynlygy
+      541 tgtgvfnvst ltipdsklfv angagdiiaa svkgtvysit pcvsvpvsvg ydpnferall
+      601 fnglackera vavsmpaslf wrtvvqdnit nsvttfdtls gcvynvynat nivvqscsmp
+      661 lgnslclanl ttstvsvsra gnllslvtyd ptaiagvkvm tpvywisipt nftlgavsey
+      721 iqttspkinv dcvkylcgds ercttvllqy gtfcndvnka lsevsaiida smvslvseit
+      781 advvrsenah fdttynftgl lgcvgsscss tyrsalsdll ynkvkvtdpg fmssyqkcis
+      841 qwggdvrdlf ctqnfngisv lppivspgmq alytsllvga vasagftfgv tsvgvipfat
+      901 qlqfrlnglg vttqvlvenq qliansfnka lvsiqqgfda tnealskmqs vinqhaqqlq
+      961 tlvsqlgnsf gaisssinei fsrldglean aqvdrlingr mvvlntyvtq llikasevra
+     1021 qallakqkis ecvksqslrn dfcgngthvf svpqlapngi mflhytykpt ayavvqtaag
+     1081 lcfnntgyap vgglfvlpnd siywhftkln fynpvnlsns ntqvlttcsv nytavnytvl
+     1141 dpvvnsdfnf taefdkwykn hssyfnntfn pgdfnfstvd ierelstlte vvrqlnesfi
+     1201 dlkklnvyeq tikwpwyvwl amiaglvgla lavvmllcmt nccscfkgmc ackpchydev
+     1261 edvypavrvy nkrta
+//
+

@@ -1,0 +1,155 @@
+LOCUS       AGZ48828                1256 aa            linear   VRL 22-NOV-2013
+DEFINITION  spike protein [Bat SARS-like coronavirus WIV1].
+ACCESSION   AGZ48828
+VERSION     AGZ48828.1
+DBSOURCE    accession KC881007.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus WIV1
+  ORGANISM  Bat SARS-like coronavirus WIV1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1256)
+  AUTHORS   Ge,X.Y., Li,J.L., Yang,X.L., Chmura,A.A., Zhu,G., Epstein,J.H.,
+            Mazet,J.K., Hu,B., Zhang,W., Peng,C., Zhang,Y.J., Luo,C.M., Tan,B.,
+            Wang,N., Zhu,Y., Crameri,G., Zhang,S.Y., Wang,L.F., Daszak,P. and
+            Shi,Z.L.
+  TITLE     Isolation and characterization of a bat SARS-like coronavirus that
+            uses the ACE2 receptor
+  JOURNAL   Nature 503, 535-538 (2013)
+   PUBMED   24172901
+REFERENCE   2  (residues 1 to 1256)
+  AUTHORS   Ge,X.-Y., Li,J.-L., Yang,X.-L., Hu,B., Zhang,W., Peng,C.,
+            Zhang,Y.-J., Luo,C.-M., Tan,B., Wang,N., Zhu,Y., Crameri,G.,
+            Wang,L.-F., Daszak,P. and Shi,Z.-L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-APR-2013) Wuhan Institute of Virology, Chinese
+            Academy of Sciences, 44 Xiao Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1256
+                     /organism="Bat SARS-like coronavirus WIV1"
+                     /isolate="WIV1"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1415852"
+                     /country="China"
+                     /collection_date="18-Sep-2012"
+     Protein         1..1256
+                     /product="spike protein"
+     Region          <103..280
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          318..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          649..1253
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1256
+                     /gene="S"
+                     /coded_by="KC881007.1:1..3771"
+ORIGIN      
+        1 mkllvlvfat lvssytiekc ldfddrtppa ntqflsshrg vyypddifrs nvlhlvqdhf
+       61 lpfdsnvtrf itfglnfdnp iipfkdgiyf aateksnvir gwvfgstmnn ksqsviimnn
+      121 stnlviracn felcdnpffv vlksnntqip syifnnafnc tfeyvskdfn ldlgekpgnf
+      181 kdlrefvfrn kdgflhvysg yqpisaasgl ptgfnalkpi fklplginit nfrtlltafp
+      241 prpdywgtsa aayfvgylkp ttfmlkyden gtitdavdcs qnplaelkcs vksfeidkgi
+      301 yqtsnfrvap skevvrfpni tnlcpfgevf nattfpsvya werkrisncv adysvlynst
+      361 sfstfkcygv satklndlcf snvyadsfvv kgddvrqiap gqtgviadyn yklpddftgc
+      421 vlawntrnid atqtgnynyk yrslrhgklr pferdisnvp fspdgkpctp pafncywpln
+      481 dygfyitngi gyqpyrvvvl sfellnapat vcgpklstdl iknqcvnfnf ngltgtgvlt
+      541 psskrfqpfq qfgrdvsdft dsvrdpktse ildispcsfg gvsvitpgtn tssevavlyq
+      601 dvnctdvpva ihadqltpsw rvhstgnnvf qtqagcliga ehvdtsyecd ipigagicas
+      661 yhtvsslrst sqksivaytm slgadssiay snntiaiptn fsisittevm pvsmaktsvd
+      721 cnmyicgdst ecanlllqyg sfctqlnral sgiaveqdrn trevfaqvkq myktptlkdf
+      781 ggfnfsqilp dplkptkrsf iedllfnkvt ladagfmkqy geclgdinar dlicaqkfng
+      841 ltvlpplltd dmiaaytaal vsgtatagwt fgagaalqip famqmayrfn gigvtqnvly
+      901 enqkqianqf nkaisqiqes ltttstalgk lqdvvnqnaq alntlvkqls snfgaissvl
+      961 ndilsrldkv eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs
+     1021 krvdfcgkgy hlmsfpqaap hgvvflhvty vpsqernftt apaichegka yfpregvfvf
+     1081 ngtswfitqr nffspqiitt dntfvsgscd vvigiinntv ydplqpelds fkeeldkyfk
+     1141 nhtspdvdlg disginasvv niqkeidrln evaknlnesl idlqelgkye qyikwpwyvw
+     1201 lgfiagliai vmvtillccm tsccsclkga cscgscckfd eddsepvlkg vklhyt
+//
+
+LOCUS       AGZ48831                1256 aa            linear   VRL 06-NOV-2013
+DEFINITION  spike protein [Bat SARS-like coronavirus WIV1].
+ACCESSION   AGZ48831
+VERSION     AGZ48831.1
+DBSOURCE    accession KF367457.1
+KEYWORDS    .
+SOURCE      Bat SARS-like coronavirus WIV1
+  ORGANISM  Bat SARS-like coronavirus WIV1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1256)
+  AUTHORS   Ge,X.Y., Li,J.L., Yang,X.L., Chmura,A.A., Zhu,G., Epstein,J.H.,
+            Mazet,J.K., Hu,B., Zhang,W., Peng,C., Zhang,Y.J., Luo,C.M., Tan,B.,
+            Wang,N., Zhu,Y., Crameri,G., Zhang,S.Y., Wang,L.F., Daszak,P. and
+            Shi,Z.L.
+  TITLE     Isolation and characterization of a bat SARS-like coronavirus that
+            uses the ACE2 receptor
+  JOURNAL   Nature (2013) In press
+   PUBMED   24172901
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 1256)
+  AUTHORS   Ge,X.-Y., Li,J.-L., Yang,X.-L., Chmura,A.A., Epstein,J.H., Hu,B.,
+            Zhang,W., Peng,C., Zhang,Y.-J., Luo,C.-M., Tan,B., Wang,N., Zhu,Y.,
+            Crameri,G., Zhang,S.-Y., Wang,L.-F., Daszak,P. and Shi,Z.-L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-JUL-2013) Wuhan Institute of Virology, Chinese
+            Academy of Sciences, 44 Xiao Hong Shan, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1256
+                     /organism="Bat SARS-like coronavirus WIV1"
+                     /isolate="WIV1"
+                     /host="Rhinolophus sinicus"
+                     /db_xref="taxon:1415852"
+                     /country="China"
+                     /collection_date="Sep-2012"
+     Protein         1..1256
+                     /product="spike protein"
+                     /name="S"
+     Region          <103..280
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          318..570
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          649..1253
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1256
+                     /coded_by="KF367457.1:21492..25262"
+ORIGIN      
+        1 mkllvlvfat lvssytiekc ldfddrtppa ntqflsshrg vyypddifrs nvlhlvqdhf
+       61 lpfdsnvtrf itfglnfdnp iipfkdgiyf aateksnvir gwvfgstmnn ksqsviimnn
+      121 stnlviracn felcdnpffv vlksnntqip syifnnafnc tfeyvskdfn ldlgekpgnf
+      181 kdlrefvfrn kdgflhvysg yqpisaasgl ptgfnalkpi fklplginit nfrtlltafp
+      241 prpdywgtsa aayfvgylkp ttfmlkyden gtitdavdcs qnplaelkcs vksfeidkgi
+      301 yqtsnfrvap skevvrfpni tnlcpfgevf nattfpsvya werkrisncv adysvlynst
+      361 sfstfkcygv satklndlcf snvyadsfvv kgddvrqiap gqtgviadyn yklpddftgc
+      421 vlawntrnid atqtgnynyk yrslrhgklr pferdisnvp fspdgkpctp pafncywpln
+      481 dygfyitngi gyqpyrvvvl sfellnapat vcgpklstdl iknqcvnfnf ngltgtgvlt
+      541 psskrfqpfq qfgrdvsdft dsvrdpktse ildispcsfg gvsvitpgtn tssevavlyq
+      601 dvnctdvpva ihadqltpsw rvhstgnnvf qtqagcliga ehvdtsyecd ipigagicas
+      661 yhtvsslrst sqksivaytm slgadssiay snntiaiptn fsisittevm pvsmaktsvd
+      721 cnmyicgdst ecanlllqyg sfctqlnral sgiaveqdrn trevfaqvkq myktptlkdf
+      781 ggfnfsqilp dplkptkrsf iedllfnkvt ladagfmkqy geclgdinar dlicaqkfng
+      841 ltvlpplltd dmiaaytaal vsgtatagwt fgagaalqip famqmayrfn gigvtqnvly
+      901 enqkqianqf nkaisqiqes ltttstalgk lqdvvnqnaq alntlvkqls snfgaissvl
+      961 ndilsrldkv eaevqidrli tgrlqslqty vtqqliraae irasanlaat kmsecvlgqs
+     1021 krvdfcgkgy hlmsfpqaap hgvvflhvty vpsqernftt apaichegka yfpregvfvf
+     1081 ngtswfitqr nffspqiitt dntfvsgscd vvigiinntv ydplqpelds fkeeldkyfk
+     1141 nhtspdvdlg disginasvv niqkeidrln evaknlnesl idlqelgkye qyikwpwyvw
+     1201 lgfiagliai vmvtillccm tsccsclkga cscgscckfd eddsepvlkg vklhyt
+//
+

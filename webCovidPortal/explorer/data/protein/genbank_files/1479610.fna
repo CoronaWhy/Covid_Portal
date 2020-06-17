@@ -1,0 +1,361 @@
+LOCUS       6JHY_A                   290 aa            linear   VRL 26-JUL-2019
+DEFINITION  Chain A, Spike protein.
+ACCESSION   6JHY_A
+VERSION     6JHY_A
+DBSOURCE    pdb: molecule 6JHY, chain 65, release Jul 24, 2019;
+            deposition: Feb 19, 2019;
+            class: VIRAL PROTEIN;
+            source: Mmdb_id: 177689, Pdb_id 1: 6JHY;
+            Exp. method: X-ray Diffraction.
+KEYWORDS    .
+SOURCE      Dromedary camel coronavirus HKU23
+  ORGANISM  Dromedary camel coronavirus HKU23
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 290)
+  AUTHORS   Cheng,Y., He,B., Yang,J., Ye,F., Lin,S., Yang,F., Chen,Z., Chen,Z.,
+            Cao,Y. and Lu,G.
+  TITLE     Crystal structure of the S1 subunit N-terminal domain from DcCoV
+            UAE-HKU23 spike protein
+  JOURNAL   Virology 535, 74-82 (2019)
+   PUBMED   31279241
+  REMARK    Publication Status: Available-Online prior to print
+REFERENCE   2  (residues 1 to 290)
+  AUTHORS   Lu,G., Cheng,Y. and Ye,F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-FEB-2019)
+COMMENT     Crystal Structure of the S1 subunit N-terminal domain from DcCoV
+            UAE-HKU23 spike protein.
+FEATURES             Location/Qualifiers
+     source          1..290
+                     /organism="Dromedary camel coronavirus HKU23"
+                     /db_xref="taxon:1479610"
+     Bond            bond(7,151)
+                     /bond_type="disulfide"
+     SecStr          11..14
+                     /sec_str_type="sheet"
+                     /note="strand 1"
+     SecStr          23..27
+                     /sec_str_type="sheet"
+                     /note="strand 2"
+     SecStr          44..55
+                     /sec_str_type="sheet"
+                     /note="strand 3"
+     Het             bond(45)
+                     /heterogen="(NAG,2322)"
+     SecStr          59..65
+                     /sec_str_type="sheet"
+                     /note="strand 4"
+     SecStr          66..69
+                     /sec_str_type="sheet"
+                     /note="strand 5"
+     SecStr          71..74
+                     /sec_str_type="sheet"
+                     /note="strand 6"
+     SecStr          82..85
+                     /sec_str_type="sheet"
+                     /note="strand 7"
+     SecStr          87..101
+                     /sec_str_type="sheet"
+                     /note="strand 8"
+     SecStr          102..108
+                     /sec_str_type="sheet"
+                     /note="strand 9"
+     SecStr          110..115
+                     /sec_str_type="sheet"
+                     /note="strand 10"
+     Het             bond(119)
+                     /heterogen="(NAG,2266)"
+     SecStr          122..134
+                     /sec_str_type="sheet"
+                     /note="strand 11"
+     SecStr          135..141
+                     /sec_str_type="sheet"
+                     /note="strand 12"
+     SecStr          142..147
+                     /sec_str_type="sheet"
+                     /note="strand 13"
+     Bond            bond(146,179)
+                     /bond_type="disulfide"
+     SecStr          154..158
+                     /sec_str_type="sheet"
+                     /note="strand 14"
+     Bond            bond(158,238)
+                     /bond_type="disulfide"
+     SecStr          178..187
+                     /sec_str_type="sheet"
+                     /note="strand 15"
+     Het             bond(184)
+                     /heterogen="(NAG,2294)"
+     SecStr          192..202
+                     /sec_str_type="sheet"
+                     /note="strand 16"
+     SecStr          203..211
+                     /sec_str_type="sheet"
+                     /note="strand 17"
+     SecStr          216..224
+                     /sec_str_type="sheet"
+                     /note="strand 18"
+     SecStr          229..238
+                     /sec_str_type="sheet"
+                     /note="strand 19"
+     SecStr          245..252
+                     /sec_str_type="sheet"
+                     /note="strand 20"
+     SecStr          253..258
+                     /sec_str_type="sheet"
+                     /note="strand 21"
+     SecStr          259..262
+                     /sec_str_type="sheet"
+                     /note="strand 22"
+     SecStr          263..272
+                     /sec_str_type="sheet"
+                     /note="strand 23"
+     Bond            bond(272,282)
+                     /bond_type="disulfide"
+     SecStr          276..283
+                     /sec_str_type="helix"
+                     /note="helix 1"
+ORIGIN      
+        1 vigdlkcttv sindvdtgvp sistdvvdvt nglgtyyvld rvylnttlll ngyyptsgst
+       61 yrnmalkgtl llstlwfkpp flsdftagif akvkntkvvk sgvtysefpa itigstfvnt
+      121 sysvvvqpht tnldnklqgl leisvcqytm ceypntichp nlgnqrvelw hwdtgvvscl
+      181 ykrnftydvn adylyfhfyq eggtfyayft dtgvvtkflf nvylgtvlsh yyvmpltcns
+      241 amtleywvtp ltskqyllaf nqdgvifnav dcksdfmsei kckthhhhhh
+//
+
+LOCUS       AHN64792                1366 aa            linear   VRL 02-APR-2014
+DEFINITION  spike protein [Dromedary camel coronavirus HKU23].
+ACCESSION   AHN64792
+VERSION     AHN64792.1
+DBSOURCE    accession KF906251.1
+KEYWORDS    .
+SOURCE      Dromedary camel coronavirus HKU23
+  ORGANISM  Dromedary camel coronavirus HKU23
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1366)
+  AUTHORS   Woo,P.C., Lau,S.K., Wernery,U., Wong,E.Y., Tsang,A.K., Johnson,B.,
+            Yip,C.C., Lau,C.C., Sivakumar,S., Cai,J.P., Fan,R.Y., Chan,K.H.,
+            Mareena,R. and Yuen,K.Y.
+  TITLE     Novel betacoronavirus in dromedaries of the middle East, 2013
+  JOURNAL   Emerging Infect. Dis. 20 (4), 560-572 (2014)
+   PUBMED   24655427
+REFERENCE   2  (residues 1 to 1366)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wernery,U., Wong,E.Y.M., Tsang,A.K.L.,
+            Johnson,B., Yip,C.C.Y., Lau,C.C.Y., Sivakumar,S., Cai,J.-P.,
+            Fan,R.Y.Y., Chan,K.-H., Mareena,R. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-NOV-2013) Microbiology, The University of Hong Kong,
+            State Key Laboratory of Emerging Infectious Diseases, University
+            Pathology Building, Queen Mary Hospital, Hong Kong, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1366
+                     /organism="Dromedary camel coronavirus HKU23"
+                     /strain="HKU23-368F"
+                     /host="dromedary camel"
+                     /db_xref="taxon:1479610"
+                     /country="United Arab Emirates: Dubai"
+                     /collection_date="21-May-2013"
+     Protein         1..1366
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          803..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1366
+                     /gene="S"
+                     /coded_by="KF906251.1:23645..27745"
+ORIGIN      
+        1 mfsillislp tafavigdlk cttvsindvd tgvpsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft agifakvknt kvvksgvtys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmceypnt ichpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 ispstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmssiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqavf kpqpagvftn hdvvyaqhcf
+      481 kapttfcpck lngslcvgsg pgidagykys gigtcpagty yltcynynqc tclcapdpit
+      541 stvagsyngv kcpqtrylvg vgehcsglai nsdhcggnlc tcqpqaflgw svdsclqgdr
+      601 cnifsnlilh gvnsgttcst dlqkantdii lgvcvnydly gisgqgifve vnatyynswq
+      661 nllydsngnl ygfrdyltnr tfmirscysg rvsaafhans sepallfrnv kcnyvfnntl
+      721 arqvqsinyf dsylgcvvna dnstsiavqt cdltvgsgyc ldysidrrsr raittgyrft
+      781 nfepftvkav ndslepvggl yeiqipseft ignmeefiqt sspkvtidca afvcgdyaac
+      841 ksqlveygsf cdninailte vnelfdttql qvanslmnga tlstklkdgv nfnvddinfs
+      901 pvlgclgsdc nkastrsaie dllfdkvkls dvgfveaynn ctggaeirdl lcvqsyngik
+      961 vlppllsenq isgytlaats aslfppwtaa agvpfylnvq yringlgvtm dvlsqnqkli
+     1021 anafnnalta iqngfdatns alvkiqsvvn anaealnkll qqlsnrfgai saslqeilsr
+     1081 ldaleaeaqi drlingrlta lnayvsqqls dstlvkfsaa qamekvnecv ksqssrinfc
+     1141 gngnhiislv qnapyglyfi hfnyvptkyv takvspglci agdrgiapks gyfvnvnntw
+     1201 mftgsgyyyp epitennvvv mstcavnytk apdvmlntsi pnlpdfkeel dqwfknqtsv
+     1261 apdlsldyin vtfldlqdem nrlqeaikvl nhsyinlkdi gtyeyyvkwp wyvwlligfa
+     1321 gvamlvllff iccctgcgts cfkkcggccd dytghpelvi ktshdd
+//
+
+LOCUS       AHN64783                1366 aa            linear   VRL 02-APR-2014
+DEFINITION  spike protein [Dromedary camel coronavirus HKU23].
+ACCESSION   AHN64783
+VERSION     AHN64783.1
+DBSOURCE    accession KF906250.1
+KEYWORDS    .
+SOURCE      Dromedary camel coronavirus HKU23
+  ORGANISM  Dromedary camel coronavirus HKU23
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1366)
+  AUTHORS   Woo,P.C., Lau,S.K., Wernery,U., Wong,E.Y., Tsang,A.K., Johnson,B.,
+            Yip,C.C., Lau,C.C., Sivakumar,S., Cai,J.P., Fan,R.Y., Chan,K.H.,
+            Mareena,R. and Yuen,K.Y.
+  TITLE     Novel betacoronavirus in dromedaries of the middle East, 2013
+  JOURNAL   Emerging Infect. Dis. 20 (4), 560-572 (2014)
+   PUBMED   24655427
+REFERENCE   2  (residues 1 to 1366)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wernery,U., Wong,E.Y.M., Tsang,A.K.L.,
+            Johnson,B., Yip,C.C.Y., Lau,C.C.Y., Sivakumar,S., Cai,J.-P.,
+            Fan,R.Y.Y., Chan,K.-H., Mareena,R. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-NOV-2013) Microbiology, The University of Hong Kong,
+            State Key Laboratory of Emerging Infectious Diseases, University
+            Pathology Building, Queen Mary Hospital, Hong Kong, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1366
+                     /organism="Dromedary camel coronavirus HKU23"
+                     /strain="HKU23-362F"
+                     /host="dromedary camel"
+                     /db_xref="taxon:1479610"
+                     /country="United Arab Emirates: Dubai"
+                     /collection_date="15-May-2013"
+     Protein         1..1366
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          803..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1366
+                     /gene="S"
+                     /coded_by="KF906250.1:23645..27745"
+ORIGIN      
+        1 mfsillislp tafavigdlk cttvsindvd tgvpsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft agifakvknt kvvksgvtys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmceypnt ichpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 ispstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmssiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpaanvsv srfnpstwnr rfgfteqavf kpqpagvftn hdvvyaqhcf
+      481 kapttfcpck lngslcvgsg pgidagykys gigtcpagty yltcynynqc tclcapdpit
+      541 stvagsyngv kcpqtrylvg vgehcsglai nsdhcggnlc tcqpqaflgw svdsclqgdr
+      601 cnifsnlilh gvnsgttcst dlqkantdii lgvcvnydly gisgqgifve vnatyynswq
+      661 nllydsngnl ygfrdyltnr tfmirscysg rvsaafhans sepallfrnv kcnyvfnntl
+      721 arqvqsinyf dsylgcvvna dnstsiavqt cdltvgsgyc ldysidrrsr raittgyrft
+      781 nfepftvkav ndslepvggl yeiqipseft ignmeefiqt sspkvtidca afvcgdyaac
+      841 ksqlveygsf cdninailte vnelfdttql qvanslmnga tlstklkdgv nfnvddinfs
+      901 pvlgclgsdc nkastrsaie dllfdkvkls dvgfveaynn ctggaeirdl lcvqsyngik
+      961 vlppllsenq isgytlaats aslfppwtaa agvpfylnvq yringlgvtm dvlsqnqkli
+     1021 anafnnalta iqngfdatns alvkiqsvvn anaealnkll qqlsnrfgai saslqeilsr
+     1081 ldaleaeaqi drlingrlta lnayvsqqls dstlvkfsaa qamekvnecv ksqssrinfc
+     1141 gngnhiislv qnapyglyfi hfnyvptkyv takvspglci agdrgiapks gyfvnvnntw
+     1201 mftgsgyyyp epitennvvv mstcavnytk apdvmlntsi pnlpdfkeel dqwfknqtsv
+     1261 apdlsldyin vtfldlqdem nrlqeaikvl nhsyinlkdi gtyeyyvkwp wyvwlligfa
+     1321 gvamlvllff iccctgcgts cfkkcggccd dytghpelvi ktshdd
+//
+
+LOCUS       AHN64774                1366 aa            linear   VRL 02-APR-2014
+DEFINITION  spike protein [Dromedary camel coronavirus HKU23].
+ACCESSION   AHN64774
+VERSION     AHN64774.1
+DBSOURCE    accession KF906249.1
+KEYWORDS    .
+SOURCE      Dromedary camel coronavirus HKU23
+  ORGANISM  Dromedary camel coronavirus HKU23
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1366)
+  AUTHORS   Woo,P.C., Lau,S.K., Wernery,U., Wong,E.Y., Tsang,A.K., Johnson,B.,
+            Yip,C.C., Lau,C.C., Sivakumar,S., Cai,J.P., Fan,R.Y., Chan,K.H.,
+            Mareena,R. and Yuen,K.Y.
+  TITLE     Novel betacoronavirus in dromedaries of the middle East, 2013
+  JOURNAL   Emerging Infect. Dis. 20 (4), 560-572 (2014)
+   PUBMED   24655427
+REFERENCE   2  (residues 1 to 1366)
+  AUTHORS   Woo,P.C.Y., Lau,S.K.P., Wernery,U., Wong,E.Y.M., Tsang,A.K.L.,
+            Johnson,B., Yip,C.C.Y., Lau,C.C.Y., Sivakumar,S., Cai,J.-P.,
+            Fan,R.Y.Y., Chan,K.-H., Mareena,R. and Yuen,K.-Y.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-NOV-2013) Microbiology, The University of Hong Kong,
+            State Key Laboratory of Emerging Infectious Diseases, University
+            Pathology Building, Queen Mary Hospital, Hong Kong, Hong Kong
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1366
+                     /organism="Dromedary camel coronavirus HKU23"
+                     /strain="HKU23-265F"
+                     /host="dromedary camel"
+                     /db_xref="taxon:1479610"
+                     /country="United Arab Emirates: Dubai"
+                     /collection_date="03-Apr-2013"
+     Protein         1..1366
+                     /product="spike protein"
+     Region          16..292
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          326..540
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          803..1349
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1366
+                     /gene="S"
+                     /coded_by="KF906249.1:23645..27745"
+ORIGIN      
+        1 mfsillislp tafavigdlk cttvsindvd tgvpsistdv vdvtnglgty yvldrvylnt
+       61 tlllngyypt sgstyrnmal kgtlllstlw fkppflsdft agifvkvknt kvvksgvtys
+      121 efpaitigst fvntsysvvv qphttnldnk lqglleisvc qytmceypnt ichpnlgnqr
+      181 velwhwdtgv vsclykrnft ydvnadylyf hfyqeggtfy ayftdtgvvt kflfnvylgt
+      241 vlshyyvmpl tcnsamtley wvtpltskqy llafnqdgvi fnavdcksdf mseikcktls
+      301 ispstgvyel ngytvqpiad vyrripnlpd cnieawlndk svpsplnwer ktfsncnfnm
+      361 sslmssiqad sftcnnidaa kiygmcfssi tidkfaipng rkvdlqlgnl gylqsfnyri
+      421 dttatscqly ynlpasnvsv srfnpstwnr rfgfteqavf kpqpagvftn hdvvyaqhcf
+      481 kapttfcpck lngslcvgsg pgidagykys gigtcpagty yltcynynqc tclcapdpit
+      541 stvagsyngv kcpqtrylvg vgehcsglai nsdhcggnlc tcqpqaflgw svdsclqgdr
+      601 cnifsnlilh gvnsgttcst dlqkantdii lgvcvnydly gisgqgifve vnatyynswq
+      661 nllydsngnl ygfrdyltnr tfmirscysg rvsaafhans sepallfrnv kcnyvfnntl
+      721 arqvqsinyf dsylgcvvna dnstsiavqt cdltvgsgyc ldysidrrsr raittgyrft
+      781 nfepftvkav ndslepvggl yeiqipseft ignmeefiqt sspkvtidca afvcgdyaac
+      841 ksqlleygsf cdninailte vnelfdttql qvanslmnga tlstklkdgv nfnvddinfs
+      901 pvlgclgsdc nkastrsaie dllfdkvkls dvgfveaynn ctggaeirdl lcvqsyngik
+      961 vlppllsenq isgytlaats aslfppwtaa agvpfylnvq yringlgvtm dvlsqnqkli
+     1021 anafnnalta iqngfdatns alvkiqsvvn anaealnkll qqlsnrfgai saslqeilsr
+     1081 ldaleaeaqi drlingrlta lnayvsqqls dstlvkfsaa qamekvnecv ksqssrinfc
+     1141 gngnhiislv qnapyglyfi hfnyvptkyv takvspglci agdrgiapks gyfvnvnntw
+     1201 mftgsgyyyp epitennvvv mstcavnytk apdvmlntsi pnlpdfkeel dqwfknqtsv
+     1261 apdlsldyin vtfldlqdem nrlqeaikvl nhsyinlkdi gtyeyyvkwp wyvwlligfa
+     1321 gvamlvllff iccctgcgts cfkkcggccd dytghpelvi ktshdd
+//
+

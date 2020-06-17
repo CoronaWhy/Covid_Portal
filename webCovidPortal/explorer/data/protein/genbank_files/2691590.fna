@@ -1,0 +1,62 @@
+LOCUS       QHA24687                1359 aa            linear   VRL 31-DEC-2019
+DEFINITION  spike glycoprotein [Pipistrellus abramus bat coronavirus
+            HKU5-related].
+ACCESSION   QHA24687
+VERSION     QHA24687.1
+DBSOURCE    accession MN611520.1
+KEYWORDS    .
+SOURCE      Pipistrellus abramus bat coronavirus HKU5-related
+  ORGANISM  Pipistrellus abramus bat coronavirus HKU5-related
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus; unclassified Merbecovirus.
+REFERENCE   1  (residues 1 to 1359)
+  AUTHORS   Li,B., Si,H.R., Zhu,Y., Yang,X.L., Anderson,D.E., Shi,Z.L.,
+            Wang,L.F. and Zhou,P.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (24-OCT-2019) CAS Key Laboratory of Special Pathogens,
+            Wuhan Institute of Virology, Center for Biosafety Mega-Science,
+            Chinese Academy of Sciences, No.44 Xiao Hong Shan, Wuchang
+            District, Wuhan, Hubei 430071, China
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1359
+                     /organism="Pipistrellus abramus bat coronavirus
+                     HKU5-related"
+                     /isolate="BY140568"
+                     /host="Pipistrellus abramus"
+                     /db_xref="taxon:2691590"
+                     /country="China"
+                     /collection_date="Mar-2018"
+     Protein         1..1359
+                     /product="spike glycoprotein"
+     CDS             1..1359
+                     /gene="S"
+                     /locus_tag="BY140568_gp2"
+                     /coded_by="MN611520.1:21743..25822"
+ORIGIN      
+        1 mirsvlvlmc sltfignrts sqsvdvgpag sgsclrsqvr peyfdivrnt wpmpidtska
+       61 egviypngks ysnisltytg lypkandlgk qylfsdghsa pnqlndlfvs nysaqvesfd
+      121 dgfvvrigaa snktgttvis qttfkpikki ypgfmlghav gnytpanitg rylnhtlvil
+      181 pdgcgtlvha fycvlqprtq ancpgassft svtlwdtpat dcapngvynp lanlnafkly
+      241 fdllnctfky nytitedena ewfgitqdtq gvhlyssrke nvfrnnmfhf atlpvyqkil
+      301 yytviprsir spfndrkawa afyiyklhpl tyllnfdveg yitkavdcgy ddfaqlqcsy
+      361 enfdvetgvy svssfeaspr gefieqatte ecdftpmltg tpppiynfkr lvftncnynl
+      421 tkllslfevs efschrvsps slatgcyssl tvdyfaystd mssylqpgsa geivqfnykq
+      481 dfsnptcrvl atvpqnltsi tkpsnyvhlt ecykstaygk nylynapggy tpclslassg
+      541 fsrdrqshsq elpdgsfltt tgsvysvpsn lqmafiisvq ygtdtnsvcp mqalrndtsi
+      601 edkldvcvey slhgitgrgv fhnctsvglr nqrfvydifd nlvgyhsdng nyycvrpcvs
+      661 vpvsviydkv snshatlfgs vacshvttmm sqfsrmtktn llarttpgpl qttvgcamgf
+      721 inssmvvdec qlplgqslca ippttstrvr ratsgvsdvf qiatlnftsp ltlapinstg
+      781 fvvavptnft fgvtqefiet tiqkitvdck qyvcngfkkc edllkeygqf cskinqalhg
+      841 anlrqdesia nlfssiktqs tqplqaglng dfnltmlqip qvttgerkyr saiedllfnk
+      901 vtiadpgymq gydecmqqgp qsardlicaq yvagykvlpp lydpymeaay tssllgsiag
+      961 aswtaglssf aaipfaqsif yrlngvgitq qvlsenqkii ankfnqalga mqtgftttnl
+     1021 afnkvqdavn anamalskla aelsntfgai sssisdilar ldtveqeaqi drlingrlts
+     1081 lnafvaqqlv rteaaarsaq laqdkvnecv ksqskrngfc gtgthivsfa inapnglyff
+     1141 hvgyqptshv nataayglcn tenppkciap idgyfvlnqt tstarsseyq qwyytgssff
+     1201 hpepiteans kyvsmdvkfe nltnrlpppl lsnstdldfk eeldeffknv ssqgpnfqei
+     1261 skinttllnl ntelmvlsev vkqlnesyid lkelgnytfy qkwpwyiwlg fiaglvalal
+     1321 cvffilcctg cgtnclgklk cnrccdsyde yevekihvh
+//
+

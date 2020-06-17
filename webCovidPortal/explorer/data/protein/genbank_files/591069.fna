@@ -1,0 +1,682 @@
+LOCUS       ACN89692                 228 aa            linear   VRL 24-JUL-2016
+DEFINITION  membrane protein [Murine coronavirus RA59/R13].
+ACCESSION   ACN89692
+VERSION     ACN89692.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 228)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 228)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..228
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..228
+                     /product="membrane protein"
+     Region          15..220
+                     /region_name="Corona_M"
+                     /note="Coronavirus M matrix/glycoprotein; pfam01635"
+                     /db_xref="CDD:279907"
+     CDS             1..228
+                     /coded_by="FJ647218.1:28945..29631"
+ORIGIN      
+        1 mssttqapep vyqwtadeav qflkewnfsl giillfitii lqfgytsrsm fiyvvkmiil
+       61 wlmwpltivl cifncvyaln nvylgfsivf tivsiviwim yfvnsirlfi rtgswwsfnp
+      121 etnnlmcidm kgtvyvrpii edyhtltati irghlymqgv klgtgfslsd lpayvtvakv
+      181 shlctykraf ldkvdgvsgf avyvkskvgn yrlpsnkpsg adtallrt
+//
+
+LOCUS       ACN89691                2733 aa            linear   VRL 24-JUL-2016
+DEFINITION  ORF1b polyprotein, partial [Murine coronavirus RA59/R13].
+ACCESSION   ACN89691
+VERSION     ACN89691.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 2733)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 2733)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..2733
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         <1..2733
+                     /product="ORF1b polyprotein"
+     Region          25..373
+                     /region_name="Corona_RPol_N"
+                     /note="Coronavirus RPol N-terminus; pfam06478"
+                     /db_xref="CDD:284009"
+     Region          452..>702
+                     /region_name="RT_like"
+                     /note="RT_like: Reverse transcriptase (RT, RNA-dependent
+                     DNA polymerase)_like family. An RT gene is usually
+                     indicative of a mobile element such as a retrotransposon
+                     or retrovirus. RTs occur in a variety of mobile elements,
+                     including retrotransposons; cl02808"
+                     /db_xref="CDD:295487"
+     Site            order(625..630,689)
+                     /site_type="other"
+                     /note="NTP binding site [chemical binding]"
+                     /db_xref="CDD:238185"
+     Site            690
+                     /site_type="other"
+                     /note="nucleic acid binding site [nucleotide binding]"
+                     /db_xref="CDD:238185"
+     Region          1218..>1257
+                     /region_name="AAA_19"
+                     /note="Part of AAA domain; pfam13245"
+                     /db_xref="CDD:289986"
+     Region          1265..1511
+                     /region_name="Viral_helicase1"
+                     /note="Viral (Superfamily 1) RNA helicase; pfam01443"
+                     /db_xref="CDD:279750"
+     Region          1374..1513
+                     /region_name="UvrD_C_2"
+                     /note="UvrD-like helicase C-terminal domain; cl22977"
+                     /db_xref="CDD:304668"
+     Region          1540..2128
+                     /region_name="NSP11"
+                     /note="NSP11; pfam06471"
+                     /db_xref="CDD:284002"
+     Region          2436..2731
+                     /region_name="NSP13"
+                     /note="Coronavirus NSP13; pfam06460"
+                     /db_xref="CDD:283991"
+     CDS             1..2733
+                     /coded_by="FJ647218.1:<13521..21722"
+ORIGIN      
+        1 lflcrhrlpv svkrhelfkr vrgtsvnarl vpcasgldtd vqlrafdicn anragiglyy
+       61 kvnccrfqrl dedgnkldkf fvvkrtnlev ynkekecyel tkecgvvaeh efftfdvegs
+      121 rvphivrkdl skftmldlcy alrhfdrndc stlkeillty aeceesyfqk kdwydfvenp
+      181 diinvykklg pifnrallnt akfadalvea glvgvltldn qdlygqwydf gdfvktvpgc
+      241 gvavadsyys ymmpmltmch aldselfvng tyrefdlvqy dftdfklelf tkyfkhwsmt
+      301 yhpntceced drciihcanf nilfsmvlpk tcfgplvrqi fvdgvpfvvs igyhykelgv
+      361 vmnmdvdthr yrlslkdlll yaadpalhva sasalldlrt ccfsvaaits gvkfqtvkpg
+      421 nfnqdfyefi lskgllkegs svdlkhffft qdgnaaitdy nyykynlptm vdikqllfvl
+      481 evvnkyfeiy eggcipatqv ivnnydksag ypfnkfgkar lyyealsfee qdeiyaytkr
+      541 nvlptltqmn lkyaisaknr artvagvsil stmtgrmfhq kclksiaatr gvpvvigttk
+      601 fyggwddmlr rlikdvdspv lmgwdypkcd rampnilriv sslvlarkhd sccshtdrfy
+      661 rlanecaqvl seivmcggcy yvkpggtssg dattafansv fnicqavsan vcslmacngh
+      721 kiedlsirel qkrlysnvyr adhvdpafvs eyyeflnkhf smmilsddgv vcynsefask
+      781 gyianisafq qvlyyqnnvf mseakcwvet diekgphefc sqhtmlvkmd gdevylpypd
+      841 psrilgagcf vddllktdsv llierfvsla idayplvyhe npeyqnvfrv yleyikklyn
+      901 dlgnqildsy svilstcdgq kftdetfykn mylrsavlqs vgacvvcssq tslrcgscir
+      961 kpllcckcay dhvmstdhky vlsvspyvcn spgcdvndvt klylggmsyy cedhkpqysf
+     1021 klvmngmvfg lykqsctgsp yiedfnkias ckwtevddyv lanecterlk lfaaetqkat
+     1081 eeafkqcyas atireivsdr elilsweigk vrpplnknyv ftgyhftnng ktvlgeyvfd
+     1141 kseltngvyy ratttyklsv gdvfiltsha vsslsaptlv pqenytsirf asvysvpetf
+     1201 qnnvpnyqhi gmkryctvqg ppgtgkshla iglavyycta rvvytaasha avdalcekah
+     1261 kflnindctr ivpakvrvdc ydkfkvndtt rkyvfttina lpelvtdiiv vdevsmltny
+     1321 elsvinsrvr akhyvyigdp aqlpaprvll nkgtlepryf nsvtklmccl gpdiflgtcy
+     1381 rcpkeivdtv salvynnklk akndnssmcf kvyykgqtth esssavnmqq ihliskflka
+     1441 npswsnavfi spynsqnyva krvlglqtqt vdsaqgseyd fviysqtaet ahsvnvnrfn
+     1501 vaitrakkgi lcvmssmqlf eslnfttltl dkinnprlqc ttnlfkdcsr syvgyhpaha
+     1561 psflavddky kvggdlavcl nvadsavtys rlislmgfkl dltldgyckl fitrdeaikr
+     1621 vrawvgfdae gahairdsig tnfplqlgfs tgidfvveat gmfaerdgyv fkkaaarapp
+     1681 geqfkhlipl msrgqkwdvv ririvqmlsd hlvdladsvv lvtwaasfel tclryfakvg
+     1741 revvcsvctk ratcfnsrtg yygcwrhsys cdylynpliv diqqwgytgs ltsnhdpics
+     1801 vhkgahvass daimtrclav hdcfcksvnw nleypiisne vsvntscrll qrvmfraaml
+     1861 cnrydvcydi gnpkglacvk gydfkfydas pvvksvkqfv ykyeahkdqf ldglcmfwnc
+     1921 nvdkypanav vcrfdtrvln klnlpgcngg slyvnkhafh tspftraafe nlkpmpffyy
+     1981 sdtpcvymeg meskqvdyvp lrsatcitrc nlggavclkh aeeyreyles yntattagft
+     2041 fwvyktfdfy nlwntftrlq slenvvynlv naghfdgrag elpcavigek viakiqnedv
+     2101 vvfknntpfp tnvavelfak rsirphpelk lfrnlnidvc wshvlwdyak dsvfcsstyk
+     2161 vckytdlqci eslnvlfdgr dngaleafkk crngvyintt kikslsmikg pqradlngvv
+     2221 vekvgdsdve fwfavrkdgd dvifsrtgsl epshyrspqg npggnrvgdl sgnealargt
+     2281 iftqsrllss ftprsemekd fmdldddvfi akyslqdyaf ehvvygsfnq kiigglhlli
+     2341 glarrqqksn lviqefvtyd ssihsyfitd ensgssksvc tvidlllddf vdivkslnlk
+     2401 cvskvvnvnv dfkdfqfmlw cneekvmtfy prlqaaadwk pgyvmpvlyk ylesplervn
+     2461 lwnygkpitl ptgcmmnvak ytqlcqylst ttlavpanmr vlhlgagsdk gvapgsavlr
+     2521 qwlpagsilv dndvnpfvsd svasyygnci tlpfdcqwdl iisdmydplt knigeynvsk
+     2581 dgfftylchl irdklalggs vaikitefsw naelyslmgk fafwtifctn vnasssegfl
+     2641 iginwlnktr teidgktmha nylfwrnstm wnggayslfd mskfplkaag tavvslkpdq
+     2701 indlvlslie kgkllvrdtr kevfvgdslv nvk
+//
+
+LOCUS       ACN89690                 112 aa            linear   VRL 24-JUL-2016
+DEFINITION  non-structural protein ns5 [Murine coronavirus RA59/R13].
+ACCESSION   ACN89690
+VERSION     ACN89690.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 112)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 112)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..112
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..112
+                     /product="non-structural protein ns5"
+     Region          8..112
+                     /region_name="Corona_NS2"
+                     /note="Coronavirus non-structural protein NS2; pfam04753"
+                     /db_xref="CDD:282591"
+     CDS             1..112
+                     /coded_by="FJ647218.1:28352..28690"
+ORIGIN      
+        1 mrptatwiwh vsdawlrrtr dfgvirledf cfqfnysqpr vgycrvplka wcsnqgkfaa
+       61 qftlkscekp ghekfitsft aygrtvqqav sklveeavdf ilfratqler nv
+//
+
+LOCUS       ACN89689                1324 aa            linear   VRL 24-JUL-2016
+DEFINITION  spike protein [Murine coronavirus RA59/R13].
+ACCESSION   ACN89689
+VERSION     ACN89689.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1324)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 1324)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1324
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..1324
+                     /product="spike protein"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          325..534
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          <580..633
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          725..1286
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1324
+                     /coded_by="FJ647218.1:23906..27880"
+ORIGIN      
+        1 mlfvfilflp sclgyigdfr ciqlvnsnga nvsapsiste tvevsqglgt yyvldrvyln
+       61 atllltgyyp vdgskfrnla ltgtnsvsls wfqppylsqf ndgifakvqn lktstpsgat
+      121 ayfptivigs lfgytsytvv iepyngvima svcqyticql pytdckpntn gnkligfwht
+      181 dvkppicvlk rnftlnvnad afyfhfyqhg gtfyayyadk psattflfsv yigdiltqyy
+      241 vlpficnpta gstfaprywv tplvkrqylf nfnqkgvits avdcassyts eikcktqsml
+      301 pstgvyelsg ytvqpvgvvy rrvanlpacn ieewltarsv psplnwerkt fqncnfnlss
+      361 llryvqaesl fcnnidaskv ygrcfgsisv dkfavprsrq vdlqlgnsgf lqtanykidt
+      421 aatscqlhyt lpknnvtinn hnpsswnrry gfndagvfgk nqhdvvyaqq cftvrssycp
+      481 caqpdivspc ttqtkpksaf vnvgdhcegl gvledncgna dphkgcican nsfigwshdt
+      541 clvndrcqif anillngins gttcstdlql pntevvtgic vkydlygitg qgvfkevkad
+      601 yynswqtlly dvngnlngfr dlttnktyti rscysgrvsa afhkdapepa llyrnincsy
+      661 vfsnnisree nplnyfdsyl gcvvnadnrt dealpncdlr mgaglcvdys ksrrahrsvs
+      721 tgyrlttfep ytpmlvndsv qsvdglyemq iptnftighh eefiqtrspk vtidcaafvc
+      781 gdntacrqql veygsfcvnv nailnevnnl ldnmqlqvas almqgvtiss rlpdgisgpi
+      841 ddinfspllg cigstcaedg ngpsairgrs aiedllfdkv klsdvgfvea ynnctggqev
+      901 rdllcvqsfn gikvlppvls esqisgyttg ataaamfppw saaagvpfsl svqyringlg
+      961 vtmnvlsenq kmiasafnna lgaiqdgfda tnsalgkiqs vvnanaealn nllnqlsnrf
+     1021 gaisaslqei ltrleaveak aqidrlingr ltalnayisk qlsdstlikv saaqaiekvn
+     1081 ecvksqttri nfcgngnhil slvqnapygl yfihfsyvpi sfttanvspg lcisgdrgla
+     1141 pkagyfvqdd gewkftgssy yypepitdkn svimsscavn ytkapevfln tsipnppdfk
+     1201 eeldkwfknq tsiapdlsld feklnvtlld ltyemnriqd aikklnesyi nlkevgtyem
+     1261 yvkwpwyvwl liglagvavc vllfficcct gcgsccfkkc gnccdeyggh qdsivihnis
+     1321 shed
+//
+
+LOCUS       ACN89688                 273 aa            linear   VRL 24-JUL-2016
+DEFINITION  non-structural protein ns2 [Murine coronavirus RA59/R13].
+ACCESSION   ACN89688
+VERSION     ACN89688.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 273)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 273)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..273
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..273
+                     /product="non-structural protein ns2"
+     Region          14..265
+                     /region_name="Corona_NS2A"
+                     /note="Coronavirus NS2A protein; pfam05213"
+                     /db_xref="CDD:282997"
+     Region          19..194
+                     /region_name="AKAP7_NLS"
+                     /note="AKAP7 2'5' RNA ligase-like domain; pfam10469"
+                     /db_xref="CDD:287446"
+     CDS             1..273
+                     /coded_by="FJ647218.1:21712..22533"
+ORIGIN      
+        1 msnksilvva vkmafadkpn hfinfplaqf sgfmgkylkl qsqlvemgld cklqkaphvs
+       61 itlldikadq ykqvefaiqe iiddlaayeg divfdnphml grclvldvrg feelhedive
+      121 ilrrrgctad qsrhwiphct vaqfdeeret kgmqfyhkep fylkhnnllt daglelvkig
+      181 sskidgfycs elsvwcgerl cykpptpkfs difgyccidk irgdleigdl pqddeeawae
+      241 lsyhyqrnty ffrhvhdnsi yfrtvcrmkg cmc
+//
+
+LOCUS       ACN89687                  83 aa            linear   VRL 24-JUL-2016
+DEFINITION  envelope protein [Murine coronavirus RA59/R13].
+ACCESSION   ACN89687
+VERSION     ACN89687.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 83)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 83)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..83
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..83
+                     /product="envelope protein"
+     Region          4..75
+                     /region_name="NS3_envE"
+                     /note="Non-structural protein NS3/Small envelope protein
+                     E; pfam02723"
+                     /db_xref="CDD:280820"
+     CDS             1..83
+                     /coded_by="FJ647218.1:28683..28934"
+ORIGIN      
+        1 mfnlfltdtv wyvgqiifif avclmvtiiv vaflasiklc iqlcglcntl vlspsiylyd
+       61 rskqlykyyn eemrlpllev ddi
+//
+
+LOCUS       ACN89686                 454 aa            linear   VRL 24-JUL-2016
+DEFINITION  nucleocapsid protein [Murine coronavirus RA59/R13].
+ACCESSION   ACN89686
+VERSION     ACN89686.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 454)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 454)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..454
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..454
+                     /product="nucleocapsid protein"
+     Region          27..399
+                     /region_name="Corona_nucleoca"
+                     /note="Coronavirus nucleocapsid protein; pfam00937"
+                     /db_xref="CDD:279305"
+     CDS             1..454
+                     /coded_by="FJ647218.1:29646..31010"
+ORIGIN      
+        1 msfvpgqena ggrsssvnra gngilkkttw adqtergpnn qnrgrrnqpk qtattqpnsg
+       61 svvphyswfs gitqfqkgke fqfaegqgvp iangipaseq kgywyrhnrr sfktpdgqqk
+      121 qllprwyfyy lgtgphagas ygdsiegvfw vansqadtnt rsdiverdps sheaiptrfa
+      181 pgtvlpqgfy vegsgrsapa srsgsrsqsr gpnnrarsss nqrqpastvk pdmaeeiaal
+      241 vlaklgkdag qpkqvtkqsa kevrqkilnk prqkrtpnkq cpvqqcfgkr gpnqnfggse
+      301 mlklgtsdpq fpilaelapt vgafffgskl elvkknsgga deptkdvyel qysgavrfds
+      361 tlpgfetimk vlnenlnayq kdggadvvsp kpqrkgrrqa qekkdevdnv svakpkssvq
+      421 rnvsreltpe drsllaqild dgvvpdgled dsnv
+//
+
+LOCUS       ACN89685                4470 aa            linear   VRL 24-JUL-2016
+DEFINITION  ORF1a polyprotein [Murine coronavirus RA59/R13].
+ACCESSION   ACN89685
+VERSION     ACN89685.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 4470)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 4470)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..4470
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..4470
+                     /product="ORF1a polyprotein"
+     Region          1..355
+                     /region_name="DUF3477"
+                     /note="Protein of unknown function (DUF3477); pfam11963"
+                     /db_xref="CDD:152398"
+     Region          <945..1075
+                     /region_name="DUF3477"
+                     /note="Protein of unknown function (DUF3477); pfam11963"
+                     /db_xref="CDD:152398"
+     Region          1084..1332
+                     /region_name="Peptidase_C16"
+                     /note="Peptidase C16 family; pfam01831"
+                     /db_xref="CDD:280077"
+     Region          1323..1453
+                     /region_name="A1pp"
+                     /note="Appr-1'-p processing enzyme; smart00506"
+                     /db_xref="CDD:214701"
+     Region          1327..1476
+                     /region_name="YmdB"
+                     /note="O-acetyl-ADP-ribose deacetylase (regulator of RNase
+                     III), contains Macro domain [Translation, ribosomal
+                     structure and biogenesis]; COG2110"
+                     /db_xref="CDD:225021"
+     Site            order(1330,1348,1355,1357..1358,1438,1440..1442)
+                     /site_type="other"
+                     /note="ADP-ribose binding site [chemical binding]"
+                     /db_xref="CDD:239150"
+     Region          1608..1915
+                     /region_name="Viral_protease"
+                     /note="Papain like viral protease; pfam08715"
+                     /db_xref="CDD:285877"
+     Region          1938..2061
+                     /region_name="NAR"
+                     /note="Nucleic acid-binding domain (NAR); pfam16251"
+                     /db_xref="CDD:292868"
+     Region          3237..3331
+                     /region_name="Corona_NSP4_C"
+                     /note="Coronavirus nonstructural protein 4 C-terminus;
+                     pfam16348"
+                     /db_xref="CDD:292959"
+     Region          3362..3636
+                     /region_name="Peptidase_C30"
+                     /note="Coronavirus endopeptidase C30; pfam05409"
+                     /db_xref="CDD:283148"
+     Region          3924..4012
+                     /region_name="nsp7"
+                     /note="nsp7 replicase; pfam08716"
+                     /db_xref="CDD:285878"
+     Region          4013..4209
+                     /region_name="nsp8"
+                     /note="nsp8 replicase; pfam08717"
+                     /db_xref="CDD:285879"
+     Region          4210..4319
+                     /region_name="nsp9"
+                     /note="nsp9 replicase; pfam08710"
+                     /db_xref="CDD:285872"
+     Region          4331..4449
+                     /region_name="NSP10"
+                     /note="RNA synthesis protein NSP10; pfam09401"
+                     /db_xref="CDD:286486"
+     CDS             1..4470
+                     /coded_by="FJ647218.1:187..13599"
+ORIGIN      
+        1 makmgkyglg fkwapefpwm lpnaseklgn perseedgfc psaaqepkvk gktlvnhvrv
+       61 ncsrlpalec cvqsaiirdi fvdedpqkve astmmalqfg savlvkpskr lsiqawtnlg
+      121 vlpktaamgl fkrvclcntr ecscdahvaf hlftvqpdgv clgngrfigw fvpvtaipey
+      181 akqwlqpwsi llrkggnkgs vtsghfrrav tmpvydfnve daceevhlnp kgkysckaya
+      241 llkgyrgvkp ilfvdqygcd ytgclakgle dygdltlsem kelfpvwrds ldsevlvawh
+      301 vdrdpraamr lqtlatvrci dyvgqptedv vdgdvvvrep ahllaanaiv krlprlvetm
+      361 lytdssvtef cyktklcecg fitqfgyvdc cgdtcdfrgw vagnmmdgfp cpgctknymp
+      421 weleaqssgv ipeggvlftq stdtvnresf klyghavvpf gsavywspcp gmwlpviwss
+      481 vksysgltyt gvvgckaivq etdaicrsly mdyvqhkcgn leqrailgld dvyhrqllvn
+      541 rgdyslllen vdlfvkrrae fackfatcgd glvpllldgl vprsyyliks gqaftsmmvn
+      601 fshevtdmcm dmallfmhdv kvatkyvkkv tgklavrfka lgvavvrkit ewfdlavdia
+      661 asaagwlcyq lvnglfavan gvitfvqevp elvknfvdkf kaffkvlids msvsilsglt
+      721 vvktasnrvc lagskvyevv qkslsayvmp vgcseatclv geiepavfed dvvdvvkapl
+      781 tyqgcckppt sfekicivdk lymakcgdqf ypvvvdndtv gvldqcwrfp cagkkvefnd
+      841 kpkvrkipst rkikitfald atfdsvlska csefevdkdv tldelldvvl davestlspc
+      901 kehdvigtkv calldrlagd yvylfdeggd eviaprmycs fsapddedcv aadvvdaden
+      961 qdddaedsav lvadtqeedg vakgqveads eicvahtgsq eelaepdavg sqtpiasaee
+     1021 tevgeasdre giaeakatvc adavdacpdq veafeiekve dsildelqte lnapadktye
+     1081 dvlafdavcs ealsafyavp sdethfkvcg fyspaiertn cwlrstlivm qslplefkdl
+     1141 emqklwlsyk agydqcfvdk lvksvpksii lpqggyvadf ayfflsqcsf kayanwrcle
+     1201 cdmelklqgl damffygdvv shmckcgnsm tllsadipyt lhfgvrddkf cafytprkvf
+     1261 raacavdvnd chsmavvegk qidgkvvtkf igdkfdfmvg ygmtfsmspf elaqlygsci
+     1321 tpnvcfvkgd vikvvrlvna evivnpangr mahgagvaga iaekagsafi ketsdmvkaq
+     1381 gvcqvgecye saggklckkv lnivgpdarg hgkqcyslle rayqhinkcd nvvttlisag
+     1441 ifsvptdvsl tyllgvvtkn vilvsnnqdd fdviekcqvt svagtkalsl qlaknlcrdv
+     1501 kfvtnacssl fsescfvssy dvlqevealr hdiqldddar vfvqanmdcl ptdwrlvnkf
+     1561 dsvdgvrtik yfecpggifv ssqgkkfgyv qngsfkeasv sqirallank vdvlctvdgv
+     1621 nfrsccvaeg evfgktlgsv fcdginvtkv rcsaiykgkv ffqysdlsea dlvavkdafg
+     1681 fdepqllkyy tmlgmckwpv vvcgnyfafk qsnnncyinv aclmlqhlsl kfpkwqwqea
+     1741 wnefrsgkpl rfvslvlakg sfkfnepsds idfmrvvlre adlsgatcnl efvckcgvkq
+     1801 eqrkgvdavm hfgtldkgdl vrgyniactc gsklvhctqf nvpflicsnt pegrklpddv
+     1861 vaaniftggs vghythvkck pkyqlydacn vnkvseakgn ftdclylknl kqtfssvltt
+     1921 fylddvkcve ykpdlsqyyc esgkyytkpi ikaqfrtfek vdgvytnfkl vghsiaekln
+     1981 aklgfdcnsp fveykitewp tatgdvvlas ddlyvsryss gcitfgkpvv wlgheeaslk
+     2041 sltyfnrpsv vcenkfnvlp vdvseptdkg pvpaavlvtg vpgadasaga gfakeqkaca
+     2101 sasvedqvvt evrqepsvsa advkevklng vkkpvkvegs vvvndptset kvvkslsivd
+     2161 vydmfltgck yvvwtanels rlvnsptvre yvkwgmgkiv tpakllllrd ekqefvapkv
+     2221 vkakaiacyc avkwfllycf swikfntdnk viyttevask ltfklcclaf knalqtfnws
+     2281 vvsrgfflva tvfllwfnfl yanvilsdfy lpnigplptf vgqivawfkt tfgvsticdf
+     2341 yqvtdlgyrs sfcngsmvce lcfsgfdmld nydainvvqh vvdrrlsfdy islfklvvel
+     2401 vigyslytvc fyplfvligm qllttwlpef fmletmhwsa rlfvfvanml paftllrfyi
+     2461 vvtamykvyc lcrhvmygcs kpgclfcykr nrsvrvkcst vvggslryyd vmanggtgfc
+     2521 tkhqwnclnc nswkpgntfi theaaadlsk elkrpvnptd sayysvtevk qvgcsmrlfy
+     2581 erdgqrvydd vnaslfvdmn gllhskvkgv pethvvvven eadkagflga avfyaqslyr
+     2641 pmlmvekkli ttantglsvs rtmfdlyvds llnvldvdrk sltsfvnaah nslkegvqle
+     2701 qvmdtfigca rrkcaidsdv etksitksvm savnagvdft descnnlvpt yvksdtivaa
+     2761 dlgvliqnna khvqanvaka anvaciwsvd afnqlsadlq hrlrkacskt glkikltynk
+     2821 qeanvpiltt pfslkggavf srmlqwlfva nlicfivlwa lmptyavhks dmqlplyasf
+     2881 kvidngvlrd vsvtdacfan kfnqfdqwye stfglayyrn skacpvvvav idqdightlf
+     2941 nvpttvlryg fhvlhfitha fatdsvqcyt phmqipydnf yasgcvlssl ctmlahadgt
+     3001 phpycytggv mhnaslyssl aphvrynlas sngyirfpev vsegivrvvr trsmtycrvg
+     3061 lceeaeegic fnfnrswvln npyyrampgt fcgrnafdli hqvlgglvrp idffaltass
+     3121 vagailaiiv vlafyylikl krafgdytsv vvinvivwci nflmlfvfqv yptlsclyac
+     3181 fyfyttlyfp seisvvmhlq wlvmygaimp lwfciiyvav vvsnhalwlf sycrkigtev
+     3241 rsdgtfeema lttfmitkes ycklknsvsd vafnrylsly nkyryfsgkm dtaayreaac
+     3301 sqlakametf nhnngndvly qpptasvtts flqsgivkmv sptskvepci vsvtygnmtl
+     3361 nglwlddkvy cprhvicssa dmtdpdypnl lcrvtssdfc vmsgrmsltv msyqmqgcql
+     3421 vltvtlqnpn tpkysfgvvk pgetftvlaa yngrpqgafh vtlrsshtik gsflcgscgs
+     3481 vgyvltgdsv rfvymhqlel stgchtgtdf sgnfygpyrd aqvvqlpvqd ytqtvnvvaw
+     3541 lyaaifnrcn wfvqsdscsl eefnvwamtn gfssikadlv ldalasmtgv tveqvlaaik
+     3601 rlhsgfqgkq ilgscvlede ltpsdvyqql agvklqskrt rvikgtccwi lastflfcsi
+     3661 isafvkwtmf myvtthmlgv tlcalcfvsf amllikhkhl yltmyimpvl ctlfytnylv
+     3721 vykqsfrgla yawlshfvpa vdytymdevl ygvvllvamv fvtmrsinhd vfsimflvgr
+     3781 lvslvsmwyf ganleeevll fltslfgtyt wttmlslata kviakwlavn vlyftdvpqi
+     3841 klvllsylci gyvcccywgi lsllnsifrm plgvynykis vqelrymnan glrpprnsfe
+     3901 almlnfkllg iggvpvievs qiqsrltdvk canvvllncl qhlhiasnsk lwqycstlhn
+     3961 eilatsdlsv afdklaqllv vlfanpaavd skclasieev sddyvrdntv lqalqsefvn
+     4021 masfveyela kknldeakas gsanqqqikq lekacniaks ayerdravar klermadlal
+     4081 tnmykearin dkkskvvsal qtmlfsmvrk ldnqalnsil dnavkgcvpl naipsltsnt
+     4141 ltiivpdkqv fdqvvdnvyv tyagnvwhiq fiqdadgavk qlneidvnst wplviaanrh
+     4201 nevstvvlqn nelmpqklrt qvvnsgsdmn cntptqcyyn ttgtgkivya ilsdcdglky
+     4261 tkivkedgnc vvleldppck fsvqdvkglk ikylyfvkgc ntlargwvvg tlsstvrlqa
+     4321 gtateyasns ailslcafsv dpkktyldyi kqggvpvtnc vkmlcdhagt gmaitikpea
+     4381 ttnqdsygga svciycrsrv ehpdvdglck lrgkfvqvpl gikdpvsyvl thdvcqvcgf
+     4441 wrdgscscvg tgsqfqskdt nflngfgvqv
+//
+
+LOCUS       ACN89684                 207 aa            linear   VRL 24-JUL-2016
+DEFINITION  internal protein [Murine coronavirus RA59/R13].
+ACCESSION   ACN89684
+VERSION     ACN89684.1
+DBSOURCE    accession FJ647218.1
+KEYWORDS    .
+SOURCE      Murine coronavirus RA59/R13
+  ORGANISM  Murine coronavirus RA59/R13
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 207)
+  AUTHORS   Phillips,J.J., Chua,M.M., Lavi,E. and Weiss,S.R.
+  TITLE     Pathogenesis of chimeric MHV4/MHV-A59 recombinant viruses: the
+            murine coronavirus spike protein is a major determinant of
+            neurovirulence
+  JOURNAL   J. Virol. 73 (9), 7752-7760 (1999)
+   PUBMED   10438865
+REFERENCE   2  (residues 1 to 207)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Overton,L., Tsitrin,T.,
+            Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E., Lorenzi,H.,
+            Schobel,S., Sundaram,J. and Weiss,S.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (21-JAN-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..207
+                     /organism="Murine coronavirus RA59/R13"
+                     /strain="RA59/R13"
+                     /host="Mus musculus"
+                     /db_xref="taxon:591069"
+                     /country="USA: Pennsylvania"
+                     /collection_date="01-Jan-2006"
+     Protein         1..207
+                     /product="internal protein"
+     Region          1..207
+                     /region_name="Corona_I"
+                     /note="Corona nucleocapsid I protein; pfam03187"
+                     /db_xref="CDD:281216"
+     CDS             1..207
+                     /coded_by="FJ647218.1:29710..30333"
+ORIGIN      
+        1 messrrplgl tkpsvdqiik ieaegisqsr lqllnptpgv wfpitpgfla lpsskrersf
+       61 slqkdkecll pmesplqskr digidttavl lkhlmgsrsn ycpdgiftil aqgpmlepvm
+      121 etalkvssgl qtakrtpipa lilskgtqav mrlfllglrp aryclrafml kaleglhlla
+      181 dlvrghnpvg qiialeavpt saslpll
+//
+

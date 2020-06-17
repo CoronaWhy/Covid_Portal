@@ -1,0 +1,344 @@
+LOCUS       AHY21469                1353 aa            linear   VRL 18-JUN-2014
+DEFINITION  S protein [Human betacoronavirus 2c Jordan-N3/2012].
+ACCESSION   AHY21469
+VERSION     AHY21469.1
+DBSOURCE    accession KJ614529.1
+KEYWORDS    .
+SOURCE      Human betacoronavirus 2c Jordan-N3/2012
+  ORGANISM  Human betacoronavirus 2c Jordan-N3/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1353)
+  AUTHORS   Frey,K.G., Redden,C.L., Bishop-Lilly,K.A., Johnson,R.,
+            Hensley,L.E., Raviprakash,K., Luke,T., Kochel,T., Mokashi,V.P. and
+            Defang,G.N.
+  TITLE     Full-genome sequence of human betacoronavirus 2c jordan-n3/2012
+            after serial passage in Mammalian cells
+  JOURNAL   Genome Announc 2 (3), e00324-14 (2014)
+   PUBMED   24874668
+  REMARK    Publication Status: Online-Only
+REFERENCE   2  (residues 1 to 1353)
+  AUTHORS   Frey,K.G., Redden,C.L., Bishop-Lilly,K.A., Johnson,R., Hensley,L.,
+            Kanakette,R., Luke,T., Kochel,T., Mokashi,V.P. and Defang,G.N.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-MAR-2014) BDRD Genomics, Naval Medical Research
+            Center-Frederick, 8400 Research Plaza, Fort Detrick, MD 21702, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1353
+                     /organism="Human betacoronavirus 2c Jordan-N3/2012"
+                     /strain="Jordan-N3/2012"
+                     /isolate="MG167"
+                     /isolation_source="mammalian cell line Vero CCL81"
+                     /db_xref="taxon:1306931"
+     Protein         1..1353
+                     /product="S protein"
+     Region          383..>502
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          761..1352
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1353
+                     /gene="S"
+                     /coded_by="KJ614529.1:21441..25502"
+                     /note="similar to INSD accession KC776174"
+ORIGIN      
+        1 mihsvfllmf lltptesyvd vgpdsvksac ievdiqqtff dktwprpidv skadgiiypq
+       61 grtysnitit yqglfpyqgd hgdmyvysag hatvttpqkl fvanysqdvk qfangfvvri
+      121 gaaanstgtv iispstsati rkiypafmlg ssvgnfsdgk mgrffnhtlv llpdgcgtll
+      181 rafycilepr sgnycpagns ytsfatyhtp atdcsdgnyn rnaslnsfke yfnlrnctfm
+      241 ytynitedei lewfgitqta qgvhlfssry vdlyggnmfq fatlpvydti kyysiiphsi
+      301 lsiqsdrkaw aafyvyklqp ltflldfsvd gyirraidcg fndlsqlhcs yesfdvesgv
+      361 ysvssfeakp sgsvveqaeg vecdfsplls gtppqvynfk rlvftncnyn ltkllslfsv
+      421 ndftcsqisp aaiasncyss lildyfsypl smksdlsvss agpisqfnyk qsfsnptcli
+      481 latvphnltt itkplkysyi nkcsrllsdd rtevpqlvna nqyspcvsiv pstvwedgdy
+      541 yrkqlspleg ggwlvasgst vamteqlqmg fgitvqygtd tnsvcpklef andtkiasql
+      601 gncveyslyg vsgrgvfqnc tavgvrqqrf vydayqnlvg yysddgnyyc lracvsvpvs
+      661 viydketkth atlfgsvace hisstmsqys rstrsmlkrr dstygplqtp vgcvlglvns
+      721 slfvedcklp lgqslcalpd tpstltprsv rsvpgemrla siafnhpiqv dqlnssyfkl
+      781 siptnfsfgv tqeyiqttiq kvtvdckqyv cngfqkceql lreygqfcsk inqalhganl
+      841 rqddsvrnlf asvkssqssp iipgfggdfn ltllepvsts tgsrsarsai edllfdkvti
+      901 adpgymqgyd dcmqqgpasa rdlicaqyva gykvlpplmd vnmeaaytss llgsiagvgw
+      961 taglssfaai pfaqsifyrl ngvgitqqvl senqkliank fnqalgamqt gftttneafq
+     1021 kvqdavnnna qalsklasel sntfgaisas igdiiqrldv leqdaqidrl ingrlttlna
+     1081 fvaqqlvrse saalsaqlak dkvnecvkaq skrsgfcgqg thivsfvvna pnglyfmhvg
+     1141 yypsnhievv sayglcdsan ptnciapvng yfiktnntri vdewsytgss fyapepitsl
+     1201 ntkyvapqvt yqnistnlpp pllgnstgid fqdeldeffk nvstsipnfg sltqinttll
+     1261 dltyemlslq qvvkalnesy idlkelgnyt yynkwpwyiw lgfiaglval alcvffilcc
+     1321 tgcgtncmgk lkcnrccdry eeydlephkv hvh
+//
+
+LOCUS       4L3N_B                   216 aa            linear   VRL 25-SEP-2013
+DEFINITION  Chain B, S Protein.
+ACCESSION   4L3N_B
+VERSION     4L3N_B
+DBSOURCE    pdb: molecule 4L3N, chain 66, release Sep 25, 2013;
+            deposition: Jun 6, 2013;
+            class: Viral Protein;
+            source: Mmdb_id: 112300, Pdb_id 1: 4L3N;
+            Exp. method: X-Ray Diffraction.
+KEYWORDS    .
+SOURCE      Human betacoronavirus 2c Jordan-N3/2012
+  ORGANISM  Human betacoronavirus 2c Jordan-N3/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 216)
+  AUTHORS   Chen,Y., Rajashankar,K.R., Yang,Y., Agnihothram,S.S., Liu,C.,
+            Lin,Y.L., Baric,R.S. and Li,F.
+  TITLE     Crystal structure of the receptor-binding domain from newly emerged
+            middle East respiratory syndrome coronavirus
+  JOURNAL   J. Virol. 87 (19), 10777-10783 (2013)
+   PUBMED   23903833
+REFERENCE   2  (residues 1 to 216)
+  AUTHORS   Chen,Y., Rajashankar,K.R., Yang,Y., Agnihothram,S.S., Liu,C.,
+            Lin,Y.-L., Baric,R.S. and Li,F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JUN-2013)
+COMMENT     Crystal Structure Of The Receptor-binding Domain From Newly Emerged
+            Middle East Respiratory Syndrome Coronavirus.
+FEATURES             Location/Qualifiers
+     source          1..216
+                     /organism="Human betacoronavirus 2c Jordan-N3/2012"
+                     /db_xref="taxon:1306931"
+     Region          join(1..111,188..216)
+                     /region_name="Domain 3"
+                     /note="NCBI Domains"
+     Region          5..>124
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Bond            bond(5,29)
+                     /bond_type="disulfide"
+     SecStr          21..27
+                     /sec_str_type="sheet"
+                     /note="strand 13"
+     SecStr          28..31
+                     /sec_str_type="sheet"
+                     /note="strand 14"
+     Het             bond(32)
+                     /heterogen="(NAG,1006)"
+     SecStr          40..49
+                     /sec_str_type="sheet"
+                     /note="strand 15"
+     Bond            bond(47,100)
+                     /bond_type="disulfide"
+     SecStr          51..58
+                     /sec_str_type="helix"
+                     /note="helix 2"
+     Bond            bond(59,207)
+                     /bond_type="disulfide"
+     SecStr          61..70
+                     /sec_str_type="sheet"
+                     /note="strand 16"
+     SecStr          97..106
+                     /sec_str_type="sheet"
+                     /note="strand 17"
+     Het             bond(109)
+                     /heterogen="(NAG,1008)"
+     Region          112..187
+                     /region_name="Domain 4"
+                     /note="NCBI Domains"
+     SecStr          117..124
+                     /sec_str_type="sheet"
+                     /note="strand 18"
+     Bond            bond(125,148)
+                     /bond_type="disulfide"
+     SecStr          125..130
+                     /sec_str_type="sheet"
+                     /note="strand 19"
+     SecStr          134..138
+                     /sec_str_type="sheet"
+                     /note="strand 20"
+     SecStr          159..169
+                     /sec_str_type="sheet"
+                     /note="strand 21"
+     SecStr          172..185
+                     /sec_str_type="sheet"
+                     /note="strand 22"
+     SecStr          189..199
+                     /sec_str_type="sheet"
+                     /note="strand 23"
+     SecStr          205..208
+                     /sec_str_type="sheet"
+                     /note="strand 24"
+ORIGIN      
+        1 egvecdfspl lsgtppqvyn fkrlvftncn ynltkllslf svndftcsqi spaaiasncy
+       61 sslildyfsy plsmksdlsv ssagpisqfn ykqsfsnptc lilatvphnl ttitkplkys
+      121 yinkcsrlls ddrtevpqlv nanqyspcvs ivpstvwedg dyyrkqlspl egggwlvasg
+      181 stvamteqlq mgfgitvqyg tdtnsvcpkl hhhhhh
+//
+
+LOCUS       4L3N_A                   216 aa            linear   VRL 25-SEP-2013
+DEFINITION  Chain A, S Protein.
+ACCESSION   4L3N_A
+VERSION     4L3N_A
+DBSOURCE    pdb: molecule 4L3N, chain 65, release Sep 25, 2013;
+            deposition: Jun 6, 2013;
+            class: Viral Protein;
+            source: Mmdb_id: 112300, Pdb_id 1: 4L3N;
+            Exp. method: X-Ray Diffraction.
+KEYWORDS    .
+SOURCE      Human betacoronavirus 2c Jordan-N3/2012
+  ORGANISM  Human betacoronavirus 2c Jordan-N3/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 216)
+  AUTHORS   Chen,Y., Rajashankar,K.R., Yang,Y., Agnihothram,S.S., Liu,C.,
+            Lin,Y.L., Baric,R.S. and Li,F.
+  TITLE     Crystal structure of the receptor-binding domain from newly emerged
+            middle East respiratory syndrome coronavirus
+  JOURNAL   J. Virol. 87 (19), 10777-10783 (2013)
+   PUBMED   23903833
+REFERENCE   2  (residues 1 to 216)
+  AUTHORS   Chen,Y., Rajashankar,K.R., Yang,Y., Agnihothram,S.S., Liu,C.,
+            Lin,Y.-L., Baric,R.S. and Li,F.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (06-JUN-2013)
+COMMENT     Crystal Structure Of The Receptor-binding Domain From Newly Emerged
+            Middle East Respiratory Syndrome Coronavirus.
+FEATURES             Location/Qualifiers
+     source          1..216
+                     /organism="Human betacoronavirus 2c Jordan-N3/2012"
+                     /db_xref="taxon:1306931"
+     Region          join(1..111,188..216)
+                     /region_name="Domain 1"
+                     /note="NCBI Domains"
+     Region          5..>124
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Bond            bond(5,29)
+                     /bond_type="disulfide"
+     SecStr          21..27
+                     /sec_str_type="sheet"
+                     /note="strand 1"
+     SecStr          28..32
+                     /sec_str_type="sheet"
+                     /note="strand 2"
+     Het             bond(32)
+                     /heterogen="(NAG,1001)"
+     SecStr          40..49
+                     /sec_str_type="sheet"
+                     /note="strand 3"
+     Bond            bond(47,100)
+                     /bond_type="disulfide"
+     SecStr          51..58
+                     /sec_str_type="helix"
+                     /note="helix 1"
+     Bond            bond(59,207)
+                     /bond_type="disulfide"
+     SecStr          61..70
+                     /sec_str_type="sheet"
+                     /note="strand 4"
+     SecStr          97..106
+                     /sec_str_type="sheet"
+                     /note="strand 5"
+     Het             bond(109)
+                     /heterogen="(NAG,1003)"
+     Region          112..187
+                     /region_name="Domain 2"
+                     /note="NCBI Domains"
+     SecStr          117..129
+                     /sec_str_type="sheet"
+                     /note="strand 6"
+     Bond            bond(125,148)
+                     /bond_type="disulfide"
+     SecStr          134..138
+                     /sec_str_type="sheet"
+                     /note="strand 7"
+     SecStr          159..169
+                     /sec_str_type="sheet"
+                     /note="strand 8"
+     SecStr          172..180
+                     /sec_str_type="sheet"
+                     /note="strand 9"
+     SecStr          181..185
+                     /sec_str_type="sheet"
+                     /note="strand 10"
+     SecStr          189..199
+                     /sec_str_type="sheet"
+                     /note="strand 11"
+     SecStr          205..209
+                     /sec_str_type="sheet"
+                     /note="strand 12"
+ORIGIN      
+        1 egvecdfspl lsgtppqvyn fkrlvftncn ynltkllslf svndftcsqi spaaiasncy
+       61 sslildyfsy plsmksdlsv ssagpisqfn ykqsfsnptc lilatvphnl ttitkplkys
+      121 yinkcsrlls ddrtevpqlv nanqyspcvs ivpstvwedg dyyrkqlspl egggwlvasg
+      181 stvamteqlq mgfgitvqyg tdtnsvcpkl hhhhhh
+//
+
+LOCUS       AGH58717                1353 aa            linear   VRL 25-MAR-2013
+DEFINITION  S protein [Human betacoronavirus 2c Jordan-N3/2012].
+ACCESSION   AGH58717
+VERSION     AGH58717.1
+DBSOURCE    accession KC776174.1
+KEYWORDS    .
+SOURCE      Human betacoronavirus 2c Jordan-N3/2012
+  ORGANISM  Human betacoronavirus 2c Jordan-N3/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1353)
+  AUTHORS   Elassal,E.M., Demian,P.N., Defang,G.N., Rozanski,C.H., Curry,J.A.,
+            Oyofo,B.A., Al-Sanouri,T.M., Haddadin,A. and Mohareb,E.W.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (12-MAR-2013) Viral and Zoonotic Diseases Research
+            Program, U.S. Naval Medical Research Unit No. 3, 3A Imtidad Ramses
+            Street, Abbassia, Cairo 11517, Egypt
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1353
+                     /organism="Human betacoronavirus 2c Jordan-N3/2012"
+                     /strain="Jordan-N3/2012"
+                     /isolation_source="bronchial wash"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:1306931"
+                     /country="Jordan"
+                     /collection_date="Apr-2012"
+                     /note="genotype: 2c"
+     Protein         1..1353
+                     /product="S protein"
+     Region          383..>502
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          761..1352
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1353
+                     /gene="S"
+                     /coded_by="KC776174.1:21410..25471"
+ORIGIN      
+        1 mihsvfllmf lltptesyvd vgpdsvksac ievdiqqtff dktwprpidv skadgiiypq
+       61 grtysnitit yqglfpyqgd hgdmyvysag hatvttpqkl fvanysqdvk qfangfvvri
+      121 gaaanstgtv iispstsati rkiypafmlg ssvgnfsdgk mgrffnhtlv llpdgcgtll
+      181 rafycilepr sgnycpagns ytsfatyhtp atdcsdgnyn rnaslnsfke yfnlrnctfm
+      241 ytynitedei lewfgitqta qgvhlfssry vdlyggnmfq fatlpvydti kyysiiphsi
+      301 lsiqsdrkaw aafyvyklqp ltflldfsvd gyirraidcg fndlsqlhcs yesfdvesgv
+      361 ysvssfeakp sgsvveqaeg vecdfsplls gtppqvynfk rlvftncnyn ltkllslfsv
+      421 ndftcsqisp aaiasncyss lildyfsypl smksdlsvss agpisqfnyk qsfsnptcli
+      481 latvphnltt itkplkysyi nkcsrllsdd rtevpqlvna nqyspcvsiv pstvwedgdy
+      541 yrkqlspleg ggwlvasgst vamteqlqmg fgitvqygtd tnsvcpklef andtkiasql
+      601 gncveyslyg vsgrgvfqnc tavgvrqqrf vydayqnlvg yysddgnyyc lracvsvpvs
+      661 viydketkth atlfgsvace hisstmsqys rstrsmlkrr dstygplqtp vgcvlglvns
+      721 slfvedcklp lgqslcalpd tpstltprsv rsvpgemrla siafnhpiqv dqlnssyfkl
+      781 siptnfsfgv tqeyiqttiq kvtvdckqyv cngfqkceql lreygqfcsk inqalhganl
+      841 rqddsvrnlf asvkssqssp iipgfggdfn ltllepvsis tgsrsarsai edllfdkvti
+      901 adpgymqgyd dcmqqgpasa rdlicaqyva gykvlpplmd vnmeaaytss llgsiagvgw
+      961 taglssfaai pfaqsifyrl ngvgitqqvl senqkliank fnqalgamqt gftttneafq
+     1021 kvqdavnnna qalsklasel sntfgaisas igdiiqrldv leqdaqidrl ingrlttlna
+     1081 fvaqqlvrse saalsaqlak dkvnecvkaq skrsgfcgqg thivsfvvna pnglyfmhvg
+     1141 yypsnhievv sayglcdsan ptnciapvng yfiktnntri vdewsytgss fyapepitsl
+     1201 ntkyvapqvt yqnistnlpp pllgnstgid fqdeldeffk nvstsipnfg sltqinttll
+     1261 dltyemlslq qvvkalnesy idlkelgnyt yynkwpwyiw lgfiaglval alcvffilcc
+     1321 tgcgtncmgk lkcnrccdry eeydlephkv hvh
+//
+

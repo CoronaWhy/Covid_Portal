@@ -1,0 +1,75 @@
+LOCUS       AGG22542                1353 aa            linear   VRL 30-APR-2013
+DEFINITION  S protein [Human betacoronavirus 2c England-Qatar/2012].
+ACCESSION   AGG22542
+VERSION     AGG22542.1
+DBSOURCE    accession KC667074.1
+KEYWORDS    .
+SOURCE      Human betacoronavirus 2c England-Qatar/2012
+  ORGANISM  Human betacoronavirus 2c England-Qatar/2012
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Merbecovirus.
+REFERENCE   1  (residues 1 to 1353)
+  AUTHORS   Cotten,M., Lam,T.T., Watson,S.J., Palser,A.L., Petrova,V.,
+            Grant,P., Pybus,O.G., Rambaut,A., Guan,Y., Pillay,D., Kellam,P. and
+            Nastouli,E.
+  TITLE     Full-genome deep sequencing and phylogenetic analysis of novel
+            human betacoronavirus
+  JOURNAL   Emerging Infect. Dis. 19 (5), 736-42B (2013)
+   PUBMED   23693015
+REFERENCE   2  (residues 1 to 1353)
+  AUTHORS   Cotten,M.L., Lam,T.T., Watson,S.J., Palser,A., Petrova,V.,
+            Grant,P., Pybus,O., Rambaut,A., Guan,Y., Pillay,D., Kellam,P. and
+            Nastouli,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-FEB-2013) Viral Genomics, Wellcome Trust Sanger
+            Institute, Hinxton, Cambridge CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation supplied by author.
+FEATURES             Location/Qualifiers
+     source          1..1353
+                     /organism="Human betacoronavirus 2c England-Qatar/2012"
+                     /isolate="England/Qatar/2012"
+                     /isolation_source="patient who had recently travelled to
+                     Qatar"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:1298362"
+                     /country="United Kingdom: England"
+                     /collection_date="19-Sep-2012"
+     Protein         1..1353
+                     /product="S protein"
+     Region          383..>502
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          761..1352
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1353
+                     /coded_by="KC667074.1:21456..25517"
+ORIGIN      
+        1 mihsvfllmf lltptesyvd vgpdsvksac ievdiqqtff dktwprpidv skadgiiypq
+       61 grtysnitit yqglfpyqgd hgdmyvysag hatgttpqkl fvanysqdvk qfangfvvri
+      121 gaaanstgtv iispstsati rkiypafmlg ssvgnfsdgk mgrffnhtlv llpdgcgtll
+      181 rafycilepr sgnhcpagns ytsfatyhtp atdcsdgnyn rnaslnsfke yfnlrnctfm
+      241 ytynitedei lewfgitqta qgvhlfssry vdlyggnmfq fatlpvydti kyysiiphsi
+      301 rsiqsdrkaw aafyvyklqp ltflldfsvd gyirraidcg fndlsqlhcs yesfdvesgv
+      361 ysvssfeakp sgsvveqaeg vecdfsplls gtppqvynfk rlvftncnyn ltkllslfsv
+      421 ndftcsqisp aaiasncyss lildyfsypl smksdlsvss agpisqfnyk qsfsnptcli
+      481 latvphnltt itkplkysyi nkcsrflsdd rtevpqlvna nqyspcvsiv pstvwedgdy
+      541 yrkqlspleg ggwlvasgst vamteqlqmg fgitvqygtd tnsvcpklef andtkiasql
+      601 gncveyslyg vsgrgvfqnc tavgvrqqrf vydayqnlvg yysddgnyyc lracvsvpvs
+      661 viydketkth atlfgsvace hisstmsqys rstrsmlkrr dstygplqtp vgcvlglvns
+      721 slfvedcklp lgqslcalpd tpstltprsv rsvpgemrla siafnhpiqv dqlnssyfkl
+      781 siptnfsfgv tqeyiqttiq kvtvdckqyv cngfqkceql lreygqfcsk inqalhganl
+      841 rqddsvrnlf asvkssqssp iipgfggdfn ltllepvsis tgsrsarsai edllfdkvti
+      901 adpgymqgyd dcmqqgpasa rdlicaqyva gykvlpplmd vnmeaaytss llgsiagvgw
+      961 taglssfaai pfaqsifyrl ngvgitqqvl senqkliank fnqalgamqt gftttneafh
+     1021 kvqdavnnna qalsklasel sntfgaisas igdiiqrldv leqdaqidrl ingrlttlna
+     1081 fvaqqlvrse saalsaqlak dkvnecvkaq skrsgfcgqg thivsfvvna pnglyfmhvg
+     1141 yypsnhievv sayglcdaan ptnciapvng yfiktnntri vdewsytgss fyapepitsl
+     1201 ntkyvapqvt yqnistnlpp pllgnstgid fqdeldeffk nvstsipnfg sltqinttll
+     1261 dltyemlslq qvvkalnesy idlkelgnyt yynkwpwyiw lgfiaglval alcvffilcc
+     1321 tgcgtncmgk lkcnrccdry eeydlephkv hvh
+//
+

@@ -1,0 +1,76 @@
+LOCUS       AF207902_5              1361 aa            linear   VRL 03-JAN-2002
+DEFINITION  spike glycoprotein precursor [Murine hepatitis virus strain ML-11].
+ACCESSION   AAF68923
+VERSION     AAF68923.1
+DBSOURCE    accession AF207902.1
+KEYWORDS    .
+SOURCE      Murine hepatitis virus strain ML-11
+  ORGANISM  Murine hepatitis virus strain ML-11
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Embecovirus.
+REFERENCE   1  (residues 1 to 1361)
+  AUTHORS   Das Sarma,J., Fu,L., Hingley,S.T., Lai,M.M. and Lavi,E.
+  TITLE     Sequence analysis of the S gene of recombinant MHV-2/A59
+            coronaviruses reveals three candidate mutations associated with
+            demyelination and hepatitis
+  JOURNAL   J. Neurovirol. 7 (5), 432-436 (2001)
+   PUBMED   11582515
+REFERENCE   2  (residues 1 to 1361)
+  AUTHORS   Sarma,J.D., Hingley,S.T., Lai,M.M.C., Weiss,S.R. and Lavi,E.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (19-NOV-1999) Dept. of Pathology and Laboratory Medicine,
+            University of Pennsylvania School of Medicine, 613 Stellar-Chance
+            Laboratory Building, Philadelphia, PA 19104-6100, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1361
+                     /organism="Murine hepatitis virus strain ML-11"
+                     /strain="ML-11"
+                     /db_xref="taxon:123595"
+                     /note="recombinant virus derived from
+                     temperature-sensitive mutant (LA-7) of murine hepatitis
+                     virus strain MHV-A59 and MHV-2"
+     Protein         1..1361
+                     /product="spike glycoprotein precursor"
+     Region          16..290
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:293060"
+     Region          324..531
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          789..1323
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1361
+                     /gene="orf3"
+                     /coded_by="AF207902.1:23756..27841"
+ORIGIN      
+        1 mlfvfltllp sslgyigdfr ciqlvntdts nasapsvste vvdvskgigt yyvldrvyln
+       61 atllltgyyp vdgsmyrnma ltgintisln wykppflsef ndgifakvkn lkaslpkdsi
+      121 syfptiiigs nfvttsytvv lepyngiima sicqyticql pytdckpntg gnkligfwht
+      181 elkspvcilk rnftfnvnae wlyfhfyqqg gtfyayyadv ssattflfsm yigdvltqyf
+      241 vlpymctltt tgvfspqywv tplvkrqylf nfnqkgiits avdcassyts eikcktqsmn
+      301 pntgvydlsg ytvqpvglvy rrvrnlpdck ieewltaksv psplnwerkt fqncnfdlss
+      361 llrfvqaesl scsnidaskv ygmcfgsisi dkfaipnrrr vdlqlgnsgf lqsfnykidt
+      421 ratscqlyys laknnvtvnn hnpsswnrry gfndvatfgt gkhdvayaea cftvgasycp
+      481 canpsivspc ttgkpnfanc ptgtsnrect vmplannqfk cdctcnpspl ttydlrclqa
+      541 rsmlgvgdhc eglgvledkc ggsntcncsa hafvgwakds clangrchif snlmlngins
+      601 gttcsmdlql pntevvtgvc vkydlygitg qgifkevkad yyhswqnlly dvngnligfr
+      661 dfvanksyti rscysgrvsa ayhqdapepa llyrnlkcdy vfnnnisree tplnyfdsyl
+      721 gcvvnadnst eeavdacdlr mgsglcvnys tshrarssvs tgyklttfep ftvrivndsv
+      781 esvdglyelq iptnftiash qefvqtrspk vtidcaafvc gghtacrqql veygsfcdni
+      841 nailgevnnl idtmqlqvas aliqgvtlss rlsdgiggqi ddinfspllg clgsdcgevt
+      901 maaqtgrsai edvlfdkvkl sdvgfveayn nctggqevrd llcvqsfngi kvlppvlsen
+      961 qisgytagat vsamfpwsaa agvpfslsvq yringlgvtm nvlsenqkmi asafnnaiga
+     1021 iqegfaatns alakmqfvvn anaealnnll nqlsnrfgai saslqeilsr ldaleaqaqi
+     1081 drlingrlta lnayvskqls dmtlvkvsaa qaiekvnecv ksqssrinfc gngnhilslv
+     1141 qnapyglyfi hfsyvptsft tanvspglci sgdrglapka gyfvqddgew kftgsnyyyp
+     1201 epitdknsvv msscaanytk apevflntsi pnlpdfkeel dkwfknqtsi apdlsldfek
+     1261 lnvtlldltd emnriqdaik klnesyinlk dvgtyemyvk wpwyvwllig lagvavcvll
+     1321 fficcctgcg sccfkkcgnc cdecgghqds ivihnisshe d
+//
+

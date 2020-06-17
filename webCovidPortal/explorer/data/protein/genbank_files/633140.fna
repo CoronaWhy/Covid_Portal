@@ -1,0 +1,1854 @@
+LOCUS       AEA10773                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10773
+VERSION     AEA10773.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession JF292906.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JAN-2011) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d3om5"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 3
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="JF292906.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10758                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10758
+VERSION     AEA10758.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession JF292905.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JAN-2011) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d3om4"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 3
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="JF292905.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10743                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10743
+VERSION     AEA10743.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession JF292904.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JAN-2011) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d3om3"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 3
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="JF292904.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10728                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10728
+VERSION     AEA10728.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession JF292903.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JAN-2011) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d4ym5"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="10-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 4
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="JF292903.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10713                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10713
+VERSION     AEA10713.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession JF292902.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (20-JAN-2011) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d4ym4"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="10-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 4
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="JF292902.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10608                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10608
+VERSION     AEA10608.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890540.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d3om2"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 3
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890540.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10593                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10593
+VERSION     AEA10593.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890539.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d3om1"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="18-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 3
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890539.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10578                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10578
+VERSION     AEA10578.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890538.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2om5"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="17-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890538.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10563                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10563
+VERSION     AEA10563.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890537.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2om4"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="17-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890537.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10548                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10548
+VERSION     AEA10548.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890536.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2om3"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="17-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890536.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylxhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10533                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10533
+VERSION     AEA10533.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890535.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2om2"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="17-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890535.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10518                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10518
+VERSION     AEA10518.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890534.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2om1"
+                     /host="Mus musculus; old"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="17-Sep-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890534.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylxhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10503                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10503
+VERSION     AEA10503.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890533.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d4ym3"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="10-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 4
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890533.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10488                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10488
+VERSION     AEA10488.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890532.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d4ym2"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="10-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 4
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890532.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10473                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10473
+VERSION     AEA10473.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890531.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d4ym1"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="10-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 4
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890531.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmakxsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10458                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10458
+VERSION     AEA10458.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890530.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2ym5"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890530.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10443                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10443
+VERSION     AEA10443.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890529.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2ym4"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890529.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylxhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10428                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10428
+VERSION     AEA10428.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890528.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2ym3"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890528.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10413                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10413
+VERSION     AEA10413.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890527.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2ym2"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890527.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       AEA10398                1255 aa            linear   VRL 26-SEP-2014
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   AEA10398
+VERSION     AEA10398.1
+DBLINK      BioProject: PRJNA260063
+DBSOURCE    accession HQ890526.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Town,C., Halpin,R., Motley,J., Hostetler,J., Fedorova,N.,
+            Overton,L., Stockwell,T., Katzel,D., Li,K., Axelrod,N., Amedeo,P.,
+            Schobel,S., Shrivastava,S., Wang,S., Resnick,A., Thovarai,V.,
+            Kim,M., Eckerle,L.D., Becker,M.M., Donaldson,E.F., Lu,X.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (17-DEC-2010) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="d2ym1"
+                     /host="Mus musculus; young"
+                     /db_xref="taxon:633140"
+                     /country="USA: Nashville, TN"
+                     /collection_date="08-Oct-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; isolated day 2
+                     post-infection"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="HQ890526.1:21452..25219"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72284                1255 aa            linear   VRL 13-DEC-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   ACZ72284
+VERSION     ACZ72284.1
+DBSOURCE    accession FJ882962.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Roberts,A., Deming,D., Paddock,C.D., Cheng,A., Yount,B., Vogel,L.,
+            Herman,B.D., Sheahan,T., Heise,M., Genrich,G.L., Zaki,S.R.,
+            Baric,R. and Subbarao,K.
+  TITLE     A mouse-adapted SARS-coronavirus causes disease and mortality in
+            BALB/c mice
+  JOURNAL   PLoS Pathog. 3 (1), E5 (2007)
+   PUBMED   17222058
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="P3pp10"
+                     /db_xref="taxon:633140"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="18-Dec-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; passage 3 virus stock,
+                     plaque pick 10"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882962.1:21485..25252"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqmlpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72240                1255 aa            linear   VRL 13-DEC-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   ACZ72240
+VERSION     ACZ72240.1
+DBSOURCE    accession FJ882959.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Roberts,A., Deming,D., Paddock,C.D., Cheng,A., Yount,B., Vogel,L.,
+            Herman,B.D., Sheahan,T., Heise,M., Genrich,G.L., Zaki,S.R.,
+            Baric,R. and Subbarao,K.
+  TITLE     A mouse-adapted SARS-coronavirus causes disease and mortality in
+            BALB/c mice
+  JOURNAL   PLoS Pathog. 3 (1), E5 (2007)
+   PUBMED   17222058
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="P3pp6"
+                     /db_xref="taxon:633140"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="26-Nov-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; passage 3 virus stock,
+                     plaque pick 6"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882959.1:21485..25252"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqmlpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72151                1255 aa            linear   VRL 13-DEC-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   ACZ72151
+VERSION     ACZ72151.1
+DBSOURCE    accession FJ882953.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Roberts,A., Deming,D., Paddock,C.D., Cheng,A., Yount,B., Vogel,L.,
+            Herman,B.D., Sheahan,T., Heise,M., Genrich,G.L., Zaki,S.R.,
+            Baric,R. and Subbarao,K.
+  TITLE     A mouse-adapted SARS-coronavirus causes disease and mortality in
+            BALB/c mice
+  JOURNAL   PLoS Pathog. 3 (1), E5 (2007)
+   PUBMED   17222058
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="P3pp4"
+                     /db_xref="taxon:633140"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="26-Nov-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; passage 3 virus stock,
+                     plaque pick 4"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882953.1:21454..25221"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72122                1255 aa            linear   VRL 13-DEC-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   ACZ72122
+VERSION     ACZ72122.1
+DBSOURCE    accession FJ882951.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Roberts,A., Deming,D., Paddock,C.D., Cheng,A., Yount,B., Vogel,L.,
+            Herman,B.D., Sheahan,T., Heise,M., Genrich,G.L., Zaki,S.R.,
+            Baric,R. and Subbarao,K.
+  TITLE     A mouse-adapted SARS-coronavirus causes disease and mortality in
+            BALB/c mice
+  JOURNAL   PLoS Pathog. 3 (1), E5 (2007)
+   PUBMED   17222058
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="P3pp3"
+                     /db_xref="taxon:633140"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="26-Nov-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; passage 3 virus stock,
+                     plaque pick 3"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882951.1:21485..25252"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqmlpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ72005                1255 aa            linear   VRL 13-DEC-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   ACZ72005
+VERSION     ACZ72005.1
+DBSOURCE    accession FJ882943.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Roberts,A., Deming,D., Paddock,C.D., Cheng,A., Yount,B., Vogel,L.,
+            Herman,B.D., Sheahan,T., Heise,M., Genrich,G.L., Zaki,S.R.,
+            Baric,R. and Subbarao,K.
+  TITLE     A mouse-adapted SARS-coronavirus causes disease and mortality in
+            BALB/c mice
+  JOURNAL   PLoS Pathog. 3 (1), E5 (2007)
+   PUBMED   17222058
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /db_xref="taxon:633140"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: North Carolina"
+                     /collection_date="21-Nov-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          318..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882943.1:21485..25252"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffav skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqilpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+
+LOCUS       ACZ71991                1255 aa            linear   VRL 13-DEC-2009
+DEFINITION  spike glycoprotein precursor [SARS coronavirus MA15 ExoN1].
+ACCESSION   ACZ71991
+VERSION     ACZ71991.1
+DBSOURCE    accession FJ882942.1
+KEYWORDS    .
+SOURCE      SARS coronavirus MA15 ExoN1
+  ORGANISM  SARS coronavirus MA15 ExoN1
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; Sarbecovirus.
+REFERENCE   1  (residues 1 to 1255)
+  AUTHORS   Roberts,A., Deming,D., Paddock,C.D., Cheng,A., Yount,B., Vogel,L.,
+            Herman,B.D., Sheahan,T., Heise,M., Genrich,G.L., Zaki,S.R.,
+            Baric,R. and Subbarao,K.
+  TITLE     A mouse-adapted SARS-coronavirus causes disease and mortality in
+            BALB/c mice
+  JOURNAL   PLoS Pathog. 3 (1), E5 (2007)
+   PUBMED   17222058
+REFERENCE   2  (residues 1 to 1255)
+  AUTHORS   Spiro,D., Halpin,R., Wang,S., Hostetler,J., Hine,E., Overton,L.,
+            Tsitrin,T., Katzel,D., Sarmiento,M., Sitz,J., Amedeo,P., Caler,E.,
+            Lorenzi,H., Schobel,S., Sundaram,J., Becker,M.M., Eckerle,L.D.,
+            Graham,R.L., Baric,R.S. and Denison,M.R.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (31-MAR-2009) J. Craig Venter Institute, 9704 Medical
+            Center Drive, Rockville, MD 20850, USA
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1255
+                     /organism="SARS coronavirus MA15 ExoN1"
+                     /strain="MA15 ExoN1 mutant"
+                     /isolate="P3pp5"
+                     /db_xref="taxon:633140"
+                     /lab_host="VeroE6 cells"
+                     /country="USA: Tennessee"
+                     /collection_date="26-Nov-2008"
+                     /note="mouse-adapted virus;
+                     derived from recombinant cDNA; passage 3 virus stock,
+                     plaque pick 5"
+     Protein         1..1255
+                     /product="spike glycoprotein precursor"
+     Region          317..569
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:286493"
+     Region          648..1252
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1255
+                     /coded_by="FJ882942.1:21485..25252"
+ORIGIN      
+        1 mfifllfltl tsgsdldrct tfddvqapny tqhtssmrgv yypdeifrsd tlyltqdlfl
+       61 pfysnvtgfh tinhtfgnpv ipfkdgiyfa ateksnvvrg wvfgstmnnk sqsviiinns
+      121 tnvviracnf elcdnpffvv skpmgtqtht mifdnafnct feyisdafsl dvseksgnfk
+      181 hlrefvfknk dgflyvykgy qpidvvrdlp sgfntlkpif klplginitn frailtafsp
+      241 aqdiwgtsaa ayfvgylkpt tfmlkydeng titdavdcsq nplaelkcsv ksfeidkgiy
+      301 qtsnfrvvps gdvvrfpnit nlcpfgevfn atkfpsvyaw erkkisncva dysvlynstf
+      361 fstfkcygvs atklndlcfs nvyadsfvvk gddvrqiapg qtgviadyny klpddfmgcv
+      421 lawntrnida tstgnhnyky rylrhgklrp ferdisnvpf spdgkpctpp alncywplnd
+      481 ygfytttgig yqpyrvvvls fellnapatv cgpklstdli knqcvnfnfn gltgtgvltp
+      541 sskrfqpfqq fgrdvsdftd svrdpktsei ldispcsfgg vsvitpgtna ssevavlyqd
+      601 vnctdvstai hadqltpawr iystgnnvfq tqagcligae hvdtsyecdi pigagicasy
+      661 htvsllrsts qksivaytms lgadssiays nntiaiptnf sisittevmp vsmaktsvdc
+      721 nmyicgdste canlllqygs fctqlnrals giaaeqdrnt revfaqvkqm yktptlkyfg
+      781 gfnfsqmlpd plkptkrsfi edllfnkvtl adagfmkqyg eclgdinard licaqkfngl
+      841 tvlpplltdd miaaytaalv sgtatagwtf gagaalqipf amqmayrfng igvtqnvlye
+      901 nqkqianqfn kaisqiqesl tttstalgkl qdvvnqnaqa lntlvkqlss nfgaissvln
+      961 dilsrldkve aevqidrlit grlqslqtyv tqqliraaei rasanlaatk msecvlgqsk
+     1021 rvdfcgkgyh lmsfpqaaph gvvflhvtyv psqernftta paichegkay fpregvfvfn
+     1081 gtswfitqrn ffspqiittd ntfvsgncdv vigiinntvy dplqpeldsf keeldkyfkn
+     1141 htspdvdlgd isginasvvn iqkeidrlne vaknlnesli dlqelgkyeq yikwpwyvwl
+     1201 gfiagliaiv mvtillccmt sccsclkgac scgscckfde ddsepvlkgv klhyt
+//
+

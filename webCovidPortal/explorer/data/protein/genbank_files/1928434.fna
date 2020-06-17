@@ -1,0 +1,807 @@
+LOCUS       AYR18688                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18688
+VERSION     AYR18688.1
+DBSOURCE    accession MH687978.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_22084_6"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="04-Feb-2015"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687978.1:23822..27898"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa tvgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqsmrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcasc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18679                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18679
+VERSION     AYR18679.1
+DBSOURCE    accession MH687977.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_22084_10"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="04-Feb-2015"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687977.1:23820..27896"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa ivgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqstrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcgsc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18670                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18670
+VERSION     AYR18670.1
+DBSOURCE    accession MH687976.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_22084_1"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="04-Feb-2015"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687976.1:23660..27736"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtkknpsgwn nrygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa tvgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsdq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqsmrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dewfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcasc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18661                1139 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18661
+VERSION     AYR18661.1
+DBSOURCE    accession MH687975.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1139)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1139)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1139
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_22054_56"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="09-Dec-2013"
+     Protein         1..1139
+                     /product="spike glycoprotein"
+     Region          <11..74
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          109..305
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          576..1122
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1139
+                     /coded_by="MH687975.1:20455..23874"
+ORIGIN      
+        1 mefpfvtmsp ittllfqvyl gtvvthyyvl pfvcsarety eywvtpltkr eyllvfdgng
+       61 aitnavdcas dhmseiqcmt qnikpvtgvy eltgytvqpi advyrripnl pdceieqwln
+      121 dpqvpspisw erktfsncnf nmssllskvr atsfscnnid askiydmcfg sitidkfaip
+      181 nsrkvdlqfg ssgyiqnyny rldqsatscq lyygipannv tvtkknpsgw nnrygfvefk
+      241 plnsgqnynk ysaiystmcf nvpndycpck lgcpsgtver pqigtstsgq piydcpgypw
+      301 ltsssckqtp atvgvgqhcp gvgvladqca psmpgnsilt cscsntqysa gtsqsyyyaw
+      361 tsfgadtcls ggncqvfanv llnnvnsgtt catdlqkant eiivgvcvky dlygisgqgi
+      421 ftevnatyyn swqnllydsn gglygfkdfl tnrtymirsc ysgrvsaayh sdtdgpally
+      481 rnlkcsyvfn nsismsrsvi ryfdsylgcv vnadddiaqa vgscnltvgs gycvdysatr
+      541 rakrdlntgy rltnfepfvp tlvndsvesv gglyeiqipt eftignleef vqttspkvti
+      601 dcaafvcgdy aacreqlvey gsfcdninti lnevnsmidt sqyqlastlm ngvtlssrlk
+      661 dgisfnqddi nfssvmgcvg sncishrsai edilfnkvkl sdvgfvdayn nctqgseird
+      721 lvcvqsfngt kvlppvlses qmsgyatgvg lsmlfppfsa aagvpftmsv qyringlgvt
+      781 mdvlnqnqkm ianafnnalt aiqngfdatn salakiqsvv nanaealnnl lqqlsnrfga
+      841 issslqeils rldaleaqvq idrlingrlt alnayvsqql sditlvkfsa sqaiekinec
+      901 vksqstrvnf cgkgnhilsl vqnapyglyf ihfsyqptky ttahvspglc lagdvgvapk
+      961 sgyfinvndk wmftgsgyyh pepitndnvi mmsncavnft kapdvvlnts ipnlpdfkee
+     1021 ldkwfknqss vapdlsldle rinvtfldlq eemdriqdai kklndsyinl keigtyemyv
+     1081 kwpwyvwlli glagvavlvl lffvccctgc gascfkkcgs ccddygghqd ivvktshdd
+//
+
+LOCUS       AYR18652                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18652
+VERSION     AYR18652.1
+DBSOURCE    accession MH687974.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_20724_43"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="12-Nov-2014"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687974.1:23769..27845"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa ivgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqstrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcgsc cddygghqdi vvktshdd
+//
+
+LOCUS       AYR18643                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18643
+VERSION     AYR18643.1
+DBSOURCE    accession MH687973.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_20724_39"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="12-Nov-2014"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687973.1:23811..27887"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa tvgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqsmrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcasc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18634                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18634
+VERSION     AYR18634.1
+DBSOURCE    accession MH687972.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_20724_38"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="12-Nov-2014"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687972.1:23811..27887"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa ivgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqsmrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcasc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18625                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18625
+VERSION     AYR18625.1
+DBSOURCE    accession MH687971.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_20724_34_c13"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="12-Nov-2014"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687971.1:23714..27790"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa ivgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dvlnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqsmrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcgsc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18616                1345 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18616
+VERSION     AYR18616.1
+DBSOURCE    accession MH687970.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1345)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1345)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1345
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_20724_34_c12"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="12-Nov-2014"
+     Protein         1..1345
+                     /product="spike glycoprotein"
+     Region          15..285
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          320..522
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <610..665
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          759..1328
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1345
+                     /coded_by="MH687970.1:23606..27643"
+ORIGIN      
+        1 mlfiffilps afavigdfkc ttlsindvnt gvpsissevv dvsnglgtyy vldrvylntt
+       61 lllngyypis gasfrnlalk gtlllstlwy kppflsefnn gifakvrntk litngvtyse
+      121 fntivigsvf vntsytivvq phngileita cqytmceypn tnchsalgnq rqelwhyegn
+      181 nqplclfkkn ftydvnvdwl yfhfyqeggt fyayyadhsl pttflfslyi gsvlshyyvv
+      241 pltcnaqapn mqywvtplak rqyllkfder gvitnavdcv snylseiqck tqsltpntgv
+      301 ydlsgytvqp vatvyrrvpn lpdceiekwl ndknvpspln werkmfincn fnlssllryv
+      361 qadsfscnnm daskvygmcf ssilidkfai pnsrrvdlql gnsgflqsfn ykidttatsc
+      421 qlyyslpqnn vtvnnqnpss wnkrfgfsgf nldsysdhry rvayaqqcfq vptdycpcad
+      481 pnvvntcvqn kplsaacpvg tnqractrft actcscqpdp intiagdscl qkkvlvgvge
+      541 hcpgigvned kcgnpsgcfc dagafvgwsh esclsngrcq ifanlilngv nsgttcstdn
+      601 qkantevltd vcvdydlygi tgrgifkevs adyynswqnl lydvngnlyg fkdyqtnkty
+      661 tirpcysgrv saalhqeape pallyrnlkc nyvynnsisr eaqplkyfds ylgcvvnadn
+      721 ytddsvsvcd lrmgggfcvd ysiahrgrra lstgyrftsf epynvsivnd svesvgglye
+      781 iqipinftig sheefiqtts pkvtidcaaf vcsdyaacrq qlveygtfcd nintilsevn
+      841 glldntqlqv anslmqgvtl ssrlksgidl dvddinfdpv mgclgsscgp syrstiedll
+      901 fnkvkiadvg fveaynnctg gnelrdlicv qsfngikvlp pvlsesqisg yttaataasi
+      961 fppwsaaagv pfslsvqyri nglgvtmdvl senqkliana fnnalgaiqk gfdatnsala
+     1021 kiqnvvnana ealnnlllql snrfgaisas lqeilsrlda leaqvqidrl ingrltalna
+     1081 yvsqqlsdit lvkfsasqai ekvnecvksq sprinfcgng nhilslvqna pyglyfihfs
+     1141 yvptafktay vspglcisgn rglapkagyf vqennqwmft gssyyypepi tdknsvvmss
+     1201 csvnytkapd vflnnsipnl pdfkeeldqw fknqtsvapd lsldlekinv tfldlhdemn
+     1261 riqeaikqln qsyinlkeig tyemyvkwpw yvwlliglag vavcvllffi ccctgcgasc
+     1321 fkkcgnccde ygghqdivik tshed
+//
+
+LOCUS       AYR18607                1358 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18607
+VERSION     AYR18607.1
+DBSOURCE    accession MH687969.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1358)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1358
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_20724_33"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="12-Nov-2014"
+     Protein         1..1358
+                     /product="spike glycoprotein"
+     Region          17..293
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          328..524
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          795..1341
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1358
+                     /coded_by="MH687969.1:23911..27987"
+ORIGIN      
+        1 mviiflllfa epvfcvigdf kctqswinsa aspqppiste vvdvskgvgt yyvlnrvyln
+       61 tsllltgyyp vsgstyrnll lkgtqwlstn wflppflsef nsgifvkarn skpvlngith
+      121 sefgtivlgt sfvnttytiv iepstqiing kligtlsasv cqytmceypn tacnpalgng
+      181 rpslwhastg ivpclyqrnf tynvaadniy fhfyqdggtf yayvgdkspi ttllfqvylg
+      241 tvvthyyvlp lvcnaretye ywvtpltkre yllvfdgnga itnavdcasd hmseiqcmtq
+      301 nikpvtgvye ltgytvqpia dvyrripnlp dceieqwlnd pqvpspiswe rktfsncnfn
+      361 mssllskvra tsfscnnida skiydmcfgs itidkfaipn srkvdlqfgs sgyiqnynyr
+      421 ldqsatscql yygipannvt vtrknpsgwn srygfvefkp lnsgqnynky saiystmcfn
+      481 vpndycpckl gcptgtverp qigtstsgqp iydcpgypwl tsssckqtpa ivgvgqhcpg
+      541 vgvladqcap smpgnsiltc scsntqysag tsqsyyyawt sfgadtclsg gncqvfanvl
+      601 lnnvnsgttc atdlqkante iivgvcvkyd lygisgqgif tevnatyyns wqnllydsng
+      661 glygfkdflt nrtymirscy sgrvsaayhs dtdepallyr nlkcsyvfnn sismsrsvir
+      721 yfdsylgcvv nadddiaqav gscnltvgsg ycvdysatrr akrdlntgyr ltnfepfvpt
+      781 lvndsvesvg glyeiqipte ftignleefv qttspkvtid caafvcgdya acreqlveyg
+      841 sfcdnintil nevnsmidts qyqlastlmn gvtlssrlkd gisfnqddin fssvmgcvgs
+      901 ncishrsaie dilfnkvkls dvgfvdaynn ctqgseirdl vcvqsfngik vlppvlsesq
+      961 msgyatgvgl smlfppfsaa agvpftmsvq yringlgvtm dflnqnqkmi anafnnalta
+     1021 iqngfdatns alakiqsvvn anaealnnll qqlsnrfgai ssslqeilsr ldaleaqvqi
+     1081 drlingrlta lnayvsqqls ditlvkfsas qaiekinecv ksqsmrvnfc gkgnhilslv
+     1141 qnapyglyfi hfsyqptkyt tahvspglcl agdvgvapks gyfikvndkw mftgsgyyhp
+     1201 epitndnvim msncavnftk apdvvlntsi pnlpdfkeel dkwfknqssv apdlsldler
+     1261 invtfldlqe emdriqdaik klndsyinlk eigtyemyvk wpwyvwllig lagvavlvll
+     1321 ffvccctgcg ascfkkcasc cddygghqdi vvktthdd
+//
+
+LOCUS       AYR18599                1345 aa            linear   VRL 12-NOV-2018
+DEFINITION  spike glycoprotein [Betacoronavirus sp.].
+ACCESSION   AYR18599
+VERSION     AYR18599.1
+DBSOURCE    accession MH687968.1
+KEYWORDS    .
+SOURCE      Betacoronavirus sp.
+  ORGANISM  Betacoronavirus sp.
+            Viruses; Riboviria; Orthornavirae; Pisuviricota; Pisoniviricetes;
+            Nidovirales; Cornidovirineae; Coronaviridae; Orthocoronavirinae;
+            Betacoronavirus; unclassified Betacoronavirus.
+REFERENCE   1  (residues 1 to 1345)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Identification and characterization of Coronaviridae genomes from
+            Vietnamese bats and rats using profile Hidden Markov Model protein
+            domains
+  JOURNAL   Unpublished
+REFERENCE   2  (residues 1 to 1345)
+  AUTHORS   Phan,M.V.T., Tue,N.T., Anh,P.H., Baker,S., Kellam,P. and Cotten,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (26-JUL-2018) Virus Genomics, Wellcome Trust Sanger
+            Institute, Wellcome Genome Campus, Hinxton CB10 1SA, United Kingdom
+COMMENT     Method: conceptual translation.
+FEATURES             Location/Qualifiers
+     source          1..1345
+                     /organism="Betacoronavirus sp."
+                     /strain="VZ_BetaCoV_16715_52"
+                     /host="Rattus argentiventer"
+                     /db_xref="taxon:1928434"
+                     /country="Viet Nam"
+                     /collection_date="14-Nov-2014"
+     Protein         1..1345
+                     /product="spike glycoprotein"
+     Region          15..285
+                     /region_name="Spike_NTD"
+                     /note="Spike glycoprotein N-terminal domain; pfam16451"
+                     /db_xref="CDD:318618"
+     Region          320..522
+                     /region_name="Spike_rec_bind"
+                     /note="Spike receptor binding domain; pfam09408"
+                     /db_xref="CDD:312790"
+     Region          <607..665
+                     /region_name="Corona_S1"
+                     /note="Coronavirus S1 glycoprotein; pfam01600"
+                     /db_xref="CDD:279880"
+     Region          757..1328
+                     /region_name="Corona_S2"
+                     /note="Coronavirus S2 glycoprotein; pfam01601"
+                     /db_xref="CDD:279881"
+     CDS             1..1345
+                     /coded_by="MH687968.1:23667..27704"
+ORIGIN      
+        1 mlfilfilps afavigdfkc ttlsindvnt gvpsissevv dvsnglgtyy vldrvylntt
+       61 lllngyypis gasfrnlalk gtlllstlwy kppflsefnn gifakvrntk liingvtyse
+      121 fntivigsvf vntsytivvq phngileita cqytmceypn tnchsalgnq rqelwhyegn
+      181 nqplclfkkn ftydvnvdwl yfhfyqeggt fyayyadhsl pttflfslyi gsvlshyyvv
+      241 pftcnaqapn mqywvtplak rqyllkfder gvitnavdcv snylseiqck tqsltpntgv
+      301 ydlsgytvqp vatvyrrvpn lpdceiekwl ndknvpspln werkmfincn fnlssllryv
+      361 qadsfscnnm daskvygmcf ssilidkfai pnsrrvdlql gnsgflqsfn ykidttatsc
+      421 qlyyslpqnn vtvnnrnpss wnkrfgfsgf nldsysdhry rvayaqqcfq vptdycpcad
+      481 pnvvntcvqn kplsaacpvg tnqractrft actcscqpdp intiagdscl qkkvlvgvge
+      541 hcpgigined kcgnpsgcfc aadafvgwsh esclsngrcq ifanlilngv nsgttcstdn
+      601 qkantevlid vcvdydlygi tgrgifkevs adyynswqnl lydvngnlyg fkdyqtnkty
+      661 tirpcysgrv saalhqeape pallyrnlkc nyvfnnsisr eaqplkyfds ylgcvvnadn
+      721 ytddsvsvcd lrmgsgfcvd ystahrgrra lstgyrltsf epynvsivnd svdsvgglye
+      781 iqipinftig sheefiqtts pkvtidcaaf vcsdyaacrq qlveygtfcd nintilsevn
+      841 glldntqlqv anslmqgvtl ssrlksgidl dvddinfdpv mgclgsscgp syrstiedll
+      901 fnkvkiadvg fveaynnctg gnelrdlicv qsfngikvlp pvlsesqisg yttaataasi
+      961 fppwsaaagv pfslsvqyri nglgvtmdvl senqkliana fnnalgaiqn gfdatnsala
+     1021 kiqsvvnana ealnnlllql snrfgaisas lqeilsrlda leaqvqidrl ingrltalna
+     1081 yvsqqlsdit lvkfsasqai ekvnecvksq slrinfcgng nhilslvqna pyglyfihfs
+     1141 yvpiafktay vspglcisgn rglapkagyf vqennqwmft gssyyypepi tdknsvvmss
+     1201 cavnytkapd vflnnsipnl pdfkeeldqw fknqtsvapd lsldlekinv tfldlhdemn
+     1261 riqeaikqln qsyinlkeig tyemyvkwpw yvwlliglag vavcvllffi ccctgcgasc
+     1321 fkkcgnccde ygghqdivik tshed
+//
+
