@@ -1,6 +1,6 @@
 import os
 import datetime
-from conf import *
+#from conf import *
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 

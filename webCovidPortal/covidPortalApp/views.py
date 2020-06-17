@@ -35,7 +35,6 @@ from django.contrib.auth import authenticate
 import time
 import paramiko
 
-from conf import *
 import asyncio, asyncssh, sys
 
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
