@@ -21,8 +21,6 @@
     	<br/>
 		</div>
   </div>
-<br/>
-<br/>
 		<div id="paramsDiv" *ngIf="showFiltersFlag" style="border: 2px dashed;padding:20px;">
       Filters
       <ngb-tabset type="pills" [activeId]="activeTabTitle">
@@ -58,141 +56,121 @@
           <div class="row" style="float:right;">
             Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
           </div>
-          <br/>
-          <br/>
-
+          <div class="row" style="float:clear;">
+            <br/>&nbsp;
+          </div>
             <div class="row" style="float:clear;overflow: scroll;height:400px;">
 
                 <div *ngIf="sequenceResultObj.sequenceObjList?.length > 0">
-                  <!-- <div  class="btn-group">
-                    <button   id="button_0" style = "background-color:#90EE7F;" (click)="submitSequences();"  >Submit&nbsp;</button>
-                  </div>&nbsp; -->
 
-                  <!-- <br/> -->
 
-                  <ngx-datatable
-                  id = "sequenceTable"
-                  class="material"
-                   [rows]="rows"
-                    [columns] = "sequenceResultObj.sequenceTablecolumns"
-                    [columnMode]="force"
-                    [headerHeight]="50"
-                    [footerHeight]="50"
-                    [rowHeight]="50"
-                    [scrollbarV]="true"
+                    <table class="table table-bordered table-striped">
 
-                    [loadingIndicator]="isLoading"
+                      <thead>
+                        <tr>
 
-                    [externalPaging]="true"
-                    [count]="page.totalElements"
-                    [offset]="page.pageNumber"
-                    (page)='setPage($event)'>
+                          <td>
+                              Select
+                          </td>
 
-                    >
+                          <td>
+                            <a href="#">
+                              Accession
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
 
-                    <ngx-datatable-column name="Select">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
-                      </ng-template>
-                    </ngx-datatable-column>
+                          <td>
+                            <a href="#">
+                              Organism
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
 
-                    <ngx-datatable-column name="Accession">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.accession}}
-                      </ng-template>
-                    </ngx-datatable-column>
+                          <td>
+                            <a href="#">
+                              Collection Date
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Isolation Source
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Coded By
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Protein ID
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Taxon ID
+                              <div class="arrow-up"></div>
+                              <div class="arrow-down"></div>
+                            </a>
+                          </td>
+                        </tr>
+                      </thead>
 
-                    <ngx-datatable-column name="Organism">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.organism}}
-                      </ng-template>
-                    </ngx-datatable-column>
+                      <tbody>
+                        <tr *ngFor ="let row of rows">
+                          <td>
+                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
+                          </td>
+                          <td>
+                              {{row.accession}}
+                          </td>
 
-                    <ngx-datatable-column name="Collection Date">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.collection_date}}
-                      </ng-template>
-                    </ngx-datatable-column>
+                          <td>
+                            {{row.organism}}
+                          </td>
 
-                    <ngx-datatable-column name="Country">
-                    </ngx-datatable-column>
+                          <td>
+                            {{row.collection_date}}
+                          </td>
 
-                    <ngx-datatable-column name="host">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.collection_date}}
-                      </ng-template>
-                    </ngx-datatable-column>
-                    <ngx-datatable-column name="isolation_source">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.isolation_source}}
-                      </ng-template>
-                    </ngx-datatable-column>
-                    <ngx-datatable-column name="coded_by">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.coded_by}}
-                      </ng-template>
-                    </ngx-datatable-column>
-                    <ngx-datatable-column name="protein_id">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.protein_id}}
-                      </ng-template>
-                    </ngx-datatable-column>
-                    <ngx-datatable-column name="taxon_id">
-                      <ng-template let-row="row" ngx-datatable-cell-template>
-                        {{row.taxon_id}}
-                      </ng-template>
-                    </ngx-datatable-column>
-                    <ngx-datatable-column name="isolate">
-                    </ngx-datatable-column>
+                          <td>
+                            {{row.isolate}}
+                          </td>
 
-                    <!-- <ngx-datatable-footer>
-                      <ng-template
-                        ngx-datatable-footer-template
-                        let-rowCount="rowCount"
-                        let-pageSize="pageSize"
-                        let-selectedCount="selectedCount"
-                        let-curPage="curPage"
-                        let-offset="offset"
-                        let-isVisible="isVisible">
-                          <div class="page-count">
-                            <span *ngIf="selectedMessage">
-                              {{selectedCount.toLocaleString()}} {{selectedMessage}} /
-                            </span>
-                            {{rowCount.toLocaleString()}} {{totalMessage}}
-                          </div>
-                          <datatable-pager
-                              [pagerLeftArrowIcon]="'datatable-icon-left'"
-                              [pagerRightArrowIcon]="'datatable-icon-right'"
-                              [pagerPreviousIcon]="'datatable-icon-prev'"
-                              [pagerNextIcon]="'datatable-icon-skip'"
-                              [page]="curPage"
-                              [size]="pageSize"
-                              [count]="rowCount"
-                              [hidden]="!((rowCount / pageSize) > 1)"
-                              (change)="table.onFooterPage($event)">
-                          </datatable-pager>
-                      </ng-template>
-                    </ngx-datatable-footer> -->
+                          <td>
+                            {{row.coded_by}}
+                          </td>
+                          <td>
+                            {{row.protein_id}}
+                          </td>
+                          <td>
+                            {{row.taxon_id}}
+                          </td>
+                        </tr>
+                      </tbody>
 
-                  </ngx-datatable>
+                    </table>
 
-                  <!-- <div class="btn-group">
-                    <button>Apple</button>
-                    <button>Samsung</button>
-                    <button>Sony</button>
-                  </div> -->
+                    <div class="btn-group" *ngIf="sequenceResultObj.sequenceObjList?.length > 0" >
 
-                  <!-- <div class="alert alert-success" role="alert" *ngIf="message">
-                    {{message}}
-                  </div> -->
-                </div>
-                <div class="btn-group" *ngIf="sequenceResultObj.sequenceObjList?.length > 0" >
+                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
+                			</button>&nbsp;
 
-                  <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" >Prev&nbsp;
-            			</button>&nbsp;
+                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
+                  		</button>
 
-                  <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" >Prev&nbsp;
-              		</button>
+                    </div>
 
                 </div>
 

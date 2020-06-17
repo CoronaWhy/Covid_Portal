@@ -88,7 +88,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy{
     }
 
     handleResidueClick(residueLabel, position){
-
     }
 
     constructor( private showAlignmentService: ShowAlignmentService,

@@ -2,11 +2,9 @@ import { Component, ViewChild, OnInit, AfterViewInit, OnDestroy, Input, ElementR
 // import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
 import { ShowAlignmentService } from './show-alignment-service';
 // import { Observable} from 'rxjs';
-
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { delay } from 'rxjs/operators';
-
 import { HttpClient } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
 import 'rxjs/add/observable/interval';
@@ -64,10 +62,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     displaySequenceObjList:SequenceObj[];
     initialAlignment: boolean;
     searchString:string;
-
+    numRowsInPage:number;
+    hidePrevButton: boolean;
+    hideNextButton: boolean;
     nomenclaturePositionObj:NomenclaturePositionObj;
     displayNomenclaturePositionObj:NomenclaturePositionObj;
-
+    offset:number;
     @ViewChild('sequenceTable') sequenceTable;
 
     /**
@@ -78,6 +78,21 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     public getResults(page: Page): Observable<PagedData<SequenceObj>> {
         return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
     }
+
+   showNext(){
+     this.offset += 1;
+     console.log(" this.offset " + this.offset);
+     // this.setPage({offset: this.offset, pageSize: 3});
+     this.rows = this.sequenceObjList.slice(this.offset*3, (this.offset+1)*3 );
+   }
+
+   showPrev(){
+      if (this.offset > 0){
+        this.offset -= 1;
+        this.rows = this.sequenceObjList.slice(this.offset*3, (this.offset+1)*3 );
+        // this.setPage({offset: this.offset, pageSize: 3});
+      }
+   }
 
    reloadSequences(value){
       console.log(value.currentTarget.defaultValue);
@@ -118,7 +133,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         let pagedData = new PagedData<SequenceObj>();
         console.log ( " in paged data " + this.sequenceObjList.length);
         // page.totalElements = this.sequenceObjList.length;
-        page.totalElements = 6;
+        page.totalElements = this.numRowsInPage;
         console.log(" page.totalElements " + page.totalElements );
         page.totalPages = page.totalElements / page.size;
         let start = page.pageNumber * page.size;
@@ -239,6 +254,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       this.isLoading = false;
 
+      this.hidePrevButton = false;
+      this.hideNextButton = false;
+
       this.showFiltersFlag = false;
       this.rowNum = 0;
       this.indexValue = 0;
@@ -260,6 +278,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.initialAlignment = true;
 
       this.searchString = '';
+      this.offset = 0;
+      this.numRowsInPage = 3;
 
       this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
@@ -281,7 +301,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          this.initialAlignment = false;
 
-          for (let i = 0; i < 6; i++){
+          for (let i = 0; i < this.numRowsInPage; i++){
               this.rows.push(this.sequenceObjList[i]);
           }
          // this.rows =
@@ -289,7 +309,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          console.log( " init this.rows len " + this.rows.length);
 
-         this.setPage({offset: 0, pageSize: 6});
+         this.setPage({offset: this.offset, pageSize: 3});
 
          console.log(this.sequenceResultObj);
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
