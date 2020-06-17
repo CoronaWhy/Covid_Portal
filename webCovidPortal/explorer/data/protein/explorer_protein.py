@@ -12,6 +12,7 @@ genbank_repository = os.path.join('.','genbank');
 alignment_name = "20200616";
 alignment_root = os.path.join('.','alignments');
 alignment_path = os.path.join(alignment_root, alignment_name);
+alignment_temp_path = os.path.join(alignment_path,'temp');
 sequence_record_root = os.path.join('.','sequence_records');
 ################################################################################
 def gbTaxonFile(taxon_id):
@@ -20,8 +21,8 @@ def sequenceRecordFile(taxon_id):
     return str(taxon_id)+"_sequenceRecords.csv";
 def clustaloDownloadAlignmentFile(taxon_id, batch):
     return str(taxon_id)+"_"+str(batch+1)+".aln-fasta.fasta";
-def clustaloAlignmentFile(taxon_id):
-    return str(taxon_id)+".fasta";
+def clustaloAlignmentFile(taxon_id, batch):
+    return str(taxon_id)+"_"+str(batch+1)+".fasta";
 ################################################################################
 def NCBI_fetchGBRecords(taxon_id, protein_name="spike", batchsize=500):
     gbRecords = [];
@@ -208,7 +209,7 @@ def fasta_toSeries(fasta):
                 seqs[current] = str(l);
     return pd.Series(seqs, dtype=str).drop(index=[''], errors='ignore');
 ################################################################################
-def clustaloAlign(taxon_id, seqs, batchsize=2000, keep_results=True, result_path=''):
+def clustaloAlign(run_id, seqs, keep_results=True, result_path=''):
     result_file_suffixes = {
         'alignment'         : ".aln-fasta.fasta", #alignment file suffix
         'log'               : ".out.txt",
@@ -222,45 +223,43 @@ def clustaloAlign(taxon_id, seqs, batchsize=2000, keep_results=True, result_path
     if len(seqs)<=2:
         return seqs;
     # if >2 sequences then multiple alignment is applicable
-    for bix in range(0,len(fasta_seqs),batchsize):
-        batch = fasta_seqs[bix:bix+batchsize];
-        result_id = taxon_id+"_"+str(bix+1);
-
-        jobId = clustaloAPI.serviceRun(
-            email,
-            result_id,
-            "\n".join(batch),
-            outfmt='fa',
-            guidetreeout=False,
-            dismatout=False,
-        );
-        # wait
-        time.sleep(clustaloAPI.pollFreq);
-        # get results
-        clustaloAPI.getResult(
-            # id of the job
-            jobId,
-            # oufile is just a base name that clustalo adds to
-            outfile=result_id,
-            # path to store output files in
-            path=result_path,
-        );
-        # load aligned sequences and merge into cumulative structure
-        batch_aligned = SeqIO.parse(
-            os.path.join(
+    batch = fasta_seqs;
+    result_id = run_id;
+    jobId = clustaloAPI.serviceRun(
+        email,
+        result_id,
+        "\n".join(batch),
+        outfmt='fa',
+        guidetreeout=False,
+        dismatout=False,
+    );
+    # wait
+    time.sleep(clustaloAPI.pollFreq);
+    # get results
+    clustaloAPI.getResult(
+        # id of the job
+        jobId,
+        # oufile is just a base name that clustalo adds to
+        outfile=result_id,
+        # path to store output files in
+        path=result_path,
+    );
+    # load aligned sequences and merge into cumulative structure
+    batch_aligned = seqIO.to_dict(SeqIO.parse(
+        os.path.join(
+            result_path,
+            result_id+result_file_suffixes['alignment']),
+        'fasta'));
+    aligned_seqs = {**aligned_seqs, **batch_aligned};
+    # remove files if requested
+    if not keep_results:
+        for suffix in result_file_suffixes:
+            ffn = os.path.join(
                 result_path,
-                result_id+result_file_suffixes['alignment']),
-            'fasta').to_dict();
-        aligned_seqs = {**aligned_seqs, **batch_aligned};
-        # remove files if requested
-        if not keep_results:
-            for suffix in result_file_suffixes:
-                ffn = os.path.join(
-                    result_path,
-                    result_id+result_file_suffixes['alignment'],
-                );
-                if os.path.isfile(ffn):
-                    os.remove(ffn);
+                result_id+result_file_suffixes['alignment'],
+            );
+            if os.path.isfile(ffn):
+                os.remove(ffn);
     return pd.Series(aligned_seqs);
 ################################################################################
 def nongapConsensus(sequences, id_column):
@@ -287,6 +286,8 @@ if __name__=="__main__":
     chkpaths = [
         genbank_repository,
         sequence_record_root,
+        alignment_path,
+        alignment_temp_path,
     ];
     for path in chkpaths:
         if not os.path.isdir(path):
@@ -335,6 +336,42 @@ if __name__=="__main__":
     logging.info("Stored sequenceRecords to "+srffn);
 
     # alignment ----------------------------------------------------------------
+    # break sequences into batches
+    seq_batches = [
+        sequences.iloc[i:i+alignment_batchsize]
+        for i in range(0, len(sequences), alignment_batchsize)
+    ];
+
+    # process each batch
+    for batch, seq_batch in enumerate(seq_batches):
+        if os.path.isfile(os.path.join(
+            alignment_path,
+            clustaloAlignmentFile(taxon_id, batch)
+        )):
+            # load from file
+            print("will load from file");
+        elif os.path.isfile(os.path.join(
+            alignment_temp_path,
+            clustaloDownloadAlignmentFile(taxon_id, batch)
+        )):
+            # load from alignment result file
+            print("will load from result file");
+        else:
+            print("aligning...");
+            # run alignment
+            aligned = clustaloAlign(
+                taxon_id+"_"+str(batch+1),
+                seq_batch,
+                result_path=alignment_temp_path
+            );
+
+
+
+
+    sys.exit();
+
+
+
     alnffn = os.path.join(
         alignment_path,
         clustaloAlignmentFile(taxon_id),
@@ -343,6 +380,15 @@ if __name__=="__main__":
     # TODO: alignment files need to be store by batch because each batch is a
     #       separate alignment. So how/where to store them and how to allow
     #       load from file if exists, instead of always calling server.
+
+
+
+def clustaloDownloadAlignmentFile(taxon_id, batch):
+    return str(taxon_id)+"_"+str(batch+1)+".aln-fasta.fasta";
+def clustaloAlignmentFile(taxon_id):
+    return str(taxon_id)+".fasta";
+
+
 
     if os.path.isfile(alnffn):
         # use existing
