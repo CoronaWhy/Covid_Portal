@@ -54,6 +54,7 @@
           <ng-template ngbTabContent>
  -->
           <div class="row" style="float:right;">
+            Sort:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()"> &nbsp;
             Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
           </div>
           <div class="row" style="float:clear;">
@@ -61,7 +62,7 @@
           </div>
             <div class="row" style="float:clear;overflow: scroll;height:400px;">
 
-                <div *ngIf="sequenceResultObj.sequenceObjList?.length > 0">
+                <div *ngIf="displaySequenceObjList?.length > 0">
 
 
                     <table class="table table-bordered table-striped">
@@ -76,59 +77,59 @@
                           <td>
                             <a href="#">
                               Accession
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
 
                           <td>
                             <a href="#">
                               Organism
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
 
                           <td>
                             <a href="#">
                               Collection Date
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
                           <td>
                             <a href="#">
                               Isolation Source
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
                           <td>
                             <a href="#">
                               Coded By
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
                           <td>
                             <a href="#">
                               Protein ID
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
                           <td>
                             <a href="#">
                               Taxon ID
-                              <div class="arrow-up"></div>
-                              <div class="arrow-down"></div>
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
                             </a>
                           </td>
                         </tr>
                       </thead>
 
                       <tbody>
-                        <tr *ngFor ="let row of rows">
+                        <tr *ngFor ="let row of displaySequenceObjList">
                           <td>
                             <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
                           </td>
@@ -162,7 +163,7 @@
 
                     </table>
 
-                    <div class="btn-group" *ngIf="sequenceResultObj.sequenceObjList?.length > 0" >
+                    <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
 
                       <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
                 			</button>&nbsp;

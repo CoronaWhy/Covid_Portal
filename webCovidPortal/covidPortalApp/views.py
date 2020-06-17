@@ -393,6 +393,11 @@ def showAlignment(request):
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["selectedAccessions"] = selectedAccessions
         alignmentResultObj["nomenclaturePositionObj"] = nomenclaturePositionObj
+
+        masterObj["alignmentResultObj"] = alignmentResultObj
+        masterObj["epitopesObjs"] = epitopesObjs
+        masterObj["structureObjs"] = structureObjs
+
         # print (sequenceResultObj)
 
     except:

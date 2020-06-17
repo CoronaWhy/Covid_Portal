@@ -68,6 +68,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     nomenclaturePositionObj:NomenclaturePositionObj;
     displayNomenclaturePositionObj:NomenclaturePositionObj;
     offset:number;
+    numRowsInAlignment:number;
     @ViewChild('sequenceTable') sequenceTable;
 
     /**
@@ -83,15 +84,22 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
      this.offset += 1;
      console.log(" this.offset " + this.offset);
      // this.setPage({offset: this.offset, pageSize: 3});
-     this.rows = this.sequenceObjList.slice(this.offset*3, (this.offset+1)*3 );
+     this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+     if (this.offset > 1){
+       this.hidePrevButton = false;
+     }
    }
 
    showPrev(){
       if (this.offset > 0){
         this.offset -= 1;
-        this.rows = this.sequenceObjList.slice(this.offset*3, (this.offset+1)*3 );
+        this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
         // this.setPage({offset: this.offset, pageSize: 3});
+        if (this.offset == 0){
+          this.hidePrevButton = true;
+        }
       }
+
    }
 
    reloadSequences(value){
@@ -106,7 +114,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            // this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
            // this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
-           this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
+           this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.alignmentObjList.length; i++){
              if (i == 0){
                this.maxSliderValue = this.alignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
@@ -226,21 +234,21 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     ngAfterViewInit() {
 
-      this.sequenceTable = document.getElementById("sequenceTable")
-
-      this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
-        let offset = this.indexes.first / this.pageSize;
-
-        if (direction === 'up') {
-          offset = Math.ceil(offset);
-        } else if (direction === 'down') {
-          offset = Math.floor(offset);
-        }
-
-        if (direction !== undefined && !isNaN(offset)) {
-          this.page.emit({ offset });
-        }
-      }
+      // this.sequenceTable = document.getElementById("sequenceTable")
+      //
+      // this.sequenceTable.bodyComponent.updatePage = function(direction: string): void {
+      //   let offset = this.indexes.first / this.pageSize;
+      //
+      //   if (direction === 'up') {
+      //     offset = Math.ceil(offset);
+      //   } else if (direction === 'down') {
+      //     offset = Math.floor(offset);
+      //   }
+      //
+      //   if (direction !== undefined && !isNaN(offset)) {
+      //     this.page.emit({ offset });
+      //   }
+      // }
 
     }
 
@@ -254,7 +262,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       this.isLoading = false;
 
-      this.hidePrevButton = false;
+      this.hidePrevButton = true;
       this.hideNextButton = false;
 
       this.showFiltersFlag = false;
@@ -280,6 +288,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.searchString = '';
       this.offset = 0;
       this.numRowsInPage = 3;
+      this.numRowsInAlignment = 5;
 
       this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
@@ -301,18 +310,19 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          this.initialAlignment = false;
 
-          for (let i = 0; i < this.numRowsInPage; i++){
-              this.rows.push(this.sequenceObjList[i]);
-          }
+         this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+         this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
+
+          // for (let i = 0; i < this.numRowsInPage; i++){
+          //     this.rows.push(this.sequenceObjList[i]);
+          // }
          // this.rows =
          // this.sequenceObjList.slice(0,9);
 
-         console.log( " init this.rows len " + this.rows.length);
-
-         this.setPage({offset: this.offset, pageSize: 3});
-
-         console.log(this.sequenceResultObj);
-         this.displayAlignmentObjList = this.alignmentObjList.slice(0,3);
+         // console.log( " init this.rows len " + this.rows.length);
+         //
+         // this.setPage({offset: this.offset, pageSize: 3});
+         //
          for (let i = 0; i < this.alignmentObjList.length; i++){
            if (i == 0){
              this.maxSliderValue = this.alignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
