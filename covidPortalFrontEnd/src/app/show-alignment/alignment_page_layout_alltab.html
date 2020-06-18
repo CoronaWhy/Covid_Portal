@@ -1,29 +1,32 @@
 <html>
 <style>
-div {
+
+
+
+#paneltable div {
     font-family: arial, helvetica;
     font-size: 11px;
 }
 .paneltable {
     display: table;
-    border-collapse: separate;
+    border-collapse: collapse;
     border-spacing: 0px;
     overflow: hidden;
-
+    border: 1px solid transparent; /* for consistent spacing w/wo border */
 }
-.residue-width { width: 12px; text-align: center; }
-.residue-height { height: 18px; line-height: 18px; }
+.residue-width { width: 10px; text-align: center; }
+.residue-height { height: 14px; line-height: 14px; }
 .label {
     display: table-cell;
     vertical-align: middle;
 }
 .residue {
     text-align: center;
-    float: left;
+    display: inline-block;
     padding: 0px;
     margin: 0px;
-    border: 1px solid rgba(0,0,0,0.2);
-    background: #ffffff;
+    /* border: 1px solid rgba(0,0,0,0.1); */
+    /* background: #ffffff; */
 }
 .nomen-outer {
     border: 1px solid rgba(0,0,0,0);
@@ -50,7 +53,7 @@ div {
     float: left;
     display: inline-block;
     margin: 0px;
-    height: 55px;
+    /* height: 50px; */
     overflow: hidden;
 }
 .paneltab-inner {
@@ -65,16 +68,22 @@ div {
 }
 
 .label-header {
-    width: 75px;
+    width: 120px;
     vertical-align: bottom;
+    /* padding-top: 30px; */
+    text-align: center;
 }
 .sort-header {
-    width: 75px;
+    width: 120px;
     vertical-align: bottom;
 }
-
+tbody td {
+    border: 1px solid #999999;
+    padding: 0px;
+}
 table {
     overflow: hidden;
+    text-align: center;
 }
 thead {
     vertical-align: bottom;
@@ -84,14 +93,24 @@ th {
 }
 td, th {
     position: relative;
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-top: none;
-    padding-bottom: none;
+    padding: none;
+}
+tfoot {
+    background: #ffffff;
+}
+table tbody tr:first-child th {
+    /* background: #555555; */
+    /* border-top: 1px solid rgba(1,1,1,0.1); */
+    padding-top: 10px;
+    position: relative;
+}
+table tbody tr:last-child td {
+    /* padding-bottom: 10px; */
+    position: relative;
 }
 thead th:nth-child(n+3):not(:nth-child(n+19)):hover::after,
-td:first-child[rowspan]~td:nth-child(n+3):not(:nth-child(n+19)):hover::after,
-td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::after
+tbody td:first-child[rowspan]~td:nth-child(n+3):not(:nth-child(n+19)):hover::after,
+tbody td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::after
 {
     content: '';
     height: 10000px;
@@ -106,13 +125,48 @@ td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::aft
     display: none;
 }
 </style>
+<script>
+function rearrange() {
+    epitopepanel = document.getElementById("epitopepanel");
+    structurepanel = document.getElementById("structurepanel");
+    console.log(epitopepanel.nextSibling.nodeType);
+    console.log(structurepanel.parentNode.nextSibling);
+    epitopepanel.parentNode.insertBefore(
+        structurepanel.parentNode.removeChild(structurepanel),
+        epitopepanel
+    );
+}
+function movedown(eid) {
+    let curpanel = document.getElementById(eid);
+    let parent = curpanel.parentNode;
+    let tblen = parent.tBodies.length;
+    var curix = [].slice.call(parent.tBodies).indexOf(curpanel);
+    if (curix>(parent.tBodies.length-2)) { return; }
+    parent.insertBefore(
+        parent.removeChild(curpanel),
+        parent.tBodies[curix+2]
+    );
+}
+function moveup(eid) {
+    let curpanel = document.getElementById(eid);
+    let parent = curpanel.parentNode;
+    let tblen = parent.tBodies.length;
+    var curix = [].slice.call(parent.tBodies).indexOf(curpanel);
+    if (curix<=1) { return; }
+    parent.insertBefore(
+        parent.removeChild(curpanel),
+        parent.tBodies[curix-1]
+    );
+}
+
+</script>
 <body>
 
-<table border=0 class="paneltable" id="tfhover">
+<table border=0 class="paneltable" id="paneltable">
 
     <thead>
         <th></th>
-        <th>Accession</th>
+        <th class="label-header">Accession</th>
         <!-- position nomenclature -->
         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div></th>
         <th><div class="nomen-outer residue-width"><div class="nomen-inner">2.000</div></div></th>
@@ -222,10 +276,10 @@ td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::aft
     </tbody>
     <!-- END SEQUENCES -------------------------------------------------------->
     <!-- BEGIN EPITOPES ------------------------------------------------------->
-    <tbody>
+    <tbody id="epitopepanel">
     <tr>
         <th></th>
-        <th class="sort-header">
+        <th class="label-header">
             <select>
                 <option selected>Label</option>
                 <option>Host</option>
@@ -234,22 +288,10 @@ td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::aft
             </select>
         </th>
         <!-- position nomenclature -->
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th colspan=16>
+            <button onclick="moveup('epitopepanel')">Up</button>
+            <button onclick="movedown('epitopepanel')">Dn</button>
+        </th>
         <th class="sort-header">
             <select>
                 <option selected>Label</option>
@@ -337,27 +379,15 @@ td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::aft
     </tbody>
     <!-- END EPITOPES --------------------------------------------------------->
     <!-- BEGIN STRUCTURE ------------------------------------------------------>
-    <tbody>
+    <tbody id="structurepanel">
     <tr>
         <th></th>
         <th class="label-header">PDB ID</th>
         <!-- position nomenclature -->
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
-        <th></th>
+        <th colspan=16>
+            <button onclick="moveup('structurepanel')">Up</button>
+            <button onclick="movedown('structurepanel')">Dn</button>
+        </th>
         <th class="sort-header">
             <select>
                 <option selected>Label</option>
@@ -444,12 +474,35 @@ td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::aft
     </tr>
     </tbody>
     <!-- END STRUCTURE -------------------------------------------------------->
-
-
-
-
+    <!-- BEGIN SCROLLBAR ------------------------------------------------------>
+    <tfoot>
+        <td></td>
+        <td></td>
+        <td colspan=16>scrollbar</td>
+        <td></td>
+        <td></td>
+    </tfoot>
+    <!-- END SCROLLBAR -------------------------------------------------------->
 </table>
-
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<button onclick="javascript:document.getElementById('epitopepanel').style.display='table-row-group'">Show Epitope</button>
+<button onclick="javascript:document.getElementById('epitopepanel').style.display='none'">Hide Epitope</button>
+<br>
+<button onclick="javascript:document.getElementById('structurepanel').style.display='table-row-group'">Show Structure</button>
+<button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button>
+<br>
+<button onclick="movedown('epitopepanel')">ACTIVATE</button>
+<button onclick="moveup('epitopepanel')">ACTIVATE</button>
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
 
 
 
