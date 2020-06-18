@@ -1,0 +1,167 @@
+<html>
+<style>
+body {
+    font-family: monospace;
+}
+.paneltable {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+.residue-width { width: 20px; text-align: center; }
+.residue-height { height: 30px; line-height: 30px; }
+.label {
+    display: table-cell;
+    vertical-align: middle;
+}
+.residue {
+    text-align: center;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #555555;
+}
+.nomen-outer {
+    border: 1px solid #0000ff;
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin: 0px;
+    height: 80px;
+    overflow: hidden;
+}
+.nomen-inner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 0px;
+    padding: 0px;
+    transform-origin: center left;
+    transform: translateY(-50%) rotate(-90deg);
+}
+.label-header {
+    width: 75px;
+    vertical-align: bottom;
+}
+.sort-header {
+    width: 75px;
+    vertical-align: bottom;
+}
+</style>
+<body>
+
+<table border=1 class="paneltable">
+
+    <thead>
+        <td class="label-header">Label</td>
+        <td>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">2.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">3.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">4.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">5.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">6.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">7.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">7.001</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">7.002</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">7.003</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">8.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">9.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">10.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">10.001</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">11.000</div></div>
+            <div class="nomen-outer residue-width"><div class="nomen-inner">1211.000</div></div>
+        </td>
+        <td class="sort-header">
+            <select>
+                <option selected>Label</option>
+                <option>Host</option>
+                <option>Country</option>
+                <option>Accession</option>
+            </select>
+        </td>
+        <td></td>
+    </thead>
+    <!-- SEQUENCE 1 --->
+    <tr>
+        <td>
+            <div class="residue-height label">Seq 1</div>
+        </td>
+        <td>
+            <div class="residue-width residue-height residue">A</div>
+            <div class="residue-width residue-height residue">B</div>
+            <div class="residue-width residue-height residue">C</div>
+            <div class="residue-width residue-height residue">D</div>
+            <div class="residue-width residue-height residue">E</div>
+            <div class="residue-width residue-height residue">F</div>
+            <div class="residue-width residue-height residue">G</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">H</div>
+            <div class="residue-width residue-height residue">I</div>
+            <div class="residue-width residue-height residue">J</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">K</div>
+            <div class="residue-width residue-height residue">L</div>
+        </td>
+        <td>Sort Value</td>
+        <td rowspan=3>scroll</td>
+    </tr>
+    <!-- SEQUENCE 2 --->
+    <tr>
+        <td>
+            <div class="residue-height label">Seq 2</div>
+        </td>
+        <td>
+            <div class="residue-width residue-height residue">A</div>
+            <div class="residue-width residue-height residue">B</div>
+            <div class="residue-width residue-height residue">C</div>
+            <div class="residue-width residue-height residue">D</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">F</div>
+            <div class="residue-width residue-height residue">G</div>
+            <div class="residue-width residue-height residue">Q</div>
+            <div class="residue-width residue-height residue">Q</div>
+            <div class="residue-width residue-height residue">V</div>
+            <div class="residue-width residue-height residue">H</div>
+            <div class="residue-width residue-height residue">I</div>
+            <div class="residue-width residue-height residue">J</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">K</div>
+            <div class="residue-width residue-height residue">L</div>
+        </td>
+        <td>Sort Value</td>
+    </tr>
+    <!-- SEQUENCE 3 --->
+    <tr>
+        <td>
+            <div class="residue-height label">Seq 3</div>
+        </td>
+        <td>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">C</div>
+            <div class="residue-width residue-height residue">D</div>
+            <div class="residue-width residue-height residue">E</div>
+            <div class="residue-width residue-height residue">F</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">-</div>
+            <div class="residue-width residue-height residue">V</div>
+            <div class="residue-width residue-height residue">V</div>
+            <div class="residue-width residue-height residue">H</div>
+            <div class="residue-width residue-height residue">I</div>
+            <div class="residue-width residue-height residue">J</div>
+            <div class="residue-width residue-height residue">P</div>
+            <div class="residue-width residue-height residue">K</div>
+            <div class="residue-width residue-height residue">L</div>
+        </td>
+        <td>Sort Value</td>
+    </tr>
+</table>
+
+
+
+
+</body>
+</html>

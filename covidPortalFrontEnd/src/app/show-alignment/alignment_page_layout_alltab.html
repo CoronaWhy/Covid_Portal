@@ -1,0 +1,457 @@
+<html>
+<style>
+div {
+    font-family: arial, helvetica;
+    font-size: 11px;
+}
+.paneltable {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 0px;
+    overflow: hidden;
+
+}
+.residue-width { width: 12px; text-align: center; }
+.residue-height { height: 18px; line-height: 18px; }
+.label {
+    display: table-cell;
+    vertical-align: middle;
+}
+.residue {
+    text-align: center;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #ffffff;
+}
+.nomen-outer {
+    border: 1px solid rgba(0,0,0,0);
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin: 0px;
+    height: 80px;
+    overflow: hidden;
+}
+.nomen-inner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 0px;
+    padding: 0px;
+    transform-origin: center left;
+    transform: translateY(-50%) rotate(-90deg);
+}
+.paneltab-outer {
+    width: 40px;
+    border: 1px solid rgba(0,0,0,0);
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin: 0px;
+    height: 55px;
+    overflow: hidden;
+}
+.paneltab-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0px;
+    padding: 0px;
+    transform-origin: center center;
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    font-size: 125%;
+}
+
+.label-header {
+    width: 75px;
+    vertical-align: bottom;
+}
+.sort-header {
+    width: 75px;
+    vertical-align: bottom;
+}
+
+table {
+    overflow: hidden;
+}
+thead {
+    vertical-align: bottom;
+}
+th {
+    vertical-align: bottom;
+}
+td, th {
+    position: relative;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: none;
+    padding-bottom: none;
+}
+thead th:nth-child(n+3):not(:nth-child(n+19)):hover::after,
+td:first-child[rowspan]~td:nth-child(n+3):not(:nth-child(n+19)):hover::after,
+td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::after
+{
+    content: '';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+    background-color: #eeeeff;
+}
+.hide-tr {
+    display: none;
+}
+</style>
+<body>
+
+<table border=0 class="paneltable" id="tfhover">
+
+    <thead>
+        <th></th>
+        <th>Accession</th>
+        <!-- position nomenclature -->
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">2.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">3.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">4.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">5.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">6.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.001</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.002</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.003</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">8.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">9.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.001</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">11.000</div></div></th>
+        <th><div class="nomen-outer residue-width"><div class="nomen-inner">1121.000</div></div></th>
+        <!-- end position nomenclature -->
+        <th class="sort-header">
+            <select>
+                <option selected>Label</option>
+                <option>Host</option>
+                <option>Country</option>
+                <option>Accession</option>
+            </select>
+        </th>
+        <th></th>
+    </thead>
+    <!-- SEQUENCES ------------------------------------------------------------>
+    <tbody>
+    <!-- SEQUENCE 1 --->
+    <tr>
+        <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Protein</div></div></td>
+        <!-- sequence label -->
+        <td><div class="residue-height label">Seq 1</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+        <td rowspan=3>scroll</td>
+    </tr>
+    <!-- SEQUENCE 2 -->
+    <tr>
+        <!-- sequence label -->
+        <td><div class="residue-height label">Seq 2</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+        <!-- <td rowspan=3>scroll</td> -->
+    </tr>
+    <!-- SEQUENCE 3 -->
+    <tr>
+        <!-- sequence label -->
+        <td><div class="residue-height label">Seq 2</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+        <!-- <td rowspan=3>scroll</td> -->
+    </tr>
+    </tbody>
+    <!-- END SEQUENCES -------------------------------------------------------->
+    <!-- BEGIN EPITOPES ------------------------------------------------------->
+    <tbody>
+    <tr>
+        <th></th>
+        <th class="sort-header">
+            <select>
+                <option selected>Label</option>
+                <option>Host</option>
+                <option>Country</option>
+                <option>Accession</option>
+            </select>
+        </th>
+        <!-- position nomenclature -->
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th class="sort-header">
+            <select>
+                <option selected>Label</option>
+                <option>Host</option>
+                <option>Country</option>
+                <option>Accession</option>
+            </select>
+        </th>
+        <th></th>
+    </tr>
+    <!-- EPITOPE 1 --->
+    <tr>
+        <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Epitopes</div></td>
+        <!-- epitope label -->
+        <td><div class="residue-height label">Ep 1</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+        <td rowspan=3>scroll</td>
+    </tr>
+    <!-- EPITOPE 2 --->
+    <tr>
+        <!-- epitope label -->
+        <td><div class="residue-height label">Ep 2</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+    </tr>
+    <!-- EPITOPE 3 --->
+    <tr>
+        <!-- epitope label -->
+        <td><div class="residue-height label">Ep 3</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+    </tr>
+    </tbody>
+    <!-- END EPITOPES --------------------------------------------------------->
+    <!-- BEGIN STRUCTURE ------------------------------------------------------>
+    <tbody>
+    <tr>
+        <th></th>
+        <th class="label-header">PDB ID</th>
+        <!-- position nomenclature -->
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th class="sort-header">
+            <select>
+                <option selected>Label</option>
+                <option>Host</option>
+                <option>Country</option>
+                <option>Accession</option>
+            </select>
+        </th>
+        <th></th>
+    </tr>
+    <!-- STRUCTURE 1 --->
+    <tr>
+        <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></td>
+        <!-- structure label -->
+        <td><div class="residue-height label">5JX9</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+        <td rowspan=3>scroll</td>
+    </tr>
+    <!-- STRUCTURE 2 --->
+    <tr>
+        <!-- structure label -->
+        <td><div class="residue-height label">63CQ</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+    </tr>
+    <!-- STRUCTURE 3 --->
+    <tr>
+        <!-- structure label -->
+        <td><div class="residue-height label">6K9L</div></td>
+        <!-- residues -->
+        <td><div class="residue-width residue-height residue">A</div></td>
+        <td><div class="residue-width residue-height residue">B</div></td>
+        <td><div class="residue-width residue-height residue">C</div></td>
+        <td><div class="residue-width residue-height residue">D</div></td>
+        <td><div class="residue-width residue-height residue">E</div></td>
+        <td><div class="residue-width residue-height residue">F</div></td>
+        <td><div class="residue-width residue-height residue">G</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">H</div></td>
+        <td><div class="residue-width residue-height residue">I</div></td>
+        <td><div class="residue-width residue-height residue">J</div></td>
+        <td><div class="residue-width residue-height residue">-</div></td>
+        <td><div class="residue-width residue-height residue">K</div></td>
+        <td><div class="residue-width residue-height residue">L</div></td>
+        <!-- sort value -->
+        <td><div class="residue-height label">Sort Value</div></td>
+    </tr>
+    </tbody>
+    <!-- END STRUCTURE -------------------------------------------------------->
+
+
+
+
+</table>
+
+
+
+
+</body>
+</html>
