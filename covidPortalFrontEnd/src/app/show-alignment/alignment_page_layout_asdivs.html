@@ -1,0 +1,318 @@
+<html>
+<style>
+
+/* residues */
+.residue-width { width: 10px; text-align: center; }
+.residue-height { height: 14px; line-height: 14px; }
+.residue-outer { /* box container */
+    position: relative;
+    float: left;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.7);
+}
+.residue-inner { /* inner value container */
+    text-align: center;
+    display: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* position names nomenclature */
+.nomen-outer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 80px; /* e.g. the max width of text if rotated*/
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.nomen-inner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 0px;
+    padding-left: 3px;
+    transform-origin: center left;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+/* data table */
+.datatable {
+    font-family: arial, helvetica;
+    font-size: 10pt;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid #000000;
+}
+.datatable th {
+    vertical-align: bottom;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.datatable td, .datatable th {
+    /* border: 1px solid transparent; */
+    padding-left: 3px;
+    padding-right: 3px;
+}
+/* column-wide styles, note that this is currently poorly supported */
+.datatable-labelColumn {
+    width: 100px;
+    /* background: #ff5555; */
+}
+.datatable-dataColumn {
+    /* width: 200px; */
+    /* background: #555555; */
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+.datatable-sortvalueColumn {
+    width: 100px;
+    /* background: #5555ff; */
+    text-align: center;
+}
+.datatable-vscrollColumn {
+    width: 50px;
+    /* background: #55ff55; */
+}
+
+/* panel title label */
+.panelLabel-cell {
+    border: 1px solid #000000;
+    background: rgba(50, 255, 50, 0.4);
+    font-family: arial, helvetica;
+    font-size: 14px;
+    font-weight: bold;
+}
+.panelLabel-outer {
+    position: relative;
+    width: 50px;
+    height: 100px;
+}
+.panelLabel-inner {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: 0px;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+}
+
+
+</style>
+<script>
+
+
+</script>
+<body>
+
+<div id="panels"><!-- begin all panels block -->
+<!-- SEQUENCES ---------------------------------------------------------------->
+<div>
+    <table>
+        <tr>
+            <td class="panelLabel-cell"><!-- panel label ---------------------------------------------->
+                <div class="panelLabel-outer">
+                    <div class="panelLabel-inner">
+                        Protein
+                    </div>
+                </div>
+            </td><!------------------------------------------------------------>
+            <td>
+                <table class="datatable"><!-- sequence display ---------------->
+                    <col class="datatable-labelColumn">
+                    <col class="datatable-dataColumn">
+                    <col class="datatable-sortvalueColumn">
+                    <col class="datatable-vscrollColumn">
+                    <thead>
+                        <th class="labelheader">Label</th>
+                        <th><!-- nomenclature divs ---------------------------->
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1111.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                            <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
+                        </th><!-- end nomenclature divs ----------------------->
+                        <th>sortby</th>
+                        <th>Vscroll</th>
+                    </thead>
+                    <tbody>
+                        <tr><!-- ROW 1 ---------------------------------------->
+                            <td><!-- label ------------------------------------>
+                                <div class="residue-height datatable-labelColumn">Seq 1</div>
+                            </td><!-------------------------------------------->
+                            <td class="datatable-dataColumn"><!-- res divs ---->
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">A</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                            </td><!-------------------------------------------->
+                            <td><!-- sort value ------------------------------->
+                                <div class="residue-height datatable-sortvalueColumn">Sort Value</div>
+                            </td><!-------------------------------------------->
+                            <td rowspan=4><div class="datatable-vscrollColumn">scroll</td>
+                        </tr><!------------------------------------------------>
+                        <tr><!-- ROW 2 ---------------------------------------->
+                            <td><!-- label ------------------------------------>
+                                <div class="residue-height datatable-labelColumn">Seq 1</div>
+                            </td><!-------------------------------------------->
+                            <td class="datatable-dataColumn"><!-- res divs ---->
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">A</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                            </td><!-------------------------------------------->
+                            <td><!-- sort value ------------------------------->
+                                <div class="residue-height datatable-sortvalueColumn">Sort Value</div>
+                            </td><!-------------------------------------------->
+                            <!-- <td>scroll</td> -->
+                        </tr><!------------------------------------------------>
+                        <tr><!-- ROW 3 ---------------------------------------->
+                            <td><!-- label ------------------------------------>
+                                <div class="residue-height datatable-labelColumn">Seq 1</div>
+                            </td><!-------------------------------------------->
+                            <td class="datatable-dataColumn"><!-- res divs ---->
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">A</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                            </td><!-------------------------------------------->
+                            <td><!-- sort value ------------------------------->
+                                <div class="residue-height datatable-sortvalueColumn">Sort Value</div>
+                            </td><!-------------------------------------------->
+                            <!-- <td>scroll</td> -->
+                        </tr><!------------------------------------------------>
+                        <tr><!-- ROW 4 ---------------------------------------->
+                            <td><!-- label ------------------------------------>
+                                <div class="residue-height datatable-labelColumn">Seq 1</div>
+                            </td><!-------------------------------------------->
+                            <td><!-- residue divs ----------------------------->
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">A</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                                <div class="residue-width residue-height residue-outer"><div class="residue-inner">B</div></div>
+                            </td><!-------------------------------------------->
+                            <td><!-- sort value ------------------------------->
+                                <div class="residue-height datatable-sortvalueColumn">Sort Value</div>
+                            </td><!-------------------------------------------->
+                            <!-- <td>scroll</td> -->
+                        </tr><!------------------------------------------------>
+                    </tbody>
+                </table><!-- end sequence display table ----------------------->
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- END SEQUENCES ------------------------------------------------------------>
+
+
+
+
+
+
+</div> <!-- end all panels block -->
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
+
+
+
+</body>
+</html>
