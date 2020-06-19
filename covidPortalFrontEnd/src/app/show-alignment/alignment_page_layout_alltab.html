@@ -2,7 +2,7 @@
 <style>
 #paneltable div {
     font-family: arial, helvetica;
-    font-size: 11px;
+    font-size: 12px;
 }
 .paneltable {
     display: table;
@@ -22,24 +22,24 @@
     display: inline-block;
     padding: 0px;
     margin: 0px;
-    /* border: 1px solid rgba(0,0,0,0.1); */
-    /* background: #ffffff; */
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.7);
 }
 .nomen-outer {
-    border: 1px solid rgba(0,0,0,0);
     position: relative;
     float: left;
     display: inline-block;
-    margin: 0px;
     height: 80px;
     overflow: hidden;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(0,0,0,0.1);
 }
 .nomen-inner {
     position: absolute;
     top: 100%;
     left: 50%;
     margin: 0px;
-    padding: 0px;
+    padding-left: 3px;
     transform-origin: center left;
     transform: translateY(-50%) rotate(-90deg);
 }
@@ -74,38 +74,33 @@
     width: 120px;
     vertical-align: bottom;
 }
-tbody td {
-    border: 1px solid #999999;
-    padding: 0px;
-}
-table {
+
+/* Tables */
+#paneltable {
     overflow: hidden;
     text-align: center;
 }
-thead {
+#paneltable th {
     vertical-align: bottom;
+    font-weight: normal;
+    position: relative;
 }
-th {
-    vertical-align: bottom;
-}
-td, th {
+#paneltable td {
     position: relative;
     padding: none;
 }
-tfoot {
+#paneltable tbody td {
+    border: 1px solid transparent;
+    padding: 0px;
+}
+#paneltable tfoot {
     background: #ffffff;
 }
-table tbody tr:first-child th {
-    /* background: #555555; */
-    /* border-top: 1px solid rgba(1,1,1,0.1); */
-    padding-top: 10px;
-    position: relative;
+#paneltable tbody tr:last-child td {
+    padding-bottom: 15px;
+    /* position: relative; */
 }
-table tbody tr:last-child td {
-    /* padding-bottom: 10px; */
-    position: relative;
-}
-thead th:nth-child(n+3):not(:nth-child(n+19)):hover::after,
+#paneltable thead th:nth-child(n+3):not(:nth-child(n+19)):hover::after,
 tbody td:first-child[rowspan]~td:nth-child(n+3):not(:nth-child(n+19)):hover::after,
 tbody td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::after
 {
@@ -116,51 +111,21 @@ tbody td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hove
     top: -5000px;
     width: 100%;
     z-index: -1;
-    background-color: #eeeeff;
+    background-color: rgba(136,101,255,0.7);
 }
 .hide-tr {
     display: none;
 }
 </style>
 <script>
-function rearrange() {
-    epitopepanel = document.getElementById("epitopepanel");
-    structurepanel = document.getElementById("structurepanel");
-    console.log(epitopepanel.nextSibling.nodeType);
-    console.log(structurepanel.parentNode.nextSibling);
-    epitopepanel.parentNode.insertBefore(
-        structurepanel.parentNode.removeChild(structurepanel),
-        epitopepanel
-    );
-}
-function movedown(eid) {
-    let curpanel = document.getElementById(eid);
-    let parent = curpanel.parentNode;
-    let tblen = parent.tBodies.length;
-    var curix = [].slice.call(parent.tBodies).indexOf(curpanel);
-    if (curix>(parent.tBodies.length-2)) { return; }
-    parent.insertBefore(
-        parent.removeChild(curpanel),
-        parent.tBodies[curix+2]
-    );
-}
-function moveup(eid) {
-    let curpanel = document.getElementById(eid);
-    let parent = curpanel.parentNode;
-    let tblen = parent.tBodies.length;
-    var curix = [].slice.call(parent.tBodies).indexOf(curpanel);
-    if (curix<=1) { return; }
-    parent.insertBefore(
-        parent.removeChild(curpanel),
-        parent.tBodies[curix-1]
-    );
-}
+
+
+
 
 </script>
 <body>
 
 <table border=0 class="paneltable" id="paneltable">
-
     <thead>
         <th></th>
         <th class="label-header">Accession</th>
@@ -286,8 +251,8 @@ function moveup(eid) {
         </th>
         <!-- position nomenclature -->
         <th colspan=16>
-            <button onclick="moveup('epitopepanel')">Up</button>
-            <button onclick="movedown('epitopepanel')">Dn</button>
+            <!-- <button onclick="moveup('epitopepanel')">Up</button> -->
+            <!-- <button onclick="movedown('epitopepanel')">Dn</button> -->
         </th>
         <th class="sort-header">
             <select>
@@ -382,8 +347,8 @@ function moveup(eid) {
         <th class="label-header">PDB ID</th>
         <!-- position nomenclature -->
         <th colspan=16>
-            <button onclick="moveup('structurepanel')">Up</button>
-            <button onclick="movedown('structurepanel')">Dn</button>
+            <!-- <button onclick="moveup('structurepanel')">Up</button> -->
+            <!-- <button onclick="movedown('structurepanel')">Dn</button> -->
         </th>
         <th class="sort-header">
             <select>
@@ -492,6 +457,10 @@ function moveup(eid) {
 <br>
 <button onclick="javascript:document.getElementById('structurepanel').style.display='table-row-group'">Show Structure</button>
 <button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button>
+<button onclick="
+document.getElementById('4').style.background = '#555555'
+">test</button>
+<button onclick="run()">run</button>
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->

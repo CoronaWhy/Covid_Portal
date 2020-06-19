@@ -39,12 +39,17 @@
 }
 
 /* data table */
+.datatable-cell {
+    background: rgba(50, 50, 50, 0.2);
+}
 .datatable {
     font-family: arial, helvetica;
     font-size: 10pt;
     border-collapse: collapse;
     overflow: hidden;
+    width: 480px;
     border: 1px solid #000000;
+    table-layout: fixed;
 }
 .datatable th {
     vertical-align: bottom;
@@ -55,6 +60,8 @@
     /* border: 1px solid transparent; */
     padding-left: 3px;
     padding-right: 3px;
+    border: none;
+    white-space: nowrap;
 }
 .datatable select {
     width: 100px;
@@ -67,8 +74,11 @@
 .datatable-dataColumn {
     /* width: 200px; */
     /* background: #555555; */
-    border-left: 1px solid #000000;
-    border-right: 1px solid #000000;
+    /* border-left: 1px solid #000000; */
+    /* border-right: 1px solid #000000; */
+    border: 1px solid #000000;
+    white-space: nowrap;
+    width: 248px;
 }
 .datatable-sortvalueColumn {
     width: 100px;
@@ -76,13 +86,15 @@
     text-align: center;
 }
 .datatable-vscrollColumn {
-    width: 50px;
+    /* width: 20px; */
     /* background: #55ff55; */
 }
 
 /* panel title label */
 .panelLabel-cell {
     border: 1px solid #000000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     background: rgba(50, 255, 50, 0.4);
     font-family: arial, helvetica;
     font-size: 14px;
@@ -101,6 +113,14 @@
     transform-origin: left top;
     transform: rotate(-90deg) translateX(-50%) translateY(-100%);
 }
+
+.panelLayoutTable {
+    /* border: 1px solid #000000; */
+    border-collapse: separate;
+}
+.panelContainer {
+    padding-top: 2px;
+}
 </style>
 <script>
 
@@ -110,23 +130,24 @@
 
 <div id="panels"><!-- begin all panels block -->
 <!-- ALIGNMENT ---------------------------------------------------------------->
-<div>
-    <table>
+<div class="panelContainer">
+    <table class="panelLayoutTable">
         <tr>
             <td class="panelLabel-cell"><!-- panel label ---------------------------------------------->
-                <div class="panelLabel-outer">
+                <div class="panelLabel-outer" >
                     <div class="panelLabel-inner">
+                        Residues
                     </div>
                 </div>
             </td><!------------------------------------------------------------>
-            <td>
+            <td class="datatable-cell">
                 <table class="datatable"><!-- sequence display ---------------->
                     <col class="datatable-labelColumn">
                     <col class="datatable-dataColumn">
                     <col class="datatable-sortvalueColumn">
                     <col class="datatable-vscrollColumn">
                     <thead>
-                        <th class="datatable-labelColumn"></th>
+                        <th class="datatable-labelColumn">Label</th>
                         <th><!-- nomenclature divs ---------------------------->
                             <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
                             <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
@@ -149,7 +170,7 @@
                             <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
                             <div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div>
                         </th><!-- end nomenclature divs ----------------------->
-                        <th class="datatable-sortvalueColumn"></th>
+                        <th class="datatable-sortvalueColumn">Sort Value</th>
                         <th class="datatable-vscrollColumn"></th>
                     </thead>
                 </table><!-- end sequence display table ----------------------->
@@ -160,8 +181,8 @@
 <!-- END ALIGNMENT ------------------------------------------------------------>
 
 <!-- SEQUENCES ---------------------------------------------------------------->
-<div>
-    <table>
+<div class="panelContainer">
+    <table class="panelLayoutTable">
         <tr>
             <td class="panelLabel-cell"><!-- panel label ---------------------------------------------->
                 <div class="panelLabel-outer">
@@ -170,29 +191,18 @@
                     </div>
                 </div>
             </td><!------------------------------------------------------------>
-            <td>
+            <td class="datatable-cell">
                 <table class="datatable"><!-- sequence display ---------------->
                     <col class="datatable-labelColumn">
                     <col class="datatable-dataColumn">
                     <col class="datatable-sortvalueColumn">
                     <col class="datatable-vscrollColumn">
-                    <thead>
-                        <th class="datatable-labelColumn">Label</th>
-                        <th><!-- nomenclature divs ---------------------------->
-                        </th><!-- end nomenclature divs ----------------------->
-                        <th class="datatable-sortvalueColumn">
-                            <select>
-                                <option value="accession" selected>accession</option>
-                                <option value="taxon">taxon</option>
-                                <option value="organism">organism</option>
-                                <option value="country">country</option>
-                                <option value="host">host</option>
-                                <option value="source">source</option>
-                                <option value="isolate">isolate</option>
-                            </select>
-                        </th>
+                    <!-- <thead>
+                        <th class="datatable-labelColumn"></th>
+                        <th></th>
+                        <th class="datatable-sortvalueColumn"></th>
                         <th class="datatable-vscrollColumn"></th>
-                    </thead>
+                    </thead> -->
                     <tbody>
                         <tr><!-- ROW 1 ---------------------------------------->
                             <td><!-- label ------------------------------------>
@@ -327,8 +337,8 @@
 <!-- END SEQUENCES ------------------------------------------------------------>
 
 <!-- EPITOPES ----------------------------------------------------------------->
-<div>
-    <table>
+<div class="panelContainer">
+    <table class="panelLayoutTable">
         <tr>
             <td class="panelLabel-cell"><!-- panel label ---------------------------------------------->
                 <div class="panelLabel-outer">
@@ -337,41 +347,18 @@
                     </div>
                 </div>
             </td><!------------------------------------------------------------>
-            <td>
+            <td class="datatable-cell">
                 <table class="datatable"><!-- sequence display ---------------->
                     <col class="datatable-labelColumn">
                     <col class="datatable-dataColumn">
                     <col class="datatable-sortvalueColumn">
                     <col class="datatable-vscrollColumn">
-                    <thead>
-                        <th class="datatable-labelColumn">
-                            <select>
-                                <option value="host" selected>host</option>
-                                <option value="IEDB_id">IEDB id</option>
-                                <option value="assay_type">assay type</option>
-                                <option value="assay_result">result</option>
-                                <option value="mhc_allele">MHC allele</option>
-                                <option value="mhc_class">MHC class</option>
-                                <option value="exp_method">Method</option>
-                                <option value="measurement_type">Measurement</option>
-                            </select>
-                        </th>
-                        <th><!-- nomenclature divs ---------------------------->
-                        </th><!-- end nomenclature divs ----------------------->
-                        <th class="datatable-sortvalueColumn">
-                            <select>
-                                <option value="host" selected>host</option>
-                                <option value="IEDB_id">IEDB id</option>
-                                <option value="assay_type">assay type</option>
-                                <option value="assay_result">result</option>
-                                <option value="mhc_allele">MHC allele</option>
-                                <option value="mhc_class">MHC class</option>
-                                <option value="exp_method">Method</option>
-                                <option value="measurement_type">Measurement</option>
-                            </select>
-                        </th>
+                    <!-- <thead>
+                        <th class="datatable-labelColumn"></th>
+                        <th></th>
+                        <th class="datatable-sortvalueColumn"></th>
                         <th class="datatable-vscrollColumn"></th>
-                    </thead>
+                    </thead> -->
                     <tbody>
                         <tr><!-- ROW 1 ---------------------------------------->
                             <td><!-- label ------------------------------------>
@@ -504,9 +491,26 @@
     </table>
 </div>
 <!-- END EPITOPES ------------------------------------------------------------->
-
-
-
+<!-- FILTER PANEL ------------------------------------------------------------->
+<div class="panelContainer">
+    <table class="panelLayoutTable">
+        <tr>
+            <td class="panelLabel-cell"><!-- panel label ---------------------------------------------->
+                <div class="panelLabel-outer">
+                    <div class="panelLabel-inner">
+                        Filters
+                    </div>
+                </div>
+            </td><!------------------------------------------------------------>
+            <td class="datatable-cell">
+                <table class="datatable"><!-- sequence display ---------------->
+                    <tr><td></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+<!-- END FILTER PANEL --------------------------------------------------------->
 
 
 </div> <!-- end all panels block -->
