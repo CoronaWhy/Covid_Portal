@@ -1,0 +1,328 @@
+<router-outlet></router-outlet>
+
+<div class="container">
+  <br/>
+	<br/>
+	<br/>
+
+	<div  *ngIf="!displayAlignmentObjList" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
+		Loading ..
+	</div>
+
+    <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+
+      <div class="row" style="float:clear;margin-left:70px;">
+        <div *ngFor="let selectedAccession of selectedAccessions">{{selectedAccession}}&nbsp;&nbsp;</div>
+      </div>
+      <br/>
+      <br/>
+
+    <table width="2000">
+
+      <tr style="text-align:center;">
+        <td width="10%" >
+          Major 2
+        </td>
+        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
+              <div style="inline-block;" id="nomenclatureObj0Id" >
+                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
+                  &nbsp;
+                </div>
+                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor2 of displayNomenclaturePositionObj.nomenclaturePositionMajor2s">
+                  {{nomenclaturePositionMajor2}}
+                </div>
+              </div>
+          </div>
+
+
+        </td>
+      </tr>
+    <tr style="text-align:center;">
+        <td width="10%" >
+          Major 1
+        </td>
+        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
+              <div style="inline-block;" id="nomenclatureObj0Id" >
+                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
+                  &nbsp;
+                </div>
+                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor1 of displayNomenclaturePositionObj.nomenclaturePositionMajor1s">
+                  {{nomenclaturePositionMajor1}}
+                </div>
+              </div>
+          </div>
+
+
+        </td>
+      </tr>
+
+      <tr style="text-align:center;">
+        <td width="10%" >
+          Major 0
+        </td>
+        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
+              <div style="inline-block;" id="nomenclatureObj0Id" >
+                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
+                  &nbsp;
+                </div>
+                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor0 of displayNomenclaturePositionObj.nomenclaturePositionMajor0s">
+                  {{nomenclaturePositionMajor0}}
+                </div>
+              </div>
+          </div>
+
+
+        </td>
+      </tr>
+
+      <tr style="text-align:center;">
+        <td width="10%" >
+          Minor 0
+        </td>
+        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
+              <div style="inline-block;" id="nomenclatureObj0Id" >
+                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
+                  &nbsp;
+                </div>
+                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMinor0 of displayNomenclaturePositionObj.nomenclaturePositionMinor0s">
+                  {{nomenclaturePositionMinor0}}
+                </div>
+              </div>
+          </div>
+
+
+        </td>
+      </tr>
+
+      <tr style="text-align:center;">
+        <td width="10%" >
+          <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
+        </td>
+        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
+
+          <div *ngIf="displayAlignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
+    			    <div style="inline-block;position:relative;" *ngFor="let displayAlignmentObj of displayAlignmentObjList" id="{{displayAlignmentObj.label}}" >
+    							<div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
+    							{{displayAlignmentObj.label}}
+    						</div>
+    						<div style="width:15px;display: inline-block;float:left;font-weight:bold;opacity: 0.8;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"
+                (click)="handleResidueClick(residueObj.residueLabel, residueObj.position);">
+    							{{residueObj.residueValue}}
+    						</div>
+    					</div>
+    			</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <br/>
+  <div style="float:clear;">
+
+    <div style=" max-width: 2000px;" *ngIf="displayAlignmentObjList">
+        Begin position:&nbsp;
+        <!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
+        <div class="slidecontainer" style="float:left;">
+          <input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
+          <div>Slider Value: {{positionSliderValue}}</div>
+        </div>&nbsp;
+            <!-- <div class="row" style="float:clear;">
+              <br/>
+              <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider>
+              <br/>
+            </div> -->
+    </div>
+
+<!--
+    </div> -->
+
+
+	</div>
+
+  <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+
+		<div  class="btn-group">
+			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="showFiltersFlag">Hide Filters&nbsp;<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+				</button>&nbsp;
+			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="!showFiltersFlag">Show Filters&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</button>&nbsp;
+		</div>
+		<div id="spacerDiv" *ngIf="showFiltersFlag" class= "row" style="float:clear;">
+
+    	<br/>
+		</div>
+  </div>
+		<div id="paramsDiv" *ngIf="showFiltersFlag" style="border: 2px dashed;padding:20px;">
+      Filters
+      <ngb-tabset type="pills" [activeId]="activeTabTitle">
+
+      <ngb-tab title="Sequences" id="sequencesId" name="sequencesDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="sequencesTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+      <ngb-tab title="Epitopes" id="epitopesId" name="epitopesDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="epitopesTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+    </ngb-tabset>
+
+    <!-- mri qc tabset -->
+    <ng-template #sequencesTabset>
+
+      <!-- <ngb-tabset type="pills" [activeId]="activeTabTitle">
+
+        <ngb-tab *ngFor = "let sequenceHostObj of sequenceHostObjList; let selectedIndex = index" [attr.data-index]="selectedStatsImageIndex" (click) = "setSelectedStatsImage(selectedStatsImageIndex)"
+                  title="{{statsImageObj.name}}" >
+
+          <ng-template ngbTabContent>
+ -->
+          <div class="row" style="float:right;">
+            Sort:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()"> &nbsp;
+            Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
+          </div>
+          <div class="row" style="float:clear;">
+            <br/>&nbsp;
+          </div>
+            <div class="row" style="float:clear;overflow: scroll;height:400px;">
+
+                <div *ngIf="displaySequenceObjList?.length > 0">
+
+
+                    <table class="table table-bordered table-striped">
+
+                      <thead>
+                        <tr>
+
+                          <td>
+                              Select
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Accession
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Organism
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Collection Date
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Isolation Source
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Coded By
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Protein ID
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Taxon ID
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr *ngFor ="let row of displaySequenceObjList">
+                          <td>
+                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
+                          </td>
+                          <td>
+                              {{row.accession}}
+                          </td>
+
+                          <td>
+                            {{row.organism}}
+                          </td>
+
+                          <td>
+                            {{row.collection_date}}
+                          </td>
+
+                          <td>
+                            {{row.isolate}}
+                          </td>
+
+                          <td>
+                            {{row.coded_by}}
+                          </td>
+                          <td>
+                            {{row.protein_id}}
+                          </td>
+                          <td>
+                            {{row.taxon_id}}
+                          </td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+
+                    <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
+
+                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
+                			</button>&nbsp;
+
+                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
+                  		</button>
+
+                    </div>
+
+                </div>
+
+              </div>
+
+           <!-- </ng-template>
+
+        </ngb-tab>
+
+      </ngb-tabset> -->
+
+    </ng-template>
+
+    <ng-template #sequenceTabset>
+    </ng-template>
+
+    </div>
+
+
+</div>

@@ -1,150 +1,363 @@
 <router-outlet></router-outlet>
 
 <div class="container">
-  <br/>
-	<br/>
-	<br/>
 
-	<div  *ngIf="!displayAlignmentObjList" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;">
-		Loading ..
-	</div>
+  <table border=0 class="table paneltable" id="paneltable">
 
-    <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+     <thead>
+         <th></th>
+         <th class="label-header">Accession</th>
+         <!-- position nomenclature -->
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">2.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">3.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">4.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">5.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">6.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.001</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.002</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.003</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">8.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">9.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.001</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">11.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1121.000</div></div></th>
+         <!-- end position nomenclature -->
+         <th class="sort-header">
+             <select>
+                 <option selected>Label</option>
+                 <option>Host</option>
+                 <option>Country</option>
+                 <option>Accession</option>
+             </select>
+         </th>
+         <th></th>
+     </thead>
+     <!-- SEQUENCES ------------------------------------------------------------>
+     <tbody>
+     <!-- SEQUENCE 1 --->
+     <tr>
+         <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Protein</div></div></td>
+         <!-- sequence label -->
+         <td><div class="residue-height label">Seq 1</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+         <td rowspan=3>scroll</td>
+     </tr>
+     <!-- SEQUENCE 2 -->
+     <tr>
+         <!-- sequence label -->
+         <td><div class="residue-height label">Seq 2</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+         <!-- <td rowspan=3>scroll</td> -->
+     </tr>
+     <!-- SEQUENCE 3 -->
+     <tr>
+         <!-- sequence label -->
+         <td><div class="residue-height label">Seq 2</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+         <!-- <td rowspan=3>scroll</td> -->
+     </tr>
+     </tbody>
+     <!-- END SEQUENCES -------------------------------------------------------->
+     <!-- BEGIN EPITOPES ------------------------------------------------------->
+     <tbody id="epitopepanel">
+     <tr>
+         <th></th>
+         <th class="label-header">
+             <select>
+                 <option selected>Label</option>
+                 <option>Host</option>
+                 <option>Country</option>
+                 <option>Accession</option>
+             </select>
+         </th>
+         <!-- position nomenclature -->
+         <th colspan="16">
+             <button onclick="moveup('epitopepanel')">Up</button>
+             <button onclick="movedown('epitopepanel')">Dn</button>
+         </th>
+         <th class="sort-header">
+             <select>
+                 <option selected>Label</option>
+                 <option>Host</option>
+                 <option>Country</option>
+                 <option>Accession</option>
+             </select>
+         </th>
+         <th></th>
+     </tr>
+     <!-- EPITOPE 1 --->
+     <tr>
+         <td rowspan="3"><div class="paneltab-outer"><div class="paneltab-inner">Epitopes</div></div></td>
+         <!-- epitope label -->
+         <td><div class="residue-height label">Ep 1</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+         <td rowspan=3>scroll</td>
+     </tr>
+     <!-- EPITOPE 2 --->
+     <tr>
+         <!-- epitope label -->
+         <td><div class="residue-height label">Ep 2</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+     </tr>
+     <!-- EPITOPE 3 --->
+     <tr>
+         <!-- epitope label -->
+         <td><div class="residue-height label">Ep 3</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+     </tr>
+     </tbody>
+     <!-- END EPITOPES --------------------------------------------------------->
+     <!-- BEGIN STRUCTURE ------------------------------------------------------>
+     <tbody id="structurepanel">
+     <tr>
+         <th></th>
+         <th class="label-header">PDB ID</th>
+         <!-- position nomenclature -->
+         <th colspan=16>
+             <button onclick="moveup('structurepanel')">Up</button>
+             <button onclick="movedown('structurepanel')">Dn</button>
+         </th>
+         <th class="sort-header">
+             <select>
+                 <option selected>Label</option>
+                 <option>Host</option>
+                 <option>Country</option>
+                 <option>Accession</option>
+             </select>
+         </th>
+         <th></th>
+     </tr>
+     <!-- STRUCTURE 1 --->
+     <tr>
+         <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></div></td>
+         <!-- structure label -->
+         <td><div class="residue-height label">5JX9</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+         <td rowspan=3>scroll</td>
+     </tr>
+     <!-- STRUCTURE 2 --->
+     <tr>
+         <!-- structure label -->
+         <td><div class="residue-height label">63CQ</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+     </tr>
+     <!-- STRUCTURE 3 --->
+     <tr>
+         <!-- structure label -->
+         <td><div class="residue-height label">6K9L</div></td>
+         <!-- residues -->
+         <td><div class="residue-width residue-height residue">A</div></td>
+         <td><div class="residue-width residue-height residue">B</div></td>
+         <td><div class="residue-width residue-height residue">C</div></td>
+         <td><div class="residue-width residue-height residue">D</div></td>
+         <td><div class="residue-width residue-height residue">E</div></td>
+         <td><div class="residue-width residue-height residue">F</div></td>
+         <td><div class="residue-width residue-height residue">G</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">H</div></td>
+         <td><div class="residue-width residue-height residue">I</div></td>
+         <td><div class="residue-width residue-height residue">J</div></td>
+         <td><div class="residue-width residue-height residue">-</div></td>
+         <td><div class="residue-width residue-height residue">K</div></td>
+         <td><div class="residue-width residue-height residue">L</div></td>
+         <!-- sort value -->
+         <td><div class="residue-height label">Sort Value</div></td>
+     </tr>
+     </tbody>
+     <!-- END STRUCTURE -------------------------------------------------------->
+     <!-- BEGIN SCROLLBAR ------------------------------------------------------>
+     <tfoot>
+         <td></td>
+         <td></td>
+         <td colspan=16>
+           <div *ngIf="displayAlignmentObjList">
+               Begin position:&nbsp;
+               <!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
+               <div class="slidecontainer" style="float:left;">
+                 <input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
+                 <div>Slider Value: {{positionSliderValue}}</div>
+               </div>&nbsp;
+                   <!-- <div class="row" style="float:clear;">
+                     <br/>
+                     <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider>
+                     <br/>
+                   </div> -->
+           </div>
 
-      <div class="row" style="float:clear;margin-left:70px;">
-        <div *ngFor="let selectedAccession of selectedAccessions">{{selectedAccession}}&nbsp;&nbsp;</div>
-      </div>
-      <br/>
-      <br/>
+              <!-- <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider> -->
 
-    <table width="2000">
-
-      <tr style="text-align:center;">
-        <td width="10%" >
-          Major 2
-        </td>
-        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
-          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
-              <div style="inline-block;" id="nomenclatureObj0Id" >
-                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
-                  &nbsp;
-                </div>
-                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor2 of displayNomenclaturePositionObj.nomenclaturePositionMajor2s">
-                  {{nomenclaturePositionMajor2}}
-                </div>
-              </div>
-          </div>
-
-
-        </td>
-      </tr>
-    <tr style="text-align:center;">
-        <td width="10%" >
-          Major 1
-        </td>
-        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
-          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
-              <div style="inline-block;" id="nomenclatureObj0Id" >
-                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
-                  &nbsp;
-                </div>
-                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor1 of displayNomenclaturePositionObj.nomenclaturePositionMajor1s">
-                  {{nomenclaturePositionMajor1}}
-                </div>
-              </div>
-          </div>
-
-
-        </td>
-      </tr>
-
-      <tr style="text-align:center;">
-        <td width="10%" >
-          Major 0
-        </td>
-        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
-          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
-              <div style="inline-block;" id="nomenclatureObj0Id" >
-                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
-                  &nbsp;
-                </div>
-                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMajor0 of displayNomenclaturePositionObj.nomenclaturePositionMajor0s">
-                  {{nomenclaturePositionMajor0}}
-                </div>
-              </div>
-          </div>
-
-
-        </td>
-      </tr>
-
-      <tr style="text-align:center;">
-        <td width="10%" >
-          Minor 0
-        </td>
-        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
-          <div *ngIf="alignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
-              <div style="inline-block;" id="nomenclatureObj0Id" >
-                <div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
-                  &nbsp;
-                </div>
-                <div style="width:15px;display: inline-block;float:left;font-weight:bold;" *ngFor="let nomenclaturePositionMinor0 of displayNomenclaturePositionObj.nomenclaturePositionMinor0s">
-                  {{nomenclaturePositionMinor0}}
-                </div>
-              </div>
-          </div>
-
-
-        </td>
-      </tr>
-
-      <tr style="text-align:center;">
-        <td width="10%" >
-          <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
-        </td>
-        <td width="90%" style="position:absolute;vertical-align:center;text-align:center;">
-
-          <div *ngIf="displayAlignmentObjList?.length > 0" style="position:absolute;vertical-align:top;">
-    			    <div style="inline-block;position:relative;" *ngFor="let displayAlignmentObj of displayAlignmentObjList" id="{{displayAlignmentObj.label}}" >
-    							<div style="inline-block;;float:left; margin-right: 5px;width:115px;text-align:left;">
-    							{{displayAlignmentObj.label}}
-    						</div>
-    						<div style="width:15px;display: inline-block;float:left;font-weight:bold;opacity: 0.8;" *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor"
-                (click)="handleResidueClick(residueObj.residueLabel, residueObj.position);">
-    							{{residueObj.residueValue}}
-    						</div>
-    					</div>
-    			</div>
-        </td>
-      </tr>
-    </table>
+         </td>
+         <td></td>
+         <td></td>
+     </tfoot>
+     <!-- END SCROLLBAR -------------------------------------------------------->
+  </table>
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------->
+  <div class="btn-grp">
+    <button onclick="javascript:document.getElementById('epitopepanel').style.display='table-row-group'">Show Epitope</button>
+    <button onclick="javascript:document.getElementById('epitopepanel').style.display='none'">Hide Epitope</button>
+    <br>
+    <button onclick="javascript:document.getElementById('structurepanel').style.display='table-row-group'">Show Structure</button>
+    <button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button>
   </div>
-  <br/>
-  <div style="float:clear;">
-
-    <div style=" max-width: 2000px;" *ngIf="displayAlignmentObjList">
-        Begin position:&nbsp;
-        <!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
-        <div class="slidecontainer" style="float:left;">
-          <input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
-          <div>Slider Value: {{positionSliderValue}}</div>
-        </div>&nbsp;
-            <!-- <div class="row" style="float:clear;">
-              <br/>
-              <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider>
-              <br/>
-            </div> -->
-    </div>
-
-<!--
-    </div> -->
-
-
-	</div>
 
   <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
 
-		<div  class="btn-group">
+		<div  class="btn-group" style="margin-left:10px;">
 			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="showFiltersFlag">Hide Filters&nbsp;<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 				</button>&nbsp;
 			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="!showFiltersFlag">Show Filters&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i>
@@ -323,6 +536,5 @@
     </ng-template>
 
     </div>
-
 
 </div>

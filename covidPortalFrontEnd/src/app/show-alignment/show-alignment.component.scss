@@ -173,3 +173,129 @@
 
   border-top: 5px solid black;
 }
+
+
+
+/* Nic's design for front end'*/
+
+#paneltable div {
+   font-family: arial, helvetica;
+   font-size: 11px;
+}
+.paneltable {
+   display: table;
+   border-collapse: collapse;
+   border-spacing: 0px;
+   overflow: hidden;
+   border: 1px solid transparent; /* for consistent spacing w/wo border */
+}
+.residue-width { width: 10px; text-align: center; }
+.residue-height { height: 14px; line-height: 14px; }
+.label {
+   display: table-cell;
+   vertical-align: middle;
+}
+.residue {
+   text-align: center;
+   display: inline-block;
+   padding: 0px;
+   margin: 0px;
+   /* border: 1px solid rgba(0,0,0,0.1); */
+   /* background: #ffffff; */
+}
+.nomen-outer {
+   border: 1px solid rgba(0,0,0,0);
+   position: relative;
+   float: left;
+   display: inline-block;
+   margin: 0px;
+   height: 80px;
+   overflow: hidden;
+}
+.nomen-inner {
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin: 0px;
+   padding: 0px;
+   transform-origin: center left;
+   transform: translateY(-50%) rotate(-90deg);
+}
+.paneltab-outer {
+   width: 40px;
+   border: 1px solid rgba(0,0,0,0);
+   position: relative;
+   float: left;
+   display: inline-block;
+   margin: 0px;
+   /* height: 50px; */
+   overflow: hidden;
+}
+.paneltab-inner {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin: 0px;
+   padding: 0px;
+   transform-origin: center center;
+   transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+   font-size: 125%;
+}
+
+.label-header {
+   width: 120px;
+   vertical-align: bottom;
+   /* padding-top: 30px; */
+   text-align: center;
+}
+.sort-header {
+   width: 120px;
+   vertical-align: bottom;
+}
+tbody td {
+   border: 1px solid #999999;
+   padding: 0px;
+}
+table {
+   overflow: hidden;
+   text-align: center;
+}
+thead {
+   vertical-align: bottom;
+}
+th {
+   vertical-align: bottom;
+}
+td, th {
+   position: relative;
+   padding: none;
+}
+tfoot {
+   background: #ffffff;
+}
+table tbody tr:first-child th {
+   /* background: #555555; */
+   /* border-top: 1px solid rgba(1,1,1,0.1); */
+   padding-top: 10px;
+   position: relative;
+}
+table tbody tr:last-child td {
+   /* padding-bottom: 10px; */
+   position: relative;
+}
+thead th:nth-child(n+3):not(:nth-child(n+19)):hover::after,
+tbody td:first-child[rowspan]~td:nth-child(n+3):not(:nth-child(n+19)):hover::after,
+tbody td:first-child:not([rowspan])~td:nth-child(n+2):not(:nth-child(n+18)):hover::after
+{
+   content: '';
+   height: 10000px;
+   left: 0;
+   position: absolute;
+   top: -5000px;
+   width: 100%;
+   z-index: -1;
+   background-color: #eeeeff;
+}
+.hide-tr {
+   display: none;
+}
