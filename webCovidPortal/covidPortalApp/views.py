@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.conf import settings
-
+import pymongo
 import hashlib
 import pandas as pd
 import shutil
@@ -393,9 +393,9 @@ def showAlignment(request):
         alignmentResultObj["selectedAccessions"] = selectedAccessions
         alignmentResultObj["nomenclaturePositionObj"] = nomenclaturePositionObj
 
-        masterObj["alignmentResultObj"] = alignmentResultObj
-        masterObj["epitopesObjs"] = epitopesObjs
-        masterObj["structureObjs"] = structureObjs
+        # masterObj["alignmentResultObj"] = alignmentResultObj
+        # masterObj["epitopesObjs"] = epitopesObjs
+        # masterObj["structureObjs"] = structureObjs
 
         # print (sequenceResultObj)
 
