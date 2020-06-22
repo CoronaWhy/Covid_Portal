@@ -9,7 +9,6 @@
          <th class="label-header">Accession</th>
 
          <!-- position nomenclature -->
-
          <th *ngFor="let nomenclaturePositionString of displayNomenclaturePositionStrings">
            <div class="nomen-outer residue-width"><div class="nomen-inner">{{nomenclaturePositionString}}</div></div>
          </th>
@@ -43,80 +42,15 @@
      <!-- SEQUENCES ------------------------------------------------------------>
      <tbody>
      <!-- SEQUENCE 1 --->
-     <tr>
-         <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Protein</div></div></td>
+     <tr *ngFor="let displayAlignmentObj of displayAlignmentObjList; let idx = index">
+         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Protein</div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label">Seq 1</div></td>
+         <td><div class="residue-height label">{{displayAlignmentObj.label}}</div></td>
          <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
+         <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">Sort Value</div></td>
-         <td rowspan=3>scroll</td>
-     </tr>
-     <!-- SEQUENCE 2 -->
-     <tr>
-         <!-- sequence label -->
-         <td><div class="residue-height label">Seq 2</div></td>
-         <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
-         <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
-         <!-- <td rowspan=3>scroll</td> -->
-     </tr>
-     <!-- SEQUENCE 3 -->
-     <tr>
-         <!-- sequence label -->
-         <td><div class="residue-height label">Seq 2</div></td>
-         <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
-         <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
-         <!-- <td rowspan=3>scroll</td> -->
+         <td rowspan=3 *ngIf="idx == 0">scroll</td>
      </tr>
      </tbody>
      <!-- END SEQUENCES -------------------------------------------------------->

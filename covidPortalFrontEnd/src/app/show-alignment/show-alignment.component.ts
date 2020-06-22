@@ -24,6 +24,7 @@ import { of } from 'rxjs';
     styleUrls: ['./show-alignment.component.scss']
 })
 
+
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     @Input()
