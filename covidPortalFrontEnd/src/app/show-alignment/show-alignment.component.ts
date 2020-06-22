@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
 import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
-import { AlignmentObj, ResidueObj, NomenclaturePositionObj } from '../models/alignment';
+import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
@@ -65,8 +65,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     numRowsInPage:number;
     hidePrevButton: boolean;
     hideNextButton: boolean;
-    nomenclaturePositionObj:NomenclaturePositionObj;
-    displayNomenclaturePositionObj:NomenclaturePositionObj;
+    nomenclaturePositionStrings:string[];
+    displayNomenclaturePositionStrings:string[];
     offset:number;
     numRowsInAlignment:number;
     @ViewChild('sequenceTable') sequenceTable;
@@ -224,10 +224,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       for (let i = 0; i < this.alignmentObjList.length; i++){
         this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
-        this.displayNomenclaturePositionObj.nomenclaturePositionMajor0s = this.nomenclaturePositionObj.nomenclaturePositionMajor0s.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
-        this.displayNomenclaturePositionObj.nomenclaturePositionMajor1s = this.nomenclaturePositionObj.nomenclaturePositionMajor1s.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
-        this.displayNomenclaturePositionObj.nomenclaturePositionMajor2s = this.nomenclaturePositionObj.nomenclaturePositionMajor2s.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
-        this.displayNomenclaturePositionObj.nomenclaturePositionMinor0s = this.nomenclaturePositionObj.nomenclaturePositionMinor0s.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+        this.displayNomenclaturePositionStrings = this.nomenclaturePositionStrings.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
       }
     }
@@ -270,7 +267,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.indexValue = 0;
       this.message = "";
       this.startPosition = 0;
-      this.maxDisplayResidues = 60;
+      this.maxDisplayResidues = 16;
       this.endPosition = this.maxDisplayResidues;
       this.positionSliderValue = 0;
 
@@ -298,15 +295,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.selectedAccessions = alignmentResult.selectedAccessions;
-         this.nomenclaturePositionObj = alignmentResult.nomenclaturePositionObj;
+         this.nomenclaturePositionStrings = alignmentResult.nomenclaturePositionStrings;
 
-         this.displayNomenclaturePositionObj = new NomenclaturePositionObj();
-
-         // this.displayNomenclaturePositionObj.nomenclaturePositionMajor0s = JSON.parse(JSON.stringify(this.nomenclaturePositionObj.nomenclaturePositionMajor0s));
-         this.displayNomenclaturePositionObj.nomenclaturePositionMajor0s = this.nomenclaturePositionObj.nomenclaturePositionMajor0s.slice(this.startPosition,this.endPosition);
-         this.displayNomenclaturePositionObj.nomenclaturePositionMajor1s = this.nomenclaturePositionObj.nomenclaturePositionMajor1s.slice(this.startPosition,this.endPosition);
-         this.displayNomenclaturePositionObj.nomenclaturePositionMajor2s = this.nomenclaturePositionObj.nomenclaturePositionMajor2s.slice(this.startPosition,this.endPosition);
-         this.displayNomenclaturePositionObj.nomenclaturePositionMinor0s = this.nomenclaturePositionObj.nomenclaturePositionMinor0s.slice(this.startPosition,this.endPosition);
+         this.displayNomenclaturePositionStrings = this.nomenclaturePositionStrings.slice(this.startPosition,this.endPosition);
 
          this.initialAlignment = false;
 

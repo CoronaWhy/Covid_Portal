@@ -377,21 +377,26 @@ def showAlignment(request):
             nomenclature = Nomenclature.objects.get(pk=1)
             nomenclaturePositions = NomenclaturePosition.objects.filter(nomenclature = nomenclature)
 
-            nomenclaturePositionMajor0s = [str(x.major)[0] for x in nomenclaturePositions]
-            nomenclaturePositionMajor1s = [str(x.major)[1] if len(str(x.major)) > 1 else ' ' for x in nomenclaturePositions]
-            nomenclaturePositionMajor2s = [str(x.major)[2] if len(str(x.major)) > 2 else ' ' for x in nomenclaturePositions]
-            nomenclaturePositionMinor0s = [str(x.minor)[0] for x in nomenclaturePositions]
+            # nomenclaturePositionMajor0s = [str(x.major)[0] for x in nomenclaturePositions]
+            # nomenclaturePositionMajor1s = [str(x.major)[1] if len(str(x.major)) > 1 else ' ' for x in nomenclaturePositions]
+            # nomenclaturePositionMajor2s = [str(x.major)[2] if len(str(x.major)) > 2 else ' ' for x in nomenclaturePositions]
+            # nomenclaturePositionMinor0s = [str(x.minor)[0] for x in nomenclaturePositions]
 
-            nomenclaturePositionObj = {"nomenclaturePositionMajor0s":nomenclaturePositionMajor0s,
-                                       "nomenclaturePositionMajor1s":nomenclaturePositionMajor1s,
-                                       "nomenclaturePositionMajor2s":nomenclaturePositionMajor2s,
-                                       "nomenclaturePositionMinor0s":nomenclaturePositionMinor0s,
-                                       }
+            nomenclaturePositionStrings = [str(x.major) + "." + str(x.minor).zfill(3) for x in nomenclaturePositions]
+
+            # print (nomenclaturePositionStrings)
+
+            # nomenclaturePositionObj = {"nomenclaturePositionMajor0s":nomenclaturePositionMajor0s,
+            #                            "nomenclaturePositionMajor1s":nomenclaturePositionMajor1s,
+            #                            "nomenclaturePositionMajor2s":nomenclaturePositionMajor2s,
+            #                            "nomenclaturePositionMinor0s":nomenclaturePositionMinor0s,
+            #                            "nomenclaturePositionStrings":nomenclaturePositionStrings
+            #                            }
 
         alignmentResultObj["alignmentObjList"] = alignmentObjList
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["selectedAccessions"] = selectedAccessions
-        alignmentResultObj["nomenclaturePositionObj"] = nomenclaturePositionObj
+        alignmentResultObj["nomenclaturePositionStrings"] = nomenclaturePositionStrings
 
         # masterObj["alignmentResultObj"] = alignmentResultObj
         # masterObj["epitopesObjs"] = epitopesObjs

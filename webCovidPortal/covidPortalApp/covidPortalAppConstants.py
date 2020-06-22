@@ -27,5 +27,5 @@ RESIDUE_COLOR_MAP = {
 # 2. Request alignment nomenclature for accession YP_009724390.1 from API.
 
 SELECTED_ACCESSIONS = [
-    'YP_009724390.1','QIS61410.1',
+    'YP_009724390.1','QIS61410.1','AHN64783.1'
 ]

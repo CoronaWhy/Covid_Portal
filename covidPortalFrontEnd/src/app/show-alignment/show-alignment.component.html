@@ -7,8 +7,13 @@
      <thead>
          <th></th>
          <th class="label-header">Accession</th>
+
          <!-- position nomenclature -->
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div></th>
+
+         <th *ngFor="let nomenclaturePositionString of displayNomenclaturePositionStrings">
+           <div class="nomen-outer residue-width"><div class="nomen-inner">{{nomenclaturePositionString}}</div></div>
+         </th>
+         <!-- <th><div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div></th>
          <th><div class="nomen-outer residue-width"><div class="nomen-inner">2.000</div></div></th>
          <th><div class="nomen-outer residue-width"><div class="nomen-inner">3.000</div></div></th>
          <th><div class="nomen-outer residue-width"><div class="nomen-inner">4.000</div></div></th>
@@ -23,7 +28,7 @@
          <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.000</div></div></th>
          <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.001</div></div></th>
          <th><div class="nomen-outer residue-width"><div class="nomen-inner">11.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1121.000</div></div></th>
+         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1121.000</div></div></th> -->
          <!-- end position nomenclature -->
          <th class="sort-header">
              <select>
