@@ -521,67 +521,8 @@ def structureresidueatoms(request):
         json.dumps(recs),
         content_type="application/json");
     return response;
-    ##############################################
+    # localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A
 
-    #
-    #
-    # # get residues then do two hits to get atoms and then residue alignments
-    # for residue in StructureChainResidue.objects.annotate(
-    #     pdb_chain=Concat(
-    #         'chain__structure__pdb_id',
-    #         V("."),
-    #         'chain__name'
-    #     )
-    # ).filter(
-    #     pdb_chain__in=(pdbchains)
-    # ):
-    #     atoms = pd.DataFrame(
-    #         residue.structureatom_set.filter(atom__in=(atom_names)).values()
-    #     );
-    #     resalns = pd.DataFrame(
-    #         residue.structurechainresiduealignment_set.filter(
-    #             structure_chain_sequence__alignment__name=alignment
-    #         ).values()
-    #     );
-    #     print(resalns);
-
-
-    # objects = StructureChainResidue.objects.values(
-    #     'structureatom__atom',
-    #     'structurechainresiduealignment__resaln',
-    # );
-    # print(objects);
-
-    # for sa in StructureAtom.objects.annotate(
-    #     pdb_chain=Concat(
-    #         "residue__chain__structure__pdb_id",
-    #         V("."),
-    #         "residue__chain__name"
-    #     )
-    # ).filter(
-    #     pdb_chain__in=(pdbchains),
-    #     atom__in=(atom_names),
-    # ).select_related():
-    #     row = {
-    #         'pdb_chain'     : sa.pdb_chain,
-    #         'resix'         : sa.residue.resix,
-    #         'resid'         : sa.residue.resid,
-    #         'resn'          : sa.residue.resn,
-    #         'x'             : sa.x,
-    #         'y'             : sa.y,
-    #         'z'             : sa.z,
-    #         'test'          : sa.residue
-    #     };
-    #     print(row);
-
-
-
-
-    response = HttpResponse(
-        json.dumps(recs),
-        content_type="application/json");
-    return response;
-
-    # http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C
+    # http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&alignment=20200505&atom=CA&pdbchains=5X5B.A%2C5X5B.C
 ################################################################################
 # fin.
