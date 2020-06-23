@@ -23,8 +23,8 @@
 | [Epitope Experiments](#epitope-experiments) | `explorer/epitopeexperimentsfilter` | Get filtered epitope experiment data by `mesh_id`, `alignment`, and additional criteria. |
 | [Epitope Sequences](#epitope-sequences) | `exporer/epitopesequence` | Get epitope sequence alignments by `iedb_id`, `mesh_id` and `alignment`. |
 | [Crystal Structure Names and Chains](#crystal-structure-names-and-chains) | `explorer/structurechains` | Get list of crystal structure PDBs and chain IDs. by `mesh_id`. |
-| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Get crystal structure chain sequence alignments by `mesh_id`, `alignment` and `[PDB].[CHAIN]`. |
-| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Get crystal structure residue atom coordinates and info by `mesh_id`, `alignment` and `[PDB].[CHAIN]`. |
+| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Get crystal structure chain sequence alignments by `mesh_id`, `alignment` and `pdbchains`. |
+| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Get crystal structure residue atom coordinates and info by `mesh_id`, `alignment`, `pdbchains` and `atom`. |
 
 ## Protein Sequence Records and Alignments
 
@@ -160,46 +160,40 @@ An array of:
 
 #### Returns
 
-An array of:
-
-| Property | Type | Description |
-|----------|------|-------------|
-| [0]       | int | Major position. |
-| [1]       | int | Minor position. |
-
-**Note**: the index of the outer array is the index of each character in the reference sequence alignment itself.
+An array of strings that is equal in length to the aligned reference sequence. Each string is the name of a position, in sequential order.
 
 **Example**:
 ```
 [
-    [0, 0],     # major, minor position for first character in aligned string
-    [1, 0],     # major, minor position for second character in aligned string
-    [2, 0],     # ...
-    [3, 0],
-    [4, 0],
-    [5, 0],
-    [6, 0],
-    [7, 0],
-    [8, 0],
-    [9, 0],
-    [10, 0],
-    [11, 0],
-    [12, 0],
-    [13, 0],
-    [14, 0],
-    [15, 0],
-    [15, 1],    # first insert at position 15, sequence is a gap (-), minor=1
-    [15, 2],    # second insert at position 15, sequence is a gap (-), minor=2
-    [15, 3],    # third insert at position 15, sequence is a gap (-), minor=3
-    [15, 4],
-    [15, 5],
-    [15, 6],
-    [15, 7],
-    [15, 8],
-    [15, 9],
-    [16, 0],    # now we're at position 16 in reference, past all the gaps
-    [17, 0],
-    [18, 0]],
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "15b",
+    "15c",
+    "15d",
+    "15e",
+    "15f",
+    "15g",
+    "15h",
+    "15i",
+    "15j",
+    "16",
+    "17",
+    "18",
+    ...
+]
 ```
 
 ## Immunological Epitopes and Experiments

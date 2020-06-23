@@ -158,17 +158,46 @@ def nomenclature(request):
     except Exception as e:
         return error_response(str(e));
 
+    # nomenclature format
+    nomenclature_format = "minor_alphabet";
+
+
     # build and send
     nom = [];
     minor = 0;
     major = 0;
-    for i,r in enumerate(seq.sequence):
-        if r=='-':
-            minor+=1;
+    # nomenclature format generators -------------------------------------------
+    def minor_alphabet(major,minor,delimeter='.'):
+        def minor_gen(minor):
+            if minor==0: return "";
+            if minor<=26:
+                return chr(ord('a')+minor);
+        if minor==0:
+            return str(major);
         else:
-            minor = 0;
-            major+=1;
-        nom.append([major,minor]);
+            return str(major)+str(delimeter)+minor_gen(minor);
+    # --------------------------------------------------------------------------
+    nomenclature_generators = {
+        'minor_alphabet'        : minor_alphabet,
+    };
+    # generate nomenclature ----------------------------------------------------
+    try:
+        for i,r in enumerate(seq.sequence):
+            if r=='-':
+                minor+=1;
+            else:
+                minor = 0;
+                major+=1;
+            nom.append(
+                nomenclature_generators[nomenclature_format](
+                    major,
+                    minor,
+                    delimeter=''
+                )
+            );
+    except Exception as e:
+        return error_response("Reference does not conform to the nomenclature format requested: "+str(e));
+    # send results -------------------------------------------------------------
     response = HttpResponse(
         json.dumps(nom),
         content_type="application/json");
