@@ -489,35 +489,41 @@ Use `structureatoms` to get atomic data of a single atom type across all residue
 #### Usage
 `explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C`
 
-**Example**: http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C
+**Example**: http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&alignment=20200505&pdbchains=5X5B.A%2C5X5B.C
 
 #### Arguments
 
 | Argument | Required | Description |
 |----------|----------|-------------|
 | mesh_id   | Y | NCBI MeSH ID of the protein. |
-| alignment | Y | Name of the sequence's alignment. |
+| alignment | Y | Name of the sequence alignment to use. |
 | pdbchains | Y | comma-separated list of [PDB ID].[CHAIN]. |
-
+| atom      | Y | comma-separated list of atom names to retreive data for. |
 #### Returns
 
 An array of:
 
 | Property | Type | Description |
 |----------|------|-------------|
-| pdbchain | str | [PDB_ID].[CHAIN] |
-| pdb_id | str | PDB ID. |
-| chain | char | Chain ID. |
-| residues | list | List of atom objects for each residue. |
-| residues[i].resid | int | Index of the residue in crystal structure/chain. |
-| residues[i].resix | int | Index of the residue in ungapped chain sequence. |
-| residues[i].resn | char | Single-letter amino acid of residue. |
-| residues[i].atom | str | Name of the atom in the residue. |
-| residues[i].atom_x | float | *x* coordinate of atom. |
-| residues[i].atom_y | float | *y* coordinate of atom. |
-| residues[i].atom_z | float | *z* coordinate of atom. |
-| residues[i].element | str | Atomic symbol of atom. |
-| residues[i].charge | int | Atomic charge of atom. |
+| pdb_id    | str   | PDB ID of the structure. |
+| chain     | char  | Chain name. |
+| pdb_chain  | str   | [PDB ID].[CHAIN], a unique identifier. |
+| alignment | str | Name of the sequence alignment used. |
+| atoms     | array | Array of atoms. |
+| atoms[i].atom      | str   | Name of the atom. |
+| atoms[i].element   | str   | Atomic symbol. |
+| atoms[i].charge    | int   | Atomic charge. |
+| atoms[i].occupancy | float | Atomic occupancy. |
+| atoms[i].x         | float | X coordinate. |
+| atoms[i].y         | float | y coordinate. |
+| atoms[i].z         | float | z coordinate. |
+| atoms[i].resn     | char   | Single-letter amino acid code for the residue that this atom is part of. |
+| atoms[i].resid     | int   | Numeric identifier of the residue this atom belongs to, for the crystal structure file. |
+| atoms[i].resix     | int   | Numeric index of the residue this atom belongs to in the raw, unaligned, ungapped amino acid sequence. |
+| atoms[i].resaln    | int   | Numeric index of the residue this atom belongs to in the aligned amino acid sequence, using the alignment requested. |
+
+
+
 
 **Example**:
 ```
@@ -526,11 +532,13 @@ An array of:
         "pdbchain": "5X5B.A",
         "pdb_id": "5X5B",
         "chain": "A",
+        "alignment": "20200505",
         "residues": [
             {
                 "resid": 18,
                 "resix": 0,
                 "resn": "R",
+                "resaln": 30,
                 "atom": "CA",
                 "atom_x": 46.76,
                 "atom_y": -31,
@@ -541,6 +549,7 @@ An array of:
                 "resid": 19,
                 "resix": 1,
                 "resn": "C",
+                "resaln": 31,
                 "atom": "CA",
                 "atom_x": 49.18,
                 "atom_y": -28,

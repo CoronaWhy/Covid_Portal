@@ -309,7 +309,9 @@ class StructureAtom(models.Model):
     z = models.FloatField();
     unique_together = ('residue','atom');
 
-
-
-
+class StructureChainResidueAlignment(models.Model):
+    structure_chain_sequence = models.ForeignKey(StructureChainSequence, on_delete=models.CASCADE);
+    residue = models.ForeignKey(StructureChainResidue, on_delete=models.CASCADE); # residue record
+    resaln = models.IntegerField(); # position in the sequence alignment
+    unique_together = (structure_chain_sequence, residue);
 # fin.
