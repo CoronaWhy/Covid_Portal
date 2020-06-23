@@ -23,8 +23,8 @@
 | [Epitope Experiments](#epitope-experiments) | `explorer/epitopeexperimentsfilter` | Get filtered epitope experiment data by `mesh_id`, `alignment`, and additional criteria. |
 | [Epitope Sequences](#epitope-sequences) | `exporer/epitopesequence` | Get epitope sequence alignments by `iedb_id`, `mesh_id` and `alignment`. |
 | [Crystal Structure Names and Chains](#crystal-structure-names-and-chains) | `explorer/structurechains` | Get list of crystal structure PDBs and chain IDs. by `mesh_id`. |
-| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Get crystal structure chain sequence alignments by `mesh_id`, `alignment` and `[PDB].[CHAIN]`. |
-| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Get crystal structure residue atom coordinates and info by `mesh_id`, `alignment` and `[PDB].[CHAIN]`. |
+| [Crystal Structure Sequence Alignments](#crystal-structure-sequence-alignments) | `explorer/structuresequence` | Get crystal structure chain sequence alignments by `mesh_id`, `alignment` and `pdbchains`. |
+| [Crystal Structure Residue Info and Coordinates](#crystal-structure-residue-info-and-coordinates) | `explorer/structureresidueatoms` | Get crystal structure residue atom coordinates and info by `mesh_id`, `alignment`, `pdbchains` and `atom`. |
 
 ## Protein Sequence Records and Alignments
 
@@ -160,46 +160,40 @@ An array of:
 
 #### Returns
 
-An array of:
-
-| Property | Type | Description |
-|----------|------|-------------|
-| [0]       | int | Major position. |
-| [1]       | int | Minor position. |
-
-**Note**: the index of the outer array is the index of each character in the reference sequence alignment itself.
+An array of strings that is equal in length to the aligned reference sequence. Each string is the name of a position, in sequential order.
 
 **Example**:
 ```
 [
-    [0, 0],     # major, minor position for first character in aligned string
-    [1, 0],     # major, minor position for second character in aligned string
-    [2, 0],     # ...
-    [3, 0],
-    [4, 0],
-    [5, 0],
-    [6, 0],
-    [7, 0],
-    [8, 0],
-    [9, 0],
-    [10, 0],
-    [11, 0],
-    [12, 0],
-    [13, 0],
-    [14, 0],
-    [15, 0],
-    [15, 1],    # first insert at position 15, sequence is a gap (-), minor=1
-    [15, 2],    # second insert at position 15, sequence is a gap (-), minor=2
-    [15, 3],    # third insert at position 15, sequence is a gap (-), minor=3
-    [15, 4],
-    [15, 5],
-    [15, 6],
-    [15, 7],
-    [15, 8],
-    [15, 9],
-    [16, 0],    # now we're at position 16 in reference, past all the gaps
-    [17, 0],
-    [18, 0]],
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "15b",
+    "15c",
+    "15d",
+    "15e",
+    "15f",
+    "15g",
+    "15h",
+    "15i",
+    "15j",
+    "16",
+    "17",
+    "18",
+    ...
+]
 ```
 
 ## Immunological Epitopes and Experiments
@@ -489,35 +483,41 @@ Use `structureatoms` to get atomic data of a single atom type across all residue
 #### Usage
 `explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C`
 
-**Example**: http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C
+**Example**: http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&alignment=20200505&pdbchains=5X5B.A%2C5X5B.C
 
 #### Arguments
 
 | Argument | Required | Description |
 |----------|----------|-------------|
 | mesh_id   | Y | NCBI MeSH ID of the protein. |
-| alignment | Y | Name of the sequence's alignment. |
+| alignment | Y | Name of the sequence alignment to use. |
 | pdbchains | Y | comma-separated list of [PDB ID].[CHAIN]. |
-
+| atom      | Y | comma-separated list of atom names to retreive data for. |
 #### Returns
 
 An array of:
 
 | Property | Type | Description |
 |----------|------|-------------|
-| pdbchain | str | [PDB_ID].[CHAIN] |
-| pdb_id | str | PDB ID. |
-| chain | char | Chain ID. |
-| residues | list | List of atom objects for each residue. |
-| residues[i].resid | int | Index of the residue in crystal structure/chain. |
-| residues[i].resix | int | Index of the residue in ungapped chain sequence. |
-| residues[i].resn | char | Single-letter amino acid of residue. |
-| residues[i].atom | str | Name of the atom in the residue. |
-| residues[i].atom_x | float | *x* coordinate of atom. |
-| residues[i].atom_y | float | *y* coordinate of atom. |
-| residues[i].atom_z | float | *z* coordinate of atom. |
-| residues[i].element | str | Atomic symbol of atom. |
-| residues[i].charge | int | Atomic charge of atom. |
+| pdb_id    | str   | PDB ID of the structure. |
+| chain     | char  | Chain name. |
+| pdb_chain  | str   | [PDB ID].[CHAIN], a unique identifier. |
+| alignment | str | Name of the sequence alignment used. |
+| atoms     | array | Array of atoms. |
+| atoms[i].atom      | str   | Name of the atom. |
+| atoms[i].element   | str   | Atomic symbol. |
+| atoms[i].charge    | int   | Atomic charge. |
+| atoms[i].occupancy | float | Atomic occupancy. |
+| atoms[i].x         | float | X coordinate. |
+| atoms[i].y         | float | y coordinate. |
+| atoms[i].z         | float | z coordinate. |
+| atoms[i].resn     | char   | Single-letter amino acid code for the residue that this atom is part of. |
+| atoms[i].resid     | int   | Numeric identifier of the residue this atom belongs to, for the crystal structure file. |
+| atoms[i].resix     | int   | Numeric index of the residue this atom belongs to in the raw, unaligned, ungapped amino acid sequence. |
+| atoms[i].resaln    | int   | Numeric index of the residue this atom belongs to in the aligned amino acid sequence, using the alignment requested. |
+
+
+
 
 **Example**:
 ```
@@ -526,11 +526,13 @@ An array of:
         "pdbchain": "5X5B.A",
         "pdb_id": "5X5B",
         "chain": "A",
+        "alignment": "20200505",
         "residues": [
             {
                 "resid": 18,
                 "resix": 0,
                 "resn": "R",
+                "resaln": 30,
                 "atom": "CA",
                 "atom_x": 46.76,
                 "atom_y": -31,
@@ -541,6 +543,7 @@ An array of:
                 "resid": 19,
                 "resix": 1,
                 "resn": "C",
+                "resaln": 31,
                 "atom": "CA",
                 "atom_x": 49.18,
                 "atom_y": -28,
