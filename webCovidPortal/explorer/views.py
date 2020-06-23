@@ -3,10 +3,11 @@ from django.http import HttpResponse;
 from django.core import serializers;
 from django.db.models import Q;
 import json;
-from explorer.models import Taxon, SequenceRecord, Sequence, EpitopeExperiment, Epitope, Protein, Alignment, Structure, StructureChain, StructureChainSequence, StructureChainResidue, StructureAtom;
+from explorer.models import Taxon, SequenceRecord, Sequence, EpitopeExperiment, Epitope, Protein, Alignment, Structure, StructureChain, StructureChainSequence, StructureChainResidue, StructureAtom, StructureChainResidueAlignment, StructureChainSequence;
 from django.db.models import Value as V, CharField, F;
 from django.db.models.functions import Concat, Cast;
 import pprint as pp;
+import numpy as np, pandas as pd;
 
 def error_response(msg):
     response = HttpResponse(
@@ -157,17 +158,46 @@ def nomenclature(request):
     except Exception as e:
         return error_response(str(e));
 
+    # nomenclature format
+    nomenclature_format = "minor_alphabet";
+
+
     # build and send
     nom = [];
     minor = 0;
     major = 0;
-    for i,r in enumerate(seq.sequence):
-        if r=='-':
-            minor+=1;
+    # nomenclature format generators -------------------------------------------
+    def minor_alphabet(major,minor,delimeter='.'):
+        def minor_gen(minor):
+            if minor==0: return "";
+            if minor<=26:
+                return chr(ord('a')+minor);
+        if minor==0:
+            return str(major);
         else:
-            minor = 0;
-            major+=1;
-        nom.append([major,minor]);
+            return str(major)+str(delimeter)+minor_gen(minor);
+    # --------------------------------------------------------------------------
+    nomenclature_generators = {
+        'minor_alphabet'        : minor_alphabet,
+    };
+    # generate nomenclature ----------------------------------------------------
+    try:
+        for i,r in enumerate(seq.sequence):
+            if r=='-':
+                minor+=1;
+            else:
+                minor = 0;
+                major+=1;
+            nom.append(
+                nomenclature_generators[nomenclature_format](
+                    major,
+                    minor,
+                    delimeter=''
+                )
+            );
+    except Exception as e:
+        return error_response("Reference does not conform to the nomenclature format requested: "+str(e));
+    # send results -------------------------------------------------------------
     response = HttpResponse(
         json.dumps(nom),
         content_type="application/json");
@@ -419,47 +449,109 @@ def structureresidueatoms(request):
         return error_response("No atom specified");
     if not 'pdbchains' in params:
         return error_response("No PDB/Chains specified");
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
 
     pdbchains = params['pdbchains'].split(',');
     pdb_ids, chains = zip(*[v.split('.') for v in pdbchains]);
+    atom_names = params['atom'].split(',');
 
     # Currently using nested queries, join will probably be more efficient? How to do joins with Django?
 
+    # desired sql:
+    # localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A
     recs = [];
-    for pc in StructureChain.objects.annotate(
-        pdb_chain=Concat("structure__pdb_id", V("."), "name")
-    ).filter(
-        pdb_chain__in=(pdbchains)
-    ):
-        residues = [];
-        for r in StructureAtom.objects.filter(
-            residue__chain=pc,
-            atom=params['atom'],
-        ):
-            residues.append({
-                'resid'     : r.residue.resid,
-                'resix'     : r.residue.resix,
-                'resn'      : r.residue.resn,
-                'atom'      : r.atom,
-                'atom_x'    : round(r.x,2),
-                'atom_y'    : round(r.y),
-                'atom_z'    : round(r.z),
-                'element'   : r.element,
-                'charge'    : r.charge,
-            });
 
+    for sc in StructureChain.objects.annotate(
+        pdb_chain=Concat(
+            'structure__pdb_id',
+            V("."),
+            'name'
+        )
+    ).filter(
+        pdb_chain__in=(pdbchains),
+        protein__mesh_id=params['mesh_id'],
+    ):
+        # get alignment
+        resalns = pd.DataFrame(
+            sc.structurechainsequence_set.get(
+                alignment__name=params['alignment']
+            ).structurechainresiduealignment_set.values(
+                'id','residue_id','resaln'
+            )
+        );
+
+        # get atoms
+        atoms = pd.DataFrame(
+            StructureAtom.objects.annotate(
+                pdb_chain=Concat(
+                    'residue__chain__structure__pdb_id',
+                    V("."),
+                    'residue__chain__name'
+                )
+            ).filter(
+                atom__in=(atom_names),
+                pdb_chain=sc.pdb_chain,
+            ).values(
+                'residue_id',
+                'atom',
+                'element',
+                'charge',
+                'occupancy',
+                'x',
+                'y',
+                'z',
+                'residue__resix',
+                'residue__resid',
+                'residue__resn',
+            )
+        );
+        atoms.index = atoms['residue_id'];
+
+        resalns.index = resalns['residue_id'];
+
+        # merge on residueid
+        result = pd.concat([atoms,resalns],axis=1);
+
+        # drop duplicate column names
+        result = result.loc[:,~result.columns.duplicated()];
+
+        # rename and trim
+        result = result.rename(
+            columns={
+                'residue__resix':'resix',
+                'residue__resid':'resid',
+                'residue__resn':'resn',
+            })[[
+                'atom',
+                'element',
+                'charge',
+                'occupancy',
+                'x',
+                'y',
+                'z',
+                'resaln',
+                'resix',
+                'resid',
+                'resn',
+        ]];
+
+        # store
         recs.append({
-            'pdbchain'  : pc.structure.pdb_id + "." + r.residue.chain.name,
-            'pdb_id'    : pc.structure.pdb_id,
-            'chain'     : pc.name,
-            'residues'  : residues,
+            'pdb_id': sc.structure.pdb_id,
+            'chain': sc.name,
+            'pdb_chain': sc.structure.pdb_id+"."+sc.name,
+            'alignment': params['alignment'],
+            'atoms': result.to_dict(orient='records')
         });
 
+    # return
     response = HttpResponse(
         json.dumps(recs),
         content_type="application/json");
     return response;
+    # localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A
 
-    # http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&atom=CA&pdbchains=5X5B.A%2C5X5B.C
+    # http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&alignment=20200505&atom=CA&pdbchains=5X5B.A%2C5X5B.C
 ################################################################################
 # fin.
