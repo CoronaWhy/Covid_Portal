@@ -42,12 +42,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     maxSliderValue:number;
     searchDataFilesString:string;
     positionSliderValue:number;
+    sequenceTableColumns:string[];
     selectedAccessions:string[];
     rangeSliderOptions: Options = {
-    floor: 0,
-    ceil: 10,
-    vertical: true
+      floor: 0,
+      ceil: 10,
+      vertical: true
     };
+    sortColumn:string;
     rowNum:number;
     indexValue:number;
     maxVerticalSliderValue:number;
@@ -70,6 +72,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     displayNomenclaturePositionStrings:string[];
     offset:number;
     numRowsInAlignment:number;
+    sortSequenceTableColumn:string;
     @ViewChild('sequenceTable') sequenceTable;
 
     /**
@@ -80,6 +83,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     public getResults(page: Page): Observable<PagedData<SequenceObj>> {
         return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
     }
+
+   sortSequenceTable ()
+   {
+
+   }
 
    showNext(){
      this.offset += 1;
@@ -129,8 +137,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     filterDatatable(){
 
-      this.displaySequenceObjList = this.sequenceObjList.filter(
+      this.sequenceObjList = this.sequenceObjList.filter(
         sequenceObj => sequenceObj.accession.includes(this.searchString));
+
+      this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+      console.log(this.displaySequenceObjList);
 
      }
     /**
@@ -208,7 +219,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.verticalSliderValue = Number(verticalSlider.value);
       console.log(" index verticalSliderValue " + this.verticalSliderValue);
       let startIndex = 10-this.verticalSliderValue;
-      this.displayAlignmentObjList = this.alignmentObjList.slice(startIndex,startIndex+3);
+      this.displayAlignmentObjList = this.alignmentObjList.slice(startIndex,startIndex+this.numRowsInPage);
 
     }
 
@@ -286,13 +297,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.searchString = '';
       this.offset = 0;
       this.numRowsInPage = 3;
-      this.numRowsInAlignment = 5;
+      this.numRowsInAlignment = 3;
 
       this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
          this.alignmentObjList = alignmentResult.alignmentObjList;
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
+         this.sequenceTableColumns = this.sequenceResultObj.sequenceTableColumns;
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.selectedAccessions = alignmentResult.selectedAccessions;

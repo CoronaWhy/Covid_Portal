@@ -12,22 +12,6 @@
          <th *ngFor="let nomenclaturePositionString of displayNomenclaturePositionStrings">
            <div class="nomen-outer residue-width"><div class="nomen-inner">{{nomenclaturePositionString}}</div></div>
          </th>
-         <!-- <th><div class="nomen-outer residue-width"><div class="nomen-inner">1.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">2.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">3.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">4.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">5.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">6.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.001</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.002</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">7.003</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">8.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">9.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">10.001</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">11.000</div></div></th>
-         <th><div class="nomen-outer residue-width"><div class="nomen-inner">1121.000</div></div></th> -->
          <!-- end position nomenclature -->
          <th class="sort-header">
              <select>
@@ -50,7 +34,9 @@
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">Sort Value</div></td>
-         <td rowspan=3 *ngIf="idx == 0">scroll</td>
+         <td rowspan=3 *ngIf="idx == 0">
+           <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
+         </td>
      </tr>
      </tbody>
      <!-- END SEQUENCES -------------------------------------------------------->
@@ -340,7 +326,15 @@
           <ng-template ngbTabContent>
  -->
           <div class="row" style="float:right;">
-            Sort:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()"> &nbsp;
+            Sort:&nbsp;            <select [(ngModel)]="sortSequenceTableColumn">
+              <option *ngFor="let sequenceTableColumn of sequenceTableColumns"
+                #sortColumnSelect
+                [value]="sequenceTableColumn"
+                (change)='sortSequenceTable()'
+                >
+              {{sequenceTableColumn}}
+            </option>
+          </select>
             Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
           </div>
           <div class="row" style="float:clear;">
@@ -415,7 +409,7 @@
                       </thead>
 
                       <tbody>
-                        <tr *ngFor ="let row of displaySequenceObjList">
+                        <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
                           <td>
                             <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
                           </td>

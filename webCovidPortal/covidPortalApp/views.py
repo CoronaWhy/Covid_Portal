@@ -367,7 +367,7 @@ def showAlignment(request):
             alignmentObjList.append(alignmentObj)
 
         fieldList = [str(x) for x in SequenceRecord._meta.fields]
-
+        fieldList = [x[x.rfind(".")+1:] for x in fieldList]
         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
 
         nomenclaturePositionObj = {}
