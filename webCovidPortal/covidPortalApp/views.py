@@ -370,8 +370,10 @@ def showAlignment(request):
         fieldList = [x[x.rfind(".")+1:] for x in fieldList]
         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
 
-        epitopeResultObj = epitopeResultObj
-        structureResultObj = structureResultObj
+        # epitopeResultObj = epitopeResultObj
+        # structureResultObj = structureResultObj
+
+        epitopeExperiments = EpitopeExperiment.objects.all()
 
         nomenclaturePositionObj = {}
 
@@ -400,8 +402,8 @@ def showAlignment(request):
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["selectedAccessions"] = selectedAccessions
         alignmentResultObj["nomenclaturePositionStrings"] = nomenclaturePositionStrings
-        alignmentResultObj["epitopeResultObj"] = epitopeResultObj
-        alignmentResultObj["structureResultObj"] = structureResultObj
+        # alignmentResultObj["epitopeResultObj"] = epitopeResultObj
+        # alignmentResultObj["structureResultObj"] = structureResultObj
 
         # masterObj["alignmentResultObj"] = alignmentResultObj
         # masterObj["epitopesObjs"] = epitopesObjs

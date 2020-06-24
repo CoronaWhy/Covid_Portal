@@ -174,84 +174,127 @@
   border-top: 5px solid black;
 }
 
-
-
-/* Nic's design for front end'*/
-
-#paneltable div {
-   font-family: arial, helvetica;
-   font-size: 11px;
-}
-.paneltable {
-   display: table;
-   border-collapse: collapse;
-   border-spacing: 0px;
-   overflow: hidden;
-   border: 1px solid transparent; /* for consistent spacing w/wo border */
-}
+/* residues */
 .residue-width { width: 10px; text-align: center; }
 .residue-height { height: 14px; line-height: 14px; }
-.label {
-   display: table-cell;
-   vertical-align: middle;
+.residue-outer { /* box container */
+    position: relative;
+    float: left;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.7);
 }
-.residue {
-   text-align: center;
-   display: inline-block;
-   padding: 0px;
-   margin: 0px;
-   /* border: 1px solid rgba(0,0,0,0.1); */
-   /* background: #ffffff; */
-}
-.nomen-outer {
-   border: 1px solid rgba(0,0,0,0);
-   position: relative;
-   float: left;
-   display: inline-block;
-   margin: 0px;
-   height: 80px;
-   overflow: hidden;
-}
-.nomen-inner {
-   position: absolute;
-   top: 100%;
-   left: 50%;
-   margin: 0px;
-   padding: 0px;
-   transform-origin: center left;
-   transform: translateY(-50%) rotate(-90deg);
-}
-.paneltab-outer {
-   width: 40px;
-   border: 1px solid rgba(0,0,0,0);
-   position: relative;
-   float: left;
-   display: inline-block;
-   margin: 0px;
-   /* height: 50px; */
-   overflow: hidden;
-}
-.paneltab-inner {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   margin: 0px;
-   padding: 0px;
-   transform-origin: center center;
-   transform: translateX(-50%) translateY(-50%) rotate(-90deg);
-   font-size: 125%;
+.residue-inner { /* inner value container */
+    text-align: center;
+    display: absolute;
+    padding: 0px;
+    margin: 0px;
 }
 
-.label-header {
-   width: 120px;
-   vertical-align: bottom;
-   /* padding-top: 30px; */
-   text-align: center;
+/* position names nomenclature */
+.nomen-outer {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height: 80px; /* e.g. the max width of text if rotated*/
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(0,0,0,0.1);
 }
-.sort-header {
-   width: 120px;
-   vertical-align: bottom;
+.nomen-inner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 0px;
+    padding-left: 3px;
+    transform-origin: center left;
+    transform: translateY(-50%) rotate(-90deg);
 }
+
+/* data table */
+.datatable-cell {
+    background: rgba(50, 50, 50, 0.2);
+}
+.datatable {
+    font-family: arial, helvetica;
+    font-size: 10pt;
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 480px;
+    border: 1px solid #000000;
+    table-layout: fixed;
+}
+.datatable th {
+    vertical-align: bottom;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.datatable td, .datatable th {
+    /* border: 1px solid transparent; */
+    padding-left: 3px;
+    padding-right: 3px;
+    border: none;
+    white-space: nowrap;
+}
+.datatable select {
+    width: 100px;
+}
+/* column-wide styles, note that this is currently poorly supported */
+.datatable-labelColumn {
+    width: 100px;
+    /* background: #ff5555; */
+}
+.datatable-dataColumn {
+    /* width: 200px; */
+    /* background: #555555; */
+    /* border-left: 1px solid #000000; */
+    /* border-right: 1px solid #000000; */
+    border: 1px solid #000000;
+    white-space: nowrap;
+    width: 248px;
+}
+.datatable-sortvalueColumn {
+    width: 100px;
+    /* background: #5555ff; */
+    text-align: center;
+}
+.datatable-vscrollColumn {
+    /* width: 20px; */
+    /* background: #55ff55; */
+}
+
+/* panel title label */
+.panelLabel-cell {
+    border: 1px solid #000000;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgba(50, 255, 50, 0.4);
+    font-family: arial, helvetica;
+    font-size: 14px;
+    font-weight: bold;
+}
+.panelLabel-outer {
+    position: relative;
+    width: 20px;
+    height: 50px;
+}
+.panelLabel-inner {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin: 0px;
+    transform-origin: left top;
+    transform: rotate(-90deg) translateX(-50%) translateY(-100%);
+}
+
+.panelLayoutTable {
+    /* border: 1px solid #000000; */
+    border-collapse: separate;
+}
+.panelContainer {
+    padding-top: 2px;
+}
+
 tbody td {
    border: 1px solid #999999;
    padding: 0px;
