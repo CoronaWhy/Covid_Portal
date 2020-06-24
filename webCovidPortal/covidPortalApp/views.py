@@ -373,7 +373,23 @@ def showAlignment(request):
         # epitopeResultObj = epitopeResultObj
         # structureResultObj = structureResultObj
 
-        epitopeExperiments = EpitopeExperiment.objects.all()
+        epitopeExperiments = EpitopeExperiment.objects.filter(epitope__alignment__name = ALIGNMENT_NAME, epitope__protein__mesh_id = MESH_ID)
+        epitopeExperimentObjList = [
+                                    {
+                                        'host'              : x.host,
+                                        'assay_type'        : x.assay_type,
+                                        'assay_result'      : x.assay_result,
+                                        'mhc_allele'        : x.mhc_allele,
+                                        'mhc_class'         : x.mhc_class,
+                                        'exp_method'        : x.exp_method,
+                                        'measurement_type'  : x.measurement_type,
+                                        'iedb_id'           : x.epitope.IEDB_ID
+                                    }
+                                    for x in epitopeExperiments
+        ]
+        fieldList = [str(x) for x in EpitopeExperiment._meta.fields]
+        fieldList = [x[x.rfind(".")+1:] for x in fieldList]
+        epitopeExperimentResultObj = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
 
         nomenclaturePositionObj = {}
 
@@ -400,8 +416,12 @@ def showAlignment(request):
 
         alignmentResultObj["alignmentObjList"] = alignmentObjList
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
+
+        alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
+
         alignmentResultObj["selectedAccessions"] = selectedAccessions
         alignmentResultObj["nomenclaturePositionStrings"] = nomenclaturePositionStrings
+
         # alignmentResultObj["epitopeResultObj"] = epitopeResultObj
         # alignmentResultObj["structureResultObj"] = structureResultObj
 

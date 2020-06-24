@@ -11,6 +11,7 @@ import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
+import { EpitopeObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
 import { Page } from '../models/page';
@@ -63,6 +64,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     cache: any;
     isLoading: boolean;
     displaySequenceObjList:SequenceObj[];
+
+    epitopeExperimentObjList:EpitopeExperimentObj[];
+    displayEpitopeExperimentObjList:EpitopeExperimentObj[];
+    epitopeExperimentTableColumns:string[];
+
     initialAlignment: boolean;
     searchString:string;
     numRowsInPage:number;
@@ -305,8 +311,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.alignmentObjList = alignmentResult.alignmentObjList;
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
          this.sequenceTableColumns = this.sequenceResultObj.sequenceTableColumns;
+         this.epitopeExperimentTableColumns = alignmentResult.epitopeExperimentResultObj.epitopeExperimentTableColumns;
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+
+         this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
+         this.displayEpitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
+
          this.selectedAccessions = alignmentResult.selectedAccessions;
          this.nomenclaturePositionStrings = alignmentResult.nomenclaturePositionStrings;
 
@@ -316,6 +327,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
+         this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
 
           // for (let i = 0; i < this.numRowsInPage; i++){
           //     this.rows.push(this.sequenceObjList[i]);
