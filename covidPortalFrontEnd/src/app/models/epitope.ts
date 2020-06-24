@@ -23,6 +23,6 @@ export class EpitopeExperimentObj {
 
 export class EpitopeExperimentResultObj {
 
-  epitopeExperimentObjList:EpitopeExperiment[];
+  epitopeExperimentObjList:EpitopeExperimentObj[];
   epitopeExperimentTableColumns :string[];
 }
