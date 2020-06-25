@@ -1,10 +1,14 @@
+import { ResidueObj } from './alignment';
+
 export class EpitopeObj {
-  IEDB_ID:string;
-  protein:string;
-  alignment:string;
-  sequence:string;
-  offset:number;
-  measurement_type:string;
+  iedb_id:string;
+  // protein:string;
+  // alignment:string;
+  // sequence:string;
+  // offset:number;
+  // measurement_type:string;
+  residueObjList:ResidueObj[];
+  displayResidueObjList:ResidueObj[];
 }
 
 export class EpitopeExperimentObj {

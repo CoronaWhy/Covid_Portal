@@ -29,6 +29,7 @@ from rest_framework.authtoken.models import Token
 import json
 import glob
 from explorer.models import *
+from explorer.explorerapi import *
 from covidPortalApp.covidPortalAppObjs import *
 from covidPortalApp.covidPortalAppConstants import *
 from django.contrib.auth import authenticate
@@ -321,8 +322,13 @@ def showAlignment(request):
         # print (" data " + str(data))
 
         selectedAccessions = data["selectedAccessions"]
+        selectedEpitopeIds = data["selectedEpitopeIds"]
+        selectedStructureIds = data["selectedStructureIds"]
 
         print (" selectedAccessions " + str(selectedAccessions))
+        print (" selectedEpitopeIds " + str(selectedEpitopeIds))
+        print (" selectedStructureIds " + str(selectedStructureIds))
+
         initialAlignment = data["initialAlignment"]
 
         sequenceObjList = []
@@ -330,6 +336,8 @@ def showAlignment(request):
 
         if initialAlignment:
             selectedAccessions = SELECTED_ACCESSIONS
+            selectedEpitopeIds = SELECTED_EPITOPES
+            # selectedAccessions = SELECTED_ACCESSIONS
 
             sequenceRecords = SequenceRecord.objects.all()
 
@@ -345,13 +353,32 @@ def showAlignment(request):
                 if  row.accession in  SELECTED_ACCESSIONS:
                     print ( " ******** SELECTED_ACCESSIONS " + row.accession)
                     sequenceObjMap["isSelected"] = True
-                    selectedSequenceRecords.append(row)
+                    # selectedSequenceRecords.append(row)
 
                 sequenceObjList.append(sequenceObjMap)
+
+            # epitopeRecords = Epitope.objects.all()
+            #
+            # for row in epitopeRecords:
+            #
+            #     epitopeObjMap = {
+            #         "IEDB_ID":row.IEDB_ID,
+            #         "sequence":row.sequence,
+            #         "offset": row.offset,
+            #         "isSelected": False
+            #     }
+            #
+            #     if  row.IEDB_ID in SELECTED_EPITOPES:
+            #         # print ( " ******** SELECTED_EPITOPES " + row.accession)
+            #         epitopeObjMap["isSelected"] = True
+            #         # selectedSequenceRecords.append(row)
+            #
+            #     epitopeObjList.append(epitopeObjMap)
 
         else:
 
             selectedSequenceRecords = SequenceRecord.objects.filter ( accession__in = selectedAccessions)
+            selectedEpitopes = epitopesequence({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":(",").join()})
 
         alignment = Alignment.objects.get (pk = 1)
         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
@@ -365,13 +392,20 @@ def showAlignment(request):
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
             alignmentObjList.append(alignmentObj)
+        #
+        # for epitopeObj in epitopeObjList:
+        #
+        #     epitopeSequence = epitopeObj.sequence
+        #     if epitopeSequence.offset != 0 :
+        #         epitopeSequenceString = '-' * epitopeSequence.offset + epitopeSequence
+        #
+        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+        #     alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
+        #     alignmentObjList.append(alignmentObj)
 
         fieldList = [str(x) for x in SequenceRecord._meta.fields]
         fieldList = [x[x.rfind(".")+1:] for x in fieldList]
         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
-
-        # epitopeResultObj = epitopeResultObj
-        # structureResultObj = structureResultObj
 
         epitopeExperiments = EpitopeExperiment.objects.filter(epitope__alignment__name = ALIGNMENT_NAME, epitope__protein__mesh_id = MESH_ID)
         epitopeExperimentObjList = [
@@ -387,9 +421,13 @@ def showAlignment(request):
                                     }
                                     for x in epitopeExperiments
         ]
+
         fieldList = [str(x) for x in EpitopeExperiment._meta.fields]
         fieldList = [x[x.rfind(".")+1:] for x in fieldList]
+
         epitopeExperimentResultObj = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
+
+        epitopeObjList = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
 
         nomenclaturePositionObj = {}
 

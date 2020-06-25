@@ -312,8 +312,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
          this.sequenceTableColumns = this.sequenceResultObj.sequenceTableColumns;
          this.epitopeExperimentTableColumns = alignmentResult.epitopeExperimentResultObj.epitopeExperimentTableColumns;
+
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+
+         this.epitopeObjList = alignmentResult.epitopeObjList;
+         this.displayEpitopeObjList = this.epitopeObjList.slice(0, this.numRowsInPage);
 
          this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
          this.displayEpitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
@@ -328,7 +332,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
          this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
-
           // for (let i = 0; i < this.numRowsInPage; i++){
           //     this.rows.push(this.sequenceObjList[i]);
           // }

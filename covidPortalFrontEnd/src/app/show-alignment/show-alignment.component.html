@@ -1,9 +1,6 @@
 <router-outlet></router-outlet>
-
 <div class="container">
-
   <table border=0 class="table paneltable" id="paneltable">
-
      <thead>
          <th></th>
          <th class="label-header">Accession</th>
@@ -68,79 +65,19 @@
          <th></th>
      </tr>
      <!-- EPITOPE 1 --->
-     <tr>
-         <td rowspan="3"><div class="paneltab-outer"><div class="paneltab-inner">Epitopes</div></div></td>
-         <!-- epitope label -->
-         <td><div class="residue-height label">Ep 1</div></td>
+     <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index">
+         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope</div></div></td>
+         <!-- sequence label -->
+         <td><div class="residue-height label">{{displayEpitopeObj.iedb_id}}</div></td>
          <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
+         <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">Sort Value</div></td>
-         <td rowspan=3>scroll</td>
+         <td rowspan=3 *ngIf="idx == 0">
+           <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setEpitopeVerticalSliderValue($event);">
+         </td>
      </tr>
-     <!-- EPITOPE 2 --->
-     <tr>
-         <!-- epitope label -->
-         <td><div class="residue-height label">Ep 2</div></td>
-         <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
-         <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
-     </tr>
-     <!-- EPITOPE 3 --->
-     <tr>
-         <!-- epitope label -->
-         <td><div class="residue-height label">Ep 3</div></td>
-         <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
-         <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
-     </tr>
+
      </tbody>
      <!-- END EPITOPES --------------------------------------------------------->
      <!-- BEGIN STRUCTURE ------------------------------------------------------>
@@ -318,155 +255,278 @@
     <!-- mri qc tabset -->
     <ng-template #sequencesTabset>
 
-      <!-- <ngb-tabset type="pills" [activeId]="activeTabTitle">
+      <div class="row" style="float:right;">
+        Sort:&nbsp;            <select [(ngModel)]="sortSequenceTableColumn">
+          <option *ngFor="let sequenceTableColumn of sequenceTableColumns"
+            #sortColumnSelect
+            [value]="sequenceTableColumn"
+            (change)='sortSequenceTable()'
+            >
+          {{sequenceTableColumn}}
+        </option>
+      </select>
+        Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
+      </div>
+      <div class="row" style="float:clear;">
+        <br/>&nbsp;
+      </div>
+        <div class="row" style="float:clear;overflow: scroll;height:400px;">
 
-        <ngb-tab *ngFor = "let sequenceHostObj of sequenceHostObjList; let selectedIndex = index" [attr.data-index]="selectedStatsImageIndex" (click) = "setSelectedStatsImage(selectedStatsImageIndex)"
-                  title="{{statsImageObj.name}}" >
-
-          <ng-template ngbTabContent>
- -->
-          <div class="row" style="float:right;">
-            Sort:&nbsp;            <select [(ngModel)]="sortSequenceTableColumn">
-              <option *ngFor="let sequenceTableColumn of sequenceTableColumns"
-                #sortColumnSelect
-                [value]="sequenceTableColumn"
-                (change)='sortSequenceTable()'
-                >
-              {{sequenceTableColumn}}
-            </option>
-          </select>
-            Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
-          </div>
-          <div class="row" style="float:clear;">
-            <br/>&nbsp;
-          </div>
-            <div class="row" style="float:clear;overflow: scroll;height:400px;">
-
-                <div *ngIf="displaySequenceObjList?.length > 0">
+            <div *ngIf="displaySequenceObjList?.length > 0">
 
 
-                    <table class="table table-bordered table-striped">
+                <table class="table table-bordered table-striped">
 
-                      <thead>
-                        <tr>
+                  <thead>
+                    <tr>
 
-                          <td>
-                              Select
-                          </td>
+                      <td>
+                          Select
+                      </td>
 
-                          <td>
-                            <a href="#">
-                              Accession
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
+                      <td>
+                        <a href="#">
+                          Accession
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
 
-                          <td>
-                            <a href="#">
-                              Organism
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
+                      <td>
+                        <a href="#">
+                          Organism
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
 
-                          <td>
-                            <a href="#">
-                              Collection Date
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Isolation Source
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Coded By
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Protein ID
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Taxon ID
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                        </tr>
-                      </thead>
+                      <td>
+                        <a href="#">
+                          Collection Date
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          Isolation Source
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          Coded By
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          Protein ID
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
+                      <td>
+                        <a href="#">
+                          Taxon ID
+                          <!-- <div class="arrow-up"></div>
+                          <div class="arrow-down"></div> -->
+                        </a>
+                      </td>
+                    </tr>
+                  </thead>
 
-                      <tbody>
-                        <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
-                          <td>
-                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
-                          </td>
-                          <td>
-                              {{row.accession}}
-                          </td>
+                  <tbody>
+                    <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
+                      <td>
+                        <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
+                      </td>
+                      <td>
+                          {{row.accession}}
+                      </td>
 
-                          <td>
-                            {{row.organism}}
-                          </td>
+                      <td>
+                        {{row.organism}}
+                      </td>
 
-                          <td>
-                            {{row.collection_date}}
-                          </td>
+                      <td>
+                        {{row.collection_date}}
+                      </td>
 
-                          <td>
-                            {{row.isolate}}
-                          </td>
+                      <td>
+                        {{row.isolate}}
+                      </td>
 
-                          <td>
-                            {{row.coded_by}}
-                          </td>
-                          <td>
-                            {{row.protein_id}}
-                          </td>
-                          <td>
-                            {{row.taxon_id}}
-                          </td>
-                        </tr>
-                      </tbody>
+                      <td>
+                        {{row.coded_by}}
+                      </td>
+                      <td>
+                        {{row.protein_id}}
+                      </td>
+                      <td>
+                        {{row.taxon_id}}
+                      </td>
+                    </tr>
+                  </tbody>
 
-                    </table>
+                </table>
 
-                    <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
+                <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
 
-                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
-                			</button>&nbsp;
+                  <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
+            			</button>&nbsp;
 
-                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
-                  		</button>
-
-                    </div>
+                  <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
+              		</button>
 
                 </div>
 
+            </div>
+
+          </div>
+
+    </ng-template>
+
+    <!-- sequences tabset -->
+    <ng-template #epitopesTabset>
+
+        <div class="row" style="float:right;">
+          Sort:&nbsp;            <select [(ngModel)]="sortEpitopeExperimentTableColumn">
+            <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
+              #sortEpitopeColumnSelect
+              [value]="epitopeExperimentTableColumn"
+              (change)='sortEpitopeExperiment()'
+              >
+            {{epitopeExperimentTableColumn}}
+          </option>
+        </select>
+          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeTable()">
+        </div>
+        <div class="row" style="float:clear;">
+          <br/>&nbsp;
+        </div>
+          <div class="row" style="float:clear;overflow: scroll;height:400px;">
+
+              <div *ngIf="displayEpitopeExperimentObjList?.length > 0">
+
+                  <table class="table table-bordered table-striped">
+
+                    <thead>
+                      <tr>
+
+                        <th>
+                            Select
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Host
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Assay Type
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Assay Result
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            MHC Allele
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            MHC Class
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Exp Method
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Measurement Type
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            IEDB ID
+                          </a>
+                        </th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
+
+                        <td>
+                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadEpitopes($event)">
+                        </td>
+
+                        <td>
+                          {{row.host}}
+                        </td>
+
+                        <td>
+                          {{row.assay_type}}
+                        </td>
+
+                        <td>
+                          {{row.assay_result}}
+                        </td>
+
+                        <td>
+                          {{row.mhc_allele}}
+                        </td>
+
+                        <td>
+                          {{row.mhc_class}}
+                        </td>
+                        <td>
+                          {{row.exp_method}}
+                        </td>
+                        <td>
+                          {{row.measurement_type}}
+                        </td>
+                        <td>
+                          {{row.iedb_id}}
+                        </td>
+
+                      </tr>
+                    </tbody>
+
+                  </table>
+
+                  <div class="btn-group" *ngIf="displayEpitopeExperimentObjList?.length > 0" >
+
+                    <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevEpitopeButton">Prev&nbsp;
+                    </button>&nbsp;
+
+                    <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextEpitopeButton">Next&nbsp;
+                    </button>
+
+                  </div>
+
               </div>
 
-           <!-- </ng-template>
+            </div>
 
-        </ngb-tab>
-
-      </ngb-tabset> -->
-
-    </ng-template>
-
-    <ng-template #sequenceTabset>
-    </ng-template>
+        </ng-template>
 
     </div>
 
