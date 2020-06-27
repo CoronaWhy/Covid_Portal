@@ -1,5 +1,5 @@
 import { SequenceResultObj } from './sequence';
-import { EpitopeExperimentResultObj } from './epitope';
+import { EpitopeExperimentResultObj, EpitopeObj } from './epitope';
 
 export class ResidueObj {
   residueValue:number;
@@ -20,5 +20,12 @@ export class AlignmentResultObj {
 
   alignmentObjList:AlignmentObj[];
   selectedAccessions:string[];
+
+  epitopeObjList:EpitopeObj[];
+  selectedEpitopeIds:string[];
+
+  structureObjList:EpitopeObj[];
+  selectedStructureIds:string[];
+
   nomenclaturePositionStrings:string[];
 }

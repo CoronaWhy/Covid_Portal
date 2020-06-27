@@ -70,11 +70,11 @@
          <!-- sequence label -->
          <td><div class="residue-height label">{{displayEpitopeObj.iedb_id}}</div></td>
          <!-- residues -->
-         <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
+         <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">Sort Value</div></td>
          <td rowspan=3 *ngIf="idx == 0">
-           <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setEpitopeVerticalSliderValue($event);">
+           <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{epitopeVerticalSliderValue}}" class="verticalslider" id="epitopeVerticalSlider" (input)="setEpitopeVerticalSliderValue($event);">
          </td>
      </tr>
 
@@ -250,9 +250,17 @@
 
       </ngb-tab>
 
+      <ngb-tab title="Structures" id="structuresId" name="structuresDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="structuresTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
     </ngb-tabset>
 
-    <!-- mri qc tabset -->
+    <!-- sequences tabset -->
     <ng-template #sequencesTabset>
 
       <div class="row" style="float:right;">
@@ -389,7 +397,7 @@
 
     </ng-template>
 
-    <!-- sequences tabset -->
+    <!-- epitopes tabset -->
     <ng-template #epitopesTabset>
 
         <div class="row" style="float:right;">
@@ -525,6 +533,143 @@
               </div>
 
             </div>
+
+        </ng-template>
+
+        <!-- structures tabset -->
+        <ng-template #structuresTabset>
+
+          <div class="row" style="float:right;">
+            Sort:&nbsp;            <select [(ngModel)]="sortStructureTableColumn">
+              <option *ngFor="let structureTableColumn of structureTableColumns"
+                #sortColumnSelect
+                [value]="structureTableColumn"
+                (change)='sortStructureTable()'
+                >
+              {{structureTableColumn}}
+            </option>
+          </select>
+            Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDatatable()">
+          </div>
+          <div class="row" style="float:clear;">
+            <br/>&nbsp;
+          </div>
+            <div class="row" style="float:clear;overflow: scroll;height:400px;">
+
+                <div *ngIf="displayStructureChainObjList?.length > 0">
+
+
+                    <table class="table table-bordered table-striped">
+
+                      <thead>
+                        <tr>
+
+                          <td>
+                              Select
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Accession
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Organism
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Collection Date
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Isolation Source
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Coded By
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Protein ID
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Taxon ID
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
+                          <td>
+                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
+                          </td>
+                          <td>
+                              {{row.accession}}
+                          </td>
+
+                          <td>
+                            {{row.organism}}
+                          </td>
+
+                          <td>
+                            {{row.collection_date}}
+                          </td>
+
+                          <td>
+                            {{row.isolate}}
+                          </td>
+
+                          <td>
+                            {{row.coded_by}}
+                          </td>
+                          <td>
+                            {{row.protein_id}}
+                          </td>
+                          <td>
+                            {{row.taxon_id}}
+                          </td>
+                        </tr>
+                      </tbody>
+
+                    </table>
+
+                    <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
+
+                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
+                			</button>&nbsp;
+
+                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
+                  		</button>
+
+                    </div>
+
+                </div>
+
+              </div>
 
         </ng-template>
 

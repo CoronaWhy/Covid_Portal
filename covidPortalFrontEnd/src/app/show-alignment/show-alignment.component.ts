@@ -12,6 +12,8 @@ import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { EpitopeObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
+import { StructureObj, StructureChainObj, StructureChainResultObj } from '../models/structure';
+
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
 import { Page } from '../models/page';
@@ -24,7 +26,6 @@ import { of } from 'rxjs';
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
-
 
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
@@ -45,6 +46,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     positionSliderValue:number;
     sequenceTableColumns:string[];
     selectedAccessions:string[];
+
+    selectedEpitopeIds:string[];
+    selectedStructureIds:string[];
+
+    selectedPDBChainIds:string[];
+
     rangeSliderOptions: Options = {
       floor: 0,
       ceil: 10,
@@ -59,6 +66,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     sequences:SequenceObj[];
     sequenceResultObj:SequenceResultObj;
     sequenceObjList:SequenceObj[];
+
+    epitopeObjList:EpitopeObj[];
+    displayEpitopeObjList:EpitopeObj[];
+
     page : Page;
     rows : Array<SequenceObj>;
     cache: any;
@@ -68,6 +79,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     epitopeExperimentObjList:EpitopeExperimentObj[];
     displayEpitopeExperimentObjList:EpitopeExperimentObj[];
     epitopeExperimentTableColumns:string[];
+
+    structureChainObjList:StructureChainObj[];
+    displayStructureChainObjList:StructureChainObj[];
+    structureChainTableColumns:string[];
 
     initialAlignment: boolean;
     searchString:string;
@@ -79,6 +94,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     offset:number;
     numRowsInAlignment:number;
     sortSequenceTableColumn:string;
+
+    epitopeVerticalSliderValue:number;
+
     @ViewChild('sequenceTable') sequenceTable;
 
     /**
@@ -124,7 +142,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
         console.log(this.selectedAccessions);
 
-        this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
+        this.showAlignmentService.showAlignment(this.selectedAccessions,this.selectedEpitopeIds,this.selectedStructureIds,this.initialAlignment).then(alignmentResult => {
            this.alignmentObjList = alignmentResult.alignmentObjList;
            // this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
            // this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
@@ -229,6 +247,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     }
 
+    setEpitopeVerticalSliderValue (event) {
+      let verticalSlider = document.getElementById('epitopeVerticalSlider') as HTMLInputElement;
+      this.verticalSliderValue = Number(verticalSlider.value);
+      console.log(" index verticalSliderValue " + this.verticalSliderValue);
+      let startIndex = 10-this.verticalSliderValue;
+      this.displayEpitopeObjList = this.epitopeObjList.slice(startIndex,startIndex+this.numRowsInPage);
+
+    }
+
     sliderValueChange(event){
       console.log(" index value " + this.indexValue);
     }
@@ -241,6 +268,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.positionSliderValue = Number(positionSlider.value);
       for (let i = 0; i < this.alignmentObjList.length; i++){
         this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+        this.epitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
         this.displayNomenclaturePositionStrings = this.nomenclaturePositionStrings.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
@@ -296,8 +324,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       this.maxVerticalSliderValue = 10;
       this.verticalSliderValue = 10;
+      this.epitopeVerticalSliderValue = 10;
 
       this.selectedAccessions = [];
+
+      this.selectedEpitopeIds = [];
+      this.selectedStructureIds = [];
+
       this.initialAlignment = true;
 
       this.searchString = '';
@@ -305,7 +338,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.numRowsInPage = 3;
       this.numRowsInAlignment = 3;
 
-      this.showAlignmentService.showAlignment(this.selectedAccessions,this.initialAlignment).then(alignmentResult => {
+      this.showAlignmentService.showAlignment(this.selectedAccessions, this.selectedEpitopeIds,this.selectedStructureIds,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
          this.alignmentObjList = alignmentResult.alignmentObjList;
@@ -317,6 +350,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
          this.epitopeObjList = alignmentResult.epitopeObjList;
+         // debugger;
+         console.log(" this.epitopeObjList " + this.epitopeObjList);
+         // for (let i = 0; i< this.epitopeObjList.length; i++){
+         //   console.log(" this.epitopeObjList " + this.epitopeObjList[i].iedb_id);
+         // }
          this.displayEpitopeObjList = this.epitopeObjList.slice(0, this.numRowsInPage);
 
          this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
@@ -330,7 +368,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.initialAlignment = false;
 
          this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
+         this.displayEpitopeObjList = this.epitopeObjList.slice(0,this.numRowsInAlignment);
+
          this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
           // for (let i = 0; i < this.numRowsInPage; i++){
           //     this.rows.push(this.sequenceObjList[i]);
@@ -347,8 +388,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.maxSliderValue = this.alignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
            }
            // this.displayAignmentObjList[i].residueObjList = this.displayAignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+
            this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
            this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
+
+           this.displayEpitopeObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
+           this.displayEpitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+
            // console.log(this.displayAignmentObjList[i].residueObjList);
          }
          // console.log(this.displayAignmentObjList);

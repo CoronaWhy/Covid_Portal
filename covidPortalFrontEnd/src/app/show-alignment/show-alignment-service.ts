@@ -13,8 +13,8 @@ export class ShowAlignmentService {
 
     constructor (private http: HttpClient) {}
 
-    showAlignment(selectedAccessions:string[], initialAlignment:boolean): Promise<AlignmentResultObj> {
-       return this.http.post(this.showAlignmentUrl, {"selectedAccessions":selectedAccessions, "initialAlignment":initialAlignment}).toPromise().then(res => res)
+    showAlignment(selectedAccessions:string[],selectedEpitopeIds:string[],selectedStructureIds:string[], initialAlignment:boolean): Promise<AlignmentResultObj> {
+       return this.http.post(this.showAlignmentUrl, {"selectedAccessions":selectedAccessions, "selectedEpitopeIds":selectedEpitopeIds,"selectedStructureIds":selectedStructureIds, "initialAlignment":initialAlignment}).toPromise().then(res => res)
        .catch(this.handleError);
     }
 

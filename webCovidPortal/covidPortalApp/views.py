@@ -35,7 +35,6 @@ from covidPortalApp.covidPortalAppConstants import *
 from django.contrib.auth import authenticate
 import time
 import paramiko
-
 import asyncio, asyncssh, sys
 
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
@@ -334,6 +333,8 @@ def showAlignment(request):
         sequenceObjList = []
         selectedSequenceRecords = []
 
+        epitopeObjList = []
+        structureObjList = []
         if initialAlignment:
             selectedAccessions = SELECTED_ACCESSIONS
             selectedEpitopeIds = SELECTED_EPITOPES
@@ -353,7 +354,7 @@ def showAlignment(request):
                 if  row.accession in  SELECTED_ACCESSIONS:
                     print ( " ******** SELECTED_ACCESSIONS " + row.accession)
                     sequenceObjMap["isSelected"] = True
-                    # selectedSequenceRecords.append(row)
+                    selectedSequenceRecords.append(row)
 
                 sequenceObjList.append(sequenceObjMap)
 
@@ -381,27 +382,56 @@ def showAlignment(request):
             selectedEpitopes = epitopesequence({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":(",").join()})
 
         alignment = Alignment.objects.get (pk = 1)
+
+        # print ("  selectedAccessions " + str(selectedAccessions) )
+
         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
 
+        epitopes = list(Epitope.objects.filter(IEDB_ID__in = SELECTED_EPITOPES, alignment = alignment) )
+
+        # structureSequences = structuresequence ( {"mesh_id":MESH ID, "alignment":ALIGNMENT_NAME, "pdbchains":SELECTED_PDB_CHAIN_IDS} )
+
+        # structureResidueAtoms = structureresidueatoms({"mesh_id":MESH ID, "atom":'CA', "pdbchains":SELECTED_PDB_CHAIN_IDS})
+
+        seqeuenceLength = 0
         for sequence in sequences:
 
             sequenceString = sequence.sequence
             if sequence.offset != 0 :
                 sequenceString = '-' * sequence.offset + sequenceString
-
+            # print ( " len(sequenceString) " + str(len(sequenceString) ) )
+            if len(sequenceString) > seqeuenceLength:
+                seqeuenceLength = len(sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
             alignmentObjList.append(alignmentObj)
-        #
-        # for epitopeObj in epitopeObjList:
-        #
-        #     epitopeSequence = epitopeObj.sequence
-        #     if epitopeSequence.offset != 0 :
-        #         epitopeSequenceString = '-' * epitopeSequence.offset + epitopeSequence
-        #
-        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-        #     alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
-        #     alignmentObjList.append(alignmentObj)
+
+        for epitope in epitopes:
+
+            sequenceString = epitope.sequence
+            # print (epitope.offset)
+            if epitope.offset != 0 :
+                sequenceString = '-' * epitope.offset + sequenceString
+                if len(sequenceString) < seqeuenceLength:
+                     sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+            # print (sequenceString)
+            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+            epitopeObj = {"iedb_id":str(epitope.IEDB_ID),"residueObjList":residueObjList}
+            # print (" adding epitope " + epitope.IEDB_ID)
+            epitopeObjList.append(epitopeObj)
+
+        for structureSequence in structureSequences:
+
+            sequenceString = structureSequence.sequence
+            if structureSequence.offset != 0 :
+                sequenceString = '-' * structureSequence.offset + sequenceString
+                if len(sequenceString) < seqeuenceLength:
+                     sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+            # print (sequenceString)
+            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+            structureObj = {"pdbchain":structureSequence.pdbchain,"residueObjList":residueObjList}
+            # print (" adding epitope " + epitope.IEDB_ID)
+            structureObjList.append(epitopeObj)
 
         fieldList = [str(x) for x in SequenceRecord._meta.fields]
         fieldList = [x[x.rfind(".")+1:] for x in fieldList]
@@ -427,7 +457,21 @@ def showAlignment(request):
 
         epitopeExperimentResultObj = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
 
-        epitopeObjList = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
+        structureChainObjs = structurechains ({"mesh_id": MESH_ID})
+
+        structureChainObjList = [
+                                    {
+                                        "taxon": x.taxon,
+                                        "taxon_id": x.taxon,
+                                        "pdb_id": x.pdb_id,
+                                        "chain": x.chain
+                                    }
+                                    for x in structureChainObjs
+        ]
+
+        fieldList = ["taxon", "taxon_id", "pdb_id", "chain"]
+
+        structureChainResultObj = {"structureChainTableColumns":fieldList, "structureChainObjList":structureChainObjList}
 
         nomenclaturePositionObj = {}
 
@@ -436,23 +480,12 @@ def showAlignment(request):
             nomenclature = Nomenclature.objects.get(pk=1)
             nomenclaturePositions = NomenclaturePosition.objects.filter(nomenclature = nomenclature)
 
-            # nomenclaturePositionMajor0s = [str(x.major)[0] for x in nomenclaturePositions]
-            # nomenclaturePositionMajor1s = [str(x.major)[1] if len(str(x.major)) > 1 else ' ' for x in nomenclaturePositions]
-            # nomenclaturePositionMajor2s = [str(x.major)[2] if len(str(x.major)) > 2 else ' ' for x in nomenclaturePositions]
-            # nomenclaturePositionMinor0s = [str(x.minor)[0] for x in nomenclaturePositions]
-
             nomenclaturePositionStrings = [str(x.major) + "." + str(x.minor).zfill(3) for x in nomenclaturePositions]
 
-            # print (nomenclaturePositionStrings)
-
-            # nomenclaturePositionObj = {"nomenclaturePositionMajor0s":nomenclaturePositionMajor0s,
-            #                            "nomenclaturePositionMajor1s":nomenclaturePositionMajor1s,
-            #                            "nomenclaturePositionMajor2s":nomenclaturePositionMajor2s,
-            #                            "nomenclaturePositionMinor0s":nomenclaturePositionMinor0s,
-            #                            "nomenclaturePositionStrings":nomenclaturePositionStrings
-            #                            }
-
         alignmentResultObj["alignmentObjList"] = alignmentObjList
+        print (epitopeObjList)
+        alignmentResultObj["epitopeObjList"] = epitopeObjList
+
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
 
         alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
@@ -460,8 +493,8 @@ def showAlignment(request):
         alignmentResultObj["selectedAccessions"] = selectedAccessions
         alignmentResultObj["nomenclaturePositionStrings"] = nomenclaturePositionStrings
 
-        # alignmentResultObj["epitopeResultObj"] = epitopeResultObj
-        # alignmentResultObj["structureResultObj"] = structureResultObj
+        alignmentResultObj["structureObjList"] = structureObjList
+        alignmentResultObj["structureChainResultObj"] = structureChainResultObj
 
         # masterObj["alignmentResultObj"] = alignmentResultObj
         # masterObj["epitopesObjs"] = epitopesObjs
