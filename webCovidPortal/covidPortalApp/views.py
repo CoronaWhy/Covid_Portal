@@ -419,15 +419,15 @@ def showAlignment(request):
             epitopeObjList.append(epitopeObj)
 
         for structureSequence in structureSequences:
-
-            sequenceString = structureSequence.sequence
-            if structureSequence.offset != 0 :
-                sequenceString = '-' * structureSequence.offset + sequenceString
+            print (structureSequence)
+            sequenceString = structureSequence["sequence"]
+            if structureSequence["offset"] != 0 :
+                sequenceString = '-' * structureSequence["offset"] + sequenceString
                 if len(sequenceString) < seqeuenceLength:
                      sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
             # print (sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-            structureObj = {"pdbchain":structureSequence.pdbchain,"residueObjList":residueObjList}
+            structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
             # print (" adding epitope " + epitope.IEDB_ID)
             structureObjList.append(structureObj)
 
@@ -493,7 +493,6 @@ def showAlignment(request):
 
         alignmentResultObj["structureObjList"] = structureObjList
         alignmentResultObj["structureChainResultObj"] = structureChainResultObj
-
         # masterObj["alignmentResultObj"] = alignmentResultObj
         # masterObj["epitopesObjs"] = epitopesObjs
         # masterObj["structureObjs"] = structureObjs

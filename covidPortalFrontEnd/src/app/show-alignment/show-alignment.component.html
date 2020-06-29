@@ -461,10 +461,10 @@
 
                   <div class="btn-group" *ngIf="displayEpitopeExperimentObjList?.length > 0" >
 
-                    <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevEpitopeButton">Prev&nbsp;
+                    <button  id="button_prev" style = "background-color:#834793;" (click)="showEpitopePrev();" [disabled]="hidePrevEpitopeButton">Prev&nbsp;
                     </button>&nbsp;
 
-                    <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextEpitopeButton">Next&nbsp;
+                    <button  id="button_next" style = "background-color:#834793;" (click)="showEpitopeNext();" [disabled]="hideNextEpitopeButton">Next&nbsp;
                     </button>
 
                   </div>
@@ -535,7 +535,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr *ngFor ="let row of displayStructureChainObj" style="line-height: 50px; height: 50px;">
+                        <tr *ngFor ="let row of displayStructureChainObjList" style="line-height: 50px; height: 50px;">
                           <td>
                             <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadStructures($event)">
                           </td>
@@ -554,10 +554,10 @@
                         </tr>
                       </tbody>
                     </table>
-                    <div class="btn-group" *ngIf="displayStructureChainObj?.length > 0" >
-                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevStructureButton">Prev&nbsp;
+                    <div class="btn-group" *ngIf="displayStructureChainObjList?.length > 0" >
+                      <button  id="button_prev" style = "background-color:#834793;" (click)="showStructurePrev();" [disabled]="hidePrevStructureButton">Prev&nbsp;
                 			</button>&nbsp;
-                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextStructureButton">Next&nbsp;
+                      <button  id="button_next" style = "background-color:#834793;" (click)="showStructureNext();" [disabled]="hideNextStructureButton">Next&nbsp;
                   		</button>
                     </div>
                 </div>

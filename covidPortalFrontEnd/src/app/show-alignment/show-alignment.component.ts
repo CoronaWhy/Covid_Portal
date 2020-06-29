@@ -71,7 +71,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     structureObjList:StructureObj[];
     displayStructureObjList:StructureObj[];
-
     page : Page;
     rows : Array<SequenceObj>;
     cache: any;
@@ -89,11 +88,23 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     initialAlignment: boolean;
     searchString:string;
     numRowsInPage:number;
+
     hidePrevButton: boolean;
     hideNextButton: boolean;
+
+    epitopeHidePrevButton: boolean;
+    epitopeHideNextButton: boolean;
+
+    structureHidePrevButton: boolean;
+    structureHideNextButton: boolean;
+
     nomenclaturePositionStrings:string[];
     displayNomenclaturePositionStrings:string[];
+
     offset:number;
+    epitopeOffset:number;
+    structureOffset:number;
+
     numRowsInAlignment:number;
     sortSequenceTableColumn:string;
 
@@ -118,18 +129,18 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
    showNext(){
      this.offset += 1;
      console.log(" this.offset " + this.offset);
-     // this.setPage({offset: this.offset, pageSize: 3});
      this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
      if (this.offset > 1){
        this.hidePrevButton = false;
      }
+
    }
 
    showPrev(){
+
       if (this.offset > 0){
         this.offset -= 1;
         this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
-        // this.setPage({offset: this.offset, pageSize: 3});
         if (this.offset == 0){
           this.hidePrevButton = true;
         }
@@ -137,7 +148,56 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
    }
 
-   reloadSequences(value){
+   showEpitopeNext(){
+
+     this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
+     this.displayStructureChainObjList = this.structureChainObjList.slice(0,this.numRowsInPage);
+
+     this.epitopeOffset += 1;
+     console.log(" this.epitopeOffset " + this.epitopeOffset);
+     this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.epitopeOffset*this.numRowsInPage, (this.epitopeOffset+1)*this.numRowsInPage );
+     if (this.epitopeOffset > 1){
+       this.epitopeHidePrevButton = false;
+     }
+
+    }
+
+    showEpitopePrev(){
+
+      if (this.epitopeOffset > 0){
+        this.epitopeOffset -= 1;
+        this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.epitopeOffset*this.numRowsInPage, (this.epitopeOffset+1)*this.numRowsInPage );
+        if (this.epitopeOffset == 0){
+          this.epitopeHidePrevButton = true;
+        }
+      }
+
+    }
+
+    showStructureNext(){
+
+      this.structureOffset += 1;
+      console.log(" this.structureOffset " + this.structureOffset);
+      this.displayStructureChainObjList = this.structureChainObjList.slice(this.structureOffset*this.numRowsInPage, (this.structureOffset+1)*this.numRowsInPage );
+      if (this.structureOffset > 1){
+        this.structureHidePrevButton = false;
+      }
+
+     }
+
+     showStructurePrev(){
+
+       if (this.structureOffset > 0){
+         this.structureOffset -= 1;
+         this.displayStructureChainObjList = this.structureChainObjList.slice(this.structureOffset*this.numRowsInPage, (this.structureOffset+1)*this.numRowsInPage );
+         if (this.epitopeOffset == 0){
+           this.structureHidePrevButton = true;
+         }
+       }
+
+    }
+
+    reloadSequences(value){
       console.log(value.currentTarget.defaultValue);
       if (value.currentTarget.checked){
         this.selectedAccessions.push(value.currentTarget.defaultValue);
@@ -195,42 +255,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         return pagedData;
     }
 
-    /**
-     * Populate the table with new data based on the page number
-     * @param page The page to select
-     */
-    setPage(pageInfo) {
-      this.isLoading = true;
-      this.page.pageNumber = pageInfo.offset;
-      this.page.size = pageInfo.pageSize;
-
-      this.getResults(this.page).subscribe(pagedData => {
-        console.log (" *** in get results pagedData.data.length " + pagedData.data.length);
-        this.page = pagedData.page;
-
-        let rows = this.rows;
-
-        console.log (" rows.length " + rows.length);
-        console.log (" pagedData.page.totalElements " + pagedData.page.totalElements);
-
-        if (rows.length !== pagedData.page.totalElements) {
-          rows = Array.apply(null, Array(pagedData.page.totalElements));
-          rows = rows.map((x, i) => this.rows[i]);
-        }
-
-        console.log (" this.page.size " + this.page.size);
-
-        // calc start
-        const start = this.page.pageNumber * this.page.size;
-
-        // set rows to our new rows
-        pagedData.data.map((x, i) => rows[i + start] = x);
-        this.rows = rows;
-        this.isLoading = false;
-      });
-
-    }
-
     showHideFilters(){
       if(this.showFiltersFlag ){
         this.showFiltersFlag  = false;
@@ -258,6 +282,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     }
 
+    setStructureVerticalSliderValue (event) {
+      let verticalSlider = document.getElementById('structureVerticalSlider') as HTMLInputElement;
+      this.verticalSliderValue = Number(verticalSlider.value);
+      console.log(" index verticalSliderValue " + this.verticalSliderValue);
+      let startIndex = 10-this.verticalSliderValue;
+      this.displayStructureObjList = this.structureObjList.slice(startIndex,startIndex+this.numRowsInPage);
+
+    }
+
     sliderValueChange(event){
       console.log(" index value " + this.indexValue);
     }
@@ -271,6 +304,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       for (let i = 0; i < this.alignmentObjList.length; i++){
         this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
         this.epitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+        this.structureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
         this.displayNomenclaturePositionStrings = this.nomenclaturePositionStrings.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
@@ -336,7 +370,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.initialAlignment = true;
 
       this.searchString = '';
+
       this.offset = 0;
+      this.epitopeOffset = 0;
+      this.structureOffset = 0;
+
       this.numRowsInPage = 3;
       this.numRowsInAlignment = 3;
 
@@ -377,6 +415,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
 
          this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
+         this.displayStructureChainObjList = this.structureChainObjList.slice(0,this.numRowsInPage);
 
          for (let i = 0; i < this.alignmentObjList.length; i++){
            if (i == 0){
