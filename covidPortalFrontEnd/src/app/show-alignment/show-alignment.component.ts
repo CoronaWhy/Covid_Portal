@@ -352,7 +352,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
          this.structureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
-         this.displayStructureObjList = alignmentResult.structureChainResultObj.structureChainObjList;
+         this.displayStructureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
 
          this.alignmentObjList = alignmentResult.alignmentObjList;
          this.epitopeObjList = alignmentResult.epitopeObjList;
