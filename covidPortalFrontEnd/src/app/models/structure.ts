@@ -1,7 +1,7 @@
 import { ResidueObj } from './alignment';
 
 export class StructureObj {
-  pdb_id:string;
+  pdbchain:string;
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
 }

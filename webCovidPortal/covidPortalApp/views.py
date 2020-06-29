@@ -352,7 +352,7 @@ def showAlignment(request):
                     sequenceObjMap["collection_date"] = row.collection_date.strftime('%M/%D/%Y')
 
                 if  row.accession in  SELECTED_ACCESSIONS:
-                    print ( " ******** SELECTED_ACCESSIONS " + row.accession)
+                    # print ( " ******** SELECTED_ACCESSIONS " + row.accession)
                     sequenceObjMap["isSelected"] = True
                     selectedSequenceRecords.append(row)
 
@@ -386,13 +386,11 @@ def showAlignment(request):
         # print ("  selectedAccessions " + str(selectedAccessions) )
 
         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
-
         epitopes = list(Epitope.objects.filter(IEDB_ID__in = SELECTED_EPITOPES, alignment = alignment) )
 
-        # structureSequences = structuresequence ( {"mesh_id":MESH ID, "alignment":ALIGNMENT_NAME, "pdbchains":SELECTED_PDB_CHAIN_IDS} )
-
-        # structureResidueAtoms = structureresidueatoms({"mesh_id":MESH ID, "atom":'CA', "pdbchains":SELECTED_PDB_CHAIN_IDS})
-
+        structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":SELECTED_PDB_CHAIN_IDS} )
+        # structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, "alignment":ALIGNMENT_NAME, "atom":"CA","pdbchains":SELECTED_PDB_CHAIN_IDS})
+        print (structureSequences)
         seqeuenceLength = 0
         for sequence in sequences:
 
@@ -431,7 +429,7 @@ def showAlignment(request):
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             structureObj = {"pdbchain":structureSequence.pdbchain,"residueObjList":residueObjList}
             # print (" adding epitope " + epitope.IEDB_ID)
-            structureObjList.append(epitopeObj)
+            structureObjList.append(structureObj)
 
         fieldList = [str(x) for x in SequenceRecord._meta.fields]
         fieldList = [x[x.rfind(".")+1:] for x in fieldList]
@@ -461,10 +459,10 @@ def showAlignment(request):
 
         structureChainObjList = [
                                     {
-                                        "taxon": x.taxon,
-                                        "taxon_id": x.taxon,
-                                        "pdb_id": x.pdb_id,
-                                        "chain": x.chain
+                                        "taxon": x["taxon"],
+                                        "taxon_id": x["taxon_id"],
+                                        "pdb_id": x["pdb_id"],
+                                        "chain": x["chain"]
                                     }
                                     for x in structureChainObjs
         ]
@@ -483,7 +481,7 @@ def showAlignment(request):
             nomenclaturePositionStrings = [str(x.major) + "." + str(x.minor).zfill(3) for x in nomenclaturePositions]
 
         alignmentResultObj["alignmentObjList"] = alignmentObjList
-        print (epitopeObjList)
+        print (structureObjList)
         alignmentResultObj["epitopeObjList"] = epitopeObjList
 
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj

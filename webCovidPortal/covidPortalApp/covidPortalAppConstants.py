@@ -37,6 +37,6 @@ SELECTED_EPITOPES = [
     12967, 100347, 64085, 74367
 ]
 
-SELECTED_PDB_CHAIN_IDS = ['5WRG.A']
+SELECTED_PDB_CHAIN_IDS = '5WRG.A'
 
 # 4. PDB ID 5WRG, chain A, taxon “Severe acute respiratory syndrome-related coronavirus” should be selected.

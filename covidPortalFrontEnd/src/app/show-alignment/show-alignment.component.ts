@@ -49,7 +49,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     selectedEpitopeIds:string[];
     selectedStructureIds:string[];
-
     selectedPDBChainIds:string[];
 
     rangeSliderOptions: Options = {
@@ -69,6 +68,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     epitopeObjList:EpitopeObj[];
     displayEpitopeObjList:EpitopeObj[];
+
+    structureObjList:StructureObj[];
+    displayStructureObjList:StructureObj[];
 
     page : Page;
     rows : Array<SequenceObj>;
@@ -341,22 +343,24 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.showAlignmentService.showAlignment(this.selectedAccessions, this.selectedEpitopeIds,this.selectedStructureIds,this.initialAlignment).then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
-         this.alignmentObjList = alignmentResult.alignmentObjList;
+
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
          this.sequenceTableColumns = this.sequenceResultObj.sequenceTableColumns;
-         this.epitopeExperimentTableColumns = alignmentResult.epitopeExperimentResultObj.epitopeExperimentTableColumns;
+         this.structureChainTableColumns = alignmentResult.structureChainResultObj.structureChainTableColumns;
 
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
-         this.epitopeObjList = alignmentResult.epitopeObjList;
-         // debugger;
-         console.log(" this.epitopeObjList " + this.epitopeObjList);
-         // for (let i = 0; i< this.epitopeObjList.length; i++){
-         //   console.log(" this.epitopeObjList " + this.epitopeObjList[i].iedb_id);
-         // }
-         this.displayEpitopeObjList = this.epitopeObjList.slice(0, this.numRowsInPage);
+         this.structureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
+         this.displayStructureObjList = alignmentResult.structureChainResultObj.structureChainObjList;
 
+         this.alignmentObjList = alignmentResult.alignmentObjList;
+         this.epitopeObjList = alignmentResult.epitopeObjList;
+         this.structureObjList = alignmentResult.structureObjList;
+
+         console.log( " this.structureObjList " + this.structureObjList);
+
+         this.epitopeExperimentTableColumns = alignmentResult.epitopeExperimentResultObj.epitopeExperimentTableColumns;
          this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
          this.displayEpitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
 
@@ -368,32 +372,27 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.initialAlignment = false;
 
          this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
-
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
          this.displayEpitopeObjList = this.epitopeObjList.slice(0,this.numRowsInAlignment);
+         this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
 
          this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
-          // for (let i = 0; i < this.numRowsInPage; i++){
-          //     this.rows.push(this.sequenceObjList[i]);
-          // }
-         // this.rows =
-         // this.sequenceObjList.slice(0,9);
 
-         // console.log( " init this.rows len " + this.rows.length);
-         //
-         // this.setPage({offset: this.offset, pageSize: 3});
-         //
          for (let i = 0; i < this.alignmentObjList.length; i++){
            if (i == 0){
              this.maxSliderValue = this.alignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
            }
-           // this.displayAignmentObjList[i].residueObjList = this.displayAignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
-
+           // not needed to slice need to remove after testing
            this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
            this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
 
+           // not needed to slice need to remove after testing
            this.displayEpitopeObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
            this.displayEpitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+
+           // not needed to slice need to remove after testing
+           this.displayStructureObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
+           this.displayStructureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
 
            // console.log(this.displayAignmentObjList[i].residueObjList);
          }

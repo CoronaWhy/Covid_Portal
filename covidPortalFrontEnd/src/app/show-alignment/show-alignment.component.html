@@ -101,78 +101,17 @@
          <th></th>
      </tr>
      <!-- STRUCTURE 1 --->
-     <tr>
-         <td rowspan=3><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></div></td>
-         <!-- structure label -->
-         <td><div class="residue-height label">5JX9</div></td>
+     <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index">
+         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></div></td>
+         <!-- sequence label -->
+         <td><div class="residue-height label">{{displayStructureObj.pdbchain}}</div></td>
          <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
+         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">Sort Value</div></td>
-         <td rowspan=3>scroll</td>
-     </tr>
-     <!-- STRUCTURE 2 --->
-     <tr>
-         <!-- structure label -->
-         <td><div class="residue-height label">63CQ</div></td>
-         <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
-         <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
-     </tr>
-     <!-- STRUCTURE 3 --->
-     <tr>
-         <!-- structure label -->
-         <td><div class="residue-height label">6K9L</div></td>
-         <!-- residues -->
-         <td><div class="residue-width residue-height residue">A</div></td>
-         <td><div class="residue-width residue-height residue">B</div></td>
-         <td><div class="residue-width residue-height residue">C</div></td>
-         <td><div class="residue-width residue-height residue">D</div></td>
-         <td><div class="residue-width residue-height residue">E</div></td>
-         <td><div class="residue-width residue-height residue">F</div></td>
-         <td><div class="residue-width residue-height residue">G</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">H</div></td>
-         <td><div class="residue-width residue-height residue">I</div></td>
-         <td><div class="residue-width residue-height residue">J</div></td>
-         <td><div class="residue-width residue-height residue">-</div></td>
-         <td><div class="residue-width residue-height residue">K</div></td>
-         <td><div class="residue-width residue-height residue">L</div></td>
-         <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
+         <td rowspan=3 *ngIf="idx == 0">
+           <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{structureVerticalSliderValue}}" class="verticalslider" id="structureVerticalSlider" (input)="setStructureVerticalSliderValue($event);">
+         </td>
      </tr>
      </tbody>
      <!-- END STRUCTURE -------------------------------------------------------->
@@ -540,11 +479,11 @@
         <ng-template #structuresTabset>
 
           <div class="row" style="float:right;">
-            Sort:&nbsp;            <select [(ngModel)]="sortStructureTableColumn">
-              <option *ngFor="let structureTableColumn of structureTableColumns"
+            Sort:&nbsp;            <select [(ngModel)]="sortStructureChainTableColumn">
+              <option *ngFor="let structureChainTableColumn of structureChainTableColumns"
                 #sortColumnSelect
-                [value]="structureTableColumn"
-                (change)='sortStructureTable()'
+                [value]="structureChainTableColumn"
+                (change)='sortStructureChainTable()'
                 >
               {{structureTableColumn}}
             </option>
@@ -555,22 +494,17 @@
             <br/>&nbsp;
           </div>
             <div class="row" style="float:clear;overflow: scroll;height:400px;">
-
                 <div *ngIf="displayStructureChainObjList?.length > 0">
-
-
                     <table class="table table-bordered table-striped">
-
                       <thead>
                         <tr>
 
                           <td>
                               Select
                           </td>
-
                           <td>
                             <a href="#">
-                              Accession
+                              Taxon
                               <!-- <div class="arrow-up"></div>
                               <div class="arrow-down"></div> -->
                             </a>
@@ -578,7 +512,7 @@
 
                           <td>
                             <a href="#">
-                              Organism
+                              Taxon_ID
                               <!-- <div class="arrow-up"></div>
                               <div class="arrow-down"></div> -->
                             </a>
@@ -586,91 +520,48 @@
 
                           <td>
                             <a href="#">
-                              Collection Date
+                              PDB ID
                               <!-- <div class="arrow-up"></div>
                               <div class="arrow-down"></div> -->
                             </a>
                           </td>
                           <td>
                             <a href="#">
-                              Isolation Source
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Coded By
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Protein ID
-                              <!-- <div class="arrow-up"></div>
-                              <div class="arrow-down"></div> -->
-                            </a>
-                          </td>
-                          <td>
-                            <a href="#">
-                              Taxon ID
+                              Chain
                               <!-- <div class="arrow-up"></div>
                               <div class="arrow-down"></div> -->
                             </a>
                           </td>
                         </tr>
                       </thead>
-
                       <tbody>
-                        <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
+                        <tr *ngFor ="let row of displayStructureChainObj" style="line-height: 50px; height: 50px;">
                           <td>
-                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
+                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadStructures($event)">
                           </td>
                           <td>
-                              {{row.accession}}
-                          </td>
-
-                          <td>
-                            {{row.organism}}
-                          </td>
-
-                          <td>
-                            {{row.collection_date}}
-                          </td>
-
-                          <td>
-                            {{row.isolate}}
-                          </td>
-
-                          <td>
-                            {{row.coded_by}}
-                          </td>
-                          <td>
-                            {{row.protein_id}}
+                              {{row.taxon}}
                           </td>
                           <td>
                             {{row.taxon_id}}
                           </td>
+                          <td>
+                            {{row.pdb_id}}
+                          </td>
+                          <td>
+                            {{row.chain}}
+                          </td>
                         </tr>
                       </tbody>
-
                     </table>
-
-                    <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
-
-                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
+                    <div class="btn-group" *ngIf="displayStructureChainObj?.length > 0" >
+                      <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevStructureButton">Prev&nbsp;
                 			</button>&nbsp;
-
-                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
+                      <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextStructureButton">Next&nbsp;
                   		</button>
-
                     </div>
-
                 </div>
-
               </div>
-
         </ng-template>
 
     </div>
