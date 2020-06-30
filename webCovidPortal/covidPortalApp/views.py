@@ -240,69 +240,9 @@ def listSequences(request):
         traceback.print_exc(file=sys.stdout)
     return HttpResponse(json.dumps(sequenceResultObj), content_type='application/json')
 
-# def fetchSelectedSequences(request):
-#     '''
-#         Params: selectedAccessions - list of accession ids to get sequences for
-#         Returns: selectedSequenceObjs
-#     '''
-#
-#     alignmentResultObj = {}
-#
-#     try:
-#         # get params from request
-#         data = json.loads(request.body.decode('utf-8'))
-#         selectedaccessions = data["selectedaccessions"]
-#
-#         selectedSequenceRecords =  SequenceRecord.objects.filter(accession__in = selectedaccessions)
-#
-#         sequenceObjList = [
-#         {"id":row.id, "accession":row.accession,
-#          "organism":row.organism, "collection_date":row.collection_date.strftime('%M/%D/%Y'), "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
-#          "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
-#           if row.collection_date else
-#         {"id":row.id, "accession":row.accession,
-#          "organism":row.organism, "collection_date":'', "country":row.country, "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by,
-#          "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate }
-#          for row in selectedSequenceRecords
-#           ]
-#
-#         alignment = Alignment.objects.get (pk = 1)
-#
-#         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
-#
-#         # build list of alighment objs
-#         alignmentObjList = []
-#         for sequence in sequences:
-#
-#             sequenceString = sequence.sequence
-#             if sequence.offset != 0 :
-#                 sequenceString = '-' * sequence.offset + sequenceString
-#
-#             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-#             alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
-#             alignmentObjList.append(alignmentObj)
-#
-#         fieldList = [str(x) for x in SequenceRecord._meta.fields]
-#
-#         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
-#
-#         nomenclature = Nomenclature.objects.filter(accession__in = selectedAccessions, alignment = alignment)
-#
-#         alignmentResultObj["alignmentObjList"] = alignmentObjList
-#         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
-#         alignmentResultObj["selectedAccessions"] = selectedAccessions
-#         alignmentResultObj["nomenclature"] = nomenclature
-#
-#
-#         print (sequenceResultObj)
-#
-#     except:
-#         traceback.print_exc(file=sys.stdout)
-#
-#     return HttpResponse(json.dumps(alignmentResultObj), content_type='application/json')
-
 def showAlignment(request):
     '''
+        Initial data load
         Params: None
         Returns: alignmentResultObj (all sequences + selected sequenceRecord)
     '''
@@ -320,73 +260,72 @@ def showAlignment(request):
         # initialAlignment = data["initialAlignment"]
         # print (" data " + str(data))
 
-        selectedAccessions = data["selectedAccessions"]
-        selectedEpitopeIds = data["selectedEpitopeIds"]
-        selectedStructureIds = data["selectedStructureIds"]
+        # selectedAccessions = data["selectedAccessions"]
+        # selectedEpitopeIds = data["selectedEpitopeIds"]
+        # selectedStructureIds = data["selectedStructureIds"]
 
-        print (" selectedAccessions " + str(selectedAccessions))
-        print (" selectedEpitopeIds " + str(selectedEpitopeIds))
-        print (" selectedStructureIds " + str(selectedStructureIds))
-
-        initialAlignment = data["initialAlignment"]
+        # print (" selectedAccessions " + str(selectedAccessions))
+        # print (" selectedEpitopeIds " + str(selectedEpitopeIds))
+        # print (" selectedStructureIds " + str(selectedStructureIds))
+        #
+        # initialAlignment = data["initialAlignment"]
 
         sequenceObjList = []
         selectedSequenceRecords = []
 
         epitopeObjList = []
         structureObjList = []
-        if initialAlignment:
-            selectedAccessions = SELECTED_ACCESSIONS
-            selectedEpitopeIds = SELECTED_EPITOPES
-            # selectedAccessions = SELECTED_ACCESSIONS
-
-            sequenceRecords = SequenceRecord.objects.all()
-
-            for row in sequenceRecords:
-
-                sequenceObjMap = {
-                                    "id":row.id, "accession":row.accession, "organism":row.organism, "collection_date":"", "country":row.country,
-                                    "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate , "isSelected" : False
-                                    }
-                if row.collection_date:
-                    sequenceObjMap["collection_date"] = row.collection_date.strftime('%M/%D/%Y')
-
-                if  row.accession in  SELECTED_ACCESSIONS:
-                    # print ( " ******** SELECTED_ACCESSIONS " + row.accession)
-                    sequenceObjMap["isSelected"] = True
-                    selectedSequenceRecords.append(row)
-
-                sequenceObjList.append(sequenceObjMap)
-
-            # epitopeRecords = Epitope.objects.all()
-            #
-            # for row in epitopeRecords:
-            #
-            #     epitopeObjMap = {
-            #         "IEDB_ID":row.IEDB_ID,
-            #         "sequence":row.sequence,
-            #         "offset": row.offset,
-            #         "isSelected": False
-            #     }
-            #
-            #     if  row.IEDB_ID in SELECTED_EPITOPES:
-            #         # print ( " ******** SELECTED_EPITOPES " + row.accession)
-            #         epitopeObjMap["isSelected"] = True
-            #         # selectedSequenceRecords.append(row)
-            #
-            #     epitopeObjList.append(epitopeObjMap)
-
-        else:
-
-            selectedSequenceRecords = SequenceRecord.objects.filter ( accession__in = selectedAccessions)
-            selectedEpitopes = epitopesequence({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":(",").join()})
-
-        alignment = Alignment.objects.get (pk = 1)
-
-        # print ("  selectedAccessions " + str(selectedAccessions) )
+        # if initialAlignment:
+        #     selectedAccessions = SELECTED_ACCESSIONS
+        #     selectedEpitopeIds = SELECTED_EPITOPES
+        #     # selectedAccessions = SELECTED_ACCESSIONS
+        #
+        #     sequenceRecords = SequenceRecord.objects.all()
+        #
+        #     for row in sequenceRecords:
+        #
+        #         sequenceObjMap = {
+        #                             "id":row.id, "accession":row.accession, "organism":row.organism, "collection_date":"", "country":row.country,
+        #                             "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate , "isSelected" : False
+        #                             }
+        #         if row.collection_date:
+        #             sequenceObjMap["collection_date"] = row.collection_date.strftime('%M/%D/%Y')
+        #
+        #         if  row.accession in  SELECTED_ACCESSIONS:
+        #             # print ( " ******** SELECTED_ACCESSIONS " + row.accession)
+        #             sequenceObjMap["isSelected"] = True
+        #             selectedSequenceRecords.append(row)
+        #
+        #         sequenceObjList.append(sequenceObjMap)
+        #
+        # else:
+        #
+        #     selectedSequenceRecords = SequenceRecord.objects.filter ( accession__in = selectedAccessions)
+        #     selectedEpitopes = epitopesequence({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":(",").join()})
 
         sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
         epitopes = list(Epitope.objects.filter(IEDB_ID__in = SELECTED_EPITOPES, alignment = alignment) )
+
+        selectedAccessions = SELECTED_ACCESSIONS
+        selectedEpitopeIds = SELECTED_EPITOPES
+
+        sequenceRecords = SequenceRecord.objects.all()
+
+        for row in sequenceRecords:
+
+            sequenceObjMap = {
+                                "id":row.id, "accession":row.accession, "organism":row.organism, "collection_date":"", "country":row.country,
+                                "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate , "isSelected" : False
+                                }
+            if row.collection_date:
+                sequenceObjMap["collection_date"] = row.collection_date.strftime('%M/%D/%Y')
+
+            if  row.accession in  SELECTED_ACCESSIONS:
+                # print ( " ******** SELECTED_ACCESSIONS " + row.accession)
+                sequenceObjMap["isSelected"] = True
+                selectedSequenceRecords.append(row)
+
+            sequenceObjList.append(sequenceObjMap)
 
         structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":SELECTED_PDB_CHAIN_IDS} )
         # structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, "alignment":ALIGNMENT_NAME, "atom":"CA","pdbchains":SELECTED_PDB_CHAIN_IDS})
@@ -480,26 +419,121 @@ def showAlignment(request):
 
             nomenclaturePositionStrings = [str(x.major) + "." + str(x.minor).zfill(3) for x in nomenclaturePositions]
 
-        alignmentResultObj["alignmentObjList"] = alignmentObjList
-        print (structureObjList)
-        alignmentResultObj["epitopeObjList"] = epitopeObjList
-
-        alignmentResultObj["sequenceResultObj"] = sequenceResultObj
-
-        alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
-
-        alignmentResultObj["selectedAccessions"] = selectedAccessions
         alignmentResultObj["nomenclaturePositionStrings"] = nomenclaturePositionStrings
 
+        alignmentResultObj["alignmentObjList"] = alignmentObjList
+        alignmentResultObj["epitopeObjList"] = epitopeObjList
         alignmentResultObj["structureObjList"] = structureObjList
-        alignmentResultObj["structureChainResultObj"] = structureChainResultObj
-        # masterObj["alignmentResultObj"] = alignmentResultObj
-        # masterObj["epitopesObjs"] = epitopesObjs
-        # masterObj["structureObjs"] = structureObjs
 
-        # print (sequenceResultObj)
+        alignmentResultObj["sequenceResultObj"] = sequenceResultObj
+        alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
+        alignmentResultObj["structureChainResultObj"] = structureChainResultObj
 
     except:
         traceback.print_exc(file=sys.stdout)
 
     return HttpResponse(json.dumps(alignmentResultObj), content_type='application/json')
+
+def reloadAlignment(request):
+    '''
+        Reload alignment
+        Params: None
+        Returns: alignmentResultObj (all sequences + selected sequenceRecord)
+    '''
+    alignmentObjList = []
+    try:
+
+         # get params from request
+        data = json.loads(request.body.decode('utf-8'))
+
+        selectedAccessions = data["selectedAccessions"]
+
+        sequenceObjList = []
+
+        sequences = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":SELECTED_ACCESSIONS})
+
+        seqeuenceLength = 0
+        for sequence in sequences:
+
+            sequenceString = sequence.sequence
+            if sequence.offset != 0 :
+                sequenceString = '-' * sequence.offset + sequenceString
+            # print ( " len(sequenceString) " + str(len(sequenceString) ) )
+            if len(sequenceString) > seqeuenceLength:
+                seqeuenceLength = len(sequenceString)
+            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+            alignmentObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
+            alignmentObjList.append(alignmentObj)
+
+    except:
+        traceback.print_exc(file=sys.stdout)
+
+    return HttpResponse(json.dumps(alignmentObjList), content_type='application/json')
+
+def reloadEpitopes(request):
+    '''
+        Reload epitopes
+        Params: None
+        Returns: epitopeObjList
+    '''
+    epitopeObjList = []
+    try:
+
+         # get params from request
+        data = json.loads(request.body.decode('utf-8'))
+
+        selectedEpitopeIds = data["selectedEpitopeIds"]
+
+        epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":SELECTED_EPITOPES})
+
+        for epitope in epitopes:
+
+            sequenceString = epitope.sequence
+            if epitope.offset != 0 :
+                sequenceString = '-' * epitope.offset + sequenceString
+                if len(sequenceString) < seqeuenceLength:
+                     sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+            epitopeObj = {"iedb_id":str(epitope.IEDB_ID),"residueObjList":residueObjList}
+            epitopeObjList.append(epitopeObj)
+
+    except:
+        traceback.print_exc(file=sys.stdout)
+
+    return HttpResponse(json.dumps(epitopeObjList), content_type='application/json')
+
+def reloadStructures(request):
+    '''
+        Reload structures
+        Params: None
+        Returns: structureObjList
+    '''
+    structureObjList = []
+    try:
+
+         # get params from request
+        data = json.loads(request.body.decode('utf-8'))
+
+        selectedStructureIds = data["selectedStructureIds"]
+
+        structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":SELECTED_PDB_CHAIN_IDS} )
+
+        sequences = list(Sequence.objects.filter(sequence_record__in = selectedSequenceRecords, alignment = alignment) )
+
+        seqeuenceLength = 0
+        for sequence in sequences:
+
+            sequenceString = sequence.sequence
+            if sequence.offset != 0 :
+                sequenceString = '-' * sequence.offset + sequenceString
+            # print ( " len(sequenceString) " + str(len(sequenceString) ) )
+            if len(sequenceString) > seqeuenceLength:
+                seqeuenceLength = len(sequenceString)
+            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+            structureObj = {"label":sequence.sequence_record.accession,"residueObjList":residueObjList}
+            structureObjList.append(structureObj)
+
+    except:
+        traceback.print_exc(file=sys.stdout)
+
+    return HttpResponse(json.dumps(structureObjList), content_type='application/json')

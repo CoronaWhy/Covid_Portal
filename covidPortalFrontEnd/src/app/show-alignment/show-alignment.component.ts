@@ -1,7 +1,5 @@
 import { Component, ViewChild, OnInit, AfterViewInit, OnDestroy, Input, ElementRef} from '@angular/core';
-// import { Component, OnInit, OnDestroy, Input, ElementRef} from '@angular/core';
 import { ShowAlignmentService } from './show-alignment-service';
-// import { Observable} from 'rxjs';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import { delay } from 'rxjs/operators';
@@ -13,7 +11,6 @@ import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { EpitopeObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
 import { StructureObj, StructureChainObj, StructureChainResultObj } from '../models/structure';
-
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
 import { Page } from '../models/page';
@@ -45,11 +42,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     searchDataFilesString:string;
     positionSliderValue:number;
     sequenceTableColumns:string[];
-    selectedAccessions:string[];
 
+    selectedAccessions:string[];
     selectedEpitopeIds:string[];
     selectedStructureIds:string[];
-    selectedPDBChainIds:string[];
 
     rangeSliderOptions: Options = {
       floor: 0,
@@ -197,17 +193,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     }
 
-    reloadSequences(value){
+    reloadAlignment(value){
       console.log(value.currentTarget.defaultValue);
       if (value.currentTarget.checked){
         this.selectedAccessions.push(value.currentTarget.defaultValue);
 
         console.log(this.selectedAccessions);
 
-        this.showAlignmentService.showAlignment(this.selectedAccessions,this.selectedEpitopeIds,this.selectedStructureIds,this.initialAlignment).then(alignmentResult => {
-           this.alignmentObjList = alignmentResult.alignmentObjList;
-           // this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
-           // this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+        this.showAlignmentService.reloadAlignment(this.selectedAccessions).then(alignmentObjList => {
+           this.alignmentObjList = alignmentObjList;
 
            this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.alignmentObjList.length; i++){
@@ -216,6 +210,50 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              }
              this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
              this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
+           }
+        });
+      }
+    }
+
+    reloadEpitopes(value){
+      console.log(value.currentTarget.defaultValue);
+      if (value.currentTarget.checked){
+        this.selectedEpitopeIds.push(value.currentTarget.defaultValue);
+
+        console.log(this.selectedEpitopeIds);
+
+        this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds).then(epitopeObjList => {
+           this.epitopeObjList = epitopeObjList;
+
+           this.displayEpitopeObjList = this.epitopeObjList.slice(0,this.numRowsInAlignment);
+           for (let i = 0; i < this.epitopeObjList.length; i++){
+             if (i == 0){
+               this.maxSliderValue = this.epitopeObjList[i].residueObjList.length - this.maxDisplayResidues;
+             }
+             this.epitopeObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
+             this.epitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
+           }
+        });
+      }
+    }
+
+    reloadStructures(value){
+      console.log(value.currentTarget.defaultValue);
+      if (value.currentTarget.checked){
+        this.selectedStructureIds.push(value.currentTarget.defaultValue);
+
+        console.log(this.selectedStructureIds);
+
+        this.showAlignmentService.reloadStructures(this.selectedStructureIds).then(structureObjList => {
+           this.structureObjList = structureObjList;
+
+           this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
+           for (let i = 0; i < this.structureObjList.length; i++){
+             if (i == 0){
+               this.maxSliderValue = this.structureObjList[i].residueObjList.length - this.maxDisplayResidues;
+             }
+             this.structureObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
+             this.structureObjList[i].displayResidueObjList = this.structureObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
            }
         });
       }
@@ -378,7 +416,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.numRowsInPage = 3;
       this.numRowsInAlignment = 3;
 
-      this.showAlignmentService.showAlignment(this.selectedAccessions, this.selectedEpitopeIds,this.selectedStructureIds,this.initialAlignment).then(alignmentResult => {
+      this.showAlignmentService.showAlignment().then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
 

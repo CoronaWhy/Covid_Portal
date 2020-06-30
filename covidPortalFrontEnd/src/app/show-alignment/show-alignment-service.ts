@@ -3,7 +3,10 @@ import { Injectable, OnInit }     from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
 import { Datafile, UploadFolder } from '../models/datafile';
-import { AlignmentResultObj } from '../models/alignment';
+import { AlignmentResultObj , AlignmentObj} from '../models/alignment';
+import { EpitopeObj} from '../models/epitope';
+import { StructureObj} from '../models/structure';
+
 import {AppSettings} from '../app.settings';
 
 @Injectable()
@@ -11,10 +14,29 @@ export class ShowAlignmentService {
 
     public showAlignmentUrl = AppSettings.BASE_URL + "/covidPortalApp/showAlignment/";
 
+    public reloadAlignmentUrl = AppSettings.BASE_URL + "/covidPortalApp/reloadAlignment/";
+    public reloadEpitopesUrl = AppSettings.BASE_URL + "/covidPortalApp/reloadEpitopes/";
+    public reloadStructuresUrl = AppSettings.BASE_URL + "/covidPortalApp/reloadStructures/";
+
     constructor (private http: HttpClient) {}
 
-    showAlignment(selectedAccessions:string[],selectedEpitopeIds:string[],selectedStructureIds:string[], initialAlignment:boolean): Promise<AlignmentResultObj> {
-       return this.http.post(this.showAlignmentUrl, {"selectedAccessions":selectedAccessions, "selectedEpitopeIds":selectedEpitopeIds,"selectedStructureIds":selectedStructureIds, "initialAlignment":initialAlignment}).toPromise().then(res => res)
+    showAlignment(): Promise<AlignmentResultObj> {
+       return this.http.post(this.showAlignmentUrl, {}).toPromise().then(res => res)
+       .catch(this.handleError);
+    }
+
+    reloadAlignment(selectedAccessions:string[]): Promise<AlignmentObj[]> {
+       return this.http.post(this.reloadAlignmentUrl, {"selectedAccessions":selectedAccessions}).toPromise().then(res => res)
+       .catch(this.handleError);
+    }
+
+    reloadEpitopes(selectedEpitopeIds:string[]): Promise<EpitopeObj[]> {
+       return this.http.post(this.reloadEpitopesUrl, {"selectedEpitopeIds":selectedEpitopeIds}).toPromise().then(res => res)
+       .catch(this.handleError);
+    }
+
+    reloadStructures(selectedStructureChainIds:string[]): Promise<StructureObj[]> {
+       return this.http.post(this.reloadStructuresUrl, {"selectedStructureChainIds":selectedStructureChainIds}).toPromise().then(res => res)
        .catch(this.handleError);
     }
 
