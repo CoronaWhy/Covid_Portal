@@ -436,7 +436,7 @@ def showAlignment(request):
         alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
         alignmentResultObj["structureChainResultObj"] = structureChainResultObj
 
-        ss = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":['5X5B.A','5X5B.C']})        
+        ss = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":'5X5B.A,5X5B.C']})
 
     except:
         traceback.print_exc(file=sys.stdout)
