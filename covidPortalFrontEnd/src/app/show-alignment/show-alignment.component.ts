@@ -103,7 +103,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     numRowsInAlignment:number;
     sortSequenceTableColumn:string;
-
+    sortStructureChainTableColumn:string;
+    sortEpitopeExperimentTableColumn:string;
     epitopeVerticalSliderValue:number;
 
     @ViewChild('sequenceTable') sequenceTable;
@@ -201,8 +202,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         console.log(this.selectedAccessions);
 
         this.showAlignmentService.reloadAlignment(this.selectedAccessions).then(alignmentObjList => {
-           this.alignmentObjList = alignmentObjList;
-
+           for (let i = 0; i< alignmentObjList.length; i++){
+             this.alignmentObjList.push(alignmentObjList[i]);
+           }
            this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.alignmentObjList.length; i++){
              if (i == 0){
@@ -223,7 +225,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         console.log(this.selectedEpitopeIds);
 
         this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds).then(epitopeObjList => {
-           this.epitopeObjList = epitopeObjList;
+          for (let i = 0; i< epitopeObjList.length; i++){
+            this.epitopeObjList.push(epitopeObjList[i]);
+          }
 
            this.displayEpitopeObjList = this.epitopeObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.epitopeObjList.length; i++){
@@ -245,8 +249,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         console.log(this.selectedStructureIds);
 
         this.showAlignmentService.reloadStructures(this.selectedStructureIds).then(structureObjList => {
-           this.structureObjList = structureObjList;
+          for (let i = 0; i< structureObjList.length; i++){
+            this.structureObjList.push(structureObjList[i]);
+          }
 
+           console.log(" structureObjList " + structureObjList);
            this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.structureObjList.length; i++){
              if (i == 0){
@@ -416,6 +423,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.numRowsInPage = 3;
       this.numRowsInAlignment = 3;
 
+      this.sortSequenceTableColumn = '';
+      this.sortStructureChainTableColumn = '';
+      this.sortEpitopeExperimentTableColumn = '';
+
       this.showAlignmentService.showAlignment().then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
@@ -424,6 +435,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.sequenceTableColumns = this.sequenceResultObj.sequenceTableColumns;
          this.structureChainTableColumns = alignmentResult.structureChainResultObj.structureChainTableColumns;
 
+         console.log(this.structureChainTableColumns);
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 

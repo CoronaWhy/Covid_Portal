@@ -25,18 +25,9 @@ RESIDUE_COLOR_MAP = {
 
 # 1. Request sequence alignments for accession IDs  YP_009724390.1 (early SARS-CoV-2 isolate Wuhan-Hu-1), QIS61410.1 (late SARS-CoV-2 isolate SARS-CoV-2/human/USA/WA-UW376/2020) from API.
 # 2. Request alignment nomenclature for accession YP_009724390.1 from API.
-
 ALIGNMENT_NAME = '20200505'
 MESH_ID='D064370'
-
-SELECTED_ACCESSIONS = [
-    'YP_009724390.1','QIS61410.1','AHN64783.1'
-]
-
-SELECTED_EPITOPES = [
-    12967, 100347, 64085, 74367
-]
-
+SELECTED_ACCESSIONS = 'YP_009724390.1,QIS61410.1,AHN64783.1'
+SELECTED_EPITOPES = '12967,100347,64085,74367'
 SELECTED_PDB_CHAIN_IDS = '6VYB.A,6Q07.A,6Q04.A'
-
 # 4. PDB ID 5WRG, chain A, taxon “Severe acute respiratory syndrome-related coronavirus” should be selected.

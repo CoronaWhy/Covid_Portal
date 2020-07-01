@@ -11,12 +11,21 @@
          </th>
          <!-- end position nomenclature -->
          <th class="sort-header">
-             <select>
+                   <select [(ngModel)]="sortSequenceTableColumn">
+             <option *ngFor="let sequenceTableColumn of sequenceTableColumns"
+               #sortColumnSelect
+               [value]="sequenceTableColumn"
+               (change)='sortSequenceTable()'
+               >
+             {{sequenceTableColumn}}
+           </option>
+         </select>
+             <!-- <select>
                  <option selected>Label</option>
                  <option>Host</option>
                  <option>Country</option>
                  <option>Accession</option>
-             </select>
+             </select> -->
          </th>
          <th></th>
      </thead>
@@ -42,12 +51,17 @@
      <tr>
          <th></th>
          <th class="label-header">
-             <select>
-                 <option selected>Label</option>
-                 <option>Host</option>
-                 <option>Country</option>
-                 <option>Accession</option>
-             </select>
+
+           <select [(ngModel)]="sortEpitopeExperimentTableColumn1">
+             <option selected>Label</option>
+    <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
+      #sortEpitopeColumnSelect
+      [value]="epitopeExperimentTableColumn"
+      (change)='sortEpitopeExperiment()'
+      >
+    {{epitopeExperimentTableColumn}}
+  </option>
+  </select>
          </th>
          <!-- position nomenclature -->
          <th colspan="16">
@@ -55,12 +69,16 @@
              <button onclick="movedown('epitopepanel')">Dn</button>
          </th>
          <th class="sort-header">
-             <select>
-                 <option selected>Label</option>
-                 <option>Host</option>
-                 <option>Country</option>
-                 <option>Accession</option>
-             </select>
+           <select [(ngModel)]="sortEpitopeExperimentTableColumn2">
+             <option selected>Label</option>
+    <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
+      #sortEpitopeColumnSelect
+      [value]="epitopeExperimentTableColumn"
+      (change)='sortEpitopeExperiment()'
+      >
+    {{epitopeExperimentTableColumn}}
+  </option>
+  </select>
          </th>
          <th></th>
      </tr>
@@ -91,11 +109,14 @@
              <button onclick="movedown('structurepanel')">Dn</button>
          </th>
          <th class="sort-header">
-             <select>
-                 <option selected>Label</option>
-                 <option>Host</option>
-                 <option>Country</option>
-                 <option>Accession</option>
+
+           <select [(ngModel)]="sortStructureChainTableColumn">
+             <option selected>Label</option>
+             <option *ngFor="let structureChainTableColumn of structureChainTableColumns"
+               #sortStructureColumnSelect
+               [value]="structureChainTableColumn"
+               (change)='sortStructureChainTable()'
+               >
              </select>
          </th>
          <th></th>
@@ -474,14 +495,13 @@
             </div>
 
         </ng-template>
-
         <!-- structures tabset -->
         <ng-template #structuresTabset>
 
           <div class="row" style="float:right;">
             Sort:&nbsp;            <select [(ngModel)]="sortStructureChainTableColumn">
               <option *ngFor="let structureChainTableColumn of structureChainTableColumns"
-                #sortColumnSelect
+                #sortStructureColumnSelect
                 [value]="structureChainTableColumn"
                 (change)='sortStructureChainTable()'
                 >
