@@ -251,7 +251,7 @@ def showAlignment(request):
 
     try:
 
-        print (" alignment ")
+        # print (" alignment ")
 
          # get params from request
         data = json.loads(request.body.decode('utf-8'))
@@ -333,15 +333,31 @@ def showAlignment(request):
             # print (" adding epitope " + epitope.IEDB_ID)
             epitopeObjList.append(epitopeObj)
 
-        for structureSequence in structureSequences:
-            print (structureSequence)
+        structureResidueAtoms = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":SELECTED_PDB_CHAIN_IDS})
+
+        aaIndex = 0
+        for index, structureSequence in enumerate(structureSequences):
+            print ("structureSequence" + str(structureSequence) )
+            structureResidueAtomsMap = {}
             sequenceString = structureSequence["sequence"]
+
             if structureSequence["offset"] != 0 :
                 sequenceString = '-' * structureSequence["offset"] + sequenceString
                 if len(sequenceString) < seqeuenceLength:
                      sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
             # print (sequenceString)
-            residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+            if structureResidueAtoms[index]["pdb_chain"] == structureSequence["pdbchain"]:
+                structureResidueAtomsMap = structureResidueAtoms[index]
+
+                for resIndex, aminoAcid in enumerate(sequenceString):
+                    if aminoAcid != '-':
+                        atom = structureResidueAtomsMap["atoms"][aaIndex]
+                        residueLocation = {"x":atom["x"], "y":atom["y"], "z":atom["z"]}
+                        print (residueLocation)
+                        residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation})
+                        aaIndex += 1
+            # residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+
             structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
             # print (" adding epitope " + epitope.IEDB_ID)
             structureObjList.append(structureObj)
@@ -435,8 +451,6 @@ def showAlignment(request):
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
         alignmentResultObj["structureChainResultObj"] = structureChainResultObj
-
-        ss = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":'5X5B.A,5X5B.C']})
 
     except:
         traceback.print_exc(file=sys.stdout)

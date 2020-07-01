@@ -96,25 +96,27 @@ DB_PREFIX = 'covidPortalApp'
 COVID_DB_SCHEMA = "covidDB"
 COVID_DB_USER = "root"
 COVID_DB_PASSWORD = "admin"
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': COVID_DB_SCHEMA,                      # Or path to database file if using sqlite3.
-        'USER': COVID_DB_USER,                      # Not used with sqlite3.
-        'PASSWORD': COVID_DB_PASSWORD,                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
-        'OPTIONS': {
-            'init_command': 'SET default_storage_engine=INNODB',
-            }
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
+#         'NAME': COVID_DB_SCHEMA,                      # Or path to database file if using sqlite3.
+#         'USER': COVID_DB_USER,                      # Not used with sqlite3.
+#         'PASSWORD': COVID_DB_PASSWORD,                  # Not used with sqlite3.
+#         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+#         'PORT': '3306',                      # Set to empty string for default. Not used with sqlite3.
+#         'OPTIONS': {
+#             'init_command': 'SET default_storage_engine=INNODB',
+#             }
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': '/home/siddhartha/self/covid/db.sqlite3',
+
+    }
+}
 
 
 LANGUAGE_CODE = 'en-us'
