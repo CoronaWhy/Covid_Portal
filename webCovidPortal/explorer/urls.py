@@ -12,5 +12,6 @@ urlpatterns = [
     path('epitopesequence', views.epitopesequence, name='epitopesequence'),
     path('structurechains', views.structurechains, name='structurechains'),
     path('structuresequence', views.structuresequence, name='structuresequence'),
+    path('structuresequencecoords', views.structuresequencecoords, name='structuresequencecoords'),
     path('structureresidueatoms', views.structureresidueatoms, name='structureresidueatoms'),
 ];
