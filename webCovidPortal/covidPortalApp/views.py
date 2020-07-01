@@ -36,7 +36,6 @@ from django.contrib.auth import authenticate
 import time
 import paramiko
 import asyncio, asyncssh, sys
-
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 
 def monitorJobs(request):
@@ -364,8 +363,10 @@ def showAlignment(request):
 
             sequenceObjList.append(sequenceObj)
 
-        fieldList = [str(x) for x in SequenceRecord._meta.fields]
-        fieldList = [x[x.rfind(".")+1:] for x in fieldList]
+        # fieldList = [str(x) for x in SequenceRecord._meta.fields]
+        # fieldList = [x[x.rfind(".")+1:] for x in fieldList]
+        fieldList = ['organism', 'taxon_name', 'accession', 'organism','country','host','isolation_source' ]
+
         sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
 
         epitopeExperiments = EpitopeExperiment.objects.filter(epitope__alignment__name = ALIGNMENT_NAME, epitope__protein__mesh_id = MESH_ID)
@@ -390,8 +391,10 @@ def showAlignment(request):
 
             epitopeExperimentObjList.append(epitopeExperimentObj)
 
-        fieldList = [str(x) for x in EpitopeExperiment._meta.fields]
-        fieldList = [x[x.rfind(".")+1:] for x in fieldList]
+        # fieldList = [str(x) for x in EpitopeExperiment._meta.fields]
+        # fieldList = [x[x.rfind(".")+1:] for x in fieldList]
+
+        fieldList = ['host', 'assay_type', 'assay_result','mhc_allele','mhc_class','exp_method','measurement_type','iedb_id']
 
         epitopeExperimentResultObj = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
 
@@ -432,6 +435,8 @@ def showAlignment(request):
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
         alignmentResultObj["structureChainResultObj"] = structureChainResultObj
+
+        ss = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":['5X5B.A','5X5B.C']})        
 
     except:
         traceback.print_exc(file=sys.stdout)

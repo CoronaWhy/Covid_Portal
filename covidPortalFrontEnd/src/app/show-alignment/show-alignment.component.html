@@ -53,7 +53,6 @@
          <th class="label-header">
 
            <select [(ngModel)]="sortEpitopeExperimentTableColumn1">
-             <option selected>Label</option>
     <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
       #sortEpitopeColumnSelect
       [value]="epitopeExperimentTableColumn"
@@ -70,7 +69,6 @@
          </th>
          <th class="sort-header">
            <select [(ngModel)]="sortEpitopeExperimentTableColumn2">
-             <option selected>Label</option>
     <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
       #sortEpitopeColumnSelect
       [value]="epitopeExperimentTableColumn"
@@ -117,6 +115,7 @@
                [value]="structureChainTableColumn"
                (change)='sortStructureChainTable()'
                >
+               {{structureChainTableColumn}}
              </select>
          </th>
          <th></th>
@@ -505,7 +504,7 @@
                 [value]="structureChainTableColumn"
                 (change)='sortStructureChainTable()'
                 >
-              {{structureTableColumn}}
+              {{structureChainTableColumn}}
             </option>
           </select>
             Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDatatable()">

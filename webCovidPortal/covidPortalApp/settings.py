@@ -29,6 +29,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'covidPortalApp',
+    # 'explorer',
     'corsheaders',
     'django.contrib.sites',
     'rest_framework',
