@@ -308,7 +308,7 @@
                   <tbody>
                     <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
                       <td>
-                        <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadSequences($event)">
+                        <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadAlignment($event)">
                       </td>
                       <td>
                           {{row.accession}}

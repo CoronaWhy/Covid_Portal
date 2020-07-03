@@ -480,17 +480,27 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            // not needed to slice need to remove after testing
            this.alignmentObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
            this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].displayResidueObjList.slice(this.startPosition,this.endPosition);
+           // console.log(this.displayAignmentObjList[i].residueObjList);
+         }
+
+         for (let i = 0; i < this.epitopeObjList.length; i++){
 
            // not needed to slice need to remove after testing
            this.displayEpitopeObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
            this.displayEpitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+           // console.log(this.displayAignmentObjList[i].residueObjList);
+         }
+
+
+        for (let i = 0; i < this.structureObjList.length; i++){
 
            // not needed to slice need to remove after testing
            this.displayStructureObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
            this.displayStructureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+          // console.log(this.displayAignmentObjList[i].residueObjList);
+        }
 
-           // console.log(this.displayAignmentObjList[i].residueObjList);
-         }
+
          // console.log(this.displayAignmentObjList);
       });
     }

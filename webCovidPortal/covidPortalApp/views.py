@@ -448,6 +448,10 @@ def showAlignment(request):
         alignmentResultObj["epitopeObjList"] = epitopeObjList
         alignmentResultObj["structureObjList"] = structureObjList
 
+        # alignmentResultObj["sequenceResultObj"] = sequenceResultObj
+        # alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
+        # alignmentResultObj["structureChainResultObj"] = structureChainResultObj
+
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
         alignmentResultObj["epitopeExperimentResultObj"] = epitopeExperimentResultObj
         alignmentResultObj["structureChainResultObj"] = structureChainResultObj
