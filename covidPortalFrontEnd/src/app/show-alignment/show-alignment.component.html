@@ -1,5 +1,8 @@
 <router-outlet></router-outlet>
-<div class="container">
+<div class="container" *ngIf="!displayAlignmentObjList">
+  <b>Loading ...</b>
+</div>
+<div class="container" *ngIf="displayAlignmentObjList">
   <table border=0 class="table paneltable" id="paneltable">
      <thead>
          <th></th>
@@ -442,7 +445,7 @@
                       <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
 
                         <td>
-                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadEpitopes($event)">
+                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}" (change)="reloadEpitopes($event)">
                         </td>
 
                         <td>
@@ -556,7 +559,7 @@
                       <tbody>
                         <tr *ngFor ="let row of displayStructureChainObjList" style="line-height: 50px; height: 50px;">
                           <td>
-                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadStructures($event)">
+                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.pdb_id}}.{{row.chain}}" (change)="reloadStructures($event)">
                           </td>
                           <td>
                               {{row.taxon}}

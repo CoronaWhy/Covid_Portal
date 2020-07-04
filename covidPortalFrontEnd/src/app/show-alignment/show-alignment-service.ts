@@ -35,8 +35,8 @@ export class ShowAlignmentService {
        .catch(this.handleError);
     }
 
-    reloadStructures(selectedStructureChainIds:string[]): Promise<StructureObj[]> {
-       return this.http.post(this.reloadStructuresUrl, {"selectedStructureChainIds":selectedStructureChainIds}).toPromise().then(res => res)
+    reloadStructures(selectedStructureIds:string[]): Promise<StructureObj[]> {
+       return this.http.post(this.reloadStructuresUrl, {"selectedStructureIds":selectedStructureIds}).toPromise().then(res => res)
        .catch(this.handleError);
     }
 
