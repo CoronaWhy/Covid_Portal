@@ -265,7 +265,6 @@ def showAlignment(request):
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
         epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":SELECTED_EPITOPES})
         structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":SELECTED_PDB_CHAIN_IDS} )
-
         # structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, "alignment":ALIGNMENT_NAME, "atom":"CA","pdbchains":SELECTED_PDB_CHAIN_IDS})
         seqeuenceLength = 0
         for sequence in sequenceList:
@@ -277,7 +276,15 @@ def showAlignment(request):
                 seqeuenceLength = len(sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             alignmentObj = {"label":sequence["accession"],"residueObjList":residueObjList}
-            alignmentObjList.append(alignmentObj)
+            sequenceRecords = SequenceRecord.objects.filter(accession = sequence["accession"])
+            if len(sequenceRecords) > 0:
+                sequenceRecord = sequenceRecords[0]
+                sequenceObj = {
+                    "taxon":sequenceRecord.taxon, "organism":sequenceRecord.organism, "collection_date":sequenceRecord.collection_date, "country":sequenceRecord.country,
+                    "host":sequenceRecord.host, "isolation_source":sequenceRecord.isolation_source, "isolate":sequenceRecord.isolate, "coded_by":sequenceRecord.coded_by
+                }
+                alignmentObj["sequenceObj"] = sequenceObj
+                alignmentObjList.append(alignmentObj)
 
         for epitope in epitopes:
             print(epitope)
@@ -290,8 +297,14 @@ def showAlignment(request):
             # print (sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
-            # print (" adding epitope " + epitope.IEDB_ID)
-            epitopeObjList.append(epitopeObj)
+
+            epitopeexperimentsfilters = epitopeexperimentsfilter ( { "alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":iedb_id } )
+
+            if len(epitopeexperimentsfilters) > 0:
+                epitopeexperimentsfilter = epitopeexperimentsfilters[0]
+                epitopeObj["EpitopeExperimentObj"] = epitopeexperimentsfilter
+                # print (" adding epitope " + epitope.IEDB_ID)
+                epitopeObjList.append(epitopeObj)
 
         structureResidueAtoms = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":SELECTED_PDB_CHAIN_IDS})
 

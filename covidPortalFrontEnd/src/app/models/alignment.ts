@@ -1,4 +1,4 @@
-import { SequenceResultObj } from './sequence';
+import { SequenceResultObj, SequenceObj } from './sequence';
 import { EpitopeExperimentResultObj, EpitopeObj } from './epitope';
 import { StructureChainResultObj, StructureObj } from './structure';
 
@@ -18,6 +18,7 @@ export class AlignmentObj {
   label:number;
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
+  sequenceObj:SequenceObj();
 
 }
 
