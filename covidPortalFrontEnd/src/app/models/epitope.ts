@@ -1,20 +1,9 @@
 import { ResidueObj } from './alignment';
-
-export class EpitopeObj {
-  iedb_id:string;
-  // protein:string;
-  // alignment:string;
-  // sequence:string;
-  // offset:number;
-  // measurement_type:string;
-  residueObjList:ResidueObj[];
-  displayResidueObjList:ResidueObj[];
-}
+import { TableColumnObj } from './tableColumn';
 
 export class EpitopeExperimentObj {
 
   id:number;
-  epitope:EpitopeObj;
   host:string;
   assay_type:string;
   assay_result:string;
@@ -25,8 +14,17 @@ export class EpitopeExperimentObj {
 
 }
 
+export class EpitopeObj {
+  iedb_id:string;
+  epitopeExperimentObj:EpitopeExperimentObj;
+  residueObjList:ResidueObj[];
+  displayResidueObjList:ResidueObj[];
+}
+
 export class EpitopeExperimentResultObj {
 
   epitopeExperimentObjList:EpitopeExperimentObj[];
-  epitopeExperimentTableColumns :string[];
+  epitopeExperimentTableColumnObjs :TableColumnObj[];
+  epitopeSortColumn:string;
+
 }

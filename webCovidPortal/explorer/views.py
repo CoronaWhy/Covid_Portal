@@ -9,6 +9,7 @@ from django.db.models.functions import Concat, Cast;
 import pprint as pp;
 import numpy as np, pandas as pd;
 
+
 def error_response(msg):
     response = HttpResponse(
         json.dumps({'message': msg}),

@@ -1,3 +1,5 @@
+import { TableColumnObj } from './tableColumn';
+
 export class SequenceObj {
 
   id:number;
@@ -18,5 +20,6 @@ export class SequenceObj {
 export class SequenceResultObj {
 
   sequenceObjList:SequenceObj[];
-  sequenceTableColumns :string[];
+  sequenceTableColumnObjs :TableColumnObj[];
+  sequenceSortColumn:string; 
 }

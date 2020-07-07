@@ -1,15 +1,9 @@
 import { ResidueObj } from './alignment';
-
-export class StructureObj {
-  pdbchain:string;
-  residueObjList:ResidueObj[];
-  displayResidueObjList:ResidueObj[];
-}
+import { TableColumnObj } from './tableColumn';
 
 export class StructureChainObj {
 
   id:number;
-  epitope:StructureObj;
   host:string;
   assay_type:string;
   assay_result:string;
@@ -20,8 +14,15 @@ export class StructureChainObj {
 
 }
 
+export class StructureObj {
+  pdbchain:string;
+  residueObjList:ResidueObj[];
+  displayResidueObjList:ResidueObj[];
+}
+
 export class StructureChainResultObj {
 
   structureChainObjList:StructureChainObj[];
-  structureChainTableColumns :string[];
+  structureChainTableColumnObjs :TableColumnObj[];
+  structureSortColumn:string;
 }

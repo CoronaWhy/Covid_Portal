@@ -18,7 +18,7 @@ export class AlignmentObj {
   label:number;
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
-  sequenceObj:SequenceObj();
+  sequenceObj:SequenceObj;
 
 }
 

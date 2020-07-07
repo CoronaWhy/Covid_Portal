@@ -2,6 +2,7 @@
 <div class="container" *ngIf="!displayAlignmentObjList">
   <b>Loading ...</b>
 </div>
+
 <div class="container" *ngIf="displayAlignmentObjList">
   <table border=0 class="table paneltable" id="paneltable">
      <thead>
@@ -13,15 +14,35 @@
          </th>
          <!-- end position nomenclature -->
          <th class="sort-header">
-                   <select [(ngModel)]="sortSequenceTableColumn">
-             <option *ngFor="let sequenceTableColumn of sequenceTableColumns"
+                   <!-- <select [(ngModel)]="sortSequenceTableColumn">
+             <option *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs"
                #sortColumnSelect
-               [value]="sequenceTableColumn"
+               [value]="sequenceTableColumnObj.columnName"
+               [selected]="sequenceTableColumnObj.isSelected"
                (change)='sortSequenceTable()'
                >
              {{sequenceTableColumn}}
            </option>
-         </select>
+         </select> -->
+
+         <div class="row">
+           <div class="col">
+             <div ngbDropdown class="d-inline-block">
+               <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Sort</button>
+               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                 <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
+               </div>
+             </div>
+           </div>
+         </div>
+
+<!--
+         <select
+             [ngModelOptions]="{standalone: true}"
+             [(ngModel)]="sortSequenceTableColumn">
+             <option *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" [value]="sequenceTableColumnObj.columnName" [selected]="sequenceTableColumnObj.isSelected">{{ sequenceTableColumnObj.columnName }}</option>
+         </select> -->
+
              <!-- <select>
                  <option selected>Label</option>
                  <option>Host</option>
@@ -41,7 +62,7 @@
          <!-- residues -->
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
+         <td><div class="residue-height label">{{displayAlignmentObj.sequenceObj.host}}</div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
          </td>

@@ -280,11 +280,13 @@ def showAlignment(request):
             if len(sequenceRecords) > 0:
                 sequenceRecord = sequenceRecords[0]
                 sequenceObj = {
-                    "taxon":sequenceRecord.taxon, "organism":sequenceRecord.organism, "collection_date":sequenceRecord.collection_date, "country":sequenceRecord.country,
+                    "taxon":str(sequenceRecord.taxon), "organism":sequenceRecord.organism, "collection_date":sequenceRecord.collection_date.strftime("Y-%m-%d"), "country":sequenceRecord.country,
                     "host":sequenceRecord.host, "isolation_source":sequenceRecord.isolation_source, "isolate":sequenceRecord.isolate, "coded_by":sequenceRecord.coded_by
                 }
                 alignmentObj["sequenceObj"] = sequenceObj
                 alignmentObjList.append(alignmentObj)
+
+                alignmentObjList = sorted(alignmentObjList, key=lambda o: sequenceObj["host"])
 
         for epitope in epitopes:
             print(epitope)
@@ -298,11 +300,11 @@ def showAlignment(request):
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
 
-            epitopeexperimentsfilters = epitopeexperimentsfilter ( { "alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":iedb_id } )
+            epitopeexperimentsfilters = epitopeexperimentsfilter({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":epitope["iedb_id"]})
 
             if len(epitopeexperimentsfilters) > 0:
-                epitopeexperimentsfilter = epitopeexperimentsfilters[0]
-                epitopeObj["EpitopeExperimentObj"] = epitopeexperimentsfilter
+                epitopeExperimentObj = epitopeexperimentsfilters[0]
+                epitopeObj["epitopeExperimentObj"] = epitopeExperimentObj
                 # print (" adding epitope " + epitope.IEDB_ID)
                 epitopeObjList.append(epitopeObj)
 
@@ -344,7 +346,7 @@ def showAlignment(request):
                                 "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate , "isSelected" : False
                                 }
             if row.collection_date:
-                sequenceObj["collection_date"] = row.collection_date.strftime('%M/%D/%Y')
+                sequenceObj["collection_date"] = row.collection_date.strftime('%Y-%m-%d')
 
             if  row.accession in  SELECTED_ACCESSIONS:
                 sequenceObj["isSelected"] = True
@@ -352,9 +354,10 @@ def showAlignment(request):
 
             sequenceObjList.append(sequenceObj)
 
-        fieldList = ['organism', 'taxon_name', 'accession', 'organism','country','host','isolation_source' ]
+        fieldList = ['host', 'organism', 'taxon_name', 'accession', 'country','isolation_source' ]
+        fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "host" else {"columnName":x,"rowColor":"#FFFFFF"} for x in fieldList ]
 
-        sequenceResultObj = {"sequenceTableColumns":fieldList, "sequenceObjList":sequenceObjList}
+        sequenceResultObj = {"sequenceTableColumnObjs":fieldObjList, "sequenceObjList":sequenceObjList, "sequenceSortColumn":"host"}
 
         epitopeExperiments = EpitopeExperiment.objects.filter(epitope__alignment__name = ALIGNMENT_NAME, epitope__protein__mesh_id = MESH_ID)
 
@@ -382,8 +385,9 @@ def showAlignment(request):
         # fieldList = [x[x.rfind(".")+1:] for x in fieldList]
 
         fieldList = ['host', 'assay_type', 'assay_result','mhc_allele','mhc_class','exp_method','measurement_type','iedb_id']
+        fieldObjList = [{"columnName":x, "isSelected":True} if x == "host" else {"columnName":x, "isSelected":False} for x in fieldList ]
 
-        epitopeExperimentResultObj = {"epitopeExperimentTableColumns":fieldList, "epitopeExperimentObjList":epitopeExperimentObjList}
+        epitopeExperimentResultObj = {"epitopeExperimentTableColumnObjs":fieldObjList, "epitopeExperimentObjList":epitopeExperimentObjList, "epitopeSortColumn":"host"}
 
         structureChainObjs = structurechains ({"mesh_id": MESH_ID})
 
@@ -403,8 +407,9 @@ def showAlignment(request):
             structureChainObjList.append(structureChainObj)
 
         fieldList = ["taxon", "taxon_id", "pdb_id", "chain"]
+        fieldObjList = [{"columnName":x, "isSelected":True} if x == "taxon" else {"columnName":x, "isSelected":False} for x in fieldList ]
 
-        structureChainResultObj = {"structureChainTableColumns":fieldList, "structureChainObjList":structureChainObjList}
+        structureChainResultObj = {"structureChainTableColumnObjs":fieldObjList, "structureChainObjList":structureChainObjList, "structureSortColumn":"taxon"}
 
         nomenclaturePositionObj = {}
 

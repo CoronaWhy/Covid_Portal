@@ -16,6 +16,7 @@ import { Options } from 'ng5-slider';
 import { Page } from '../models/page';
 import { PagedData } from '../models/page-data';
 import { of } from 'rxjs';
+import { TableColumnObj } from '../models/tableColumn';
 
 @Component({
     selector: 'list-files',
@@ -23,7 +24,6 @@ import { of } from 'rxjs';
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
-
 
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
@@ -42,7 +42,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     maxSliderValue:number;
     searchDataFilesString:string;
     positionSliderValue:number;
-    sequenceTableColumns:string[];
+    sequenceTableColumnObjs:TableColumnObj[];
 
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
@@ -76,11 +76,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     epitopeExperimentObjList:EpitopeExperimentObj[];
     displayEpitopeExperimentObjList:EpitopeExperimentObj[];
-    epitopeExperimentTableColumns:string[];
+    epitopeExperimentTableColumnObjs:TableColumnObj[];
 
     structureChainObjList:StructureChainObj[];
     displayStructureChainObjList:StructureChainObj[];
-    structureChainTableColumns:string[];
+    structureChainTableColumnObjs:TableColumnObj[];
 
     initialAlignment: boolean;
     searchString:string;
@@ -103,9 +103,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     structureOffset:number;
 
     numRowsInAlignment:number;
-    sortSequenceTableColumn:string;
-    sortStructureChainTableColumn:string;
-    sortEpitopeExperimentTableColumn:string;
+    sequenceSortColumn:string;
+    epitopeSortColumn:string;
+    structrureSortColumn:string;
+
     epitopeVerticalSliderValue:number;
     structureVerticalSliderValue:number;
 
@@ -120,15 +121,109 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
     }
 
-   sortSequenceTable ()
+   sortSequenceTable (sortColumn)
    {
+     if (this.sequenceSortColumn != sortColumn) {
+
+         console.log(sortColumn);
+         this.sequenceSortColumn = sortColumn;
+         if (sortColumn == "organism") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1)
+         }
+         else if (sortColumn == "host") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.host > b.sequenceObj.host) ? 1 : -1)
+         }
+         else if (sortColumn == "taxon_name") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.taxon_name > b.sequenceObj.taxon_name) ? 1 : -1)
+         }
+         else if (sortColumn == "accession") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1)
+         }
+         else if (sortColumn == "country") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.country > b.sequenceObj.country) ? 1 : -1)
+         }
+         else if (sortColumn == "isolation_source") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.isolation_source > b.sequenceObj.isolation_source) ? 1 : -1)
+         }
+
+         this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
+         for (let i = 0; i < this.displayAlignmentObjList.length; i++){
+           if (i == 0){
+             this.maxSliderValue = this.displayAlignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
+           }
+           this.displayAlignmentObjList[i].residueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
+           this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+         }
+
+          for (let i = 0; i< this.sequenceTableColumnObjs.length; i++) {
+              if (this.sequenceTableColumnObjs[i].columnName == sortColumn) {
+                this.sequenceTableColumnObjs[i].rowColor = "#A3E4EE";
+              } else {
+                this.sequenceTableColumnObjs[i].rowColor = "#FFFFFF";
+              }
+          }
+
+      }
 
    }
    sortEpitopeTable ()
    {
 
+     // if (this.epitopeSortColumn != sortColumn) {
+
+       // host	str	Host organism for the epitope experiment.
+       // assay_type	str	Type of assay.
+       // assay_result	str	Categorical string value describing assay result.
+       // mhc_allele	str	MHC allele if specified.
+       // mhc_class	str	MHC class if specified.
+       // exp_method	str	Experimental method used.
+       // measurement_type	str	Description of the measurement meaning.
+       // iedb_id
+
+      //    console.log(sortColumn);
+      //    this.epitopeSortColumn = sortColumn;
+      //    if (sortColumn == "organism") {
+      //      this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj.organism > b.epitopeExperimentObj.organism) ? 1 : -1)
+      //    }
+      //    else if (sortColumn == "host") {
+      //      this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj.host > b.epitopeExperimentObj.host) ? 1 : -1)
+      //    }
+      //    else if (sortColumn == "taxon_name") {
+      //      this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj.taxon_name > b.epitopeExperimentObj.taxon_name) ? 1 : -1)
+      //    }
+      //    else if (sortColumn == "accession") {
+      //      this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj.organism > b.epitopeExperimentObj.organism) ? 1 : -1)
+      //    }
+      //    else if (sortColumn == "country") {
+      //      this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj.country > b.epitopeExperimentObj.country) ? 1 : -1)
+      //    }
+      //    else if (sortColumn == "isolation_source") {
+      //      this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj.isolation_source > b.epitopeExperimentObj.isolation_source) ? 1 : -1)
+      //    }
+      //
+      //    this.displayEpitopeObjList = this.epitopeObjList.slice(0,this.numRowsInAlignment);
+      //    for (let i = 0; i < this.displayEpitopeObjList.length; i++){
+      //      if (i == 0){
+      //        this.maxSliderValue = this.displayEpitopeObjList[i].residueObjList.length - this.maxDisplayResidues;
+      //      }
+      //      this.displayEpitopeObjList[i].residueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
+      //      this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+      //    }
+      //
+      //     for (let i = 0; i< this.epitopeTableColumnObjs.length; i++) {
+      //         if (this.sepitopeTableColumnObjs[i].columnName == sortColumn) {
+      //           this.epitopeTableColumnObjs[i].rowColor = "#A3E4EE";
+      //         } else {
+      //           this.epitopeTableColumnObjs[i].rowColor = "#FFFFFF";
+      //         }
+      //     }
+      //
+      // }
+
    }
-   sortStructureChainTable(){}
+   sortStructureChainTable(){
+
+   }
 
    showNext(){
      this.offset += 1;
@@ -459,19 +554,27 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.numRowsInPage = 3;
       this.numRowsInAlignment = 3;
 
-      this.sortSequenceTableColumn = '';
-      this.sortStructureChainTableColumn = '';
-      this.sortEpitopeExperimentTableColumn = '';
+      // this.sortSequenceTableColumn = '';
+      // this.sortStructureChainTableColumn = '';
+      // this.sortEpitopeExperimentTableColumn = '';
 
       this.showAlignmentService.showAlignment().then(alignmentResult => {
          // console.log(alignmentObjList);
          this.sequences = alignmentResult.sequenceResultObj.sequenceObjList;
 
          this.sequenceResultObj = alignmentResult.sequenceResultObj;
-         this.sequenceTableColumns = this.sequenceResultObj.sequenceTableColumns;
-         this.structureChainTableColumns = alignmentResult.structureChainResultObj.structureChainTableColumns;
 
-         console.log(this.structureChainTableColumns);
+         this.sequenceTableColumnObjs = this.sequenceResultObj.sequenceTableColumnObjs;
+         this.sequenceSortColumn = this.sequenceResultObj.sequenceSortColumn;
+
+         this.epitopeExperimentTableColumnObjs = alignmentResult.epitopeExperimentResultObj.epitopeExperimentTableColumnObjs;
+         this.epitopeSortColumn = alignmentResult.epitopeExperimentResultObj.epitopeSortColumn;
+
+         this.structureChainTableColumnObjs = alignmentResult.structureChainResultObj.structureChainTableColumnObjs;
+         this.structureSortColumn = alignmentResult.structureChainResultObj.structureSortColumn;
+
+         console.log(this.sequenceTableColumnObjs);
+         // console.log(this.structureChainTableColumns);
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
@@ -484,7 +587,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          console.log( " this.structureObjList " + this.structureObjList);
 
-         this.epitopeExperimentTableColumns = alignmentResult.epitopeExperimentResultObj.epitopeExperimentTableColumns;
          this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
          this.displayEpitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
 
