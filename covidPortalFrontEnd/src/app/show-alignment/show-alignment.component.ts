@@ -105,7 +105,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     numRowsInAlignment:number;
     sequenceSortColumn:string;
     epitopeSortColumn:string;
-    structrureSortColumn:string;
+    structureSortColumn:string;
 
     epitopeVerticalSliderValue:number;
     structureVerticalSliderValue:number;
@@ -124,7 +124,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
    sortSequenceTable (sortColumn)
    {
      if (this.sequenceSortColumn != sortColumn) {
-
          console.log(sortColumn);
          this.sequenceSortColumn = sortColumn;
          if (sortColumn == "organism") {
@@ -133,9 +132,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          else if (sortColumn == "host") {
            this.alignmentObjList.sort((a, b) => (a.sequenceObj.host > b.sequenceObj.host) ? 1 : -1)
          }
-         else if (sortColumn == "taxon_name") {
-           this.alignmentObjList.sort((a, b) => (a.sequenceObj.taxon_name > b.sequenceObj.taxon_name) ? 1 : -1)
-         }
+         // else if (sortColumn == "taxon_name") {
+         //   this.alignmentObjList.sort((a, b) => (a.sequenceObj.taxon_name > b.sequenceObj.taxon_name) ? 1 : -1)
+         // }
          else if (sortColumn == "accession") {
            this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1)
          }
