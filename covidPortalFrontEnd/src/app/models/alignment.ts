@@ -19,7 +19,7 @@ export class AlignmentObj {
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
   sequenceObj:SequenceObj;
-
+  sortColumnValue:string;
 }
 
 export class AlignmentResultObj {

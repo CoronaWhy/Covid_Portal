@@ -280,7 +280,7 @@ def showAlignment(request):
             if len(sequenceRecords) > 0:
                 sequenceRecord = sequenceRecords[0]
                 sequenceObj = {
-                    "taxon":str(sequenceRecord.taxon), "organism":sequenceRecord.organism, "collection_date":sequenceRecord.collection_date.strftime("Y-%m-%d"), "country":sequenceRecord.country,
+                    "taxon":str(sequenceRecord.taxon), "accession":str(sequenceRecord.accession), "organism":sequenceRecord.organism, "collection_date":sequenceRecord.collection_date.strftime("Y-%m-%d"), "country":sequenceRecord.country,
                     "host":sequenceRecord.host, "isolation_source":sequenceRecord.isolation_source, "isolate":sequenceRecord.isolate, "coded_by":sequenceRecord.coded_by
                 }
                 alignmentObj["sequenceObj"] = sequenceObj
@@ -343,7 +343,7 @@ def showAlignment(request):
 
             sequenceObj = {
                                 "id":row.id, "accession":row.accession, "organism":row.organism, "collection_date":"", "country":row.country,
-                                "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein_id":row.protein_id,"taxon_id":row.taxon_id,"isolate":row.isolate , "isSelected" : False
+                                "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein":str(row.protein.name),"taxon":str(row.taxon.name),"isolate":row.isolate , "isSelected" : False
                                 }
             if row.collection_date:
                 sequenceObj["collection_date"] = row.collection_date.strftime('%Y-%m-%d')
@@ -521,7 +521,6 @@ def reloadStructures(request):
     '''
     structureObjList = []
     try:
-
          # get params from request
         data = json.loads(request.body.decode('utf-8'))
 

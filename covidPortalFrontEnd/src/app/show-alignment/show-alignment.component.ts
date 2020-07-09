@@ -127,22 +127,41 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          console.log(sortColumn);
          this.sequenceSortColumn = sortColumn;
          if (sortColumn == "organism") {
-           this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1)
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1);
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.organism;
+           }
          }
          else if (sortColumn == "host") {
-           this.alignmentObjList.sort((a, b) => (a.sequenceObj.host > b.sequenceObj.host) ? 1 : -1)
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.host > b.sequenceObj.host) ? 1 : -1);
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.host;
+           }
          }
-         // else if (sortColumn == "taxon_name") {
-         //   this.alignmentObjList.sort((a, b) => (a.sequenceObj.taxon_name > b.sequenceObj.taxon_name) ? 1 : -1)
-         // }
+         else if (sortColumn == "taxon_name") {
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.taxon > b.sequenceObj.taxon) ? 1 : -1)
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             console.log(this.alignmentObjList[i].sequenceObj.taxon);
+             this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.taxon;
+           }
+         }
          else if (sortColumn == "accession") {
-           this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1)
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.organism > b.sequenceObj.organism) ? 1 : -1);
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.accession;
+           }
          }
          else if (sortColumn == "country") {
-           this.alignmentObjList.sort((a, b) => (a.sequenceObj.country > b.sequenceObj.country) ? 1 : -1)
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.country > b.sequenceObj.country) ? 1 : -1);
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.country;
+           }
          }
          else if (sortColumn == "isolation_source") {
-           this.alignmentObjList.sort((a, b) => (a.sequenceObj.isolation_source > b.sequenceObj.isolation_source) ? 1 : -1)
+           this.alignmentObjList.sort((a, b) => (a.sequenceObj.isolate > b.sequenceObj.isolate) ? 1 : -1);
+           for (let i = 0; i < this.alignmentObjList.length; i++){
+             this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.isolate;
+           }
          }
 
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
@@ -161,9 +180,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                 this.sequenceTableColumnObjs[i].rowColor = "#FFFFFF";
               }
           }
-
       }
-
    }
    sortEpitopeTable ()
    {
@@ -607,6 +624,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.displayAlignmentObjList = this.alignmentObjList.slice(0,this.numRowsInAlignment);
          this.displayEpitopeObjList = this.epitopeObjList.slice(0,this.numRowsInAlignment);
          this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
+
+         for (let i = 0; i < this.alignmentObjList.length; i++){
+           this.alignmentObjList[i].sortColumnValue = this.alignmentObjList[i].sequenceObj.host;
+         }
 
          for (let i = 0; i < this.displayAlignmentObjList.length; i++){
            if (i == 0){

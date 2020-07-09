@@ -28,7 +28,7 @@
          <div class="row">
            <div class="col">
              <div ngbDropdown class="d-inline-block">
-               <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Sort</button>
+               <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.sequenceSortColumn}}</button>
                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                  <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
                </div>
@@ -62,7 +62,7 @@
          <!-- residues -->
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">{{displayAlignmentObj.sequenceObj.host}}</div></td>
+         <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}</div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
          </td>
@@ -313,14 +313,14 @@
                       </td>
                       <td>
                         <a href="#">
-                          Protein ID
+                          Protein
                           <!-- <div class="arrow-up"></div>
                           <div class="arrow-down"></div> -->
                         </a>
                       </td>
                       <td>
                         <a href="#">
-                          Taxon ID
+                          Taxon
                           <!-- <div class="arrow-up"></div>
                           <div class="arrow-down"></div> -->
                         </a>
@@ -353,10 +353,10 @@
                         {{row.coded_by}}
                       </td>
                       <td>
-                        {{row.protein_id}}
+                        {{row.protein}}
                       </td>
                       <td>
-                        {{row.taxon_id}}
+                        {{row.taxon}}
                       </td>
                     </tr>
                   </tbody>

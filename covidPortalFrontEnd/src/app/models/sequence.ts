@@ -11,8 +11,8 @@ export class SequenceObj {
   host:string;
   isolation_source:string;
   coded_by:string;
-  protein_id:string;
-  taxon_id:string;
+  protein:string;
+  taxon:string;
   isolate:string;
 
 }
@@ -21,5 +21,5 @@ export class SequenceResultObj {
 
   sequenceObjList:SequenceObj[];
   sequenceTableColumnObjs :TableColumnObj[];
-  sequenceSortColumn:string; 
+  sequenceSortColumn:string;
 }
