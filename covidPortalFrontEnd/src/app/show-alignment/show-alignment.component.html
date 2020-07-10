@@ -24,7 +24,6 @@
              {{sequenceTableColumn}}
            </option>
          </select> -->
-
          <div class="row">
            <div class="col">
              <div ngbDropdown class="d-inline-block">
@@ -35,7 +34,6 @@
              </div>
            </div>
          </div>
-
 <!--
          <select
              [ngModelOptions]="{standalone: true}"
@@ -75,31 +73,37 @@
          <th></th>
          <th class="label-header">
 
-           <select [(ngModel)]="sortEpitopeExperimentTableColumn1">
-    <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
-      #sortEpitopeColumnSelect
-      [value]="epitopeExperimentTableColumn"
-      (change)='sortEpitopeExperiment()'
-      >
-    {{epitopeExperimentTableColumn}}
-  </option>
-  </select>
+           <div class="row">
+             <div class="col">
+               <div ngbDropdown class="d-inline-block">
+                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeSortColumn}}</button>
+                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                   <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+
          </th>
          <!-- position nomenclature -->
          <th colspan="16">
              <button onclick="moveup('epitopepanel')">Up</button>
              <button onclick="movedown('epitopepanel')">Dn</button>
          </th>
+
          <th class="sort-header">
-           <select [(ngModel)]="sortEpitopeExperimentTableColumn2">
-    <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
-      #sortEpitopeColumnSelect
-      [value]="epitopeExperimentTableColumn"
-      (change)='sortEpitopeExperiment()'
-      >
-    {{epitopeExperimentTableColumn}}
-  </option>
-  </select>
+
+           <div class="row">
+             <div class="col">
+               <div ngbDropdown class="d-inline-block">
+                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeSortColumn}}</button>
+                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                   <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+
          </th>
          <th></th>
      </tr>
@@ -111,7 +115,7 @@
          <!-- residues -->
          <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
+         <td><div class="residue-height label">{{displayEpitopeObj.sortColumnValue}}</div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{epitopeVerticalSliderValue}}" class="verticalslider" id="epitopeVerticalSlider" (input)="setEpitopeVerticalSliderValue($event);">
          </td>
@@ -131,15 +135,17 @@
          </th>
          <th class="sort-header">
 
-           <select [(ngModel)]="sortStructureChainTableColumn">
-             <option selected>Label</option>
-             <option *ngFor="let structureChainTableColumn of structureChainTableColumns"
-               #sortStructureColumnSelect
-               [value]="structureChainTableColumn"
-               (change)='sortStructureChainTable()'
-               >
-               {{structureChainTableColumn}}
-             </select>
+           <div class="row">
+             <div class="col">
+               <div ngbDropdown class="d-inline-block">
+                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.structureSortColumn}}</button>
+                 <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                   <button ngbDropdownItem *ngFor="let structureChainTableColumnObj of structureChainTableColumnObjs" (click) = "sortStructureTable ( structureChainTableColumnObj.columnName )" [value]="structureChainTableColumnObj.columnName" [style.background-color] = "structureChainTableColumnObj.rowColor" >{{ structureChainTableColumnObj.columnName }}</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+
          </th>
          <th></th>
      </tr>
@@ -151,7 +157,7 @@
          <!-- residues -->
          <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">Sort Value</div></td>
+         <td><div class="residue-height label">{{displayStructureObj.sortColumnValue}}</div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{structureVerticalSliderValue}}" class="verticalslider" id="structureVerticalSlider" (input)="setStructureVerticalSliderValue($event);">
          </td>

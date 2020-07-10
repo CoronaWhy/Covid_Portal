@@ -334,6 +334,19 @@ def showAlignment(request):
             # residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
 
             structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
+
+            pdbData = structureSequence["pdbchain"].split(".")
+            pdb_id, chain  = pdbData[0], pdbData[1]
+
+            structures = Structure.objects.filter (pdb_id = pdb_id)
+
+            if len(structures) > 0:
+
+                structure = structures[0]
+                structureChainObj = {"taxon":str(structure.taxon), "pdb_id":str(pdb_id), "chain":str(chain)}
+
+                structureObj["structureChainObj"] = structureChainObj
+
             # print (" adding epitope " + epitope.IEDB_ID)
             structureObjList.append(structureObj)
 
@@ -381,11 +394,8 @@ def showAlignment(request):
 
             epitopeExperimentObjList.append(epitopeExperimentObj)
 
-        # fieldList = [str(x) for x in EpitopeExperiment._meta.fields]
-        # fieldList = [x[x.rfind(".")+1:] for x in fieldList]
-
         fieldList = ['host', 'assay_type', 'assay_result','mhc_allele','mhc_class','exp_method','measurement_type','iedb_id']
-        fieldObjList = [{"columnName":x, "isSelected":True} if x == "host" else {"columnName":x, "isSelected":False} for x in fieldList ]
+        fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "host" else {"columnName":x, "rowColor":"#FFFFFF"} for x in fieldList ]
 
         epitopeExperimentResultObj = {"epitopeExperimentTableColumnObjs":fieldObjList, "epitopeExperimentObjList":epitopeExperimentObjList, "epitopeSortColumn":"host"}
 
@@ -406,8 +416,8 @@ def showAlignment(request):
                 structureChainObj["isSelected"] = True
             structureChainObjList.append(structureChainObj)
 
-        fieldList = ["taxon", "taxon_id", "pdb_id", "chain"]
-        fieldObjList = [{"columnName":x, "isSelected":True} if x == "taxon" else {"columnName":x, "isSelected":False} for x in fieldList ]
+        fieldList = ["taxon", "pdb_id", "chain"]
+        fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "taxon" else {"columnName":x, "rowColor":"#FFFFFF"} for x in fieldList ]
 
         structureChainResultObj = {"structureChainTableColumnObjs":fieldObjList, "structureChainObjList":structureChainObjList, "structureSortColumn":"taxon"}
 

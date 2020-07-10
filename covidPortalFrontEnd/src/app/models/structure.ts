@@ -2,26 +2,21 @@ import { ResidueObj } from './alignment';
 import { TableColumnObj } from './tableColumn';
 
 export class StructureChainObj {
-
-  id:number;
-  host:string;
-  assay_type:string;
-  assay_result:string;
-  mhc_allele:string;
-  mhc_class:string;
-  exp_method:string;
-  measurement_type:string;
+  taxon:string;
+  pdb_id:string;
+  chain:string;
 
 }
 
 export class StructureObj {
   pdbchain:string;
+  structureChainObj:StructureChainObj;
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
+  sortColumnValue:string;
 }
 
 export class StructureChainResultObj {
-
   structureChainObjList:StructureChainObj[];
   structureChainTableColumnObjs :TableColumnObj[];
   structureSortColumn:string;

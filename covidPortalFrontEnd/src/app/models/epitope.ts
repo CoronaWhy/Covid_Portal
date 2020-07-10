@@ -19,6 +19,7 @@ export class EpitopeObj {
   epitopeExperimentObj:EpitopeExperimentObj;
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
+  sortColumnValue:string;  
 }
 
 export class EpitopeExperimentResultObj {
