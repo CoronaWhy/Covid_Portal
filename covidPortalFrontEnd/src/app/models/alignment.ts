@@ -12,6 +12,9 @@ export class ResidueObj {
   residueValue:number;
   residueColor:string;
   residuePosition:Coordinate;
+  residueDistance:number;
+  isReferenceResidue:boolean;
+  residueDistanceColor:string;
 }
 
 export class AlignmentObj {

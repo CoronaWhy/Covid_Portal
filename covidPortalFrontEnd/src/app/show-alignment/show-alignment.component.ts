@@ -102,9 +102,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     structureOffset:number;
 
     numRowsInAlignment:number;
+
     sequenceSortColumn:string;
     epitopeSortColumn:string;
     structureSortColumn:string;
+
+    sequenceTableSortColumn:string;
+    epitopeTableSortColumn:string;
+    structureTableSortColumn:string;
 
     epitopeVerticalSliderValue:number;
     structureVerticalSliderValue:number;
@@ -290,6 +295,102 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           }
       }
    }
+
+    sortSequenceMainTable (sortColumn)
+    {
+      if (this.sequenceTableSortColumn != sortColumn) {
+          console.log(sortColumn);
+
+          this.sequenceTableSortColumn = sortColumn;
+
+          if (sortColumn == "accession") {
+            this.sequenceObjList.sort((a, b) => (a.accession > b.accession) ? 1 : -1);
+          }
+          else if (sortColumn == "organism") {
+            this.sequenceObjList.sort((a, b) => (a.organism > b.organism) ? 1 : -1);
+          }
+          else if (sortColumn == "collection_date") {
+            this.sequenceObjList.sort((a, b) => (a.collection_date > b.collection_date) ? 1 : -1);
+          }
+          else if (sortColumn == "country") {
+            this.sequenceObjList.sort((a, b) => (a.country > b.country) ? 1 : -1);
+          }
+          else if (sortColumn == "host") {
+            this.sequenceObjList.sort((a, b) => (a.host > b.host) ? 1 : -1);
+          }
+          else if (sortColumn == "isolation_source") {
+            this.sequenceObjList.sort((a, b) => (a.isolation_source > b.isolation_source) ? 1 : -1);
+          }
+          else if (sortColumn == "coded_by") {
+            this.sequenceObjList.sort((a, b) => (a.coded_by > b.coded_by) ? 1 : -1);
+          }
+          else if (sortColumn == "protein") {
+            this.sequenceObjList.sort((a, b) => (a.protein > b.protein) ? 1 : -1);
+          }
+          else if (sortColumn == "taxon") {
+            this.sequenceObjList.sort((a, b) => (a.taxon > b.taxon) ? 1 : -1);
+          }
+          else if (sortColumn == "isolate") {
+            this.sequenceObjList.sort((a, b) => (a.isolate > b.isolate) ? 1 : -1);
+          }
+
+          this.displaySequenceObjList = this.sequenceObjList.slice(0,this.numRowsInAlignment);
+
+       }
+    }
+
+    sortEpitopeExperimentTable (sortColumn)
+    {
+      // if (this.epitopeTableSortColumn != sortColumn) {
+      //     console.log(sortColumn);
+      //
+      //     this.epitopeTableSortColumn = sortColumn;
+      //
+      //     if (sortColumn == "host") {
+      //       this.epitopeExperimentObjList.sort((a, b) => (a.host > b.host) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "assay_type") {
+      //       this.epitopeExperimentObjList.sort((a, b) => (a.assay_type > b.assay_type) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "assay_result") {
+      //       this.epitopeExperimentObjList.sort((a, b) => (a.assay_result > b.assay_result) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "mhc_allele") {
+      //       this.epitopeExperimentObjList.sort((a, b) => (a.mhc_allele > b.mhc_allele) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "mhc_class") {
+      //       this.epitopeExperimentObjList.sort((a, b) => (a.mhc_class > b.mhc_class) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "exp_method") {
+      //       this.epitopeExperimentObjList.sort((a, b) => (a.exp_method > b.exp_method) ? 1 : -1);
+      //     }
+      //
+      //     this.displayEpitopeExperimentObjList = this.sequenceObjList.slice(0,this.numRowsInAlignment);
+      //
+      //  }
+    }
+
+    sortStructureChainTable (sortColumn)
+    {
+      // if (this.structureTableSortColumn != sortColumn) {
+      //     console.log(sortColumn);
+      //
+      //     this.structureTableSortColumn = sortColumn;
+      //
+      //     if (sortColumn == "accessiohn") {
+      //       this.structureChainjList.sort((a, b) => (a.accession > b.accession) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "organism") {
+      //       this.structureChainjList.sort((a, b) => (a.accession > b.accession) ? 1 : -1);
+      //     }
+      //     else if (sortColumn == "collection_date") {
+      //       this.structureChainjList.sort((a, b) => (a.accession > b.accession) ? 1 : -1);
+      //     }
+      //
+      //     this.displayStructureChainjList = this.structureChainjList.slice(0,this.numRowsInAlignment);
+      //
+      //  }
+    }
 
    showNext(){
      this.offset += 1;
@@ -581,7 +682,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       // })
 
       this.isLoading = false;
-
+      this.sequenceTableSortColumn = "accession";
       this.hidePrevButton = true;
       this.hideNextButton = false;
 

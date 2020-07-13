@@ -14,16 +14,7 @@
          </th>
          <!-- end position nomenclature -->
          <th class="sort-header">
-                   <!-- <select [(ngModel)]="sortSequenceTableColumn">
-             <option *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs"
-               #sortColumnSelect
-               [value]="sequenceTableColumnObj.columnName"
-               [selected]="sequenceTableColumnObj.isSelected"
-               (change)='sortSequenceTable()'
-               >
-             {{sequenceTableColumn}}
-           </option>
-         </select> -->
+
          <div class="row">
            <div class="col">
              <div ngbDropdown class="d-inline-block">
@@ -34,19 +25,7 @@
              </div>
            </div>
          </div>
-<!--
-         <select
-             [ngModelOptions]="{standalone: true}"
-             [(ngModel)]="sortSequenceTableColumn">
-             <option *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" [value]="sequenceTableColumnObj.columnName" [selected]="sequenceTableColumnObj.isSelected">{{ sequenceTableColumnObj.columnName }}</option>
-         </select> -->
 
-             <!-- <select>
-                 <option selected>Label</option>
-                 <option>Host</option>
-                 <option>Country</option>
-                 <option>Accession</option>
-             </select> -->
          </th>
          <th></th>
      </thead>
@@ -251,21 +230,31 @@
     <!-- sequences tabset -->
     <ng-template #sequencesTabset>
 
-      <div class="row" style="float:right;">
-        Sort:&nbsp;            <select [(ngModel)]="sortSequenceTableColumn">
-          <option *ngFor="let sequenceTableColumn of sequenceTableColumns"
-            #sortColumnSelect
-            [value]="sequenceTableColumn"
-            (change)='sortSequenceTable()'
-            >
-          {{sequenceTableColumn}}
-        </option>
-      </select>
-        Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
+      <!-- <div  class="row " style="float:right;"> -->
+
+      <div class="row mt-2 col-md-12" style="float:right;">
+
+      Sort:&nbsp;
+
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sequenceTableSortColumn}}</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+              <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceMainTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
+              <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+
+      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
+
       </div>
-      <div class="row" style="float:clear;">
-        <br/>&nbsp;
-      </div>
+
+    </div>
+
+				<div  class="mt-2 col-md-12">
         <div class="row" style="float:clear;overflow: scroll;height:400px;">
 
             <div *ngIf="displaySequenceObjList?.length > 0">
@@ -383,22 +372,30 @@
 
           </div>
 
+          </div>
+
     </ng-template>
 
     <!-- epitopes tabset -->
     <ng-template #epitopesTabset>
 
         <div class="row" style="float:right;">
-          Sort:&nbsp;            <select [(ngModel)]="sortEpitopeExperimentTableColumn">
-            <option *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns"
-              #sortEpitopeColumnSelect
-              [value]="epitopeExperimentTableColumn"
-              (change)='sortEpitopeExperiment()'
-              >
-            {{epitopeExperimentTableColumn}}
-          </option>
-        </select>
+          Sort:&nbsp;
+
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sortEpitopeExperimentTableColumn}}</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns" (click) = "sortEpitopeExperimentTable(epitopeExperimentTableColumn.columnName)" [value]="epitopeExperimentTableColumn.columnName" [style.background-color] = "epitopeExperimentTableColumn.rowColor" >{{ epitopeExperimentTableColumn.columnName }}</button>
+                  <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
           Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeTable()">
+          </div>
+
         </div>
         <div class="row" style="float:clear;">
           <br/>&nbsp;
@@ -527,17 +524,24 @@
         <ng-template #structuresTabset>
 
           <div class="row" style="float:right;">
-            Sort:&nbsp;            <select [(ngModel)]="sortStructureChainTableColumn">
-              <option *ngFor="let structureChainTableColumn of structureChainTableColumns"
-                #sortStructureColumnSelect
-                [value]="structureChainTableColumn"
-                (change)='sortStructureChainTable()'
-                >
-              {{structureChainTableColumn}}
-            </option>
-          </select>
-            Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDatatable()">
+            Sort:&nbsp;
+
+            <div class="row">
+              <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sortStructureChainTableColumn}}</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                    <button ngbDropdownItem *ngFor="let structureChainTableColumnObj of structureChainTableColumnObjs" (click) = "sortStructureChainTable(structureChainTableColumnObj.columnName)" [value]="structureChainTableColumnObj.columnName" [style.background-color] = "structureChainTableColumnObj.rowColor" >{{ structureChainTableColumnObj.columnName }}</button>
+                    <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
+            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureChainString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureChainTable()">
+            </div>
+
           </div>
+
           <div class="row" style="float:clear;">
             <br/>&nbsp;
           </div>
