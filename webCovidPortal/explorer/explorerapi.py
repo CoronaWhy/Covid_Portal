@@ -563,4 +563,156 @@ def structureresidueatoms(params):
 
     # http://localhost:8000/explorer/structureresidueatoms?mesh_id=D064370&alignment=20200505&atom=CA&pdbchains=5X5B.A%2C5X5B.C
 ################################################################################
+
+
+
+
+
+
+# Updated strcutre-alignment API functions
+################################################################################
+def structuresequencecoords(request):
+# localhost:8000/explorer/structuresequencecoords?mesh_id=D064370&alignment=20200505&pdb_id=5X5B&chain=A
+    if request.method=="GET":
+        params = request.GET;
+    elif request.method=="POST":
+        params = request.POST;
+    else:
+        return error_response("Invalid request");
+    if not 'mesh_id' in params:
+        return error_response("No MeSH ID specified");
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
+    if not 'pdb_id' in params:
+        return error_response("No PDB ID specified");
+    if not 'chain' in params:
+        return error_response("No chain specified");
+
+    sequence_record = getstructurechainsequence(
+        params['mesh_id'],
+        params['alignment'],
+        params['pdb_id'],
+        params['chain']
+    );
+
+    atoms = getstructureatoms(
+        params['mesh_id'],
+        params['alignment'],
+        params['pdb_id'],
+        params['chain'],
+        'CA',
+    );
+    print(sequence_record);
+    # confirm matching offsets
+    try:
+        if len(''.join(atoms[0:sequence_record['offset']-1]))>0:
+            return error_response("Sequence and residue coordinate offsets do not match.");
+    except:
+        return error_response("An error occurred comparing offsets.");
+    # trim offset from atoms
+    atoms = atoms[sequence_record['offset']-1:];
+    print(atoms);
+    print("number atoms: "+str(len(atoms)));
+    print("Sequence length: "+str(len(sequence_record['sequence'])));
+
+    response = HttpResponse(
+        json.dumps({
+            'pdb_id': sequence_record['pdb_id'],
+            'sequence': sequence_record['sequence'],
+            'chain': sequence_record['chain'],
+            'offset': sequence_record['offset'],
+            'coords': ";".join(atoms),
+        }),
+        # conform to (react) explorerDataModels.StructureSequenceModel
+        # json.dumps([
+        #     sequence_record['pdb_id'],     # label
+        #     sequence_record['sequence'],   # sequence
+        #     sequence_record['chain'],      # value
+        #     [],                         # styles
+        #     sequence_record['offset'],     # offset
+        #     ";".join(atoms),                      # coords
+        # ]),
+        content_type="application/json");
+    return response;
+################################################################################
+def getstructurechainsequence(mesh_id, alignment, pdb_id, chain):
+    r = StructureChainSequence.objects.get(
+        chain__structure__pdb_id=pdb_id,
+        chain__name=chain,
+        chain__protein__mesh_id=mesh_id,
+        alignment__name=alignment,
+    );
+    return {
+        'pdbchain'  : r.chain.structure.pdb_id + "." + r.chain.name,
+        'pdb_id'    : r.chain.structure.pdb_id,
+        'chain'     : r.chain.name,
+        'sequence'  : r.sequence,
+        'offset'    : r.offset,
+    };
+################################################################################
+def getstructureatoms(mesh_id, alignment, pdb_id, chain, atom):
+    recs = [];
+
+    sc = StructureChain.objects.get(
+            structure__pdb_id=pdb_id,
+            protein__mesh_id=mesh_id,
+            name=chain
+        );
+
+    # alignment
+    resalns = pd.DataFrame(
+        sc.structurechainsequence_set.get(
+            alignment__name=alignment
+        ).structurechainresiduealignment_set.values(
+            'id','residue_id','resaln'
+        )
+    );
+
+    # get atoms
+    atoms = pd.DataFrame(
+        StructureAtom.objects.filter(
+            atom=atom,
+            residue__chain__structure__pdb_id=pdb_id,
+            residue__chain__name=chain,
+        ).values(
+            'residue_id',
+            # 'atom',
+            # 'element',
+            # 'charge',
+            # 'occupancy',
+            'x',
+            'y',
+            'z',
+            'residue__resix',
+            'residue__resid',
+            'residue__resn',
+        )
+    );
+
+    atoms['x'] = atoms['x'].astype(float).round(decimals=3);
+    atoms['y'] = atoms['y'].astype(float).round(decimals=3);
+    atoms['z'] = atoms['z'].astype(float).round(decimals=3);
+    atoms.index = atoms['residue_id'];
+    resalns.index = resalns['residue_id'];
+
+    # merge on residueid
+    result = pd.concat([atoms,resalns],axis=1);
+
+    # drop duplicate column names
+    result = result.loc[:,~result.columns.duplicated()];
+    result['resaln'] = result['resaln'].astype(int);
+    result['coords'] = \
+        result['x'].astype(str)+","+ \
+        result['y'].astype(str)+","+ \
+        result['z'].astype(str);
+
+    # get max length of coord string for numpy full
+    result['coordlength'] = result['coords'].str.len();
+    dtype = "U"+str(result['coordlength'].max());
+
+    aligned_coords = np.full(result['resaln'].max(),'',dtype=dtype);
+    for i,r in result.iterrows():
+        aligned_coords[(r['resaln']-1)] = r['coords'];
+    return aligned_coords;
+
 # fin.
