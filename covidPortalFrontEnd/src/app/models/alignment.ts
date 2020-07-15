@@ -9,6 +9,7 @@ export class Coordinate {
 }
 
 export class ResidueObj {
+  residueLabel:string;
   residueValue:number;
   residueColor:string;
   residuePosition:Coordinate;

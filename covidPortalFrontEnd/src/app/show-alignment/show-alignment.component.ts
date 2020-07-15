@@ -282,7 +282,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            if (i == 0){
              this.maxSliderValue = this.displayStructureObjList[i].residueObjList.length - this.maxDisplayResidues;
            }
-           this.displayStructureObjList[i].residueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
+           this.displayStructureObjList[i].residueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
            this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
          }
 
@@ -649,6 +649,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       for (let i = 0; i < this.structureObjList.length; i++){
         this.structureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+        // console.log(this.structureObjList[i].residueObjList);
       }
 
     }
@@ -808,11 +809,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
 
         for (let i = 0; i < this.displayStructureObjList.length; i++){
-           console.log(" in structure i = " + i);
+           // console.log(" in structure i = " + i);
            // not needed to slice need to remove after testing
            this.displayStructureObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.displayStructureObjList[i].residueObjList));
            this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
-          // console.log(this.displayAignmentObjList[i].residueObjList);
+          console.log(this.displayStructureObjList[i].displayResidueObjList);
         }
 
 
@@ -821,7 +822,23 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
 
-    handleResidueClick(residueLabel, position){
+    handleResidueClick(event:any){
+      var target = event.target || event.srcElement || event.currentTarget;
+      var idAttr = target.attributes.id.value;
+      var data = idAttr.split("_");
+
+      var listIndex = data[1];
+      var resIndex = data[2];
+      // var residueObj:ResidueObj;
+      // var residueObj = this.structureObjList[listIndex].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues)[resIndex];
+      console.log( this.structureObjList[listIndex].residueObjList);
+
+      console.log(this.startPosition+this.positionSliderValue+resIndex);
+      console.log( this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex]);
+      console.log( this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition);
+
+      // console.log( residueObj.residuePosition );
+      // console.log( residueObj );
 
     }
 

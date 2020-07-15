@@ -325,14 +325,14 @@ def showAlignment(request):
                 structureResidueAtomsMap = structureResidueAtoms[index]
 
                 for resIndex, aminoAcid in enumerate(sequenceString):
+                    residueLocation = {"x":0, "y":0, "z":0}
                     if aminoAcid != '-':
                         atom = structureResidueAtomsMap["atoms"][aaIndex]
                         residueLocation = {"x":atom["x"], "y":atom["y"], "z":atom["z"]}
-                        print (residueLocation)
-                        residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation})
                         aaIndex += 1
-            # residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-
+                        print(atom)
+                    residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation, "residueLabel":"residue_" + str(resIndex)})
+                    # print(residueObjList)
             structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
 
             pdbData = structureSequence["pdbchain"].split(".")
@@ -559,12 +559,13 @@ def reloadStructures(request):
                 structureResidueAtomsMap = structureResidueAtoms[index]
 
                 for resIndex, aminoAcid in enumerate(sequenceString):
+                    residueLocation = {"x":0, "y":0, "z":0}
+
                     if aminoAcid != '-':
                         atom = structureResidueAtomsMap["atoms"][aaIndex]
                         residueLocation = {"x":atom["x"], "y":atom["y"], "z":atom["z"]}
-                        print (residueLocation)
-                        residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation})
                         aaIndex += 1
+                    residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation, "residueLabel":"residue_" + str(resIndex)})
             # residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
 
             structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
