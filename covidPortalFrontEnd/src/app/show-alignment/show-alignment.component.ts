@@ -639,16 +639,28 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       this.displayNomenclaturePositionStrings = this.nomenclaturePositionStrings.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
-      for (let i = 0; i < this.alignmentObjList.length; i++){
-        this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+      // for (let i = 0; i < this.alignmentObjList.length; i++){
+      //   this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+      // }
+      //
+      // for (let i = 0; i < this.epitopeObjList.length; i++){
+      //   this.epitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+      // }
+      //
+      // for (let i = 0; i < this.structureObjList.length; i++){
+      //   this.structureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+      //   // console.log(this.structureObjList[i].residueObjList);
+      // }
+      for (let i = 0; i < this.displayAlignmentObjList.length; i++){
+        this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
       }
 
-      for (let i = 0; i < this.epitopeObjList.length; i++){
-        this.epitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+      for (let i = 0; i < this.displayEpitopeObjList.length; i++){
+        this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
       }
 
-      for (let i = 0; i < this.structureObjList.length; i++){
-        this.structureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
+      for (let i = 0; i < this.displayStructureObjList.length; i++){
+        this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
         // console.log(this.structureObjList[i].residueObjList);
       }
 
@@ -813,7 +825,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            // not needed to slice need to remove after testing
            this.displayStructureObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.displayStructureObjList[i].residueObjList));
            this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
-          console.log(this.displayStructureObjList[i].displayResidueObjList);
+          console.log(this.displayStructureObjList[i].residueObjList);
         }
 
 
@@ -833,9 +845,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       // var residueObj = this.structureObjList[listIndex].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues)[resIndex];
       console.log( this.structureObjList[listIndex].residueObjList);
 
-      console.log(this.startPosition+this.positionSliderValue+resIndex);
-      console.log( this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex]);
-      console.log( this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition);
+      console.log(" index " + (this.startPosition+this.positionSliderValue+resIndex) );
+      console.log( " list " +  this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex]);
+      console.log( " position " + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition);
+      console.log( " position " + this.structureObjList[listIndex].residueObjList[2559].residuePosition.y);
 
       // console.log( residueObj.residuePosition );
       // console.log( residueObj );

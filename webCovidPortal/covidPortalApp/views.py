@@ -334,7 +334,7 @@ def showAlignment(request):
                     residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation, "residueLabel":"residue_" + str(resIndex)})
                     # print(residueObjList)
             structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
-
+            print(structureObj)
             pdbData = structureSequence["pdbchain"].split(".")
             pdb_id, chain  = pdbData[0], pdbData[1]
 
