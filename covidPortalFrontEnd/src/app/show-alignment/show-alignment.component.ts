@@ -841,14 +841,36 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       var listIndex = data[1];
       var resIndex = data[2];
+
+      console.log(" listIndex " + listIndex);
+      console.log(" resIndex " + resIndex);
       // var residueObj:ResidueObj;
       // var residueObj = this.structureObjList[listIndex].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues)[resIndex];
-      console.log( this.structureObjList[listIndex].residueObjList);
+      // console.log( this.structureObjList[listIndex].residueObjList);
+      // console.log(" index " + (this.startPosition+this.positionSliderValue+resIndex) );
+      // console.log( " list " +  this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex]);
 
-      console.log(" index " + (this.startPosition+this.positionSliderValue+resIndex) );
-      console.log( " list " +  this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex]);
-      console.log( " position " + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition);
-      console.log( " position " + this.structureObjList[listIndex].residueObjList[2559].residuePosition.y);
+      console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
+    + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
+
+      let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
+      this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
+
+      let distances:number[];
+      let distance = 0;
+
+      let xDistance = 0;
+      let yDistance = 0;
+      let zDistance = 0;
+
+      for (let i = 0; i < this.displayStructureObjList[listIndex].displayResidueObjList.length; i++){
+        // distance = Math.sqrt( (this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x) + () () ) ;
+      }
+
+    //   console.log( " position " + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition.x + " " + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition.y + " "
+    // + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition.z );
+
+
 
       // console.log( residueObj.residuePosition );
       // console.log( residueObj );

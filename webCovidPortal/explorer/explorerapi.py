@@ -571,14 +571,9 @@ def structureresidueatoms(params):
 
 # Updated strcutre-alignment API functions
 ################################################################################
-def structuresequencecoords(request):
+# def structuresequencecoords(request):
+def structuresequencecoords(params):
 # localhost:8000/explorer/structuresequencecoords?mesh_id=D064370&alignment=20200505&pdb_id=5X5B&chain=A
-    if request.method=="GET":
-        params = request.GET;
-    elif request.method=="POST":
-        params = request.POST;
-    else:
-        return error_response("Invalid request");
     if not 'mesh_id' in params:
         return error_response("No MeSH ID specified");
     if not 'alignment' in params:
@@ -615,25 +610,33 @@ def structuresequencecoords(request):
     print("number atoms: "+str(len(atoms)));
     print("Sequence length: "+str(len(sequence_record['sequence'])));
 
-    response = HttpResponse(
-        json.dumps({
+    data = {
             'pdb_id': sequence_record['pdb_id'],
             'sequence': sequence_record['sequence'],
             'chain': sequence_record['chain'],
             'offset': sequence_record['offset'],
             'coords': ";".join(atoms),
-        }),
-        # conform to (react) explorerDataModels.StructureSequenceModel
-        # json.dumps([
-        #     sequence_record['pdb_id'],     # label
-        #     sequence_record['sequence'],   # sequence
-        #     sequence_record['chain'],      # value
-        #     [],                         # styles
-        #     sequence_record['offset'],     # offset
-        #     ";".join(atoms),                      # coords
-        # ]),
-        content_type="application/json");
-    return response;
+        }
+
+    # response = HttpResponse(
+    #     json.dumps({
+    #         'pdb_id': sequence_record['pdb_id'],
+    #         'sequence': sequence_record['sequence'],
+    #         'chain': sequence_record['chain'],
+    #         'offset': sequence_record['offset'],
+    #         'coords': ";".join(atoms),
+    #     }),
+    #     # conform to (react) explorerDataModels.StructureSequenceModel
+    #     # json.dumps([
+    #     #     sequence_record['pdb_id'],     # label
+    #     #     sequence_record['sequence'],   # sequence
+    #     #     sequence_record['chain'],      # value
+    #     #     [],                         # styles
+    #     #     sequence_record['offset'],     # offset
+    #     #     ";".join(atoms),                      # coords
+    #     # ]),
+    #     content_type="application/json");
+    return data
 ################################################################################
 def getstructurechainsequence(mesh_id, alignment, pdb_id, chain):
     r = StructureChainSequence.objects.get(
