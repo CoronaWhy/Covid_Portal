@@ -843,12 +843,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       var resIndex = data[2];
 
       // console.log(" listIndex " + listIndex);
-      console.log(" resIndex " + resIndex);
-      // var residueObj:ResidueObj;
-      // var residueObj = this.structureObjList[listIndex].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues)[resIndex];
-      // console.log( this.structureObjList[listIndex].residueObjList);
-      // console.log(" index " + (this.startPosition+this.positionSliderValue+resIndex) );
-      // console.log( " list " +  this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex]);
+      // console.log(" resIndex " + resIndex);
+
+      //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
+      // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
+      //
+      //   let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
+      //   this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
 
       console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
     + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
@@ -859,43 +860,47 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let distances:number[];
       let distance = 0;
       distances = [];
-      for (let i = 0; i < this.displayStructureObjList[listIndex].displayResidueObjList.length; i++){
-        console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
-        distance =
+      for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
+        // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
+         distance = 0;
+         if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
+            distance =
 
-          Math.sqrt
-          (
-
+            Math.sqrt
             (
-              (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.x - selectedPosition[0])
-                *
-              (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.x - selectedPosition[0])
-            )
 
-            +
+              (
+                (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.x - selectedPosition[0])
+                  *
+                (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.x - selectedPosition[0])
+              )
 
-            (
-               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[1])
-                 *
-               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[1])
+              +
 
-            )
+              (
+                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[1])
+                   *
+                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[1])
 
-            +
+              )
 
-            (
-               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[2])
-                 *
-               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[2])
+              +
 
-            )
+              (
+                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[2])
+                   *
+                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[2])
 
-         );
+              )
+
+           );
+         }
          distances.push(distance);
-         console.log(" i = " + i + " distance = " + distance);
+
+         // console.log(" i = " + i + " distance = " + distance);
       }
 
-      console.log(" distances = " + distances);
+      console.log(" distances = " + distances.length);
 
       // normalise to 0 and 1
       let maxDistance = Math.max(...distances);
@@ -910,7 +915,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         );
       }
 
-      console.log(normalizedDistances);
+      console.log(" normalizedDistances length " + normalizedDistances.length);
 
       let baseColor = "#B95119";
 
@@ -921,38 +926,55 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       for (let i = 0; i< normalizedDistances.length; i++){
 
-        console.log( " i = " + i + " val " + normalizedDistances[i]*100);
+        // console.log( " i = " + i + " val " + normalizedDistances[i]*100);
+        console.log( " i = " + i );
 
         let td = document.getElementById("td_0_"+ i);
 
-        td.style.backgroundColor = this.shadeColor(baseColor, normalizedDistances[i]*100);
+        if(td){
 
-        console.log( " bkgcolor = " + this.shadeColor(baseColor, normalizedDistances[i]*100) );
+          if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
+
+            td.style.backgroundColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
+
+            // console.log( " bkgcolor = " + td.style.backgroundColor );
+          }
+
+        }
 
       }
 
     }
     // color range generator
     // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
-    shadeColor(color, percent) {
+    lightenDarkenColor(col, amt) {
 
-        var R = parseInt(color.substring(1,3),16);
-        var G = parseInt(color.substring(3,5),16);
-        var B = parseInt(color.substring(5,7),16);
+        var usePound = true;
 
-        R = R * (100 + percent) / 100;
-        G = G * (100 + percent) / 100;
-        B = B * (100 + percent) / 100;
+        if (col[0] == "#") {
+            col = col.slice(1);
+            usePound = true;
+        }
 
-        R = (R<255)?R:255;
-        G = (G<255)?G:255;
-        B = (B<255)?B:255;
+        var num = parseInt(col,16);
 
-        var RR = ((R.toString(16).length==1)?"0"+R.toString(16):R.toString(16));
-        var GG = ((G.toString(16).length==1)?"0"+G.toString(16):G.toString(16));
-        var BB = ((B.toString(16).length==1)?"0"+B.toString(16):B.toString(16));
+        var r = (num >> 16) + amt;
 
-        return "#"+RR+GG+BB;
+        if (r > 255) r = 255;
+        else if  (r < 0) r = 0;
+
+        var b = ((num >> 8) & 0x00FF) + amt;
+
+        if (b > 255) b = 255;
+        else if  (b < 0) b = 0;
+
+        var g = (num & 0x0000FF) + amt;
+
+        if (g > 255) g = 255;
+        else if (g < 0) g = 0;
+
+        return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+
     }
 
     constructor( private showAlignmentService: ShowAlignmentService,

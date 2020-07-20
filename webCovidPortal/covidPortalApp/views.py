@@ -323,7 +323,7 @@ def showAlignment(request):
                 # if len(sequenceString) < seqeuenceLength:
                 #      sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
 
-            residueObjList = [{"residueValue":'-',"residueColor":RESIDUE_COLOR_MAP['-'], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i)} for i,x in enumerate(range(structureSequenceCoord["offset"]) ) ]
+            residueObjList = [{"residueValue":'-',"residueColor":RESIDUE_COLOR_MAP['-'], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":i} for i,x in enumerate(range(structureSequenceCoord["offset"]) ) ]
             coords = structureSequenceCoord["coords"].split(";")
 
             print ( " len structureSequenceCoord[sequence] " + str(len(structureSequenceCoord["sequence"]) ) )
@@ -340,16 +340,16 @@ def showAlignment(request):
                     if len(coords[i].split(",")) == 3:
                         coordValues = coords[i].split(",")
                         residueObjList.append(
-                            {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":coordValues[0], "y":coordValues[1], "z":coordValues[2] }, "residueLabel":"residue_" + str(i)}
+                            {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":coordValues[0], "y":coordValues[1], "z":coordValues[2] }, "residueLabel":"residue_" + str(i), "residueIndex":structureSequenceCoord["offset"]+ i}
                             )
                     else:
                         residueObjList.append(
-                            {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i)}
+                            {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":structureSequenceCoord["offset"]+ i}
                             )
                         # print(residueObjList)
                 else:
                         residueObjList.append(
-                            {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i)}
+                            {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":structureSequenceCoord["offset"]+ i}
                             )
 
             structureObj = {"pdbchain":structureSequenceCoord["pdb_id"]+ "." + structureSequenceCoord["chain"],"residueObjList":residueObjList}

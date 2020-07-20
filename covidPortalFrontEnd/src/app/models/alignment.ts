@@ -9,8 +9,12 @@ export class Coordinate {
 }
 
 export class ResidueObj {
+
   residueLabel:string;
-  residueValue:number;
+
+  residueIndex:number;
+
+  residueValue:string;
   residueColor:string;
   residuePosition:Coordinate;
   residueDistance:number;

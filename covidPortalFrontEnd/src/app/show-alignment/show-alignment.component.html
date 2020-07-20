@@ -133,7 +133,7 @@
          <!-- sequence label -->
          <td><div class="residue-height label">{{displayStructureObj.pdbchain}}</div></td>
          <!-- residues -->
-         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+i}}"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
+         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+ residueObj.residueIndex}}"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayStructureObj.sortColumnValue}}</div></td>
          <td rowspan=3 *ngIf="idx == 0" >
