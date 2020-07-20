@@ -128,15 +128,15 @@
          <th></th>
      </tr>
      <!-- STRUCTURE 1 --->
-     <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index">
+     <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index" id="{{'tr_' + idx}}">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></div></td>
          <!-- sequence label -->
          <td><div class="residue-height label">{{displayStructureObj.pdbchain}}</div></td>
          <!-- residues -->
-         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
+         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+i}}"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayStructureObj.sortColumnValue}}</div></td>
-         <td rowspan=3 *ngIf="idx == 0">
+         <td rowspan=3 *ngIf="idx == 0" >
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{structureVerticalSliderValue}}" class="verticalslider" id="structureVerticalSlider" (input)="setStructureVerticalSliderValue($event);">
          </td>
      </tr>

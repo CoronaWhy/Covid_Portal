@@ -842,7 +842,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       var listIndex = data[1];
       var resIndex = data[2];
 
-      console.log(" listIndex " + listIndex);
+      // console.log(" listIndex " + listIndex);
       console.log(" resIndex " + resIndex);
       // var residueObj:ResidueObj;
       // var residueObj = this.structureObjList[listIndex].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues)[resIndex];
@@ -858,23 +858,101 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       let distances:number[];
       let distance = 0;
-
-      let xDistance = 0;
-      let yDistance = 0;
-      let zDistance = 0;
-
+      distances = [];
       for (let i = 0; i < this.displayStructureObjList[listIndex].displayResidueObjList.length; i++){
-        // distance = Math.sqrt( (this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x) + () () ) ;
+        console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
+        distance =
+
+          Math.sqrt
+          (
+
+            (
+              (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.x - selectedPosition[0])
+                *
+              (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.x - selectedPosition[0])
+            )
+
+            +
+
+            (
+               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[1])
+                 *
+               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[1])
+
+            )
+
+            +
+
+            (
+               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[2])
+                 *
+               (this.displayStructureObjList[listIndex].displayResidueObjList[i].residuePosition.y - selectedPosition[2])
+
+            )
+
+         );
+         distances.push(distance);
+         console.log(" i = " + i + " distance = " + distance);
       }
 
-    //   console.log( " position " + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition.x + " " + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition.y + " "
-    // + this.structureObjList[listIndex].residueObjList[this.startPosition+this.positionSliderValue+resIndex].residuePosition.z );
+      console.log(" distances = " + distances);
 
+      // normalise to 0 and 1
+      let maxDistance = Math.max(...distances);
+      let minDistance = Math.min(...distances);
+      let rangeDistance = maxDistance - minDistance;
 
+      let normalizedDistances = [];
 
-      // console.log( residueObj.residuePosition );
-      // console.log( residueObj );
+      for (let i = 0; i < distances.length; i++){
+        normalizedDistances.push (
+          1- (distances[i] - minDistance)/rangeDistance
+        );
+      }
 
+      console.log(normalizedDistances);
+
+      let baseColor = "#B95119";
+
+      // let t = 'rgb(255,255,0)';
+      // let f = 'rgb(0,0.100)';
+      //
+      // let tr = document.getElementById("tr_0");
+
+      for (let i = 0; i< normalizedDistances.length; i++){
+
+        console.log( " i = " + i + " val " + normalizedDistances[i]*100);
+
+        let td = document.getElementById("td_0_"+ i);
+
+        td.style.backgroundColor = this.shadeColor(baseColor, normalizedDistances[i]*100);
+
+        console.log( " bkgcolor = " + this.shadeColor(baseColor, normalizedDistances[i]*100) );
+
+      }
+
+    }
+    // color range generator
+    // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
+    shadeColor(color, percent) {
+
+        var R = parseInt(color.substring(1,3),16);
+        var G = parseInt(color.substring(3,5),16);
+        var B = parseInt(color.substring(5,7),16);
+
+        R = R * (100 + percent) / 100;
+        G = G * (100 + percent) / 100;
+        B = B * (100 + percent) / 100;
+
+        R = (R<255)?R:255;
+        G = (G<255)?G:255;
+        B = (B<255)?B:255;
+
+        var RR = ((R.toString(16).length==1)?"0"+R.toString(16):R.toString(16));
+        var GG = ((G.toString(16).length==1)?"0"+G.toString(16):G.toString(16));
+        var BB = ((B.toString(16).length==1)?"0"+B.toString(16):B.toString(16));
+
+        return "#"+RR+GG+BB;
     }
 
     constructor( private showAlignmentService: ShowAlignmentService,
