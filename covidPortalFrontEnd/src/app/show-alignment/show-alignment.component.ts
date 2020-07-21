@@ -917,7 +917,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       console.log(" normalizedDistances length " + normalizedDistances.length);
 
-      let baseColor = "#B95119";
+      let baseColor = "#786E4D";
 
       // let t = 'rgb(255,255,0)';
       // let f = 'rgb(0,0.100)';
@@ -929,18 +929,20 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         // console.log( " i = " + i + " val " + normalizedDistances[i]*100);
         console.log( " i = " + i );
 
-        let td = document.getElementById("td_0_"+ i);
+        // let td = document.getElementById("td_0_"+ i);
 
-        if(td){
+        // if(td){
 
           if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
 
-            td.style.backgroundColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
+            this.displayStructureObjList[listIndex].residueObjList[i].residueTableCellColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
+
+            // td.style.backgroundColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
 
             // console.log( " bkgcolor = " + td.style.backgroundColor );
           }
 
-        }
+        // }
 
       }
 

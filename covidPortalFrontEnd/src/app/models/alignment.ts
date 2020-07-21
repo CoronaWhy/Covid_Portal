@@ -13,7 +13,7 @@ export class ResidueObj {
   residueLabel:string;
 
   residueIndex:number;
-
+  residueTableCellColor:string;
   residueValue:string;
   residueColor:string;
   residuePosition:Coordinate;
