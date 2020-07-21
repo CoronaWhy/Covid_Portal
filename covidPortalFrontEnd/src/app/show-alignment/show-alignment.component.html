@@ -55,7 +55,7 @@
            <div class="row">
              <div class="col">
                <div ngbDropdown class="d-inline-block">
-                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeSortColumn}}</button>
+                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeExternalSortColumn}}</button>
                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                    <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
                  </div>
@@ -75,7 +75,7 @@
            <div class="row">
              <div class="col">
                <div ngbDropdown class="d-inline-block">
-                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeSortColumn}}</button>
+                 <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeInternalSortColumn}}</button>
                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                    <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
                  </div>
@@ -167,6 +167,7 @@
          <td></td>
          <td></td>
      </tfoot>
+
      <!-- END SCROLLBAR -------------------------------------------------------->
   </table>
   <!----------------------------------------------------------------------------->
@@ -231,25 +232,22 @@
 
       <!-- <div  class="row " style="float:right;"> -->
 
-      <div class="row mt-2 col-md-12" style="float:right;">
+      <div class="row mt-2 col-md-12" >
 
       Sort:&nbsp;
 
       <div class="row">
         <div class="col">
           <div ngbDropdown class="d-inline-block">
-            <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sequenceTableSortColumn}}</button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.sequenceTableSortColumn}}</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
               <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceMainTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
-              <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
             </div>
           </div>
         </div>
-      <!-- </div> -->
+      </div>
 
       Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
-
-      </div>
 
     </div>
 
@@ -378,7 +376,8 @@
     <!-- epitopes tabset -->
     <ng-template #epitopesTabset>
 
-        <div class="row" style="float:right;">
+        <div class="row mt-2 col-md-12" >
+
           Sort:&nbsp;
 
           <div class="row">
@@ -386,7 +385,7 @@
               <div ngbDropdown class="d-inline-block">
                 <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sortEpitopeExperimentTableColumn}}</button>
                 <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-                  <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumns" (click) = "sortEpitopeExperimentTable(epitopeExperimentTableColumn.columnName)" [value]="epitopeExperimentTableColumn.columnName" [style.background-color] = "epitopeExperimentTableColumn.rowColor" >{{ epitopeExperimentTableColumn.columnName }}</button>
+                  <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable(epitopeExperimentTableColumn.columnName)" [value]="epitopeExperimentTableColumn.columnName" [style.background-color] = "epitopeExperimentTableColumn.rowColor" >{{ epitopeExperimentTableColumn.columnName }}</button>
                   <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
                 </div>
               </div>
@@ -522,7 +521,7 @@
         <!-- structures tabset -->
         <ng-template #structuresTabset>
 
-          <div class="row" style="float:right;">
+          <div class="row mt-2 col-md-12" >
             Sort:&nbsp;
 
             <div class="row">
