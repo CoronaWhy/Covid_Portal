@@ -9,7 +9,7 @@ import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
-import { EpitopeObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
+import { EpitopeObj, EpitopeOffsetObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
 import { StructureObj, StructureChainObj, StructureChainResultObj } from '../models/structure';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
@@ -43,10 +43,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     positionSliderValue:number;
     sequenceTableColumnObjs:TableColumnObj[];
 
+    epitopeOffsetObjs:EpitopeOffsetObj;
+
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
     selectedStructureIds:string[];
-
     rangeSliderOptions: Options = {
       floor: 0,
       ceil: 10,
@@ -338,6 +339,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     }
 
+    positionToEpitope(offset){
+      console.log(" offset "  + offset);
+
+      this.positionSliderValue = offset;
+      this.slideSequences();
+    }
+
     reloadAlignment(value){
       console.log(value.currentTarget.defaultValue);
       if (value.currentTarget.checked){
@@ -511,21 +519,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     setSliderValue(){
       let positionSlider = document.getElementById('positionSlider') as HTMLInputElement;
       this.positionSliderValue = Number(positionSlider.value);
+      this.slideSequences();
+    }
+
+    slideSequences(){
 
       this.displayNomenclaturePositionStrings = this.nomenclaturePositionStrings.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
 
-      // for (let i = 0; i < this.alignmentObjList.length; i++){
-      //   this.alignmentObjList[i].displayResidueObjList = this.alignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
-      // }
-      //
-      // for (let i = 0; i < this.epitopeObjList.length; i++){
-      //   this.epitopeObjList[i].displayResidueObjList = this.epitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
-      // }
-      //
-      // for (let i = 0; i < this.structureObjList.length; i++){
-      //   this.structureObjList[i].displayResidueObjList = this.structureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
-      //   // console.log(this.structureObjList[i].residueObjList);
-      // }
       for (let i = 0; i < this.displayAlignmentObjList.length; i++){
         this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.startPosition+this.positionSliderValue+this.maxDisplayResidues);
       }
@@ -652,6 +652,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          this.selectedAccessions = alignmentResult.selectedAccessions;
          this.selectedEpitopeIds = alignmentResult.selectedEpitopeIds;
          this.selectedStructureIds = alignmentResult.selectedStructureIds;
+
+         this.epitopeOffsetObjs = alignmentResult.epitopeOffsetObjs;
 
          this.nomenclaturePositionStrings = alignmentResult.nomenclaturePositionStrings;
 

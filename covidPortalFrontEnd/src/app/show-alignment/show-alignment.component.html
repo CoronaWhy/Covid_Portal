@@ -148,7 +148,7 @@
          <td></td>
          <td colspan=16>
            <div *ngIf="displayAlignmentObjList">
-               Begin position:&nbsp;
+               Horizontal slider (drag for navigation):&nbsp;
                <!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
                <div class="slidecontainer" style="float:left;">
                  <input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
@@ -163,6 +163,23 @@
 
               <!-- <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider> -->
 
+         </td>
+         <td></td>
+         <td></td>
+     </tfoot>
+
+     <tfoot>
+         <td></td>
+         <td></td>
+         <td colspan=16>
+           <div *ngIf="displayAlignmentObjList">
+               Epitope Locations (click to navigate):&nbsp;
+               <br/>
+               <div class="positionContainer">
+                 <div class="positionBox" style="background: #D9D9E1;"></div>
+                   <div *ngFor = "let displayEpitopeObj of  displayEpitopeObjList" class="positionBox positionStack-top" style="background: red;margin-left: {{displayEpitopeObj.percOffset}}%;" (click)="positionToEpitope(displayEpitopeObj.offset);"></div>
+               </div>
+           </div>
          </td>
          <td></td>
          <td></td>

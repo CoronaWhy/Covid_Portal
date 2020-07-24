@@ -288,9 +288,13 @@ def showAlignment(request):
 
                 alignmentObjList = sorted(alignmentObjList, key=lambda o: sequenceObj["host"])
 
+        epitopeOffsetObjs = []
+
         for epitope in epitopes:
             print(epitope)
             sequenceString = epitope["seq"]
+
+            epitopeOffsetObjs.append({"iedb_id":str(epitope["iedb_id"]),"offset":epitope["offset"], "percOffset":0})
             # print (epitope.offset)
             if epitope["offset"] != 0 :
                 sequenceString = '-' * epitope["offset"] + sequenceString
@@ -308,15 +312,19 @@ def showAlignment(request):
                 # print (" adding epitope " + epitope.IEDB_ID)
                 epitopeObjList.append(epitopeObj)
 
-        # structureResidueAtoms = structureresidueatoms({"mesh_id":'D064370', 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":SELECTED_PDB_CHAIN_IDS})
-#
-# "pdb_id": "5X5B",
-# 	"sequence": "RCTTFD---------DVQA-------...",
-# 	"chain": "A",
-# 	"offset": 35,
-# 	"coords": 	"46.756,-31.12,43.394;
+        maxEpitopeOffset = max([x["offset"] for x in epitopeOffsetObjs])
+        minEpitopeOffset = min([x["offset"] for x in epitopeOffsetObjs])
+        rangeEpitopeOffset = maxEpitopeOffset - minEpitopeOffset
 
-        print (" structureSequenceCoords " + str(structureSequenceCoords))
+        print (" minEpitopeOffset " + str(minEpitopeOffset) + " maxEpitopeOffset " + str(maxEpitopeOffset) + " rangeEpitopeOffset " + str(rangeEpitopeOffset) )
+
+        if rangeEpitopeOffset > 0:
+            for index, epitopeObj in enumerate(epitopeObjList):
+                # print (" for index " + str(index) + " offset is " + str(epitopeOffsetObjs[index]["offset"]) + " seqeuenceLength " + str(seqeuenceLength) )
+                epitopeObj["percOffset"] =  ( (epitopeOffsetObjs[index]["offset"] )/seqeuenceLength ) * 100
+                epitopeObj["offset"] =  epitopeOffsetObjs[index]["offset"] 
+                # print( epitopeObj["percOffset"] )
+        # print (" structureSequenceCoords " + str(structureSequenceCoords))
         for structureSequenceCoord in structureSequenceCoords:
             if structureSequenceCoord["offset"] != 0 :
                 sequenceString = '-' * structureSequenceCoord["offset"] + structureSequenceCoord["sequence"]
@@ -326,17 +334,17 @@ def showAlignment(request):
             residueObjList = [{"residueValue":'-',"residueColor":RESIDUE_COLOR_MAP['-'], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":i} for i,x in enumerate(range(structureSequenceCoord["offset"]) ) ]
             coords = structureSequenceCoord["coords"].split(";")
 
-            print ( " len structureSequenceCoord[sequence] " + str(len(structureSequenceCoord["sequence"]) ) )
-
-            print ( " end structureSequenceCoord[sequence] " + str(structureSequenceCoord["sequence"][1401:] )  )
-
-            print ( " len coords " + str( len(coords) ) )
+            # print ( " len structureSequenceCoord[sequence] " + str(len(structureSequenceCoord["sequence"]) ) )
+            #
+            # print ( " end structureSequenceCoord[sequence] " + str(structureSequenceCoord["sequence"][1401:] )  )
+            #
+            # print ( " len coords " + str( len(coords) ) )
 
             for i,x in enumerate(structureSequenceCoord["sequence"]):
-                print (" i " + str(i) + " x "  + str(x))
+                # print (" i " + str(i) + " x "  + str(x))
 
                 if i < len(coords):
-                    print ( " len(coords[i]) " + str ( len ( coords[i].split(",") ) ) )
+                    # print ( " len(coords[i]) " + str ( len ( coords[i].split(",") ) ) )
                     if len(coords[i].split(",")) == 3:
                         coordValues = coords[i].split(",")
                         residueObjList.append(
@@ -453,6 +461,8 @@ def showAlignment(request):
         alignmentResultObj["alignmentObjList"] = alignmentObjList
         alignmentResultObj["epitopeObjList"] = epitopeObjList
         alignmentResultObj["structureObjList"] = structureObjList
+
+        alignmentResultObj["epitopeOffsetObjs"] = epitopeOffsetObjs
 
         alignmentResultObj["selectedAccessions"] = SELECTED_ACCESSIONS.split(",")
         alignmentResultObj["selectedEpitopeIds"] = SELECTED_EPITOPES.split(",")

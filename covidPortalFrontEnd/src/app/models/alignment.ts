@@ -1,5 +1,5 @@
 import { SequenceResultObj, SequenceObj } from './sequence';
-import { EpitopeExperimentResultObj, EpitopeObj } from './epitope';
+import { EpitopeExperimentResultObj, EpitopeObj, EpitopeOffsetObj } from './epitope';
 import { StructureChainResultObj, StructureObj } from './structure';
 
 export class Coordinate {
@@ -43,6 +43,8 @@ export class AlignmentResultObj {
 
   structureObjList:StructureObj[];
   selectedStructureIds:string[];
+
+  epitopeOffsetObjs:EpitopeOffsetObj;
 
   nomenclaturePositionStrings:string[];
 }

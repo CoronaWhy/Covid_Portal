@@ -14,12 +14,19 @@ export class EpitopeExperimentObj {
 
 }
 
+export class EpitopeOffsetObj {
+  iedb_id:string;
+  offset:number;
+}
+
 export class EpitopeObj {
   iedb_id:string;
   epitopeExperimentObj:EpitopeExperimentObj;
   residueObjList:ResidueObj[];
   displayResidueObjList:ResidueObj[];
-  sortColumnValue:string;  
+  sortColumnValue:string;
+  percOffset:number;
+  offset:number;
 }
 
 export class EpitopeExperimentResultObj {
