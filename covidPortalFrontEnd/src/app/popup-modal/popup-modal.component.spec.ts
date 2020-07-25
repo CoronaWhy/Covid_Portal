@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParamsModalComponent } from './params-modal.component';
+import { PopupModalComponent } from './popup-modal.component';
 
-describe('ParamsModalComponent', () => {
-  let component: ParamsModalComponent;
-  let fixture: ComponentFixture<ParamsModalComponent>;
+describe('PopupModalComponent', () => {
+  let component: PopupModalComponent;
+  let fixture: ComponentFixture<PopupModalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParamsModalComponent ]
+      declarations: [ PopupModalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParamsModalComponent);
+    fixture = TestBed.createComponent(PopupModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

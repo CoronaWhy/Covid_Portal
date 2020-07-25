@@ -35,7 +35,7 @@
      <tr *ngFor="let displayAlignmentObj of displayAlignmentObjList; let idx = index">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Protein</div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label">{{displayAlignmentObj.label}}</div></td>
+         <td><div class="residue-height label" (click)="openAlignmentModal(displayAlignmentObj.label)"><a href="javascript:void(0)">{{displayAlignmentObj.label}}</a></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
@@ -90,7 +90,7 @@
      <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope</div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label">{{displayEpitopeObj.iedb_id}}</div></td>
+         <td><div class="residue-height label" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" ><a href="javascript:void(0)">{{displayEpitopeObj.iedb_id}}</a></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
@@ -131,7 +131,7 @@
      <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index" id="{{'tr_' + idx}}">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label">{{displayStructureObj.pdbchain}}</div></td>
+         <td><div class="residue-height label" (click)="openStructureModal(displayStructureObj.pdbchain)" ><a href="javascript:void(0)">{{displayStructureObj.pdbchain}}</a></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+ residueObj.residueIndex}}" [style.background-color] = "residueObj.residueTableCellColor"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 
-﻿export class CommentModalService {
+﻿export class PopupModalService {
     private modals: any[] = [];
 
     constructor (private http: HttpClient) {}

@@ -36,14 +36,11 @@ import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
-import { ParamsModalService } from './services/params-modal.service';
 import { HelpModalService } from './services/help-modal.service';
 import { HelpModalComponent } from './help-modal/help-modal.component';
 
-import { CommentModalComponent } from './comment-modal/comment-modal.component';
+import { PopupModalComponent } from './popup-modal/popup-modal.component';
 
-import { ParamsModalComponent } from './params-modal/params-modal.component';
-import { CommentModalSubmitService } from './services/comment-modal-submit.service';
 import { NgxSortableModule } from 'ngx-sortable';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { ColorPickerModule } from 'ngx-color-picker';
@@ -92,14 +89,13 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   entryComponents: [
        HelpModalComponent,
-       CommentModalComponent,
-       ParamsModalComponent,
+       PopupModalComponent,
    ],
 
-  declarations: [AppComponent, HelpModalComponent, CommentModalComponent, ParamsModalComponent],
+  declarations: [AppComponent, HelpModalComponent, PopupModalComponent],
 
   providers: [AuthGuard, ProjectService, LoginService, SignupService, ResetPasswordService, LogoutService, AuthService, LogoutComponent,
-              SigninEmitterService, SignoutEmitterService, HelpModalService, CommentModalSubmitService, ParamsModalService, DatafileDetailService, {
+              SigninEmitterService, SignoutEmitterService, HelpModalService, DatafileDetailService, {
 
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,

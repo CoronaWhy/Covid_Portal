@@ -9,6 +9,7 @@ import 'rxjs/add/observable/interval';
 import { Subscription } from 'rxjs/Subscription';
 import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
+import { PopupValueObj } from '../models/popupvalue';
 import { EpitopeObj, EpitopeOffsetObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
 import { StructureObj, StructureChainObj, StructureChainResultObj } from '../models/structure';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
@@ -17,6 +18,8 @@ import { Page } from '../models/page';
 import { PagedData } from '../models/page-data';
 import { of } from 'rxjs';
 import { TableColumnObj } from '../models/tableColumn';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PopupModalComponent } from '../popup-modal/popup-modal.component';
 
 @Component({
     selector: 'list-files',
@@ -43,8 +46,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     positionSliderValue:number;
     sequenceTableColumnObjs:TableColumnObj[];
 
-    epitopeOffsetObjs:EpitopeOffsetObj;
+    popupValueObjList:PopupValueObj[];
 
+    epitopeOffsetObjs:EpitopeOffsetObj;
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
     selectedStructureIds:string[];
@@ -129,6 +133,103 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     public getResults(page: Page): Observable<PagedData<SequenceObj>> {
         return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
     }
+
+    openAlignmentModal(value){
+      // console.log(value);
+
+      const alignmentModalRef = this.popupModalService.open(PopupModalComponent);
+
+      this.popupValueObjList = [];
+
+      let popupValueObj : PopupValueObj;
+      let selectedAlignmentObj:AlignmentObj;
+      let objKeys:any;
+      for (let i = 0; i < this.displayAlignmentObjList.length; i++){
+        if (this.displayAlignmentObjList[i].sequenceObj.accession == value){
+
+          selectedAlignmentObj = this.displayAlignmentObjList[i];
+
+          objKeys = Object.keys(selectedAlignmentObj.sequenceObj);
+
+          for (let j = 0; j<objKeys.length; j++ ){
+              popupValueObj = new PopupValueObj();
+              popupValueObj.popupKey = objKeys[j];
+              popupValueObj.popupValue = selectedAlignmentObj.sequenceObj[objKeys[j]];
+              this.popupValueObjList.push(popupValueObj);
+
+          }
+          break;
+        }
+      }
+      // console.log (" pushing 22 " + this.popupValueObjList);
+
+      alignmentModalRef.componentInstance.popupValueObjList = this.popupValueObjList;
+
+    }
+
+    openEpitopeModal(value){
+      console.log(value);
+
+      const epitopeModalRef = this.popupModalService.open(PopupModalComponent);
+
+      this.popupValueObjList = [];
+
+      let popupValueObj : PopupValueObj;
+      let selectedEpitopeObj:EpitopeObj;
+      let objKeys:any;
+      for (let i = 0; i < this.displayEpitopeObjList.length; i++){
+        if (this.displayEpitopeObjList[i].iedb_id == value){
+
+          selectedEpitopeObj = this.displayEpitopeObjList[i];
+
+          objKeys = Object.keys(selectedEpitopeObj.epitopeExperimentObj);
+
+          for (let j = 0; j<objKeys.length; j++ ){
+              popupValueObj = new PopupValueObj();
+              popupValueObj.popupKey = objKeys[j];
+              popupValueObj.popupValue = selectedEpitopeObj.epitopeExperimentObj[objKeys[j]];
+              this.popupValueObjList.push(popupValueObj);
+
+          }
+          break;
+        }
+      }
+
+      epitopeModalRef.componentInstance.popupValueObjList = this.popupValueObjList;
+
+    }
+
+   openStructureModal(value){
+     console.log(value);
+
+     const structureModalRef = this.popupModalService.open(PopupModalComponent);
+
+     this.popupValueObjList = [];
+
+     let popupValueObj : PopupValueObj;
+     let selectedStructureObj:StructureObj;
+     let objKeys:any;
+     for (let i = 0; i < this.displayStructureObjList.length; i++){
+       if (this.displayStructureObjList[i].pdbchain == value){
+
+         selectedStructureObj = this.displayStructureObjList[i];
+
+         objKeys = Object.keys(selectedStructureObj.structureChainObj);
+
+         for (let j = 0; j<objKeys.length; j++ ){
+             popupValueObj = new PopupValueObj();
+             popupValueObj.popupKey = objKeys[j];
+             popupValueObj.popupValue = selectedStructureObj.structureChainObj[objKeys[j]];
+             this.popupValueObjList.push(popupValueObj);
+
+         }
+         break;
+       }
+     }
+
+     structureModalRef.componentInstance.popupValueObjList = this.popupValueObjList;
+
+   }
 
    sortSequenceTable (sortColumn)
    {
@@ -860,6 +961,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
     constructor( private showAlignmentService: ShowAlignmentService,
+                 private popupModalService: NgbModal,
                  private route:ActivatedRoute,
                  private router: Router,
                ) {

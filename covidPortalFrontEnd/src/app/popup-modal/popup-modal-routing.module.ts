@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ParamsModalComponent } from './params-modal.component';
+import { PopupModalComponent } from './popup-modal.component';
 
 const routes: Routes = [
     {
-        path: '', component: ParamsModalComponent
+        path: '', component: PopupModalComponent
     }
 ];
 
@@ -12,5 +12,5 @@ const routes: Routes = [
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class ParamsModalRoutingModule {
+export class PopupModalRoutingModule {
 }
