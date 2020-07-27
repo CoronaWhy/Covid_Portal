@@ -261,12 +261,16 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       }
    }
 
-   sortEpitopeTable (sortColumn)
+   sortEpitopeTable (sortColumn, columnNumber)
    {
-      console.log(this.epitopeObjList[0].epitopeExperimentObj[sortColumn]);
-       if (this.epitopeSortColumn != sortColumn) {
+      console.log(this.epitopeObjList[0].epitopeExperimentObj[sortColumn] + " : " + columnNumber);
+       if ( (this.epitopeExternalSortColumn != sortColumn && columnNumber == 0) || (this.epitopeInternalSortColumn != sortColumn && columnNumber == 1) ) {
            console.log(sortColumn);
-           this.epitopeSortColumn = sortColumn;
+           if (columnNumber == 0){
+             this.epitopeExternalSortColumn = sortColumn;
+           } else if (columnNumber == 1){
+             this.epitopeInternalSortColumn = sortColumn;
+           }
 
            if (sortColumn == "iedb_id") {
              this.epitopeObjList.sort((a, b) => (a.iedb_id > b.iedb_id) ? 1 : -1);
@@ -276,7 +280,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            } else {
              this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj[this.epitopeExternalSortColumn] > b.epitopeExperimentObj[this.epitopeExternalSortColumn]) ? 1 : ( a.epitopeExperimentObj[this.epitopeInternalSortColumn] > b.epitopeExperimentObj[this.epitopeInternalSortColumn] ? 1 :-1) );
              for (let i = 0; i < this.epitopeObjList.length; i++){
-               this.epitopeObjList[i].sortColumnValue = this.epitopeObjList[i].epitopeExperimentObj[sortColumn];
+               if (columnNumber == 0){
+                 this.epitopeObjList[i].externalSortColumnValue = this.epitopeObjList[i].epitopeExperimentObj[sortColumn];
+               }
+               else if (columnNumber == 1){
+                 this.epitopeObjList[i].internalSortColumnValue = this.epitopeObjList[i].epitopeExperimentObj[sortColumn];
+               }
              }
            }
 

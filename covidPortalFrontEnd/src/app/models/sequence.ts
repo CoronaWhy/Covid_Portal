@@ -1,7 +1,11 @@
 import { TableColumnObj } from './tableColumn';
 
-export class SequenceObj {
+export class ColumnFilter {
+  columnName:string;
+  columnFilterValues:string[];
+}
 
+export class SequenceObj {
   id:number;
   isSelected:boolean;
   accession:string;
@@ -14,11 +18,10 @@ export class SequenceObj {
   protein:string;
   taxon:string;
   isolate:string;
-
 }
 
 export class SequenceResultObj {
-
+  columnFilterList:ColumnFilter[];
   sequenceObjList:SequenceObj[];
   sequenceTableColumnObjs :TableColumnObj[];
   sequenceSortColumn:string;

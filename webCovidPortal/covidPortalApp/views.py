@@ -378,27 +378,37 @@ def showAlignment(request):
             structureObjList.append(structureObj)
 
         # print (" structureObjList " + str(structureObjList))
-        sequenceRecords = SequenceRecord.objects.all()
 
-        for row in sequenceRecords:
+        sequenceRecords = sequencerecords({"mesh_id":MESH_ID})
+        # print ( " len sequenceList = " + str(len (sequenceList)))
+        # sequenceLength = 0
+        # for sequence in sequenceList:
+        #
+        #     sequenceString = sequence["seq"]
+        #     if sequence["offset"] != 0 :
+        #         sequenceString = '-' * sequence["offset"] + sequenceString
+        #     # print ( " len(sequenceString) " + str(len(sequenceString) ) )
+        #     if len(sequenceString) > sequenceLength:
+        #         sequenceLength = len(sequenceString)
+        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+        #     alignmentObj = {"label":sequence["accession"],"residueObjList":residueObjList}
+        #     alignmentObjList.append(alignmentObj)
 
-            sequenceObj = {
-                                "id":row.id, "accession":row.accession, "organism":row.organism, "collection_date":"", "country":row.country,
-                                "host":row.host, "isolation_source":row.isolation_source, "coded_by":row.coded_by, "protein":str(row.protein.name),"taxon":str(row.taxon.name),"isolate":row.isolate , "isSelected" : False
-                                }
-            if row.collection_date:
-                sequenceObj["collection_date"] = row.collection_date.strftime('%Y-%m-%d')
+        for sequenceRecord in sequenceRecords:
 
-            if  row.accession in  SELECTED_ACCESSIONS:
-                sequenceObj["isSelected"] = True
-                selectedSequenceRecords.append(row)
+            if  sequenceRecord["accession"] in  SELECTED_ACCESSIONS:
+                sequenceRecord["isSelected"] = True
+                selectedSequenceRecords.append(sequenceRecord)
 
-            sequenceObjList.append(sequenceObj)
+            sequenceObjList.append(sequenceRecord)
 
-        fieldList = ['host', 'organism', 'taxon_name', 'accession', 'country','isolation_source' ]
+        fieldList = ['host', 'organism', 'taxon_id', 'accession', 'country','isolation_source' ]
+        
+        columnFilterList = []
+        columnFilterList = [{"columnName":fieldLabel,"columnFilterValues":list(set([x[fieldLabel] for x in sequenceObjList ] )) } for fieldLabel in fieldList]
         fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "host" else {"columnName":x,"rowColor":"#FFFFFF"} for x in fieldList ]
 
-        sequenceResultObj = {"sequenceTableColumnObjs":fieldObjList, "sequenceObjList":sequenceObjList, "sequenceSortColumn":"host"}
+        sequenceResultObj = {"sequenceTableColumnObjs":fieldObjList, "sequenceObjList":sequenceObjList, "sequenceSortColumn":"host", "columnFilterList":columnFilterList}
 
         epitopeExperiments = EpitopeExperiment.objects.filter(epitope__alignment__name = ALIGNMENT_NAME, epitope__protein__mesh_id = MESH_ID)
 
@@ -604,10 +614,10 @@ def reloadStructures(request):
         print (" selectedStructureIds " + str(selectedStructureIds))
 
         structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":(",").join(selectedStructureIds)} )
-        try:
-            structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":(",").join(selectedStructureIds)})
-        except:
-            traceback.print_exc(file=sys.stdout)
+        # try:
+        structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":(",").join(selectedStructureIds)})
+        # except:
+        #     traceback.print_exc(file=sys.stdout)
         # get sequence length
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
         sequenceLength = len(sequenceList[0]["seq"])

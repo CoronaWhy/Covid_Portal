@@ -27,6 +27,8 @@ export class EpitopeObj {
   sortColumnValue:string;
   percOffset:number;
   offset:number;
+  internalSortColumnValue:string;
+  externalSortColumnValue:string;
 }
 
 export class EpitopeExperimentResultObj {

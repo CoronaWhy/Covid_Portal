@@ -56,7 +56,7 @@
                <div ngbDropdown class="d-inline-block">
                  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeExternalSortColumn}}</button>
                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                   <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
+                   <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName , 0)" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
                  </div>
                </div>
              </div>
@@ -76,7 +76,7 @@
                <div ngbDropdown class="d-inline-block">
                  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.epitopeInternalSortColumn}}</button>
                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                   <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
+                   <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName, 1 )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
                  </div>
                </div>
              </div>
@@ -89,11 +89,11 @@
      <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope</div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" ><a href="javascript:void(0)">{{displayEpitopeObj.iedb_id}}</a></div></td>
+         <td><div class="residue-height label" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" ><a href="javascript:void(0)">{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">{{displayEpitopeObj.sortColumnValue}}</div></td>
+         <td><div class="residue-height label">{{displayEpitopeObj.internalSortColumnValue}}</div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{epitopeVerticalSliderValue}}" class="verticalslider" id="epitopeVerticalSlider" (input)="setEpitopeVerticalSliderValue($event);">
          </td>
@@ -337,33 +337,41 @@
                   </thead>
 
                   <tbody>
+                    <tr>
+                      <td></td>
+                      <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px">
+                        <select value="selectedColumnValue">
+                          <option *ngFor = "let columnFilterValue of columnFilter.columnFilterValues" value="{{columnFilterValue}}">{{columnFilterValue}}</option>
+                        </select>
+                      </td>
+                    </tr>
                     <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
-                      <td>
+                      <td width="50px">
                         <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadAlignment($event)">
                       </td>
-                      <td>
+                      <td width="50px">
                           {{row.accession}}
                       </td>
 
-                      <td>
+                      <td width="50px">
                         {{row.organism}}
                       </td>
 
-                      <td>
+                      <td width="50px">
                         {{row.collection_date}}
                       </td>
 
-                      <td>
+                      <td width="50px">
                         {{row.isolate}}
                       </td>
 
-                      <td>
+                      <td width="50px">
                         {{row.coded_by}}
                       </td>
-                      <td>
+                      <td width="50px">
                         {{row.protein}}
                       </td>
-                      <td>
+                      <td width="50px">
                         {{row.taxon}}
                       </td>
                     </tr>
