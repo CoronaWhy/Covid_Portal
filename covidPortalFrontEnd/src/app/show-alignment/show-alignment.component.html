@@ -25,7 +25,6 @@
              </div>
            </div>
          </div>
-
          </th>
          <th></th>
      </thead>
@@ -177,7 +176,7 @@
                <br/>
                <div class="positionContainer">
                  <div class="positionBox" style="background: #D9D9E1;"></div>
-                   <div *ngFor = "let displayEpitopeObj of  displayEpitopeObjList" class="positionBox positionStack-top" style="background: red;margin-left: {{displayEpitopeObj.percOffset}}%;" (click)="positionToEpitope(displayEpitopeObj.offset);"></div>
+                   <div *ngFor = "let epitopeObj of  epitopeObjList" class="positionBox positionStack-top" style="background: red;margin-left: {{epitopeObj.percOffset}}%;" (click)="positionToEpitope(epitopeObj.offset);"></div>
                </div>
            </div>
          </td>

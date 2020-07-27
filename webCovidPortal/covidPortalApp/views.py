@@ -266,14 +266,14 @@ def showAlignment(request):
         epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":SELECTED_EPITOPES})
         structureSequenceCoords = [structuresequencecoords ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdb_id":SELECTED_PDB_CHAIN_IDS[0]["pdb_id"], "chain":SELECTED_PDB_CHAIN_IDS[0]["chain"]})]
         # structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, "alignment":ALIGNMENT_NAME, "atom":"CA","pdbchains":SELECTED_PDB_CHAIN_IDS})
-        seqeuenceLength = 0
+        sequenceLength = 0
         for sequence in sequenceList:
             sequenceString = sequence["seq"]
             if sequence["offset"] != 0 :
                 sequenceString = '-' * sequence["offset"] + sequenceString
             # print ( " len(sequenceString) " + str(len(sequenceString) ) )
-            if len(sequenceString) > seqeuenceLength:
-                seqeuenceLength = len(sequenceString)
+            if len(sequenceString) > sequenceLength:
+                sequenceLength = len(sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             alignmentObj = {"label":sequence["accession"],"residueObjList":residueObjList}
             sequenceRecords = SequenceRecord.objects.filter(accession = sequence["accession"])
@@ -298,8 +298,8 @@ def showAlignment(request):
             # print (epitope.offset)
             if epitope["offset"] != 0 :
                 sequenceString = '-' * epitope["offset"] + sequenceString
-                if len(sequenceString) < seqeuenceLength:
-                     sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+                if len(sequenceString) < sequenceLength:
+                     sequenceString += '-'* ( sequenceLength - len(sequenceString))
             # print (sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
@@ -321,8 +321,8 @@ def showAlignment(request):
         if rangeEpitopeOffset > 0:
             for index, epitopeObj in enumerate(epitopeObjList):
                 # print (" for index " + str(index) + " offset is " + str(epitopeOffsetObjs[index]["offset"]) + " seqeuenceLength " + str(seqeuenceLength) )
-                epitopeObj["percOffset"] =  ( (epitopeOffsetObjs[index]["offset"] )/seqeuenceLength ) * 100
-                epitopeObj["offset"] =  epitopeOffsetObjs[index]["offset"] 
+                epitopeObj["percOffset"] =  ( (epitopeOffsetObjs[index]["offset"] )/sequenceLength ) * 100
+                epitopeObj["offset"] =  epitopeOffsetObjs[index]["offset"]
                 # print( epitopeObj["percOffset"] )
         # print (" structureSequenceCoords " + str(structureSequenceCoords))
         for structureSequenceCoord in structureSequenceCoords:
@@ -495,15 +495,15 @@ def reloadAlignment(request):
 
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":(",").join(selectedAccessions)})
         print ( " len sequenceList = " + str(len (sequenceList)))
-        seqeuenceLength = 0
+        sequenceLength = 0
         for sequence in sequenceList:
 
             sequenceString = sequence["seq"]
             if sequence["offset"] != 0 :
                 sequenceString = '-' * sequence["offset"] + sequenceString
             # print ( " len(sequenceString) " + str(len(sequenceString) ) )
-            if len(sequenceString) > seqeuenceLength:
-                seqeuenceLength = len(sequenceString)
+            if len(sequenceString) > sequenceLength:
+                sequenceLength = len(sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             alignmentObj = {"label":sequence["accession"],"residueObjList":residueObjList}
             alignmentObjList.append(alignmentObj)
@@ -535,18 +535,53 @@ def reloadEpitopes(request):
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
 
         sequenceLength = len(sequenceList[0]["seq"])
+        #
+        # for epitope in epitopes:
+        #
+        #     sequenceString = epitope["seq"]
+        #
+        #     if epitope["offset"] != 0 :
+        #         sequenceString = '-' * epitope["offset"] + sequenceString
+        #         if len(sequenceString) > sequenceLength:
+        #              sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+        #     epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
+        #     epitopeObjList.append(epitopeObj)
+
+        epitopeOffsetObjs = []
 
         for epitope in epitopes:
-
+            print(epitope)
             sequenceString = epitope["seq"]
 
+            epitopeOffsetObjs.append({"iedb_id":str(epitope["iedb_id"]),"offset":epitope["offset"], "percOffset":0})
+            # print (epitope.offset)
             if epitope["offset"] != 0 :
                 sequenceString = '-' * epitope["offset"] + sequenceString
-                if len(sequenceString) > sequenceLength:
-                     sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+                if len(sequenceString) < sequenceLength:
+                     sequenceString += '-'* ( sequenceLength - len(sequenceString))
+            # print (sequenceString)
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
-            epitopeObjList.append(epitopeObj)
+
+            epitopeexperimentsfilters = epitopeexperimentsfilter({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":epitope["iedb_id"]})
+
+            if len(epitopeexperimentsfilters) > 0:
+                epitopeExperimentObj = epitopeexperimentsfilters[0]
+                epitopeObj["epitopeExperimentObj"] = epitopeExperimentObj
+                # print (" adding epitope " + epitope.IEDB_ID)
+                epitopeObjList.append(epitopeObj)
+
+        maxEpitopeOffset = max([x["offset"] for x in epitopeOffsetObjs])
+        minEpitopeOffset = min([x["offset"] for x in epitopeOffsetObjs])
+        rangeEpitopeOffset = maxEpitopeOffset - minEpitopeOffset
+
+        if rangeEpitopeOffset > 0:
+            for index, epitopeObj in enumerate(epitopeObjList):
+                # print (" for index " + str(index) + " offset is " + str(epitopeOffsetObjs[index]["offset"]) + " seqeuenceLength " + str(seqeuenceLength) )
+                epitopeObj["percOffset"] =  ( (epitopeOffsetObjs[index]["offset"] )/sequenceLength ) * 100
+                epitopeObj["offset"] =  epitopeOffsetObjs[index]["offset"]
+
         print(len(epitopeObjList))
     except:
         traceback.print_exc(file=sys.stdout)
@@ -569,7 +604,10 @@ def reloadStructures(request):
         print (" selectedStructureIds " + str(selectedStructureIds))
 
         structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":(",").join(selectedStructureIds)} )
-        structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":(",").join(selectedStructureIds)})
+        try:
+            structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":(",").join(selectedStructureIds)})
+        except:
+            traceback.print_exc(file=sys.stdout)
         # get sequence length
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
         sequenceLength = len(sequenceList[0]["seq"])
@@ -582,10 +620,10 @@ def reloadStructures(request):
 
             if structureSequence["offset"] != 0 :
                 sequenceString = '-' * structureSequence["offset"] + sequenceString
-                if len(sequenceString) < seqeuenceLength:
-                     sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
+                if len(sequenceString) < sequenceLength:
+                     sequenceString += '-'* ( sequenceLength - len(sequenceString))
             # print (sequenceString)
-            if structureResidueAtoms[index]["pdb_chain"] == structureSequence["pdbchain"]:
+            if len(structureResidueAtoms) > index and structureResidueAtoms[index]["pdb_chain"] == structureSequence["pdbchain"]:
                 structureResidueAtomsMap = structureResidueAtoms[index]
 
                 for resIndex, aminoAcid in enumerate(sequenceString):

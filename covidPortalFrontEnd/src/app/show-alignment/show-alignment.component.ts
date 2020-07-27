@@ -524,13 +524,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
     filterDatatable(){
-
       this.sequenceObjList = this.sequenceObjList.filter(
         sequenceObj => sequenceObj.accession.includes(this.searchString));
-
       this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
       console.log(this.displaySequenceObjList);
-
      }
     /**
      * Package companyData into a PagedData object based on the selected Page
