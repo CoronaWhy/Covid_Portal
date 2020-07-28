@@ -340,9 +340,18 @@
                     <tr>
                       <td></td>
                       <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px">
-                        <select value="selectedColumnValue">
-                          <option *ngFor = "let columnFilterValue of columnFilter.columnFilterValues" value="{{columnFilterValue}}">{{columnFilterValue}}</option>
-                        </select>
+
+                        <div class="row">
+                          <div class="col">
+                            <div ngbDropdown class="d-inline-block">
+                              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
+                              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterSequenceTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                       </td>
                     </tr>
                     <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
@@ -487,6 +496,24 @@
                     </thead>
 
                     <tbody>
+
+                      <tr>
+                        <td></td>
+                        <td *ngFor = "let columnFilter of epitopeExperimentResultObj.columnFilterList" width="50px">
+
+                          <div class="row">
+                            <div class="col">
+                              <div ngbDropdown class="d-inline-block">
+                                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                  <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterEpitopeTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
                       <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
 
                         <td>
@@ -609,6 +636,24 @@
                         </tr>
                       </thead>
                       <tbody>
+
+                        <tr>
+                          <td></td>
+                          <td *ngFor = "let columnFilter of structureChainResultObj.columnFilterList" width="50px">
+
+                            <div class="row">
+                              <div class="col">
+                                <div ngbDropdown class="d-inline-block">
+                                  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
+                                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterStructureTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
                         <tr *ngFor ="let row of displayStructureChainObjList" style="line-height: 50px; height: 50px;">
                           <td>
                             <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.pdb_id}}.{{row.chain}}" (change)="reloadStructures($event)">

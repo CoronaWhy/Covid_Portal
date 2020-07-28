@@ -45,13 +45,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     searchDataFilesString:string;
     positionSliderValue:number;
     sequenceTableColumnObjs:TableColumnObj[];
-
     popupValueObjList:PopupValueObj[];
-
     epitopeOffsetObjs:EpitopeOffsetObj;
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
     selectedStructureIds:string[];
+    structureChainResultObj:StructureChainResultObj;
     rangeSliderOptions: Options = {
       floor: 0,
       ceil: 10,
@@ -65,7 +64,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     showFiltersFlag:boolean;
     sequences:SequenceObj[];
     sequenceResultObj:SequenceResultObj;
+
     sequenceObjList:SequenceObj[];
+    epitopeExperimentResultObj:EpitopeExperimentResultObj;
+    structureChainObjList:StructureChainObj[];
+
+    savedSequenceObjList:SequenceObj[];
+    // savedEpitopeExperimentObjList:EpitopeExperimentResultObj[];
+    savedStructureChainObjList:StructureChainObj[];
 
     epitopeObjList:EpitopeObj[];
     displayEpitopeObjList:EpitopeObj[];
@@ -83,7 +89,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     displayEpitopeExperimentObjList:EpitopeExperimentObj[];
     epitopeExperimentTableColumnObjs:TableColumnObj[];
 
-    structureChainObjList:StructureChainObj[];
     displayStructureChainObjList:StructureChainObj[];
     structureChainTableColumnObjs:TableColumnObj[];
 
@@ -377,6 +382,48 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
        }
     }
+
+   filterSequenceTable(columnName, columnFilterValue){
+
+     // this.sequenceObjList.filter(item => {
+     //      return item[columnName].includes(columnFilterValue);
+     //  });
+     //
+     //  this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+
+   }
+
+   filterEpitopeTable(columnName, columnFilterValue){
+
+     console.log(" columnName " + columnName + " columnFilterValue " + columnFilterValue);
+
+     // for (let i = 0; i < this.epitopeExperimentObjList.length; i++) {
+     //   if (this.epitopeExperimentObjList[i].columnFilterList.columnName == columnName) {
+       //   for (let j = 0; j < epitopeExperimentResultObj.columnFilterList[i].columnFilterValues; j++) {
+       //     if (epitopeExperimentResultObj.columnFilterList[i].columnFilterValues[j] == columnFilterValue){
+       //       epitopeExperimentResultObj.columnFilterList[i].columnFilterValues[j].selectedValue = columnFilterValue;
+       //     }
+       //   }
+     //   }
+     // }
+
+     this.epitopeExperimentObjList = this.epitopeExperimentObjList.filter(item => {
+          return item[columnName].includes(columnFilterValue);
+      });
+
+      this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+
+   }
+
+   filterStructureTable(columnName, columnFilterValue){
+
+     // this.structureChainObjList.filter(item => {
+     //      return item[columnName].includes(columnFilterValue);
+     //  });
+     //
+     //  this.displaystructureChainObjList = this.structureChainObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+
+   }
 
    showNext(){
      this.offset += 1;
@@ -738,13 +785,18 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          this.structureChainTableColumnObjs = alignmentResult.structureChainResultObj.structureChainTableColumnObjs;
          this.structureSortColumn = alignmentResult.structureChainResultObj.structureSortColumn;
-
+         this.structureChainResultObj = alignmentResult.structureChainResultObj;
          console.log(this.sequenceTableColumnObjs);
          // console.log(this.structureChainTableColumns);
+
+         this.savedSequenceObjList = this.sequenceObjList;
+
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
          this.structureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
+         this.savedStructureChainObjList = this.structureChainObjList;
+
          this.displayStructureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
 
          this.alignmentObjList = alignmentResult.alignmentObjList;
@@ -754,7 +806,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          console.log( " this.structureObjList " + this.structureObjList);
 
          this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
+         // this.epitopeExperimentResultObjList = this.epitopeExperimentObjList;
+
          this.displayEpitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
+
+         this.epitopeExperimentResultObj = alignmentResult.epitopeExperimentResultObj;
 
          this.selectedAccessions = alignmentResult.selectedAccessions;
          this.selectedEpitopeIds = alignmentResult.selectedEpitopeIds;

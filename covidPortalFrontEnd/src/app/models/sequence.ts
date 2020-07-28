@@ -3,6 +3,7 @@ import { TableColumnObj } from './tableColumn';
 export class ColumnFilter {
   columnName:string;
   columnFilterValues:string[];
+  selectedValue:string;
 }
 
 export class SequenceObj {

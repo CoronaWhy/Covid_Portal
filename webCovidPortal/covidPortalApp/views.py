@@ -403,7 +403,7 @@ def showAlignment(request):
             sequenceObjList.append(sequenceRecord)
 
         fieldList = ['host', 'organism', 'taxon_id', 'accession', 'country','isolation_source' ]
-        
+
         columnFilterList = []
         columnFilterList = [{"columnName":fieldLabel,"columnFilterValues":list(set([x[fieldLabel] for x in sequenceObjList ] )) } for fieldLabel in fieldList]
         fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "host" else {"columnName":x,"rowColor":"#FFFFFF"} for x in fieldList ]
@@ -433,9 +433,13 @@ def showAlignment(request):
             epitopeExperimentObjList.append(epitopeExperimentObj)
 
         fieldList = ['host', 'assay_type', 'assay_result','mhc_allele','mhc_class','exp_method','measurement_type','iedb_id']
+
+        columnFilterList = []
+        columnFilterList = [{"columnName":fieldLabel,"columnFilterValues":list(set([x[fieldLabel] for x in epitopeExperimentObjList ] )) } for fieldLabel in fieldList]
+
         fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "host" else {"columnName":x, "rowColor":"#FFFFFF"} for x in fieldList ]
 
-        epitopeExperimentResultObj = {"epitopeExperimentTableColumnObjs":fieldObjList, "epitopeExperimentObjList":epitopeExperimentObjList, "epitopeSortColumn":"host"}
+        epitopeExperimentResultObj = {"epitopeExperimentTableColumnObjs":fieldObjList, "epitopeExperimentObjList":epitopeExperimentObjList, "epitopeSortColumn":"host", "columnFilterList":columnFilterList}
 
         structureChainObjs = structurechains ({"mesh_id": MESH_ID})
 
@@ -455,9 +459,13 @@ def showAlignment(request):
             structureChainObjList.append(structureChainObj)
 
         fieldList = ["taxon", "pdb_id", "chain"]
+
+        columnFilterList = []
+        columnFilterList = [{"columnName":fieldLabel,"columnFilterValues":list(set([x[fieldLabel] for x in structureChainObjList ] )) } for fieldLabel in fieldList]
+
         fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "taxon" else {"columnName":x, "rowColor":"#FFFFFF"} for x in fieldList ]
 
-        structureChainResultObj = {"structureChainTableColumnObjs":fieldObjList, "structureChainObjList":structureChainObjList, "structureSortColumn":"taxon"}
+        structureChainResultObj = {"structureChainTableColumnObjs":fieldObjList, "structureChainObjList":structureChainObjList, "structureSortColumn":"taxon", "columnFilterList":columnFilterList}
 
         nomenclaturePositionObj = {}
 
