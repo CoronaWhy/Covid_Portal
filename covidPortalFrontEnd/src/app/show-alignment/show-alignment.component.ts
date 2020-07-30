@@ -11,7 +11,7 @@ import { AlignmentObj, ResidueObj } from '../models/alignment';
 import { SequenceResultObj, SequenceObj } from '../models/sequence';
 import { PopupValueObj } from '../models/popupvalue';
 import { EpitopeObj, EpitopeOffsetObj, EpitopeExperimentObj, EpitopeExperimentResultObj } from '../models/epitope';
-import { StructureObj, StructureChainObj, StructureChainResultObj } from '../models/structure';
+import { StructureObj, StructureChainObj, StructureChainResultObj, DistanceObj } from '../models/structure';
 import { ActivatedRoute, Params, Routes, Router } from '@angular/router';
 import { Options } from 'ng5-slider';
 import { Page } from '../models/page';
@@ -70,7 +70,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     structureChainObjList:StructureChainObj[];
 
     savedSequenceObjList:SequenceObj[];
-    // savedEpitopeExperimentObjList:EpitopeExperimentResultObj[];
+    savedEpitopeExperimentObjList : EpitopeExperimentObj[];
     savedStructureChainObjList:StructureChainObj[];
 
     epitopeObjList:EpitopeObj[];
@@ -127,6 +127,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     sortStructureChainTableColumn = 'taxon';
     sortEpitopeExperimentTableColumn = 'host';
+
+    distanceObjList : DistanceObj[];
 
     @ViewChild('sequenceTable') sequenceTable;
 
@@ -385,11 +387,25 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
    filterSequenceTable(columnName, columnFilterValue){
 
-     // this.sequenceObjList.filter(item => {
-     //      return item[columnName].includes(columnFilterValue);
-     //  });
-     //
-     //  this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+     console.log(" columnName " + columnName + " columnFilterValue " + columnFilterValue);
+
+     this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
+
+     let tempList = [];
+
+     for (let i = 0; i < this.sequenceObjList.length; i++){
+        for (let j = 0; j < this.sequenceResultObj.columnFilterList.length; j++){
+
+        }
+     }
+
+     this.sequenceObjList.filter(item => {
+          return item[columnName].includes(columnFilterValue);
+      });
+
+      console.log(this.sequenceObjList);
+
+      this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
 
    }
 
@@ -397,15 +413,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
      console.log(" columnName " + columnName + " columnFilterValue " + columnFilterValue);
 
-     // for (let i = 0; i < this.epitopeExperimentObjList.length; i++) {
-     //   if (this.epitopeExperimentObjList[i].columnFilterList.columnName == columnName) {
-       //   for (let j = 0; j < epitopeExperimentResultObj.columnFilterList[i].columnFilterValues; j++) {
-       //     if (epitopeExperimentResultObj.columnFilterList[i].columnFilterValues[j] == columnFilterValue){
-       //       epitopeExperimentResultObj.columnFilterList[i].columnFilterValues[j].selectedValue = columnFilterValue;
-       //     }
-       //   }
-     //   }
-     // }
+     this.epitopeExperimentObjList = JSON.parse(JSON.stringify(this.savedEpitopeExperimentObjList));
 
      this.epitopeExperimentObjList = this.epitopeExperimentObjList.filter(item => {
           return item[columnName].includes(columnFilterValue);
@@ -417,11 +425,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
    filterStructureTable(columnName, columnFilterValue){
 
-     // this.structureChainObjList.filter(item => {
-     //      return item[columnName].includes(columnFilterValue);
-     //  });
-     //
-     //  this.displaystructureChainObjList = this.structureChainObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+     console.log(" columnName " + columnName + " columnFilterValue " + columnFilterValue);
+
+     this.structureChainObjList = JSON.parse(JSON.stringify(this.savedStructureChainObjList));
+
+     this.structureChainObjList.filter(item => {
+          return item[columnName].includes(columnFilterValue);
+      });
+
+      this.displayStructureChainObjList = this.structureChainObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
 
    }
 
@@ -497,6 +509,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
     positionToEpitope(offset){
+      console.log(" offset "  + offset);
+
+      this.positionSliderValue = offset;
+      this.slideSequences();
+    }
+
+    positionStructure(offset){
       console.log(" offset "  + offset);
 
       this.positionSliderValue = offset;
@@ -789,14 +808,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          console.log(this.sequenceTableColumnObjs);
          // console.log(this.structureChainTableColumns);
 
-         this.savedSequenceObjList = this.sequenceObjList;
-
+         // sequence obj list
          this.sequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
+         this.savedSequenceObjList = JSON.parse(JSON.stringify(alignmentResult.sequenceResultObj.sequenceObjList));
          this.displaySequenceObjList = alignmentResult.sequenceResultObj.sequenceObjList;
 
+         // structures
          this.structureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
-         this.savedStructureChainObjList = this.structureChainObjList;
-
+         this.savedStructureChainObjList = JSON.parse(JSON.stringify(this.structureChainObjList));
          this.displayStructureChainObjList = alignmentResult.structureChainResultObj.structureChainObjList;
 
          this.alignmentObjList = alignmentResult.alignmentObjList;
@@ -805,9 +824,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          console.log( " this.structureObjList " + this.structureObjList);
 
+         // epitopes
          this.epitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
-         // this.epitopeExperimentResultObjList = this.epitopeExperimentObjList;
-
+         this.savedEpitopeExperimentObjList = JSON.parse(JSON.stringify(this.epitopeExperimentObjList));
          this.displayEpitopeExperimentObjList = alignmentResult.epitopeExperimentResultObj.epitopeExperimentObjList;
 
          this.epitopeExperimentResultObj = alignmentResult.epitopeExperimentResultObj;
@@ -894,8 +913,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       //   let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
       //   this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
 
-      console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
-    + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
+    //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
+    // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
 
       let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
       this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
@@ -903,6 +922,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let distances:number[];
       let distance = 0;
       distances = [];
+
+      this.distanceObjList = [];
       for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
         // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
          distance = 0;
@@ -943,7 +964,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
          // console.log(" i = " + i + " distance = " + distance);
       }
 
-      console.log(" distances = " + distances.length);
+      // console.log(" distances = " + distances.length);
 
       // normalise to 0 and 1
       let maxDistance = Math.max(...distances);
@@ -958,7 +979,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         );
       }
 
-      console.log(" normalizedDistances length " + normalizedDistances.length);
+      // console.log(" normalizedDistances length " + normalizedDistances.length);
 
       let baseColor = "#ADB236";
 
@@ -966,26 +987,37 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       // let f = 'rgb(0,0.100)';
       //
       // let tr = document.getElementById("tr_0");
-
+      let distanceObj : DistanceObj;
+      let distanceColor : string;
       for (let i = 0; i< normalizedDistances.length; i++){
 
-        // console.log( " i = " + i + " val " + normalizedDistances[i]*100);
-        console.log( " i = " + i );
+          if (normalizedDistances[i] == 0){
+            console.log( " normalizedDistances = " + i + " -- " + normalizedDistances[i]);
+          }
+          distanceObj = new DistanceObj();
 
-        // let td = document.getElementById("td_0_"+ i);
-
-        // if(td){
+          distanceObj.percOffset = 0;
+          distanceObj.backgroundColor = "#D9D9E1";
+          distanceObj.offset = i;
 
           if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
 
-            this.displayStructureObjList[listIndex].residueObjList[i].residueTableCellColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
+            distanceColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
 
-            // td.style.backgroundColor = this.lightenDarkenColor(baseColor, normalizedDistances[i]*100);
+            this.displayStructureObjList[listIndex].residueObjList[i].residueTableCellColor = distanceColor;
 
-            // console.log( " bkgcolor = " + td.style.backgroundColor );
+            distanceObj.percOffset = normalizedDistances[i]*100;
+
+            if ( normalizedDistances[i] != 0 ) {
+              distanceObj.backgroundColor = distanceColor;
+            }
+            else {
+              distanceObj.backgroundColor = "#8B0000";
+            }
+
           }
 
-        // }
+          this.distanceObjList.push(distanceObj);
 
       }
 

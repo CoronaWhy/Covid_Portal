@@ -142,6 +142,7 @@
      </tbody>
      <!-- END STRUCTURE -------------------------------------------------------->
      <!-- BEGIN SCROLLBAR ------------------------------------------------------>
+
      <tfoot>
          <td></td>
          <td></td>
@@ -182,6 +183,23 @@
          </td>
          <td></td>
          <td></td>
+     </tfoot>
+
+     <tfoot>
+        <td></td>
+        <td></td>
+        <td colspan=16>
+          <div *ngIf="displayAlignmentObjList">
+              Distances in protein structure (click to navigate):&nbsp;
+              <br/>
+              <div class="positionContainer">
+                <div class="positionBox" style="background: #D9D9E1;"></div>
+                  <div *ngFor = "let distanceObj of distanceObjList" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);"></div>
+              </div>
+          </div>
+        </td>
+        <td></td>
+        <td></td>
      </tfoot>
 
      <!-- END SCROLLBAR -------------------------------------------------------->
@@ -285,52 +303,54 @@
                       <td>
                         <a href="#">
                           Accession
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
                         </a>
                       </td>
 
                       <td>
                         <a href="#">
                           Organism
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
                         </a>
                       </td>
 
                       <td>
                         <a href="#">
                           Collection Date
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
                         </a>
                       </td>
+
+                      <td>
+                        <a href="#">
+                          Country
+                        </a>
+                      </td>
+
+                      <td>
+                        <a href="#">
+                          Host
+                        </a>
+                      </td>
+
                       <td>
                         <a href="#">
                           Isolation Source
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
                         </a>
                       </td>
+
+                      <td>
+                        <a href="#">
+                          Isolate
+                        </a>
+                      </td>
+
+                      <td>
+                        <a href="#">
+                          Taxon ID
+                        </a>
+                      </td>
+
                       <td>
                         <a href="#">
                           Coded By
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
-                        </a>
-                      </td>
-                      <td>
-                        <a href="#">
-                          Protein
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
-                        </a>
-                      </td>
-                      <td>
-                        <a href="#">
-                          Taxon
-                          <!-- <div class="arrow-up"></div>
-                          <div class="arrow-down"></div> -->
                         </a>
                       </td>
                     </tr>
@@ -338,7 +358,7 @@
 
                   <tbody>
                     <tr>
-                      <td></td>
+                      <td width="50px"></td>
                       <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px">
 
                         <div class="row">
@@ -354,6 +374,7 @@
 
                       </td>
                     </tr>
+
                     <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
                       <td width="50px">
                         <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadAlignment($event)">
@@ -371,18 +392,29 @@
                       </td>
 
                       <td width="50px">
+                        {{row.country}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.host}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.isolation_source}}
+                      </td>
+
+                      <td width="50px">
                         {{row.isolate}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.taxon_id}}
                       </td>
 
                       <td width="50px">
                         {{row.coded_by}}
                       </td>
-                      <td width="50px">
-                        {{row.protein}}
-                      </td>
-                      <td width="50px">
-                        {{row.taxon}}
-                      </td>
+
                     </tr>
                   </tbody>
 

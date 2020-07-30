@@ -64,17 +64,18 @@ def sequencerecords(params):
         protein__mesh_id=params['mesh_id'],
         *qs
     ):
-        recs.append({
-            'accession':r.accession,
-            'organism':r.organism,
-            'collection_date':str(r.collection_date),
-            'country':r.country,
-            'host':r.host,
-            'isolation_source':r.isolation_source,
-            'isolate':r.isolate,
-            'taxon_id':r.taxon.gb_taxon_id,
-            'coded_by':r.coded_by,
-        });
+        if Sequence.objects.filter(sequence_record = r).exists():
+            recs.append({
+                'accession':r.accession,
+                'organism':r.organism,
+                'collection_date':str(r.collection_date),
+                'country':r.country,
+                'host':r.host,
+                'isolation_source':r.isolation_source,
+                'isolate':r.isolate,
+                'taxon_id':r.taxon.gb_taxon_id,
+                'coded_by':r.coded_by,
+            });
 
     return recs;
     # response = HttpResponse(
@@ -374,19 +375,22 @@ def epitopesequence(params):
 #     else:
 #         return error_respone("Invalid request");
 def structurechains(params):
+
     if not 'mesh_id' in params:
         return error_response("No MeSH ID specified");
-
+    if not 'alignment' in params:
+        return error_response("No alignment specified");
     # fetch
     recs = [];
-    for r in StructureChain.objects.filter(
-        protein__mesh_id=params['mesh_id'],
+    for r in StructureChainSequence.objects.filter(
+        chain__protein__mesh_id=params['mesh_id'],
+        alignment__name=params['alignment'],
     ):
         recs.append({
-            'taxon'             : r.structure.taxon.name,
-            'taxon_id'          : r.structure.taxon.gb_taxon_id,
-            'pdb_id'            : r.structure.pdb_id,
-            'chain'             : r.name
+            'taxon'             : r.chain.structure.taxon.name,
+            'taxon_id'          : r.chain.structure.taxon.gb_taxon_id,
+            'pdb_id'            : r.chain.structure.pdb_id,
+            'chain'             : r.chain.name
         });
 
     # return

@@ -399,11 +399,10 @@ def showAlignment(request):
             if  sequenceRecord["accession"] in  SELECTED_ACCESSIONS:
                 sequenceRecord["isSelected"] = True
                 selectedSequenceRecords.append(sequenceRecord)
-
             sequenceObjList.append(sequenceRecord)
 
-        fieldList = ['host', 'organism', 'taxon_id', 'accession', 'country','isolation_source' ]
-
+        # fieldList = ['host', 'organism', 'taxon_id', 'accession', 'country','isolation_source' ]
+        fieldList = ['accession','organism','collection_date','country','host','isolation_source','isolate','taxon_id','coded_by' ]
         columnFilterList = []
         columnFilterList = [{"columnName":fieldLabel,"columnFilterValues":list(set([x[fieldLabel] for x in sequenceObjList ] )) } for fieldLabel in fieldList]
         fieldObjList = [{"columnName":x, "rowColor":"#A3E4EE"} if x == "host" else {"columnName":x,"rowColor":"#FFFFFF"} for x in fieldList ]
@@ -441,7 +440,7 @@ def showAlignment(request):
 
         epitopeExperimentResultObj = {"epitopeExperimentTableColumnObjs":fieldObjList, "epitopeExperimentObjList":epitopeExperimentObjList, "epitopeSortColumn":"host", "columnFilterList":columnFilterList}
 
-        structureChainObjs = structurechains ({"mesh_id": MESH_ID})
+        structureChainObjs = structurechains ({"mesh_id": MESH_ID,"alignment":ALIGNMENT_NAME})
 
         structureChainObjList = []
 
@@ -458,7 +457,7 @@ def showAlignment(request):
                 structureChainObj["isSelected"] = True
             structureChainObjList.append(structureChainObj)
 
-        fieldList = ["taxon", "pdb_id", "chain"]
+        fieldList = ["taxon", "taxon_id","pdb_id", "chain"]
 
         columnFilterList = []
         columnFilterList = [{"columnName":fieldLabel,"columnFilterValues":list(set([x[fieldLabel] for x in structureChainObjList ] )) } for fieldLabel in fieldList]

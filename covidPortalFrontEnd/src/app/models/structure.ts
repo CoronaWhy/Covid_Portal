@@ -21,3 +21,10 @@ export class StructureChainResultObj {
   structureChainTableColumnObjs :TableColumnObj[];
   structureSortColumn:string;
 }
+
+export class DistanceObj {
+  pdbchain:string;
+  offset:number;
+  percOffset:number;
+  backgroundColor:string;
+}
