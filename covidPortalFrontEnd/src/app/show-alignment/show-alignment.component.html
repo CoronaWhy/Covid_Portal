@@ -264,7 +264,7 @@
 
       <!-- <div  class="row " style="float:right;"> -->
 
-      <div class="row mt-2 col-md-12" >
+      <div class="row mt-2 col-md-12">
 
       Sort:&nbsp;
 
@@ -284,9 +284,9 @@
     </div>
 
 				<div  class="mt-2 col-md-12">
-        <div class="row" style="float:clear;overflow: scroll;height:400px;">
+        <div class="row" style="float:clear;height:400px;overflow: auto;">
 
-            <div *ngIf="displaySequenceObjList?.length > 0">
+            <div>
 
 
                 <table class="table table-bordered table-striped">
@@ -294,59 +294,59 @@
                   <thead>
                     <tr>
 
-                      <td>
+                      <td >
                           Select
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Accession
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Organism
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Collection Date
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Country
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Host
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Isolation Source
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Isolate
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Taxon ID
                         </a>
                       </td>
 
-                      <td>
+                      <td >
                         <a href="#">
                           Coded By
                         </a>
@@ -354,14 +354,14 @@
                     </tr>
                   </thead>
 
-                  <tbody>
+                  <tbody style="z-index:99">
                     <tr>
-                      <td width="50px"></td>
-                      <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px">
+                      <td width="50px" ></td>
+                      <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px" >
 
                         <div class="row">
                           <div class="col">
-                            <div ngbDropdown class="d-inline-block">
+                            <div ngbDropdown class="d-inline-block" style="z-index: auto">
                               <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
                               <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                 <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterSequenceTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
@@ -372,6 +372,8 @@
 
                       </td>
                     </tr>
+                  </tbody>
+                  <tbody  *ngIf="displaySequenceObjList?.length > 0">
 
                     <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
                       <td width="50px">

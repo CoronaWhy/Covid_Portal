@@ -393,28 +393,66 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
      this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
 
      let tempList = [];
+     let okFlag : boolean;
 
      for (let i = 0; i < this.sequenceObjList.length; i++){
-       console.log(" i = " + i);
+       // console.log(" i = " + i);
         for (let j = 0; j < this.sequenceResultObj.columnFilterList.length; j++){
-          console.log(" j = " + j);
-          console.log(" this.sequenceResultObj.columnFilterList[j].columnName = " + this.sequenceResultObj.columnFilterList[j].columnName + " columnName " + columnName);
+          // console.log(" j = " + j);
+          // console.log(" this.sequenceResultObj.columnFilterList[j].columnName = " + this.sequenceResultObj.columnFilterList[j].columnName + " columnName " + this.sequenceObjList[i][columnName] + " filter " + columnFilterValue);
 
-          if (this.sequenceResultObj.columnFilterList[j].columnName == columnName){
+          // for column the user wants to filter
+          if (columnFilterValue != '' ){
 
-             if(this.sequenceObjList[i][columnName] == columnFilterValue) {
-               tempList.push(this.sequenceObjList[i]);
+            if (this.sequenceResultObj.columnFilterList[j].columnName == columnName  && this.sequenceObjList[i][columnName] == columnFilterValue) {
+               // console.log (" ************* in loop " + this.sequenceResultObj.columnFilterList[j].columnName + " - " + columnName && this.sequenceObjList[i][columnName]);
+               okFlag = true;
+               for (let k = 0; k < this.sequenceResultObj.columnFilterList.length; k++){
+                 // if (j!=k && this.sequenceResultObj.columnFilterList[k].selectedValue!= '' &&  this.sequenceObjList[i][this.sequenceResultObj.columnFilterList[k].columnName] != this.sequenceResultObj.columnFilterList[k].selectedValue ) {
+                   if (j!=k
+                      && this.sequenceResultObj.columnFilterList[k].selectedValue
+                      && this.sequenceResultObj.columnFilterList[k].selectedValue != ''
+                      &&  this.sequenceObjList[i][this.sequenceResultObj.columnFilterList[k].columnName] != this.sequenceResultObj.columnFilterList[k].selectedValue
+                      ) {
+                    console.log (this.sequenceResultObj.columnFilterList[k].selectedValue);
+                      okFlag = false;
+                      break;
+                 }
+               }
+               if (okFlag){
+                 tempList.push(this.sequenceObjList[i]);
+               }
                this.sequenceResultObj.columnFilterList[j].selectedValue = columnFilterValue;
-
              }
-
-             //  this.sequenceObjList.filter(item => {
-             //     return item[columnName].includes(columnFilterValue);
-             // });
           }
+          else {
+            okFlag = true;
+            for (let k = 0; k < this.sequenceResultObj.columnFilterList.length; k++){
+
+                if (this.sequenceResultObj.columnFilterList[k].columnName == columnName){
+                  this.sequenceResultObj.columnFilterList[k].selectedValue = '';
+                }
+
+              // if (j!=k && this.sequenceResultObj.columnFilterList[k].selectedValue!= '' &&  this.sequenceObjList[i][this.sequenceResultObj.columnFilterList[k].columnName] != this.sequenceResultObj.columnFilterList[k].selectedValue ) {
+                if (j!=k
+                   && this.sequenceResultObj.columnFilterList[k].selectedValue
+                   && this.sequenceResultObj.columnFilterList[k].selectedValue != ''
+                   &&  this.sequenceObjList[i][this.sequenceResultObj.columnFilterList[k].columnName] != this.sequenceResultObj.columnFilterList[k].selectedValue
+                   ) {
+                 console.log (this.sequenceResultObj.columnFilterList[k].selectedValue);
+                   okFlag = false;
+                   break;
+              }
+            }
+            if (okFlag){
+              tempList.push(this.sequenceObjList[i]);
+            }
+
+          }
+
         }
      }
-      console.log(tempList);
+      // console.log(tempList);
 
       this.displaySequenceObjList = tempList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
 
@@ -431,6 +469,74 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       });
 
       this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+
+     // console.log(" columnName " + columnName + " columnFilterValue " + columnFilterValue);
+     //
+     // this.epitopeObjList = JSON.parse(JSON.stringify(this.savedEpitopeObjList));
+     //
+     // let tempList = [];
+     // let okFlag : boolean;
+     //
+     // for (let i = 0; i < this.epitopeObjList.length; i++){
+     //   // console.log(" i = " + i);
+     //    for (let j = 0; j < this.epitopeExperimentObj.columnFilterList.length; j++){
+     //      // console.log(" j = " + j);
+     //      // console.log(" this.sequenceResultObj.columnFilterList[j].columnName = " + this.sequenceResultObj.columnFilterList[j].columnName + " columnName " + this.sequenceObjList[i][columnName] + " filter " + columnFilterValue);
+     //
+     //      // for column the user wants to filter
+     //      if (columnFilterValue != '' ){
+     //
+     //        if (this.epitopeExperimentResultObj.columnFilterList[j].columnName == columnName  && this.epitopeObjList[i][columnName] == columnFilterValue) {
+     //           // console.log (" ************* in loop " + this.sequenceResultObj.columnFilterList[j].columnName + " - " + columnName && this.sequenceObjList[i][columnName]);
+     //           okFlag = true;
+     //           for (let k = 0; k < this.epitopeExperimentResultObj.columnFilterList.length; k++){
+     //             // if (j!=k && this.sequenceResultObj.columnFilterList[k].selectedValue!= '' &&  this.sequenceObjList[i][this.sequenceResultObj.columnFilterList[k].columnName] != this.sequenceResultObj.columnFilterList[k].selectedValue ) {
+     //               if (j!=k
+     //                  && this.epitopeExperimentObj.columnFilterList[k].selectedValue
+     //                  && this.epitopeExperimentObj.columnFilterList[k].selectedValue != ''
+     //                  &&  this.epitopeObjList[i][this.epitopeExperimentResultObj.columnFilterList[k].columnName] != this.epitopeExperimentResultObj.columnFilterList[k].selectedValue
+     //                  ) {
+     //                console.log (this.epitopeExperimentResultObj.columnFilterList[k].selectedValue);
+     //                  okFlag = false;
+     //                  break;
+     //             }
+     //           }
+     //           if (okFlag){
+     //             tempList.push(this.epitopeObjList[i]);
+     //           }
+     //           this.epitopeExperimentResultObj.columnFilterList[j].selectedValue = columnFilterValue;
+     //         }
+     //      }
+     //      else {
+     //        okFlag = true;
+     //        for (let k = 0; k < this.epitopeExperimentResultObj.columnFilterList.length; k++){
+     //
+     //            if (this.epitopeExperimentResultObj.columnFilterList[k].columnName == columnName){
+     //              this.epitopeExperimentResultObj.columnFilterList[k].selectedValue = '';
+     //            }
+     //
+     //          // if (j!=k && this.sequenceResultObj.columnFilterList[k].selectedValue!= '' &&  this.sequenceObjList[i][this.sequenceResultObj.columnFilterList[k].columnName] != this.sequenceResultObj.columnFilterList[k].selectedValue ) {
+     //            if (j!=k
+     //               && this.epitopeExperimentResultObj.columnFilterList[k].selectedValue
+     //               && this.epitopeExperimentResultObj.columnFilterList[k].selectedValue != ''
+     //               &&  this.epitopeObjList[i][this.epitopeExperimentResultObj.columnFilterList[k].columnName] != this.epitopeExperimentResultObj.columnFilterList[k].selectedValue
+     //               ) {
+     //             console.log (this.epitopeExperimentResultObj.columnFilterList[k].selectedValue);
+     //               okFlag = false;
+     //               break;
+     //          }
+     //        }
+     //        if (okFlag){
+     //          tempList.push(this.epitopeObjList[i]);
+     //        }
+     //
+     //      }
+     //
+     //    }
+     // }
+     //  // console.log(tempList);
+     //
+     //  this.displayEpitopeObjList = tempList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
 
    }
 
