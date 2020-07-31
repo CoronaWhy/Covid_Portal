@@ -3,7 +3,7 @@
   <b>Loading ...</b>
 </div>
 
-<div class="container" *ngIf="displayAlignmentObjList">
+<div class="container" *ngIf="displayAlignmentObjList" id ="mainContainter">
   <table border=0 class="table paneltable" id="paneltable">
      <thead>
          <th></th>
@@ -354,7 +354,7 @@
                     </tr>
                   </thead>
 
-                  <tbody style="z-index:99">
+                  <tbody id = "filterSequenceBody">
                     <tr>
                       <td width="50px" ></td>
                       <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px" >
