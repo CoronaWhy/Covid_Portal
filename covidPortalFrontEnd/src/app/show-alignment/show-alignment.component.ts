@@ -288,6 +288,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.epitopeObjList.sort((a, b) => (a.epitopeExperimentObj[this.epitopeExternalSortColumn] > b.epitopeExperimentObj[this.epitopeExternalSortColumn]) ? 1 : ( a.epitopeExperimentObj[this.epitopeInternalSortColumn] > b.epitopeExperimentObj[this.epitopeInternalSortColumn] ? 1 :-1) );
              for (let i = 0; i < this.epitopeObjList.length; i++){
                if (columnNumber == 0){
+                 // console.log(" setting ")
                  this.epitopeObjList[i].externalSortColumnValue = this.epitopeObjList[i].epitopeExperimentObj[sortColumn];
                }
                else if (columnNumber == 1){
@@ -394,18 +395,28 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
      let tempList = [];
 
      for (let i = 0; i < this.sequenceObjList.length; i++){
+       console.log(" i = " + i);
         for (let j = 0; j < this.sequenceResultObj.columnFilterList.length; j++){
+          console.log(" j = " + j);
+          console.log(" this.sequenceResultObj.columnFilterList[j].columnName = " + this.sequenceResultObj.columnFilterList[j].columnName + " columnName " + columnName);
 
+          if (this.sequenceResultObj.columnFilterList[j].columnName == columnName){
+
+             if(this.sequenceObjList[i][columnName] == columnFilterValue) {
+               tempList.push(this.sequenceObjList[i]);
+               this.sequenceResultObj.columnFilterList[j].selectedValue = columnFilterValue;
+
+             }
+
+             //  this.sequenceObjList.filter(item => {
+             //     return item[columnName].includes(columnFilterValue);
+             // });
+          }
         }
      }
+      console.log(tempList);
 
-     this.sequenceObjList.filter(item => {
-          return item[columnName].includes(columnFilterValue);
-      });
-
-      console.log(this.sequenceObjList);
-
-      this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+      this.displaySequenceObjList = tempList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
 
    }
 
