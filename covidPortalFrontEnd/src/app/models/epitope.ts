@@ -3,7 +3,6 @@ import { TableColumnObj } from './tableColumn';
 import { ColumnFilter } from './sequence';
 
 export class EpitopeExperimentObj {
-  columnFilterList:ColumnFilter[];
   id:number;
   host:string;
   assay_type:string;
@@ -33,6 +32,7 @@ export class EpitopeObj {
 }
 
 export class EpitopeExperimentResultObj {
+  columnFilterList:ColumnFilter[];
   epitopeExperimentObjList:EpitopeExperimentObj[];
   epitopeExperimentTableColumnObjs :TableColumnObj[];
   epitopeSortColumn:string;

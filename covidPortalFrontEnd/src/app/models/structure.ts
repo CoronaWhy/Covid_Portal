@@ -1,5 +1,6 @@
 import { ResidueObj } from './alignment';
 import { TableColumnObj } from './tableColumn';
+import { ColumnFilter } from './sequence';
 
 export class StructureChainObj {
   taxon:string;
@@ -17,6 +18,7 @@ export class StructureObj {
 }
 
 export class StructureChainResultObj {
+  columnFilterList:ColumnFilter[];
   structureChainObjList:StructureChainObj[];
   structureChainTableColumnObjs :TableColumnObj[];
   structureSortColumn:string;

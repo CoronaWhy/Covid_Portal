@@ -279,7 +279,8 @@
         </div>
       </div>
 
-      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">
+      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">&nbsp;
+      <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetSequenceTable()">Reset</button>
 
     </div>
 
@@ -456,14 +457,15 @@
               </div>
             </div>
           <!-- </div> -->
-          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeTable()">
+          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeTable()">&nbsp;
+          <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetEpitopeExperimentTable()">Reset</button>
           </div>
 
         </div>
         <div class="row" style="float:clear;">
           <br/>&nbsp;
         </div>
-          <div class="row" style="float:clear;overflow: scroll;height:400px;">
+          <div class="row" style="float:clear;overflow: auto;height:400px;">
 
               <div *ngIf="displayEpitopeExperimentObjList?.length > 0">
 
@@ -546,6 +548,10 @@
                         </td>
                       </tr>
 
+                    </tbody>
+
+                    <tbody>
+
                       <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
 
                         <td>
@@ -618,7 +624,8 @@
                 </div>
               </div>
             <!-- </div> -->
-            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureChainString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureChainTable()">
+            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureChainString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureChainTable()">&nbsp;
+            <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetStructureChainTable()">Reset</button>
             </div>
 
           </div>
@@ -685,6 +692,9 @@
                             </div>
                           </td>
                         </tr>
+
+                      </tbody>
+                      <tbody>
 
                         <tr *ngFor ="let row of displayStructureChainObjList" style="line-height: 50px; height: 50px;">
                           <td>
