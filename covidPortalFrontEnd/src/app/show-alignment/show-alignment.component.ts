@@ -65,6 +65,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     sequences:SequenceObj[];
     sequenceResultObj:SequenceResultObj;
 
+    alignmentPrevButtonColor:string;
+    alignmentNextButtonColor:string;
+
+    epitopePrevButtonColor:string;
+    epitopeNextButtonColor:string;
+
+    structurePrevButtonColor:string;
+    structureNextButtonColor:string;
+
     sequenceObjList:SequenceObj[];
     epitopeExperimentResultObj:EpitopeExperimentResultObj;
     structureChainObjList:StructureChainObj[];
@@ -96,14 +105,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     searchString:string;
     numRowsInPage:number;
 
-    hidePrevButton: boolean;
-    hideNextButton: boolean;
+    hideAlignmentPrevButton: boolean;
+    hideAlignmentNextButton: boolean;
 
-    epitopeHidePrevButton: boolean;
-    epitopeHideNextButton: boolean;
+    hideEpitopePrevButton: boolean;
+    hideEpitopeNextButton: boolean;
 
-    structureHidePrevButton: boolean;
-    structureHideNextButton: boolean;
+    hideStructurePrevButton: boolean;
+    hideStructureNextButton: boolean;
 
     nomenclaturePositionStrings:string[];
     displayNomenclaturePositionStrings:string[];
@@ -131,15 +140,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     distanceObjList : DistanceObj[];
 
     @ViewChild('sequenceTable') sequenceTable;
-
-    /**
-     * A method that mocks a paged server response
-     * @param page The selected page
-     * @returns {any} An observable containing the employee data
-     */
-    public getResults(page: Page): Observable<PagedData<SequenceObj>> {
-        return Observable.of(this.sequenceObjList).map(data => this.getPagedData(page));
-    }
 
     openAlignmentModal(value){
       // console.log(value);
@@ -659,26 +659,34 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
    }
 
-   showNext(){
-     this.offset += 1;
-     console.log(" this.offset " + this.offset);
-     this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
-     if (this.offset > 1){
-       this.hidePrevButton = false;
-     }
-
-   }
-
-   showPrev(){
+   showAlignmentPrev(){
 
       if (this.offset > 0){
         this.offset -= 1;
         this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
         if (this.offset == 0){
-          this.hidePrevButton = true;
+          this.hideAlignmentPrevButton = true;
+          this.alignmentPrevButtonColor = "#93477C";
+        }
+        if (this.displaySequenceObjList.length < this.numRowsInPage){
+          this.hideAlignmentNextButton = true;
+          this.alignmentNextButtonColor = "#93477C";
         }
       }
+   }
 
+   showAlignmentNext(){
+      this.offset += 1;
+      console.log(" this.offset " + this.offset);
+      this.displaySequenceObjList = this.sequenceObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+      if (this.offset > 1){
+        this.hideAlignmentPrevButton = false;
+        this.alignmentPrevButtonColor = "#834793";
+      }
+      if (this.displaySequenceObjList.length < this.numRowsInPage){
+        this.hideAlignmentNextButton = true;
+        this.alignmentNextButtonColor = "#93477C";
+      }
    }
 
    showEpitopeNext(){
@@ -689,31 +697,56 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
      this.epitopeOffset += 1;
      console.log(" this.epitopeOffset " + this.epitopeOffset);
      this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.epitopeOffset*this.numRowsInPage, (this.epitopeOffset+1)*this.numRowsInPage );
-     if (this.epitopeOffset > 1){
-       this.epitopeHidePrevButton = false;
+     // if (this.epitopeOffset > 1){
+     //   this.epitopeHidePrevButton = false;
+     //   this.epitopePrevButtonColor = "#93477C";
+     // }
+     if (this.epitopeOffset == 0){
+       this.hideEpitopePrevButton = true;
+       this.epitopePrevButtonColor = "#93477C";
      }
+     if (this.displayEpitopeExperimentObjList.length < this.numRowsInPage){
+       this.hideEpitopeNextButton = true;
+       this.epitopeNextButtonColor = "#93477C";
+     }
+  }
 
+  showEpitopePrev(){
+
+    if (this.epitopeOffset > 0){
+      this.epitopeOffset -= 1;
+      this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.epitopeOffset*this.numRowsInPage, (this.epitopeOffset+1)*this.numRowsInPage );
+      // if (this.epitopeOffset == 0){
+      //   this.epitopeHidePrevButton = true;
+      // }
+    }
+    if (this.epitopeOffset > 1){
+      this.hideEpitopePrevButton = false;
+      this.epitopePrevButtonColor = "#834793";
+    }
+    if (this.displayEpitopeExperimentObjList.length < this.numRowsInPage){
+      this.hideEpitopeNextButton = true;
+      this.epitopeNextButtonColor = "#93477C";
     }
 
-    showEpitopePrev(){
-
-      if (this.epitopeOffset > 0){
-        this.epitopeOffset -= 1;
-        this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(this.epitopeOffset*this.numRowsInPage, (this.epitopeOffset+1)*this.numRowsInPage );
-        if (this.epitopeOffset == 0){
-          this.epitopeHidePrevButton = true;
-        }
-      }
-
-    }
+  }
 
     showStructureNext(){
 
       this.structureOffset += 1;
       console.log(" this.structureOffset " + this.structureOffset);
       this.displayStructureChainObjList = this.structureChainObjList.slice(this.structureOffset*this.numRowsInPage, (this.structureOffset+1)*this.numRowsInPage );
-      if (this.structureOffset > 1){
-        this.structureHidePrevButton = false;
+      // if (this.structureOffset > 1){
+      //   this.structureHidePrevButton = false;
+      // }
+
+      if (this.structureOffset == 0){
+        this.hideStructurePrevButton = true;
+        this.structurePrevButtonColor = "#93477C";
+      }
+      if (this.displayStructureChainObjList.length < this.numRowsInPage){
+        this.hideStructureNextButton = true;
+        this.structureNextButtonColor = "#93477C";
       }
 
      }
@@ -723,9 +756,17 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
        if (this.structureOffset > 0){
          this.structureOffset -= 1;
          this.displayStructureChainObjList = this.structureChainObjList.slice(this.structureOffset*this.numRowsInPage, (this.structureOffset+1)*this.numRowsInPage );
-         if (this.epitopeOffset == 0){
-           this.structureHidePrevButton = true;
-         }
+         // if (this.epitopeOffset == 0){
+         //   this.structureHidePrevButton = true;
+         // }
+       }
+       if (this.structureOffset > 1){
+         this.hideStructurePrevButton = false;
+         this.structurePrevButtonColor = "#834793";
+       }
+       if (this.displayStructureChainObjList.length < this.numRowsInPage){
+         this.hideStructureNextButton = true;
+         this.structureNextButtonColor = "#93477C";
        }
 
     }
@@ -820,36 +861,35 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       }
     }
 
-    filterDatatable(){
+    filterSequenceDatatable(){
+
+      this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
+
       this.sequenceObjList = this.sequenceObjList.filter(
         sequenceObj => sequenceObj.accession.includes(this.searchString));
       this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
       console.log(this.displaySequenceObjList);
      }
-    /**
-     * Package companyData into a PagedData object based on the selected Page
-     * @param page The page data used to get the selected data from companyData
-     * @returns {PagedData<SequenceObj>} An array of the selected data and page
-     */
-    private getPagedData(page: Page): PagedData<SequenceObj> {
-        let pagedData = new PagedData<SequenceObj>();
-        console.log ( " in paged data " + this.sequenceObjList.length);
-        // page.totalElements = this.sequenceObjList.length;
-        page.totalElements = this.numRowsInPage;
-        console.log(" page.totalElements " + page.totalElements );
-        page.totalPages = page.totalElements / page.size;
-        let start = page.pageNumber * page.size;
-        let end = Math.min((start + page.size), page.totalElements);
-        for (let i = start; i < end; i++){
-            // let jsonObj = this.sequenceObjList[i];
-            // let employee = new CorporateEmployee(jsonObj.name, jsonObj.gender, jsonObj.company, jsonObj.age);
-            pagedData.data.push(this.sequenceObjList[i]);
-        }
-        console.log(" len pagedData.data " +   pagedData.data.length );
 
-        pagedData.page = page;
-        return pagedData;
-    }
+     filterEpitopeDatatable(){
+
+       // this.epitopeExperimentObjList = JSON.parse(JSON.stringify(this.savedEpitopeExperimentObjList));
+       //
+       // this.epitopeExperimentObjList = this.epitopeExperimentObjList.filter(
+       //   sequenceObj => sequenceObj.accession.includes(this.searchString));
+       // this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+       // console.log(this.displaySequenceObjList);
+      }
+
+    filterStructureDatatable(){
+
+      // this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
+      //
+      // this.sequenceObjList = this.sequenceObjList.filter(
+      //   sequenceObj => sequenceObj.accession.includes(this.searchString));
+      // this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+      // console.log(this.displaySequenceObjList);
+     }
 
     showHideFilters(){
       if(this.showFiltersFlag ){
@@ -966,8 +1006,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       this.isLoading = false;
       this.sequenceTableSortColumn = "accession";
-      this.hidePrevButton = true;
-      this.hideNextButton = false;
+      this.hideAlignmentPrevButton = true;
+      this.hideAlignmentNextButton = false;
 
       this.showFiltersFlag = false;
       this.rowNum = 0;
@@ -1004,8 +1044,26 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.epitopeOffset = 0;
       this.structureOffset = 0;
 
+
+            this.alignmentPrevButtonColor = "#93477C";
+            this.alignmentNextButtonColor = "#834793";
+
+            this.epitopePrevButtonColor = "#93477C";
+            this.epitopeNextButtonColor = "#834793";
+
+            this.structurePrevButtonColor = "#93477C";
+            this.structureNextButtonColor = "#834793";
       this.numRowsInPage = 3;
       this.numRowsInAlignment = 3;
+
+      this.alignmentPrevButtonColor = "#93477C";
+      this.alignmentNextButtonColor = "#834793";
+
+      this.epitopePrevButtonColor = "#93477C";
+      this.epitopeNextButtonColor = "#834793";
+
+      this.structurePrevButtonColor = "#93477C";
+      this.structureNextButtonColor = "#834793";
 
       // this.sortSequenceTableColumn = '';
       this.sortStructureChainTableColumn = 'taxon';

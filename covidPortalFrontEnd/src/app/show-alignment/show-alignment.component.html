@@ -279,7 +279,7 @@
         </div>
       </div>
 
-      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterDatatable()">&nbsp;
+      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterSequenceDatatable()">&nbsp;
       <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetSequenceTable()">Reset</button>
 
     </div>
@@ -423,10 +423,10 @@
 
                 <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
 
-                  <button  id="button_prev" style = "background-color:#834793;" (click)="showPrev();" [disabled]="hidePrevButton">Prev&nbsp;
+                  <button  id="button_prev" [style.background-color] = "alignmentPrevButtonColor" (click)="showAlignmentPrev();" [disabled]="hideAlignmentPrevButton">Prev&nbsp;
             			</button>&nbsp;
 
-                  <button  id="button_next" style = "background-color:#834793;" (click)="showNext();" [disabled]="hideNextButton">Next&nbsp;
+                  <button  id="button_next" [style.background-color] = "alignmentPrevButtonColor" (click)="showAlignmentNext();" [disabled]="hideAlignmentNextButton">Next&nbsp;
               		</button>
 
                 </div>
@@ -457,7 +457,7 @@
               </div>
             </div>
           <!-- </div> -->
-          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeTable()">&nbsp;
+          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeDataTable()">&nbsp;
           <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetEpitopeExperimentTable()">Reset</button>
           </div>
 
@@ -594,10 +594,10 @@
 
                   <div class="btn-group" *ngIf="displayEpitopeExperimentObjList?.length > 0" >
 
-                    <button  id="button_prev" style = "background-color:#834793;" (click)="showEpitopePrev();" [disabled]="hidePrevEpitopeButton">Prev&nbsp;
+                    <button  id="button_prev" [style.background-color] = "epitopePrevButtonColor" (click)="showEpitopePrev();" [disabled]="hideEpitopePrevButton">Prev&nbsp;
                     </button>&nbsp;
 
-                    <button  id="button_next" style = "background-color:#834793;" (click)="showEpitopeNext();" [disabled]="hideNextEpitopeButton">Next&nbsp;
+                    <button  id="button_next" [style.background-color] = "epitopeNextButtonColor" (click)="showEpitopeNext();" [disabled]="hideEpitopeNextButton">Next&nbsp;
                     </button>
 
                   </div>
@@ -624,7 +624,7 @@
                 </div>
               </div>
             <!-- </div> -->
-            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureChainString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureChainTable()">&nbsp;
+            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureChainString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDataTable()">&nbsp;
             <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetStructureChainTable()">Reset</button>
             </div>
 
@@ -716,9 +716,9 @@
                       </tbody>
                     </table>
                     <div class="btn-group" *ngIf="displayStructureChainObjList?.length > 0" >
-                      <button  id="button_prev" style = "background-color:#834793;" (click)="showStructurePrev();" [disabled]="hidePrevStructureButton">Prev&nbsp;
+                      <button  id="button_prev" [style.background-color] = "structurePrevButtonColor" style = "background-color:#834793;" (click)="showStructurePrev();" [disabled]="hideStructurePrevButton">Prev&nbsp;
                 			</button>&nbsp;
-                      <button  id="button_next" style = "background-color:#834793;" (click)="showStructureNext();" [disabled]="hideNextStructureButton">Next&nbsp;
+                      <button  id="button_next" [style.background-color] = "structureNextButtonColor" (click)="showStructureNext();" [disabled]="hideStructureNextButton">Next&nbsp;
                   		</button>
                     </div>
                 </div>
