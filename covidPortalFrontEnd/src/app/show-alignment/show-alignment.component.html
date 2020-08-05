@@ -1,6 +1,10 @@
 <router-outlet></router-outlet>
 <div class="container" *ngIf="!displayAlignmentObjList">
-  <b>Loading ...</b>
+
+  <div class = "row" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;" *ngIf="!originalScanEnabled" >
+    <b>Loading ...</b>
+  </div>
+  
 </div>
 
 <div class="container" *ngIf="displayAlignmentObjList" id ="mainContainter">

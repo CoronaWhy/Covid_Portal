@@ -863,12 +863,30 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     filterSequenceDatatable(){
 
-      this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
+      // this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
 
-      this.sequenceObjList = this.sequenceObjList.filter(
-        sequenceObj => sequenceObj.accession.includes(this.searchString));
-      this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
-      console.log(this.displaySequenceObjList);
+      console.log(" this.sequenceObjList length " + this.sequenceObjList.length);
+
+      let tempList = [];
+      let selectFlag:boolean;
+      if (this.sequenceObjList.length > 0){
+        let objKeys = Object.keys(this.sequenceObjList[0]);
+
+        for (let i = 0; i < this.sequenceObjList.length; i++){
+          selectFlag = false;
+          for (let j = 0; j < objKeys.length; j++){
+              console.log(this.sequenceObjList[i]);
+              if (this.sequenceObjList[i][objKeys[j]].includes (this.searchString) ) {
+                selectFlag = true;
+              }
+          }
+          if (selectFlag) {
+            tempList.push(this.sequenceObjList[i]);
+          }
+        }
+        this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+        console.log(this.displaySequenceObjList);
+      }
      }
 
      filterEpitopeDatatable(){
