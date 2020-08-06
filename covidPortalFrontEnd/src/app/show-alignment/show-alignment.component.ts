@@ -103,6 +103,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     initialAlignment: boolean;
     searchString:string;
+    searchEpitopeString:string;
+    searchStructureString:string;
+
     numRowsInPage:number;
 
     hideAlignmentPrevButton: boolean;
@@ -692,7 +695,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
    showEpitopeNext(){
 
      this.displayEpitopeExperimentObjList = this.epitopeExperimentObjList.slice(0,this.numRowsInPage);
-     this.displayStructureChainObjList = this.structureChainObjList.slice(0,this.numRowsInPage);
 
      this.epitopeOffset += 1;
      console.log(" this.epitopeOffset " + this.epitopeOffset);
@@ -867,6 +869,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       console.log(" this.sequenceObjList length " + this.sequenceObjList.length);
 
+      this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
+
       let tempList = [];
       let selectFlag:boolean;
       if (this.sequenceObjList.length > 0){
@@ -876,7 +880,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           selectFlag = false;
           for (let j = 0; j < objKeys.length; j++){
               console.log(" obj " + this.sequenceObjList[i] + " key " + objKeys[j]);
-              if (this.sequenceObjList[i][objKeys[j]].includes (this.searchString) ) {
+              if (this.sequenceObjList[i][objKeys[j]] &&  this.sequenceObjList[i][objKeys[j]].includes (this.searchString) ) {
                 selectFlag = true;
               }
           }
@@ -884,29 +888,73 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             tempList.push(this.sequenceObjList[i]);
           }
         }
-        this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
+        this.displaySequenceObjList = tempList.slice(0, this.numRowsInPage);
+        this.sequenceObjList = tempList;
         console.log(this.displaySequenceObjList);
       }
+
      }
 
-     filterEpitopeDatatable(){
+     filterEpitopeDataTable(){
 
-       // this.epitopeExperimentObjList = JSON.parse(JSON.stringify(this.savedEpitopeExperimentObjList));
-       //
-       // this.epitopeExperimentObjList = this.epitopeExperimentObjList.filter(
-       //   sequenceObj => sequenceObj.accession.includes(this.searchString));
-       // this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
-       // console.log(this.displaySequenceObjList);
+       console.log(" this.epitopeExperimentObjList length " + this.epitopeExperimentObjList.length);
+
+       this.epitopeExperimentObjList = JSON.parse(JSON.stringify(this.savedEpitopeExperimentObjList));
+
+       let tempList = [];
+       let selectFlag:boolean;
+       if (this.epitopeExperimentObjList.length > 0){
+         let objKeys = Object.keys(this.epitopeExperimentObjList[0]);
+
+         for (let i = 0; i < this.epitopeExperimentObjList.length; i++){
+           selectFlag = false;
+           for (let j = 0; j < objKeys.length; j++){
+               console.log(" obj " + this.epitopeExperimentObjList[i] + " key " + objKeys[j]);
+               if (this.epitopeExperimentObjList[i][objKeys[j]] &&  this.epitopeExperimentObjList[i][objKeys[j]].includes (this.searchEpitopeString) ) {
+                 selectFlag = true;
+               }
+           }
+           if (selectFlag) {
+             tempList.push(this.epitopeExperimentObjList[i]);
+           }
+         }
+         this.displayEpitopeExperimentObjList = tempList.slice(0, this.numRowsInPage);
+         this.epitopeExperimentObjList = tempList;
+
+         console.log(this.displayEpitopeExperimentObjList);
+       }
+
+    }
+
+    filterStructureDataTable(){
+
+      console.log(" this.structureChainObjList length " + this.structureChainObjList.length);
+
+      this.structureChainObjList = JSON.parse(JSON.stringify(this.savedStructureChainObjList));
+
+      let tempList = [];
+      let selectFlag:boolean;
+      if (this.structureChainObjList.length > 0){
+        let objKeys = Object.keys(this.structureChainObjList[0]);
+
+        for (let i = 0; i < this.structureChainObjList.length; i++){
+          selectFlag = false;
+          for (let j = 0; j < objKeys.length; j++){
+              console.log(" obj " + this.structureChainObjList[i] + " key " + objKeys[j]);
+              if (this.structureChainObjList[i][objKeys[j]] &&  this.structureChainObjList[i][objKeys[j]].includes (this.searchStructureString) ) {
+                selectFlag = true;
+              }
+          }
+          if (selectFlag) {
+            tempList.push(this.structureChainObjList[i]);
+          }
+        }
+        this.displayStructureChainObjList = tempList.slice(0, this.numRowsInPage);
+        this.structureChainObjList = tempList;
+
+        console.log(this.displayStructureChainObjList);
       }
 
-    filterStructureDatatable(){
-
-      // this.sequenceObjList = JSON.parse(JSON.stringify(this.savedSequenceObjList));
-      //
-      // this.sequenceObjList = this.sequenceObjList.filter(
-      //   sequenceObj => sequenceObj.accession.includes(this.searchString));
-      // this.displaySequenceObjList = this.sequenceObjList.slice(0, this.numRowsInPage);
-      // console.log(this.displaySequenceObjList);
      }
 
     showHideFilters(){

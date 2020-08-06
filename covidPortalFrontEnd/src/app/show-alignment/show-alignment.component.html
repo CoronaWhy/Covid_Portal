@@ -4,7 +4,7 @@
   <div class = "row" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;" *ngIf="!originalScanEnabled" >
     <b>Loading ...</b>
   </div>
-  
+
 </div>
 
 <div class="container" *ngIf="displayAlignmentObjList" id ="mainContainter">
@@ -628,7 +628,7 @@
                 </div>
               </div>
             <!-- </div> -->
-            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureChainString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDataTable()">&nbsp;
+            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDataTable()">&nbsp;
             <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetStructureChainTable()">Reset</button>
             </div>
 
