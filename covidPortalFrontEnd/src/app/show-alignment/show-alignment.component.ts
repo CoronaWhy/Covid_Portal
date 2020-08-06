@@ -875,7 +875,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         for (let i = 0; i < this.sequenceObjList.length; i++){
           selectFlag = false;
           for (let j = 0; j < objKeys.length; j++){
-              console.log(this.sequenceObjList[i]);
+              console.log(" obj " + this.sequenceObjList[i] + " key " + objKeys[j]);
               if (this.sequenceObjList[i][objKeys[j]].includes (this.searchString) ) {
                 selectFlag = true;
               }
