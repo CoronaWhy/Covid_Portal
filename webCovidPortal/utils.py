@@ -4,10 +4,7 @@ import os
 import sys
 import traceback
 import math
-import seaborn as sns
 from collections import OrderedDict
-from bokeh.charts import Bar, output_file, show
-import matplotlib.pyplot as plt
 
 def createMergedDF(fileName1, fileName2, database, direction):
 
@@ -33,14 +30,14 @@ def createMergedDF(fileName1, fileName2, database, direction):
         geneDFFinal = geneDF1.merge(geneDF2, on = ["gene","pathway"])
 
         geneDFFinal = geneDFFinal.rename(columns={"count_x":"count_v1", "count_y":"count_v2"})
-        
+
         #geneSymbolDF = pd.read_table("genelistmapping.txt",sep='\t', index_col=None)
-        #geneSymbolDF["entrezID"] = geneSymbolDF["entrezID"].astype(int)        
+        #geneSymbolDF["entrezID"] = geneSymbolDF["entrezID"].astype(int)
         #entrezIDList = geneSymbolDF["entrezID"].tolist()
         #geneSymbolList = geneSymbolDF["geneSymbol"].tolist()
-        
+
         #geneDFFinal["geneSymbol"] = [geneSymbolList [ entrezIDList.index(int(x))] for x in geneDFFinal["gene"].tolist()]
-        
+
         geneDFFinal = geneDFFinal.sort(['gene','pathway'], ascending=[True,True])
 
     except:

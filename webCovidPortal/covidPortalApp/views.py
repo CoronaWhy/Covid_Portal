@@ -3,9 +3,8 @@ from django.contrib import messages
 from django.http import HttpResponse
 from django.http import JsonResponse
 from django.conf import settings
-import pymongo
 import hashlib
-import pandas as pd
+# import pandas as pd
 import shutil
 import io
 import os
@@ -13,12 +12,9 @@ import sys
 import json
 import traceback
 import numpy as np
-import seaborn as sns
 import gzip
-import nibabel as nib
 import subprocess
 from django import forms
-from PIL import Image
 import datetime
 import base64
 from glob import glob
@@ -34,8 +30,6 @@ from covidPortalApp.covidPortalAppObjs import *
 from covidPortalApp.covidPortalAppConstants import *
 from django.contrib.auth import authenticate
 import time
-import paramiko
-import asyncio, asyncssh, sys
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 
 def monitorJobs(request):

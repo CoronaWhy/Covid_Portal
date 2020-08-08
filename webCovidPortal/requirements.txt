@@ -9,3 +9,4 @@ docutils==0.14
 mysqlclient==1.4.2.post1
 numpy==1.16.2
 numpydoc==0.8.0
+pandas==1.1.0
