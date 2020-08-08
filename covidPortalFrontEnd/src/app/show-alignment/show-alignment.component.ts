@@ -102,9 +102,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     structureChainTableColumnObjs:TableColumnObj[];
 
     initialAlignment: boolean;
+
     searchString:string;
     searchEpitopeString:string;
     searchStructureString:string;
+
+    savedSearchString:string;
+    savedSearchEpitopeString:string;
+    savedSearchStructureString:string;
 
     numRowsInPage:number;
 
@@ -547,7 +552,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
      console.log(" columnName " + columnName + " columnFilterValue " + columnFilterValue);
 
-     this.structureChainObjList = JSON.parse(JSON.stringify(this.savedStructureChainObjList));
+     if (this.searchString.length > this.savedSearchString.length){
+
+       this.structureChainObjList = JSON.parse(JSON.stringify(this.savedStructureChainObjList));
+
+     }
+
+     this.savedSearchString = this.searchString;
 
      // this.structureChainObjList.filter(item => {
      //      return item[columnName].includes(columnFilterValue);
@@ -899,7 +910,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
        console.log(" this.epitopeExperimentObjList length " + this.epitopeExperimentObjList.length);
 
+       // this.epitopeExperimentObjList = JSON.parse(JSON.stringify(this.savedEpitopeExperimentObjList));
+
+       // if (this.searchEpitopeString.length > this.savedSearchEpitopeString.length){
+
        this.epitopeExperimentObjList = JSON.parse(JSON.stringify(this.savedEpitopeExperimentObjList));
+
+       // }
+       //
+       // this.savedSearchEpitopeString = this.searchEpitopeString;
 
        let tempList = [];
        let selectFlag:boolean;
@@ -930,7 +949,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       console.log(" this.structureChainObjList length " + this.structureChainObjList.length);
 
+      // this.structureChainObjList = JSON.parse(JSON.stringify(this.savedStructureChainObjList));
+
+      // if (this.searchStructureString.length > this.savedSearchStructureString.length){
+
       this.structureChainObjList = JSON.parse(JSON.stringify(this.savedStructureChainObjList));
+
+      // }
+      //
+      // this.savedSearchStructureString = this.searchStructureString;
 
       let tempList = [];
       let selectFlag:boolean;
@@ -1062,6 +1089,26 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     }
 
+    showHideEpitopePanel(value){
+      console.log(value);
+      let panel = document.getElementById('epitopepanel');
+
+      if (value == '0'){
+          panel.style.display='table-row-group';
+      } else if (value == '1'){
+        panel.style.display='none';
+      }
+    }
+    showHideStructurePanel(value){
+      let panel = document.getElementById('structurepanel');
+
+      if (value == '0'){
+          panel.style.display='table-row-group';
+      } else if (value == '1'){
+        panel.style.display='none';
+      }
+    }
+
     ngOnInit() {
       console.log( " on init ");
 
@@ -1069,6 +1116,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       //   this.selectedAccessions = params["selectedAccessions"];
       //   console.log(this.selectedAccessions);
       // })
+      this.savedSearchString = '';
+      this.savedSearchEpitopeString = '';
+      this.savedSearchStructureString = '';
 
       this.isLoading = false;
       this.sequenceTableSortColumn = "accession";
@@ -1203,6 +1253,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          for (let i = 0; i < this.epitopeObjList.length; i++){
            this.epitopeObjList[i].sortColumnValue = this.epitopeObjList[i].epitopeExperimentObj.host;
+             this.epitopeObjList[i].externalSortColumnValue = this.epitopeObjList[i].epitopeExperimentObj.exp_method;
+             this.epitopeObjList[i].internalSortColumnValue = this.epitopeObjList[i].epitopeExperimentObj.assay_result;
          }
 
          for (let i = 0; i < this.structureObjList.length; i++){
@@ -1233,10 +1285,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            // not needed to slice need to remove after testing
            this.displayStructureObjList[i].displayResidueObjList = JSON.parse(JSON.stringify(this.displayStructureObjList[i].residueObjList));
            this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
-          console.log(this.displayStructureObjList[i].residueObjList);
         }
-
-
          // console.log(this.displayAignmentObjList);
       });
     }
@@ -1270,46 +1319,50 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       distances = [];
 
       this.distanceObjList = [];
-      for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
-        // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
-         distance = 0;
-         if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
-            distance =
 
-            Math.sqrt
-            (
+      // for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
+      //
+      //   console.log(" listIndex " + listIndex);
 
+        for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
+          // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
+           distance = 0;
+           if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
+              distance =
+
+              Math.sqrt
               (
-                (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.x - selectedPosition[0])
-                  *
-                (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.x - selectedPosition[0])
-              )
 
-              +
+                (
+                  (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.x - selectedPosition[0])
+                    *
+                  (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.x - selectedPosition[0])
+                )
 
-              (
-                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[1])
-                   *
-                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[1])
+                +
 
-              )
+                (
+                   (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[1])
+                     *
+                   (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[1])
 
-              +
+                )
 
-              (
-                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[2])
-                   *
-                 (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[2])
+                +
 
-              )
+                (
+                   (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[2])
+                     *
+                   (this.displayStructureObjList[listIndex].residueObjList[i].residuePosition.y - selectedPosition[2])
 
-           );
-         }
-         distances.push(distance);
+                )
 
-         // console.log(" i = " + i + " distance = " + distance);
-      }
+             );
+           }
+           distances.push(distance);
 
+           // console.log(" i = " + i + " distance = " + distance);
+        }
       // console.log(" distances = " + distances.length);
 
       // normalise to 0 and 1
@@ -1362,10 +1415,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             }
 
           }
-
           this.distanceObjList.push(distanceObj);
-
       }
+
+    // }
 
     }
     // color range generator

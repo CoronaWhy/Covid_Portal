@@ -323,22 +323,13 @@ def showAlignment(request):
                 # print (" for index " + str(index) + " offset is " + str(epitopeOffsetObjs[index]["offset"]) + " seqeuenceLength " + str(seqeuenceLength) )
                 epitopeObj["percOffset"] =  ( (epitopeOffsetObjs[index]["offset"] )/sequenceLength ) * 100
                 epitopeObj["offset"] =  epitopeOffsetObjs[index]["offset"]
-                # print( epitopeObj["percOffset"] )
-        # print (" structureSequenceCoords " + str(structureSequenceCoords))
+
         for structureSequenceCoord in structureSequenceCoords:
             if structureSequenceCoord["offset"] != 0 :
                 sequenceString = '-' * structureSequenceCoord["offset"] + structureSequenceCoord["sequence"]
-                # if len(sequenceString) < seqeuenceLength:
-                #      sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
 
             residueObjList = [{"residueValue":'-',"residueColor":RESIDUE_COLOR_MAP['-'], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":i} for i,x in enumerate(range(structureSequenceCoord["offset"]) ) ]
             coords = structureSequenceCoord["coords"].split(";")
-
-            # print ( " len structureSequenceCoord[sequence] " + str(len(structureSequenceCoord["sequence"]) ) )
-            #
-            # print ( " end structureSequenceCoord[sequence] " + str(structureSequenceCoord["sequence"][1401:] )  )
-            #
-            # print ( " len coords " + str( len(coords) ) )
 
             for i,x in enumerate(structureSequenceCoord["sequence"]):
                 # print (" i " + str(i) + " x "  + str(x))
@@ -617,45 +608,62 @@ def reloadStructures(request):
         data = json.loads(request.body.decode('utf-8'))
 
         selectedStructureIds = data["selectedStructureIds"]
-
+        selectedStructureIds = [x.split(".") for x in selectedStructureIds]
         print (" selectedStructureIds " + str(selectedStructureIds))
 
-        structureSequences = structuresequence ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdbchains":(",").join(selectedStructureIds)} )
-        # try:
-        structureResidueAtoms = structureresidueatoms({"mesh_id":MESH_ID, 'alignment':ALIGNMENT_NAME, "atom":'CA', "pdbchains":(",").join(selectedStructureIds)})
-        # except:
-        #     traceback.print_exc(file=sys.stdout)
-        # get sequence length
-        sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
-        sequenceLength = len(sequenceList[0]["seq"])
+        selectedStructurePDBIds = [x[0] for x in selectedStructureIds]
+        selectedStructureChains = [x[1] for x in selectedStructureIds]
 
-        aaIndex = 0
-        for index, structureSequence in enumerate(structureSequences):
-            print ("structureSequence" + str(structureSequence) )
-            structureResidueAtomsMap = {}
-            sequenceString = structureSequence["sequence"]
+        for index, selectedStructureId in enumerate(selectedStructureIds):
 
-            if structureSequence["offset"] != 0 :
-                sequenceString = '-' * structureSequence["offset"] + sequenceString
-                if len(sequenceString) < sequenceLength:
-                     sequenceString += '-'* ( sequenceLength - len(sequenceString))
-            # print (sequenceString)
-            if len(structureResidueAtoms) > index and structureResidueAtoms[index]["pdb_chain"] == structureSequence["pdbchain"]:
-                structureResidueAtomsMap = structureResidueAtoms[index]
+            structureSequenceCoords = [structuresequencecoords ( {"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "pdb_id":selectedStructurePDBIds[index], "chain": selectedStructureChains[index]})]
 
-                for resIndex, aminoAcid in enumerate(sequenceString):
-                    residueLocation = {"x":0, "y":0, "z":0}
+            for structureSequenceCoord in structureSequenceCoords:
+                if structureSequenceCoord["offset"] != 0 :
+                    sequenceString = '-' * structureSequenceCoord["offset"] + structureSequenceCoord["sequence"]
 
-                    if aminoAcid != '-':
-                        atom = structureResidueAtomsMap["atoms"][aaIndex]
-                        residueLocation = {"x":atom["x"], "y":atom["y"], "z":atom["z"]}
-                        aaIndex += 1
-                    residueObjList.append({"residueValue":aminoAcid,"residueColor":RESIDUE_COLOR_MAP[aminoAcid], "residuePosition":residueLocation, "residueLabel":"residue_" + str(resIndex)})
-            # residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
+                residueObjList = [{"residueValue":'-',"residueColor":RESIDUE_COLOR_MAP['-'], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":i} for i,x in enumerate(range(structureSequenceCoord["offset"]) ) ]
+                coords = structureSequenceCoord["coords"].split(";")
 
-            structureObj = {"pdbchain":structureSequence["pdbchain"],"residueObjList":residueObjList}
-            # print (" adding epitope " + epitope.IEDB_ID)
-            structureObjList.append(structureObj)
+                for i,x in enumerate(structureSequenceCoord["sequence"]):
+                    # print (" i " + str(i) + " x "  + str(x))
+
+                    if i < len(coords):
+                        # print ( " len(coords[i]) " + str ( len ( coords[i].split(",") ) ) )
+                        if len(coords[i].split(",")) == 3:
+                            coordValues = coords[i].split(",")
+                            residueObjList.append(
+                                {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":coordValues[0], "y":coordValues[1], "z":coordValues[2] }, "residueLabel":"residue_" + str(i), "residueIndex":structureSequenceCoord["offset"]+ i}
+                                )
+                        else:
+                            residueObjList.append(
+                                {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":structureSequenceCoord["offset"]+ i}
+                                )
+                            # print(residueObjList)
+                    else:
+                            residueObjList.append(
+                                {"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":{"x":0, "y":0, "z":0 }, "residueLabel":"residue_" + str(i), "residueIndex":structureSequenceCoord["offset"]+ i}
+                                )
+
+                structureObj = {"pdbchain":structureSequenceCoord["pdb_id"]+ "." + structureSequenceCoord["chain"],"residueObjList":residueObjList}
+                # print(structureObj)
+                # pdbData = structureSequence["pdbchain"].split(".")
+                pdb_id, chain  = structureSequenceCoord["pdb_id"] , structureSequenceCoord["chain"]
+
+                structures = Structure.objects.filter (pdb_id = pdb_id)
+
+                if len(structures) > 0:
+
+                    structure = structures[0]
+                    structureChainObj = {"taxon":str(structure.taxon), "pdb_id":str(pdb_id), "chain":str(chain)}
+
+                    structureObj["structureChainObj"] = structureChainObj
+
+                # print (" adding epitope " + epitope.IEDB_ID)
+                structureObjList.append(structureObj)
+
+        print(" structureObjList " + str(len(structureObjList)))
+
 
     except:
         traceback.print_exc(file=sys.stdout)

@@ -18,7 +18,6 @@
          </th>
          <!-- end position nomenclature -->
          <th class="sort-header">
-
          <div class="row">
            <div class="col">
              <div ngbDropdown class="d-inline-block">
@@ -213,11 +212,17 @@
   <!----------------------------------------------------------------------------->
   <!----------------------------------------------------------------------------->
   <div class="btn-grp">
-    <button onclick="javascript:document.getElementById('epitopepanel').style.display='table-row-group'">Show Epitope</button>
+    <button (click)="showHideEpitopePanel('0')">Show Epitope</button>
+    <button (click)="showHideEpitopePanel('1')">Hide Epitope</button>
+    <br>
+    <button (click)="showHideStructurePanel('0')">Show Structure</button>
+    <button (click)="showHideStructurePanel('1')">Hide Structure</button>
+
+    <!-- <button onclick="javascript:document.getElementById('epitopepanel').style.display='table-row-group'">Show Epitope</button>
     <button onclick="javascript:document.getElementById('epitopepanel').style.display='none'">Hide Epitope</button>
     <br>
     <button onclick="javascript:document.getElementById('structurepanel').style.display='table-row-group'">Show Structure</button>
-    <button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button>
+    <button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button> -->
   </div>
 
   <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
