@@ -65,7 +65,6 @@
     "ngx-accordion": "0.0.17",
     "ngx-bootstrap": "^5.6.1",
     "ngx-color-picker": "^9.1.0",
-    "ngx-pipes": "^2.7.3",
     "ngx-progressbar": "^6.0.2",
     "ngx-sortable": "^1.0.3",
     "ngx-web-worker": "^8.0.0",

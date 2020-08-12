@@ -25,7 +25,6 @@ import { LogoutService } from './services/logout-service';
 
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { NgPipesModule} from 'ngx-pipes';
 import { SigninEmitterService} from './services/signin-emitter.service';
 import { SignoutEmitterService} from './services/signout-emitter.service';
 import { DatafileDetailService} from './layout/datafile-detail/datafile-detail-service';
@@ -77,7 +76,6 @@ export function createTranslateLoader(http: HttpClient) {
     NgMultiSelectDropDownModule.forRoot(),
 
     FormsModule,
-    NgPipesModule,
 
     BrowserAnimationsModule,
     ReactiveFormsModule,
