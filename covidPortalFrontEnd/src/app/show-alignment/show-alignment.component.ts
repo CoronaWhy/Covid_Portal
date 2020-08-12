@@ -20,7 +20,6 @@ import { of } from 'rxjs';
 import { TableColumnObj } from '../models/tableColumn';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PopupModalComponent } from '../popup-modal/popup-modal.component';
-
 @Component({
     selector: 'list-files',
     providers: [ShowAlignmentService],
@@ -148,6 +147,25 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     distanceObjList : DistanceObj[];
 
     @ViewChild('sequenceTable') sequenceTable;
+
+    removeAlignmentObj(accession){
+      this.alignmentObjList.forEach( (item, index) => {
+        if(item.sequenceObj.accession === accession) this.alignmentObjList.splice(index,1);
+      });
+      this.displayAlignmentObjList = this.alignmentObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+    }
+    removeEpitopeObj(iedb_id){
+      this.epitopeObjList.forEach( (item, index) => {
+        if(item.iedb_id === iedb_id) this.epitopeObjList.splice(index,1);
+      });
+      this.displayEpitopeObjList = this.epitopeObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+    }
+    removeStructureObj(pdbchain){
+      this.structureObjList.forEach( (item, index) => {
+        if(item.pdbchain === pdbchain) this.structureObjList.splice(index,1);
+      });
+      this.displayStructureObjList = this.structureObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+    }
 
     openAlignmentModal(value){
       // console.log(value);
