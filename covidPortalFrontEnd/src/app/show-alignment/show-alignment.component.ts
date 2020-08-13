@@ -26,7 +26,6 @@ import { PopupModalComponent } from '../popup-modal/popup-modal.component';
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
-
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     @Input()
     datafiles : UploadFolder[];
@@ -149,21 +148,43 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     @ViewChild('sequenceTable') sequenceTable;
 
     removeAlignmentObj(accession){
+
       this.alignmentObjList.forEach( (item, index) => {
         if(item.sequenceObj.accession === accession) this.alignmentObjList.splice(index,1);
       });
+
+      this.sequenceObjList.forEach( (item, index) => {
+        if(item.accession === accession) {
+            item.isSelected = false;
+          }
+      });
+
       this.displayAlignmentObjList = this.alignmentObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
     }
     removeEpitopeObj(iedb_id){
       this.epitopeObjList.forEach( (item, index) => {
         if(item.iedb_id === iedb_id) this.epitopeObjList.splice(index,1);
       });
+
+      this.epitopeExperimentObjList.forEach( (item, index) => {
+        if(item.iedb_id === iedb_id) {
+            item.isSelected = false;
+          }
+      });
+
       this.displayEpitopeObjList = this.epitopeObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
     }
     removeStructureObj(pdbchain){
       this.structureObjList.forEach( (item, index) => {
         if(item.pdbchain === pdbchain) this.structureObjList.splice(index,1);
       });
+
+      this.structureChainObjList.forEach( (item, index) => {
+        if(item.pdbchain === pdbchain) {
+            item.isSelected = false;
+          }
+      });
+
       this.displayStructureObjList = this.structureObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
     }
 

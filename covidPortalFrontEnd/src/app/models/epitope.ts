@@ -4,6 +4,7 @@ import { ColumnFilter } from './sequence';
 
 export class EpitopeExperimentObj {
   id:number;
+  iedb_id:string;
   host:string;
   assay_type:string;
   assay_result:string;
@@ -11,7 +12,7 @@ export class EpitopeExperimentObj {
   mhc_class:string;
   exp_method:string;
   measurement_type:string;
-
+  isSelected:boolean;
 }
 
 export class EpitopeOffsetObj {

@@ -6,7 +6,8 @@ export class StructureChainObj {
   taxon:string;
   pdb_id:string;
   chain:string;
-
+  pdbchain:string;
+  isSelected:boolean;
 }
 
 export class StructureObj {
