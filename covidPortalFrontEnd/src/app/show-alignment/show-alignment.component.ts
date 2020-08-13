@@ -860,6 +860,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
            }
         });
+      } else { // if unchecked
+          this.removeAlignmentObj(value.currentTarget.defaultValue);
       }
     }
 
@@ -885,6 +887,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
            }
         });
+      } else { // if unchecked
+          this.removeEpitopeObj(value.currentTarget.defaultValue);
       }
     }
 
@@ -910,6 +914,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
            }
         });
+      } else { // if unchecked
+          this.removeStructureObj(value.currentTarget.defaultValue);
       }
     }
 
