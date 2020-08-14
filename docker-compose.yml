@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 
 services:
   reverse-proxy:
@@ -22,25 +22,19 @@ services:
   backend:
     image: coronawhy/covid_portal:backend
     command: python manage.py runserver 0.0.0.0:8000
-    networks: 
-      - covid-portal
     ports:
-      - "8010:8000"
+      - "8000:8000"
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.backend.rule=Host(`portaldb.${traefikhost}`)"
+      - "traefik.http.routers.backend.entrypoints=web"
+  
   frontend:
-    image: coronawhy/covid_portal:frontend
-    depends_on: 
-      - backend 
+    image: coronawhy/covid_portal_frontend:portaldb_port80
     ports:
       - "4200:4200"
-    networks: 
-      - covid-portal
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.frontend.rule=Host(`portal.${traefikhost}`)"
+      - "traefik.http.routers.frontend.entrypoints=web"
 
-networks:
-    covid-portal:
-      external: true
