@@ -1343,7 +1343,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       var listIndex = data[1];
       var resIndex = data[2];
-
       // console.log(" listIndex " + listIndex);
       // console.log(" resIndex " + resIndex);
 
@@ -1359,19 +1358,23 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
       this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
 
-      let distances:number[];
-      let distance = 0;
-      distances = [];
+      for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
 
-      this.distanceObjList = [];
+        let distances:number[];
+        let distance = 0;
+        distances = [];
 
-      // for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
-      //
-      //   console.log(" listIndex " + listIndex);
+        this.distanceObjList = [];
+
+        console.log(" listIndex " + listIndex);
+        console.log(" len  this.displayStructureObjList " + this.displayStructureObjList.length);
 
         for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
           // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
            distance = 0;
+           // if (listIndex == 0){
+           //   console.log(" len  this.displayStructureObjList[listIndex].residueObjList " + this.displayStructureObjList[listIndex].residueObjList.length + " i = " + i);
+           // }
            if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
               distance =
 
@@ -1417,9 +1420,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       let normalizedDistances = [];
 
-      for (let i = 0; i < distances.length; i++){
+      for (let j = 0; j < distances.length; j++){
         normalizedDistances.push (
-          1- (distances[i] - minDistance)/rangeDistance
+          1- (distances[j] - minDistance)/rangeDistance
         );
       }
 
@@ -1434,6 +1437,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let distanceObj : DistanceObj;
       let distanceColor : string;
       for (let i = 0; i< normalizedDistances.length; i++){
+
+         if (i >= this.displayStructureObjList[listIndex].residueObjList.length){
+           break;
+         }
 
           if (normalizedDistances[i] == 0){
             console.log( " normalizedDistances = " + i + " -- " + normalizedDistances[i]);
@@ -1463,7 +1470,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           this.distanceObjList.push(distanceObj);
       }
 
-    // }
+    }
 
     }
     // color range generator
