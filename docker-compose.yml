@@ -1,22 +1,45 @@
 version: '2'
 
 services:
-  covid-portal-backend:
+  reverse-proxy:
+    # The official v2 Traefik docker image
+    image: traefik:v2.2
+    # Enables the web UI and tells Traefik to listen to docker
+    command: 
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+    ports:
+      # The HTTP port
+      - "80:80"
+      # The Web UI (enabled by --api.insecure=true)
+      - "8080:8080"
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  backend:
     image: coronawhy/covid_portal:backend
-    container_name: "covid-portal-backend"
     command: python manage.py runserver 0.0.0.0:8000
     networks: 
       - covid-portal
     ports:
       - "8010:8000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.backend.rule=Host(`portaldb.${traefikhost}`)"
   frontend:
     image: coronawhy/covid_portal:frontend
     depends_on: 
-      - covid-portal-backend 
+      - backend 
     ports:
       - "4200:4200"
     networks: 
       - covid-portal
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`portal.${traefikhost}`)"
 
 networks:
     covid-portal:
