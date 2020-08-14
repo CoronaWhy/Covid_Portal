@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+  covid-portal-backend:
+    image: coronawhy/covid_portal:backend
+    container_name: "covid-portal-backend"
+    command: python manage.py runserver 0.0.0.0:8000
+    networks: 
+      - covid-portal
+    ports:
+      - "8010:8000"
+  frontend:
+    image: coronawhy/covid_portal:frontend
+    depends_on: 
+      - covid-portal-backend 
+    ports:
+      - "4200:4200"
+    networks: 
+      - covid-portal
+
+networks:
+    covid-portal:
+      external: true
