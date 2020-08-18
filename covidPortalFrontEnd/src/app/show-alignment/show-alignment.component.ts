@@ -47,6 +47,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     epitopeOffsetObjs:EpitopeOffsetObj;
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
+    selectedResidueIndex:number;
     selectedStructureIds:string[];
     proteinDistanceObjList:DistanceObj[][];
     structureChainResultObj:StructureChainResultObj;
@@ -1461,7 +1462,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             this.displayStructureObjList[listIndex].residueObjList[i].residueTableCellColor = distanceColor;
 
             distanceObj.percOffset = normalizedDistances[i]*100;
-
+            console.log(" list index = " + listIndex + " i = " + i + " offset = " + normalizedDistances[i]*100);
             if ( normalizedDistances[i] != 0 ) {
               distanceObj.backgroundColor = distanceColor;
             }
@@ -1474,7 +1475,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       }
       this.proteinDistanceObjList.push(this.distanceObjList);
     }
-    // console.log(this.proteinDistanceObjList);
+    console.log(this.proteinDistanceObjList);
     }
     // color range generator
     // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
