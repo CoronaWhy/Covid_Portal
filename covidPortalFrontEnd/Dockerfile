@@ -20,7 +20,23 @@ RUN npm install -g @angular/cli@9.0.5
 # add app
 COPY . /app
 
-EXPOSE 4200
+RUN npm run-script build
+
+FROM nginx:alpine
+
+#!/bin/sh
+
+## Remove default nginx index page
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy from the stahg 1
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+EXPOSE 4200 80
+
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
+
+# EXPOSE 4200
 
 # start app
-CMD ng serve --host 0.0.0.0
+# CMD ng serve --host 0.0.0.0

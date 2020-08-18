@@ -195,12 +195,14 @@
         <td></td>
         <td></td>
         <td colspan=16>
-          <div *ngIf="displayAlignmentObjList">
+          <div *ngIf="proteinDistanceObjList">
               Distances in protein structure (click to navigate):&nbsp;
+              <div *ngFor = "let proteinDistanceObj of proteinDistanceObjList">
+                <div class="positionContainer">
+                  <div class="positionBox" style="background: #D9D9E1;"></div>
+                    <div *ngFor = "let distanceObj of proteinDistanceObj" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);"></div>
+                </div>
               <br/>
-              <div class="positionContainer">
-                <div class="positionBox" style="background: #D9D9E1;"></div>
-                  <div *ngFor = "let distanceObj of distanceObjList" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);"></div>
               </div>
           </div>
         </td>

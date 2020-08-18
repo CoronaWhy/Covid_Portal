@@ -48,6 +48,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
     selectedStructureIds:string[];
+    proteinDistanceObjList:DistanceObj[][];
     structureChainResultObj:StructureChainResultObj;
     rangeSliderOptions: Options = {
       floor: 0,
@@ -1358,6 +1359,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
       this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
 
+      this.proteinDistanceObjList = [];
+
       for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
 
         let distances:number[];
@@ -1469,9 +1472,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           }
           this.distanceObjList.push(distanceObj);
       }
-
+      this.proteinDistanceObjList.push(this.distanceObjList);
     }
-
+    // console.log(this.proteinDistanceObjList);
     }
     // color range generator
     // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
