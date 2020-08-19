@@ -45,7 +45,7 @@
          <!-- residues -->
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeAlignmentObj(displayAlignmentObj.sequenceObj.accession)"><i class="fa fa-remove"></i></div></div></td>
+         <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeAlignmentObj(displayAlignmentObj.label)"><i class="fa fa-remove"></i></div></div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
          </td>
@@ -706,7 +706,6 @@
                             </div>
                           </td>
                         </tr>
-
                       </tbody>
                       <tbody>
 

@@ -32,6 +32,7 @@ from django.contrib.auth import authenticate
 import time
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 
+
 def monitorJobs(request):
     try:
         data = json.loads(request.body.decode('utf-8'))

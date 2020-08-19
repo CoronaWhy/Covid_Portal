@@ -70,7 +70,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     epitopePrevButtonColor:string;
     epitopeNextButtonColor:string;
-
     structurePrevButtonColor:string;
     structureNextButtonColor:string;
 
@@ -152,7 +151,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     removeAlignmentObj(accession){
 
       this.alignmentObjList.forEach( (item, index) => {
-        if(item.sequenceObj.accession === accession) this.alignmentObjList.splice(index,1);
+        if(item.label === accession) this.alignmentObjList.splice(index,1);
       });
 
       this.sequenceObjList.forEach( (item, index) => {
@@ -177,8 +176,17 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.displayEpitopeObjList = this.epitopeObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
     }
     removeStructureObj(pdbchain){
+
+      console.log (" in remove structure obj " + pdbchain);
+
+      this.proteinDistanceObjList = [];
+
       this.structureObjList.forEach( (item, index) => {
         if(item.pdbchain === pdbchain) this.structureObjList.splice(index,1);
+      });
+
+      this.selectedStructureIds.forEach( (item, index) => {
+        if(item === pdbchain) this.selectedStructureIds.splice(index,1);
       });
 
       this.structureChainObjList.forEach( (item, index) => {
@@ -895,7 +903,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
     reloadStructures(value){
+
       console.log(value.currentTarget.defaultValue);
+      console.log(" this.displayStructureObjList " + this.displayStructureObjList);
+
+      this.proteinDistanceObjList = [];
+
       if (value.currentTarget.checked){
         this.selectedStructureIds.push(value.currentTarget.defaultValue);
 
@@ -905,7 +918,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           // for (let i = 0; i< structureObjList.length; i++){
           //   this.structureObjList.push(structureObjList[i]);
           // }
-          this.structureObjList = structureObjList;
+           this.structureObjList = structureObjList;
            console.log(" structureObjList " + structureObjList);
            this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.displayStructureObjList.length; i++){
@@ -1412,8 +1425,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              );
            }
            distances.push(distance);
-
-           // console.log(" i = " + i + " distance = " + distance);
+           if (i > 168 && i < 188){
+             console.log(" listIndex = " + listIndex + " i = " + i + " distance = " + distance);
+          }
         }
       // console.log(" distances = " + distances.length);
 
@@ -1446,9 +1460,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            break;
          }
 
-          if (normalizedDistances[i] == 0){
-            console.log( " normalizedDistances = " + i + " -- " + normalizedDistances[i]);
-          }
+          // if (normalizedDistances[i] == 0){
+          //   console.log( " normalizedDistances = " + i + " -- " + normalizedDistances[i]);
+          // }
           distanceObj = new DistanceObj();
 
           distanceObj.percOffset = 0;
@@ -1462,7 +1476,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             this.displayStructureObjList[listIndex].residueObjList[i].residueTableCellColor = distanceColor;
 
             distanceObj.percOffset = normalizedDistances[i]*100;
-            console.log(" list index = " + listIndex + " i = " + i + " offset = " + normalizedDistances[i]*100);
+            // if (i > 168 && i < 188){
+            //   console.log(" list index = " + listIndex + " i = " + i + " offset = " + normalizedDistances[i]*100);
+            // }
             if ( normalizedDistances[i] != 0 ) {
               distanceObj.backgroundColor = distanceColor;
             }
