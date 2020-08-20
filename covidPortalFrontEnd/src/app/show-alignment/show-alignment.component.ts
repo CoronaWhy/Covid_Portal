@@ -20,12 +20,14 @@ import { of } from 'rxjs';
 import { TableColumnObj } from '../models/tableColumn';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PopupModalComponent } from '../popup-modal/popup-modal.component';
+
 @Component({
     selector: 'list-files',
     providers: [ShowAlignmentService],
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
+
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     @Input()
     datafiles : UploadFolder[];
@@ -143,8 +145,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     sortStructureChainTableColumn = 'taxon';
     sortEpitopeExperimentTableColumn = 'host';
-
-    distanceObjList : DistanceObj[];
 
     @ViewChild('sequenceTable') sequenceTable;
 
@@ -867,7 +867,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                this.maxSliderValue = this.displayAlignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
              }
              this.displayAlignmentObjList[i].residueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
-             this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+             this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
         });
       } else { // if unchecked
@@ -894,7 +894,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                this.maxSliderValue = this.displayEpitopeObjList[i].residueObjList.length - this.maxDisplayResidues;
              }
              this.displayEpitopeObjList[i].residueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
-             this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+             this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
         });
       } else { // if unchecked
@@ -926,7 +926,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                this.maxSliderValue = this.displayStructureObjList[i].residueObjList.length - this.maxDisplayResidues;
              }
              this.displayStructureObjList[i].residueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
-             this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+             this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
         });
       } else { // if unchecked
@@ -1370,9 +1370,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
     // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
 
-      let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
-      this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
-
       this.proteinDistanceObjList = [];
 
       for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
@@ -1381,7 +1378,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         let distance = 0;
         distances = [];
 
-        this.distanceObjList = [];
+        let distanceObjList = [];
+
+        let normalizedDistances = [];
+
+        let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
+        this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
 
         console.log(" listIndex " + listIndex);
         console.log(" len  this.displayStructureObjList " + this.displayStructureObjList.length);
@@ -1436,8 +1438,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let minDistance = Math.min(...distances);
       let rangeDistance = maxDistance - minDistance;
 
-      let normalizedDistances = [];
-
       for (let j = 0; j < distances.length; j++){
         normalizedDistances.push (
           1- (distances[j] - minDistance)/rangeDistance
@@ -1487,11 +1487,11 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             }
 
           }
-          this.distanceObjList.push(distanceObj);
+          distanceObjList.push(distanceObj);
       }
-      this.proteinDistanceObjList.push(this.distanceObjList);
+      this.proteinDistanceObjList.push(distanceObjList);
     }
-    console.log(this.proteinDistanceObjList);
+    // console.log(this.proteinDistanceObjList);
     }
     // color range generator
     // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
