@@ -36,6 +36,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     resultsAvailable:boolean;
     sub:Subscription;
     message:string;
+    proteinResidueIndex:number;
     alignmentObjList:AlignmentObj[];
     displayAlignmentObjList:AlignmentObj[];
     maxDisplayResidues :number;
@@ -179,11 +180,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       console.log (" in remove structure obj " + pdbchain);
 
-      this.proteinDistanceObjList = [];
-
       this.structureObjList.forEach( (item, index) => {
         if(item.pdbchain === pdbchain) this.structureObjList.splice(index,1);
       });
+
+      if (this.structureObjList.length == 0){
+          this.proteinDistanceObjList = [];
+          this.proteinResidueIndex = -1;
+      }
 
       this.selectedStructureIds.forEach( (item, index) => {
         if(item === pdbchain) this.selectedStructureIds.splice(index,1);
@@ -193,9 +197,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         if(item.pdbchain === pdbchain) {
             item.isSelected = false;
           }
+
       });
 
       this.displayStructureObjList = this.structureObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+
+      this.handleProteinResidueClick();
     }
 
     openAlignmentModal(value){
@@ -907,8 +914,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       console.log(value.currentTarget.defaultValue);
       console.log(" this.displayStructureObjList " + this.displayStructureObjList);
 
-      this.proteinDistanceObjList = [];
-
       if (value.currentTarget.checked){
         this.selectedStructureIds.push(value.currentTarget.defaultValue);
 
@@ -929,6 +934,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
         });
+
+        this.handleProteinResidueClick();
+
       } else { // if unchecked
           this.removeStructureObj(value.currentTarget.defaultValue);
       }
@@ -1180,6 +1188,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.savedSearchEpitopeString = '';
       this.savedSearchStructureString = '';
 
+      this.proteinResidueIndex = -1;
+
       this.isLoading = false;
       this.sequenceTableSortColumn = "accession";
       this.hideAlignmentPrevButton = true;
@@ -1350,25 +1360,13 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       });
     }
 
+    handleProteinResidueClick(){
 
-    handleResidueClick(event:any){
-      var target = event.target || event.srcElement || event.currentTarget;
-      var idAttr = target.attributes.id.value;
-      var data = idAttr.split("_");
+      if (this.proteinResidueIndex == -1){
+        return;
+      }
 
-      var listIndex = data[1];
-      var resIndex = data[2];
-      // console.log(" listIndex " + listIndex);
-      // console.log(" resIndex " + resIndex);
-
-      //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
-      // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
-      //
-      //   let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
-      //   this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
-
-    //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
-    // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
+      console.log(" ^^^ in handle protein residue click ");
 
       this.proteinDistanceObjList = [];
 
@@ -1382,8 +1380,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
         let normalizedDistances = [];
 
-        let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
-        this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
+        let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[this.proteinResidueIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[this.proteinResidueIndex].residuePosition.y ,
+        this.displayStructureObjList[listIndex].displayResidueObjList[this.proteinResidueIndex].residuePosition.z]
 
         console.log(" listIndex " + listIndex);
         console.log(" len  this.displayStructureObjList " + this.displayStructureObjList.length);
@@ -1492,6 +1490,18 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.proteinDistanceObjList.push(distanceObjList);
     }
     // console.log(this.proteinDistanceObjList);
+    }
+
+    handleResidueClick(event:any){
+      var target = event.target || event.srcElement || event.currentTarget;
+      var idAttr = target.attributes.id.value;
+      var data = idAttr.split("_");
+
+      var listIndex = data[1];
+      var resIndex = data[2];
+      this.proteinResidueIndex = resIndex;
+
+      this.handleProteinResidueClick();
     }
     // color range generator
     // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
