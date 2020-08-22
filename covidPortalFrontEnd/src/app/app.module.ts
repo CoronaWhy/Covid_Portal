@@ -13,7 +13,6 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { AuthGuard , AuthService} from './shared';
 
-import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
 
 import { NotificationsComponent } from './notifications/notifications.component';
@@ -37,8 +36,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
 import { HelpModalService } from './services/help-modal.service';
 import { HelpModalComponent } from './help-modal/help-modal.component';
-
-import { PopupModalComponent } from './popup-modal/popup-modal.component';
 
 import { NgxSortableModule } from 'ngx-sortable';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
@@ -87,10 +84,9 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   entryComponents: [
        HelpModalComponent,
-       PopupModalComponent,
    ],
 
-  declarations: [AppComponent, HelpModalComponent, PopupModalComponent],
+  declarations: [AppComponent, HelpModalComponent],
 
   providers: [AuthGuard, ProjectService, LoginService, SignupService, ResetPasswordService, LogoutService, AuthService, LogoutComponent,
               SigninEmitterService, SignoutEmitterService, HelpModalService, DatafileDetailService, {
