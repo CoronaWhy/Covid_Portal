@@ -78,8 +78,10 @@
          </th>
          <!-- position nomenclature -->
          <th colspan="16">
-             <button onclick="moveup('epitopepanel')">Up</button>
+           <div class="btn-group">
+             <button onclick="moveup('epitopepanel')">Up</button>&nbsp;
              <button onclick="movedown('epitopepanel')">Dn</button>
+           </div>
          </th>
          <th class="sort-header">
            <div class="row">
@@ -119,8 +121,10 @@
          <th class="label-header">PDB ID</th>
          <!-- position nomenclature -->
          <th colspan=16>
-             <button onclick="moveup('structurepanel')">Up</button>
+           <div class="btn-group">
+             <button onclick="moveup('structurepanel')">Up</button>&nbsp;
              <button onclick="movedown('structurepanel')">Dn</button>
+           </div>
          </th>
          <th class="sort-header">
            <div class="row">
@@ -223,18 +227,11 @@
   <!----------------------------------------------------------------------------->
   <!----------------------------------------------------------------------------->
   <!----------------------------------------------------------------------------->
-  <div class="btn-grp">
-    <button (click)="showHideEpitopePanel('0')">Show Epitope</button>
-    <button (click)="showHideEpitopePanel('1')">Hide Epitope</button>
-    <br>
-    <button (click)="showHideStructurePanel('0')">Show Structure</button>
+  <div class="btn-group">
+    <button (click)="showHideEpitopePanel('0')">Show Epitope</button>&nbsp;
+    <button (click)="showHideEpitopePanel('1')">Hide Epitope</button>&nbsp;
+    <button (click)="showHideStructurePanel('0')">Show Structure</button>&nbsp;
     <button (click)="showHideStructurePanel('1')">Hide Structure</button>
-
-    <!-- <button onclick="javascript:document.getElementById('epitopepanel').style.display='table-row-group'">Show Epitope</button>
-    <button onclick="javascript:document.getElementById('epitopepanel').style.display='none'">Hide Epitope</button>
-    <br>
-    <button onclick="javascript:document.getElementById('structurepanel').style.display='table-row-group'">Show Structure</button>
-    <button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button> -->
   </div>
 
   <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">

@@ -924,7 +924,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           //   this.structureObjList.push(structureObjList[i]);
           // }
            this.structureObjList = structureObjList;
-           console.log(" structureObjList " + structureObjList);
+           console.log(" len structureObjList " + structureObjList.length);
            this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.displayStructureObjList.length; i++){
              if (i == 0){
@@ -933,13 +933,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              this.displayStructureObjList[i].residueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
              this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
-        });
 
-        this.handleProteinResidueClick();
+           this.handleProteinResidueClick();
+
+        });
 
       } else { // if unchecked
           this.removeStructureObj(value.currentTarget.defaultValue);
       }
+
     }
 
     filterSequenceDatatable(){
@@ -1366,7 +1368,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         return;
       }
 
-      console.log(" ^^^ in handle protein residue click ");
+      console.log(" ^^^ in handle protein residue click this.proteinResidueIndex = " + this.proteinResidueIndex + " this.displayStructureObjList.length = " + this.displayStructureObjList.length);
 
       this.proteinDistanceObjList = [];
 
@@ -1387,11 +1389,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         console.log(" selected position " + selectedPosition);
 
         for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
-          // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
+
            distance = 0;
-           // if (listIndex == 0){
-           //   console.log(" len  this.displayStructureObjList[listIndex].residueObjList " + this.displayStructureObjList[listIndex].residueObjList.length + " i = " + i);
-           // }
+
            if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
               distance =
 
@@ -1452,6 +1452,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       // let tr = document.getElementById("tr_0");
       let distanceObj : DistanceObj;
       let distanceColor : string;
+      console.log( " normalized distances len = " + normalizedDistances.length);
       for (let i = 0; i< normalizedDistances.length; i++){
 
          if (i >= this.displayStructureObjList[listIndex].residueObjList.length){
