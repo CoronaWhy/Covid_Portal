@@ -27,7 +27,6 @@ import { PopupModalComponent } from '../popup-modal/popup-modal.component';
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
-
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     @Input()
     datafiles : UploadFolder[];
@@ -192,8 +191,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.selectedStructureIds.forEach( (item, index) => {
         if(item === pdbchain) this.selectedStructureIds.splice(index,1);
       });
-
+      console.log(" before structure chain remove ");
       this.structureChainObjList.forEach( (item, index) => {
+        console.log(" item.pdbchain " + item.pdbchain )
         if(item.pdbchain === pdbchain) {
             item.isSelected = false;
           }
@@ -203,6 +203,59 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.displayStructureObjList = this.structureObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
 
       this.handleProteinResidueClick();
+    }
+
+    downloadData() {
+      console.log( " in download data ");
+      const replacer = (key, value) => (value === null ? '' : value); // specify how you want to handle null values here
+      const header = "Spike Protein Data Download";
+      // const csv = this.alignmentObjList.forEach((alignmentObj, index) =>
+      //   {
+      //     alignmentObj.forEach((field, index) => {
+      //       JSON.stringify(field, replacer)
+      //     }).join(',');
+      //   }
+      // );
+      var csv = [];
+      var residueString = "";
+      for (let i = 0; i< this.displayAlignmentObjList.length; i++) {
+        residueString = "";
+        for (let j = 0; j< this.displayAlignmentObjList[i].residueObjList.length; j++) {
+          residueString += this.displayAlignmentObjList[i].residueObjList[j].residueValue;
+        }
+        csv.push(this.displayAlignmentObjList[i].sequenceObj.accession+ "," + residueString);
+      }
+      csv.push(",");
+
+      for (let i = 0; i< this.displayEpitopeObjList.length; i++) {
+        residueString = "";
+        for (let j = 0; j< this.displayEpitopeObjList[i].residueObjList.length; j++) {
+          residueString += this.displayEpitopeObjList[i].residueObjList[j].residueValue;
+        }
+        csv.push(this.displayEpitopeObjList[i].iedb_id+ "," + residueString);
+      }
+      csv.push(",");
+
+      for (let i = 0; i< this.displayStructureObjList.length; i++) {
+        residueString = "";
+        for (let j = 0; j< this.displayStructureObjList[i].residueObjList.length; j++) {
+          residueString += this.displayStructureObjList[i].residueObjList[j].residueValue;
+        }
+        csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
+      }
+
+      // csv.unshift(header.join(','));
+      const csvArray = csv.join('\r\n');
+
+      const a = document.createElement('a');
+      const blob = new Blob([csvArray], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+
+      a.href = url;
+      a.download = 'spike_protein_explorer_data.csv';
+      a.click();
+      window.URL.revokeObjectURL(url);
+      a.remove();
     }
 
     openAlignmentModal(value){

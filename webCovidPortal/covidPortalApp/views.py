@@ -436,7 +436,8 @@ def showAlignment(request):
                                         "taxon": x["taxon"],
                                         "taxon_id": x["taxon_id"],
                                         "pdb_id": x["pdb_id"],
-                                        "chain": x["chain"]
+                                        "chain": x["chain"],
+                                        "pdbchain": x["pdb_id"] + "." + x["chain"]
                                     }
 
             if  x["pdb_id"] + "." + x["chain"] in  SELECTED_PDB_CHAIN_IDS:
