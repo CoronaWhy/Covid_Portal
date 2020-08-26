@@ -223,7 +223,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         for (let j = 0; j< this.displayAlignmentObjList[i].residueObjList.length; j++) {
           residueString += this.displayAlignmentObjList[i].residueObjList[j].residueValue;
         }
-        csv.push(this.displayAlignmentObjList[i].sequenceObj.accession+ "," + residueString);
+        if (this.displayAlignmentObjList[i].sequenceObj){
+          csv.push(this.displayAlignmentObjList[i].sequenceObj.accession+ "," + residueString);
+        }
       }
       csv.push(",");
 
@@ -260,7 +262,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     openAlignmentModal(value){
       // console.log(value);
-
+      console.log(" in alignment modal ");
       const alignmentModalRef = this.popupModalService.open(PopupModalComponent);
 
       this.popupValueObjList = [];
@@ -269,7 +271,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let selectedAlignmentObj:AlignmentObj;
       let objKeys:any;
       for (let i = 0; i < this.displayAlignmentObjList.length; i++){
-        if (this.displayAlignmentObjList[i].sequenceObj.accession == value){
+        console.log(" this.displayAlignmentObjList[i].sequenceObj " + this.displayAlignmentObjList[i].sequenceObj);
+        if (this.displayAlignmentObjList[i].sequenceObj && this.displayAlignmentObjList[i].sequenceObj.accession == value){
 
           selectedAlignmentObj = this.displayAlignmentObjList[i];
 
@@ -303,10 +306,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let objKeys:any;
       for (let i = 0; i < this.displayEpitopeObjList.length; i++){
         if (this.displayEpitopeObjList[i].iedb_id == value){
+          console.log(this.displayEpitopeObjList[i].iedb_id);
 
           selectedEpitopeObj = this.displayEpitopeObjList[i];
 
           objKeys = Object.keys(selectedEpitopeObj.epitopeExperimentObj);
+          console.log(objKeys);
 
           for (let j = 0; j<objKeys.length; j++ ){
               popupValueObj = new PopupValueObj();

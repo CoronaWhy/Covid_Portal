@@ -36,6 +36,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
 import { HelpModalService } from './services/help-modal.service';
 import { HelpModalComponent } from './help-modal/help-modal.component';
+import { PopupModalComponent } from './popup-modal/popup-modal.component';
 
 import { NgxSortableModule } from 'ngx-sortable';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
@@ -84,9 +85,10 @@ export function createTranslateLoader(http: HttpClient) {
   ],
   entryComponents: [
        HelpModalComponent,
+       PopupModalComponent,
    ],
 
-  declarations: [AppComponent, HelpModalComponent],
+  declarations: [AppComponent, HelpModalComponent, PopupModalComponent],
 
   providers: [AuthGuard, ProjectService, LoginService, SignupService, ResetPasswordService, LogoutService, AuthService, LogoutComponent,
               SigninEmitterService, SignoutEmitterService, HelpModalService, DatafileDetailService, {
