@@ -17,7 +17,6 @@
     <div class="row" style="float:clear;">
       <p>To navigate, watch <a href="https://www.loom.com/share/cb97389554c8465191e7b6f744f74efe" target="_blank">this video</a>. The design doc is <a href="https://docs.google.com/document/d/1xLM-s-xak-jQkTJWTKFcz859piYX6mVGCq7x66OLot8/edit?usp=sharing" target="_blank"> here</a> and the data was collected using <a href= "https://miro.com/app/board/o9J_krpU7yY=/" target="_blank">this pipeline</a>.&nbsp;
         <button class="btn btn-outline-primary" (click)="downloadData();">Download Data</button>
-
     </div>
   <table border=0 class="table paneltable" id="paneltable">
      <thead>
@@ -34,7 +33,7 @@
              <div ngbDropdown class="d-inline-block">
                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.sequenceSortColumn}}</button>
                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                 <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
+                 <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>&nbsp;<i class="fa fa-question-circle" (click)="openModal('helpImageClass')"></i>
                </div>
              </div>
            </div>
