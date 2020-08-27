@@ -18,11 +18,14 @@
   
 # Deployment instructions
   There are two sub-folders - one corresponding to the angular frontend (covidPortalFrotnEnd) and the other Python backend (webCovidPortal). Each can be started using Docker.
+  
   For angular, to launch the app, using docker - 
   - sudo docker build --no-cache -t portal-angular .
   - sudo docker run -p 80:80 portal-angular
+  
   For Django, to launch the app, using docker - 
   - sudo docker build --no-cache -t portal-django .
   - sudo docker run -p 8000:80
+  
   The Django API is available as a service from 
   - http://portaldb.stage.coronawhy.org/
