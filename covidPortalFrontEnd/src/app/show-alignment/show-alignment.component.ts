@@ -20,6 +20,8 @@ import { of } from 'rxjs';
 import { TableColumnObj } from '../models/tableColumn';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PopupModalComponent } from '../popup-modal/popup-modal.component';
+import { HelpModalService } from '../services/help-modal.service';
+import { HelpModalComponent } from '../help-modal/help-modal.component';
 
 @Component({
     selector: 'list-files',
@@ -147,6 +149,48 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     sortEpitopeExperimentTableColumn = 'host';
 
     @ViewChild('sequenceTable') sequenceTable;
+
+    // open modal
+    openModal(helpType: string) {
+      const modalRef = this.modalService.open(HelpModalComponent);
+      if (helpType == "helpSortAlignments"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the alignments table. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSortEpitopeExternal"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the epitopes table. This is for a higher level sort, sorting within these values is possible by selecting from the sort column on the right. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSortEpitopeInternal"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the epitopes table. This is for a lower level sort. Data will be sorted within the criteria provided in the sort column in the left. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSortStructures"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the structures table. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSequenceSlider"){
+        modalRef.componentInstance.name = 'Drag slider for navigating sequences horizontally. All three panels will scroll synchronously.';
+      }
+      else if (helpType == "helpEpitopesSlider"){
+        modalRef.componentInstance.name = 'The epitopes are shown in red, depending on their location in the sequence. Click on a red bar to position to that epitope.';
+      }
+      else if (helpType == "helpStructuresSlider"){
+        modalRef.componentInstance.name = 'The bar shows the distances for the structure sequences from the selected epitope. Clicking on the bar will position to sequence correspondingly. Lighter colors indicate closer proximity of corresponding residue to selected residue.';
+      }
+      else if (helpType == "helpProteins"){
+        modalRef.componentInstance.name = 'Selected Spike protein sequences. The table can be sorted, or horizontally and vertically scrolled (if more than 3 sequences are selected). Some sequences are pre-selected on initial load.';
+      }
+      else if (helpType == "helpEpitopes"){
+        modalRef.componentInstance.name = 'Selected epitopes. The table can be sorted, or horizontally and vertically scrolled (if more than 3 epitopes are selected). Some epitopes are pre-selected on initial load.';
+      }
+      else if (helpType == "helpStructures"){
+        modalRef.componentInstance.name = 'Selected Spike protein sequences. Tablecan be sorted, or horizontally and vertically scrolled (if more than 3 sequences are selected). Some sequences are pre-selected on initial load.';
+      }
+      else if (helpType == "helpFilters"){
+        modalRef.componentInstance.name = 'Select additional sequences/epitopes/structures for display. Records can be selected by clicking on the checkbox for a row, the record will be automatically added. Unchecking a checkbox will deselect a record from the above panels. Columns in all tables have a filter dropdown on the top that will allow filter by selected value. The table can also be sorted or searched.';
+      }
+      else if (helpType == "helpDownloadData"){
+        modalRef.componentInstance.name = 'All sequences/epitopes/structures that have been selected will be downloaded in a CSV file.';
+      }
+
+    }
 
     removeAlignmentObj(accession){
 
@@ -1602,6 +1646,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                  private popupModalService: NgbModal,
                  private route:ActivatedRoute,
                  private router: Router,
+                 private modalService: NgbModal,
                ) {
     };
 
