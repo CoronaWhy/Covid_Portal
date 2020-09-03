@@ -37,7 +37,6 @@
                  <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
                </div>
              </div>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpSortAlignments')"></i>
-
            </div>
          </div>
          </th>
@@ -575,7 +574,7 @@
                       <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
 
                         <td>
-                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}" (change)="reloadEpitopes($event)">
+                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}-{{row.exp_method}}" (change)="reloadEpitopes($event)">
                         </td>
 
                         <td>

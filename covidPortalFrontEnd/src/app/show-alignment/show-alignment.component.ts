@@ -51,6 +51,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     epitopeOffsetObjs:EpitopeOffsetObj;
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
+    selectedExpMethods:string[];
     selectedResidueIndex:number;
     selectedStructureIds:string[];
     proteinDistanceObjList:DistanceObj[][];
@@ -113,41 +114,29 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     savedSearchString:string;
     savedSearchEpitopeString:string;
     savedSearchStructureString:string;
-
     numRowsInPage:number;
-
     hideAlignmentPrevButton: boolean;
     hideAlignmentNextButton: boolean;
-
     hideEpitopePrevButton: boolean;
     hideEpitopeNextButton: boolean;
-
     hideStructurePrevButton: boolean;
     hideStructureNextButton: boolean;
-
     nomenclaturePositionStrings:string[];
     displayNomenclaturePositionStrings:string[];
-
     offset:number;
     epitopeOffset:number;
     structureOffset:number;
-
     numRowsInAlignment:number;
-
     sequenceSortColumn:string;
     epitopeSortColumn:string;
     structureSortColumn:string;
-
     sequenceTableSortColumn:string;
     epitopeTableSortColumn:string;
     structureTableSortColumn:string;
-
     epitopeVerticalSliderValue:number;
     structureVerticalSliderValue:number;
-
     sortStructureChainTableColumn = 'taxon';
     sortEpitopeExperimentTableColumn = 'host';
-
     @ViewChild('sequenceTable') sequenceTable;
 
     // open modal
@@ -987,7 +976,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     reloadEpitopes(value){
       console.log(value.currentTarget.defaultValue);
       if (value.currentTarget.checked){
-        this.selectedEpitopeIds.push(value.currentTarget.defaultValue);
+        let data = value.currentTarget.defaultValue.split("-");
+        this.selectedEpitopeIds.push(data[0]);
+        this.selectedExpMethods.push(data[1]);
 
         console.log(this.selectedEpitopeIds);
 
@@ -1288,6 +1279,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       //   this.selectedAccessions = params["selectedAccessions"];
       //   console.log(this.selectedAccessions);
       // })
+      this.selectedExpMethods = [];      
       this.savedSearchString = '';
       this.savedSearchEpitopeString = '';
       this.savedSearchStructureString = '';

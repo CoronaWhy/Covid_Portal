@@ -245,7 +245,6 @@ def showAlignment(request):
     alignmentResultObj = {}
 
     try:
-
         # print (" alignment ")
 
          # get params from request
@@ -367,18 +366,6 @@ def showAlignment(request):
 
         sequenceRecords = sequencerecords({"mesh_id":MESH_ID})
         # print ( " len sequenceList = " + str(len (sequenceList)))
-        # sequenceLength = 0
-        # for sequence in sequenceList:
-        #
-        #     sequenceString = sequence["seq"]
-        #     if sequence["offset"] != 0 :
-        #         sequenceString = '-' * sequence["offset"] + sequenceString
-        #     # print ( " len(sequenceString) " + str(len(sequenceString) ) )
-        #     if len(sequenceString) > sequenceLength:
-        #         sequenceLength = len(sequenceString)
-        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-        #     alignmentObj = {"label":sequence["accession"],"residueObjList":residueObjList}
-        #     alignmentObjList.append(alignmentObj)
 
         for sequenceRecord in sequenceRecords:
 
@@ -402,6 +389,7 @@ def showAlignment(request):
         for x in epitopeExperiments:
 
             epitopeExperimentObj =      {
+                                            # 'id'                : x.id,
                                             'host'              : x.host,
                                             'assay_type'        : x.assay_type,
                                             'assay_result'      : x.assay_result,
