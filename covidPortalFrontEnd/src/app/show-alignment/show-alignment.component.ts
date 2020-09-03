@@ -980,8 +980,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         this.selectedEpitopeIds.push(data[0]);
         this.selectedExpMethods.push(data[1]);
 
-        console.log(this.selectedEpitopeIds);
-
         this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds).then(epitopeObjList => {
           // for (let i = 0; i< epitopeObjList.length; i++){
           //   this.epitopeObjList.push(epitopeObjList[i]);
@@ -1279,7 +1277,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       //   this.selectedAccessions = params["selectedAccessions"];
       //   console.log(this.selectedAccessions);
       // })
-      this.selectedExpMethods = [];      
+      this.selectedExpMethods = [];
       this.savedSearchString = '';
       this.savedSearchEpitopeString = '';
       this.savedSearchStructureString = '';
