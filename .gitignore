@@ -1,7 +1,6 @@
 .DS_Store
 *.py[cod]
 __pycache__/
-*.sqlite3
 *.pyc
 webiCovidPortal/*.pyc
 webiCovidPortal/covidPortalApp/__pycache__/
