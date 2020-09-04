@@ -52,7 +52,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     epitopeOffsetObjs:EpitopeOffsetObj;
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
-    selectedExpMethods:string[];
+    selectedEpitopeExperimentIds:string[];
     selectedResidueIndex:number;
     selectedStructureIds:string[];
     proteinDistanceObjList:DistanceObj[][];
@@ -979,9 +979,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       if (value.currentTarget.checked){
         let data = value.currentTarget.defaultValue.split("-");
         this.selectedEpitopeIds.push(data[0]);
-        this.selectedExpMethods.push(data[1]);
+        this.selectedEpitopeExperimentIds.push(data[1]);
 
-        this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds).then(epitopeObjList => {
+        this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds, this.selectedEpitopeExperimentIds).then(epitopeObjList => {
           // for (let i = 0; i< epitopeObjList.length; i++){
           //   this.epitopeObjList.push(epitopeObjList[i]);
           // }
@@ -1053,7 +1053,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           selectFlag = false;
           for (let j = 0; j < objKeys.length; j++){
               console.log(" obj " + this.sequenceObjList[i] + " key " + objKeys[j]);
-              if (this.sequenceObjList[i][objKeys[j]] &&  this.sequenceObjList[i][objKeys[j]].includes (this.searchString) ) {
+              if (this.sequenceObjList[i][objKeys[j]] &&  this.sequenceObjList[i][objKeys[j]].toString().toLowerCase().includes (this.searchString.toLowerCase( )) ) {
                 selectFlag = true;
               }
           }
@@ -1091,7 +1091,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            selectFlag = false;
            for (let j = 0; j < objKeys.length; j++){
                console.log(" obj " + this.epitopeExperimentObjList[i] + " key " + objKeys[j]);
-               if (this.epitopeExperimentObjList[i][objKeys[j]] &&  this.epitopeExperimentObjList[i][objKeys[j]].includes (this.searchEpitopeString) ) {
+               if (this.epitopeExperimentObjList[i][objKeys[j]] &&  this.epitopeExperimentObjList[i][objKeys[j]].toString().toLowerCase().includes (this.searchEpitopeString.toLowerCase()) ) {
                  selectFlag = true;
                }
            }
@@ -1130,7 +1130,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           selectFlag = false;
           for (let j = 0; j < objKeys.length; j++){
               console.log(" obj " + this.structureChainObjList[i] + " key " + objKeys[j]);
-              if (this.structureChainObjList[i][objKeys[j]] &&  this.structureChainObjList[i][objKeys[j]].includes (this.searchStructureString) ) {
+              if (this.structureChainObjList[i][objKeys[j]] &&  this.structureChainObjList[i][objKeys[j]].toString().toLowerCase().includes (this.searchStructureString.toLowerCase()) ) {
                 selectFlag = true;
               }
           }
@@ -1278,7 +1278,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       //   this.selectedAccessions = params["selectedAccessions"];
       //   console.log(this.selectedAccessions);
       // })
-      this.selectedExpMethods = [];
+      this.selectedEpitopeExperimentIds = [];
       this.savedSearchString = '';
       this.savedSearchEpitopeString = '';
       this.savedSearchStructureString = '';
@@ -1394,6 +1394,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          this.selectedAccessions = alignmentResult.selectedAccessions;
          this.selectedEpitopeIds = alignmentResult.selectedEpitopeIds;
+         this.selectedEpitopeExperimentIds = alignmentResult.selectedEpitopeExperimentIds;
+
          this.selectedStructureIds = alignmentResult.selectedStructureIds;
 
          this.epitopeOffsetObjs = alignmentResult.epitopeOffsetObjs;

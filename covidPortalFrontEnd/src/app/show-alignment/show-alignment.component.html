@@ -58,7 +58,7 @@
          </td>
      </tr>
      </tbody>
-     
+
      <!-- END SEQUENCES -------------------------------------------------------->
      <!-- BEGIN EPITOPES ------------------------------------------------------->
      <tbody id="epitopepanel">
@@ -81,10 +81,10 @@
          </th>
          <!-- position nomenclature -->
          <th colspan="16">
-           <div class="btn-group">
+           <!-- <div class="btn-group">
              <button onclick="moveup('epitopepanel')">Up</button>&nbsp;
              <button onclick="movedown('epitopepanel')">Dn</button>
-           </div>
+           </div> -->
          </th>
          <th class="sort-header">
            <div class="row">
@@ -125,10 +125,10 @@
          <th class="label-header">PDB ID</th>
          <!-- position nomenclature -->
          <th colspan=16>
-           <div class="btn-group">
+           <!-- <div class="btn-group">
              <button onclick="moveup('structurepanel')">Up</button>&nbsp;
              <button onclick="movedown('structurepanel')">Dn</button>
-           </div>
+           </div> -->
          </th>
          <th class="sort-header">
            <div class="row">
@@ -575,7 +575,7 @@
                       <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
 
                         <td>
-                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}-{{row.exp_method}}" (change)="reloadEpitopes($event)">
+                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}-{{row.id}}" (change)="reloadEpitopes($event)">
                         </td>
 
                         <td>

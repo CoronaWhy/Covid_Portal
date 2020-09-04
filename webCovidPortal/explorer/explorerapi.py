@@ -305,6 +305,7 @@ def epitopeexperimentsfilter(params):
     recs = [];
     for r in EpitopeExperiment.objects.filter( *qs ):
         recs.append({
+            'id'                : r.id,
             'host'              : r.host,
             'assay_type'        : r.assay_type,
             'assay_result'      : r.assay_result,
