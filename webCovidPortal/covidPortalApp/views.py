@@ -32,7 +32,6 @@ from django.contrib.auth import authenticate
 import time
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 
-
 def monitorJobs(request):
     try:
         data = json.loads(request.body.decode('utf-8'))
@@ -252,7 +251,7 @@ def showAlignment(request):
 
         sequenceObjList = []
         selectedSequenceRecords = []
-
+        selectedExpMethods = []
         epitopeObjList = []
         structureObjList = []
 
@@ -303,6 +302,7 @@ def showAlignment(request):
             if len(epitopeexperimentsfilters) > 0:
                 epitopeExperimentObj = epitopeexperimentsfilters[0]
                 epitopeObj["epitopeExperimentObj"] = epitopeExperimentObj
+                selectedExpMethods.append(epitopeExperimentObj["exp_method"])
                 # print (" adding epitope " + epitope.IEDB_ID)
                 epitopeObjList.append(epitopeObj)
 
@@ -458,6 +458,8 @@ def showAlignment(request):
 
         alignmentResultObj["selectedAccessions"] = SELECTED_ACCESSIONS.split(",")
         alignmentResultObj["selectedEpitopeIds"] = SELECTED_EPITOPES.split(",")
+        alignmentResultObj["selectedExpMethods"] = selectedExpMethods
+
         alignmentResultObj["selectedStructureIds"] = [x["pdb_id"] + "." + x["chain"] for x in SELECTED_PDB_CHAIN_IDS]
 
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
@@ -520,6 +522,8 @@ def reloadEpitopes(request):
         data = json.loads(request.body.decode('utf-8'))
 
         selectedEpitopeIds = data["selectedEpitopeIds"]
+
+        selectedExpMethods = data["selectedExpMethods"]
 
         epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":(",").join(selectedEpitopeIds)})
 

@@ -29,6 +29,7 @@ import { HelpModalComponent } from '../help-modal/help-modal.component';
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
+
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     @Input()
     datafiles : UploadFolder[];

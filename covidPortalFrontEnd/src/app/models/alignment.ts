@@ -41,6 +41,8 @@ export class AlignmentResultObj {
   epitopeObjList:EpitopeObj[];
   selectedEpitopeIds:string[];
 
+  selectedExpMethods:string[];
+
   structureObjList:StructureObj[];
   selectedStructureIds:string[];
 
