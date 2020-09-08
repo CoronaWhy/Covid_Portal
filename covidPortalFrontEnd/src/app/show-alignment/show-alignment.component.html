@@ -106,7 +106,7 @@
      <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpEpitopes')"></i></div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" ><a href="javascript:void(0)">{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a></div></td>
+         <td><div class="residue-height label" ><a href="javascript:void(0)" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" >{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a> <div style="float:right" (click)="positionToEpitope(displayEpitopeObj.offset);"><a href="javascript:void(0)">&gt;</a></div></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
@@ -201,11 +201,13 @@
         <td></td>
         <td colspan=16>
           <div *ngIf="proteinDistanceObjList">
-              Distances in protein structure (click to navigate):&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpStructuresSlider')"></i>
+              Distances in protein structure (click to navigate):&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpStructuresSlider')"></i>&nbsp;                    <button class="btn btn-outline-primary" (click)="downloadProteinDistances();">Download Distances</button>
+
               <div *ngFor = "let proteinDistanceObj of proteinDistanceObjList">
                 <div class="positionContainer">
                   <div class="positionBox" style="background: #D9D9E1;"></div>
-                    <div *ngFor = "let distanceObj of proteinDistanceObj" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);"></div>
+                    <div *ngFor = "let distanceObj of proteinDistanceObj" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);">
+                    </div>
                 </div>
               <br/>
               </div>

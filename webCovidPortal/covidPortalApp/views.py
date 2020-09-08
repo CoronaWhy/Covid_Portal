@@ -525,11 +525,14 @@ def reloadEpitopes(request):
 
         selectedEpitopeExperimentIds = data["selectedEpitopeExperimentIds"]
 
-        epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":(",").join(selectedEpitopeIds)})
+        epitopes = [ Epitope.objects.filter(alignment__name = ALIGNMENT_NAME, protein__mesh_id = MESH_ID, IEDB_ID = selectedEpitopeId )[0] for selectedEpitopeId in selectedEpitopeIds]
+
+        epitopes = [ {'iedb_id': r.IEDB_ID,'offset': r.offset,'seq': r.sequence} for r in epitopes]
+
+        # epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":(",").join(selectedEpitopeIds)})
 
         # get sequence length
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
-
         sequenceLength = len(sequenceList[0]["seq"])
 
         epitopeOffsetObjs = []

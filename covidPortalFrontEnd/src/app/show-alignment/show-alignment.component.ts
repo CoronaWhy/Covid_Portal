@@ -239,6 +239,40 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.handleProteinResidueClick();
     }
 
+    downloadProteinDistances(){
+      console.log( " in download data ");
+      const replacer = (key, value) => (value === null ? '' : value); // specify how you want to handle null values here
+      const header = "Spike Protein Residue Distances Download";
+
+      var csv = [];
+      var residueString = "";
+      for (let i = 0; i< this.proteinDistanceObjList.length; i++) {
+        residueString = "";
+        let distanceObjList = this.proteinDistanceObjList[i];
+        for (let j = 0; j< distanceObjList.length; j++) {
+          residueString += Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100  + " ";
+        }
+        if (this.displayStructureObjList[i]){
+          csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
+        }
+      }
+      csv.push(",");
+
+      // csv.unshift(header.join(','));
+      const csvArray = csv.join('\r\n');
+
+      const a = document.createElement('a');
+      const blob = new Blob([csvArray], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+
+      a.href = url;
+      a.download = 'spike_protein_explorer_residue_distances.csv';
+      a.click();
+      window.URL.revokeObjectURL(url);
+      a.remove();
+
+    }
+
     downloadData() {
       console.log( " in download data ");
       const replacer = (key, value) => (value === null ? '' : value); // specify how you want to handle null values here
@@ -981,6 +1015,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         this.selectedEpitopeIds.push(data[0]);
         this.selectedEpitopeExperimentIds.push(data[1]);
 
+        console.log(" this.selectedEpitopeIds " + this.selectedEpitopeIds);
+        console.log(" this.selectedEpitopeExperimentIds " + this.selectedEpitopeExperimentIds);
+
         this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds, this.selectedEpitopeExperimentIds).then(epitopeObjList => {
           // for (let i = 0; i< epitopeObjList.length; i++){
           //   this.epitopeObjList.push(epitopeObjList[i]);
@@ -1174,6 +1211,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.epitopeVerticalSliderValue = Number(verticalSlider.value);
       console.log(" index epitopeVerticalSliderValue " + this.epitopeVerticalSliderValue);
       let startIndex = 10-this.epitopeVerticalSliderValue;
+      if ( startIndex > 0){
       if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayEpitopeObjList = this.epitopeObjList.slice(startIndex,startIndex+this.numRowsInPage);
       }
@@ -1181,6 +1219,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       for (let i = 0; i < this.displayEpitopeObjList.length; i++){
         this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
       }
+    }
 
     }
 
