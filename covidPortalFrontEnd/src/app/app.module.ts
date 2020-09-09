@@ -26,7 +26,6 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { SigninEmitterService} from './services/signin-emitter.service';
 import { SignoutEmitterService} from './services/signout-emitter.service';
-import { DatafileDetailService} from './layout/datafile-detail/datafile-detail-service';
 
 import { SignupService } from './services/signup-service';
 import { ResetPasswordService } from './services/reset-password-service';
@@ -87,7 +86,7 @@ export function createTranslateLoader(http: HttpClient) {
   declarations: [AppComponent, HelpModalComponent, PopupModalComponent],
 
   providers: [AuthGuard, ProjectService, LoginService, SignupService, ResetPasswordService, LogoutService, AuthService, LogoutComponent,
-              SigninEmitterService, SignoutEmitterService, HelpModalService, DatafileDetailService, {
+              SigninEmitterService, SignoutEmitterService, HelpModalService,  {
 
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,

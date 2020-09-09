@@ -18,7 +18,6 @@ const routes: Routes = [
     },
 
     { path: '', loadChildren: () => import('./show-alignment/show-alignment.module').then(m => m.ShowAlignmentModule) },
-    { path: 'dashboard', loadChildren: () => import('./layout/layout.module').then(m => m.LayoutModule) },
     { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) },
 
     { path: 'logout', loadChildren: () => import('./logout/logout.module').then(m => m.LogoutModule) },
