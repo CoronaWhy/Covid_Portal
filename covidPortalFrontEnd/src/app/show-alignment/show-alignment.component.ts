@@ -250,7 +250,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         residueString = "";
         let distanceObjList = this.proteinDistanceObjList[i];
         for (let j = 0; j< distanceObjList.length; j++) {
-          residueString += Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100  + " ";
+          residueString += Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100  + ",";
         }
         if (this.displayStructureObjList[i]){
           csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
@@ -1196,9 +1196,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let verticalSlider = document.getElementById('verticalSlider') as HTMLInputElement;
       this.verticalSliderValue = Number(verticalSlider.value);
       let startIndex = 10-this.verticalSliderValue;
-      if (this.alignmentObjList.length >= startIndex+this.numRowsInPage ) {
+      // if (this.alignmentObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayAlignmentObjList = this.alignmentObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      }
+      // }
 
       for (let i = 0; i < this.displayAlignmentObjList.length; i++){
         this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
@@ -1211,15 +1211,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.epitopeVerticalSliderValue = Number(verticalSlider.value);
       console.log(" index epitopeVerticalSliderValue " + this.epitopeVerticalSliderValue);
       let startIndex = 10-this.epitopeVerticalSliderValue;
-      if ( startIndex > 0){
-      if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
+      // if ( startIndex > 0){
+      // if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayEpitopeObjList = this.epitopeObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      }
+      // }
 
       for (let i = 0; i < this.displayEpitopeObjList.length; i++){
         this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
       }
-    }
+    // }
 
     }
 
@@ -1228,9 +1228,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.structureVerticalSliderValue = Number(verticalSlider.value);
       console.log(" index structureVerticalSliderValue " + this.structureVerticalSliderValue);
       let startIndex = 10-this.verticalSliderValue;
-      if (this.structureObjList.length > startIndex+this.numRowsInPage){
+      // if (this.structureObjList.length > startIndex+this.numRowsInPage){
         this.displayStructureObjList = this.structureObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      }
+      // }
 
       for (let i = 0; i < this.displayStructureObjList.length; i++){
         this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
