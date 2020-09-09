@@ -20,12 +20,16 @@ import { of } from 'rxjs';
 import { TableColumnObj } from '../models/tableColumn';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PopupModalComponent } from '../popup-modal/popup-modal.component';
+import { HelpModalService } from '../services/help-modal.service';
+import { HelpModalComponent } from '../help-modal/help-modal.component';
+
 @Component({
     selector: 'list-files',
     providers: [ShowAlignmentService],
     templateUrl: './show-alignment.component.html',
     styleUrls: ['./show-alignment.component.scss']
 })
+
 export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     @Input()
     datafiles : UploadFolder[];
@@ -34,6 +38,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     resultsAvailable:boolean;
     sub:Subscription;
     message:string;
+    proteinResidueIndex:number;
     alignmentObjList:AlignmentObj[];
     displayAlignmentObjList:AlignmentObj[];
     maxDisplayResidues :number;
@@ -47,7 +52,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     epitopeOffsetObjs:EpitopeOffsetObj;
     selectedAccessions:string[];
     selectedEpitopeIds:string[];
+    selectedEpitopeExperimentIds:string[];
+    selectedResidueIndex:number;
     selectedStructureIds:string[];
+    proteinDistanceObjList:DistanceObj[][];
     structureChainResultObj:StructureChainResultObj;
     rangeSliderOptions: Options = {
       floor: 0,
@@ -68,7 +76,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     epitopePrevButtonColor:string;
     epitopeNextButtonColor:string;
-
     structurePrevButtonColor:string;
     structureNextButtonColor:string;
 
@@ -108,49 +115,77 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     savedSearchString:string;
     savedSearchEpitopeString:string;
     savedSearchStructureString:string;
-
     numRowsInPage:number;
-
     hideAlignmentPrevButton: boolean;
     hideAlignmentNextButton: boolean;
-
     hideEpitopePrevButton: boolean;
     hideEpitopeNextButton: boolean;
-
     hideStructurePrevButton: boolean;
     hideStructureNextButton: boolean;
-
     nomenclaturePositionStrings:string[];
     displayNomenclaturePositionStrings:string[];
-
     offset:number;
     epitopeOffset:number;
     structureOffset:number;
-
     numRowsInAlignment:number;
-
     sequenceSortColumn:string;
     epitopeSortColumn:string;
     structureSortColumn:string;
-
     sequenceTableSortColumn:string;
     epitopeTableSortColumn:string;
     structureTableSortColumn:string;
-
     epitopeVerticalSliderValue:number;
     structureVerticalSliderValue:number;
-
     sortStructureChainTableColumn = 'taxon';
     sortEpitopeExperimentTableColumn = 'host';
-
-    distanceObjList : DistanceObj[];
-
     @ViewChild('sequenceTable') sequenceTable;
+
+    // open modal
+    openModal(helpType: string) {
+      const modalRef = this.modalService.open(HelpModalComponent);
+      if (helpType == "helpSortAlignments"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the alignments table. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSortEpitopeExternal"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the epitopes table. This is for a higher level sort, sorting within these values is possible by selecting from the sort column on the right. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSortEpitopeInternal"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the epitopes table. This is for a lower level sort. Data will be sorted within the criteria provided in the sort column in the left. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSortStructures"){
+        modalRef.componentInstance.name = 'Select attribute for sorting the structures table. Values of sorted column will be displayed in this column.';
+      }
+      else if (helpType == "helpSequenceSlider"){
+        modalRef.componentInstance.name = 'Drag slider for navigating sequences horizontally. All three panels will scroll synchronously.';
+      }
+      else if (helpType == "helpEpitopesSlider"){
+        modalRef.componentInstance.name = 'The epitopes are shown in red, depending on their location in the sequence. Click on a red bar to position to that epitope.';
+      }
+      else if (helpType == "helpStructuresSlider"){
+        modalRef.componentInstance.name = 'The bar shows the distances for the structure sequences from the selected epitope. Clicking on the bar will position to sequence correspondingly. Lighter colors indicate closer proximity of corresponding residue to selected residue.';
+      }
+      else if (helpType == "helpProteins"){
+        modalRef.componentInstance.name = 'Selected Spike protein sequences. The table can be sorted, or horizontally and vertically scrolled (if more than 3 sequences are selected). Some sequences are pre-selected on initial load.';
+      }
+      else if (helpType == "helpEpitopes"){
+        modalRef.componentInstance.name = 'Selected epitopes. The table can be sorted, or horizontally and vertically scrolled (if more than 3 epitopes are selected). Some epitopes are pre-selected on initial load.';
+      }
+      else if (helpType == "helpStructures"){
+        modalRef.componentInstance.name = 'Selected Spike protein sequences. Tablecan be sorted, or horizontally and vertically scrolled (if more than 3 sequences are selected). Some sequences are pre-selected on initial load.';
+      }
+      else if (helpType == "helpFilters"){
+        modalRef.componentInstance.name = 'Select additional sequences/epitopes/structures for display. Records can be selected by clicking on the checkbox for a row, the record will be automatically added. Unchecking a checkbox will deselect a record from the above panels. Columns in all tables have a filter dropdown on the top that will allow filter by selected value. The table can also be sorted or searched.';
+      }
+      else if (helpType == "helpDownloadData"){
+        modalRef.componentInstance.name = 'All sequences/epitopes/structures that have been selected will be downloaded in a CSV file.';
+      }
+
+    }
 
     removeAlignmentObj(accession){
 
       this.alignmentObjList.forEach( (item, index) => {
-        if(item.sequenceObj.accession === accession) this.alignmentObjList.splice(index,1);
+        if(item.label === accession) this.alignmentObjList.splice(index,1);
       });
 
       this.sequenceObjList.forEach( (item, index) => {
@@ -175,22 +210,127 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.displayEpitopeObjList = this.epitopeObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
     }
     removeStructureObj(pdbchain){
+
+      console.log (" in remove structure obj " + pdbchain);
+
       this.structureObjList.forEach( (item, index) => {
         if(item.pdbchain === pdbchain) this.structureObjList.splice(index,1);
       });
 
+      if (this.structureObjList.length == 0){
+          this.proteinDistanceObjList = [];
+          this.proteinResidueIndex = -1;
+      }
+
+      this.selectedStructureIds.forEach( (item, index) => {
+        if(item === pdbchain) this.selectedStructureIds.splice(index,1);
+      });
+      console.log(" before structure chain remove ");
       this.structureChainObjList.forEach( (item, index) => {
+        console.log(" item.pdbchain " + item.pdbchain )
         if(item.pdbchain === pdbchain) {
             item.isSelected = false;
           }
+
       });
 
       this.displayStructureObjList = this.structureObjList.slice(this.offset*this.numRowsInPage, (this.offset+1)*this.numRowsInPage );
+
+      this.handleProteinResidueClick();
+    }
+
+    downloadProteinDistances(){
+      console.log( " in download data ");
+      const replacer = (key, value) => (value === null ? '' : value); // specify how you want to handle null values here
+      const header = "Spike Protein Residue Distances Download";
+
+      var csv = [];
+      var residueString = "";
+      for (let i = 0; i< this.proteinDistanceObjList.length; i++) {
+        residueString = "";
+        let distanceObjList = this.proteinDistanceObjList[i];
+        for (let j = 0; j< distanceObjList.length; j++) {
+          residueString += Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100  + ",";
+        }
+        if (this.displayStructureObjList[i]){
+          csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
+        }
+      }
+      csv.push(",");
+
+      // csv.unshift(header.join(','));
+      const csvArray = csv.join('\r\n');
+
+      const a = document.createElement('a');
+      const blob = new Blob([csvArray], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+
+      a.href = url;
+      a.download = 'spike_protein_explorer_residue_distances.csv';
+      a.click();
+      window.URL.revokeObjectURL(url);
+      a.remove();
+
+    }
+
+    downloadData() {
+      console.log( " in download data ");
+      const replacer = (key, value) => (value === null ? '' : value); // specify how you want to handle null values here
+      const header = "Spike Protein Data Download";
+      // const csv = this.alignmentObjList.forEach((alignmentObj, index) =>
+      //   {
+      //     alignmentObj.forEach((field, index) => {
+      //       JSON.stringify(field, replacer)
+      //     }).join(',');
+      //   }
+      // );
+      var csv = [];
+      var residueString = "";
+      for (let i = 0; i< this.displayAlignmentObjList.length; i++) {
+        residueString = "";
+        for (let j = 0; j< this.displayAlignmentObjList[i].residueObjList.length; j++) {
+          residueString += this.displayAlignmentObjList[i].residueObjList[j].residueValue;
+        }
+        if (this.displayAlignmentObjList[i].sequenceObj){
+          csv.push(this.displayAlignmentObjList[i].sequenceObj.accession+ "," + residueString);
+        }
+      }
+      csv.push(",");
+
+      for (let i = 0; i< this.displayEpitopeObjList.length; i++) {
+        residueString = "";
+        for (let j = 0; j< this.displayEpitopeObjList[i].residueObjList.length; j++) {
+          residueString += this.displayEpitopeObjList[i].residueObjList[j].residueValue;
+        }
+        csv.push(this.displayEpitopeObjList[i].iedb_id+ "," + residueString);
+      }
+      csv.push(",");
+
+      for (let i = 0; i< this.displayStructureObjList.length; i++) {
+        residueString = "";
+        for (let j = 0; j< this.displayStructureObjList[i].residueObjList.length; j++) {
+          residueString += this.displayStructureObjList[i].residueObjList[j].residueValue;
+        }
+        csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
+      }
+
+      // csv.unshift(header.join(','));
+      const csvArray = csv.join('\r\n');
+
+      const a = document.createElement('a');
+      const blob = new Blob([csvArray], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+
+      a.href = url;
+      a.download = 'spike_protein_explorer_data.csv';
+      a.click();
+      window.URL.revokeObjectURL(url);
+      a.remove();
     }
 
     openAlignmentModal(value){
       // console.log(value);
-
+      console.log(" in alignment modal ");
       const alignmentModalRef = this.popupModalService.open(PopupModalComponent);
 
       this.popupValueObjList = [];
@@ -199,7 +339,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let selectedAlignmentObj:AlignmentObj;
       let objKeys:any;
       for (let i = 0; i < this.displayAlignmentObjList.length; i++){
-        if (this.displayAlignmentObjList[i].sequenceObj.accession == value){
+        console.log(" this.displayAlignmentObjList[i].sequenceObj " + this.displayAlignmentObjList[i].sequenceObj);
+        if (this.displayAlignmentObjList[i].sequenceObj && this.displayAlignmentObjList[i].sequenceObj.accession == value){
 
           selectedAlignmentObj = this.displayAlignmentObjList[i];
 
@@ -233,10 +374,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let objKeys:any;
       for (let i = 0; i < this.displayEpitopeObjList.length; i++){
         if (this.displayEpitopeObjList[i].iedb_id == value){
+          console.log(this.displayEpitopeObjList[i].iedb_id);
 
           selectedEpitopeObj = this.displayEpitopeObjList[i];
 
           objKeys = Object.keys(selectedEpitopeObj.epitopeExperimentObj);
+          console.log(objKeys);
 
           for (let j = 0; j<objKeys.length; j++ ){
               popupValueObj = new PopupValueObj();
@@ -857,7 +1000,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                this.maxSliderValue = this.displayAlignmentObjList[i].residueObjList.length - this.maxDisplayResidues;
              }
              this.displayAlignmentObjList[i].residueObjList = JSON.parse(JSON.stringify(this.alignmentObjList[i].residueObjList));
-             this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+             this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
         });
       } else { // if unchecked
@@ -868,11 +1011,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     reloadEpitopes(value){
       console.log(value.currentTarget.defaultValue);
       if (value.currentTarget.checked){
-        this.selectedEpitopeIds.push(value.currentTarget.defaultValue);
+        let data = value.currentTarget.defaultValue.split("-");
+        this.selectedEpitopeIds.push(data[0]);
+        this.selectedEpitopeExperimentIds.push(data[1]);
 
-        console.log(this.selectedEpitopeIds);
+        console.log(" this.selectedEpitopeIds " + this.selectedEpitopeIds);
+        console.log(" this.selectedEpitopeExperimentIds " + this.selectedEpitopeExperimentIds);
 
-        this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds).then(epitopeObjList => {
+        this.showAlignmentService.reloadEpitopes(this.selectedEpitopeIds, this.selectedEpitopeExperimentIds).then(epitopeObjList => {
           // for (let i = 0; i< epitopeObjList.length; i++){
           //   this.epitopeObjList.push(epitopeObjList[i]);
           // }
@@ -884,7 +1030,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                this.maxSliderValue = this.displayEpitopeObjList[i].residueObjList.length - this.maxDisplayResidues;
              }
              this.displayEpitopeObjList[i].residueObjList = JSON.parse(JSON.stringify(this.epitopeObjList[i].residueObjList));
-             this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+             this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
         });
       } else { // if unchecked
@@ -893,7 +1039,10 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
     reloadStructures(value){
+
       console.log(value.currentTarget.defaultValue);
+      console.log(" this.displayStructureObjList " + this.displayStructureObjList);
+
       if (value.currentTarget.checked){
         this.selectedStructureIds.push(value.currentTarget.defaultValue);
 
@@ -903,20 +1052,25 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           // for (let i = 0; i< structureObjList.length; i++){
           //   this.structureObjList.push(structureObjList[i]);
           // }
-          this.structureObjList = structureObjList;
-           console.log(" structureObjList " + structureObjList);
+           this.structureObjList = structureObjList;
+           console.log(" len structureObjList " + structureObjList.length);
            this.displayStructureObjList = this.structureObjList.slice(0,this.numRowsInAlignment);
            for (let i = 0; i < this.displayStructureObjList.length; i++){
              if (i == 0){
                this.maxSliderValue = this.displayStructureObjList[i].residueObjList.length - this.maxDisplayResidues;
              }
              this.displayStructureObjList[i].residueObjList = JSON.parse(JSON.stringify(this.structureObjList[i].residueObjList));
-             this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+             this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+ this.positionSliderValue,this.endPosition+ this.positionSliderValue);
            }
+
+           this.handleProteinResidueClick();
+
         });
+
       } else { // if unchecked
           this.removeStructureObj(value.currentTarget.defaultValue);
       }
+
     }
 
     filterSequenceDatatable(){
@@ -936,7 +1090,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           selectFlag = false;
           for (let j = 0; j < objKeys.length; j++){
               console.log(" obj " + this.sequenceObjList[i] + " key " + objKeys[j]);
-              if (this.sequenceObjList[i][objKeys[j]] &&  this.sequenceObjList[i][objKeys[j]].includes (this.searchString) ) {
+              if (this.sequenceObjList[i][objKeys[j]] &&  this.sequenceObjList[i][objKeys[j]].toString().toLowerCase().includes (this.searchString.toLowerCase( )) ) {
                 selectFlag = true;
               }
           }
@@ -974,7 +1128,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
            selectFlag = false;
            for (let j = 0; j < objKeys.length; j++){
                console.log(" obj " + this.epitopeExperimentObjList[i] + " key " + objKeys[j]);
-               if (this.epitopeExperimentObjList[i][objKeys[j]] &&  this.epitopeExperimentObjList[i][objKeys[j]].includes (this.searchEpitopeString) ) {
+               if (this.epitopeExperimentObjList[i][objKeys[j]] &&  this.epitopeExperimentObjList[i][objKeys[j]].toString().toLowerCase().includes (this.searchEpitopeString.toLowerCase()) ) {
                  selectFlag = true;
                }
            }
@@ -1013,7 +1167,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
           selectFlag = false;
           for (let j = 0; j < objKeys.length; j++){
               console.log(" obj " + this.structureChainObjList[i] + " key " + objKeys[j]);
-              if (this.structureChainObjList[i][objKeys[j]] &&  this.structureChainObjList[i][objKeys[j]].includes (this.searchStructureString) ) {
+              if (this.structureChainObjList[i][objKeys[j]] &&  this.structureChainObjList[i][objKeys[j]].toString().toLowerCase().includes (this.searchStructureString.toLowerCase()) ) {
                 selectFlag = true;
               }
           }
@@ -1042,12 +1196,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let verticalSlider = document.getElementById('verticalSlider') as HTMLInputElement;
       this.verticalSliderValue = Number(verticalSlider.value);
       let startIndex = 10-this.verticalSliderValue;
-      if (this.alignmentObjList.length >= startIndex+this.numRowsInPage ) {
+      // if (this.alignmentObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayAlignmentObjList = this.alignmentObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      }
+      // }
 
       for (let i = 0; i < this.displayAlignmentObjList.length; i++){
-        this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+        this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
       }
 
     }
@@ -1057,13 +1211,15 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.epitopeVerticalSliderValue = Number(verticalSlider.value);
       console.log(" index epitopeVerticalSliderValue " + this.epitopeVerticalSliderValue);
       let startIndex = 10-this.epitopeVerticalSliderValue;
-      if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
+      // if ( startIndex > 0){
+      // if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayEpitopeObjList = this.epitopeObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      }
+      // }
 
       for (let i = 0; i < this.displayEpitopeObjList.length; i++){
-        this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+        this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
       }
+    // }
 
     }
 
@@ -1072,12 +1228,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.structureVerticalSliderValue = Number(verticalSlider.value);
       console.log(" index structureVerticalSliderValue " + this.structureVerticalSliderValue);
       let startIndex = 10-this.verticalSliderValue;
-      if (this.structureObjList.length > startIndex+this.numRowsInPage){
+      // if (this.structureObjList.length > startIndex+this.numRowsInPage){
         this.displayStructureObjList = this.structureObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      }
+      // }
 
       for (let i = 0; i < this.displayStructureObjList.length; i++){
-        this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition,this.endPosition);
+        this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
       }
 
     }
@@ -1161,9 +1317,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       //   this.selectedAccessions = params["selectedAccessions"];
       //   console.log(this.selectedAccessions);
       // })
+      this.selectedEpitopeExperimentIds = [];
       this.savedSearchString = '';
       this.savedSearchEpitopeString = '';
       this.savedSearchStructureString = '';
+
+      this.proteinResidueIndex = -1;
 
       this.isLoading = false;
       this.sequenceTableSortColumn = "accession";
@@ -1274,6 +1433,8 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
          this.selectedAccessions = alignmentResult.selectedAccessions;
          this.selectedEpitopeIds = alignmentResult.selectedEpitopeIds;
+         this.selectedEpitopeExperimentIds = alignmentResult.selectedEpitopeExperimentIds;
+
          this.selectedStructureIds = alignmentResult.selectedStructureIds;
 
          this.epitopeOffsetObjs = alignmentResult.epitopeOffsetObjs;
@@ -1335,43 +1496,36 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       });
     }
 
+    handleProteinResidueClick(){
 
-    handleResidueClick(event:any){
-      var target = event.target || event.srcElement || event.currentTarget;
-      var idAttr = target.attributes.id.value;
-      var data = idAttr.split("_");
+      if (this.proteinResidueIndex == -1){
+        return;
+      }
 
-      var listIndex = data[1];
-      var resIndex = data[2];
+      console.log(" ^^^ in handle protein residue click this.proteinResidueIndex = " + this.proteinResidueIndex + " this.displayStructureObjList.length = " + this.displayStructureObjList.length);
 
-      // console.log(" listIndex " + listIndex);
-      // console.log(" resIndex " + resIndex);
+      this.proteinDistanceObjList = [];
 
-      //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
-      // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
-      //
-      //   let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
-      //   this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
+      for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
 
-    //   console.log( " position " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x + " " + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y + " "
-    // + this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z );
+        let distances:number[];
+        let distance = 0;
+        distances = [];
 
-      let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.y ,
-      this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition.z]
+        let distanceObjList = [];
 
-      let distances:number[];
-      let distance = 0;
-      distances = [];
+        let normalizedDistances = [];
 
-      this.distanceObjList = [];
+        let selectedPosition = [this.displayStructureObjList[listIndex].displayResidueObjList[this.proteinResidueIndex].residuePosition.x , this.displayStructureObjList[listIndex].displayResidueObjList[this.proteinResidueIndex].residuePosition.y ,
+        this.displayStructureObjList[listIndex].displayResidueObjList[this.proteinResidueIndex].residuePosition.z]
 
-      // for (let listIndex = 0; listIndex < this.displayStructureObjList.length; listIndex++){
-      //
-      //   console.log(" listIndex " + listIndex);
+        console.log(" listIndex " + listIndex);
+        console.log(" selected position " + selectedPosition);
 
         for (let i = 0; i < this.displayStructureObjList[listIndex].residueObjList.length; i++){
-          // console.log(this.displayStructureObjList[listIndex].displayResidueObjList[resIndex].residuePosition);
+
            distance = 0;
+
            if (this.displayStructureObjList[listIndex].residueObjList[i].residueValue != '-'){
               distance =
 
@@ -1405,8 +1559,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
              );
            }
            distances.push(distance);
-
-           // console.log(" i = " + i + " distance = " + distance);
+           if (i > 168 && i < 188){
+             console.log(" listIndex = " + listIndex + " i = " + i + " distance = " + distance);
+          }
         }
       // console.log(" distances = " + distances.length);
 
@@ -1415,11 +1570,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       let minDistance = Math.min(...distances);
       let rangeDistance = maxDistance - minDistance;
 
-      let normalizedDistances = [];
-
-      for (let i = 0; i < distances.length; i++){
+      for (let j = 0; j < distances.length; j++){
         normalizedDistances.push (
-          1- (distances[i] - minDistance)/rangeDistance
+          1- (distances[j] - minDistance)/rangeDistance
         );
       }
 
@@ -1433,11 +1586,16 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       // let tr = document.getElementById("tr_0");
       let distanceObj : DistanceObj;
       let distanceColor : string;
+      console.log( " normalized distances len = " + normalizedDistances.length);
       for (let i = 0; i< normalizedDistances.length; i++){
 
-          if (normalizedDistances[i] == 0){
-            console.log( " normalizedDistances = " + i + " -- " + normalizedDistances[i]);
-          }
+         if (i >= this.displayStructureObjList[listIndex].residueObjList.length){
+           break;
+         }
+
+          // if (normalizedDistances[i] == 0){
+          //   console.log( " normalizedDistances = " + i + " -- " + normalizedDistances[i]);
+          // }
           distanceObj = new DistanceObj();
 
           distanceObj.percOffset = 0;
@@ -1450,8 +1608,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
             this.displayStructureObjList[listIndex].residueObjList[i].residueTableCellColor = distanceColor;
 
-            distanceObj.percOffset = normalizedDistances[i]*100;
+            if (i > 168 && i < 188){
+                console.log(" setting distance residue cell color for i = " + i + " distanceColor " + distanceColor);
+            }
 
+            distanceObj.percOffset = normalizedDistances[i]*100;
+            // if (i > 168 && i < 188){
+            //   console.log(" list index = " + listIndex + " i = " + i + " offset = " + normalizedDistances[i]*100);
+            // }
             if ( normalizedDistances[i] != 0 ) {
               distanceObj.backgroundColor = distanceColor;
             }
@@ -1460,11 +1624,23 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
             }
 
           }
-          this.distanceObjList.push(distanceObj);
+          distanceObjList.push(distanceObj);
       }
+      this.proteinDistanceObjList.push(distanceObjList);
+    }
+    // console.log(this.proteinDistanceObjList);
+    }
 
-    // }
+    handleResidueClick(event:any){
+      var target = event.target || event.srcElement || event.currentTarget;
+      var idAttr = target.attributes.id.value;
+      var data = idAttr.split("_");
 
+      var listIndex = data[1];
+      var resIndex = data[2];
+      this.proteinResidueIndex = resIndex;
+
+      this.handleProteinResidueClick();
     }
     // color range generator
     // https://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color-or-rgb-and-blend-colors    //Version 4.0
@@ -1502,6 +1678,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
                  private popupModalService: NgbModal,
                  private route:ActivatedRoute,
                  private router: Router,
+                 private modalService: NgbModal,
                ) {
     };
 

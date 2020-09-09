@@ -244,7 +244,6 @@ def showAlignment(request):
     alignmentResultObj = {}
 
     try:
-
         # print (" alignment ")
 
          # get params from request
@@ -252,7 +251,7 @@ def showAlignment(request):
 
         sequenceObjList = []
         selectedSequenceRecords = []
-
+        selectedEpitopeExperimentIds = []
         epitopeObjList = []
         structureObjList = []
 
@@ -303,6 +302,7 @@ def showAlignment(request):
             if len(epitopeexperimentsfilters) > 0:
                 epitopeExperimentObj = epitopeexperimentsfilters[0]
                 epitopeObj["epitopeExperimentObj"] = epitopeExperimentObj
+                selectedEpitopeExperimentIds.append(epitopeExperimentObj["id"])
                 # print (" adding epitope " + epitope.IEDB_ID)
                 epitopeObjList.append(epitopeObj)
 
@@ -366,18 +366,6 @@ def showAlignment(request):
 
         sequenceRecords = sequencerecords({"mesh_id":MESH_ID})
         # print ( " len sequenceList = " + str(len (sequenceList)))
-        # sequenceLength = 0
-        # for sequence in sequenceList:
-        #
-        #     sequenceString = sequence["seq"]
-        #     if sequence["offset"] != 0 :
-        #         sequenceString = '-' * sequence["offset"] + sequenceString
-        #     # print ( " len(sequenceString) " + str(len(sequenceString) ) )
-        #     if len(sequenceString) > sequenceLength:
-        #         sequenceLength = len(sequenceString)
-        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-        #     alignmentObj = {"label":sequence["accession"],"residueObjList":residueObjList}
-        #     alignmentObjList.append(alignmentObj)
 
         for sequenceRecord in sequenceRecords:
 
@@ -401,6 +389,7 @@ def showAlignment(request):
         for x in epitopeExperiments:
 
             epitopeExperimentObj =      {
+                                            'id'                : x.id,
                                             'host'              : x.host,
                                             'assay_type'        : x.assay_type,
                                             'assay_result'      : x.assay_result,
@@ -435,7 +424,8 @@ def showAlignment(request):
                                         "taxon": x["taxon"],
                                         "taxon_id": x["taxon_id"],
                                         "pdb_id": x["pdb_id"],
-                                        "chain": x["chain"]
+                                        "chain": x["chain"],
+                                        "pdbchain": x["pdb_id"] + "." + x["chain"]
                                     }
 
             if  x["pdb_id"] + "." + x["chain"] in  SELECTED_PDB_CHAIN_IDS:
@@ -468,6 +458,8 @@ def showAlignment(request):
 
         alignmentResultObj["selectedAccessions"] = SELECTED_ACCESSIONS.split(",")
         alignmentResultObj["selectedEpitopeIds"] = SELECTED_EPITOPES.split(",")
+        alignmentResultObj["selectedEpitopeExperimentIds"] = selectedEpitopeExperimentIds
+
         alignmentResultObj["selectedStructureIds"] = [x["pdb_id"] + "." + x["chain"] for x in SELECTED_PDB_CHAIN_IDS]
 
         alignmentResultObj["sequenceResultObj"] = sequenceResultObj
@@ -531,29 +523,23 @@ def reloadEpitopes(request):
 
         selectedEpitopeIds = data["selectedEpitopeIds"]
 
-        epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":(",").join(selectedEpitopeIds)})
+        selectedEpitopeExperimentIds = data["selectedEpitopeExperimentIds"]
+
+        epitopes = [ Epitope.objects.filter(alignment__name = ALIGNMENT_NAME, protein__mesh_id = MESH_ID, IEDB_ID = selectedEpitopeId )[0] for selectedEpitopeId in selectedEpitopeIds]
+
+        epitopes = [ {'iedb_id': r.IEDB_ID,'offset': r.offset,'seq': r.sequence} for r in epitopes]
+
+        # epitopes = epitopesequence({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "iedb_id":(",").join(selectedEpitopeIds)})
 
         # get sequence length
         sequenceList = sequences({"mesh_id":MESH_ID,"alignment":ALIGNMENT_NAME, "accession":SELECTED_ACCESSIONS})
-
         sequenceLength = len(sequenceList[0]["seq"])
-        #
-        # for epitope in epitopes:
-        #
-        #     sequenceString = epitope["seq"]
-        #
-        #     if epitope["offset"] != 0 :
-        #         sequenceString = '-' * epitope["offset"] + sequenceString
-        #         if len(sequenceString) > sequenceLength:
-        #              sequenceString += '-'* ( seqeuenceLength - len(sequenceString))
-        #     residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
-        #     epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
-        #     epitopeObjList.append(epitopeObj)
 
         epitopeOffsetObjs = []
 
-        for epitope in epitopes:
-            print(epitope)
+        for index, epitope in enumerate(epitopes):
+            print(" epitope['iedb_id'] " + str(epitope["iedb_id"]) )
+            print(" epitope " + str(epitope) )
             sequenceString = epitope["seq"]
 
             epitopeOffsetObjs.append({"iedb_id":str(epitope["iedb_id"]),"offset":epitope["offset"], "percOffset":0})
@@ -566,13 +552,29 @@ def reloadEpitopes(request):
             residueObjList = [{"residueValue":x,"residueColor":RESIDUE_COLOR_MAP[x], "residuePosition":i} for i,x in enumerate(sequenceString)]
             epitopeObj = {"iedb_id":str(epitope["iedb_id"]),"residueObjList":residueObjList}
 
-            epitopeexperimentsfilters = epitopeexperimentsfilter({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":epitope["iedb_id"]})
+            epitopeExperiment = EpitopeExperiment.objects.get(pk = selectedEpitopeExperimentIds[index])
+            # epitopeexperimentsfilters = epitopeexperimentsfilter({"alignment":ALIGNMENT_NAME, "mesh_id":MESH_ID, "iedb_id":epitope["iedb_id"], "exp_method":selectedExpMethods[index]})
 
-            if len(epitopeexperimentsfilters) > 0:
-                epitopeExperimentObj = epitopeexperimentsfilters[0]
-                epitopeObj["epitopeExperimentObj"] = epitopeExperimentObj
-                # print (" adding epitope " + epitope.IEDB_ID)
-                epitopeObjList.append(epitopeObj)
+            # print (" selectedExpMethods " + str(selectedExpMethods[index]) + " epitopeexperimentsfilters " + str(len(epitopeexperimentsfilters)) )
+            #
+            # if len(epitopeexperimentsfilters) > 0:
+            epitopeExperimentObj = {
+                        'id'                : epitopeExperiment.id,
+                        'host'              : epitopeExperiment.host,
+                        'assay_type'        : epitopeExperiment.assay_type,
+                        'assay_result'      : epitopeExperiment.assay_result,
+                        'mhc_allele'        : epitopeExperiment.mhc_allele,
+                        'mhc_class'         : epitopeExperiment.mhc_class,
+                        'exp_method'        : epitopeExperiment.exp_method,
+                        'measurement_type'  : epitopeExperiment.measurement_type,
+                        'iedb_id'           : epitopeExperiment.epitope.IEDB_ID
+            }
+
+            print (" epitopeExperimentObj " + str(epitopeExperimentObj ) )
+
+            epitopeObj["epitopeExperimentObj"] = epitopeExperimentObj
+            # print (" adding epitope " + epitope.IEDB_ID)
+            epitopeObjList.append(epitopeObj)
 
         maxEpitopeOffset = max([x["offset"] for x in epitopeOffsetObjs])
         minEpitopeOffset = min([x["offset"] for x in epitopeOffsetObjs])
@@ -584,7 +586,7 @@ def reloadEpitopes(request):
                 epitopeObj["percOffset"] =  ( (epitopeOffsetObjs[index]["offset"] )/sequenceLength ) * 100
                 epitopeObj["offset"] =  epitopeOffsetObjs[index]["offset"]
 
-        print(len(epitopeObjList))
+        print(" len(epitopeObjList) " + str(len(epitopeObjList)) )
     except:
         traceback.print_exc(file=sys.stdout)
 

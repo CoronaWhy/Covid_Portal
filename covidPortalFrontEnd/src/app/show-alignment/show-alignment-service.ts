@@ -30,8 +30,8 @@ export class ShowAlignmentService {
        .catch(this.handleError);
     }
 
-    reloadEpitopes(selectedEpitopeIds:string[]): Promise<EpitopeObj[]> {
-       return this.http.post(this.reloadEpitopesUrl, {"selectedEpitopeIds":selectedEpitopeIds}).toPromise().then(res => res)
+    reloadEpitopes(selectedEpitopeIds:string[], selectedEpitopeExperimentIds:string[]): Promise<EpitopeObj[]> {
+       return this.http.post(this.reloadEpitopesUrl, {"selectedEpitopeIds":selectedEpitopeIds, "selectedEpitopeExperimentIds":selectedEpitopeExperimentIds}).toPromise().then(res => res)
        .catch(this.handleError);
     }
 

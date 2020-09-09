@@ -4,14 +4,20 @@
   <div class = "row" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;" *ngIf="!originalScanEnabled" >
     <b>Loading ...</b>
   </div>
-
 </div>
 
 <div class="container" *ngIf="displayAlignmentObjList" id ="mainContainter">
-
-  <div class="row" style="font-weight:bold;align-items:center;font-size:24px;">Spike protein explorer</div>
+  <div class="row" >
+    <a href="www.coronawhy.org"><img src="assets/images/coronawhy.png" width="150px" /></a>&nbsp;
+    <div style="font-weight:bold;align-items:center;font-size:24px;margin-left:50px;">
+    Spike protein explorer
+  </div>
+  </div>
     <div class="row" style="float:clear;">
-      <p>To navigate, watch <a href="https://www.loom.com/share/cb97389554c8465191e7b6f744f74efe" target="_blank">this video</a>. The design doc is <a href="https://docs.google.com/document/d/1xLM-s-xak-jQkTJWTKFcz859piYX6mVGCq7x66OLot8/edit?usp=sharing" target="_blank"> here</a> and the data was collected using <a href= "https://miro.com/app/board/o9J_krpU7yY=/" target="_blank">this pipeline</a>.
+      <p>To navigate, watch <a href="https://www.loom.com/share/4869728369b44c14a9b7d2de5647bac2" target="_blank">this video</a>. The design doc is <a href="https://docs.google.com/document/d/1xLM-s-xak-jQkTJWTKFcz859piYX6mVGCq7x66OLot8/edit?usp=sharing" target="_blank"> here</a> and the data was collected using <a href= "https://miro.com/app/board/o9J_krpU7yY=/" target="_blank">this pipeline</a>.&nbsp;
+        <button class="btn btn-outline-primary" (click)="downloadData();">Download Data</button>
+        &nbsp;
+        &nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpDownloadData')"></i>
     </div>
   <table border=0 class="table paneltable" id="paneltable">
      <thead>
@@ -30,7 +36,7 @@
                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                  <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
                </div>
-             </div>
+             </div>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpSortAlignments')"></i>
            </div>
          </div>
          </th>
@@ -40,18 +46,19 @@
      <tbody>
      <!-- SEQUENCE 1 --->
      <tr *ngFor="let displayAlignmentObj of displayAlignmentObjList; let idx = index">
-         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Protein</div></div></td>
+         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Protein&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpProteins')"></i></div></div></td>
          <!-- sequence label -->
          <td><div class="residue-height label" (click)="openAlignmentModal(displayAlignmentObj.label)"><a href="javascript:void(0)">{{displayAlignmentObj.label}}</a></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
-         <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeAlignmentObj(displayAlignmentObj.sequenceObj.accession)"><i class="fa fa-remove"></i></div></div></td>
+         <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeAlignmentObj(displayAlignmentObj.label)"><i class="fa fa-remove"></i></div></div></td>
          <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
          </td>
      </tr>
      </tbody>
+
      <!-- END SEQUENCES -------------------------------------------------------->
      <!-- BEGIN EPITOPES ------------------------------------------------------->
      <tbody id="epitopepanel">
@@ -67,14 +74,17 @@
                    <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName , 0)" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
                  </div>
                </div>
+               &nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpSortEpitopeExternal')"></i>
              </div>
            </div>
 
          </th>
          <!-- position nomenclature -->
          <th colspan="16">
-             <button onclick="moveup('epitopepanel')">Up</button>
+           <!-- <div class="btn-group">
+             <button onclick="moveup('epitopepanel')">Up</button>&nbsp;
              <button onclick="movedown('epitopepanel')">Dn</button>
+           </div> -->
          </th>
          <th class="sort-header">
            <div class="row">
@@ -85,6 +95,7 @@
                    <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeTable ( epitopeExperimentTableColumnObj.columnName, 1 )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button>
                  </div>
                </div>
+               <!-- &nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpSortEpitopeInternal')"></i> -->
              </div>
            </div>
 
@@ -93,9 +104,9 @@
      </tr>
      <!-- EPITOPE 1 --->
      <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index">
-         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope</div></div></td>
+         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpEpitopes')"></i></div></div></td>
          <!-- sequence label -->
-         <td><div class="residue-height label" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" ><a href="javascript:void(0)">{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a></div></td>
+         <td><div class="residue-height label" ><a href="javascript:void(0)" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" >{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a> <div style="float:right" (click)="positionToEpitope(displayEpitopeObj.offset);"><a href="javascript:void(0)">&gt;</a></div></div></td>
          <!-- residues -->
          <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
@@ -114,8 +125,10 @@
          <th class="label-header">PDB ID</th>
          <!-- position nomenclature -->
          <th colspan=16>
-             <button onclick="moveup('structurepanel')">Up</button>
+           <!-- <div class="btn-group">
+             <button onclick="moveup('structurepanel')">Up</button>&nbsp;
              <button onclick="movedown('structurepanel')">Dn</button>
+           </div> -->
          </th>
          <th class="sort-header">
            <div class="row">
@@ -125,7 +138,7 @@
                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                    <button ngbDropdownItem *ngFor="let structureChainTableColumnObj of structureChainTableColumnObjs" (click) = "sortStructureTable ( structureChainTableColumnObj.columnName )" [value]="structureChainTableColumnObj.columnName" [style.background-color] = "structureChainTableColumnObj.rowColor" >{{ structureChainTableColumnObj.columnName }}</button>
                  </div>
-               </div>
+               </div>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpSortStructures')"></i>
              </div>
            </div>
 
@@ -134,7 +147,7 @@
      </tr>
      <!-- STRUCTURE 1 --->
      <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index" id="{{'tr_' + idx}}">
-         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Structure</div></div></td>
+         <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Structure&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpStructures')"></i></div></div></td>
          <!-- sequence label -->
          <td><div class="residue-height label" (click)="openStructureModal(displayStructureObj.pdbchain)" ><a href="javascript:void(0)">{{displayStructureObj.pdbchain}}</a></div></td>
          <!-- residues -->
@@ -155,20 +168,11 @@
          <td colspan=16>
            <div *ngIf="displayAlignmentObjList">
                Horizontal slider (drag for navigation):&nbsp;
-               <!-- <i *ngIf="originalScanEnabled" class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpRoiOverlaySlider')"></i> -->
                <div class="slidecontainer" style="float:left;">
                  <input type="range" min="0" [max]="maxSliderValue" value="{{positionSliderValue}}" class="slider" id="positionSlider" (input)="setSliderValue();">
                  <div>Slider Value: {{positionSliderValue}}</div>
-               </div>&nbsp;
-                   <!-- <div class="row" style="float:clear;">
-                     <br/>
-                     <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider>
-                     <br/>
-                   </div> -->
+               </div>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpSequenceSlider')"></i>
            </div>
-
-              <!-- <ng5-slider [(value)]="rowNum" [options]="rangeSliderOptions" (valueChange)="sliderValueChange($event)"> </ng5-slider> -->
-
          </td>
          <td></td>
          <td></td>
@@ -179,7 +183,8 @@
          <td></td>
          <td colspan=16>
            <div *ngIf="displayAlignmentObjList">
-               Epitope Locations (click to navigate):&nbsp;
+               Epitope Locations (click to navigate):&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpEpitopesSlider')"></i>
+
                <br/>
                <div class="positionContainer">
                  <div class="positionBox" style="background: #D9D9E1;"></div>
@@ -195,12 +200,16 @@
         <td></td>
         <td></td>
         <td colspan=16>
-          <div *ngIf="displayAlignmentObjList">
-              Distances in protein structure (click to navigate):&nbsp;
+          <div *ngIf="proteinDistanceObjList">
+              Distances in protein structure (click to navigate):&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpStructuresSlider')"></i>&nbsp;                    <button class="btn btn-outline-primary" (click)="downloadProteinDistances();">Download Distances</button>
+
+              <div *ngFor = "let proteinDistanceObj of proteinDistanceObjList">
+                <div class="positionContainer">
+                  <div class="positionBox" style="background: #D9D9E1;"></div>
+                    <div *ngFor = "let distanceObj of proteinDistanceObj" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);">
+                    </div>
+                </div>
               <br/>
-              <div class="positionContainer">
-                <div class="positionBox" style="background: #D9D9E1;"></div>
-                  <div *ngFor = "let distanceObj of distanceObjList" class="positionBox positionStack-top" style="margin-left: {{distanceObj.percOffset}}%;" [style.background-color]="distanceObj.backgroundColor" (click)="positionStructure(distanceObj.offset);"></div>
               </div>
           </div>
         </td>
@@ -216,18 +225,11 @@
   <!----------------------------------------------------------------------------->
   <!----------------------------------------------------------------------------->
   <!----------------------------------------------------------------------------->
-  <div class="btn-grp">
-    <button (click)="showHideEpitopePanel('0')">Show Epitope</button>
-    <button (click)="showHideEpitopePanel('1')">Hide Epitope</button>
-    <br>
-    <button (click)="showHideStructurePanel('0')">Show Structure</button>
+  <div class="btn-group">
+    <button (click)="showHideEpitopePanel('0')">Show Epitope</button>&nbsp;
+    <button (click)="showHideEpitopePanel('1')">Hide Epitope</button>&nbsp;
+    <button (click)="showHideStructurePanel('0')">Show Structure</button>&nbsp;
     <button (click)="showHideStructurePanel('1')">Hide Structure</button>
-
-    <!-- <button onclick="javascript:document.getElementById('epitopepanel').style.display='table-row-group'">Show Epitope</button>
-    <button onclick="javascript:document.getElementById('epitopepanel').style.display='none'">Hide Epitope</button>
-    <br>
-    <button onclick="javascript:document.getElementById('structurepanel').style.display='table-row-group'">Show Structure</button>
-    <button onclick="javascript:document.getElementById('structurepanel').style.display='none'">Hide Structure</button> -->
   </div>
 
   <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
@@ -236,7 +238,7 @@
 			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="showFiltersFlag">Hide Filters&nbsp;<i class="fa fa-angle-double-up" aria-hidden="true"></i>
 				</button>&nbsp;
 			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="!showFiltersFlag">Show Filters&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i>
-			</button>&nbsp;
+			</button>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpFilters')"></i>
 		</div>
 		<div id="spacerDiv" *ngIf="showFiltersFlag" class= "row" style="float:clear;">
 
@@ -293,7 +295,10 @@
         </div>
       </div>
 
-      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}" (keyup) = "filterSequenceDatatable()">&nbsp;
+      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}">
+      &nbsp;
+      <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "filterSequenceDatatable()">Search</button>
+      &nbsp;
       <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetSequenceTable()">Reset</button>
 
     </div>
@@ -471,7 +476,10 @@
               </div>
             </div>
           <!-- </div> -->
-          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}" (keyup) = "filterEpitopeDataTable()">&nbsp;
+          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}">
+          &nbsp;
+          <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "filterEpitopeDataTable()">Search</button>
+          &nbsp;
           <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetEpitopeExperimentTable()">Reset</button>
           </div>
 
@@ -569,7 +577,7 @@
                       <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
 
                         <td>
-                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}" (change)="reloadEpitopes($event)">
+                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}-{{row.id}}" (change)="reloadEpitopes($event)">
                         </td>
 
                         <td>
@@ -638,7 +646,10 @@
                 </div>
               </div>
             <!-- </div> -->
-            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureString" [ngModelOptions]="{standalone: true}" (keyup) = "filterStructureDataTable()">&nbsp;
+            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureString" [ngModelOptions]="{standalone: true}">
+            &nbsp;
+            <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "filterStructureDataTable()">Search</button>
+            &nbsp;
             <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetStructureChainTable()">Reset</button>
             </div>
 
@@ -705,7 +716,6 @@
                             </div>
                           </td>
                         </tr>
-
                       </tbody>
                       <tbody>
 
