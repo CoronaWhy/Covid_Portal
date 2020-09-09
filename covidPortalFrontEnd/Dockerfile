@@ -1,5 +1,5 @@
 # base image
-FROM node:13.13.0
+FROM node:13.13.0 AS builder
 
 # install chrome for protractor tests
 # RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
@@ -28,5 +28,5 @@ FROM nginx
 ## Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 ## From 'builder' stage copy over the artifacts in dist folder to default nginx public folder
-COPY /dist /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
 CMD ["nginx", "-g", "daemon off;"]
