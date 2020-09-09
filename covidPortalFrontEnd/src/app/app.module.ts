@@ -33,14 +33,12 @@ import { ResetPasswordService } from './services/reset-password-service';
 import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ChartsModule } from 'ng2-charts';
 import { HelpModalService } from './services/help-modal.service';
 import { HelpModalComponent } from './help-modal/help-modal.component';
 import { PopupModalComponent } from './popup-modal/popup-modal.component';
 
 import { NgxSortableModule } from 'ngx-sortable';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { ColorPickerModule } from 'ngx-color-picker';
 import { LogoutComponent } from './logout/logout.component';
 import { LoginComponent } from './login/login.component';
 
@@ -60,9 +58,7 @@ export function createTranslateLoader(http: HttpClient) {
     CommonModule,
     BrowserModule,
     HttpClientModule,
-    ChartsModule,
     NgxSortableModule,
-    ColorPickerModule,
     NgbModule,
     TranslateModule.forRoot({
         loader: {
