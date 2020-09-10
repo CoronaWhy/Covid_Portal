@@ -39,8 +39,6 @@ services:
       - traefik
     #image: coronawhy/covid_portal_frontend:portaldb_port80
     build: covidPortalFrontEnd/
-    ports:
-      - "4200:4200"
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.frontend.rule=Host(`portal.${traefikhost}`)"
