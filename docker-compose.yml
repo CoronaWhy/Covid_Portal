@@ -2,6 +2,8 @@ version: '3'
 
 services:
   reverse-proxy:
+    networks:
+      - traefik
     # The official v2 Traefik docker image
     image: traefik:v2.2
     # Enables the web UI and tells Traefik to listen to docker
@@ -20,6 +22,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
 
   backend:
+    networks:
+      - traefik
     #image: coronawhy/covid_portal:backend
     build: webCovidPortal/
     command: python manage.py runserver 0.0.0.0:8000
@@ -30,13 +34,18 @@ services:
       - "traefik.http.routers.backend.rule=Host(`portaldb.${traefikhost}`)"
       - "traefik.http.routers.backend.entrypoints=web"
   
-  # frontend:
-  #   #image: coronawhy/covid_portal_frontend:portaldb_port80
-  #   image: coronawhy/angular-frontend:latest
-  #   ports:
-  #     - "4200:4200"
-  #   labels:
-  #     - "traefik.enable=true"
-  #     - "traefik.http.routers.frontend.rule=Host(`portal.${traefikhost}`)"
-  #     - "traefik.http.routers.frontend.entrypoints=web"
+  frontend:
+    networks:
+      - traefik
+    #image: coronawhy/covid_portal_frontend:portaldb_port80
+    build: covidPortalFrontEnd/
+    ports:
+      - "4200:4200"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.frontend.rule=Host(`portal.${traefikhost}`)"
+      - "traefik.http.routers.frontend.entrypoints=web"
 
+networks:
+  traefik:
+    external: true

@@ -17,15 +17,12 @@
   The project is built using Python 3.5+ and Angular-Cli version 9.5.0 and node version 13.13.0.
   
 # Deployment instructions
-  There are two sub-folders - one corresponding to the angular frontend (covidPortalFrotnEnd) and the other Python backend (webCovidPortal). Each can be started using Docker.
-  
-  For angular, to launch the app, using docker - 
-  - sudo docker build --no-cache -t portal-angular .
-  - sudo docker run -p 80:80 portal-angular
-  
-  For Django, to launch the app, using docker - 
-  - sudo docker build --no-cache -t portal-django .
-  - sudo docker run -p 8000:80
-  
-  The Django API is available as a service from 
-  - http://portaldb.stage.coronawhy.org/
+
+You simply run 
+
+```
+export traefikhost=locahost # or your domain name
+docker-compose up -d 
+```
+
+if you do this first time you most likely would be asked to "docker network create traefik" then proceed to do so
