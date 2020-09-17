@@ -268,7 +268,7 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         for (let j = 0; j< this.proteinDistanceObjList.length; j++) {
 
             if (j == 0 ){
-              if (i == this.proteinResidueIndex){
+              if (i == this.proteinResidueIndex + this.offset){
                 residueString += "1" + ",";
               } else {
                 residueString += "0" + ",";
