@@ -246,6 +246,12 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
       var csv = [];
 
+      var headerString = "Nomenclature,Position Selected";
+      for (let i = 0; i< this.proteinDistanceObjList.length; i++) {
+        headerString += ",PDBChain,Residue,PercOffset";
+      }
+      csv.push(headerString);
+
       var residueString = "";
       var residueArray = [];
       var row = [];
@@ -253,7 +259,6 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       var counter = 0;
 
       console.log(this.proteinDistanceObjList.length);
-
       for (let i = 0; i < this.nomenclaturePositionStrings.length; i++ ){
 
         residueString = "";
@@ -261,6 +266,14 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
         residueString += this.nomenclaturePositionStrings[i] + ",";
 
         for (let j = 0; j< this.proteinDistanceObjList.length; j++) {
+
+            if (j == 0 ){
+              if (i == this.proteinResidueIndex){
+                residueString += "1" + ",";
+              } else {
+                residueString += "0" + ",";
+              }
+            }
             residueString+= this.displayStructureObjList[j].pdbchain + ",";
 
             if (this.displayStructureObjList[j].residueObjList.length > i){
