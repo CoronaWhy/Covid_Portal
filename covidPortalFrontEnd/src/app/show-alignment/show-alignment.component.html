@@ -5,7 +5,6 @@
     <b>Loading ...</b>
   </div>
 </div>
-
 <div class="container" *ngIf="displayAlignmentObjList" id ="mainContainter">
   <div class="row" >
     <a href="www.coronawhy.org"><img src="assets/images/coronawhy.png" width="150px" /></a>&nbsp;
@@ -53,9 +52,20 @@
          <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeAlignmentObj(displayAlignmentObj.label)"><i class="fa fa-remove"></i></div></div></td>
-         <td rowspan=3 *ngIf="idx == 0">
+         <!-- <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);">
+         </td> -->
+         <td *ngIf="idx == 0">
+           <i class="fa fa-arrow-up" (click)="setVerticalSliderValue('up');"></i>
+           <!-- <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);"> -->
          </td>
+         <td *ngIf="idx == 1">
+         </td>
+         <td *ngIf="idx == 2">
+           <i class="fa fa-arrow-down" (click)="setVerticalSliderValue('down');"></i>
+           <!-- <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);"> -->
+         </td>
+
      </tr>
      </tbody>
      <!-- END SEQUENCES -------------------------------------------------------->
@@ -110,9 +120,22 @@
          <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayEpitopeObj.internalSortColumnValue}}&nbsp;<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeEpitopeObj(displayEpitopeObj.iedb_id)"><i class="fa fa-remove"></i></div></div></td>
-         <td rowspan=3 *ngIf="idx == 0">
+
+         <!-- <td rowspan=3 *ngIf="idx == 0">
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{epitopeVerticalSliderValue}}" class="verticalslider" id="epitopeVerticalSlider" (input)="setEpitopeVerticalSliderValue($event);">
+         </td> -->
+
+         <td *ngIf="idx == 0">
+           <i class="fa fa-arrow-up" (click)="setEpitopeVerticalSliderValue('up');"></i>
+           <!-- <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);"> -->
          </td>
+         <td *ngIf="idx == 1">
+         </td>
+         <td *ngIf="idx == 2">
+           <i class="fa fa-arrow-down" (click)="setEpitopeVerticalSliderValue('down');"></i>
+           <!-- <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);"> -->
+         </td>
+
      </tr>
 
      </tbody>
@@ -153,9 +176,21 @@
          <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+ residueObj.residueIndex}}" [style.background-color] = "residueObj.residueTableCellColor"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayStructureObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeStructureObj(displayStructureObj.pdbchain)"><i class="fa fa-remove"></i></div></div></td>
-         <td rowspan=3 *ngIf="idx == 0" >
+         <!-- <td rowspan=3 *ngIf="idx == 0" >
            <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{structureVerticalSliderValue}}" class="verticalslider" id="structureVerticalSlider" (input)="setStructureVerticalSliderValue($event);">
-         </td>
+         </td> -->
+
+          <td *ngIf="idx == 0">
+            <i class="fa fa-arrow-up" (click)="setStructureVerticalSliderValue('up');"></i>
+            <!-- <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);"> -->
+          </td>
+          <td *ngIf="idx == 1">
+          </td>
+          <td *ngIf="idx == 2">
+            <i class="fa fa-arrow-down" (click)="setStructureVerticalSliderValue('down');"></i>
+            <!-- <input type="range" min="0" [max]="maxVerticalSliderValue" value="{{verticalSliderValue}}" class="verticalslider" id="verticalSlider" (input)="setVerticalSliderValue($event);"> -->
+          </td>
+
      </tr>
      </tbody>
      <!-- END STRUCTURE -------------------------------------------------------->
