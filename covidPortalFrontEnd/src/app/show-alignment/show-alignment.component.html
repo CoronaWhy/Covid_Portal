@@ -18,7 +18,7 @@
         &nbsp;
         &nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpDownloadData')"></i>
     </div>
-  <table border=0 class="table paneltable" id="paneltable">
+  <table border=0 class="table paneltable" id="paneltable" >
      <thead>
          <th></th>
          <th class="label-header">Accession</th>
@@ -44,7 +44,7 @@
      <!-- SEQUENCES ------------------------------------------------------------>
      <tbody>
      <!-- SEQUENCE 1 --->
-     <tr *ngFor="let displayAlignmentObj of displayAlignmentObjList; let idx = index">
+     <tr *ngFor="let displayAlignmentObj of displayAlignmentObjList; let idx = index" style="height:30px;">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Protein&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpProteins')"></i></div></div></td>
          <!-- sequence label -->
          <td><div class="residue-height label" (click)="openAlignmentModal(displayAlignmentObj.label)"><a href="javascript:void(0)">{{displayAlignmentObj.label}}</a></div></td>
@@ -112,7 +112,7 @@
          <th></th>
      </tr>
      <!-- EPITOPE 1 --->
-     <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index">
+     <tr *ngFor="let displayEpitopeObj of displayEpitopeObjList; let idx = index" style="height:30px;">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Epitope&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpEpitopes')"></i></div></div></td>
          <!-- sequence label -->
          <td><div class="residue-height label" ><a href="javascript:void(0)" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" >{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a> <div style="float:right" (click)="positionToEpitope(displayEpitopeObj.offset);"><a href="javascript:void(0)">&gt;</a></div></div></td>
@@ -168,7 +168,7 @@
          <th></th>
      </tr>
      <!-- STRUCTURE 1 --->
-     <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index" id="{{'tr_' + idx}}">
+     <tr *ngFor="let displayStructureObj of displayStructureObjList; let idx = index" id="{{'tr_' + idx}}" style="height:30px;">
          <td rowspan=3 *ngIf="idx == 0"><div class="paneltab-outer"><div class="paneltab-inner">Structure&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpStructures')"></i></div></div></td>
          <!-- sequence label -->
          <td><div class="residue-height label" (click)="openStructureModal(displayStructureObj.pdbchain)" ><a href="javascript:void(0)">{{displayStructureObj.pdbchain}}</a></div></td>
