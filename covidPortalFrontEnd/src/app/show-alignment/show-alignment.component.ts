@@ -240,22 +240,91 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
     }
 
     downloadProteinDistances(){
-      console.log( " in download data ");
+      console.log( " in download data 333333 ");
       const replacer = (key, value) => (value === null ? '' : value); // specify how you want to handle null values here
       const header = "Spike Protein Residue Distances Download";
 
       var csv = [];
-      var residueString = "";
+
+      var headerString = "Nomenclature,Position Selected";
       for (let i = 0; i< this.proteinDistanceObjList.length; i++) {
-        residueString = "";
-        let distanceObjList = this.proteinDistanceObjList[i];
-        for (let j = 0; j< distanceObjList.length; j++) {
-          residueString += Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100  + ",";
-        }
-        if (this.displayStructureObjList[i]){
-          csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
-        }
+        headerString += ",PDBChain,Residue,PercOffset";
       }
+      csv.push(headerString);
+
+      var residueString = "";
+      var residueArray = [];
+      var row = [];
+
+      var counter = 0;
+
+      console.log(this.proteinDistanceObjList.length);
+      for (let i = 0; i < this.nomenclaturePositionStrings.length; i++ ){
+
+        residueString = "";
+
+        residueString += this.nomenclaturePositionStrings[i] + ",";
+
+        for (let j = 0; j< this.proteinDistanceObjList.length; j++) {
+
+            if (j == 0 ){
+              if (i == this.proteinResidueIndex + this.offset){
+                residueString += "1" + ",";
+              } else {
+                residueString += "0" + ",";
+              }
+            }
+            residueString+= this.displayStructureObjList[j].pdbchain + ",";
+
+            if (this.displayStructureObjList[j].residueObjList.length > i){
+
+              residueString+= this.displayStructureObjList[j].residueObjList[i].residueValue + ",";
+              residueString+= Math.round((this.proteinDistanceObjList[j][i].percOffset + Number.EPSILON) * 100) / 100 + ",";
+
+            }
+            // console.log(residueString + " j = " + j);
+        }
+
+        console.log(" residueString  "  + residueString);
+
+        csv.push(residueString);
+
+        // residueString+= this.nomenclaturePositionStrings[i] + ",";
+
+        // for (let j = 0; j< this.proteinDistanceObjList.length; i++) {
+        //
+        //   counter = 0;
+        //
+        //   residueString+= this.displayStructureObjList[j].pdbchain + ",";
+
+          // for (let k = 0; k< this.proteinDistanceObjList[j].residueObjList.length; k++) {
+          //
+          //   residueString+= this.displayStructureObjList[j].pdbchain + ",";
+          //
+          // }
+
+        // }
+
+      }
+
+      // for (let i = 0; i< this.proteinDistanceObjList.length; i++) {
+      //   residueString = "";
+      //   residueArray = [];
+      //
+      //   let distanceObjList = this.proteinDistanceObjList[i];
+      //   if (this.displayStructureObjList[i]){
+      //     residueArray.push(this.displayStructureObjList[i].pdbchain);
+      //   }
+      //
+      //   for (let j = 0; j< distanceObjList.length; j++) {
+      //     residueString += Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100  + ",";
+      //     residueArray.push(Math.round((distanceObjList[j].percOffset + Number.EPSILON) * 100) / 100);
+      //   }
+      //   // if (this.displayStructureObjList[i]){
+      //   //   csv.push(this.displayStructureObjList[i].pdbchain+ "," + residueString);
+      //   // }
+      //   csv.push(residueArray);
+      // }
       csv.push(",");
 
       // csv.unshift(header.join(','));
@@ -1192,10 +1261,39 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       }// if flag
     }
 
-    setVerticalSliderValue(event){
-      let verticalSlider = document.getElementById('verticalSlider') as HTMLInputElement;
-      this.verticalSliderValue = Number(verticalSlider.value);
-      let startIndex = 10-this.verticalSliderValue;
+    // setVerticalSliderValue(event){
+    //   let verticalSlider = document.getElementById('verticalSlider') as HTMLInputElement;
+    //   if (this.verticalSliderValue != Number(verticalSlider.value)) {
+    //     this.verticalSliderValue = Number(verticalSlider.value);
+    //     let startIndex = 10-this.verticalSliderValue;
+    //     // if (this.alignmentObjList.length >= startIndex+this.numRowsInPage ) {
+    //       this.displayAlignmentObjList = this.alignmentObjList.slice(startIndex,startIndex+this.numRowsInPage);
+    //     // }
+    //
+    //     for (let i = 0; i < this.displayAlignmentObjList.length; i++){
+    //       this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
+    //     }
+    //   }
+    //
+    // }
+    //
+    setVerticalSliderValue(upDownFlag){
+      // let verticalSlider = document.getElementById('verticalSlider') as HTMLInputElement;
+      // if (this.verticalSliderValue != Number(verticalSlider.value)) {
+      if (upDownFlag == 'down'){
+
+        if (this.alignmentObjList.length > this.verticalSliderValue + this.numRowsInPage ) {
+            this.verticalSliderValue += 1;
+        }
+
+      } else if (upDownFlag == 'up'){
+
+        if ( this.verticalSliderValue >0  ) {
+          this.verticalSliderValue -= 1;
+        }
+
+      }
+      let startIndex = this.verticalSliderValue;
       // if (this.alignmentObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayAlignmentObjList = this.alignmentObjList.slice(startIndex,startIndex+this.numRowsInPage);
       // }
@@ -1203,18 +1301,36 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       for (let i = 0; i < this.displayAlignmentObjList.length; i++){
         this.displayAlignmentObjList[i].displayResidueObjList = this.displayAlignmentObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
       }
+      // }
 
     }
 
-    setEpitopeVerticalSliderValue (event) {
-      let verticalSlider = document.getElementById('epitopeVerticalSlider') as HTMLInputElement;
-      this.epitopeVerticalSliderValue = Number(verticalSlider.value);
-      console.log(" index epitopeVerticalSliderValue " + this.epitopeVerticalSliderValue);
-      let startIndex = 10-this.epitopeVerticalSliderValue;
+    setEpitopeVerticalSliderValue (upDownFlag) {
+
+      // let verticalSlider = document.getElementById('epitopeVerticalSlider') as HTMLInputElement;
+      // this.epitopeVerticalSliderValue = Number(verticalSlider.value);
+      // console.log(" index epitopeVerticalSliderValue " + this.epitopeVerticalSliderValue);
+      // let startIndex = 10-this.epitopeVerticalSliderValue;
+      console.log(upDownFlag);
+      if (upDownFlag == 'down'){
+
+        if (this.epitopeObjList.length > this.epitopeVerticalSliderValue + this.numRowsInPage ) {
+            this.epitopeVerticalSliderValue += 1;
+        }
+
+      } else if (upDownFlag == 'up'){
+
+        if ( this.epitopeVerticalSliderValue >0  ) {
+          this.epitopeVerticalSliderValue -= 1;
+        }
+
+      }
+      let startIndex = this.epitopeVerticalSliderValue;
+
       // if ( startIndex > 0){
-      // if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
+      if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
         this.displayEpitopeObjList = this.epitopeObjList.slice(startIndex,startIndex+this.numRowsInPage);
-      // }
+      }
 
       for (let i = 0; i < this.displayEpitopeObjList.length; i++){
         this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
@@ -1223,11 +1339,27 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
 
     }
 
-    setStructureVerticalSliderValue (event) {
-      let verticalSlider = document.getElementById('structureVerticalSlider') as HTMLInputElement;
-      this.structureVerticalSliderValue = Number(verticalSlider.value);
-      console.log(" index structureVerticalSliderValue " + this.structureVerticalSliderValue);
-      let startIndex = 10-this.verticalSliderValue;
+    setStructureVerticalSliderValue (upDownFlag) {
+      // let verticalSlider = document.getElementById('structureVerticalSlider') as HTMLInputElement;
+      // this.structureVerticalSliderValue = Number(verticalSlider.value);
+      // console.log(" index structureVerticalSliderValue " + this.structureVerticalSliderValue);
+      // let startIndex = 10-this.verticalSliderValue;
+
+        if (upDownFlag == 'down'){
+
+          if (this.structureObjList.length > this.structureVerticalSliderValue + this.numRowsInPage ) {
+              this.structureVerticalSliderValue += 1;
+          }
+
+        } else if (upDownFlag == 'up'){
+
+          if ( this.structureVerticalSliderValue >0  ) {
+            this.structureVerticalSliderValue -= 1;
+          }
+
+        }
+        let startIndex = this.structureVerticalSliderValue;
+
       // if (this.structureObjList.length > startIndex+this.numRowsInPage){
         this.displayStructureObjList = this.structureObjList.slice(startIndex,startIndex+this.numRowsInPage);
       // }
@@ -1237,6 +1369,39 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       }
 
     }
+
+    // setEpitopeVerticalSliderValue (event) {
+    //   let verticalSlider = document.getElementById('epitopeVerticalSlider') as HTMLInputElement;
+    //   this.epitopeVerticalSliderValue = Number(verticalSlider.value);
+    //   console.log(" index epitopeVerticalSliderValue " + this.epitopeVerticalSliderValue);
+    //   let startIndex = 10-this.epitopeVerticalSliderValue;
+    //   // if ( startIndex > 0){
+    //   if (this.epitopeObjList.length >= startIndex+this.numRowsInPage ) {
+    //     this.displayEpitopeObjList = this.epitopeObjList.slice(startIndex,startIndex+this.numRowsInPage);
+    //   }
+    //
+    //   for (let i = 0; i < this.displayEpitopeObjList.length; i++){
+    //     this.displayEpitopeObjList[i].displayResidueObjList = this.displayEpitopeObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
+    //   }
+    // // }
+    //
+    // }
+    //
+    // setStructureVerticalSliderValue (event) {
+    //   let verticalSlider = document.getElementById('structureVerticalSlider') as HTMLInputElement;
+    //   this.structureVerticalSliderValue = Number(verticalSlider.value);
+    //   console.log(" index structureVerticalSliderValue " + this.structureVerticalSliderValue);
+    //   let startIndex = 10-this.verticalSliderValue;
+    //   // if (this.structureObjList.length > startIndex+this.numRowsInPage){
+    //     this.displayStructureObjList = this.structureObjList.slice(startIndex,startIndex+this.numRowsInPage);
+    //   // }
+    //
+    //   for (let i = 0; i < this.displayStructureObjList.length; i++){
+    //     this.displayStructureObjList[i].displayResidueObjList = this.displayStructureObjList[i].residueObjList.slice(this.startPosition+this.positionSliderValue,this.endPosition+this.positionSliderValue);
+    //   }
+    //
+    // }
+
 
     sliderValueChange(event){
       console.log(" index value " + this.indexValue);
@@ -1344,9 +1509,9 @@ export class ShowAlignmentComponent implements OnInit, OnDestroy, AfterViewInit{
       this.rows = [];
 
       this.maxVerticalSliderValue = 10;
-      this.verticalSliderValue = 10;
-      this.epitopeVerticalSliderValue = 10;
-      this.structureVerticalSliderValue = 10;
+      this.verticalSliderValue = 0;
+      this.epitopeVerticalSliderValue = 0;
+      this.structureVerticalSliderValue = 0;
 
       this.epitopeExternalSortColumn = 'exp_method';
       this.epitopeInternalSortColumn = 'assay_result';

@@ -8,4 +8,5 @@ webiCovidPortal/explorer/__pycache__/
 webCovidPortal/conf.py
 webCovidPortal/covidPortalApp/settings.py
 covidPortalFrontEnd/dist/
+covidPortalFrontEnd/environments/
 covidPortalFrontEnd/node_modules/
