@@ -49,7 +49,7 @@
          <!-- sequence label -->
          <td><div class="residue-height label" (click)="openAlignmentModal(displayAlignmentObj.label)"><a href="javascript:void(0)">{{displayAlignmentObj.label}}</a></div></td>
          <!-- residues -->
-         <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
+         <td *ngFor="let residueObj of displayAlignmentObj.displayResidueObjList"  [style.background-color] = "residueObj.residueColor"><div class="residue-width residue-height residue" style="display:inline-block;">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayAlignmentObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeAlignmentObj(displayAlignmentObj.label)"><i class="fa fa-remove"></i></div></div></td>
          <!-- <td rowspan=3 *ngIf="idx == 0">
@@ -117,7 +117,7 @@
          <!-- sequence label -->
          <td><div class="residue-height label" ><a href="javascript:void(0)" (click)="openEpitopeModal(displayEpitopeObj.iedb_id)" >{{displayEpitopeObj.iedb_id}}&nbsp;({{displayEpitopeObj.externalSortColumnValue}})</a> <div style="float:right" (click)="positionToEpitope(displayEpitopeObj.offset);"><a href="javascript:void(0)">&gt;</a></div></div></td>
          <!-- residues -->
-         <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor">{{residueObj.residueValue}}</div></td>
+         <td *ngFor="let residueObj of displayEpitopeObj.displayResidueObjList" [style.background-color] = "residueObj.residueColor" ><div class="residue-width residue-height residue"  style="display:inline-block;" >{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayEpitopeObj.internalSortColumnValue}}&nbsp;<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeEpitopeObj(displayEpitopeObj.iedb_id)"><i class="fa fa-remove"></i></div></div></td>
 
@@ -173,7 +173,7 @@
          <!-- sequence label -->
          <td><div class="residue-height label" (click)="openStructureModal(displayStructureObj.pdbchain)" ><a href="javascript:void(0)">{{displayStructureObj.pdbchain}}</a></div></td>
          <!-- residues -->
-         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+ residueObj.residueIndex}}" [style.background-color] = "residueObj.residueTableCellColor"><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);">{{residueObj.residueValue}}</div></td>
+         <td *ngFor="let residueObj of displayStructureObj.displayResidueObjList;let i=index;" id = "{{'td_'+idx+ '_'+ residueObj.residueIndex}}" [style.background-color] = "residueObj.residueTableCellColor"  ><div class="residue-width residue-height residue" [style.background-color] = "residueObj.residueColor" id = "{{'residue_'+idx+ '_'+i}}" (click)="handleResidueClick($event);" style="display:inline-block;">{{residueObj.residueValue}}</div></td>
          <!-- sort value -->
          <td><div class="residue-height label">{{displayStructureObj.sortColumnValue}}<div style="float:right;margin-right:2px;cursor: -webkit-grab; cursor: grab;" (click)="removeStructureObj(displayStructureObj.pdbchain)"><i class="fa fa-remove"></i></div></div></td>
          <!-- <td rowspan=3 *ngIf="idx == 0" >
