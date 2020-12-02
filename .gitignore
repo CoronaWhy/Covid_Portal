@@ -10,3 +10,4 @@ webCovidPortal/covidPortalApp/settings.py
 covidPortalFrontEnd/dist/
 covidPortalFrontEnd/environments/
 covidPortalFrontEnd/node_modules/
+letsencrypt/
