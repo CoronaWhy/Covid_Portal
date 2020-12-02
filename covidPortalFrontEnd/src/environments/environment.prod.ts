@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  serverUrl: 'http://backend:8000',
-  apiUrl: 'http://backend:8000',
+  serverUrl: 'http://portaldb.apps.coronawhy.org:80',
+  apiUrl: 'http://portaldb.apps.coronawhy.org:80',
 };

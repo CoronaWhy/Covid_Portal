@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  serverUrl: 'http://portaldb.labs.coronawhy.org:80',
+  serverUrl: 'http://portaldb.apps.coronawhy.org:80',
 };

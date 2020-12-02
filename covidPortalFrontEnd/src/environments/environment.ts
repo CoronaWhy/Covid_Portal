@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  serverUrl: 'http://localhost:8000',
-  apiUrl: 'http://localhost:8000',
+  serverUrl: 'http://portaldb.apps.coronawhy.org:80',
+  apiUrl: 'http://portaldb.apps.coronawhy.org:80',
 };
