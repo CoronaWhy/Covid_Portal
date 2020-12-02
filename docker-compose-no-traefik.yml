@@ -38,7 +38,7 @@ services:
   frontend:
     networks:
       - traefik
-    image: coronawhy/covid_portal_frontend:apps
+    image: coronawhy/covid_portal_frontend:apps-13102020
     command: nginx -g "daemon off;"
     #build: covidPortalFrontEnd/
     labels:
