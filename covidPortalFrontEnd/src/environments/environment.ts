@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  serverUrl: 'http://localhost:8000',
-  apiUrl: 'http://portaldb.stage.coronawhy.org',
+  serverUrl: 'http://100.25.39.142',
+  apiUrl: 'http://100.25.39.142',
 };
