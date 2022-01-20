@@ -19,7 +19,6 @@ import * as pluginAnnotations from 'chartjs-plugin-annotation';
 
 export class DatafileDetailComponent implements OnInit{
     @Input()
-    datafile : UploadFolder;
 
     rangeSliderOptions: Options = {
       floor: 0,
