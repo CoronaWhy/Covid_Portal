@@ -1,0 +1,134 @@
+<div class="container" style="float:clear;">
+  <br/>
+  <br/>
+  <br/>
+
+  <div class="row" *ngIf="cellLoaded">
+    <div style="font-weight:bold;align-items:center;font-size:24px;margin-left:60px;">
+    Configure Cell&nbsp;{{cell.morphologyFile}}
+    </div>
+  </div>
+
+  <div id="spacerDiv" *ngIf="showParamsFlag">
+  </div>
+
+  <ngb-tabset *ngIf="cellLoaded" type="pills" [activeId]="activeTabTitle">
+    <!-- <ngb-tab title="Cell" id="cellId" name="cellName">
+      <ng-template ngbTabContent>
+        <div>
+
+          <div class="row" style="float:clear;overflow: scroll;height:400px;">
+
+            <table class="table table-bordered table-striped">
+
+              <thead>
+                <tr>
+                  <th>
+                    Select
+                  </th>
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Parents
+                  </th>
+                  <th>
+                    Distance From Soma
+                  </th>
+                  <th>
+                    Length
+                  </th>
+                  <th>
+                    Number Of Segments
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let dendObj of cell.dendObjs" [style.background-color]="dendObj.rowColor">
+                  <td>
+                    <input type="checkbox"  [ngModel]="dendObj.name" (value)="dendObj.name" [ngModelOptions]="{standalone: true}" >
+                  </td>
+                  <td>
+                    {{dendObj.name}}
+                  </td>
+                  <td>
+                    <div *ngFor="let parent of dendObj.parentSectionList">({{parent.name}}-{{parent.distanceFromSection}})&nbsp;</div>
+                  </td>
+                  <td>
+                    {{dendObj.distFromSoma}}
+                  </td>
+                  <td>
+                    {{dendObj.sectionLength}}
+                  </td>
+                  <td>
+                    {{dendObj.nseg}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </ng-template>
+    </ngb-tab> -->
+
+    <ngb-tab title="Sections" id="sectionsId" name="sections">
+      <ng-template ngbTabContent>
+        <ng-container *ngTemplateOutlet="innerTabsetSections"></ng-container>
+      </ng-template>
+    </ngb-tab>
+
+  </ngb-tabset>
+
+  <ng-template #innerTabsetSections>
+
+    <ngb-tabset type="pills" [activeId]="activeTabTitleSections">
+
+      <ngb-tab *ngFor = "let secObjList of cell.secObjLists" [title]="secObjList.name" [id]="secObjList.name">
+
+        <ng-template ngbTabContent>
+
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr >
+                <th width="10%">
+                  <b>Sec Name</b>
+                </th>
+                <th width="10%">
+                  <b>Sec Length</b>
+                </th>
+                <th width="10%">
+                  <b>Parent Section</b>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let section of secObjList.sections">
+                <td width="10%">
+                  {{section.name}}
+                </td>
+                <td width="10%">
+                  {{section.sectionLength}}
+                </td>
+                <td width="10%">
+                  {{section.parentSection}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </ng-template>
+
+      </ngb-tab>
+
+    </ngb-tabset>
+
+  </ng-template>
+
+  <div class="mt-2 col-md-12">
+    <div class="alert alert-success" role="alert" *ngIf="loadingMessage">
+      {{loadingMessage}}
+    </div>
+  </div>
+
+</div>

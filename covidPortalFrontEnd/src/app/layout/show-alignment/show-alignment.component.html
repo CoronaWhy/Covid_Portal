@@ -1,0 +1,533 @@
+<router-outlet></router-outlet>
+<div class="container" *ngIf="!displayAlignmentObjList">
+
+  <div class = "row" style="max-width: 250px;float:left;font-size:24px;font-weight:bold;" *ngIf="!originalScanEnabled" >
+    <b>Loading ...</b>
+  </div>
+</div>
+<div class="container" *ngIf="displayAlignmentObjList" id ="mainContainter">
+  <div class="row" >
+    <a href="www.coronawhy.org"><img src="assets/images/coronawhy.png" width="150px" /></a>&nbsp;
+    <div style="font-weight:bold;align-items:center;font-size:24px;margin-left:50px;">
+    Construct Explorer
+  </div>
+  </div>
+
+  <div *ngIf="displayAlignmentObjList" class="row" style="float:clear;">
+
+		<div  class="btn-group" style="margin-left:10px;">
+			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="showFiltersFlag">Hide Filters&nbsp;<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+				</button>&nbsp;
+			<button  id="button_0" style = "background-color:#834793;" (click)="showHideFilters();" *ngIf="!showFiltersFlag">Show Filters&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</button>&nbsp;<i class="fa fa-question-circle" aria-hidden="true" (click)="openModal('helpFilters')"></i>
+		</div>
+		<div id="spacerDiv" *ngIf="showFiltersFlag" class= "row" style="float:clear;">
+
+    	<br/>
+		</div>
+  </div>
+		<div id="paramsDiv" *ngIf="showFiltersFlag" style="border: 2px dashed;padding:20px;">
+      Filters
+      <ngb-tabset type="pills" [activeId]="activeTabTitle">
+
+      <ngb-tab title="Sequences" id="sequencesId" name="sequencesDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="sequencesTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+      <ngb-tab title="Epitopes" id="epitopesId" name="epitopesDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="epitopesTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+      <ngb-tab title="Structures" id="structuresId" name="structuresDiv">
+
+        <ng-template ngbTabContent>
+          <ng-container *ngTemplateOutlet="structuresTabset"></ng-container>
+        </ng-template>
+
+      </ngb-tab>
+
+    </ngb-tabset>
+
+    <!-- sequences tabset -->
+    <ng-template #sequencesTabset>
+
+      <!-- <div  class="row " style="float:right;"> -->
+
+      <div class="row mt-2 col-md-12">
+
+      Sort:&nbsp;
+
+      <div class="row">
+        <div class="col">
+          <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.sequenceTableSortColumn}}</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic3">
+              <button ngbDropdownItem *ngFor="let sequenceTableColumnObj of sequenceTableColumnObjs" (click) = "sortSequenceMainTable(sequenceTableColumnObj.columnName)" [value]="sequenceTableColumnObj.columnName" [style.background-color] = "sequenceTableColumnObj.rowColor" >{{ sequenceTableColumnObj.columnName }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      Search:&nbsp;<input type="text" [(ngModel)]="searchString" [ngModelOptions]="{standalone: true}">
+      &nbsp;
+      <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "filterSequenceDatatable()">Search</button>
+      &nbsp;
+      <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetSequenceTable()">Reset</button>
+
+    </div>
+
+				<div  class="mt-2 col-md-12">
+        <div class="row" style="float:clear;height:400px;overflow: auto;">
+
+            <div>
+
+           <table class="table table-bordered table-striped">
+
+                  <thead>
+                    <tr>
+
+                      <td >
+                          Select
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Accession
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Organism
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Collection Date
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Country
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Host
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Isolation Source
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Isolate
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Taxon ID
+                        </a>
+                      </td>
+
+                      <td >
+                        <a href="#">
+                          Coded By
+                        </a>
+                      </td>
+                    </tr>
+                  </thead>
+
+                  <tbody id = "filterSequenceBody">
+                    <tr>
+                      <td width="50px" ></td>
+                      <td *ngFor = "let columnFilter of sequenceResultObj.columnFilterList" width="50px" >
+
+                        <div class="row">
+                          <div class="col">
+                            <div ngbDropdown class="d-inline-block" style="z-index: auto">
+                              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
+                              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterSequenceTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody  *ngIf="displaySequenceObjList?.length > 0">
+
+                    <tr *ngFor ="let row of displaySequenceObjList" style="line-height: 50px; height: 50px;">
+                      <td width="50px">
+                        <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.accession}}" (change)="reloadAlignment($event)">
+                      </td>
+                      <td width="50px">
+                          {{row.accession}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.organism}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.collection_date}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.country}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.host}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.isolation_source}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.isolate}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.taxon_id}}
+                      </td>
+
+                      <td width="50px">
+                        {{row.coded_by}}
+                      </td>
+
+                    </tr>
+                  </tbody>
+
+                </table>
+
+                <div class="btn-group" *ngIf="displaySequenceObjList?.length > 0" >
+
+                  <button  id="button_prev" [style.background-color] = "alignmentPrevButtonColor" (click)="showAlignmentPrev();" [disabled]="hideAlignmentPrevButton">Prev&nbsp;
+            			</button>&nbsp;
+
+                  <button  id="button_next" [style.background-color] = "alignmentPrevButtonColor" (click)="showAlignmentNext();" [disabled]="hideAlignmentNextButton">Next&nbsp;
+              		</button>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          </div>
+
+    </ng-template>
+
+    <!-- epitopes tabset -->
+    <ng-template #epitopesTabset>
+
+        <div class="row mt-2 col-md-12" >
+
+          Sort:&nbsp;
+
+          <div class="row">
+            <div class="col">
+              <div ngbDropdown class="d-inline-block">
+                <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sortEpitopeExperimentTableColumn}}</button>
+                <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                  <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumn of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable(epitopeExperimentTableColumn.columnName)" [value]="epitopeExperimentTableColumn.columnName" [style.background-color] = "epitopeExperimentTableColumn.rowColor" >{{ epitopeExperimentTableColumn.columnName }}</button>
+                  <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+          Search:&nbsp;<input type="text" [(ngModel)]="searchEpitopeString" [ngModelOptions]="{standalone: true}">
+          &nbsp;
+          <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "filterEpitopeDataTable()">Search</button>
+          &nbsp;
+          <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetEpitopeExperimentTable()">Reset</button>
+          </div>
+
+        </div>
+        <div class="row" style="float:clear;">
+          <br/>&nbsp;
+        </div>
+          <div class="row" style="float:clear;overflow: auto;height:400px;">
+
+              <div *ngIf="displayEpitopeExperimentObjList?.length > 0">
+
+                  <table class="table table-bordered table-striped">
+
+                    <thead>
+                      <tr>
+
+                        <th>
+                            Select
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Host
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Assay Type
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Assay Result
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            MHC Allele
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            MHC Class
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Exp Method
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            Measurement Type
+                          </a>
+                        </th>
+
+                        <th>
+                          <a href="#">
+                            IEDB ID
+                          </a>
+                        </th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody>
+
+                      <tr>
+                        <td></td>
+                        <td *ngFor = "let columnFilter of epitopeExperimentResultObj.columnFilterList" width="50px">
+
+                          <div class="row">
+                            <div class="col">
+                              <div ngbDropdown class="d-inline-block">
+                                <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
+                                <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                  <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterEpitopeTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                    </tbody>
+
+                    <tbody>
+
+                      <tr *ngFor ="let row of displayEpitopeExperimentObjList" style="line-height: 50px; height: 50px;">
+
+                        <td>
+                          <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.iedb_id}}-{{row.id}}" (change)="reloadEpitopes($event)">
+                        </td>
+
+                        <td>
+                          {{row.host}}
+                        </td>
+
+                        <td>
+                          {{row.assay_type}}
+                        </td>
+
+                        <td>
+                          {{row.assay_result}}
+                        </td>
+
+                        <td>
+                          {{row.mhc_allele}}
+                        </td>
+
+                        <td>
+                          {{row.mhc_class}}
+                        </td>
+                        <td>
+                          {{row.exp_method}}
+                        </td>
+                        <td>
+                          {{row.measurement_type}}
+                        </td>
+                        <td>
+                          {{row.iedb_id}}
+                        </td>
+
+                      </tr>
+                    </tbody>
+
+                  </table>
+
+                  <div class="btn-group" *ngIf="displayEpitopeExperimentObjList?.length > 0" >
+
+                    <button  id="button_prev" [style.background-color] = "epitopePrevButtonColor" (click)="showEpitopePrev();" [disabled]="hideEpitopePrevButton">Prev&nbsp;
+                    </button>&nbsp;
+
+                    <button  id="button_next" [style.background-color] = "epitopeNextButtonColor" (click)="showEpitopeNext();" [disabled]="hideEpitopeNextButton">Next&nbsp;
+                    </button>
+
+                  </div>
+
+              </div>
+
+            </div>
+
+        </ng-template>
+        <!-- structures tabset -->
+        <ng-template #structuresTabset>
+
+          <div class="row mt-2 col-md-12" >
+            Sort:&nbsp;
+
+            <div class="row">
+              <div class="col">
+                <div ngbDropdown class="d-inline-block">
+                  <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>{{this.sortStructureChainTableColumn}}</button>
+                  <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+                    <button ngbDropdownItem *ngFor="let structureChainTableColumnObj of structureChainTableColumnObjs" (click) = "sortStructureChainTable(structureChainTableColumnObj.columnName)" [value]="structureChainTableColumnObj.columnName" [style.background-color] = "structureChainTableColumnObj.rowColor" >{{ structureChainTableColumnObj.columnName }}</button>
+                    <!-- <button ngbDropdownItem *ngFor="let epitopeExperimentTableColumnObj of epitopeExperimentTableColumnObjs" (click) = "sortEpitopeExperimentTable ( epitopeExperimentTableColumnObj.columnName )" [value]="epitopeExperimentTableColumnObj.columnName" [style.background-color] = "epitopeExperimentTableColumnObj.rowColor" >{{ epitopeExperimentTableColumnObj.columnName }}</button> -->
+                  </div>
+                </div>
+              </div>
+            <!-- </div> -->
+            Search:&nbsp;<input type="text" [(ngModel)]="searchStructureString" [ngModelOptions]="{standalone: true}">
+            &nbsp;
+            <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "filterStructureDataTable()">Search</button>
+            &nbsp;
+            <button class="btn btn-outline-primary" id="dropdownBasic2" (click) = "resetStructureChainTable()">Reset</button>
+            </div>
+
+          </div>
+
+          <div class="row" style="float:clear;">
+            <br/>&nbsp;
+          </div>
+            <div class="row" style="float:clear;overflow: scroll;height:400px;">
+                <div *ngIf="displayStructureChainObjList?.length > 0">
+                    <table class="table table-bordered table-striped">
+                      <thead>
+                        <tr>
+
+                          <td>
+                              Select
+                          </td>
+                          <td>
+                            <a href="#">
+                              Taxon
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              Taxon_ID
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+
+                          <td>
+                            <a href="#">
+                              PDB ID
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                          <td>
+                            <a href="#">
+                              Chain
+                              <!-- <div class="arrow-up"></div>
+                              <div class="arrow-down"></div> -->
+                            </a>
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td *ngFor = "let columnFilter of structureChainResultObj.columnFilterList" width="50px">
+
+                            <div class="row">
+                              <div class="col">
+                                <div ngbDropdown class="d-inline-block">
+                                  <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{columnFilter.selectedValue}}</button>
+                                  <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                    <button ngbDropdownItem *ngFor="let columnFilterValue of columnFilter.columnFilterValues" (click) = "filterStructureTable(columnFilter.columnName, columnFilterValue)" [value]="columnFilterValue" [style.background-color] = "columnFilter.rowColor" >{{ columnFilterValue }}</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tbody>
+
+                        <tr *ngFor ="let row of displayStructureChainObjList" style="line-height: 50px; height: 50px;">
+                          <td>
+                            <input type="checkbox" [checked] = "row.isSelected" [(ngModel)]="row.isSelected" [ngModelOptions]="{standalone: true}" value="{{row.pdb_id}}.{{row.chain}}" (change)="reloadStructures($event)">
+                          </td>
+                          <td>
+                              {{row.taxon}}
+                          </td>
+                          <td>
+                            {{row.taxon_id}}
+                          </td>
+                          <td>
+                            {{row.pdb_id}}
+                          </td>
+                          <td>
+                            {{row.chain}}
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="btn-group" *ngIf="displayStructureChainObjList?.length > 0" >
+                      <button  id="button_prev" [style.background-color] = "structurePrevButtonColor" style = "background-color:#834793;" (click)="showStructurePrev();" [disabled]="hideStructurePrevButton">Prev&nbsp;
+                			</button>&nbsp;
+                      <button  id="button_next" [style.background-color] = "structureNextButtonColor" (click)="showStructureNext();" [disabled]="hideStructureNextButton">Next&nbsp;
+                  		</button>
+                    </div>
+                </div>
+              </div>
+        </ng-template>
+
+    </div>
+
+</div>

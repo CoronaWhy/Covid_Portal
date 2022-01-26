@@ -31,5 +31,3 @@ SELECTED_ACCESSIONS = 'YP_009724390.1,QIS61410.1,AHN64783.1'
 SELECTED_EPITOPES = '12967,100347,64085,74367'
 # SELECTED_PDB_CHAIN_IDS = '6VYB.A,6Q07.A,6Q04.A'
 SELECTED_PDB_CHAIN_IDS = [{"pdb_id":"6VYB", "chain":"A"}]
-
-# 4. PDB ID 5WRG, chain A, taxon “Severe acute respiratory syndrome-related coronavirus” should be selected.

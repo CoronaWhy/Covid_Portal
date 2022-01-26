@@ -13,11 +13,6 @@ import { AppRoutingModule } from './app.routing';
 import { AppComponent } from './app.component';
 import { AuthGuard , AuthService} from './shared';
 
-import { TableListComponent } from './table-list/table-list.component';
-
-import { NotificationsComponent } from './notifications/notifications.component';
-import { UpgradeComponent } from './upgrade/upgrade.component';
-
 import { ProjectService } from './services/project-service';
 import { LoginService } from './services/login-service';
 import { LogoutService } from './services/logout-service';
@@ -26,13 +21,9 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { SigninEmitterService} from './services/signin-emitter.service';
 import { SignoutEmitterService} from './services/signout-emitter.service';
-
-import { SignupService } from './services/signup-service';
-import { ResetPasswordService } from './services/reset-password-service';
 import { TokenInterceptor } from './shared/interceptor/token.interceptor';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HelpModalService } from './services/help-modal.service';
 import { HelpModalComponent } from './help-modal/help-modal.component';
 import { PopupModalComponent } from './popup-modal/popup-modal.component';
 
@@ -42,10 +33,6 @@ import { LogoutComponent } from './logout/logout.component';
 import { LoginComponent } from './login/login.component';
 
 import { LoginModule } from './login/login.module';
-
-// import {
-//   AgmCoreModule
-// } from '@agm/core';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -59,6 +46,7 @@ export function createTranslateLoader(http: HttpClient) {
     HttpClientModule,
     NgxSortableModule,
     NgbModule,
+
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
@@ -66,18 +54,16 @@ export function createTranslateLoader(http: HttpClient) {
             deps: [HttpClient]
         }
     }),
+
     NgMultiSelectDropDownModule.forRoot(),
-
     FormsModule,
-
     BrowserAnimationsModule,
     ReactiveFormsModule,
     RouterModule,
     AppRoutingModule,
-    // AgmCoreModule.forRoot({
-    //   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    // })
+
   ],
+
   entryComponents: [
        HelpModalComponent,
        PopupModalComponent,
@@ -85,13 +71,14 @@ export function createTranslateLoader(http: HttpClient) {
 
   declarations: [AppComponent, HelpModalComponent, PopupModalComponent],
 
-  providers: [AuthGuard, ProjectService, LoginService, SignupService, ResetPasswordService, LogoutService, AuthService, LogoutComponent,
-              SigninEmitterService, SignoutEmitterService, HelpModalService,  {
+  providers: [AuthGuard, ProjectService, LoginService, LogoutService, AuthService, LogoutComponent,
+              SigninEmitterService, SignoutEmitterService, {
 
     provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
     multi: true
   }],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
