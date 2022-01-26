@@ -2,12 +2,12 @@ import { Observable } from "rxjs/Rx"
 import { Injectable, OnInit }     from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpHeaders } from '@angular/common/http';
-import { Datafile, UploadFolder } from '../models/datafile';
-import { AlignmentResultObj , AlignmentObj} from '../models/alignment';
-import { EpitopeObj} from '../models/epitope';
-import { StructureObj} from '../models/structure';
+import { Datafile, UploadFolder } from '../../models/datafile';
+import { AlignmentResultObj , AlignmentObj} from '../../models/alignment';
+import { EpitopeObj} from '../../models/epitope';
+import { StructureObj} from '../../models/structure';
 
-import {AppSettings} from '../app.settings';
+import {AppSettings} from '../../app.settings';
 
 @Injectable()
 export class ShowAlignmentService {
