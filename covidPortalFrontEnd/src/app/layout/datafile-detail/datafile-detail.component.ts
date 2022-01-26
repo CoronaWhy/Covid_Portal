@@ -3,7 +3,6 @@ import { DatafileDetailService } from './datafile-detail-service';
 import { Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Datafile} from '../../models/datafile';
-import { Cell} from '../../models/cell';
 
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
@@ -20,20 +19,20 @@ import * as pluginAnnotations from 'chartjs-plugin-annotation';
 export class DatafileDetailComponent implements OnInit{
     @Input()
     cellId:number;
-    cell:Cell;
+    datafile:Datafile;
     cellLoaded :boolean;
     activeTabTitleSections:string;
-    loadCell(cellId:number){
+    loadDatafile(cellId:number){
       this.cellLoaded = false;
-      this.datafileDetailService.loadCell(cellId)
-      .then(cell => {
-          this.cell = cell;
-          console.log(this.cell);
-          console.log(this.cell.secObjLists);
-
-          this.cellLoaded = true;
-
-      });
+      // this.datafileDetailService.loadCell(cellId)
+      // .then(cell => {
+      //     this.cell = cell;
+      //     console.log(this.cell);
+      //     console.log(this.cell.secObjLists);
+      //
+      //     this.cellLoaded = true;
+      //
+      // });
     }
 
   ngOnInit() {
@@ -43,7 +42,7 @@ export class DatafileDetailComponent implements OnInit{
       });
       this.cellLoaded = false;
       this.activeTabTitleSections = "Soma";
-      this.loadCell(this.cellId);
+      this.loadDatafile(this.cellId);
 
     }
 
