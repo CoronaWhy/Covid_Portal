@@ -1,6 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { FileUploader} from 'ng2-file-upload';
-import {Datafile} from '..//../../models/datafile';
+import {Datafile} from '../../../../models/datafile';
 import { DatafileDetailService } from '../../../datafile-detail/datafile-detail-service';
 import {AppSettings} from '../../../../app.settings';
 
