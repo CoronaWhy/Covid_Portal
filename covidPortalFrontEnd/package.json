@@ -57,7 +57,7 @@
     "jwt-decode": "^2.2.0",
     "lighten-darken-color": "^1.0.0",
     "mathjs": "^6.6.4",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "ng-multiselect-dropdown": "^0.2.10",
     "ng5-slider": "^1.2.4",
     "ngx-bootstrap": "^5.6.1",
